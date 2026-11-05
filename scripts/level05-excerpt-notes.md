@@ -1,0 +1,1 @@
+Scope extended at user request: bottom forest through red tree, sewer and clocktower battlements shown in latest crop. 80m ascent and 50 varied landings, 3 diamonds redistributed through route, 3 checkpoints. Existing Cave art retained. Source geometry adapted to hammer .8m grid; intermediate landings added. Scene generation and Play pending; prior canopy-only plan superseded.

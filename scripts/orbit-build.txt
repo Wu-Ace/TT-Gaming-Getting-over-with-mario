@@ -1,0 +1,1 @@
+Added two groups of four orbiting horizontal platforms; Play and contact validation pending.

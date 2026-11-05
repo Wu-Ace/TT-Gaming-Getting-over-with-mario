@@ -1,0 +1,1 @@
+Actual Play camera and pillar heights captured; no traversal or collection test

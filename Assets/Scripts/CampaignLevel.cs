@@ -41,6 +41,41 @@ public sealed class CampaignLevel : MonoBehaviour
         Physics2D.SyncTransforms();
         foreach(var camera in FindObjectsOfType<Cinemachine.CinemachineVirtualCamera>())camera.PreviousStateIsValid=false;
     }
+    Transform progressPlayer;
+    Vector2[] progressRoute;
+    public float RouteProgress { get; private set; }
+    void LateUpdate()
+    {
+        if (progressPlayer == null)
+        {
+            var player = FindObjectOfType<Death>();
+            if (player == null) return;
+            progressPlayer = player.transform;
+        }
+        if (progressRoute == null)
+        {
+            if (route != null && route.Length >= 2) progressRoute = route;
+            else
+            {
+                var exit = FindObjectOfType<Winning.WinThresholdDetection>();
+                if (exit == null) return;
+                progressRoute = new[] { initialSpawn, (Vector2)exit.transform.position };
+            }
+        }
+        float total = 0, bestDistance = float.PositiveInfinity, along = 0;
+        Vector2 position = progressPlayer.position;
+        for (int i = 1; i < progressRoute.Length; i++)
+        {
+            Vector2 start = progressRoute[i-1], segment = progressRoute[i] - start;
+            float length = segment.magnitude;
+            if (length < .001f) continue;
+            float t = Mathf.Clamp01(Vector2.Dot(position-start, segment) / segment.sqrMagnitude);
+            float distance = (position - (start + segment*t)).sqrMagnitude;
+            if (distance < bestDistance) { bestDistance = distance; along = total + length*t; }
+            total += length;
+        }
+        RouteProgress = Won ? 1f : (total > .001f ? Mathf.Clamp01(along/total) : 0f);
+    }
     public bool HasStar(int id) => (state.stars & (1<<id))!=0;
     public bool Collect(int id) { if(Won || id<0 || id>2 || HasStar(id))return false; state.stars|=1<<id;return true; }
     public bool Activated(string id) => state.switches.Contains(id);

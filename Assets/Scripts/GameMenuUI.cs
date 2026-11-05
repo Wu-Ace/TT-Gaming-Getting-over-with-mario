@@ -125,6 +125,20 @@ public sealed class GameMenuUI : MonoBehaviour
             GUI.matrix=Matrix4x4.Scale(new Vector3(hudScale,hudScale,1));
             GUI.DrawTexture(new Rect(40,75,32,32),CampaignLevel.Current!=null && CampaignLevel.Current.number<=3?diamond:star,ScaleMode.ScaleToFit);
             Text(new Rect(80,65,150,55),"×"+(CampaignLevel.Current!=null?CampaignLevel.Current.StarCount:0).ToString("00"),32,Color.white);
+            if (CampaignLevel.Current != null)
+            {
+                float width = Mathf.Min(380, Screen.width/hudScale - 420);
+                if (width > 80)
+                {
+                    float x = (Screen.width/hudScale-width)/2;
+                    float progress = CampaignLevel.Current.RouteProgress;
+                    Fill(new Rect(x-12,20,width+24,70),new Color32(24,48,43,225));
+                    Text(new Rect(x,22,width,30),"关卡进度  " + Mathf.FloorToInt(progress*100) + "%",20,Color.white,true);
+                    Fill(new Rect(x,60,width,12),new Color32(76,96,88,255));
+                    Fill(new Rect(x,60,width*progress,12),new Color32(70,218,156,255));
+                    Fill(new Rect(x+Mathf.Clamp(width*progress-3,0,width-6),56,6,20),new Color32(255,225,115,255));
+                }
+            }
             Button(new Rect(Screen.width/hudScale-180,25,160,60),"设置",OpenSettings,false);
         }
         GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-1600*scale)/2,(Screen.height-900*scale)/2,0),Quaternion.identity,new Vector3(scale,scale,1));

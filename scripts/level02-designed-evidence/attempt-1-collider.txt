@@ -1,0 +1,6 @@
+UnityEngine.MissingComponentException: There is no 'Collider2D' attached to the "Entity" game object, but a script is trying to access it.
+You probably need to add a Collider2D to the game object "Entity". Or your script needs to check if the component is attached before using it.
+  at (wrapper managed-to-native) UnityEngine.Collider2D.get_bounds_Injected(UnityEngine.Collider2D,UnityEngine.Bounds&)
+  at UnityEngine.Collider2D.get_bounds () [0x00000] in <8e7418ec71844281b4e96f2efa519810>:0 
+  at Level02Designed.Prefab (System.String name, UnityEngine.Vector2 point) [0x000ac] in E:\TT Gaming\Getting Over Goombas\Assets\Editor\Level02Designed.cs:11 
+  at Level02Designed.Run () [0x0029c] in E:\TT Gaming\Getting Over Goombas\Assets\Editor\Level02Designed.cs:19 

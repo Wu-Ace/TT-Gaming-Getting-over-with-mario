@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-05T07:37:28.866343+00:00",
+  "files": {
+    "Assets/Scenes/Level03_Beach.unity": "fbc9d74e253d770929fcf0f91d19c4d844cc55d42f4ec3303b1949088ef6a781",
+    "Assets/Editor/Level03DesignedBuilder.cs": "146511ee59d5c9337f30e8ceb35bdb89c55166b62ffacaa2791ed3e391c5938c",
+    "Assets/Editor/ThirdLevelAcceptance.cs": "5d17fede5d369dc4ab74e9558ac58be9c1c35df82ce10c9193e948f3396b6feb",
+    "Assets/Scripts/DonutFallPlatform.cs": "3cb61396ec4bf4c460b181557dad43c4890e3791772b13e7baa13ac5f87fe2f1",
+    "Assets/Art/Campaign/donut-beach.png": "8a93ff5bd0bab4278875aac167509b103ddbc79f54a747ff74a939e2118452e7",
+    "scripts/prepare_level03.py": "f0477e950439a1b3ebb524c7c34d0d09fada0c123566f92af0643e2ac0b78288",
+    "scripts/level03-designed.json": "23c1376dca6f07c4761b3b46a7f798359dd3b492b6e23314ccf11d460988e998",
+    "scripts/level03-designed-evidence/L03-map.png": "8565d62f0e7e39fc92e71a86be795635d3919a13816ffc75989153fd731ac152",
+    "scripts/level03-designed-evidence/L03-star.png": "f18def6697195b906221c7585387dfcaae2f5c106938fb2290604ef93488dff3",
+    "scripts/level03-designed-evidence/play-results.txt": "44169fe3c58c6af6a21d4f2360d7651ddfc0558b6f5d244275777d0a9da9bcd3",
+    "scripts/kit-terrain-repair-result.txt": "43245d372b04e68dacfd8e0418734b00bd13dad4321299e0737db2355f439594"
+  }
+}

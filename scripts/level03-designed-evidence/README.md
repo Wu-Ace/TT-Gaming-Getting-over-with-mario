@@ -1,0 +1,8 @@
+# Third level — 2026-11-05
+Final design: ground → aerial crossing above void → ground → a second aerial crossing above void → ground exit. First crossing uses rising/falling small islands; second mixes landing widths, gaps and alternating heights. All aerial columns have only two-cell-thick decks, with no lower terrain route. Dense mandatory ground obstacles replace long walks. Three diamonds (two in aerial sections), two checkpoints before the crossings, existing 3/3 door rule. Width about 238m; no claim of equal completion time.
+
+Sources: scripts/prepare_level03.py, level03-designed.json, Assets/Editor/Level03DesignedBuilder.cs. Native Beach cells, correct exposed/covered roles and clamp/uncompressed extruded gutters. Original scene backed up under art-backup/pre-level03-designed. No new gameplay mechanic or gift change. The initial ground draft is superseded under ground-draft.
+
+Validation: editor compilation and generation pass; panorama and real Scene/Game imagery inspected. structure.txt checks floating decks have no lower bypass and objectives are outside terrain. play-results.txt tests body/hammer collection, duplicate suppression, 0/3 door lock, 3/3 unlock, checkpoint activation, actual death/reload retention and respawn, door entry, fresh restart. Test rig is frozen/teleported, NOT a complete physical hammer traversal or difficulty acceptance. Device/export NOT RUN. Source/evidence hashes in manifest.json.
+
+Preservation: OneOneScene, Level02_Jungle and Level.prefab match before hashes. Tutorial scene changed during this work window outside the Level03 builder scope; left as found, not restored. See preserved-before/after.json.

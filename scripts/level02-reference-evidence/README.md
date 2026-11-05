@@ -1,0 +1,6 @@
+# Level02 reference revision 2026-11-05
+User supplied SMB 1-3 strip, allowing hammer adaptations; four vertical kinematic platforms (3.2m travel, 6 second period, staggered phase). Native .8m Jungle cells, three diamonds, two checkpoints, staircase and gated existing door. No castle asset introduced. Old geometry backed up in art-backup/pre-level02-reference-20261105.
+
+PASS: actual editor compilation/generation, panorama inspected, actual Scene and Game inspection; isolated TEST preference prefix Play regression for objective/hammer distinction, duplicate collection, locked/unlocked exit, death/reload, checkpoint respawn, fresh restart; all four platforms measured to move vertically during physics. Latest log scripts/level02-horizontal-evidence/play-results.txt. Test uses teleported/frozen rig, not a full hammer traversal or passenger-carry test. Full route difficulty, moving platform riding/hammer contacts, devices and export NOT RUN.
+
+Fixed same-name theme gutter collisions by prefixing seam-safe files with source folder. New saved second scene uses Jungle-* gutters. Existing unrelated scene references are not migrated. Source canvas/PPU compensated by uniform scale; colliders separately authored. Editor stopped on Level02.

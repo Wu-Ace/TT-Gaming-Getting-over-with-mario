@@ -1,0 +1,288 @@
+{
+  "sprites": [
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_1062325413.png",
+      "source": "Interactive/coin_gold_0.png",
+      "original": "smb1_misc_sprites_75",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-1922464477.png",
+      "source": "Interactive/coin_gold_1.png",
+      "original": "smb1_misc_sprites_76",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-1526894387.png",
+      "source": "Interactive/coin_gold_2.png",
+      "original": "smb1_misc_sprites_74",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-1980654182.png",
+      "source": "Interactive/flag_green_raised.png",
+      "original": "smb1_misc_sprites_44",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\789c81_1647481106.png",
+      "source": "Tiles/Grassland/grass tiles (18).png",
+      "original": "smb1_scenery_sprites squares_393",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\789c81_-366589573.png",
+      "source": "Tiles/Grassland/grass tiles (39).png",
+      "original": "smb1_scenery_sprites squares_387",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-1319507048.png",
+      "source": "Interactive/coin_gold_3.png",
+      "original": "smb1_misc_sprites_85",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-1258958816.png",
+      "source": "Interactive/heart_0.png",
+      "original": "smb1_misc_sprites_5",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\7e7c77_223507779.png",
+      "source": "Interactive/coin_gold_0.png",
+      "original": "smb_items_sheet_24",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\4a4e7d_-692393409.png",
+      "source": "Enemies/imp_walk_0.png",
+      "original": "smb_enemies_sheet_0",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-143248027.png",
+      "source": "Interactive/heart_0.png",
+      "original": "smb1_misc_sprites_386",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\4a4e7d_1329869037.png",
+      "source": "Enemies/imp_defeated.png",
+      "original": "smb_enemies_sheet_2",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\4a4e7d_-176540502.png",
+      "source": "Enemies/crab_walk_2.png",
+      "original": "smb_enemies_sheet_6",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\4a4e7d_-1306947211.png",
+      "source": "Enemies/brick_idle.png",
+      "original": "smb_enemies_sheet_12",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_1407961021.png",
+      "source": "Interactive/box_plain.png",
+      "original": "smb1_misc_sprites_13",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-1320846008.png",
+      "source": "Tiles/Grassland/grass tiles (24).png",
+      "original": "smb1_misc_sprites_68",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_559369706.png",
+      "source": "Interactive/box_question.png",
+      "original": "smb1_misc_sprites_80",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-1993056587.png",
+      "source": "Tiles/Grassland/grass tiles (50).png",
+      "original": "smb1_misc_sprites_67",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\637f38_1462798072.png",
+      "source": "Tiles/Grassland/grass tiles (60).png",
+      "original": "smb1_scenery_sprites_22",
+      "composition": "native 120px terrain cells: cap + repeated sides/body, open base joins ground"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\637f38_876253287.png",
+      "source": "Tiles/Grassland/grass tiles (60).png",
+      "original": "smb1_scenery_sprites_23",
+      "composition": "native 120px terrain cells: cap + repeated sides/body, open base joins ground"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\637f38_1132731075.png",
+      "source": "Tiles/Grassland/grass tiles (60).png",
+      "original": "smb1_scenery_sprites_24",
+      "composition": "native 120px terrain cells: cap + repeated sides/body, open base joins ground"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_398158806.png",
+      "source": "Tiles/Grassland/grass tiles (35).png",
+      "original": "smb1_misc_sprites_119",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_1228825087.png",
+      "source": "Tiles/Grassland/grass tiles (10).png",
+      "original": "smb1_misc_sprites_117",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-639936865.png",
+      "source": "Tiles/Grassland/grass tiles (56).png",
+      "original": "smb1_misc_sprites_118",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-143262309.png",
+      "source": "Tiles/House/house tiles (1).png",
+      "original": "smb1_misc_sprites_113",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_1849745168.png",
+      "source": "Hidden: replaced by full Kit landscape background",
+      "original": "smb1_misc_sprites_103"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-914010321.png",
+      "source": "Hidden: replaced by full Kit landscape background",
+      "original": "smb1_misc_sprites_105"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-631075928.png",
+      "source": "Hidden: replaced by full Kit landscape background",
+      "original": "smb1_misc_sprites_104"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_148240270.png",
+      "source": "Tiles/Grassland/grass tiles (4).png",
+      "original": "smb1_misc_sprites_88",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-647690136.png",
+      "source": "Tiles/Grassland/grass tiles (13).png",
+      "original": "smb1_misc_sprites_79",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_1784645198.png",
+      "source": "Interactive/box_question.png",
+      "original": "smb1_misc_sprites_81",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_-2015114765.png",
+      "source": "Interactive/box_question.png",
+      "original": "smb1_misc_sprites_82",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_1457990611.png",
+      "source": "Interactive/box_used.png",
+      "original": "smb1_misc_sprites_30",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_876255608.png",
+      "source": "Interactive/star_0.png",
+      "original": "smb1_misc_sprites_48",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_578805194.png",
+      "source": "Interactive/star_1.png",
+      "original": "smb1_misc_sprites_49",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_1736571808.png",
+      "source": "Interactive/star_2.png",
+      "original": "smb1_misc_sprites_50",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\4a4e7d_1522127580.png",
+      "source": "Enemies/imp_walk_1.png",
+      "original": "smb_enemies_sheet_1",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\4a4e7d_-1014623196.png",
+      "source": "Enemies/crab_walk_1.png",
+      "original": "smb_enemies_sheet_5",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\4a4e7d_-1524844835.png",
+      "source": "Enemies/crab_walk_3.png",
+      "original": "smb_enemies_sheet_7",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\4a4e7d_978233214.png",
+      "source": "Enemies/crab_walk_0.png",
+      "original": "smb_enemies_sheet_8",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_1439941149.png",
+      "source": "Interactive/coin_gold_4.png",
+      "original": "smb1_misc_sprites_86",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    },
+    {
+      "asset": "Assets\\Art\\PlatformerKit\\ff297f_2052438126.png",
+      "source": "Interactive/coin_gold_5.png",
+      "original": "smb1_misc_sprites_87",
+      "composition": "uniform fit, bottom aligned, transparent padding"
+    }
+  ],
+  "changed": [
+    "Assets\\Animations\\CoinSpin.anim",
+    "Assets\\Prefabs\\Coin.prefab",
+    "Assets\\Prefabs\\Flag.prefab",
+    "Assets\\Prefabs\\FlagPole.prefab",
+    "Assets\\Prefabs\\FlagPoleTop.prefab",
+    "Assets\\Scenes\\OneOneScene.unity",
+    "Assets\\Prefabs\\Enemies\\Goomba.prefab",
+    "Assets\\Prefabs\\Enemies\\KoopaTroopa.prefab",
+    "Assets\\Prefabs\\Obstacles\\BrickBlock.prefab",
+    "Assets\\Prefabs\\Obstacles\\GroundTile.prefab",
+    "Assets\\Prefabs\\Obstacles\\QuestionMarkBlock.prefab",
+    "Assets\\Prefabs\\Obstacles\\StairsBlock.prefab",
+    "Assets\\Prefabs\\Obstacles\\TubeLarge.prefab",
+    "Assets\\Prefabs\\Obstacles\\TubeMedium.prefab",
+    "Assets\\Prefabs\\Obstacles\\TubeShort.prefab",
+    "Assets\\Prefabs\\Scenery\\BushDouble.prefab",
+    "Assets\\Prefabs\\Scenery\\BushSingle.prefab",
+    "Assets\\Prefabs\\Scenery\\BushTriple.prefab",
+    "Assets\\Prefabs\\Scenery\\Castle.prefab",
+    "Assets\\Prefabs\\Scenery\\CloudDouble.prefab",
+    "Assets\\Prefabs\\Scenery\\CloudSingle.prefab",
+    "Assets\\Prefabs\\Scenery\\CloudTriple.prefab",
+    "Assets\\Prefabs\\Scenery\\Mountain1.prefab",
+    "Assets\\Prefabs\\Scenery\\Mountain2.prefab",
+    "Assets\\Animations\\Blocks\\CoinQuestionMarkBlockInside.anim",
+    "Assets\\Animations\\Blocks\\MushroomQuestionMarkBlockInside.anim",
+    "Assets\\Animations\\Blocks\\QuestionMarkBlockIdle.anim",
+    "Assets\\Animations\\Blocks\\QuestionMarkBlockTouched.anim",
+    "Assets\\Animations\\Blocks\\StarQuestionMarkBlockInside.anim",
+    "Assets\\Animations\\Enemies\\GoombaWalk.anim",
+    "Assets\\Animations\\Enemies\\KoopaTroopaWalkLeft.anim",
+    "Assets\\Animations\\Enemies\\KoopaTroopaWalkRight.anim",
+    "Assets\\Animations\\Ui\\CoinUiIcon.anim"
+  ]
+}

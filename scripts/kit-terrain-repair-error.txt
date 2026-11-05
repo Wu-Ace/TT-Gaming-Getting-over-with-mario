@@ -1,0 +1,5 @@
+System.InvalidOperationException: Missing terrain tile 24
+  at KitTerrainRepair.Tile (System.Int32 n) [0x0003b] in E:\TT Gaming\Getting Over Goombas\Assets\Editor\KitTerrainRepair.cs:26 
+  at KitTerrainRepair.RepairGround (System.Collections.Generic.IEnumerable`1[T] renderers, System.Collections.Generic.List`1[T] evidence) [0x001e3] in E:\TT Gaming\Getting Over Goombas\Assets\Editor\KitTerrainRepair.cs:47 
+  at KitTerrainRepair.Repair () [0x0004c] in E:\TT Gaming\Getting Over Goombas\Assets\Editor\KitTerrainRepair.cs:74 
+  at KitTerrainRepair.RunRequested () [0x0001e] in E:\TT Gaming\Getting Over Goombas\Assets\Editor\KitTerrainRepair.cs:19 

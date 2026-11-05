@@ -1,0 +1,2 @@
+[True, True, True, True]
+Approximate support graph; not physical hammer traversal.

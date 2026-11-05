@@ -1,0 +1,18 @@
+{
+  "utc": "2026-11-05T07:11:20.369621+00:00",
+  "git": "No repository",
+  "files": {
+    "Assets/Scenes/Level02_Jungle.unity": "417df1f8e70d05ce3ef063b31252bcb63ba529728bfc1e21a0fdd3eb93c18735",
+    "Assets/Scripts/VerticalRidePlatform.cs": "4f7f4fb6439fe2416824064f26bdce483715eebaf32137f507444f4ee31112b3",
+    "Assets/Editor/Level02Designed.cs": "fa2e548eef592852ed31aee626baa963e7712a8cddbbba6d35666ba33dba9e60",
+    "Assets/Editor/Level02HorizontalBuilder.cs": "f58de9a4892537c663986f162f5ae2cec4cdb408c9e821e8d62022f21d422019",
+    "Assets/Editor/Level02HorizontalAcceptance.cs": "11013236cf4d3506a6ff60e63248860f229b797f1d3a47b2ec36dcaf20da5fb7",
+    "Assets/Editor/KitTerrainRepair.cs": "da09a7bae8c317e1b72d641f14e36befa8a539b0bee6276d52833edb7cc6b9b9",
+    "scripts/level02-horizontal.json": "6f73e56c06fae46a82a848571e4354a6c355be6fadecdbc66cc338da7526d051",
+    "scripts/prepare_level02_reference.py": "8e6d68d8ac36f86ff6ce44426704e60bffe33ee6fd70fe0ce0758500c7936f17",
+    "scripts/level02-designed-evidence/L02-map.png": "73ef98c4992959928f5c564f0ffbd5d69882c58b9e34d2eb15c871191651c34d",
+    "scripts/level02-horizontal-evidence/play-results.txt": "6f5e9f8bd68b6d54d5f96171f0037a7e0536bdfafd1bea14f0f4611ac82934ed",
+    "scripts/level02-horizontal-evidence/L02-star.png": "87399dbef88a9787621de13a31b24b8697438c10ed94f8c214a93b1f4347c8a4",
+    "scripts/level02-horizontal-evidence/L02-exit.png": "e21b81d278c6c3d2feb789c5da4d900fd407bbb597bcd08b632d5621e31a2c3d"
+  }
+}

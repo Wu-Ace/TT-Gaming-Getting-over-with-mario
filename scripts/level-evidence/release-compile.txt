@@ -1,0 +1,38 @@
+﻿Microsoft (R) Visual C# Compiler version 3.7.0-5.20367.1 (f96dcbb6)
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Assets\Scripts\Block\QuestionMarkBlock.cs(8,45): warning CS0649: Field 'QuestionMarkBlock.inside' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\ContactSoundEffect.cs(15,39): warning CS0649: Field 'ContactSoundEffect.changesWithMushroomEffect' is never assigned to, and will always have its default value false
+Assets\Scripts\Character\Control\TargetMovement.cs(11,44): warning CS0649: Field 'TargetMovement.bodyCenter' is never assigned to, and will always have its default value null
+Assets\Scripts\Ui\CoinPurseUi.cs(11,50): warning CS0649: Field 'CoinPurseUi.label' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\Control\ArmsSimulation.cs(7,46): warning CS0649: Field 'ArmsSimulation.hammer' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\Lifecycle\Death.cs(16,44): warning CS0649: Field 'Death.sfx' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\Control\ArmsSimulation.cs(8,44): warning CS0649: Field 'ArmsSimulation.hammerHead' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\PowerUp\TemporaryStrength.cs(16,44): warning CS0649: Field 'TemporaryStrength.startSfx' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\Control\ArmsSimulation.cs(9,44): warning CS0649: Field 'ArmsSimulation.center' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\PowerUp\TemporaryStrength.cs(17,44): warning CS0649: Field 'TemporaryStrength.endSfx' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\PowerUp\TemporaryGrowth.cs(20,46): warning CS0649: Field 'TemporaryGrowth.bodyChangingMass' is never assigned to, and will always have its default value null
+Assets\Scripts\Ui\CoinPurseUi.cs(12,50): warning CS0649: Field 'CoinPurseUi.totalLabel' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\PowerUp\TemporaryStrength.cs(18,40): warning CS0649: Field 'TemporaryStrength.color' is never assigned to, and will always have its default value 
+Assets\Scripts\Winning\WinThresholdDetection.cs(10,43): warning CS0649: Field 'WinThresholdDetection.flagAnimation' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\PowerUp\TemporaryStrength.cs(19,49): warning CS0649: Field 'TemporaryStrength.hammer' is never assigned to, and will always have its default value null
+Assets\Scripts\Enemy\EnemyMovement.cs(8,44): warning CS0649: Field 'EnemyMovement.leftLimit' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\PowerUp\TemporaryStrength.cs(20,49): warning CS0649: Field 'TemporaryStrength.hammerHandleExtension' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\PowerUp\TemporaryGrowth.cs(15,44): warning CS0649: Field 'TemporaryGrowth.startSfx' is never assigned to, and will always have its default value null
+Assets\Scripts\Enemy\EnemyMovement.cs(9,44): warning CS0649: Field 'EnemyMovement.rightLimit' is never assigned to, and will always have its default value null
+Assets\Scripts\Enemy\EnemyDeath.cs(11,45): warning CS0649: Field 'EnemyDeath.aliveEntity' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\PowerUp\TemporaryGrowth.cs(21,41): warning CS0649: Field 'TemporaryGrowth.timeLeftUi' is never assigned to, and will always have its default value null
+Assets\Scripts\Enemy\EnemyDeath.cs(12,45): warning CS0649: Field 'EnemyDeath.deadEntity' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\Lifecycle\FallDetection.cs(8,44): warning CS0649: Field 'FallDetection.deathThreshold' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\Control\TargetMovement.cs(15,39): warning CS0649: Field 'TargetMovement.autoAdjustmentEnabled' is never assigned to, and will always have its default value false
+Assets\Scripts\Winning\Clock.cs(11,38): warning CS0649: Field 'Clock.initialSecondsPassed' is never assigned to, and will always have its default value 0
+Assets\Scripts\Character\Control\TargetMovement.cs(16,46): warning CS0649: Field 'TargetMovement.followedBody' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\ContactSoundEffect.cs(10,44): warning CS0649: Field 'ContactSoundEffect.sfx' is never assigned to, and will always have its default value null
+Assets\Scripts\Ui\ClockUi.cs(9,50): warning CS0649: Field 'ClockUi.minutesUi' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\PowerUp\TemporaryStrength.cs(21,41): warning CS0649: Field 'TemporaryStrength.timeLeftUi' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\PowerUp\TemporaryGrowth.cs(16,44): warning CS0649: Field 'TemporaryGrowth.endSfx' is never assigned to, and will always have its default value null
+Assets\Scripts\Ui\ClockUi.cs(10,50): warning CS0649: Field 'ClockUi.secondsUi' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\PowerUp\TemporaryGrowth.cs(17,44): warning CS0649: Field 'TemporaryGrowth.cauldron' is never assigned to, and will always have its default value null
+Assets\Scripts\Ui\ClockUi.cs(11,50): warning CS0649: Field 'ClockUi.millisecondsUi' is never assigned to, and will always have its default value null
+Assets\Scripts\Enemy\EnemyDeath.cs(13,44): warning CS0649: Field 'EnemyDeath.sfx' is never assigned to, and will always have its default value null
+Assets\Scripts\Character\PowerUp\TemporaryGrowth.cs(18,44): warning CS0649: Field 'TemporaryGrowth.hammer' is never assigned to, and will always have its default value null

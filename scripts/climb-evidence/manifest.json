@@ -1,0 +1,615 @@
+{
+  "utc": "2026-11-04T12:49:38.772794+00:00",
+  "git": "no repository",
+  "note": "Post-check content snapshot, not proof of full physics traversal. Earlier unisolated tests may have saved normal menu star records.",
+  "files": [
+    {
+      "path": "ai-handoff.md",
+      "sha256": "40cd066b8d5ce7ed5b67a25b6b45637f74a7cc885dd9245397491489456e7230"
+    },
+    {
+      "path": "Assets/Editor/CampaignAcceptance.cs",
+      "sha256": "93b8baf2ec1c0567dde1f537db306f6e5cbdd9dc308b0963c2ba2eedfac74949"
+    },
+    {
+      "path": "Assets/Editor/ClimbCourseBuilder.cs",
+      "sha256": "b3b7b61e63d63afcce485c9a4f71c10647d7e9f309cf45d1c67661ee72b2f3b2"
+    },
+    {
+      "path": "Assets/Editor/ClimbSceneReview.cs",
+      "sha256": "a0b1c521f676f5b939bb3cb0d7ed99e2ea857d083be348f38c4593579a1603b9"
+    },
+    {
+      "path": "Assets/Scenes/Level02_Jungle.unity",
+      "sha256": "6637928f84275a9f2f005131760d6470aba6725136c76970c4c27156f26f531d"
+    },
+    {
+      "path": "Assets/Scenes/Level02_Jungle.unity.meta",
+      "sha256": "17a01d2d5024c9110ade30d409de45013e6bc6827a5cffe83818f5a560be9b43"
+    },
+    {
+      "path": "Assets/Scenes/Level03_Beach.unity",
+      "sha256": "99f2d5dd22c5d748e9cdf5d5bf9277e864cc8521eb562f1685bd95791c1bd5af"
+    },
+    {
+      "path": "Assets/Scenes/Level03_Beach.unity.meta",
+      "sha256": "bf4dd8e5268fc1c9397ffe45c81808e41ab2c90f61bc784754d8d2f7800f73d6"
+    },
+    {
+      "path": "Assets/Scenes/Level04_Town.unity",
+      "sha256": "6adf324abe9905d78e88279d32e605d104982e9540a94c67c4f57ed16b0eecd6"
+    },
+    {
+      "path": "Assets/Scenes/Level04_Town.unity.meta",
+      "sha256": "1af39f2d73ca86817d2ceb4754ff31d3a1fadfad631e4a19bc94e51ad2e35775"
+    },
+    {
+      "path": "Assets/Scenes/Level05_Cave.unity",
+      "sha256": "44a1d8812337af7fd7f6ca39dd6a139cd3b7305c8ddd580b5a6ccbe09d91f672"
+    },
+    {
+      "path": "Assets/Scenes/Level05_Cave.unity.meta",
+      "sha256": "27beee2489bd50be0868218782759424ae252405ee744fe959c2e9a02acf54ba"
+    },
+    {
+      "path": "Assets/Scenes/Level06_Grassland_Winter.unity",
+      "sha256": "9e45e25b841e531fb8871f543da65b70b75da8d498784fb409228ad085de5ad6"
+    },
+    {
+      "path": "Assets/Scenes/Level06_Grassland_Winter.unity.meta",
+      "sha256": "07dd3f8caade6d965c60c7b5a81d589ba724091229d69bdbeb4c518fd06246cf"
+    },
+    {
+      "path": "Assets/Scenes/Level07_Ice.unity",
+      "sha256": "a1e36571ef98c8cef13a50fae66ed9b2fa633aeff7d642698836396ebe523cd9"
+    },
+    {
+      "path": "Assets/Scenes/Level07_Ice.unity.meta",
+      "sha256": "0b0bc7ae1b5d5fc5733bb46400fe99ae71e91079980975e07fde09f420e0bb7e"
+    },
+    {
+      "path": "Assets/Scenes/Level08_Castle.unity",
+      "sha256": "669d6f59d464dd72ddfc95d7fc4ddc5198dc64fb7dfa257dd42277cfa3eb198a"
+    },
+    {
+      "path": "Assets/Scenes/Level08_Castle.unity.meta",
+      "sha256": "9718d12839f3467af7d1cb43e06b2b9b3dfc1711b7f96ced3cc33456f657e9af"
+    },
+    {
+      "path": "Assets/Scenes/Level09_Volcano.unity",
+      "sha256": "f620b7ad32fd79847589a4b7afd52a2565677f8f796b92fd934466dcd3f66a74"
+    },
+    {
+      "path": "Assets/Scenes/Level09_Volcano.unity.meta",
+      "sha256": "396474164c23890ff57299a053d3844d62e5e09d6eaaab1ec93a7c3605390e94"
+    },
+    {
+      "path": "Assets/Scenes/Level10_Sky.unity",
+      "sha256": "c770c4f71f78b6c04bc5de81cba8a979f2d90c592ac429dc22edba608f666fec"
+    },
+    {
+      "path": "Assets/Scenes/Level10_Sky.unity.meta",
+      "sha256": "e4646b65e8a82188289f1d8bebf65272208236cbf5bb0b69505260959c6152dc"
+    },
+    {
+      "path": "Assets/Scenes/MainMenu.unity",
+      "sha256": "9132854c03264235a0396c1b9521c6edecf5a9e4926b4aa8dedde1aa05d3840b"
+    },
+    {
+      "path": "Assets/Scenes/MainMenu.unity.meta",
+      "sha256": "e17271e626c537b7d36974c096552b0755fc6e51add58fb3c5e38db6043d8749"
+    },
+    {
+      "path": "Assets/Scenes/OneOneScene.unity",
+      "sha256": "02a1fb6ee693ea710374ad957814d8fadb4633adf96f1c87d3c632c19999ea60"
+    },
+    {
+      "path": "Assets/Scenes/OneOneScene.unity.meta",
+      "sha256": "d4a30a2dd8322ca15c8c0fe5d67e72608515fbac5d5f6e3d98d6abc5dd586b09"
+    },
+    {
+      "path": "Assets/Scripts/Block/CoinBlock.cs",
+      "sha256": "043228f906f3fa83d443ee877cde141894d69b1687c7797787510b0dac085081"
+    },
+    {
+      "path": "Assets/Scripts/Block/CoinBlock.cs.meta",
+      "sha256": "8a4b4da5937bd5d5a64456292493ba7b68ea1e5a8677b4f3ea3d08e5f7bfe8e3"
+    },
+    {
+      "path": "Assets/Scripts/Block/MushroomBlock.cs",
+      "sha256": "a6a7250406b49663a9d8aa4d95ff506f0c501b4603aaf0fc806607d6973fac85"
+    },
+    {
+      "path": "Assets/Scripts/Block/MushroomBlock.cs.meta",
+      "sha256": "56ebf66351e3f5bbe0c0d9293a7e8a5282ea0d242d3ef10a2775c8d8f08c1ffd"
+    },
+    {
+      "path": "Assets/Scripts/Block/QuestionMarkBlock.cs",
+      "sha256": "2efab1e9dfc85304916b8653b9b15ece1c5532b765715fa118aa00bf12ff6998"
+    },
+    {
+      "path": "Assets/Scripts/Block/QuestionMarkBlock.cs.meta",
+      "sha256": "2d1281f4bbb6160aed3a99ade1eec11ad0a3950a4eddac3941f686e0978ddca0"
+    },
+    {
+      "path": "Assets/Scripts/Block/StarBlock.cs",
+      "sha256": "abb25a654ce8bdcf09a6b815831e0edb245f9c6e3499fea9c824f075154b8b29"
+    },
+    {
+      "path": "Assets/Scripts/Block/StarBlock.cs.meta",
+      "sha256": "52bcfffff8edccb68be31b70b966b6b9f25de87a6118ee83ffb468eb6ceb5c5d"
+    },
+    {
+      "path": "Assets/Scripts/Block.meta",
+      "sha256": "97212a382ef1823f4ee846c7525617053d6870672e51671e3746007d17a9b9ed"
+    },
+    {
+      "path": "Assets/Scripts/CampaignEnemy.cs",
+      "sha256": "c5d7e763adf00067f41ec30d924349b3cb24e6c50ee2eecd09a0f241ff1e2546"
+    },
+    {
+      "path": "Assets/Scripts/CampaignEnemy.cs.meta",
+      "sha256": "37acfc50c23cb965252eaf2919b92a4f5efe80d13018cec5d4269d63cfab3d79"
+    },
+    {
+      "path": "Assets/Scripts/CampaignInteractable.cs",
+      "sha256": "6729a57c7e38d0569e724ddb2dbe7983a0708c99ceb15a9582da6a9b8486f67b"
+    },
+    {
+      "path": "Assets/Scripts/CampaignInteractable.cs.meta",
+      "sha256": "2efcee5ee87e8d962173809e7ba5b2dcb86070f77bcd43329efdbec51f2fc1c9"
+    },
+    {
+      "path": "Assets/Scripts/CampaignLevel.cs",
+      "sha256": "2836f6701951c9dff0e33e3823c881eb2646c3046da58353155c6e6a8faceb93"
+    },
+    {
+      "path": "Assets/Scripts/CampaignLevel.cs.meta",
+      "sha256": "436f2f86bb82016ba0a5937d82eb7a08196ace6dad4a5eeda8bb940a7858c759"
+    },
+    {
+      "path": "Assets/Scripts/Character/ContactSoundEffect.cs",
+      "sha256": "02fc31821ce914a1320f740a2c77805dfa0e85ad7daed263a4f98cfa9ee2a564"
+    },
+    {
+      "path": "Assets/Scripts/Character/ContactSoundEffect.cs.meta",
+      "sha256": "aec17ec03990e828eb45b3366510a06ddd791a04513187c58dbc08f6b9f3b7be"
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/ArmsSimulation.cs",
+      "sha256": "3165938f4cb4dc95ef65b980dced0235d8a8f1b4fd006cfa246b9c991292429c"
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/ArmsSimulation.cs.meta",
+      "sha256": "4d07d7399183b5a334dd573316c78299b6a43f5ae2585171e7d473c07cc83853"
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/CollisionDetection.cs",
+      "sha256": "e2defe2179b304f73cb78e702a8a479e01fedf1b9da6f7a426f76784d51566ff"
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/CollisionDetection.cs.meta",
+      "sha256": "7ce3aadd041e3a8ff138ab3515065f7f40e53ed050102c73ec15f0c177c86cd4"
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/TargetMovement.cs",
+      "sha256": "6fd983dc6e4312464e4af0983b9fc8552cca8d92e8e3854cd3acd9cb442ef64c"
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/TargetMovement.cs.meta",
+      "sha256": "9471c725d4b8bba6a4c83ba7dc8696629a0eab8e2b86cb994769677125c89fe2"
+    },
+    {
+      "path": "Assets/Scripts/Character/Control.meta",
+      "sha256": "0dbd8a53afec5459b6d03d0e02760a670d04cd834c3c5195d769ef927d88d323"
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/Death.cs",
+      "sha256": "b8bdfded86b4cfdb50710319770e17c6c521e0c5fa66ff7283f1539265b7ccc4"
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/Death.cs.meta",
+      "sha256": "78248f64a5fe3cd9935e2b6afa015c7509470532c31e00906d1e8fa069cc6ad9"
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/EnemyContactDetection.cs",
+      "sha256": "bb45b7b6a99d69c527a8959d6753eb314f71feecd7c3eb4e5a77ee6fe6bc0856"
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/EnemyContactDetection.cs.meta",
+      "sha256": "25d5d1a7a340da479e3c91b4d54a55968e6824c7befb13c5da3c647fee9be961"
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/FallDetection.cs",
+      "sha256": "0fe430fb5a18151fed2abc5c311659e1df82d6e5ecf1abce84d170e89bc06dca"
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/FallDetection.cs.meta",
+      "sha256": "083186d82f4c2a7d17d5307b3b0523baededc380d854bf99de07293b76d78790"
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle.meta",
+      "sha256": "8c49c843999d3873d75019835740bb6e05425e88cd7cfc877e060741ea3b886f"
+    },
+    {
+      "path": "Assets/Scripts/Character/PowerUp/TemporaryGrowth.cs",
+      "sha256": "03a601160f9441cf32759064a22fb3d6f7b63f57d0121a5ebf52be703555c080"
+    },
+    {
+      "path": "Assets/Scripts/Character/PowerUp/TemporaryGrowth.cs.meta",
+      "sha256": "671ea597784f408bcb7e09a3a979f8863dbfb36dcb6e20bce6a7080b269a0a5f"
+    },
+    {
+      "path": "Assets/Scripts/Character/PowerUp/TemporaryStrength.cs",
+      "sha256": "d7685de5787a6a947e83298236671cdc9738dc77c96d331fab5810aeef209f09"
+    },
+    {
+      "path": "Assets/Scripts/Character/PowerUp/TemporaryStrength.cs.meta",
+      "sha256": "dda214c0255f46c86961e25a488a53ad6f1b87338c39cf5684f73880f31f201a"
+    },
+    {
+      "path": "Assets/Scripts/Character/PowerUp.meta",
+      "sha256": "04b623f4bb300740817eb7bf0fff3e16c3c7bc3287f339831bcbb4ea3f15488b"
+    },
+    {
+      "path": "Assets/Scripts/Character.meta",
+      "sha256": "1c4df4979b6532b7c244cf90c110568f14eeb4fcc5c5eeace72fb8fd401c50c6"
+    },
+    {
+      "path": "Assets/Scripts/Enemy/EnemyDeath.cs",
+      "sha256": "4cb6ef3fb234d3fa734636416c7ab6089e509f9b9183bcb4068608806cd93511"
+    },
+    {
+      "path": "Assets/Scripts/Enemy/EnemyDeath.cs.meta",
+      "sha256": "1f21b679957900066ce1df702479e8bcead2f342a6cf6ef6656154cd18181e10"
+    },
+    {
+      "path": "Assets/Scripts/Enemy/EnemyMovement.cs",
+      "sha256": "248cbd5264c07b911906d70298e39d1e3e13607d8de4262abc794f4f0605ab30"
+    },
+    {
+      "path": "Assets/Scripts/Enemy/EnemyMovement.cs.meta",
+      "sha256": "e22398c4e814c09ef19a5078fdf59dbcf1d09197c27f9865f243f07c8ef858da"
+    },
+    {
+      "path": "Assets/Scripts/Enemy/KoopaTroopaShellContactDetection.cs",
+      "sha256": "ef05f9d200bd288c48dd4534945e6308bd309ea409bd5f493ebfc29630f33ae2"
+    },
+    {
+      "path": "Assets/Scripts/Enemy/KoopaTroopaShellContactDetection.cs.meta",
+      "sha256": "f40dceff4f00498febc938c3bfa03227624bc76ccdd8fe5c47e5e1bb7898ee98"
+    },
+    {
+      "path": "Assets/Scripts/Enemy/KoopaTroopaShellMovement.cs",
+      "sha256": "24b5c3f8f07ff471f3a82741d5a34296dba3fde1af042c0ec036ba2f84706240"
+    },
+    {
+      "path": "Assets/Scripts/Enemy/KoopaTroopaShellMovement.cs.meta",
+      "sha256": "c9906bd4692f76548aa8d0e76a1dc92a0601d8d336ff332e2ab34ee7b75d51ae"
+    },
+    {
+      "path": "Assets/Scripts/Enemy.meta",
+      "sha256": "69416a35b9318f10a7bd75d576aae9454a7e5d91eac8b72ac01773e41b5e0925"
+    },
+    {
+      "path": "Assets/Scripts/Extension/CinemachineLockYAxisExtension.cs",
+      "sha256": "909e74af962d1be32b5358928a070c141745d1b34d0af46d507725b98202551d"
+    },
+    {
+      "path": "Assets/Scripts/Extension/CinemachineLockYAxisExtension.cs.meta",
+      "sha256": "ee13cf14f12a2b157e8dbc30092767b6fb01a8082de600c688932164201c3da8"
+    },
+    {
+      "path": "Assets/Scripts/Extension/MonoBehaviourExtensions.cs",
+      "sha256": "7d81d0108db906760c3254efd422d59dbcda842c673c5b5b36c3e194e6f8a782"
+    },
+    {
+      "path": "Assets/Scripts/Extension/MonoBehaviourExtensions.cs.meta",
+      "sha256": "ba289ecb4f7123f84861f9601c7b6927d13a292936691ea4d06ca6163578752e"
+    },
+    {
+      "path": "Assets/Scripts/Extension.meta",
+      "sha256": "99cb7599ce234797889878aee373b5b1fb784e31da703a1dad8638deb4e921bd"
+    },
+    {
+      "path": "Assets/Scripts/GameMenuUI.cs",
+      "sha256": "26a5af66f72435dc64355e94287ce1dc05e4be572fb617b9db2f455efb1a9607"
+    },
+    {
+      "path": "Assets/Scripts/GameMenuUI.cs.meta",
+      "sha256": "cda51f834f8d0da1570f3cd6829bc2a9ef66e47c09142b7ddb5af4e781a71c40"
+    },
+    {
+      "path": "Assets/Scripts/GiftConfiguration.cs",
+      "sha256": "f242a0c40a7735bf6359ad1461eed9a3e16c2dc78df0d4d5a911b25207dc028f"
+    },
+    {
+      "path": "Assets/Scripts/GiftConfiguration.cs.meta",
+      "sha256": "3d1bdddcb8b3895668e5ccc5d7b427a0c2751fb41861faf3724dd17afef7564e"
+    },
+    {
+      "path": "Assets/Scripts/GiftKeyboardTester.cs",
+      "sha256": "5629c125adabccbcfe337419a0c4fc6b24dac951e348a4fe9e33a3ab0483197a"
+    },
+    {
+      "path": "Assets/Scripts/GiftKeyboardTester.cs.meta",
+      "sha256": "84bc1569d7898b74bde5061239c5c19c40474dd63196b2a104985164d594872a"
+    },
+    {
+      "path": "Assets/Scripts/GiftRuntime.cs",
+      "sha256": "40e3165031e7e9d898f18cd2bf4a1e8a9ff30e19aa1b837142add1445af5eb2a"
+    },
+    {
+      "path": "Assets/Scripts/GiftRuntime.cs.meta",
+      "sha256": "6df2c8a4bd977031d743186a02e64dd06fd1707f4bda3af3db6275f3e2cb0197"
+    },
+    {
+      "path": "Assets/Scripts/KitLandscape.cs",
+      "sha256": "8e0951f3efe9052ded54d516909ceae6f57a05fed022ec8b9d33fcf187a15b95"
+    },
+    {
+      "path": "Assets/Scripts/KitLandscape.cs.meta",
+      "sha256": "9d0308a967da9636396ee5e4379288436deab400e87ce29f1608e1e30c229f22"
+    },
+    {
+      "path": "Assets/Scripts/Ui/ClockUi.cs",
+      "sha256": "8ab32d5ba54e05043c7f3e1ea0ce6939aeaaa7c315bda82e02b69f06bd6abe06"
+    },
+    {
+      "path": "Assets/Scripts/Ui/ClockUi.cs.meta",
+      "sha256": "8474d6d342a1e9fdc644f9c012a3c40de779625851161771a009f2dcaeb55adc"
+    },
+    {
+      "path": "Assets/Scripts/Ui/CoinPurseUi.cs",
+      "sha256": "1c47301fd3307c18e22b7ff0821722257ef4ec86c31befd76465e222f3b113a3"
+    },
+    {
+      "path": "Assets/Scripts/Ui/CoinPurseUi.cs.meta",
+      "sha256": "deeceb7fe7df9b74ce304e42af8be332f5a73b63481694e9f7d7c2402ab15669"
+    },
+    {
+      "path": "Assets/Scripts/Ui/GameOverUi.cs",
+      "sha256": "e7ee4c840a575cfcda6f283c14120511c07e5ea4ee276d5652aa103fcd53e8e4"
+    },
+    {
+      "path": "Assets/Scripts/Ui/GameOverUi.cs.meta",
+      "sha256": "1a0f45a1c24ac47d3150402fdec509dfcb87687f7e15f372218de5f9425b1bae"
+    },
+    {
+      "path": "Assets/Scripts/Ui/RestartGameButton.cs",
+      "sha256": "5ffdf6114a65022b828381b177b18daca30f1f1fbcc52be4f869830f96a8c770"
+    },
+    {
+      "path": "Assets/Scripts/Ui/RestartGameButton.cs.meta",
+      "sha256": "905a55b8475b2c6af702cd077f7df925b31b01df15769b5fdd03bd29fc1947cf"
+    },
+    {
+      "path": "Assets/Scripts/Ui.meta",
+      "sha256": "fb74cefcd7534c874b06937350b1a98ef541ec28d2c811969ac80ce71ada55e6"
+    },
+    {
+      "path": "Assets/Scripts/Winning/Clock.cs",
+      "sha256": "d8c6aedf3d1c75ea6eef33d83eaf624074e6448353cd3a376524b7455ff37b00"
+    },
+    {
+      "path": "Assets/Scripts/Winning/Clock.cs.meta",
+      "sha256": "36c65702540bc101f048653bb72b503dac2bda2d8035338c75deb74bd7ba13c4"
+    },
+    {
+      "path": "Assets/Scripts/Winning/CoinPurse.cs",
+      "sha256": "845244348eb6e4bedb8ecc413d45cb7b2e6e33abce5767a91916de736176da74"
+    },
+    {
+      "path": "Assets/Scripts/Winning/CoinPurse.cs.meta",
+      "sha256": "c8dec71aff68d1534f930908b46c09558f930ca80da7091463231761953f6d2e"
+    },
+    {
+      "path": "Assets/Scripts/Winning/FloatingCoin.cs",
+      "sha256": "2c0e6f0e2324a032aaa152ffbd555801e92e6b2dec925128688366160f9242b2"
+    },
+    {
+      "path": "Assets/Scripts/Winning/FloatingCoin.cs.meta",
+      "sha256": "79b596523351b9d49b5acc3b8fc06dc58bd368a44134a07c5f95ed72a3267a2c"
+    },
+    {
+      "path": "Assets/Scripts/Winning/WinThresholdDetection.cs",
+      "sha256": "da503244bb9fd981a0674d287db50f16793360de5908f775d80a55983561a39d"
+    },
+    {
+      "path": "Assets/Scripts/Winning/WinThresholdDetection.cs.meta",
+      "sha256": "a1ccf2e31b12d3c6d5d83a3228608ae206a46d6f08a391174641afce97e834b8"
+    },
+    {
+      "path": "Assets/Scripts/Winning.meta",
+      "sha256": "58f2e0fb371fe618ba245ed6b87ac5fc8c99ca9cb4855f2dc753c64a912075aa"
+    },
+    {
+      "path": "scripts/check_climb_routes.py",
+      "sha256": "a21def12e6abc280ce03899e613ed3df1da88fc22e7b93debf6150dbcbffb43d"
+    },
+    {
+      "path": "scripts/CLIMB-COURSES.md",
+      "sha256": "0629a67dd44de13c24f83d96b2cdf133f022eee74a5e1ebfd1782108205c0b64"
+    },
+    {
+      "path": "scripts/climb-evidence/build.txt",
+      "sha256": "4c166b927b18410940889f2a652706467b119f7d1308428cfff731d5a962f5ab"
+    },
+    {
+      "path": "scripts/climb-evidence/generation.txt",
+      "sha256": "267c6816b0333db090bb878e836674fe0285c24c638a1f801ac42cee1f04fe5d"
+    },
+    {
+      "path": "scripts/climb-evidence/L01-exit.png",
+      "sha256": "ec923f84d0770ac430024106cbdbc1c5e95d3b700b4dd10383c6aae41749287d"
+    },
+    {
+      "path": "scripts/climb-evidence/L01-star.png",
+      "sha256": "8701bbd49a057f7f1f640f1cd647a642015ce9158bd87e748b581a6e550bc3db"
+    },
+    {
+      "path": "scripts/climb-evidence/L02-exit.png",
+      "sha256": "f433651f893159797eaf333633ad41270fae9be04d06d72689e92ee41aa8bf70"
+    },
+    {
+      "path": "scripts/climb-evidence/L02-map.png",
+      "sha256": "9e32a1ddcbe9da3532f6c4cd5369cc17251fc99d09894affb198f437f7d27db5"
+    },
+    {
+      "path": "scripts/climb-evidence/L02-star.png",
+      "sha256": "0b5f27ceb3f67a017aa8f68579654e369e8745e56dc0a80450fa068e75869d1b"
+    },
+    {
+      "path": "scripts/climb-evidence/L03-exit.png",
+      "sha256": "133edd40d7e7eb122ae8e5d9a4befbd391a54ffe1f71d3cc3e62c9a321ab9a51"
+    },
+    {
+      "path": "scripts/climb-evidence/L03-map.png",
+      "sha256": "ea68ef048faae501fea89a0dc305c57ee2cead8ecf11e88f78f87a1cbf11e6f9"
+    },
+    {
+      "path": "scripts/climb-evidence/L03-star.png",
+      "sha256": "b5383d650abe3a21646ebb558807c0981ba1357d2c3427643628f403222c7795"
+    },
+    {
+      "path": "scripts/climb-evidence/L04-exit.png",
+      "sha256": "a7f090ce346d8d79ac0247c859a2fb53855bca375b9d68e152a88fc6d5072481"
+    },
+    {
+      "path": "scripts/climb-evidence/L04-map.png",
+      "sha256": "2737b0aadd9888925adee60c8fa4651ca83ff81e50914e888d34f00a575f9652"
+    },
+    {
+      "path": "scripts/climb-evidence/L04-star.png",
+      "sha256": "c72744fd4c10ba35714afed5903251fe7ae0c2d1cfc1abb2b4576c496e4926a9"
+    },
+    {
+      "path": "scripts/climb-evidence/L05-exit.png",
+      "sha256": "2c5e38befa62ae96f2d0b9121c7436ed00243d113e5973d20b52c0be6fbe93ea"
+    },
+    {
+      "path": "scripts/climb-evidence/L05-map.png",
+      "sha256": "4544cd776adcdb86f5d25673eb6cd6920eeb874a64d3f46f710eeca64c33872a"
+    },
+    {
+      "path": "scripts/climb-evidence/L05-star.png",
+      "sha256": "fedc015508c5d923924dfdabab7843f32091d1377fecf6d41b352cedc6f3081b"
+    },
+    {
+      "path": "scripts/climb-evidence/L06-exit.png",
+      "sha256": "87d6f721fa8eb1d4715b3303fd44a38200d2e84389dec9ca31a1917162928685"
+    },
+    {
+      "path": "scripts/climb-evidence/L06-map.png",
+      "sha256": "ec84f57d49e145caac58f5be010b0e88d8d6d4276955e666358173478937dde4"
+    },
+    {
+      "path": "scripts/climb-evidence/L06-star.png",
+      "sha256": "e5472df2c18ef3b845756c1137e24441d465f2477a4475c109e4fd43bc3ef1f0"
+    },
+    {
+      "path": "scripts/climb-evidence/L07-exit.png",
+      "sha256": "9adc2e89957d826612c7ca5cb7822a567484e96aeb41e30b7ec84e3f1b7a4619"
+    },
+    {
+      "path": "scripts/climb-evidence/L07-map.png",
+      "sha256": "7fd79db84d0b539c6ddb05eef96b911ab0f152b99791f6c579efce01740058b6"
+    },
+    {
+      "path": "scripts/climb-evidence/L07-star.png",
+      "sha256": "ae023d41056dd48a6e53ce30f0cef342f6c209a8d0e387aac1cf8dd68d4728a8"
+    },
+    {
+      "path": "scripts/climb-evidence/L08-exit.png",
+      "sha256": "fefce7a23646a0ef1cf8aa93cca82e1534be5fc267559399da5c755369ed9406"
+    },
+    {
+      "path": "scripts/climb-evidence/L08-map.png",
+      "sha256": "4e0dcff2b89a1ee5f3c295f1aa7c44f98f2e0fdf9755f51547bee5858a74b8f1"
+    },
+    {
+      "path": "scripts/climb-evidence/L08-star.png",
+      "sha256": "3f7272d8020860234e6aa3c9425cce59f3d28e8d6801964bdc18d0b2be51622d"
+    },
+    {
+      "path": "scripts/climb-evidence/L09-exit.png",
+      "sha256": "a91bee78a173537d7fcec19f6deb3ed116f01213b6c5648ea91f47a63955dd5b"
+    },
+    {
+      "path": "scripts/climb-evidence/L09-map.png",
+      "sha256": "c9c11d5f6add68300a0e669331ea61d58872ff8e6a67a6e19cf11a7dd7136de2"
+    },
+    {
+      "path": "scripts/climb-evidence/L09-star.png",
+      "sha256": "3e9d36caf85c2a65a5a6ddce1ef9c2b2f12dc78a047fb30351fe4edfcfa89c4c"
+    },
+    {
+      "path": "scripts/climb-evidence/L10-exit.png",
+      "sha256": "276343142b9764451b200abb70e8360ad0d00502cc6c089bf796c69d578f1ce8"
+    },
+    {
+      "path": "scripts/climb-evidence/L10-map.png",
+      "sha256": "5261318378bb403c4e3f43f97c8c3c4ad4f03463f09fbf3512cc42002b8401f1"
+    },
+    {
+      "path": "scripts/climb-evidence/L10-star.png",
+      "sha256": "a4f27a7976f04ff001511a1a982f6c8e2d3861adc3126d8ac81a6b8d0b4a98dd"
+    },
+    {
+      "path": "scripts/climb-evidence/maps-contact.png",
+      "sha256": "c1582b37797ba94221e55e3b5bf5b7745a99fb84fb29506190f4a72ff8afcfbd"
+    },
+    {
+      "path": "scripts/climb-evidence/play-results.txt",
+      "sha256": "d912ab28525ebe644d024951ebc90aee9959c8d344a198355df5a4226dea5bf0"
+    },
+    {
+      "path": "scripts/climb-evidence/route-graph.txt",
+      "sha256": "0a34cf17cbff797aa46a91756558c1d48cb56a8619bfd4c1f3639f7be63868fb"
+    },
+    {
+      "path": "scripts/climb-evidence/scene-review.txt",
+      "sha256": "c88a0a39763e3f6cec786f8d7c8f7ea7ee03faf053ad88a879938889b29dc6ac"
+    },
+    {
+      "path": "scripts/climb-plans/L02.json",
+      "sha256": "52ca3dc9c952775330e2d121934667d7cc1bcf18ad84a3a2cb2d4d0aaf0b8b09"
+    },
+    {
+      "path": "scripts/climb-plans/L03.json",
+      "sha256": "353e7feefb037c5b203efe134c9868c09855cdf7f12a36e585530fd1db799e91"
+    },
+    {
+      "path": "scripts/climb-plans/L04.json",
+      "sha256": "d7b46fe352501827b1950384243004dea326378bafe099f1e80dab80478e3c5a"
+    },
+    {
+      "path": "scripts/climb-plans/L05.json",
+      "sha256": "bed8e3bdf59bf5d6d74a1cf42d3e444f22fa293466dfedffc382e7cc82b83e34"
+    },
+    {
+      "path": "scripts/climb-plans/L06.json",
+      "sha256": "c426105e11d6a20d685f23d63b148b10f4b2316e6e2b82f1b346eeee156a866b"
+    },
+    {
+      "path": "scripts/climb-plans/L07.json",
+      "sha256": "d503b65cbcf6ba3f7865376a941f60cca20cf17df0c8ce3f8579ec1486e0854d"
+    },
+    {
+      "path": "scripts/climb-plans/L08.json",
+      "sha256": "ec68df3efa9fa139d51c20a4097b49fc950bbbd37c5245af153e4119ab0ee455"
+    },
+    {
+      "path": "scripts/climb-plans/L09.json",
+      "sha256": "3e07513fc67729b0861e6ce97cc64d91d7d8045f008c08f068ee0191df234a33"
+    },
+    {
+      "path": "scripts/climb-plans/L10.json",
+      "sha256": "c4ce8505243ed2d9d4c687c9350cba6d6ba35909c53e361e916b5d67c3243d19"
+    },
+    {
+      "path": "scripts/prepare_climb_courses.py",
+      "sha256": "0c04307f26298c79ef724c38de6bd390159981f22bbf5051b60a9d4ada9d51ed"
+    }
+  ]
+}

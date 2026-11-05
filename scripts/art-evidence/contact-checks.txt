@@ -1,0 +1,1 @@
+PASS: 68 pillar/ground contact records across Level prefab and scene. Pixel grass masks match world-space visible pillar footprints; 13 unique footprints. No whole-cell center approximation.

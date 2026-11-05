@@ -1,0 +1,12 @@
+Actual Play collision/state observation; isolated saves. Contact probe is Character-layer physics, not a mouse-controlled traversal.
+PASS Physics contact activates coin block once
+PASS Repeated physical contact does not duplicate coin reward
+PASS Star block immediately grants 3x force and torque
+PASS Strength expires and restores base values
+PASS Mushroom contact enlarges cauldron to 1.5x
+PASS Growth expires and restores scale
+PASS Koopa top-contact handler creates active shell
+PASS Shell actually moves during Play
+PASS True defeat disables shell movement
+PASS Defeated shell cleans up
+NOT RUN: manual mouse traversal, actual stomp entry and shell-victim collision.

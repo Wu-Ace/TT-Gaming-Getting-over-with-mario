@@ -1,0 +1,418 @@
+{
+  "utc": "2026-11-04T10:52:22.162332+00:00",
+  "git": "no repository",
+  "files": [
+    {
+      "path": "ai-handoff.md",
+      "sha256": "a57a31fd2dd1f62630adb42bdee4de714f79256cfb483c6ae8d90157cfa873fb"
+    },
+    {
+      "path": "Assets/Editor/CampaignAcceptance.cs",
+      "sha256": "d85275355ab079ea6c8319e10dd0923e6544434cf45df38b1d1877cdd4c60a01"
+    },
+    {
+      "path": "Assets/Editor/MarioReferenceBuilder.cs",
+      "sha256": "770b542a14d98d5be15e9dde4907bdf3de99510a79793746025f1773e2adc8e9"
+    },
+    {
+      "path": "Assets/Scenes/Level02_Jungle.unity",
+      "sha256": "e380c6a465e37148816ffc9d3c6baca1225f424e7390fb58a11871778906f37a"
+    },
+    {
+      "path": "Assets/Scenes/Level03_Beach.unity",
+      "sha256": "8d486d130035802d2b5495950999e6099f124b9d0d07d0e772d2e8f21d7a3356"
+    },
+    {
+      "path": "Assets/Scenes/Level04_Town.unity",
+      "sha256": "2cacf7cb9ea1fbd82862897676d7e4051af9f7800a9a182ca44b2d2c0d7401df"
+    },
+    {
+      "path": "Assets/Scenes/Level05_Cave.unity",
+      "sha256": "93bf08f60352408cbd0a8c756bba6e472f772a89745763aceb36c7b06ef1657c"
+    },
+    {
+      "path": "Assets/Scenes/Level06_Grassland_Winter.unity",
+      "sha256": "d54f0b84cee1de196f6e06d6cc3536a0b3409eba1efeb0289af7d0c5a18be8df"
+    },
+    {
+      "path": "Assets/Scenes/Level07_Ice.unity",
+      "sha256": "9201358c7884a63c4d105751404de2a8398a4bbf14b78f32551cc525441b1f79"
+    },
+    {
+      "path": "Assets/Scenes/Level08_Castle.unity",
+      "sha256": "d1d90ddb4cb90c687c93667c259e4f2e9fcac1e9ba62ca483bde6cb1e0ffcd84"
+    },
+    {
+      "path": "Assets/Scenes/Level09_Volcano.unity",
+      "sha256": "891e17ca6a2e2cd5adc587b4cb8f4b4fb8ddc35d7676bb36eff113d693d246d8"
+    },
+    {
+      "path": "Assets/Scenes/Level10_Sky.unity",
+      "sha256": "1955edbe18b4ed49c468bd45eb8adb91dd28666648a3f459448a8d1941581632"
+    },
+    {
+      "path": "Assets/Scenes/OneOneScene.unity",
+      "sha256": "02a1fb6ee693ea710374ad957814d8fadb4633adf96f1c87d3c632c19999ea60"
+    },
+    {
+      "path": "Assets/Scripts/Block/CoinBlock.cs",
+      "sha256": "043228f906f3fa83d443ee877cde141894d69b1687c7797787510b0dac085081"
+    },
+    {
+      "path": "Assets/Scripts/Block/MushroomBlock.cs",
+      "sha256": "a6a7250406b49663a9d8aa4d95ff506f0c501b4603aaf0fc806607d6973fac85"
+    },
+    {
+      "path": "Assets/Scripts/Block/QuestionMarkBlock.cs",
+      "sha256": "2efab1e9dfc85304916b8653b9b15ece1c5532b765715fa118aa00bf12ff6998"
+    },
+    {
+      "path": "Assets/Scripts/Block/StarBlock.cs",
+      "sha256": "abb25a654ce8bdcf09a6b815831e0edb245f9c6e3499fea9c824f075154b8b29"
+    },
+    {
+      "path": "Assets/Scripts/CampaignEnemy.cs",
+      "sha256": "c5d7e763adf00067f41ec30d924349b3cb24e6c50ee2eecd09a0f241ff1e2546"
+    },
+    {
+      "path": "Assets/Scripts/CampaignInteractable.cs",
+      "sha256": "6729a57c7e38d0569e724ddb2dbe7983a0708c99ceb15a9582da6a9b8486f67b"
+    },
+    {
+      "path": "Assets/Scripts/CampaignLevel.cs",
+      "sha256": "3696a9cf8ea2147635bf5e850ebf665fd3a404b30768a839ae8c747879ac23f5"
+    },
+    {
+      "path": "Assets/Scripts/Character/ContactSoundEffect.cs",
+      "sha256": "02fc31821ce914a1320f740a2c77805dfa0e85ad7daed263a4f98cfa9ee2a564"
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/ArmsSimulation.cs",
+      "sha256": "3165938f4cb4dc95ef65b980dced0235d8a8f1b4fd006cfa246b9c991292429c"
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/CollisionDetection.cs",
+      "sha256": "e2defe2179b304f73cb78e702a8a479e01fedf1b9da6f7a426f76784d51566ff"
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/TargetMovement.cs",
+      "sha256": "6fd983dc6e4312464e4af0983b9fc8552cca8d92e8e3854cd3acd9cb442ef64c"
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/Death.cs",
+      "sha256": "b8bdfded86b4cfdb50710319770e17c6c521e0c5fa66ff7283f1539265b7ccc4"
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/EnemyContactDetection.cs",
+      "sha256": "bb45b7b6a99d69c527a8959d6753eb314f71feecd7c3eb4e5a77ee6fe6bc0856"
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/FallDetection.cs",
+      "sha256": "0fe430fb5a18151fed2abc5c311659e1df82d6e5ecf1abce84d170e89bc06dca"
+    },
+    {
+      "path": "Assets/Scripts/Character/PowerUp/TemporaryGrowth.cs",
+      "sha256": "03a601160f9441cf32759064a22fb3d6f7b63f57d0121a5ebf52be703555c080"
+    },
+    {
+      "path": "Assets/Scripts/Character/PowerUp/TemporaryStrength.cs",
+      "sha256": "d7685de5787a6a947e83298236671cdc9738dc77c96d331fab5810aeef209f09"
+    },
+    {
+      "path": "Assets/Scripts/Enemy/EnemyDeath.cs",
+      "sha256": "4cb6ef3fb234d3fa734636416c7ab6089e509f9b9183bcb4068608806cd93511"
+    },
+    {
+      "path": "Assets/Scripts/Enemy/EnemyMovement.cs",
+      "sha256": "248cbd5264c07b911906d70298e39d1e3e13607d8de4262abc794f4f0605ab30"
+    },
+    {
+      "path": "Assets/Scripts/Enemy/KoopaTroopaShellContactDetection.cs",
+      "sha256": "ef05f9d200bd288c48dd4534945e6308bd309ea409bd5f493ebfc29630f33ae2"
+    },
+    {
+      "path": "Assets/Scripts/Enemy/KoopaTroopaShellMovement.cs",
+      "sha256": "24b5c3f8f07ff471f3a82741d5a34296dba3fde1af042c0ec036ba2f84706240"
+    },
+    {
+      "path": "Assets/Scripts/Extension/CinemachineLockYAxisExtension.cs",
+      "sha256": "909e74af962d1be32b5358928a070c141745d1b34d0af46d507725b98202551d"
+    },
+    {
+      "path": "Assets/Scripts/Extension/MonoBehaviourExtensions.cs",
+      "sha256": "7d81d0108db906760c3254efd422d59dbcda842c673c5b5b36c3e194e6f8a782"
+    },
+    {
+      "path": "Assets/Scripts/GiftConfiguration.cs",
+      "sha256": "f242a0c40a7735bf6359ad1461eed9a3e16c2dc78df0d4d5a911b25207dc028f"
+    },
+    {
+      "path": "Assets/Scripts/GiftKeyboardTester.cs",
+      "sha256": "5629c125adabccbcfe337419a0c4fc6b24dac951e348a4fe9e33a3ab0483197a"
+    },
+    {
+      "path": "Assets/Scripts/GiftRuntime.cs",
+      "sha256": "40e3165031e7e9d898f18cd2bf4a1e8a9ff30e19aa1b837142add1445af5eb2a"
+    },
+    {
+      "path": "Assets/Scripts/KitLandscape.cs",
+      "sha256": "8e0951f3efe9052ded54d516909ceae6f57a05fed022ec8b9d33fcf187a15b95"
+    },
+    {
+      "path": "Assets/Scripts/Ui/ClockUi.cs",
+      "sha256": "8ab32d5ba54e05043c7f3e1ea0ce6939aeaaa7c315bda82e02b69f06bd6abe06"
+    },
+    {
+      "path": "Assets/Scripts/Ui/CoinPurseUi.cs",
+      "sha256": "1c47301fd3307c18e22b7ff0821722257ef4ec86c31befd76465e222f3b113a3"
+    },
+    {
+      "path": "Assets/Scripts/Ui/GameOverUi.cs",
+      "sha256": "e7ee4c840a575cfcda6f283c14120511c07e5ea4ee276d5652aa103fcd53e8e4"
+    },
+    {
+      "path": "Assets/Scripts/Ui/RestartGameButton.cs",
+      "sha256": "5ffdf6114a65022b828381b177b18daca30f1f1fbcc52be4f869830f96a8c770"
+    },
+    {
+      "path": "Assets/Scripts/Winning/Clock.cs",
+      "sha256": "7184acb44863697fd85804a04434dd46f31e078e134fb08f1ef1669e5eec026e"
+    },
+    {
+      "path": "Assets/Scripts/Winning/CoinPurse.cs",
+      "sha256": "845244348eb6e4bedb8ecc413d45cb7b2e6e33abce5767a91916de736176da74"
+    },
+    {
+      "path": "Assets/Scripts/Winning/FloatingCoin.cs",
+      "sha256": "2c0e6f0e2324a032aaa152ffbd555801e92e6b2dec925128688366160f9242b2"
+    },
+    {
+      "path": "Assets/Scripts/Winning/WinThresholdDetection.cs",
+      "sha256": "da503244bb9fd981a0674d287db50f16793360de5908f775d80a55983561a39d"
+    },
+    {
+      "path": "scripts/check_mario_routes.py",
+      "sha256": "18a6ad864878eb779c0adfa5ba2de394dcc9115501704525102acbee808e16ed"
+    },
+    {
+      "path": "scripts/mario-evidence/build.txt",
+      "sha256": "90e8682e86a47ef875ec7387e6cee6f3c85c46cba07c96d8188b26be662a73a4"
+    },
+    {
+      "path": "scripts/mario-evidence/L01-exit.png",
+      "sha256": "37d4cfa3c87bd43e5571584799aa12340536ed119c5d37cadc4ed614bb7bbdd0"
+    },
+    {
+      "path": "scripts/mario-evidence/L01-star.png",
+      "sha256": "00176c927b8c00a254b406cde3e1af291dd754d19a688ed685d79f80376e8bec"
+    },
+    {
+      "path": "scripts/mario-evidence/L02-exit.png",
+      "sha256": "7f3f8820e8e5d7a8a60c065d85cba8dbb9dad84355308ba0131f94e96eba9265"
+    },
+    {
+      "path": "scripts/mario-evidence/L02-map.png",
+      "sha256": "a05af030c500d370f9b012f3c873fc142c45bed4c810ddd6c63b6d881ecc048b"
+    },
+    {
+      "path": "scripts/mario-evidence/L02-star.png",
+      "sha256": "d34cc0c4a1f538fa68a9a6ebfb3ae4c455d3895368774c7477b1a74ffba6a176"
+    },
+    {
+      "path": "scripts/mario-evidence/L03-exit.png",
+      "sha256": "814f2ce909717964705b35531dbdbbf6ef3aa30b6670454e060b61fd288ba5d1"
+    },
+    {
+      "path": "scripts/mario-evidence/L03-map.png",
+      "sha256": "c50bd08599f1bf2331b019979390dc6604c8db3f703d17cae39b32437b90c0fc"
+    },
+    {
+      "path": "scripts/mario-evidence/L03-star.png",
+      "sha256": "debd2c3f751768bcedddc013b6af62f3eb1607d52fb352f8ddf6683cab1769d5"
+    },
+    {
+      "path": "scripts/mario-evidence/L04-exit.png",
+      "sha256": "a4c5e93c0fdb002d676146d96c7dfbdb0c69a55ab87d5c843bb4641136e18804"
+    },
+    {
+      "path": "scripts/mario-evidence/L04-map.png",
+      "sha256": "c8fdc79751c4f481ccc87e3e3a99a6932a8689c7f434ab21f4165d2da37bc764"
+    },
+    {
+      "path": "scripts/mario-evidence/L04-star.png",
+      "sha256": "f339d97f3fbf36061209dc2473473d4408bb436442d72e67f703d330bb3dfaac"
+    },
+    {
+      "path": "scripts/mario-evidence/L05-exit.png",
+      "sha256": "ac5fe3174abb35dcad4887a512de9672edfb0d90fcf1753b7dd32bcc3ee0fc7b"
+    },
+    {
+      "path": "scripts/mario-evidence/L05-map.png",
+      "sha256": "e86bb0762ba3089144b12f099c65716524cbf3b2ea7b1fb5d6549c532c867526"
+    },
+    {
+      "path": "scripts/mario-evidence/L05-star.png",
+      "sha256": "c05a8597550581dc4b4c65427adca6a2a93f2897befe3b17cbb2bb273fff2f97"
+    },
+    {
+      "path": "scripts/mario-evidence/L06-exit.png",
+      "sha256": "8de8960200c6f4b93604f8671812be66e7e67179d05e4d22dcd224a3124ab6fa"
+    },
+    {
+      "path": "scripts/mario-evidence/L06-map.png",
+      "sha256": "a54a9bfbeebfe5852d3884773885e4e5f2c7ca3083ef874185410b30b791e1e2"
+    },
+    {
+      "path": "scripts/mario-evidence/L06-star.png",
+      "sha256": "00d2e307857d6b1cbd29c3700e574c1043dfe93859641c5ea57de18409f8cc66"
+    },
+    {
+      "path": "scripts/mario-evidence/L07-exit.png",
+      "sha256": "7780dd5a81dfe41fa4bc803893f7c307af647c24cb1bbf38757747bb05f5d09f"
+    },
+    {
+      "path": "scripts/mario-evidence/L07-map.png",
+      "sha256": "ec3c81393d1d513b0ea4448f782edb8c2ef5b26c5888943401e758110b31a687"
+    },
+    {
+      "path": "scripts/mario-evidence/L07-star.png",
+      "sha256": "f051324a1fc68e2e20279296fe351a7f52448860ecba00177e893010426d7506"
+    },
+    {
+      "path": "scripts/mario-evidence/L08-exit.png",
+      "sha256": "3fddf5768c536e2e21e8562b68d832416b9eb669a9d77060a80cc65f0723c879"
+    },
+    {
+      "path": "scripts/mario-evidence/L08-map.png",
+      "sha256": "9c48c6a42d81dbaf3a96ed74d6ac8069d22b6a04bf5086570c0b1b4a18ef32f5"
+    },
+    {
+      "path": "scripts/mario-evidence/L08-star.png",
+      "sha256": "bfb5572889cc706e256a022d2b542de60c7986f5683a753fc04d4a8961d968ec"
+    },
+    {
+      "path": "scripts/mario-evidence/L09-exit.png",
+      "sha256": "a9bace31cb3f920346bc970cbd357b9f1f49efbef38fc4f28703dbcaa32f2356"
+    },
+    {
+      "path": "scripts/mario-evidence/L09-map.png",
+      "sha256": "163c33213c8cd7f47839c78d2cae93ca0eefb2520f750ecd3a8935b583f8521f"
+    },
+    {
+      "path": "scripts/mario-evidence/L09-star.png",
+      "sha256": "02f952f3b5caf802ed20e7ab762975455ea8ca1ec394e43bdf2a2dfe22a857fb"
+    },
+    {
+      "path": "scripts/mario-evidence/L10-exit.png",
+      "sha256": "ae3c8975325bb0057fc1b407a32b6f30b577a6597c72b4b20cbb567a3b9cedf8"
+    },
+    {
+      "path": "scripts/mario-evidence/L10-map.png",
+      "sha256": "8464c90c3e823487561449a26046814bc648655ada0520e8ac66335cc3dfadea"
+    },
+    {
+      "path": "scripts/mario-evidence/L10-star.png",
+      "sha256": "68d26887ebe778dc14ec16547e07db86ce0e15324724cd6e4d35e8c8e447e549"
+    },
+    {
+      "path": "scripts/mario-evidence/maps-contact.png",
+      "sha256": "241eff75bc6c86e9abb2ec46b59bd74232a28c372523eff20190f9043c02e781"
+    },
+    {
+      "path": "scripts/mario-evidence/plan-generation.txt",
+      "sha256": "1849c2d159c8dcfc5aa505c365c2ba4bf622b4e7ecbcc22f07ad51f22b732ded"
+    },
+    {
+      "path": "scripts/mario-evidence/play-results.txt",
+      "sha256": "6e8ef335af0ef986bd373e5c37ac5aa5f06bd14935a5ceb28fd0c5e517f5bdd0"
+    },
+    {
+      "path": "scripts/mario-evidence/route-graph.txt",
+      "sha256": "caf731ac3ff446804297ad8b4bf1ef3bd0e141fcd584d8dc7b475063d5e04fd1"
+    },
+    {
+      "path": "scripts/mario-reference/L02-reference.png",
+      "sha256": "c17e47b37991794137ae0cc66dfe3e74ddfdf8f343c1f119015edf9e3d9b9a6a"
+    },
+    {
+      "path": "scripts/mario-reference/L02.json",
+      "sha256": "15af2810f333e362475c08620affd61afebe822790ab318e037a8078c860f853"
+    },
+    {
+      "path": "scripts/mario-reference/L03-reference.png",
+      "sha256": "9f0270ca9e83cde307003e213f36c66587dde8434fb00531976dacd6fe42083b"
+    },
+    {
+      "path": "scripts/mario-reference/L03.json",
+      "sha256": "97c759e22f257c9dbd912aac3cd7cc3bbe8dad99536fc1bba287727de002837b"
+    },
+    {
+      "path": "scripts/mario-reference/L04-reference.png",
+      "sha256": "2adefbe769ed6be4e1f08f9a167e0a7f380300d3f8d58c2df8a4e605ce63a504"
+    },
+    {
+      "path": "scripts/mario-reference/L04.json",
+      "sha256": "92dfc2398305f5838bb0b92d546eb0f2bd3a8766ee3641a8a77cfdc34eb74532"
+    },
+    {
+      "path": "scripts/mario-reference/L05-reference.png",
+      "sha256": "6a209f24c524a38818a7466249b1733467687ba1f4fcc0fd6d6431014169f99d"
+    },
+    {
+      "path": "scripts/mario-reference/L05.json",
+      "sha256": "51f91e1057a471ce2536e12a36a80c71f3ad0f54c7abdab3af6a9497601705ac"
+    },
+    {
+      "path": "scripts/mario-reference/L06-reference.png",
+      "sha256": "c60554883a44865bbb033d414d6b4beec2bf1abe316208baaf123d5133524f37"
+    },
+    {
+      "path": "scripts/mario-reference/L06.json",
+      "sha256": "c8906ef880038cbe8750435997860ed81cca45a06ae63ce63c1c531045ec5087"
+    },
+    {
+      "path": "scripts/mario-reference/L07-reference.png",
+      "sha256": "37057783c4bfc93bfce7dfafea4edcb80edd12d6cdd291899481639902b8ed26"
+    },
+    {
+      "path": "scripts/mario-reference/L07.json",
+      "sha256": "6fc923f5c5ef540e9ecf9fecdcd3ee5b4442920a8a49b21dfa7f423b5d6e70c0"
+    },
+    {
+      "path": "scripts/mario-reference/L08-reference.png",
+      "sha256": "4ab95cdf1d4fed8d87b8b6b344b261e894f308d85ccd1a851563925c7999c01e"
+    },
+    {
+      "path": "scripts/mario-reference/L08.json",
+      "sha256": "6663d47fa540fa211012580a3bab10e49c4c1996fd5823a367d09738d2750362"
+    },
+    {
+      "path": "scripts/mario-reference/L09-reference.png",
+      "sha256": "5db6c9c5970069a4d3e951184af0cadebf5b21498981a113cc3510c9c4a74686"
+    },
+    {
+      "path": "scripts/mario-reference/L09.json",
+      "sha256": "0ce1e02101dff9d60f1a5a8357d66c2c181e1377ccb054e0222e5ea1413857d2"
+    },
+    {
+      "path": "scripts/mario-reference/L10-reference.png",
+      "sha256": "6a209f24c524a38818a7466249b1733467687ba1f4fcc0fd6d6431014169f99d"
+    },
+    {
+      "path": "scripts/mario-reference/L10.json",
+      "sha256": "ae7c8f3ff06cb0d7dcaa6cb1b219d63d2bf8942ec3a9b9bb13a434af17c66711"
+    },
+    {
+      "path": "scripts/mario-reference/plan.png",
+      "sha256": "cee1a8cedffa3fdddf54abd50f5d6ee82eb6f561e2a6bca03486a3741da5f26e"
+    },
+    {
+      "path": "scripts/MARIO-REFERENCE-REVISION.md",
+      "sha256": "47a1a90c4730aff357664c4e69d4dff620b3702c5f895de499c8fdfd5b902c69"
+    },
+    {
+      "path": "scripts/prepare_mario_reference.py",
+      "sha256": "6ceec5096d7f872120b94e39c5d3921ddb9362b7f48c7cb3ab56c1ca020bb58a"
+    }
+  ]
+}

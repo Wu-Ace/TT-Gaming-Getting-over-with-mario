@@ -1,0 +1,2 @@
+Getting Over It inspired climbing courses; independent authored geometry; native .8m cells.
+PASS L03 Beach: traced cells=658, stars=3, checkpoints=2, summit exit=(92.00, 18.80), authored route=200.0.

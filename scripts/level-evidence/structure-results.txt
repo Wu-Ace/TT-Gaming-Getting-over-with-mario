@@ -1,0 +1,11 @@
+UTC 2026-11-04T09:34:02.9439680Z
+PASS L01 theme=Grassland stars=3 exit=310.0 renderers=1488
+PASS L02 theme=Jungle stars=3 exit=300.0 renderers=5766
+PASS L03 theme=Beach stars=3 exit=300.0 renderers=4191
+PASS L04 theme=Town stars=3 exit=300.0 renderers=5551
+PASS L05 theme=Cave stars=3 exit=300.0 renderers=4611
+PASS L06 theme=Grassland_Winter stars=3 exit=300.0 renderers=6359
+PASS L07 theme=Ice stars=3 exit=300.0 renderers=4213
+PASS L08 theme=Castle stars=3 exit=300.0 renderers=5997
+PASS L09 theme=Volcano stars=3 exit=300.0 renderers=3763
+PASS L10 theme=Sky stars=3 exit=300.0 renderers=4687

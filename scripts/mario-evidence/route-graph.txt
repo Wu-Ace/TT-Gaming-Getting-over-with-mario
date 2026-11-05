@@ -1,0 +1,10 @@
+Conservative surface graph: <=1.6m rise, <=1.6m clear horizontal gap, >=2.4m headroom. This is NOT a physics playthrough.
+PASS L02 stars=[True, True, True] exit=True checkpoints=True
+PASS L03 stars=[True, True, True] exit=True checkpoints=True
+PASS L04 stars=[True, True, True] exit=True checkpoints=True
+PASS L05 stars=[True, True, True] exit=True checkpoints=True
+PASS L06 stars=[True, True, True] exit=True checkpoints=True
+PASS L07 stars=[True, True, True] exit=True checkpoints=True
+PASS L08 stars=[True, True, True] exit=True checkpoints=True
+PASS L09 stars=[True, True, True] exit=True checkpoints=True
+PASS L10 stars=[True, True, True] exit=True checkpoints=True

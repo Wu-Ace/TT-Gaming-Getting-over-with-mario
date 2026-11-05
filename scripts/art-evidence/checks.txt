@@ -1,0 +1,41 @@
+smb1_misc_sprites_75: uniform-fit pixels matched
+smb1_misc_sprites_76: uniform-fit pixels matched
+smb1_misc_sprites_74: uniform-fit pixels matched
+smb1_misc_sprites_44: uniform-fit pixels matched
+smb1_scenery_sprites squares_393: uniform-fit pixels matched
+smb1_scenery_sprites squares_387: uniform-fit pixels matched
+smb1_misc_sprites_85: uniform-fit pixels matched
+smb1_misc_sprites_5: uniform-fit pixels matched
+smb_items_sheet_24: uniform-fit pixels matched
+smb_enemies_sheet_0: uniform-fit pixels matched
+smb1_misc_sprites_386: uniform-fit pixels matched
+smb_enemies_sheet_2: uniform-fit pixels matched
+smb_enemies_sheet_6: uniform-fit pixels matched
+smb_enemies_sheet_12: uniform-fit pixels matched
+smb1_misc_sprites_13: uniform-fit pixels matched
+smb1_misc_sprites_68: uniform-fit pixels matched
+smb1_misc_sprites_80: uniform-fit pixels matched
+smb1_misc_sprites_67: uniform-fit pixels matched
+smb1_scenery_sprites_22: native cells matched exactly; no internal bottom cap
+smb1_scenery_sprites_23: native cells matched exactly; no internal bottom cap
+smb1_scenery_sprites_24: native cells matched exactly; no internal bottom cap
+smb1_misc_sprites_119: uniform-fit pixels matched
+smb1_misc_sprites_117: uniform-fit pixels matched
+smb1_misc_sprites_118: uniform-fit pixels matched
+smb1_misc_sprites_113: uniform-fit pixels matched
+smb1_misc_sprites_88: uniform-fit pixels matched
+smb1_misc_sprites_79: uniform-fit pixels matched
+smb1_misc_sprites_81: uniform-fit pixels matched
+smb1_misc_sprites_82: uniform-fit pixels matched
+smb1_misc_sprites_30: uniform-fit pixels matched
+smb1_misc_sprites_48: uniform-fit pixels matched
+smb1_misc_sprites_49: uniform-fit pixels matched
+smb1_misc_sprites_50: uniform-fit pixels matched
+smb_enemies_sheet_1: uniform-fit pixels matched
+smb_enemies_sheet_5: uniform-fit pixels matched
+smb_enemies_sheet_7: uniform-fit pixels matched
+smb_enemies_sheet_8: uniform-fit pixels matched
+smb1_misc_sprites_86: uniform-fit pixels matched
+smb1_misc_sprites_87: uniform-fit pixels matched
+Level prefab and scene: 776 cells each, 390 surface cells (including partial contact masks) / 386 fully covered soil; saved
+Native topology mapping verified against 120px source atlas coordinates

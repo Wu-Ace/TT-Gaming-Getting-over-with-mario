@@ -1,0 +1,26 @@
+{
+  "release": {
+    "keyboard_test_type_present": false,
+    "compile_errors": false
+  },
+  "testing": {
+    "keyboard_test_type_present": true,
+    "compile_errors": false
+  },
+  "editor": {
+    "keyboard_test_type_present": true,
+    "compile_errors": false
+  },
+  "sha256": {
+    "Assets\\Editor\\GiftBuildSettings.cs": "051d556f035c34d9206de464beda6c77d7e51811e968757a1044d5c45e30c819",
+    "Assets\\Editor\\GiftConfigurationMenu.cs": "c1877dd757b93997e0e9830411a960a2e8ff4ee0c771622db6a9413792676919",
+    "Assets\\Scripts\\GiftConfiguration.cs": "f242a0c40a7735bf6359ad1461eed9a3e16c2dc78df0d4d5a911b25207dc028f",
+    "Assets\\Scripts\\GiftKeyboardTester.cs": "5629c125adabccbcfe337419a0c4fc6b24dac951e348a4fe9e33a3ab0483197a",
+    "Assets\\Scripts\\GiftRuntime.cs": "40e3165031e7e9d898f18cd2bf4a1e8a9ff30e19aa1b837142add1445af5eb2a",
+    "Assets\\Scripts\\Character\\PowerUp\\TemporaryGrowth.cs": "03a601160f9441cf32759064a22fb3d6f7b63f57d0121a5ebf52be703555c080",
+    "scripts\\LIVE-GIFTS.md": "440493373c18e19dd34d6ece60918537a24972e1b5cd7cf0fcb539789703b968",
+    "scripts\\gift-evidence\\editor.log": "4bfb3bea5b722ad077dfefd9be26073e0535f57c45ad559599f524cb5fb4ccc4",
+    "scripts\\gift-evidence\\release.log": "fc769d593ee166ec7c123e37aa866fcbe2ab2ddebf2bb2eeb8e52f1e4cb216a8",
+    "scripts\\gift-evidence\\testing.log": "e622ec70153025dcb32914869978b479b7c4bf282360ca9f5e1f6b04d4dd6ce1"
+  }
+}

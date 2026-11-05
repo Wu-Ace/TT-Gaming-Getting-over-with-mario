@@ -1,0 +1,2523 @@
+{
+  "utc": "2026-11-04T09:48:18.642521+00:00",
+  "project": "E:\\TT Gaming\\Getting Over Goombas",
+  "git": "not a Git repository",
+  "scope": "post-test source/evidence snapshot; hashes are not proof of full physical traversal",
+  "files": [
+    {
+      "path": "ai-handoff.md",
+      "sha256": "3336afbe8c064bfc2f9abd77de49ad66263a2f8fa83e74ade1805ec098bd105c",
+      "bytes": 10526
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/bl.png",
+      "sha256": "6785b918c0e87864375f3734a1985bf8e7c978b2d6e45d90852764196bcd7eed",
+      "bytes": 2291
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/bl.png.meta",
+      "sha256": "f373071edb2b92261560baf001a598d0da65abc0eda3ee4bfcd9ce7689e24df0",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/bottom.png",
+      "sha256": "2472431953b9ddedfb34b75a1aaaa433ba4d439e22ce8cb128cebe2d063b6a64",
+      "bytes": 2166
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/bottom.png.meta",
+      "sha256": "412929d112576e64a90e05360f3ba4799d87e552c28c55b64e98dd018562fc2d",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/br.png",
+      "sha256": "84d54659bad5c6a81fc16f529e39d19d3b10218ac4a9a27acf68ff308227773b",
+      "bytes": 2346
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/br.png.meta",
+      "sha256": "f224df4e5b715d333e14a069a5710db833cd9e233dbe2aa53b168ff05bb8548f",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/door-open.png",
+      "sha256": "e05a5b27ac912e7e9b820b4383bb2ca60e3cd9d0c320d698602ee080b456e08e",
+      "bytes": 839
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/door-open.png.meta",
+      "sha256": "f15247f62a67e220f08de097e326dd7a57b98e60248f26c6bdcca54705539afe",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/door.png",
+      "sha256": "7e52f771bb2351e1d20986192869cd059f0352086369fa0c849dc05e40ab131f",
+      "bytes": 2710
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/door.png.meta",
+      "sha256": "aa2a638ccdccbdb4826b8e673e72e29bc262e86914948a5bd343491ffe7616ed",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/down.png",
+      "sha256": "3774bceddfdedbd06e33b2983cc1d668f537429262f07e8775070ef4ff68693f",
+      "bytes": 2759
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/down.png.meta",
+      "sha256": "3ba2c3756cc49308d8ea083f0d1ba1838d9ead3c643727c98eddc364d55f52a1",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/fill.png",
+      "sha256": "3aceba040ce3dd586cd3ac2c8f2f6b2f7cc9b7fce26055dc36e336f871212dfc",
+      "bytes": 2159
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/fill.png.meta",
+      "sha256": "bd1476971afcf7f28218a1f92b5c9c826bb58c528fc96d5d4d74c885f529b869",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/left.png",
+      "sha256": "b8da3af1c4741360211adc73b7e8a7b1215456e17af12d2792da184f8f4b4686",
+      "bytes": 2048
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/left.png.meta",
+      "sha256": "dae9243c1fa1bb0af7d9a864d746d44016a11d6756dbb1036b3e742759509895",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/right.png",
+      "sha256": "ba20f856c19ab7cd40f4b27058a9630f4a1acc2ea41fd4d79d4ad0ac08177b16",
+      "bytes": 2137
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/right.png.meta",
+      "sha256": "8d95186a4f96dfeba6ac14750754e1ae92242ad12c86073943de7b2e16fa0f41",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/tl.png",
+      "sha256": "f33c5185add5d67001f3a7d150d6b8c6c58b56870d6a1f8706bf1711b799e5b1",
+      "bytes": 2416
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/tl.png.meta",
+      "sha256": "b46354a0b3e9889b86092c46578ddc3a3044a0f3d1a1b6f1632267143b0b5b1c",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/top.png",
+      "sha256": "811df0f6f9c94873890bacb8461b9d4bfce249bb8dc322ea7d2b245f378de698",
+      "bytes": 2212
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/top.png.meta",
+      "sha256": "f7769dc8a80612b271d9a952b7a03ac057c776db503397cf056d70ea8670eb67",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/tr.png",
+      "sha256": "ddc831a1b29dab78385a40a732f20e13daefcd4f668ebed9413571905ca4105d",
+      "bytes": 2533
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/tr.png.meta",
+      "sha256": "e4b9dd7582834791556e4783b7cdd3f3483d00de6ae4514760566cb3b1e06bf1",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/underdown.png",
+      "sha256": "a72402ca7f32c599db6fae8a1c50330ebde73baed4930f988d30059ab08b570b",
+      "bytes": 2787
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/underdown.png.meta",
+      "sha256": "f9433422a330d4cd25d9e2adac58a8a69d21b570edb1c864ed3ad9d382139cb3",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/underup.png",
+      "sha256": "e3166dd870581d0b6134867ce1a6f1043a9cb78dd908d175e455ab8237b71034",
+      "bytes": 2577
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/underup.png.meta",
+      "sha256": "3cea89f1ce5aa41efba1b282721f8adbd545f6821fbeff0cbdc353ab79518e1d",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/up.png",
+      "sha256": "afa5f50dc0d7ba32159ba75588c25073212715cfaf2e78762d7bd71a21933671",
+      "bytes": 2341
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach/up.png.meta",
+      "sha256": "7e590c33d13aba1259477338867f9bdfa2b5b2c8e044f29b9c9987a31541ddb8",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Beach.meta",
+      "sha256": "e598514f599270b0feec774fc1c88381247336036d231f179c767e5d8f72cc65",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/bl.png",
+      "sha256": "fbdf77b96f03478f602f36cc66d87f4161209487eea8753a07b72be6b8fd844b",
+      "bytes": 1118
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/bl.png.meta",
+      "sha256": "e875dce2207d634580c099f153d461ef87e1cc5bcdb826effb6bc72a72a23fec",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/bottom.png",
+      "sha256": "10597a5cade45f4f7ec6051d4cfdf8f3445b72c961496e5e64e1330df1444d25",
+      "bytes": 793
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/bottom.png.meta",
+      "sha256": "9b2d8440c97b23d4ad5a89fc1a6bb7fa4fc7f153da95cd16f70864652f5016b0",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/br.png",
+      "sha256": "d174d252e1c56633aeca2ca2dbb37ca8085c553a4f06bad08ab45cbbf16586ee",
+      "bytes": 1182
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/br.png.meta",
+      "sha256": "ab1b01f1243691c4ec371317f42f2e392cd5c14f39c4862ff45470fbbc4dfa4a",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/door-open.png",
+      "sha256": "7b8665b8510e715f2887b7181373ebf210de0abfcc8f1d6026bc1d160218021d",
+      "bytes": 3646
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/door-open.png.meta",
+      "sha256": "9b4168aa044596b4d1caf9621464c0592cb104dcbf5f15262eec4b09bbf4675c",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/door.png",
+      "sha256": "cecb94f7ce59bd9c39ae7eb0740208a03d6727a053f01ded88f73a39861def54",
+      "bytes": 4512
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/door.png.meta",
+      "sha256": "7e590098a0b079112dbdeae183293ed84c3f92a97d330d8be8b14f9bf5b54ec6",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/down.png",
+      "sha256": "4c869e5869ed3aefeb509bb1f6a46a08478df6db2319b06ce886e19862899c3f",
+      "bytes": 899
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/down.png.meta",
+      "sha256": "30fd33a2327d2f671ad02b3c3c022f500d15e6fca42cb6447c8863327ed1e6f3",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/fill.png",
+      "sha256": "99ba0535671a26cf57e2e7c4e3a73e36df38b9243fc2f50832c2737c934183d8",
+      "bytes": 366
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/fill.png.meta",
+      "sha256": "72e5d7f6db9c3a83163ab6da8a2637d9fde9be8e5eaf49a38ddafa114d82c15d",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/left.png",
+      "sha256": "262d720b4634a09212f81678d9d390c78c545435a4cadfcb8e51ed63363a5cda",
+      "bytes": 521
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/left.png.meta",
+      "sha256": "4bc8b674dd8b43abbe61544bf63bbcf30610cf4b010ed014fc6eba78eb937afc",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/right.png",
+      "sha256": "80226ea416df03c58cd08d6ea8cca5690b70c80f6f4c20cd0c9576b6f35d07d3",
+      "bytes": 538
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/right.png.meta",
+      "sha256": "2f701127e50c06782a36bdd9a48c9c4b1e3ec7917a1d5f5946d849b8f0488efd",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/tl.png",
+      "sha256": "43974a7f90542cf23f2a3a0d7bda013b9d0721675b93671795a1a4f57654319d",
+      "bytes": 1208
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/tl.png.meta",
+      "sha256": "2a3e04df7ac4c9fa3c5a80f71ed0b815eae66a16076f4edac0a059d8052f8b02",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/top.png",
+      "sha256": "139f1241e412acb466ac813ae8da0aaf6e1bfbda48b8ae485e4580827d11c6ba",
+      "bytes": 864
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/top.png.meta",
+      "sha256": "d0b52a55fdf0052c38ad30fb13a5f1bd9ad36f122ef721af65ae974fb45c19ae",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/tr.png",
+      "sha256": "fb8ef779617a97638284ba2cdb109c902f0917a7403b21b51cceb33f5227cb57",
+      "bytes": 1333
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/tr.png.meta",
+      "sha256": "8d45562f48811db5a80c6dc8a16f66c945e0d6bdd9d0c24cc279a50be8a7beb3",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/underdown.png",
+      "sha256": "1ba731b8be9c8f6aaac10c92747afe4f0a99f70783d6910f9816435759cd3d12",
+      "bytes": 822
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/underdown.png.meta",
+      "sha256": "0d49d21a3bfb0889549550e0c5756645ae44d976d7fe4703ff9833a1d00b1ed6",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/underup.png",
+      "sha256": "fcba434ae7cf1295a4a9c2519ce7b98b24d65894ef7ae11b926ae9c49fc6d564",
+      "bytes": 786
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/underup.png.meta",
+      "sha256": "739d7596812bc2a75d1d33d299bdcd981cea13d0563448b999d2e3441283a7cf",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/up.png",
+      "sha256": "4fb979ae57c0e2af3ad60c8b9a573c163b0c25061f6a613fefe79a1a7db648c0",
+      "bytes": 770
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle/up.png.meta",
+      "sha256": "935b7077ed4407d7a4ecbb51633ede0f2f0627d6aab6169318eeb135c8f5eecc",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Castle.meta",
+      "sha256": "794508a82246bb70ce18de1fd1f67c62803ae99a1096ee4f9a820bc498ee1ae7",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/bl.png",
+      "sha256": "b656a3fbe0392ad66e9325981eb27a5bb1df0a62caa623e3fa9ef200daac49dd",
+      "bytes": 2122
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/bl.png.meta",
+      "sha256": "5ee5ceb8b8b4bab6fbdf0c280ced5ffa97083e3d018e2f25d19f8bd478babe9c",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/bottom.png",
+      "sha256": "8b4a2586c7d7907e722881b081f5b75d6ae3d58dddbfc0ac4f0adf2aab245d38",
+      "bytes": 1977
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/bottom.png.meta",
+      "sha256": "9c1afe9638c3ed6254f83c3396c132aef42525544ac91c34aeb5a2313f472ddf",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/br.png",
+      "sha256": "636712342d77067d14624076b33675c7e64bf9736410ffb904cd9845d3ee0669",
+      "bytes": 2115
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/br.png.meta",
+      "sha256": "d5bba3c398d2f444111d0c209e86c0d1e8045fc629e4761c5afcd7189ecc2119",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/door-open.png",
+      "sha256": "6ca5f0d791ab6809b93ed0e68aca535567525c405962470bc46572bb04cd452e",
+      "bytes": 2124
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/door-open.png.meta",
+      "sha256": "93b0df065e238a00b256ba594a11886d9199da713dcfb97fabfe4aa7d4ab97c4",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/door.png",
+      "sha256": "6ca5f0d791ab6809b93ed0e68aca535567525c405962470bc46572bb04cd452e",
+      "bytes": 2124
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/door.png.meta",
+      "sha256": "2a026a75786ce10254dd5069ffc1a05e9b742fbe33e6148c950b47f2acaeb799",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/down.png",
+      "sha256": "a00c8ddd52bdc386a078e5ba62de5d0a8651c83023348e2d45773732ae7865f8",
+      "bytes": 2488
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/down.png.meta",
+      "sha256": "b016653a085c5e44bb2b8c76931f19e38e2c1b503ca6177f672744e48f3ba358",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/fill.png",
+      "sha256": "a378761517fc95d6c0a079eedc24588d961de5ac20bbe50778baf7f9b20a9c46",
+      "bytes": 1969
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/fill.png.meta",
+      "sha256": "0d8b6dd8f7e16960775d2a092e91c7569d076a5b1ba002ca7d642ce2b78e4b20",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/left.png",
+      "sha256": "168cf2b0413de23225a4f51cbf5928ba3facf47eecaf49fbc73b6df589277006",
+      "bytes": 1897
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/left.png.meta",
+      "sha256": "36584d365b44ddf43f50871023afadd27ad4a65953356fd96a4fab7366ad3139",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/right.png",
+      "sha256": "630a34896d4675c69aa7bda09330a32f1980bfbbd86528e83f384ac2ba0f0b52",
+      "bytes": 1932
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/right.png.meta",
+      "sha256": "6fca3e7d76fd28c4c627df47892621c58121ba2bf923180661cc140609ecf2f7",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/tl.png",
+      "sha256": "93d1456e2634057d7efc6706ea6d947a3c229c5a02f1d4c9e261ca1c2ad58ede",
+      "bytes": 2288
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/tl.png.meta",
+      "sha256": "63527761f8001ea71a53eba365b920d1b280d9c9bc27c11464350ece2c2c9c61",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/top.png",
+      "sha256": "874928b4848b9aac4c4061de7d740f5863e692533a6f5d71b8a86e3465d9384e",
+      "bytes": 2056
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/top.png.meta",
+      "sha256": "cc0f503ca34afd72c7ca0e601ce6e4bda66a8836988860c779a4973620253e0e",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/tr.png",
+      "sha256": "f86f7762861dc3cf39497c87cb314ceb569230e5bc28415a00a80b6a8c8194e6",
+      "bytes": 2384
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/tr.png.meta",
+      "sha256": "e6ebbb5989daf93ffefd1e1268ccf5b555dafc570ee8c0edc8e8567472c22a67",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/underdown.png",
+      "sha256": "98f6a925045c55f0481dd1ab987459c56e4749834ceac5db15ebfd2217473e24",
+      "bytes": 2558
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/underdown.png.meta",
+      "sha256": "858d5bcf927cbb725ef2c34af6c3870fe1621bd8cb65bbee32460ac1181b6206",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/underup.png",
+      "sha256": "cb5a21c99e6610371449ad126ae9e7ff2934f9b4f25f43064272b0caed10365f",
+      "bytes": 2327
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/underup.png.meta",
+      "sha256": "167ea6a007974e5cd995f39a876201c3bb0df963c1f98a4a21aea0c917ef6ad4",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/up.png",
+      "sha256": "0a52b895a897541b54d5c8c8a2f36b23897a75b2e988a9074cfbdfb6bb53bdf7",
+      "bytes": 2110
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave/up.png.meta",
+      "sha256": "3bac3a08976462a0e9ca63f5d1c791c8e563dd8381f1249c535cc211b76c8b33",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Cave.meta",
+      "sha256": "15f7f2179844cad18cb480af1843b44ce40df58b5e967d01ecefc93b1279ca03",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/bl.png",
+      "sha256": "b67605703c821b1f39b14f327a1701a99eeeaf2acb7544f99aeb83119ffbf9fa",
+      "bytes": 1369
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/bl.png.meta",
+      "sha256": "5d7b89a9a064e8aa61b1e86cb753e120f5a389b0ba36b6f89485bec8498da07c",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/bottom.png",
+      "sha256": "c9012e676673d45889573f488cca4c3b73976b6598cb8146694e075b45e01eb2",
+      "bytes": 1114
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/bottom.png.meta",
+      "sha256": "bc18c9937d0a6e78a38ebb3863503deeffbc8d8f9c02b9220d4eb332c2806713",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/br.png",
+      "sha256": "d95ca5e540bfc0720b17b616310aae2a2261f5a6834791afdfda090ba8dce9f8",
+      "bytes": 1335
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/br.png.meta",
+      "sha256": "a0a1ed0d8fe91335987a66ca5e96676917e8bd8de10f6b05b99bd957e1816789",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/door-open.png",
+      "sha256": "c497cc93aeb6f14563537c3c2c19ad5b4b742415f8933c1ab0489db6ac780ac3",
+      "bytes": 823
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/door-open.png.meta",
+      "sha256": "9585320de87a423bd1e3face4b2af75b87bfcd23f8b587ea5293437242de3695",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/door.png",
+      "sha256": "04ff8f819b2b1becda42ad8e2c8c35eb721a19378f28be441d62665fee645444",
+      "bytes": 1617
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/door.png.meta",
+      "sha256": "67371cb4490e5f1787d018f9512c6f29b09c6779fb47d7a550615b1324710a0c",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/down.png",
+      "sha256": "81d5b5ea5900a60be70c21c2b53760c0546c352acc6f3a31b1ed9c18becc2bd5",
+      "bytes": 1236
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/down.png.meta",
+      "sha256": "a6f31ffd54d2f137f7de043263b21f952e95cf24666a62afacbcc765fb80c100",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/fill.png",
+      "sha256": "36e55e1ca88d4bd0417a68259eeeff389df45e96a869ffdea5e873b1a5f73cc0",
+      "bytes": 1103
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/fill.png.meta",
+      "sha256": "1cd1ab3c7c7b0df10dc711dc551ea697d12ba0c38b9fd8afba56599e40d71c96",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/left.png",
+      "sha256": "aab9dac69826162ae4529922d1488618d6653f8319dedf98be3fae39131775c8",
+      "bytes": 1116
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/left.png.meta",
+      "sha256": "8b73fdc573cfdb4b1cfd06c9d2c23c3e58ec5d61a09dae95c97833c9b26de52d",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/right.png",
+      "sha256": "d2c340b1cc7e623c529326ef3554800ab036c083e101099e80b49605ff432e06",
+      "bytes": 1108
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/right.png.meta",
+      "sha256": "2a6187f382c91ee2b0fc3b2305b8c4b04453c4718b38dc1a88692b8615fb6857",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/tl.png",
+      "sha256": "eede8eda0e38c83c2678a49c3cd0b8041a9de9373b0bfdc4d9ac6544da94356b",
+      "bytes": 1924
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/tl.png.meta",
+      "sha256": "cee45df3cb07763c4c6c889e0fa6371bfbebf1fb875ce293f00ca1ff04df491a",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/top.png",
+      "sha256": "98fd71d3dc9480817cca0964e768fd41238987065b62c28e2bc64c86843e29e1",
+      "bytes": 1646
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/top.png.meta",
+      "sha256": "cfa92fb8cf726512fac6e5fee81f46689ba749e0107aee1d8563d1f426bb53ac",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/tr.png",
+      "sha256": "b1e7dbf722667d5d303b8a50d46c40dd595b99a2bd183683c34c97c9aaffacb3",
+      "bytes": 1948
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/tr.png.meta",
+      "sha256": "b3eeaf2979008351b809aa902a5a9153fc4daf17cc8d2fe028fa3ba4e4e13e88",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/underdown.png",
+      "sha256": "a9fa0461d8bc48c945d0da9df9a076ae2fb72b53ac8566c821471de681861ad2",
+      "bytes": 1308
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/underdown.png.meta",
+      "sha256": "d52987b76323faef4a0a8b80946ef239139cc7aff5dc400ccb6d52e73fce70dc",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/underup.png",
+      "sha256": "8683da99ff38046b3e69e6aa8f7cda68e43c95a07177e544620e7d0860d82412",
+      "bytes": 1259
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/underup.png.meta",
+      "sha256": "c89fd25e68eea93f5fcd01906df7a328e0b7d303b61bc7eb22d12929e2dc90b6",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/up.png",
+      "sha256": "710df9453ebab70eb1372d35f2133f681ea220434e4a2493eb6f3e4cc35bf1fe",
+      "bytes": 945
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland/up.png.meta",
+      "sha256": "0d88b8f8eb0bd5c6f34d999df04aeaa3e72056cc626e8b15b26119aa7ee19932",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland.meta",
+      "sha256": "910dc75682c916c9e6f14c0a9024164e718eb2e857df501e184f267c8aa9e969",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/bl.png",
+      "sha256": "b67605703c821b1f39b14f327a1701a99eeeaf2acb7544f99aeb83119ffbf9fa",
+      "bytes": 1369
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/bl.png.meta",
+      "sha256": "65bc7b43e5754109620a0956b1c1ae2c547c7eabeb71b45914fa25579b6c80cf",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/bottom.png",
+      "sha256": "c9012e676673d45889573f488cca4c3b73976b6598cb8146694e075b45e01eb2",
+      "bytes": 1114
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/bottom.png.meta",
+      "sha256": "3b1f2a467900825a360a800dbcb9cd7c8f4825aecce8322ca21744b485d3793e",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/br.png",
+      "sha256": "d95ca5e540bfc0720b17b616310aae2a2261f5a6834791afdfda090ba8dce9f8",
+      "bytes": 1335
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/br.png.meta",
+      "sha256": "e005619ce4199e1f4f7f0cfa170484827282c8571861dc2f1e530eb3b245389e",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/door-open.png",
+      "sha256": "c497cc93aeb6f14563537c3c2c19ad5b4b742415f8933c1ab0489db6ac780ac3",
+      "bytes": 823
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/door-open.png.meta",
+      "sha256": "3aed2e446475b22431690e6ad60df032fb45fd21ab1dcf0bdad723d67579ebec",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/door.png",
+      "sha256": "ba376215234fc6580a07efe9fcd935a4bfda8912095beccc8e17ab8f14958767",
+      "bytes": 1714
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/door.png.meta",
+      "sha256": "afa7f984b9f08c67aa6af4d928045ff3ac2f21052110d231e04bbd90ba1b23c7",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/down.png",
+      "sha256": "ad338488263d81bee2e793558145aabd64b951507d4823d67276985cac8e06df",
+      "bytes": 1241
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/down.png.meta",
+      "sha256": "23fe31c8cfe2fcca601a591667dd58a344c6039c125c2c96c6821cbd9a6b804f",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/fill.png",
+      "sha256": "36e55e1ca88d4bd0417a68259eeeff389df45e96a869ffdea5e873b1a5f73cc0",
+      "bytes": 1103
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/fill.png.meta",
+      "sha256": "78b9084bd041f8f86708a031a365f078c60f654a78d16ba58afc100369949fef",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/left.png",
+      "sha256": "aab9dac69826162ae4529922d1488618d6653f8319dedf98be3fae39131775c8",
+      "bytes": 1116
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/left.png.meta",
+      "sha256": "6c1103e8e06ea2d430a328128389824816c4efa91cae5f7e8d73860104efea70",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/right.png",
+      "sha256": "d2c340b1cc7e623c529326ef3554800ab036c083e101099e80b49605ff432e06",
+      "bytes": 1108
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/right.png.meta",
+      "sha256": "51392ada381d96d3c4002710c71370a7f5a9a633d8126db82f0ee5ba51ec0953",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/tl.png",
+      "sha256": "34c24dfbbf9f8fee275ea189659f1ac143e62486920d5a4424ec042ca9f038ba",
+      "bytes": 1950
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/tl.png.meta",
+      "sha256": "7890349346c890a34910f644ce893f53b01de9c4cd172bf1ef8addbe0424e6ba",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/top.png",
+      "sha256": "3d988516f4a4175e47fb65c0e11facc345165dabd88cab4779b3f20ee74dce81",
+      "bytes": 1667
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/top.png.meta",
+      "sha256": "cd6702d29846e330eddf07b98e37f951dcf5be37d4e1f901370046c38d81d460",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/tr.png",
+      "sha256": "8fe347c821716b911150fddee17967de38739fac5cda3e1226e6359188720f93",
+      "bytes": 1962
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/tr.png.meta",
+      "sha256": "fd8c174f20d425df122749b24b9f3d5449b52c8a551b49b28aa7fed7bc7ec755",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/underdown.png",
+      "sha256": "bd7e872c15d6e16d80cb9bc7d300337b88c05fa84374f31c95189b6c4e67055b",
+      "bytes": 1307
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/underdown.png.meta",
+      "sha256": "ddea320b0c919c48617e1b202d715050bc691fdf2dfaea02d8a12651aaef64da",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/underup.png",
+      "sha256": "36c0b1c9d9f01de192e44e1f02ca7e4b582f49237687ff0c5049aaa972ead5c3",
+      "bytes": 1257
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/underup.png.meta",
+      "sha256": "5dcd70ad00bf792fcb9145a97c161129d7d0df4a738af1c6e55356e7fc9c0ee5",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/up.png",
+      "sha256": "11c315331a207b5c8cfd27233a9b7978a7197bf2a2df0e0d2dcc8638e2efa191",
+      "bytes": 955
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter/up.png.meta",
+      "sha256": "e06d1865120f67b6043041fcf45733e66dac3568ca19be277e9e37fbf2dca2bc",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Grassland_Winter.meta",
+      "sha256": "a3756a374f29428df450d18a08426ad7447d156d771cbf0be2a2de607d3e1f8b",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/bl.png",
+      "sha256": "0c074d52c249994887e6dc286ce245836234bc9e0ef17326d9e382c84678f76b",
+      "bytes": 1260
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/bl.png.meta",
+      "sha256": "04e9d164b1a73e8f37a5f6f158674929babf01ad21c49e901cb6ba68c409a2af",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/bottom.png",
+      "sha256": "3eceb663ef0b10a246a03279b16f675307c80afcfe2c09bfa9f94a3673ab775b",
+      "bytes": 1089
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/bottom.png.meta",
+      "sha256": "83e8437d3a07f9507ff7060719fd400e73f33d97ed789f64b90c62aa68d97233",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/br.png",
+      "sha256": "c7af56de946c521c0e5c7dd2200407d75526cfd8572fa4a47300ff77a6c29f41",
+      "bytes": 1211
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/br.png.meta",
+      "sha256": "01e1b631624fb3521129065ff8ab0ec82e52feb071c7ffcbd6f8a383eb8a09cf",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/door-open.png",
+      "sha256": "9bc4d09f94dab826f2dce405becff1c70e59715cd76b473c051e492ee4bb0e90",
+      "bytes": 3685
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/door-open.png.meta",
+      "sha256": "45924975a1c9e100c4431c487323628d6b9603617bb8568bf695493d1dc7ce6a",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/door.png",
+      "sha256": "d586e161942c4b9535897a67b539c26f5849033f55632839d9a823d8471dc4eb",
+      "bytes": 4689
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/door.png.meta",
+      "sha256": "fc93aa1b29f530c591a5c7a7ca0f5c3dd73ceb54a12608074ae38e5e932d750e",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/down.png",
+      "sha256": "8de7cb0dc3d296d7b4afd10ed4829ab4c2174caa7fc77d4aca7ebfc13a0c54ab",
+      "bytes": 2464
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/down.png.meta",
+      "sha256": "ff521fecfba11fdbb44ab48ee86b698f9a5d11c3e8340cc1629223af7703c40c",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/fill.png",
+      "sha256": "ca22238e727ed1de5ecfcd2766b040180875717b84c6349e24fc528806299f17",
+      "bytes": 1079
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/fill.png.meta",
+      "sha256": "d724de830f593c87666bd45f1d67f28fb51e1e29881aa6262450882ada8dd00a",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/left.png",
+      "sha256": "dbe2a91ea265460932b5282ed807ff847b6042ec1386e993389f1fe59e10807f",
+      "bytes": 1251
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/left.png.meta",
+      "sha256": "f433a4ab1ea156e59a4e30faa39e02001ac1e0b1835a5e1599c3b5bdde62e86a",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/right.png",
+      "sha256": "ea55b5367e7d206735d45545d5a6e29230772b4aab07f5be5bf1dd30e0770f28",
+      "bytes": 1215
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/right.png.meta",
+      "sha256": "48516ce3390401fadfc0d6a361b5505fc36fa8f3b389cb66c358e63190d3991d",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/tl.png",
+      "sha256": "f4c1ebd6d2dd54a233ea3e5efd3508268d34dec0bc4c77c3086bfe88459f88be",
+      "bytes": 2059
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/tl.png.meta",
+      "sha256": "7a9b9d1798cd55e5e76ec7ba8726cf7039c2e381227be88520a224d5b34042df",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/top.png",
+      "sha256": "5af8ace0a557e637d73e026bd7d124d0b1b07b77937641af20fb578cb9b48245",
+      "bytes": 1741
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/top.png.meta",
+      "sha256": "3b69b51cd2d69840fcf940be5fd08d0c5d2a20b88ebbf52cf542738202a514f3",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/tr.png",
+      "sha256": "79ebd2ce3c0980627a93c8274a333ae98f2b3f6e00c66b61b4eb7e332d2d01f5",
+      "bytes": 2080
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/tr.png.meta",
+      "sha256": "fa505b72f0615d122d5ac990152caee768a1c9ba1e4cd3f283a35cdb25cacc66",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/underdown.png",
+      "sha256": "0f344b4788875bdfb61cdb8c061d5e66440d605d3514e8f2399ada18fb581af5",
+      "bytes": 1850
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/underdown.png.meta",
+      "sha256": "c3f15f695169cecf1be9048bb87a0b60208c93947b189281b260be42897b57b9",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/underup.png",
+      "sha256": "1497736bd3fbca0d2a09e6ea376f3d8e011a80138acc49f7e70097438424bb71",
+      "bytes": 1754
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/underup.png.meta",
+      "sha256": "8bbc7abad969d6d845c4e90ea09a1dd92ebe174c5fb35dbf4dd61ed778ec90d2",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/up.png",
+      "sha256": "3668793f4fb6835d05fbb7b9b043b9c3e1d487f4e29bb933aa35a5db6780136f",
+      "bytes": 2238
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice/up.png.meta",
+      "sha256": "0baa8df404d1c80af01392d95cee64bff30caf2e86e1a6bd6a44c56f837de819",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Ice.meta",
+      "sha256": "c593f76e936dcff66b7ff8ad304aaf3b9a522f7b7244512a7ebe7a174669b6f8",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Art/Campaign/IceGlide.physicsMaterial2D",
+      "sha256": "16e3673868375431bdfbca34c8a1a922b6d24800f84da5593775e5cbbf532c23",
+      "bytes": 258
+    },
+    {
+      "path": "Assets/Art/Campaign/IceGlide.physicsMaterial2D.meta",
+      "sha256": "f7f95bcbaf41dc4d3b2008e18a26893eab342725afecb0a53007408460532d9a",
+      "bytes": 212
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/bl.png",
+      "sha256": "6f52ab3261cfd8d767dac28f1e413e58d74b9e68a656ec60241a3fbba8dde4cf",
+      "bytes": 1310
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/bl.png.meta",
+      "sha256": "30ae65fbfaf860d5067aaf6ae2b5543c8329aa7cbf5645fe0fa6de031a6dbcc2",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/bottom.png",
+      "sha256": "abc385e7bb1f65ad05a29d0a87a870b13d721a0a9d4365130284c2bf2aaf9f05",
+      "bytes": 1077
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/bottom.png.meta",
+      "sha256": "e9a65d6e985d02a97914c539b3291e4e526c8694632ebfb32577362d0fef4719",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/br.png",
+      "sha256": "fbc3977dda207305b5cb04e5a47bd35a5ea98b2b2de8e98d4462e1c4ef281916",
+      "bytes": 1263
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/br.png.meta",
+      "sha256": "7edf8917073d8a4567b400b32bd0b21e851fa78e7b8c2c95ac2ea556ded30a14",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/door-open.png",
+      "sha256": "2515d4197571bf038ac6f7812098403dd3338eb847c6810d05c0ab52d0c3c1da",
+      "bytes": 3736
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/door-open.png.meta",
+      "sha256": "453e7428c797139cb1531240415804fd1427f4c6942303768d3b88786aac4ac8",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/door.png",
+      "sha256": "1b242c8604adc533c8ac1fce88e3eb5900518e6d848cb081ced1be0b9f6923d3",
+      "bytes": 4430
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/door.png.meta",
+      "sha256": "d58fb8cfa7e2f75b271cca9283c22ed00728acf6702fe9ef9ad77db5a24ff902",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/down.png",
+      "sha256": "7549e2b16186324cd22ec8e2fc390acfb56cffa270dea5425d018c866f1809b8",
+      "bytes": 1167
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/down.png.meta",
+      "sha256": "7ddc61ad31100b30f23e168606a09038ab285c4d430b27381df1e2c9f5ee32a6",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/fill.png",
+      "sha256": "69fd71528229def5dca2c15b8e468e0833781668fef2bd6cf2d5b8b49e74328c",
+      "bytes": 1067
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/fill.png.meta",
+      "sha256": "204a8cc75d3357354552b5e9f2ce04c1ac16e9ed8fe0926c644892c38cab3f21",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/left.png",
+      "sha256": "265eb819d4edbdb85530e149b11eecace596e8240c113c44a657bba042b9fe91",
+      "bytes": 1073
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/left.png.meta",
+      "sha256": "ea8356b66ee2ce98324173325dfe90624f0e268afe8ff6ae45171379f73d8fb4",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/right.png",
+      "sha256": "e419bd686736996bda9ebb7fc17b31df0377833a516c6ff5cd0f37016c7b06cb",
+      "bytes": 1050
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/right.png.meta",
+      "sha256": "a4d9381f8e392bc06629d18146905fe4a1a3b2d871c852d7e698bd1d12401c2b",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/tl.png",
+      "sha256": "4eba2a831f1e1e19c29b286e0c992597ed63dda2d42e99570786225ce1c9f778",
+      "bytes": 2437
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/tl.png.meta",
+      "sha256": "9288b2c5413f5889c0f7d0571baa703a941ba36c3def83c9bd6a04677f0ebd26",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/top.png",
+      "sha256": "0c62cdebcb4f8d84885ec369dbdfceadd7a684f0595a91eafa951c81d73d24e9",
+      "bytes": 2124
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/top.png.meta",
+      "sha256": "63386c052d2b56c8f3f6c1f43d3a8650c933a64179bba399c3aeb0308089a20b",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/tr.png",
+      "sha256": "82cd399ef5adf3dd0fb1fd52c79c5d7168f66352f6e1f4d8d5c0b1523152781b",
+      "bytes": 2510
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/tr.png.meta",
+      "sha256": "69a8a7f57aa354718d019f0be700c34f3c84afd0c85d34ccca07f3396729e517",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/underdown.png",
+      "sha256": "a48f24f5344989065855e406c92c32b83db90e7ccea9459052f28b81db62de17",
+      "bytes": 1270
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/underdown.png.meta",
+      "sha256": "71fc223e8b770fbb431d3a4ddee012045738f28cb021d18122fcd1f97e292cb5",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/underup.png",
+      "sha256": "9c19facc89f8f961973e82df0fde69fae794353cf12256ceede9d32bafc526ca",
+      "bytes": 1259
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/underup.png.meta",
+      "sha256": "f5c68a94592e6c7b7b82a52ed8f53029c59a3e4a4c9f270f40a00afbc5402ec0",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/up.png",
+      "sha256": "370989818c4879828f7bbcf180e0f49dd844f2c952ae716244f4709d9da2b37c",
+      "bytes": 885
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle/up.png.meta",
+      "sha256": "e774fdfe5d8433a8fe9e35c25c7554ef83d85509b8bb47aa82cdf0f712e54f59",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Jungle.meta",
+      "sha256": "b2bb9e2a239a4bcd8df60ece2d51c53b38f803f2c2dea6d961ed5dcbb74b71a0",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/bl.png",
+      "sha256": "b1d9368e71e3263d7b3ce3236c71115cdbf05053212b19d2d48d94ea2a51f28c",
+      "bytes": 740
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/bl.png.meta",
+      "sha256": "48730097c60a4a8be31bab8cb31270b9d3505b039a4d00a30dadf4c552d80905",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/bottom.png",
+      "sha256": "e0a09defe4c85d53a79696e80fca809f1704f72789d5a6300e9e7c3e2724f9fb",
+      "bytes": 1227
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/bottom.png.meta",
+      "sha256": "e73498654e21a9496147791271a342911e0da5b3013c6955a4e4a4cdcf7f0c90",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/br.png",
+      "sha256": "446f8c9ea2256b81c437d1dae02a6270d037ac251efaa628ae78d336cb5bfd97",
+      "bytes": 709
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/br.png.meta",
+      "sha256": "3262ac475c9c7e923451fee6ca2e0596c9484fe9aa4879b2dbd887eaff321386",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/door-open.png",
+      "sha256": "7ef511fa284bd656ed4a7a3f6d2977019e12579f44833d56c3a77cca9a9d9d15",
+      "bytes": 6699
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/door-open.png.meta",
+      "sha256": "1375a06eafe503bd0cf31758411907d5bcc9677abb14170bad07b65fa69f66e4",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/door.png",
+      "sha256": "7ef511fa284bd656ed4a7a3f6d2977019e12579f44833d56c3a77cca9a9d9d15",
+      "bytes": 6699
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/door.png.meta",
+      "sha256": "7f73581b2ee58081aa1be6835dd7dd1d85f7b568ba21cafeefe915bc6a9eeac0",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/down.png",
+      "sha256": "b5b86f4b1d7c2ff7ed6d333f236f8852f66e4a55c3ad23fd65998a231017d030",
+      "bytes": 1681
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/down.png.meta",
+      "sha256": "2141b08560b58550108c3d1eb05d6b0e4c496d2fe8f5f21508f47771047e92c7",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/fill.png",
+      "sha256": "825dd67b6814d98167ea715aa20b75e4428150ef106b6dbb0dc234af95c030f7",
+      "bytes": 367
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/fill.png.meta",
+      "sha256": "9389d55ca724a827d5137bfe3ebb831047b32f5d2e6461918747357b88ed34e4",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/left.png",
+      "sha256": "1ce04d3ffad2e5e136dcdce2aa162a42606fc0b09a4fae6b30e76076e905ede6",
+      "bytes": 1299
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/left.png.meta",
+      "sha256": "e66e8e6d62f1303650e36092917fac2ece970520da9235497b7644d213cc9bfe",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/right.png",
+      "sha256": "fcf219a88e999171fa947ea9a7a33bba7ee75fb96ad4f339a5f7d3560c88c7c4",
+      "bytes": 1218
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/right.png.meta",
+      "sha256": "9ea5c9988f72cd18e39b20d46070df8f366a9893530ec95e34c066760891900f",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/tl.png",
+      "sha256": "c541e6ed7077bac3ac4324df174c3a7f36e0fbafce963ce6b4d4d54e8beb13b8",
+      "bytes": 680
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/tl.png.meta",
+      "sha256": "b911f75f9474eddf6d3c4e11e619c12b5b71614268348f29fc4b557590cf1db1",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/top.png",
+      "sha256": "72a58d150fce986e08609dc3682a0fc57e92af56486dd339de85a0b0e414bc4f",
+      "bytes": 1173
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/top.png.meta",
+      "sha256": "a0688150f29d5d9b2974d3a7b9932c5b5bec55219b7666831f1ded8c2edc191a",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/tr.png",
+      "sha256": "24ef4d62e537e8fbf7a33a1885211883d461883fc4c23fc46910435492cd5878",
+      "bytes": 765
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/tr.png.meta",
+      "sha256": "d7b0d0752c2d7a3b2965da49ec021341b947011eab2ade452160b077617ffee6",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/underdown.png",
+      "sha256": "25cb3abbf9665580abbd3c9fbc65c75bacb7fe667b068b10899b668f601c0e64",
+      "bytes": 2597
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/underdown.png.meta",
+      "sha256": "d46b8092d156b16f5fd4836a3da1df818148c70253817d5df3195e89003bd83b",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/underup.png",
+      "sha256": "b82dc80f5c21d0478c48926ae0e87197305b633fb9f4c3a168ffdfef824c39e9",
+      "bytes": 2763
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/underup.png.meta",
+      "sha256": "4b25d9398a3115b5421f5c8bc7dc6102737449277909d7ed5c54c2688b06ac8d",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/up.png",
+      "sha256": "b981411ccfdf7b72c4ff3cb2234574d8c1ad71ee959a062ccdb967f8c886c5fe",
+      "bytes": 1685
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky/up.png.meta",
+      "sha256": "2ff453cb9dface90661adb7c4c69a609e7a8f4fb851feefdc031674629192316",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Sky.meta",
+      "sha256": "f81e430c9800c007bcee7c24f4e5276b5821f830b3ebf552491d263562dde4f8",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/bl.png",
+      "sha256": "4328bef37a8ebba73dc49f79de915aabedcaf236d899541b9707f78b5e69da11",
+      "bytes": 1011
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/bl.png.meta",
+      "sha256": "a91f4ec62fa549cc2680f07d6fe1d1e920959d841b886358f48ef73cdf7d352c",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/bottom.png",
+      "sha256": "09d1b7ce62ba9628e41f18940613692b79dad14999f30c341aca31c007d5b0ce",
+      "bytes": 834
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/bottom.png.meta",
+      "sha256": "9d7125e398a1b20a0789446f8ef4c54f9ddcacdeff32f52327e65ca066ef9530",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/br.png",
+      "sha256": "a3d4edfda11a7a5fc14c5c40dfed23c3679fe0a0ccacf629f2110daf31852561",
+      "bytes": 1021
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/br.png.meta",
+      "sha256": "82dafb63a498373e581a1a4381481156cf121d19ca855d89980294e8b08f7606",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/door-open.png",
+      "sha256": "c497cc93aeb6f14563537c3c2c19ad5b4b742415f8933c1ab0489db6ac780ac3",
+      "bytes": 823
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/door-open.png.meta",
+      "sha256": "5fc974f5fdbad605e2396da9ef2bf1d2175f000d6d47eff1ed484bf6885449f1",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/door.png",
+      "sha256": "b6ba8d92b4b6db0a44895302f097ccb27b8a4ffdd968f38fb775a7341226e30a",
+      "bytes": 1570
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/door.png.meta",
+      "sha256": "57379e0746c063bf615941bffc6afbfe5d46d94f064d241d9fd342b688f7ab3d",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/down.png",
+      "sha256": "8ed0a526cc71416a364976868629a92f0b80019fe9421b1f4a4c701206463f84",
+      "bytes": 1416
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/down.png.meta",
+      "sha256": "c6f5cbc180dee573554057e0f306ee8656147e2e09afde3d29ce66f295678b10",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/fill.png",
+      "sha256": "c8e2a149bb1aa9a17e5bb935a4fbe6239bab1c1e5e60409063a11dfd9228b21c",
+      "bytes": 827
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/fill.png.meta",
+      "sha256": "b752c342c586a0a463bf8b7e167c6512b7f09031e05d95211def5ca27dac1b5a",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/left.png",
+      "sha256": "b93c34276ce4c105f4abf64d1a003d9c62eede0dc15980dd23209b595c542946",
+      "bytes": 801
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/left.png.meta",
+      "sha256": "0b2eea432af87aa6fe2a441b47998afe3b5bf3f8a60070f609ba93f81bee2a3e",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/right.png",
+      "sha256": "00b748ddde27029aa84e712283d9bb60e922ba8ad66800a16f2b79781c596168",
+      "bytes": 813
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/right.png.meta",
+      "sha256": "18fbeb0d852154c7550a300ef71317505cb48d3c7b644748dd963051aaadd5ff",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/tl.png",
+      "sha256": "2e7e6f7464e1883c66213159870f7d665a0a2351ea933585c3c7f4e3e0688515",
+      "bytes": 1207
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/tl.png.meta",
+      "sha256": "8e44ae4a487ecd3fd7d1ff0be8e61ae16b5299b3e39c0d011d431f7b5afb8129",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/top.png",
+      "sha256": "17a1e58ba6963b577027835ef2d3a1c1306b077cb971ee7c25b4fa3d1ef60fb1",
+      "bytes": 1035
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/top.png.meta",
+      "sha256": "0e41d4b07ec1908fdc08c8e0f4a64817e07e4f920944cc0c8133e250c979b11c",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/tr.png",
+      "sha256": "591eab3a78e6d5794b5980960cf18b39a0f4b12be116e1221b735075d70fe156",
+      "bytes": 1307
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/tr.png.meta",
+      "sha256": "2800f1be54ff176a6ae8d2343025bee24dfaeb28eb83bb72f06a5d58433496af",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/underdown.png",
+      "sha256": "22af392c9f65a9dab2af9fb2577c7579571261fb13a9a31e9304ee2112546274",
+      "bytes": 1074
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/underdown.png.meta",
+      "sha256": "97470ddec6e3940bcf58bca79ffdb090b05d28d1e00b2279f20710fc6457df55",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/underup.png",
+      "sha256": "91bb5a42735f93efccde7d93da0e5851ed7037e8564a9b7cc3b350060b28793d",
+      "bytes": 1000
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/underup.png.meta",
+      "sha256": "d74b2f50f0cf9e885fcb3a35686c69bb11457f3b92e3ff98f709e2371e7a5796",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/up.png",
+      "sha256": "a18fe41c2a86bba2eb7417deb8574ca8aca9f9d6a57fa1a9606d94377d014c6c",
+      "bytes": 1350
+    },
+    {
+      "path": "Assets/Art/Campaign/Town/up.png.meta",
+      "sha256": "e1f335eb1a594cdef10cc912d3a3ec2256980c257230183f693f672be8b98078",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Town.meta",
+      "sha256": "da3b0dd69e8499601bf022c73ea9f36a0b64d3204f221c890b3e2c48e3977bbc",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/bl.png",
+      "sha256": "cd2458acbd99ed3bcddaa18af6bfa973854898501e3e8a52927c040fcda4ced4",
+      "bytes": 1252
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/bl.png.meta",
+      "sha256": "29b72b90978e207ed059f61a44bffdc8a1f85aea7d08a2fa38fb52e59fa4fc80",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/bottom.png",
+      "sha256": "4344d008b0a54f68e05b5807033dc9a9a0ef87c5019b01fae663897b9b68ed01",
+      "bytes": 1087
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/bottom.png.meta",
+      "sha256": "4bbb7126e9e7b64d11cd4a133a93d4e3bb31fe83974df233ffdce287d7814997",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/br.png",
+      "sha256": "8c1a661ae0059763207f955c69c84edfa96ddfbf415fa9662d9b75e866822bb8",
+      "bytes": 1230
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/br.png.meta",
+      "sha256": "8b419bcb89ef6bfc3b83cbf7fd6499fbd68d29cb91c82c53a39abc524625d583",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/door-open.png",
+      "sha256": "adfc39c8efaada19667c64c210cf9d666b2200599433169aa8ae716b7c72e993",
+      "bytes": 812
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/door-open.png.meta",
+      "sha256": "b755accd30146101d36a6cfb07f4efeb5d4c107938bc442be6d487a8f5c543cf",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/door.png",
+      "sha256": "fafd9fe3a0a070d10c2519e0618ff96552a0bdc0bc4fe21790c3e00a3a5bab55",
+      "bytes": 1894
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/door.png.meta",
+      "sha256": "f38efcdaf06409c749e9484a7928e4e1b2f8b163d46564a7b7e25a5c54db96ce",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/down.png",
+      "sha256": "2acbf215f770bde252a2df85a13c1dde521cc0ab896f92f65961883386ac011d",
+      "bytes": 2139
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/down.png.meta",
+      "sha256": "6e51dd390018a2bd3d3f3c86dd03a8c815099f87aa1f41cc8b165dffb4df672d",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/fill.png",
+      "sha256": "46e05b89b6e10d40bd040c098c9c5ab9706061d38db2f58a86a4cdbba45869e2",
+      "bytes": 1078
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/fill.png.meta",
+      "sha256": "3a404c4611175aed8a6d453037ebd987bda5f490337fd4cd6aa2edbda9db7a8a",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/left.png",
+      "sha256": "bf63b7473f5b26366fff7b7275b5c60fd46c33bc3f2a3ceb6ad543b8ce8b7c6f",
+      "bytes": 1247
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/left.png.meta",
+      "sha256": "409dcb62fdc58f1e934669831930d1c8e2915d8cc488753a3c1bf3e996dc08ed",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/right.png",
+      "sha256": "03d454f32c58ef09bf209995fbea592ff2c7d18d4ec50081bb1831b62dea0ab6",
+      "bytes": 1214
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/right.png.meta",
+      "sha256": "ec481dc670f5d1714007e85843adc1489edce6347942c064b8f9520c8c352036",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/tl.png",
+      "sha256": "b9f66c9ce3f63172beb022e0702ab23557dffb5011b947cdf384b0951f709817",
+      "bytes": 1860
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/tl.png.meta",
+      "sha256": "772df02044c2bc14642875dd67dc841c49c834e35a1c160301f24b5226fda054",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/top.png",
+      "sha256": "dcbc6dec93e62f036e8ce9938d67b2dd84401714e02e3ca27a9260c1c2a9d72c",
+      "bytes": 1553
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/top.png.meta",
+      "sha256": "587eab41a60aac43e1cc2cf78a9fdefe7ad96af98de8ff8f78231edcbeaf4ccb",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/tr.png",
+      "sha256": "bc56e2ce2beae8f83f12f5be84555f00b641239b2d2e5a5d3330c24c7b1c4f8f",
+      "bytes": 1983
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/tr.png.meta",
+      "sha256": "778598338c41da28dcaf80e14bdaeec2bec245eb3848bfe86fab75167ee51ab9",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/underdown.png",
+      "sha256": "ecfdc3d0a17f4de518f0cc000afde7be93b0dfa12b06462d6c23d92d89f59384",
+      "bytes": 1562
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/underdown.png.meta",
+      "sha256": "dea691a8dc0b86cea0fc4d947b53ba9b7fe66e04e46682d68f700aadbc4d1bde",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/underup.png",
+      "sha256": "57b1370f48e926d80d9a4cd188d64fd1fee3a007d3306bb2820fbd161b032016",
+      "bytes": 1657
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/underup.png.meta",
+      "sha256": "11da472c5435d45922e4fc8a2c4481c1b8a7ff4f5928863909e1d897d0c5f5c9",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/up.png",
+      "sha256": "ef6783bfaa162a8333deacdc68d6bbf03e4a4d603ba83d589d433be979e0bee7",
+      "bytes": 1981
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano/up.png.meta",
+      "sha256": "8b2eb61a7909d137bbb31bf4472cceb0bfbbd6084c3d1763096829725b5c06a3",
+      "bytes": 3993
+    },
+    {
+      "path": "Assets/Art/Campaign/Volcano.meta",
+      "sha256": "d2913b8a59dd18541e852c43337b1daf3d1fa09460b387d48d4e53ebcb4e25a0",
+      "bytes": 196
+    },
+    {
+      "path": "Assets/Editor/CampaignAcceptance.cs",
+      "sha256": "3d85a2e0635f3b0d70d0a625364db84de95aeed4e11a73b4208eb733aa3d9bbf",
+      "bytes": 8426
+    },
+    {
+      "path": "Assets/Editor/CampaignAcceptance.cs.meta",
+      "sha256": "e19341f52d824619fb5649a5dd931f2532f03015c2746b0170d2841a4597b807",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Editor/CampaignBuilder.cs",
+      "sha256": "763a61f5018e809bc67290da3664237a115f1ff425d624a776684c036ffad83c",
+      "bytes": 22429
+    },
+    {
+      "path": "Assets/Editor/CampaignBuilder.cs.meta",
+      "sha256": "0c3abcae352c0312a25784256c1c345126412afac7ec69504d9f50280b420221",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Editor/CampaignPolish.cs",
+      "sha256": "d5fb2ec8c6835f8667e86d59f3b2f54e3a165f9cb80e190a844d1986f92d0b8b",
+      "bytes": 5423
+    },
+    {
+      "path": "Assets/Editor/CampaignPolish.cs.meta",
+      "sha256": "855a360d87af0717d9867991543d4846a188fd8ef89cfcd02eebd9852b195fd6",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Editor/CampaignPreview.cs",
+      "sha256": "cef2f23a26cc577adaa787be629ac38edc4d83ec480297af290bc86107ec30ad",
+      "bytes": 2384
+    },
+    {
+      "path": "Assets/Editor/CampaignPreview.cs.meta",
+      "sha256": "3d980d0771118ed162537e535122f19e782d9268d9c94caa00fd5c7129ac54e5",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Editor/CampaignProbe.cs",
+      "sha256": "28ec7706e0bb36fb38c53f795aacf4ecee03616f897f0dfb5cb501b00b39c0d0",
+      "bytes": 826
+    },
+    {
+      "path": "Assets/Editor/CampaignProbe.cs.meta",
+      "sha256": "94561c2d49a255d8e81c4f534a77acda3568a85568aae0176ae7ade0779e9032",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Editor/CampaignTemplate.unity",
+      "sha256": "f7b12b176b7421147b93733e5140608311e3e29674da3146c356af49339b23e7",
+      "bytes": 118729
+    },
+    {
+      "path": "Assets/Editor/CampaignTemplate.unity.meta",
+      "sha256": "02dfe3a4d17147feb79f84411319cd4ef62d55b40ef6fac8a1ea6d6d64d387e7",
+      "bytes": 179
+    },
+    {
+      "path": "Assets/Editor/CampaignUiAcceptance.cs",
+      "sha256": "597ba45b4b6c3da804d85e9dcde05d362122f207390172eff6660a631e470b93",
+      "bytes": 3081
+    },
+    {
+      "path": "Assets/Editor/CampaignUiAcceptance.cs.meta",
+      "sha256": "6fca1f129a97f7940654956a27321b263e4d5e7d7ac880ec9014df7428c0afb4",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Editor/EnemyCoinAcceptance.cs",
+      "sha256": "e38be7871bb6e3fc38705f6f384e185f554d5eb071a0fd40034b57716d5256b2",
+      "bytes": 6276
+    },
+    {
+      "path": "Assets/Editor/EnemyCoinAcceptance.cs.meta",
+      "sha256": "d02ab303609f811eb4fcfcaf5dfb530ef12216b9a1b43e0d38ada6467764b60c",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Editor/GiftBuildSettings.cs",
+      "sha256": "051d556f035c34d9206de464beda6c77d7e51811e968757a1044d5c45e30c819",
+      "bytes": 1150
+    },
+    {
+      "path": "Assets/Editor/GiftBuildSettings.cs.meta",
+      "sha256": "49282f4d3e6456b7b49db5957291e20cc96af5914f388182cef423d4d7e2bfa2",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Editor/GiftConfigurationMenu.cs",
+      "sha256": "c1877dd757b93997e0e9830411a960a2e8ff4ee0c771622db6a9413792676919",
+      "bytes": 850
+    },
+    {
+      "path": "Assets/Editor/GiftConfigurationMenu.cs.meta",
+      "sha256": "251016630d6a729e906352d1315111babb416b23827b4e25a6a082d9d6fe33cb",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Editor/KitCoinAnimationRepair.cs",
+      "sha256": "cbf594d458fdbb954067e582e4f20f05be98fa5c707616cd7c63d9b9582b82ad",
+      "bytes": 3312
+    },
+    {
+      "path": "Assets/Editor/KitCoinAnimationRepair.cs.meta",
+      "sha256": "a9226eb184209e2e5f08788646b161d5ccc1fab5277f3348abb2a3661b99024c",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Editor/KitTerrainRepair.cs",
+      "sha256": "1ae979e46cd0718f94766e053ed4d045dbedee887abd3cf5e77261ce274cd11b",
+      "bytes": 11962
+    },
+    {
+      "path": "Assets/Editor/KitTerrainRepair.cs.meta",
+      "sha256": "61c1a2d4510bc143c6f38e3fbfc66d2ff9ee63119499faacf949c70262a7751a",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Prefabs/Character.prefab",
+      "sha256": "e993e21d96673b3a8b4bb6e0f2cff4dc9073ff67a01f898680494a1e87b569c0",
+      "bytes": 43943
+    },
+    {
+      "path": "Assets/Prefabs/Level.prefab",
+      "sha256": "206c3daf81168f4da00b4b17410c5fe16878fbb06e9c534725c6722330ce7a05",
+      "bytes": 4756067
+    },
+    {
+      "path": "Assets/Scenes/Level02_Jungle.unity",
+      "sha256": "edb927f2105f9008626f7b4c679631127e449e3aa25ce3c6819ff0fe69e7c735",
+      "bytes": 14229630
+    },
+    {
+      "path": "Assets/Scenes/Level02_Jungle.unity.meta",
+      "sha256": "17a01d2d5024c9110ade30d409de45013e6bc6827a5cffe83818f5a560be9b43",
+      "bytes": 179
+    },
+    {
+      "path": "Assets/Scenes/Level03_Beach.unity",
+      "sha256": "8488004ec15adc1f946d6317613c23bd71508e07b46a400ca17a161434b29e2c",
+      "bytes": 10337585
+    },
+    {
+      "path": "Assets/Scenes/Level03_Beach.unity.meta",
+      "sha256": "bf4dd8e5268fc1c9397ffe45c81808e41ab2c90f61bc784754d8d2f7800f73d6",
+      "bytes": 179
+    },
+    {
+      "path": "Assets/Scenes/Level04_Town.unity",
+      "sha256": "f65ab65f58966b39d15bdbb882f72aca8e740a12628f4445c24c5899c232ec95",
+      "bytes": 13680186
+    },
+    {
+      "path": "Assets/Scenes/Level04_Town.unity.meta",
+      "sha256": "1af39f2d73ca86817d2ceb4754ff31d3a1fadfad631e4a19bc94e51ad2e35775",
+      "bytes": 179
+    },
+    {
+      "path": "Assets/Scenes/Level05_Cave.unity",
+      "sha256": "30b9e3913583a5680afe2c61da826f23efbda8f27142f205659ba47ae780adfd",
+      "bytes": 11377904
+    },
+    {
+      "path": "Assets/Scenes/Level05_Cave.unity.meta",
+      "sha256": "27beee2489bd50be0868218782759424ae252405ee744fe959c2e9a02acf54ba",
+      "bytes": 179
+    },
+    {
+      "path": "Assets/Scenes/Level06_Grassland_Winter.unity",
+      "sha256": "17b2b6b40188d482872befbecf228e18012647b86f4a23eacfc6fd14a80739b6",
+      "bytes": 15717477
+    },
+    {
+      "path": "Assets/Scenes/Level06_Grassland_Winter.unity.meta",
+      "sha256": "07dd3f8caade6d965c60c7b5a81d589ba724091229d69bdbeb4c518fd06246cf",
+      "bytes": 179
+    },
+    {
+      "path": "Assets/Scenes/Level07_Ice.unity",
+      "sha256": "0932ece5b2a78daf84dd3a6bb4ee07e40e37b8f57e8ae31d88c34ebc4a2dfc62",
+      "bytes": 10434264
+    },
+    {
+      "path": "Assets/Scenes/Level07_Ice.unity.meta",
+      "sha256": "0b0bc7ae1b5d5fc5733bb46400fe99ae71e91079980975e07fde09f420e0bb7e",
+      "bytes": 179
+    },
+    {
+      "path": "Assets/Scenes/Level08_Castle.unity",
+      "sha256": "a95a68ac874541632730c04084617056a543931ae8fc7674523012c367f2becc",
+      "bytes": 14782949
+    },
+    {
+      "path": "Assets/Scenes/Level08_Castle.unity.meta",
+      "sha256": "9718d12839f3467af7d1cb43e06b2b9b3dfc1711b7f96ced3cc33456f657e9af",
+      "bytes": 179
+    },
+    {
+      "path": "Assets/Scenes/Level09_Volcano.unity",
+      "sha256": "d233a66ea572bef5e842cf10d1bb4404919daa021466b3018a0683e4a956f077",
+      "bytes": 9361800
+    },
+    {
+      "path": "Assets/Scenes/Level09_Volcano.unity.meta",
+      "sha256": "396474164c23890ff57299a053d3844d62e5e09d6eaaab1ec93a7c3605390e94",
+      "bytes": 179
+    },
+    {
+      "path": "Assets/Scenes/Level10_Sky.unity",
+      "sha256": "11921868d163291fcac21b85939aff307310201a09728dcf765742668288112c",
+      "bytes": 11557747
+    },
+    {
+      "path": "Assets/Scenes/Level10_Sky.unity.meta",
+      "sha256": "e4646b65e8a82188289f1d8bebf65272208236cbf5bb0b69505260959c6152dc",
+      "bytes": 179
+    },
+    {
+      "path": "Assets/Scenes/OneOneScene.unity",
+      "sha256": "02a1fb6ee693ea710374ad957814d8fadb4633adf96f1c87d3c632c19999ea60",
+      "bytes": 147202
+    },
+    {
+      "path": "Assets/Scenes/OneOneScene.unity.meta",
+      "sha256": "d4a30a2dd8322ca15c8c0fe5d67e72608515fbac5d5f6e3d98d6abc5dd586b09",
+      "bytes": 162
+    },
+    {
+      "path": "Assets/Scripts/Block/CoinBlock.cs",
+      "sha256": "043228f906f3fa83d443ee877cde141894d69b1687c7797787510b0dac085081",
+      "bytes": 384
+    },
+    {
+      "path": "Assets/Scripts/Block/CoinBlock.cs.meta",
+      "sha256": "8a4b4da5937bd5d5a64456292493ba7b68ea1e5a8677b4f3ea3d08e5f7bfe8e3",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Block/MushroomBlock.cs",
+      "sha256": "a6a7250406b49663a9d8aa4d95ff506f0c501b4603aaf0fc806607d6973fac85",
+      "bytes": 264
+    },
+    {
+      "path": "Assets/Scripts/Block/MushroomBlock.cs.meta",
+      "sha256": "56ebf66351e3f5bbe0c0d9293a7e8a5282ea0d242d3ef10a2775c8d8f08c1ffd",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Block/QuestionMarkBlock.cs",
+      "sha256": "2efab1e9dfc85304916b8653b9b15ece1c5532b765715fa118aa00bf12ff6998",
+      "bytes": 1103
+    },
+    {
+      "path": "Assets/Scripts/Block/QuestionMarkBlock.cs.meta",
+      "sha256": "2d1281f4bbb6160aed3a99ade1eec11ad0a3950a4eddac3941f686e0978ddca0",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Block/StarBlock.cs",
+      "sha256": "abb25a654ce8bdcf09a6b815831e0edb245f9c6e3499fea9c824f075154b8b29",
+      "bytes": 252
+    },
+    {
+      "path": "Assets/Scripts/Block/StarBlock.cs.meta",
+      "sha256": "52bcfffff8edccb68be31b70b966b6b9f25de87a6118ee83ffb468eb6ceb5c5d",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Block.meta",
+      "sha256": "97212a382ef1823f4ee846c7525617053d6870672e51671e3746007d17a9b9ed",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/CampaignEnemy.cs",
+      "sha256": "c5d7e763adf00067f41ec30d924349b3cb24e6c50ee2eecd09a0f241ff1e2546",
+      "bytes": 1433
+    },
+    {
+      "path": "Assets/Scripts/CampaignEnemy.cs.meta",
+      "sha256": "37acfc50c23cb965252eaf2919b92a4f5efe80d13018cec5d4269d63cfab3d79",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Scripts/CampaignInteractable.cs",
+      "sha256": "6729a57c7e38d0569e724ddb2dbe7983a0708c99ceb15a9582da6a9b8486f67b",
+      "bytes": 2270
+    },
+    {
+      "path": "Assets/Scripts/CampaignInteractable.cs.meta",
+      "sha256": "2efcee5ee87e8d962173809e7ba5b2dcb86070f77bcd43329efdbec51f2fc1c9",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Scripts/CampaignLevel.cs",
+      "sha256": "3696a9cf8ea2147635bf5e850ebf665fd3a404b30768a839ae8c747879ac23f5",
+      "bytes": 4036
+    },
+    {
+      "path": "Assets/Scripts/CampaignLevel.cs.meta",
+      "sha256": "436f2f86bb82016ba0a5937d82eb7a08196ace6dad4a5eeda8bb940a7858c759",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Scripts/Character/ContactSoundEffect.cs",
+      "sha256": "02fc31821ce914a1320f740a2c77805dfa0e85ad7daed263a4f98cfa9ee2a564",
+      "bytes": 2514
+    },
+    {
+      "path": "Assets/Scripts/Character/ContactSoundEffect.cs.meta",
+      "sha256": "aec17ec03990e828eb45b3366510a06ddd791a04513187c58dbc08f6b9f3b7be",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/ArmsSimulation.cs",
+      "sha256": "3165938f4cb4dc95ef65b980dced0235d8a8f1b4fd006cfa246b9c991292429c",
+      "bytes": 3272
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/ArmsSimulation.cs.meta",
+      "sha256": "4d07d7399183b5a334dd573316c78299b6a43f5ae2585171e7d473c07cc83853",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/CollisionDetection.cs",
+      "sha256": "e2defe2179b304f73cb78e702a8a479e01fedf1b9da6f7a426f76784d51566ff",
+      "bytes": 519
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/CollisionDetection.cs.meta",
+      "sha256": "7ce3aadd041e3a8ff138ab3515065f7f40e53ed050102c73ec15f0c177c86cd4",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/TargetMovement.cs",
+      "sha256": "6fd983dc6e4312464e4af0983b9fc8552cca8d92e8e3854cd3acd9cb442ef64c",
+      "bytes": 3028
+    },
+    {
+      "path": "Assets/Scripts/Character/Control/TargetMovement.cs.meta",
+      "sha256": "9471c725d4b8bba6a4c83ba7dc8696629a0eab8e2b86cb994769677125c89fe2",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Character/Control.meta",
+      "sha256": "0dbd8a53afec5459b6d03d0e02760a670d04cd834c3c5195d769ef927d88d323",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/Death.cs",
+      "sha256": "b8bdfded86b4cfdb50710319770e17c6c521e0c5fa66ff7283f1539265b7ccc4",
+      "bytes": 2632
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/Death.cs.meta",
+      "sha256": "78248f64a5fe3cd9935e2b6afa015c7509470532c31e00906d1e8fa069cc6ad9",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/EnemyContactDetection.cs",
+      "sha256": "bb45b7b6a99d69c527a8959d6753eb314f71feecd7c3eb4e5a77ee6fe6bc0856",
+      "bytes": 1378
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/EnemyContactDetection.cs.meta",
+      "sha256": "25d5d1a7a340da479e3c91b4d54a55968e6824c7befb13c5da3c647fee9be961",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/FallDetection.cs",
+      "sha256": "0fe430fb5a18151fed2abc5c311659e1df82d6e5ecf1abce84d170e89bc06dca",
+      "bytes": 521
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/FallDetection.cs.meta",
+      "sha256": "083186d82f4c2a7d17d5307b3b0523baededc380d854bf99de07293b76d78790",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle.meta",
+      "sha256": "8c49c843999d3873d75019835740bb6e05425e88cd7cfc877e060741ea3b886f",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Character/PowerUp/TemporaryGrowth.cs",
+      "sha256": "03a601160f9441cf32759064a22fb3d6f7b63f57d0121a5ebf52be703555c080",
+      "bytes": 4918
+    },
+    {
+      "path": "Assets/Scripts/Character/PowerUp/TemporaryGrowth.cs.meta",
+      "sha256": "671ea597784f408bcb7e09a3a979f8863dbfb36dcb6e20bce6a7080b269a0a5f",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Character/PowerUp/TemporaryStrength.cs",
+      "sha256": "d7685de5787a6a947e83298236671cdc9738dc77c96d331fab5810aeef209f09",
+      "bytes": 4366
+    },
+    {
+      "path": "Assets/Scripts/Character/PowerUp/TemporaryStrength.cs.meta",
+      "sha256": "dda214c0255f46c86961e25a488a53ad6f1b87338c39cf5684f73880f31f201a",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Character/PowerUp.meta",
+      "sha256": "04b623f4bb300740817eb7bf0fff3e16c3c7bc3287f339831bcbb4ea3f15488b",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Character.meta",
+      "sha256": "1c4df4979b6532b7c244cf90c110568f14eeb4fcc5c5eeace72fb8fd401c50c6",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Enemy/EnemyDeath.cs",
+      "sha256": "4cb6ef3fb234d3fa734636416c7ab6089e509f9b9183bcb4068608806cd93511",
+      "bytes": 5220
+    },
+    {
+      "path": "Assets/Scripts/Enemy/EnemyDeath.cs.meta",
+      "sha256": "1f21b679957900066ce1df702479e8bcead2f342a6cf6ef6656154cd18181e10",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Enemy/EnemyMovement.cs",
+      "sha256": "248cbd5264c07b911906d70298e39d1e3e13607d8de4262abc794f4f0605ab30",
+      "bytes": 2151
+    },
+    {
+      "path": "Assets/Scripts/Enemy/EnemyMovement.cs.meta",
+      "sha256": "e22398c4e814c09ef19a5078fdf59dbcf1d09197c27f9865f243f07c8ef858da",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Enemy/KoopaTroopaShellContactDetection.cs",
+      "sha256": "ef05f9d200bd288c48dd4534945e6308bd309ea409bd5f493ebfc29630f33ae2",
+      "bytes": 502
+    },
+    {
+      "path": "Assets/Scripts/Enemy/KoopaTroopaShellContactDetection.cs.meta",
+      "sha256": "f40dceff4f00498febc938c3bfa03227624bc76ccdd8fe5c47e5e1bb7898ee98",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Enemy/KoopaTroopaShellMovement.cs",
+      "sha256": "24b5c3f8f07ff471f3a82741d5a34296dba3fde1af042c0ec036ba2f84706240",
+      "bytes": 504
+    },
+    {
+      "path": "Assets/Scripts/Enemy/KoopaTroopaShellMovement.cs.meta",
+      "sha256": "c9906bd4692f76548aa8d0e76a1dc92a0601d8d336ff332e2ab34ee7b75d51ae",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Enemy.meta",
+      "sha256": "69416a35b9318f10a7bd75d576aae9454a7e5d91eac8b72ac01773e41b5e0925",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Extension/CinemachineLockYAxisExtension.cs",
+      "sha256": "909e74af962d1be32b5358928a070c141745d1b34d0af46d507725b98202551d",
+      "bytes": 876
+    },
+    {
+      "path": "Assets/Scripts/Extension/CinemachineLockYAxisExtension.cs.meta",
+      "sha256": "ee13cf14f12a2b157e8dbc30092767b6fb01a8082de600c688932164201c3da8",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Extension/MonoBehaviourExtensions.cs",
+      "sha256": "7d81d0108db906760c3254efd422d59dbcda842c673c5b5b36c3e194e6f8a782",
+      "bytes": 673
+    },
+    {
+      "path": "Assets/Scripts/Extension/MonoBehaviourExtensions.cs.meta",
+      "sha256": "ba289ecb4f7123f84861f9601c7b6927d13a292936691ea4d06ca6163578752e",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Extension.meta",
+      "sha256": "99cb7599ce234797889878aee373b5b1fb784e31da703a1dad8638deb4e921bd",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/GiftConfiguration.cs",
+      "sha256": "f242a0c40a7735bf6359ad1461eed9a3e16c2dc78df0d4d5a911b25207dc028f",
+      "bytes": 1298
+    },
+    {
+      "path": "Assets/Scripts/GiftConfiguration.cs.meta",
+      "sha256": "3d1bdddcb8b3895668e5ccc5d7b427a0c2751fb41861faf3724dd17afef7564e",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Scripts/GiftKeyboardTester.cs",
+      "sha256": "5629c125adabccbcfe337419a0c4fc6b24dac951e348a4fe9e33a3ab0483197a",
+      "bytes": 1605
+    },
+    {
+      "path": "Assets/Scripts/GiftKeyboardTester.cs.meta",
+      "sha256": "84bc1569d7898b74bde5061239c5c19c40474dd63196b2a104985164d594872a",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Scripts/GiftRuntime.cs",
+      "sha256": "40e3165031e7e9d898f18cd2bf4a1e8a9ff30e19aa1b837142add1445af5eb2a",
+      "bytes": 4981
+    },
+    {
+      "path": "Assets/Scripts/GiftRuntime.cs.meta",
+      "sha256": "6df2c8a4bd977031d743186a02e64dd06fd1707f4bda3af3db6275f3e2cb0197",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Scripts/KitLandscape.cs",
+      "sha256": "8e0951f3efe9052ded54d516909ceae6f57a05fed022ec8b9d33fcf187a15b95",
+      "bytes": 1876
+    },
+    {
+      "path": "Assets/Scripts/KitLandscape.cs.meta",
+      "sha256": "9d0308a967da9636396ee5e4379288436deab400e87ce29f1608e1e30c229f22",
+      "bytes": 267
+    },
+    {
+      "path": "Assets/Scripts/Ui/ClockUi.cs",
+      "sha256": "8ab32d5ba54e05043c7f3e1ea0ce6939aeaaa7c315bda82e02b69f06bd6abe06",
+      "bytes": 918
+    },
+    {
+      "path": "Assets/Scripts/Ui/ClockUi.cs.meta",
+      "sha256": "8474d6d342a1e9fdc644f9c012a3c40de779625851161771a009f2dcaeb55adc",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Ui/CoinPurseUi.cs",
+      "sha256": "1c47301fd3307c18e22b7ff0821722257ef4ec86c31befd76465e222f3b113a3",
+      "bytes": 720
+    },
+    {
+      "path": "Assets/Scripts/Ui/CoinPurseUi.cs.meta",
+      "sha256": "deeceb7fe7df9b74ce304e42af8be332f5a73b63481694e9f7d7c2402ab15669",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Ui/GameOverUi.cs",
+      "sha256": "e7ee4c840a575cfcda6f283c14120511c07e5ea4ee276d5652aa103fcd53e8e4",
+      "bytes": 663
+    },
+    {
+      "path": "Assets/Scripts/Ui/GameOverUi.cs.meta",
+      "sha256": "1a0f45a1c24ac47d3150402fdec509dfcb87687f7e15f372218de5f9425b1bae",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Ui/RestartGameButton.cs",
+      "sha256": "5ffdf6114a65022b828381b177b18daca30f1f1fbcc52be4f869830f96a8c770",
+      "bytes": 410
+    },
+    {
+      "path": "Assets/Scripts/Ui/RestartGameButton.cs.meta",
+      "sha256": "905a55b8475b2c6af702cd077f7df925b31b01df15769b5fdd03bd29fc1947cf",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Ui.meta",
+      "sha256": "fb74cefcd7534c874b06937350b1a98ef541ec28d2c811969ac80ce71ada55e6",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Winning/Clock.cs",
+      "sha256": "7184acb44863697fd85804a04434dd46f31e078e134fb08f1ef1669e5eec026e",
+      "bytes": 1420
+    },
+    {
+      "path": "Assets/Scripts/Winning/Clock.cs.meta",
+      "sha256": "36c65702540bc101f048653bb72b503dac2bda2d8035338c75deb74bd7ba13c4",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Winning/CoinPurse.cs",
+      "sha256": "845244348eb6e4bedb8ecc413d45cb7b2e6e33abce5767a91916de736176da74",
+      "bytes": 335
+    },
+    {
+      "path": "Assets/Scripts/Winning/CoinPurse.cs.meta",
+      "sha256": "c8dec71aff68d1534f930908b46c09558f930ca80da7091463231761953f6d2e",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Winning/FloatingCoin.cs",
+      "sha256": "2c0e6f0e2324a032aaa152ffbd555801e92e6b2dec925128688366160f9242b2",
+      "bytes": 1130
+    },
+    {
+      "path": "Assets/Scripts/Winning/FloatingCoin.cs.meta",
+      "sha256": "79b596523351b9d49b5acc3b8fc06dc58bd368a44134a07c5f95ed72a3267a2c",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Winning/WinThresholdDetection.cs",
+      "sha256": "da503244bb9fd981a0674d287db50f16793360de5908f775d80a55983561a39d",
+      "bytes": 1649
+    },
+    {
+      "path": "Assets/Scripts/Winning/WinThresholdDetection.cs.meta",
+      "sha256": "a1ccf2e31b12d3c6d5d83a3228608ae206a46d6f08a391174641afce97e834b8",
+      "bytes": 88
+    },
+    {
+      "path": "Assets/Scripts/Winning.meta",
+      "sha256": "58f2e0fb371fe618ba245ed6b87ac5fc8c99ca9cb4855f2dc753c64a912075aa",
+      "bytes": 88
+    },
+    {
+      "path": "ProjectSettings/EditorBuildSettings.asset",
+      "sha256": "14d890f04080738547cff603e08b5dcef591f48c3fb9380c123f17fe3f7f868c",
+      "bytes": 1453
+    },
+    {
+      "path": "scripts/CAMPAIGN.md",
+      "sha256": "14e7d71f90e6293759176b4d7f8263a602048b3c8f96ee576dad6cef6198124e",
+      "bytes": 4149
+    },
+    {
+      "path": "scripts/level-evidence/build-results.txt",
+      "sha256": "6a283d874598e122fa00fbba423ffd9783760a54e3d0b4b2a06c58e94c38e8d7",
+      "bytes": 1318
+    },
+    {
+      "path": "scripts/level-evidence/Castle-atlas.png",
+      "sha256": "8ca92bc54bd04e036828dfbff2ed2d477943575f4fd40fc97b57109605feca64",
+      "bytes": 80632
+    },
+    {
+      "path": "scripts/level-evidence/first-door-final.png",
+      "sha256": "14f5354de515d8e4f35ee05e9b8e3390e818193c3f1949a75b22e13ed1758221",
+      "bytes": 95329
+    },
+    {
+      "path": "scripts/level-evidence/Jungle-atlas.png",
+      "sha256": "ba6043839334f7c6671a059bd63fbbcf0148cef5ce45979ffdbe172cf2931826",
+      "bytes": 112226
+    },
+    {
+      "path": "scripts/level-evidence/L01-exit.png",
+      "sha256": "930f8527e99b372787ca56c403fcd6a208caee258e704f6d9974303080f89215",
+      "bytes": 104466
+    },
+    {
+      "path": "scripts/level-evidence/L01-layout-1.png",
+      "sha256": "f5b4482a5afc74c883d17545020a471fae2e37e1ca91faca24cfb9e2fc6420f0",
+      "bytes": 55351
+    },
+    {
+      "path": "scripts/level-evidence/L01-layout-2.png",
+      "sha256": "8f415e0aa42ad2de8b25f26da5d2fcc86abece02d0b0249f48f415fce93b6576",
+      "bytes": 49163
+    },
+    {
+      "path": "scripts/level-evidence/L01-layout-3.png",
+      "sha256": "55b9b498db007a68a73855f4f2913fe27c59072d464d5b64db023398898cbda8",
+      "bytes": 31125
+    },
+    {
+      "path": "scripts/level-evidence/L01-star.png",
+      "sha256": "5616407ea89ea67842a14ddb5b75818826351b42bd590d0af05a066bc33c5929",
+      "bytes": 80784
+    },
+    {
+      "path": "scripts/level-evidence/L02-exit.png",
+      "sha256": "a15dc6d6b1760a4ec1ecc645dfeadae591a5cc8ed1ba71653212eb3c2f3e2b36",
+      "bytes": 106901
+    },
+    {
+      "path": "scripts/level-evidence/L02-layout-1.png",
+      "sha256": "9136022cbae745b15234e171977c5d57e40f6575e67d93a110b6fbb3387d4b32",
+      "bytes": 47140
+    },
+    {
+      "path": "scripts/level-evidence/L02-layout-2.png",
+      "sha256": "d6b714a40a181235a9c81f627bcb858afb613424349c5638f20db568035bc213",
+      "bytes": 50197
+    },
+    {
+      "path": "scripts/level-evidence/L02-layout-3.png",
+      "sha256": "e8e068b6bc470a6a7b5564d7458dafef62848784cc02e32e805553ecf167bf7a",
+      "bytes": 48668
+    },
+    {
+      "path": "scripts/level-evidence/L02-star.png",
+      "sha256": "00cb6ed79131e4b87c2a6606261b3c0007c0cb90499a2bf4b20321d889c5caa9",
+      "bytes": 84925
+    },
+    {
+      "path": "scripts/level-evidence/L03-exit.png",
+      "sha256": "b6bf9812a8d81f94748a0818465d2a60c61d9725f5f7a1c99e481a04f07a7095",
+      "bytes": 135247
+    },
+    {
+      "path": "scripts/level-evidence/L03-layout-1.png",
+      "sha256": "50b59f3bec38f1b0b0cc36da50035ea5e899866daf9eddba99c2e811d7dd755f",
+      "bytes": 80326
+    },
+    {
+      "path": "scripts/level-evidence/L03-layout-2.png",
+      "sha256": "ab11e6f2b4c97e88331e8663c0ed9fab9a92661fd89eb4baccc9bc9a2fa2cf29",
+      "bytes": 62377
+    },
+    {
+      "path": "scripts/level-evidence/L03-layout-3.png",
+      "sha256": "74dc502af92cc8b87def97b5e629cff8791ba9dd16fb26bcc016b13dce69c112",
+      "bytes": 58590
+    },
+    {
+      "path": "scripts/level-evidence/L03-star.png",
+      "sha256": "c5d9f823ed1131ff427915c3948a4c68cbb071a39843cf83cc04b90a0ee5725e",
+      "bytes": 134690
+    },
+    {
+      "path": "scripts/level-evidence/L04-exit.png",
+      "sha256": "3e26173599d8e9f6f79ec3b90a5c063133b8d908723ba562da693e578114b437",
+      "bytes": 82258
+    },
+    {
+      "path": "scripts/level-evidence/L04-layout-1.png",
+      "sha256": "479aa699ba778baaca06992e657cf8d1f9d660bfe2e863c7199c2e1f009287f4",
+      "bytes": 34049
+    },
+    {
+      "path": "scripts/level-evidence/L04-layout-2.png",
+      "sha256": "8a92abb496e201e6e9206c37eae999c66b48bc94dee247d93713b7757d00beb1",
+      "bytes": 39106
+    },
+    {
+      "path": "scripts/level-evidence/L04-layout-3.png",
+      "sha256": "4f8c47db37560c68ff66bb0efff0b5a6592b80ea127ecc83e92f6fb2d53a34f7",
+      "bytes": 36581
+    },
+    {
+      "path": "scripts/level-evidence/L04-star.png",
+      "sha256": "8863d084cbce1aa2ba6f7140fa44ef0444cfc25eb6bda4f05c7d5a0f20ca1ccf",
+      "bytes": 70743
+    },
+    {
+      "path": "scripts/level-evidence/L05-exit.png",
+      "sha256": "77de71f0d94a5a9504d166d295e4aa6405fe15006aae9f0abeb3bd3cb3a16dab",
+      "bytes": 118796
+    },
+    {
+      "path": "scripts/level-evidence/L05-layout-1.png",
+      "sha256": "7a1fd10a06af652197113df5cfe29eee29a562bc2095cfc57a290c10d1aac59c",
+      "bytes": 59790
+    },
+    {
+      "path": "scripts/level-evidence/L05-layout-2.png",
+      "sha256": "6ae4ac6754fa28b064d8f904e6e691d6420fe5a96060bd29d850e2382e013c2d",
+      "bytes": 60537
+    },
+    {
+      "path": "scripts/level-evidence/L05-layout-3.png",
+      "sha256": "93728a993754e567d7517f084a4d8b35bd4127d92813819e01d3badc8d7b7924",
+      "bytes": 49620
+    },
+    {
+      "path": "scripts/level-evidence/L05-star.png",
+      "sha256": "b1eafd06b8229fd753e5a0969d1bc3799f9481c6b892d89dc7e7d578dd83933c",
+      "bytes": 112086
+    },
+    {
+      "path": "scripts/level-evidence/L06-exit.png",
+      "sha256": "3892af9245adc21b49207d31c0078c4f9e99f2ebb781e7570f4829fe2ac8fff7",
+      "bytes": 111855
+    },
+    {
+      "path": "scripts/level-evidence/L06-layout-1.png",
+      "sha256": "a3fb6e2ae368c132c07031b92acdb7091c89735af7fa61cdff72eed9d5806514",
+      "bytes": 50144
+    },
+    {
+      "path": "scripts/level-evidence/L06-layout-2.png",
+      "sha256": "b7d1e38e3f084ea60fe959db536b858273d8b86e394cfa758114dcaec8897438",
+      "bytes": 51866
+    },
+    {
+      "path": "scripts/level-evidence/L06-layout-3.png",
+      "sha256": "2ef78731e1ea90a775b0a8a8aa3ddcc79c19b36de3567f159968c164cecf38e3",
+      "bytes": 52310
+    },
+    {
+      "path": "scripts/level-evidence/L06-star.png",
+      "sha256": "abea243607f90627b99e36b56118752918b7b89c8086aee3fe0d4cea00d022a4",
+      "bytes": 105645
+    },
+    {
+      "path": "scripts/level-evidence/L07-exit.png",
+      "sha256": "87055a185930456052c4e0f17443d162cd1fcc96dfac859e0f43e0cf412efa18",
+      "bytes": 129673
+    },
+    {
+      "path": "scripts/level-evidence/L07-layout-1.png",
+      "sha256": "3e51a2fb279e7ead0823cd093aa9370b3414564d825d784bf3ae66361c11893b",
+      "bytes": 45781
+    },
+    {
+      "path": "scripts/level-evidence/L07-layout-2.png",
+      "sha256": "0e74f110a6cc25ec44e430ad69d222b6e1aa79527ed0d70293ba1e5f9c2b8fb0",
+      "bytes": 52522
+    },
+    {
+      "path": "scripts/level-evidence/L07-layout-3.png",
+      "sha256": "a22a52b0b75231c33342ea192fe2448901f184e9f01064107b0ff067d1abeb88",
+      "bytes": 50614
+    },
+    {
+      "path": "scripts/level-evidence/L07-star.png",
+      "sha256": "c91cc022395e8ff83460259ca06a13217c388dde4cd3c8c71c9a77398379f899",
+      "bytes": 108203
+    },
+    {
+      "path": "scripts/level-evidence/L08-exit.png",
+      "sha256": "9dd82c4f2da9b1294673ddff9a1b318c53dfd9420f36d42a2cf6fb398eaa4405",
+      "bytes": 78448
+    },
+    {
+      "path": "scripts/level-evidence/L08-layout-1.png",
+      "sha256": "4625a7574ae7fc324c59c7e073af52f91a3d1c23d512fc5340721ea5407d0474",
+      "bytes": 27052
+    },
+    {
+      "path": "scripts/level-evidence/L08-layout-2.png",
+      "sha256": "9f837373f6700e10c29f9eda998f9cc7dd2753f763d353ef0d478213676b53fb",
+      "bytes": 40439
+    },
+    {
+      "path": "scripts/level-evidence/L08-layout-3.png",
+      "sha256": "8d8259e11729b906ad1b83d44f916824f12293625a60d8abf43c04262902b18f",
+      "bytes": 28395
+    },
+    {
+      "path": "scripts/level-evidence/L08-star.png",
+      "sha256": "8980fd8582519c28bad20cc1ef8cb30327fe07fb7a69f173997317a65385f5f8",
+      "bytes": 66304
+    },
+    {
+      "path": "scripts/level-evidence/L09-exit.png",
+      "sha256": "bef14f10864f258fbdf51bee1f0cc7d249d62a3458978b8782913fb5b869d56d",
+      "bytes": 109782
+    },
+    {
+      "path": "scripts/level-evidence/L09-layout-1.png",
+      "sha256": "8fbbb321210039056dd4a6c4d96aecdfed3a404ea3446636c1e9f4c9e165ab61",
+      "bytes": 44162
+    },
+    {
+      "path": "scripts/level-evidence/L09-layout-2.png",
+      "sha256": "ca4ce066f9e954e8daf877bbf483df1764c3f6bf5688c54029740cc17b78e450",
+      "bytes": 45719
+    },
+    {
+      "path": "scripts/level-evidence/L09-layout-3.png",
+      "sha256": "d466ec37266a8c008cc503104b0abe39af1d8aacd0517571a4cbb0811f0cdaac",
+      "bytes": 43005
+    },
+    {
+      "path": "scripts/level-evidence/L09-star.png",
+      "sha256": "a78d1c6963c42f0f9a01aea50564a5a71d400aa3187aa64b86e4791556d9bf06",
+      "bytes": 102307
+    },
+    {
+      "path": "scripts/level-evidence/L10-exit.png",
+      "sha256": "844285bdc227646850f2c7288211aae5cf371b43ad85a3a5fc1322fcf79593d9",
+      "bytes": 75694
+    },
+    {
+      "path": "scripts/level-evidence/L10-layout-1.png",
+      "sha256": "f5b88412c737c319d93c9d400086cdface1491c49b87a0be8e1838136aaf3a28",
+      "bytes": 28002
+    },
+    {
+      "path": "scripts/level-evidence/L10-layout-2.png",
+      "sha256": "a8cb35c440950e902b1effc4db0d828efb9ac139b8a118f5aabf1ee2b7d6e773",
+      "bytes": 26536
+    },
+    {
+      "path": "scripts/level-evidence/L10-layout-3.png",
+      "sha256": "19831b86dd4784bb3542973fcd015dbe9a2cd66ec96dde470395ad87d99f9eac",
+      "bytes": 29264
+    },
+    {
+      "path": "scripts/level-evidence/L10-star.png",
+      "sha256": "93edbd6ba810c03c9d10e2d2c867395019da9a96ea149a6202759539f791ec95",
+      "bytes": 70035
+    },
+    {
+      "path": "scripts/level-evidence/layout-contact.png",
+      "sha256": "ed18e0681a6360efef659fff5ce50adccb7a42bc3487640e53ec8687bf392b1b",
+      "bytes": 254317
+    },
+    {
+      "path": "scripts/level-evidence/next-level-ui.png",
+      "sha256": "55d463c8a8b3cee910c954ff442d297e70bcce01d0f4ab948690ff6c0de278a0",
+      "bytes": 130537
+    },
+    {
+      "path": "scripts/level-evidence/other-atlases.png",
+      "sha256": "bc5e9ff9158bc7521169c2474b0f105cb09219051748aa98e7349c344e1769db",
+      "bytes": 487701
+    },
+    {
+      "path": "scripts/level-evidence/play-results.txt",
+      "sha256": "62a169b12354c08fd879bfec18858e4de78f16942f83fd6a03dbb8f3512fb796",
+      "bytes": 6318
+    },
+    {
+      "path": "scripts/level-evidence/preview-results.txt",
+      "sha256": "29476e38518e47c2e3543fa8124862117945d698090b1d859443946a6fddb2fe",
+      "bytes": 127
+    },
+    {
+      "path": "scripts/level-evidence/probe.txt",
+      "sha256": "1c4d287e68168bd9bfcdfa19895e50008904a0dfc84c1d6d3e67e6813d314023",
+      "bytes": 137901
+    },
+    {
+      "path": "scripts/level-evidence/release-compile.txt",
+      "sha256": "852db9b75c572d8ca86f298c332023d68caa2527bf8123eabe8acff73711d864",
+      "bytes": 6064
+    },
+    {
+      "path": "scripts/level-evidence/release.rsp",
+      "sha256": "2134de721ca2443b918cc254c5f02a061292ef1c4a461de318d51802b516370e",
+      "bytes": 48583
+    },
+    {
+      "path": "scripts/level-evidence/Sky-atlas.png",
+      "sha256": "8ea85456d5bea32658c3c78fdb8ab527ff3f1c890e02653d2e503d10bd1584d4",
+      "bytes": 127873
+    },
+    {
+      "path": "scripts/level-evidence/structure-results.txt",
+      "sha256": "f0a8f4d81848bdbf66277e594d9c80ee066fee146196b38baa20acc1d6d01e52",
+      "bytes": 596
+    },
+    {
+      "path": "scripts/level-evidence/ui-results.txt",
+      "sha256": "524098a03c4fbd4229861e6451ff75dca4ad389c068529a2f8bc9e19cc174845",
+      "bytes": 70
+    }
+  ]
+}

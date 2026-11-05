@@ -1,0 +1,9 @@
+L02: Root and rock; route=311.8; exit={'x': 141.6, 'y': 226.8}; cells=2789
+L03: Broken sea cliff; route=311.8; exit={'x': 127.2, 'y': 204.4}; cells=2830
+L04: Rooftop salvage; route=312.8; exit={'x': 129.6, 'y': 217.20000000000002}; cells=2711
+L05: Chimney hollow; route=313.0; exit={'x': 130.4, 'y': 232.4}; cells=2533
+L06: Snow overhang; route=312.2; exit={'x': 116.80000000000001, 'y': 195.60000000000002}; cells=3012
+L07: Ice wall grips; route=312.5; exit={'x': 138.4, 'y': 234.8}; cells=2272
+L08: Castle furniture climb; route=312.5; exit={'x': 133.6, 'y': 231.60000000000002}; cells=2894
+L09: Volcanic switchback; route=312.0; exit={'x': 116.0, 'y': 202.8}; cells=3368
+L10: Cloud needle summit; route=311.6; exit={'x': 132.0, 'y': 241.20000000000002}; cells=2024

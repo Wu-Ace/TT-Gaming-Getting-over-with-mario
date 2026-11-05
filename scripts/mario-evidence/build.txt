@@ -1,0 +1,10 @@
+User-supplied original SMB maps traced on their 16px grid; geometry resampled for width and hammer height; native .8m cells, no stretched sprites.
+PASS L02 Jungle: traced cells=1245, stars=3, checkpoints=1, exit x300.
+PASS L03 Beach: traced cells=1018, stars=3, checkpoints=1, exit x300.
+PASS L04 Town: traced cells=966, stars=3, checkpoints=1, exit x300.
+PASS L05 Cave: traced cells=1015, stars=3, checkpoints=1, exit x300.
+PASS L06 Grassland_Winter: traced cells=1320, stars=3, checkpoints=1, exit x300.
+PASS L07 Ice: traced cells=904, stars=3, checkpoints=1, exit x300.
+PASS L08 Castle: traced cells=822, stars=3, checkpoints=2, exit x300.
+PASS L09 Volcano: traced cells=982, stars=3, checkpoints=2, exit x300.
+PASS L10 Sky: traced cells=1042, stars=3, checkpoints=2, exit x300.

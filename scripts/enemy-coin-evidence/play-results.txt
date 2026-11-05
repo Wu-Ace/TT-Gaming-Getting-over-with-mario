@@ -1,0 +1,15 @@
+UTC 2026-11-04T08:32:11.5929531Z
+PASS Repeated defeat is ignored
+PASS Authored death entity restored
+PASS Death visual retains full width
+PASS Corpse renders above all world layers
+PASS Corpse cannot collide or hurt player
+PASS Upward launch velocity
+PASS Koopa stomp retains active shell
+PASS Assets/Animations/CoinSpin.anim: 8 equal-height centered frames
+PASS Assets/Animations/Ui/CoinUiIcon.anim: 8 equal-height centered frames
+PASS Assets/Animations/Blocks/CoinQuestionMarkBlockInside.anim: 8 equal-height centered frames
+PASS Actual physics hop rises
+PASS Corpse falls through floor below spawn
+PASS Corpse automatically destroyed
+COMPLETE

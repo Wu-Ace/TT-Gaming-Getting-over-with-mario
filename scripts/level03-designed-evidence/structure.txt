@@ -1,0 +1,4 @@
+PASS broken bridge: all occupied columns only two-cell floating decks, no lower bypass
+PASS island crossing: all occupied columns only two-cell floating decks, no lower bypass
+PASS 3 objective centers outside terrain
+Physical reachability NOT proven by structure checks.

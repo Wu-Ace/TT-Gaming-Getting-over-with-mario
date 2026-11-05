@@ -1,0 +1,42 @@
+[
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\Assets\\Scenes\\Tutorial.unity",
+    "Hash": "3BD98D9CA5FB22376838FAD65B01469D99C5C7491F434F1BDC2B52AE891D681E"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\Assets\\Editor\\TutorialBuilder.cs",
+    "Hash": "F0F0229E57A902293A058A931053828A267891673B512450C41EE53C95FE3A1F"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\Assets\\Editor\\TutorialFinalize.cs",
+    "Hash": "863EFD8864CE8D60E2493DC662134F53A7CD1DF2AA547C10A92FB50C7E28F2F8"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\Assets\\Editor\\TutorialAcceptance.cs",
+    "Hash": "111FCC467904BA9A2FF60EC1FADC20B9A62B8A85C39C7A83B3DB2C87D877DD7D"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\Assets\\Scripts\\GameMenuUI.cs",
+    "Hash": "2D6D3DF3746FA38964406CBA0C77689EF57009813C81A466CC086357CC018180"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\ProjectSettings\\EditorBuildSettings.asset",
+    "Hash": "B9A4B2D828BC0985897C5567303FDFDCC9156793BB4612A0D7404BFC349DE6F5"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\scripts\\tutorial-evidence\\play.txt",
+    "Hash": "B088F11B566D6652D72EF07091024B1D91E3741170BEEE0B1691BD41857AC61B"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\scripts\\tutorial-evidence\\game-start.png",
+    "Hash": "016DCFEEFAAD209F84F6486CF498AD3E29B979A1CE8EAA60C5B3C688BF0F80CE"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\scripts\\tutorial-evidence\\game-win.png",
+    "Hash": "A2B6D0DE65EC03A8C2462966ADEF0B55E853E8C959C08884C3116B87ADDD5C29"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\scripts\\tutorial-evidence\\README.md",
+    "Hash": "DBD88500B93658B589B44B45565E317DB7A68677059FD294C5B2FB0BED688110"
+  }
+]

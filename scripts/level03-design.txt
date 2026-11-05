@@ -1,0 +1,9 @@
+broken shoreline: 0.0..33.6m
+reef teeth: 33.6..60.8m
+broken bridge: 60.8..86.4m
+tidal pockets: 86.4..116.0m
+high ledges: 116.0..146.4m
+island crossing: 146.4..179.2m
+block barriers: 179.2..208.0m
+final headland: 208.0..238.4m
+Single surface, no lower ground under decks; gaps .8m, adjacent rises <=2.4m; physical traversal still requires validation.

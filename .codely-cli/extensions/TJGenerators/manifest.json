@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "cn.tuanjie.ai.generators": "file:E:/TT Gaming/Getting Over Goombas/.codely-cli/extensions/TJGenerators/Packages/cn.tuanjie.ai.generators"
+  }
+}

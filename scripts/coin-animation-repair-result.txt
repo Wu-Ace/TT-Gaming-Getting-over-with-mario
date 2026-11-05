@@ -1,0 +1,1 @@
+PASS: 3 coin clips use 8 normalized centered frames; shared height/PPU; HUD preserveAspect; popup rises and fades.

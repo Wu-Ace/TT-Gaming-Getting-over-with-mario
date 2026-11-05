@@ -1,0 +1,31 @@
+{
+  "utc": "2026-11-04T14:17:24.010634+00:00",
+  "sha256": {
+    "Assets\\Scenes\\OneOneScene.unity": "7a9577546239ab84f1c15f657dbcb364d21b345cebae999e1d44bbace123c0b7",
+    "Assets\\Scenes\\Level02_Jungle.unity": "ddea6cfc18a49a1240950c5d676c7c245e388f1f76a94c493b257ad93a23857a",
+    "Assets\\Scripts\\Enemy\\EnemyDeath.cs": "2f27053a7cc6d46a0b06cd4021d178d9859d218b4479a1e682f25922c2b19bd8",
+    "Assets\\Scripts\\GameMenuUI.cs": "b278d87ada91703cc75a098cd782f1d5a21850d025ee5f9f0c6f78b964c1301b",
+    "Assets\\Editor\\Level02Designed.cs": "f68edd0b003477567f6b7bb700bef6161bc806a0fc45b1f8c11e5d3530056e76",
+    "Assets\\Editor\\InteractionStudy.cs": "ad43153b0c29f13c4fbb75a7b31fc965d6451672964543ba28fe51ce956149bf",
+    "Assets\\Editor\\ShellContactStudy.cs": "e25e7c95f1d3e140bfd3fd8ddc58e683eb581e106d0bcba7844976d0ef3378eb",
+    "Assets\\Editor\\FirstTwoAcceptance.cs": "c892b90ea03d345b7a99e6bd5176aa4ef002fb46e4f218a728b221cbde3478df",
+    "scripts\\level02-horizontal.json": "cdfe0d15ac298a1e08fca1919c74acb89ae6877bd0c518e4b6586d884d5989e4",
+    "design\\levels\\level02-jungle.md": "9f04406eed956bb2a8fc70943c9d2a305f185eb863bbc93ea635df278f0ed582",
+    "scripts\\level02-designed-evidence\\build.txt": "2bfa38289296ef64f68133350957fa96e648b5c0f7cfe35587c084bd7387e0a0",
+    "scripts\\level02-designed-evidence\\L02-map.png": "a1d23e6ad27c637cea4bebf34018d6607b4c02082400bac654b79c92f729da99",
+    "scripts\\level02-designed-evidence\\README.md": "14f5f205341b2d976c4b2c9aaf78681da0b5ff00e49d8ddadecd6a6ea629542a",
+    "scripts\\level02-designed-evidence\\route-graph.txt": "d9540019cfa9d49e8d8dd0498dabf4c32f9b7bc0f02c061f411ce145d17b672c",
+    "scripts\\first-two-evidence\\L01-exit.png": "8575ad02dbc9db2a82ca5c222f9d38a24e3237598b584777cdb9f5cf78cd132a",
+    "scripts\\first-two-evidence\\L01-star.png": "c29a41d1c5bbd43db72aca47a12c1056b5dde35695c118781b5998eba3998998",
+    "scripts\\first-two-evidence\\L02-exit.png": "04470e6ae8370de18ea6a1987762314c8bfb0b2b7d2c754c58a48387d0007b91",
+    "scripts\\first-two-evidence\\L02-star.png": "ad2b8fde989be45afd49a4ec690dda9fd3ff1ae20ad0b0b401f4ac4894f2c233",
+    "scripts\\first-two-evidence\\play-results.txt": "f8ae992d546221861c1bb926ebfb87c041dc41d8bb1fdc8628fd1770e86c10f1",
+    "scripts\\interaction-study\\coin-contact.png": "706f5d99067faaa065c31ebe5e0f17b5a81391b98bb4e2bd333ffb699ebb4a43",
+    "scripts\\interaction-study\\growth.png": "45aedcf162890854e4591bda44b5bf7bfa123a6d23d73269653c54ff55cf2d21",
+    "scripts\\interaction-study\\results.txt": "3cb1b8edfe2d55704a60f868adc6948b741ebe05b55d66f535f37020b8e3e5f7",
+    "scripts\\interaction-study\\shell-collision.png": "91da65ff260d54b09ca86b0d3b5b59f2407a29ee7300579da90fb71a3a94d220",
+    "scripts\\interaction-study\\shell-contact.txt": "f6a86e8ba4ace78777910380dfdd0ccea62a27049210dc9971e00c8b1aff9bd7",
+    "scripts\\interaction-study\\shell-moving.png": "2f50d02bf1f935f4d81beef48e67e9fd919a499bcb135ab356c3430df195cc5d",
+    "scripts\\interaction-study\\strength.png": "c0934b38ba572b0c0531a319b3dbe6472c5374c40cc98ea2947450bf21a23e46"
+  }
+}

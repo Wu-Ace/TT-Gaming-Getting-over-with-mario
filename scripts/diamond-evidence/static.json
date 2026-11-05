@@ -1,0 +1,13 @@
+{
+  "scope": "Levels 1 and 2 only; levels 3-10 restored byte-for-byte",
+  "scenes": [
+    {
+      "path": "Assets\\Scenes\\OneOneScene.unity",
+      "diamonds": 3
+    },
+    {
+      "path": "Assets\\Scenes\\Level02_Jungle.unity",
+      "diamonds": 3
+    }
+  ]
+}

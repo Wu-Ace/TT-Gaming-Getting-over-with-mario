@@ -1,0 +1,6 @@
+# Tutorial delivery — 2026-11-04
+Saved Assets/Scenes/Tutorial.unity before OneOneScene in Build Settings. Menu first-level entry goes through Tutorial; nextScene leads to original first level. Three left diamonds, central spawn, right 3/3 gated door. Native Grassland topology with one-pixel extruded gutters and independent floor collider. Existing gifts retained. Dirty loaded Level02 scene backed up before saving in art-backup/pre-tutorial.
+
+PASS: real editor compilation; Scene layout inspected including ends and two terrain rows; Game view inspected; isolated Play trigger tests at 0/1/2/3 diamonds, duplicate collection, unlocked body entry, next scene loading, zero runtime errors/exceptions in final run. Final play.txt is the final run; attempt1 is superseded. Test rig moved/frozen to isolate triggers, not a full manual hammer traversal. Manual normal Play inspected briefly, then stopped. No device/export tests. Original first level and Level prefab were not edited by tutorial generation.
+
+Initial attempts exposed missing inherited fall and win references; restored in final scene with TutorialFinalize. To regenerate from scratch use TutorialBuilder then TutorialFinalize (request files). Do not overwrite authored scene casually. Final scene is authoritative. UI completion retains existing Level 0 caption and completion panel.

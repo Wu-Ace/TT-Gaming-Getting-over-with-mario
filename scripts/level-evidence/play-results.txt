@@ -1,0 +1,133 @@
+UTC 2026-11-04T12:46:24.2704616Z
+Automated Play trigger/state smoke; teleportation is NOT a hammer traversal.
+PASS Scene loads level 1
+PASS Exactly three fresh stars
+PASS Hammer cannot collect stars
+PASS Locked exit rejects body
+PASS Body trigger collects first star
+PASS Repeated star collection ignored
+PASS Body trigger collects second star
+PASS Third star opens exit without remote completion
+PASS Checkpoint activates on body contact
+PASS Actual death/reload retains collected stars
+PASS Death respawns safely at checkpoint: actual=(123.00, -2.35, 0.00) target=(123.00, -2.35)
+PASS Body enters unlocked door to complete level
+PASS Manual restart clears star/completion state
+PASS Scene loads level 2
+PASS Exactly three fresh stars
+PASS Hammer cannot collect stars
+PASS Locked exit rejects body
+PASS Body trigger collects first star
+PASS Repeated star collection ignored
+PASS Body trigger collects second star
+PASS Third star opens exit without remote completion
+PASS Checkpoint activates on body contact
+PASS Actual death/reload retains collected stars
+PASS Death respawns safely at checkpoint: actual=(48.39, 95.38, 0.00) target=(48.40, 95.25)
+PASS Body enters unlocked door to complete level
+PASS Manual restart clears star/completion state
+PASS Scene loads level 3
+PASS Exactly three fresh stars
+PASS Hammer cannot collect stars
+PASS Locked exit rejects body
+PASS Body trigger collects first star
+PASS Repeated star collection ignored
+PASS Body trigger collects second star
+PASS Third star opens exit without remote completion
+PASS Checkpoint activates on body contact
+PASS Actual death/reload retains collected stars
+PASS Death respawns safely at checkpoint: actual=(33.27, 77.67, 0.00) target=(33.20, 77.65)
+PASS Body enters unlocked door to complete level
+PASS Manual restart clears star/completion state
+PASS Scene loads level 4
+PASS Exactly three fresh stars
+PASS Hammer cannot collect stars
+PASS Locked exit rejects body
+PASS Body trigger collects first star
+PASS Repeated star collection ignored
+PASS Body trigger collects second star
+PASS Third star opens exit without remote completion
+PASS Checkpoint activates on body contact
+PASS Actual death/reload retains collected stars
+PASS Death respawns safely at checkpoint: actual=(41.34, 92.06, 0.00) target=(41.20, 92.05)
+PASS Body enters unlocked door to complete level
+PASS Manual restart clears star/completion state
+PASS Scene loads level 5
+PASS Exactly three fresh stars
+PASS Hammer cannot collect stars
+PASS Locked exit rejects body
+PASS Body trigger collects first star
+PASS Repeated star collection ignored
+PASS Body trigger collects second star
+PASS Third star opens exit without remote completion
+PASS Checkpoint activates on body contact
+PASS Actual death/reload retains collected stars
+PASS Death respawns safely at checkpoint: actual=(31.46, 89.70, 0.00) target=(31.60, 89.65)
+PASS Body enters unlocked door to complete level
+PASS Manual restart clears star/completion state
+PASS Scene loads level 6
+PASS Exactly three fresh stars
+PASS Hammer cannot collect stars
+PASS Locked exit rejects body
+PASS Body trigger collects first star
+PASS Repeated star collection ignored
+PASS Body trigger collects second star
+PASS Third star opens exit without remote completion
+PASS Checkpoint activates on body contact
+PASS Actual death/reload retains collected stars
+PASS Death respawns safely at checkpoint: actual=(61.27, 76.07, 0.00) target=(61.20, 76.05)
+PASS Body enters unlocked door to complete level
+PASS Manual restart clears star/completion state
+PASS Scene loads level 7
+PASS Exactly three fresh stars
+PASS Hammer cannot collect stars
+PASS Locked exit rejects body
+PASS Body trigger collects first star
+PASS Repeated star collection ignored
+PASS Body trigger collects second star
+PASS Third star opens exit without remote completion
+PASS Checkpoint activates on body contact
+PASS Actual death/reload retains collected stars
+PASS Death respawns safely at checkpoint: actual=(39.46, 88.10, 0.00) target=(39.60, 88.05)
+PASS Body enters unlocked door to complete level
+PASS Manual restart clears star/completion state
+PASS Scene loads level 8
+PASS Exactly three fresh stars
+PASS Hammer cannot collect stars
+PASS Locked exit rejects body
+PASS Body trigger collects first star
+PASS Repeated star collection ignored
+PASS Body trigger collects second star
+PASS Third star opens exit without remote completion
+PASS Checkpoint activates on body contact
+PASS Actual death/reload retains collected stars
+PASS Death respawns safely at checkpoint: actual=(81.06, 165.70, 0.00) target=(81.20, 165.65)
+PASS Body enters unlocked door to complete level
+PASS Manual restart clears star/completion state
+PASS Scene loads level 9
+PASS Exactly three fresh stars
+PASS Hammer cannot collect stars
+PASS Locked exit rejects body
+PASS Body trigger collects first star
+PASS Repeated star collection ignored
+PASS Body trigger collects second star
+PASS Third star opens exit without remote completion
+PASS Checkpoint activates on body contact
+PASS Actual death/reload retains collected stars
+PASS Death respawns safely at checkpoint: actual=(49.94, 152.87, 0.00) target=(50.00, 152.85)
+PASS Body enters unlocked door to complete level
+PASS Manual restart clears star/completion state
+PASS Scene loads level 10
+PASS Exactly three fresh stars
+PASS Hammer cannot collect stars
+PASS Locked exit rejects body
+PASS Body trigger collects first star
+PASS Repeated star collection ignored
+PASS Body trigger collects second star
+PASS Third star opens exit without remote completion
+PASS Checkpoint activates on body contact
+PASS Actual death/reload retains collected stars
+PASS Death respawns safely at checkpoint: actual=(68.26, 174.50, 0.00) target=(68.40, 174.45)
+PASS Body enters unlocked door to complete level
+PASS Manual restart clears star/completion state
+PASS all ten scenes; full physical hammer playthrough, device/export NOT RUN.

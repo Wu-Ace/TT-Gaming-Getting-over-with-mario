@@ -1,0 +1,10 @@
+PASS L2 objectives/checkpoints/exit=[True, True, True, True, True]
+PASS L3 objectives/checkpoints/exit=[True, True, True, True, True]
+PASS L4 objectives/checkpoints/exit=[True, True, True, True, True]
+PASS L5 objectives/checkpoints/exit=[True, True, True, True, True]
+PASS L6 objectives/checkpoints/exit=[True, True, True, True, True]
+PASS L7 objectives/checkpoints/exit=[True, True, True, True, True]
+PASS L8 objectives/checkpoints/exit=[True, True, True, True, True, True]
+PASS L9 objectives/checkpoints/exit=[True, True, True, True, True, True]
+PASS L10 objectives/checkpoints/exit=[True, True, True, True, True, True]
+Approximate surface graph only; not physical hammer traversal.

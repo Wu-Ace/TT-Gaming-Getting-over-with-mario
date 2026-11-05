@@ -1,0 +1,2 @@
+System.Exception: Bad stars Assets/Scenes/Level02_Jungle.unity
+  at CampaignPolish.Run () [0x0028c] in E:\TT Gaming\Getting Over Goombas\Assets\Editor\CampaignPolish.cs:36 

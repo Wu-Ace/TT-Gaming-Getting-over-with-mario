@@ -1,0 +1,1 @@
+PASS 29 seam-safe textures: source pixels unchanged in center, 1px edge gutter, no source distortion. Colliders not resized.

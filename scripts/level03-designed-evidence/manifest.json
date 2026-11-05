@@ -1,0 +1,46 @@
+[
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\Assets\\Scenes\\Level03_Beach.unity",
+    "Hash": "2EB07BB09B06318509A4CF1702D942BB72C5109807149845A6B433BDB769AD0E"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\Assets\\Editor\\Level03DesignedBuilder.cs",
+    "Hash": "D5FDB259A7051CBFE8F9D08EDC6C2C7AF1E3998EA6070B51B7A6166AA229CC61"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\Assets\\Editor\\ThirdLevelAcceptance.cs",
+    "Hash": "847FB6394590EA854B7530F7B316DF01AB2F386D906B63F5237BC476037EA0A4"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\Assets\\Scripts\\GameMenuUI.cs",
+    "Hash": "3260845B2033039A07A7178C8C6A0CE6B6B5EE76F035D34C7E180D41FEF1456C"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\scripts\\prepare_level03.py",
+    "Hash": "3826FD73B124B41A5CE22EFBD2BA9A8A71345D424C8636F51E4C2039A3765267"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\scripts\\level03-designed.json",
+    "Hash": "5FB0AEF34A39F4F2ADDCB2A71936549DA144C2803DA9A5C94C5CE09C8A9EA8CF"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\scripts\\level03-designed-evidence\\play-results.txt",
+    "Hash": "01F409E2B6EB2421AE0D1B078876428AD55CDB81A8B0DFDBA94F937E3DC231A5"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\scripts\\level03-designed-evidence\\structure.txt",
+    "Hash": "CA66640EDCF117C88EF151114C9167D95E4F78AF9A458289578C9A774D28DB29"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\scripts\\level03-designed-evidence\\L03-map.png",
+    "Hash": "82FECDAB51A36823B0273121FDF005290D5B37B57C789344CF62F15FE661E1D3"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\scripts\\level03-designed-evidence\\L01-air-first.png",
+    "Hash": "DEF9B26C4E85A2784E40E3CA13DEAE9D0C50BA3E0EC3FED5B3EC758A4A4E0A69"
+  },
+  {
+    "Path": "E:\\TT Gaming\\Getting Over Goombas\\scripts\\level03-designed-evidence\\L01-air-second.png",
+    "Hash": "BA6A8D9F21E4B17EAF5084443267CF879D34D3DDAD06F7A6305778489262D393"
+  }
+]

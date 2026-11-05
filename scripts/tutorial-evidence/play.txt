@@ -1,0 +1,12 @@
+PASS isolated save prefix
+PASS three left gems and right door
+PASS zero gems locked
+PASS first gem and duplicate suppression
+PASS one gem locked
+PASS second gem collected
+PASS two gems locked
+PASS three gems open door without remote win
+PASS body enters unlocked door and wins
+PASS next is original first level
+PASS original first level loads
+PASS no runtime errors or exceptions

@@ -1,0 +1,6 @@
+Actual physics top-contact and shell-enemy collision; isolated contact probe, not manual character traversal.
+probe=(0.00, -3.44, 0.00) enemy=(0.00, 20.00, 0.00) timeScale=1
+FAIL Falling collider top contact creates Koopa shell through actual collision handler
+FAIL System.Exception: Falling collider top contact creates Koopa shell through actual collision handler
+  at ShellContactStudy.Check (System.Boolean b, System.String s) [0x0002e] in E:\TT Gaming\Getting Over Goombas\Assets\Editor\ShellContactStudy.cs:14 
+  at ShellContactStudy.Tick () [0x0033b] in E:\TT Gaming\Getting Over Goombas\Assets\Editor\ShellContactStudy.cs:19 

@@ -1,0 +1,21 @@
+UTC 2026-11-05T07:07:49.6937133Z
+Automated Play trigger/state smoke; teleportation is NOT a hammer traversal.
+PASS Scene loads level 2
+PASS Four vertical platforms with independent colliders
+PASS Exactly three fresh stars
+PASS Hammer cannot collect stars
+PASS Locked exit rejects body
+PASS Platform 0 moves vertically under physics
+PASS Platform 1 moves vertically under physics
+PASS Platform 2 moves vertically under physics
+PASS Platform 3 moves vertically under physics
+PASS Body trigger collects first star
+PASS Repeated star collection ignored
+PASS Body trigger collects second star
+PASS Third star opens exit without remote completion
+PASS Checkpoint activates on body contact
+PASS Actual death/reload retains collected stars
+PASS Death respawns safely at checkpoint: actual=(87.60, 2.45, 0.00) target=(87.60, 2.45)
+PASS Body enters unlocked door to complete level
+PASS Manual restart clears star/completion state
+PASS second scene; full physical hammer playthrough, device/export NOT RUN.

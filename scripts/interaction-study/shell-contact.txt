@@ -1,0 +1,7 @@
+Actual physics top-contact and shell-enemy collision; isolated contact probe, not manual character traversal.
+TOP CONTACT Entity rb=Entity (UnityEngine.Rigidbody2D)
+TOP CONTACT Entity rb=Entity (UnityEngine.Rigidbody2D)
+probe=(-1.42, -3.44, 0.00) enemy=(0.57, 20.00, 0.00) timeScale=1
+PASS Falling collider top contact creates Koopa shell through actual collision handler
+PASS Shell moves after actual stomp
+PASS Moving shell defeats Goomba through actual physics contact

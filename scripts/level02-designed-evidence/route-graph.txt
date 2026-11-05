@@ -1,0 +1,2 @@
+[True, True, True]
+Approximate surface graph, not swept-body or physics traversal.

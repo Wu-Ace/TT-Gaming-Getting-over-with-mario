@@ -1,0 +1,4 @@
+System.InvalidOperationException: Sequence contains no elements
+  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <3317859cdf8e4d3ea4e1fea2b71da691>:0 
+  at CampaignBuilder.Build () [0x001d2] in E:\TT Gaming\Getting Over Goombas\Assets\Editor\CampaignBuilder.cs:270 
+  at CampaignBuilder.Requested () [0x0001e] in E:\TT Gaming\Getting Over Goombas\Assets\Editor\CampaignBuilder.cs:27 

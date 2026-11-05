@@ -1,0 +1,10 @@
+Getting Over It inspired climbing courses; independent authored geometry; native .8m cells.
+PASS L02 Jungle: traced cells=2789, stars=3, checkpoints=1, summit exit=(141.60, 226.80), authored route=311.8.
+PASS L03 Beach: traced cells=2830, stars=3, checkpoints=1, summit exit=(127.20, 204.40), authored route=311.8.
+PASS L04 Town: traced cells=2711, stars=3, checkpoints=1, summit exit=(129.60, 217.20), authored route=312.8.
+PASS L05 Cave: traced cells=2533, stars=3, checkpoints=1, summit exit=(130.40, 232.40), authored route=313.0.
+PASS L06 Grassland_Winter: traced cells=3012, stars=3, checkpoints=1, summit exit=(116.80, 195.60), authored route=312.2.
+PASS L07 Ice: traced cells=2272, stars=3, checkpoints=1, summit exit=(138.40, 234.80), authored route=312.5.
+PASS L08 Castle: traced cells=2894, stars=3, checkpoints=2, summit exit=(133.60, 231.60), authored route=312.5.
+PASS L09 Volcano: traced cells=3368, stars=3, checkpoints=2, summit exit=(116.00, 202.80), authored route=312.0.
+PASS L10 Sky: traced cells=2024, stars=3, checkpoints=2, summit exit=(132.00, 241.20), authored route=311.6.

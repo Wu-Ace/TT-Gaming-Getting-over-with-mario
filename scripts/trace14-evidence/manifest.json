@@ -1,0 +1,9 @@
+{
+  "utc": "2026-11-05T13:56:07.416706+00:00",
+  "sha256": {
+    "Assets\\Scenes\\Level05_Cave.unity": "607c01d39f17bda6b647162d0c41d5ba9f560d89addc7f3a1bfa86de2abb9efd",
+    "Assets\\Art\\Campaign\\trace14-terrain.png": "90c104d3ee8a08b8e18aa4927879e285ac1c263b6c7ebc294a94feb2331be6c9",
+    "Assets\\Editor\\ApplyTrace14.cs": "000357d3a4303905b740c783b4a916c2278302698bc1d00b0ffce89d47bff043",
+    "scripts\\trace14-plan.json": "bab45a1a574893b62a4fc0a2ebf9ef3e6a308f93626ac3b0047576e7a9ce2e18"
+  }
+}

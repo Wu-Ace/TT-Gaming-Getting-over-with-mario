@@ -1,2 +1,2 @@
 Getting Over It inspired climbing courses; independent authored geometry; native .8m cells.
-PASS L05 Cave: traced cells=361, stars=3, checkpoints=2, summit exit=(8.00, 92.40), authored route=150.0.
+PASS L05 Cave: traced cells=1363, stars=3, checkpoints=3, summit exit=(16.80, 78.80), authored route=130.0.

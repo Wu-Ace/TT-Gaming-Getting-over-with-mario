@@ -1,0 +1,13 @@
+{
+  "utc": "2026-11-06T06:15:58.792678+00:00",
+  "files": {
+    "Assets/Scenes/Level03_Beach.unity": "61c66e2ce37f1052c62a06a4f9b1bbb0870e66a826c5c3d927d085c039b1fd1e",
+    "Assets/Editor/ThirdOrbitCorrection.cs": "f32f3f2c55cfb0b7c2dbef05571473446a46f3a7a0192aafd56e97820bad2d36",
+    "Assets/Editor/ThirdOrbitCheck.cs": "582d8edd5091372ac838feadacf20ae9e11853af358ee400177148e0ae7bb5a6",
+    "Assets/Editor/Level03DesignedBuilder.cs": "90926fdb1f2f01a45fb7c375fe5f66aa6de4418767ab7e42e4a3f75a9f171d6a",
+    "scripts/prepare_level03.py": "e34700ed41966eafef1abddefe38a638d6a47d6b46c25e289be4ed6000b707ac",
+    "scripts/level03-designed.json": "97dfb67d244647677737811e8dbff2a31fa3321a939fc7ee1f2449c1237a961d",
+    "scripts/third-orbit-correction.txt": "90f413dcec378526769b58dfc9a42ba40abfa20b165e71726da3aa151bf294a0",
+    "scripts/third-orbit-check.txt": "65be3def179b0f7c81035e0391498773fb06d8b916705e65d348565036bd905f"
+  }
+}

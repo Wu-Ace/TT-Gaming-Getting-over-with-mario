@@ -1,0 +1,5 @@
+{
+  "tool_sha256": "09e25d8b611fda10e9e054bd41700bdc8ceecfda88b6198fc10daa3143512cad",
+  "test": "PASS actual Play edit, capture, exit, save, reopen",
+  "formal_save": "untouched; isolated copy"
+}

@@ -1,7 +1,7 @@
-UTC 2026-11-05T07:31:54.2065760Z
+UTC 2026-11-06T05:51:42.3778665Z
 Automated Play trigger/state smoke; teleportation is NOT a hammer traversal.
 PASS Scene loads level 3
-PASS Eleven falling platform groups
+PASS Authored falling platform groups
 PASS Actual body landing triggers delayed fall
 PASS Platform holds during warning delay
 PASS Platform falls after delay
@@ -16,7 +16,7 @@ PASS Body trigger collects second star
 PASS Third star opens exit without remote completion
 PASS Checkpoint activates on body contact
 PASS Actual death/reload retains collected stars
-PASS Death respawns safely at checkpoint: actual=(3.61, 1.39, 0.00) target=(4.00, 1.65)
+PASS Death respawns safely at checkpoint: actual=(9.60, 10.52, 0.00) target=(9.60, 10.53)
 PASS Body enters unlocked door to complete level
 PASS Manual restart clears star/completion state
 PASS third scene; full physical hammer playthrough, device/export NOT RUN.

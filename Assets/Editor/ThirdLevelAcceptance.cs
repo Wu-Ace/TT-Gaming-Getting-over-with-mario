@@ -65,7 +65,7 @@ public static class ThirdLevelAcceptance
                 level=CampaignLevel.Current;Check(level!=null && level.number==3,"Scene loads level 3");
                 Freeze();
                 if(!donutChecked){
-                    var all=UnityEngine.Object.FindObjectsOfType<DonutFallPlatform>();Check(all.Length==11,"Eleven falling platform groups");
+                    var all=UnityEngine.Object.FindObjectsOfType<DonutFallPlatform>();Check(all.Length==JsonUtility.FromJson<Level03DesignedBuilder.Plan>(File.ReadAllText("scripts/level03-designed.json")).donuts.Length,"Authored falling platform groups");
                     donut=all.OrderBy(d=>d.transform.position.y).First();donutOrigin=donut.GetComponent<Rigidbody2D>().position;
                     var hit=body.GetComponentsInChildren<Collider2D>().First(c=>CampaignInteractable.Body(c)==body);
                     float foot=body.transform.position.y-hit.bounds.min.y;
@@ -160,3 +160,5 @@ public static class ThirdLevelAcceptance
 // Final aerial regression.
 // Loop reference physical falling bridge regression.
 // Request topology repair after final native grid layout.
+
+// Reference silhouette acceptance 2026-11-06.

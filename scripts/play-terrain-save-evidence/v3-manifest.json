@@ -1,0 +1,5 @@
+{
+  "sha256": "12a3d31e96ab54bb2f7584cd1eae42fa9f749aae774c779aab59d5c83c80efa6",
+  "test": "PASS actual runtime terrain clone creation and disk geometry verification",
+  "editorLoaded": "pending refresh at collection time"
+}

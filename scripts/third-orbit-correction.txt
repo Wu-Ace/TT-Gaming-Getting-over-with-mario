@@ -1,0 +1,1 @@
+PASS saved two groups of four .8m square orbit platforms, radius 1.6m, period 7s, centers (50,2.4)/(58,2.4). Removed eight static cells and rebuilt only affected collider rows. Left ascent orbit group retained. Play verification pending.

@@ -1,0 +1,5 @@
+{
+  "sha256": "e5042417aad329d9bb41e2906d138134157a848b92ad66f7d8ad17359b8365f0",
+  "single_piece": "PASS final transform, unique indices, all disk verification, reopen",
+  "failed_attempts": "old API compile error and duplicate-name verification failures retained in isolated project logs"
+}

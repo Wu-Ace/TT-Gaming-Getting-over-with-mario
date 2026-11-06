@@ -15,7 +15,8 @@ using UnityEngine;
     static readonly BindingFlags Flags=BindingFlags.Static|BindingFlags.NonPublic;
     static void Field(string n,object v)=>typeof(CampaignBuilder).GetField(n,Flags).SetValue(null,v);
     static object Call(string n,params object[] a)=>typeof(CampaignBuilder).GetMethod(n,Flags).Invoke(null,a);
-    static Level05DesignedBuilder(){EditorApplication.delayCall+=Run;EditorApplication.update+=Run;}
+    // Retired: source-traced geometry is owned by ApplyTrace14.Apply.
+
     static void Run()
     {
         if(!File.Exists("scripts/level05-designed.request") || EditorApplication.isPlayingOrWillChangePlaymode)return;

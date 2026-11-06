@@ -1,0 +1,124 @@
+using System;
+using System.IO;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEditor;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
+
+[InitializeOnLoad]
+public sealed class PlayTerrainSaveWindow : EditorWindow {
+ [Serializable] sealed class Shape {public Vector2[] points;}
+ [Serializable] sealed class Entry {public bool created,hasPolygon,hasBox,flipX,flipY;public string name,parentPath,spriteId,sortingLayer;public int layer,sortingOrder;public Color color;public Vector2 offset,boxSize;public Shape[] shapes;public string id,path;public int[] indices;public Vector3 position,scale;public Quaternion rotation;}
+ [Serializable] sealed class Snapshot {public string scene;public List<Entry> entries=new List<Entry>();}
+ const string Pending="Library/PlayTerrainSave.pending.json";
+ const string ArmedKey="PlayTerrainSave.Armed";
+ const string StatusKey="PlayTerrainSave.Status";
+ static PlayTerrainSaveWindow(){EditorApplication.playModeStateChanged+=Changed;}
+ [MenuItem("Tools/Levels/保存 Play 中的地图调整")]
+ public static void Open(){GetWindow<PlayTerrainSaveWindow>("地图调整保存");}
+ void OnGUI(){
+  EditorGUILayout.LabelField("v3｜支持复制地形块",EditorStyles.boldLabel);
+  EditorGUILayout.HelpBox("在 Play 中移动地形后点击下方按钮。工具会退出 Play，应用最终调整，保存场景并读取磁盘验证。支持现有地形块及 Interactions 下的钻石、检查点和出口。",MessageType.Info);
+  using(new EditorGUI.DisabledScope(!EditorApplication.isPlaying)) if(GUILayout.Button("保存地图调整并退出 Play",GUILayout.Height(36))){if(Capture())EditorApplication.ExitPlaymode();}
+  if(!EditorApplication.isPlaying && File.Exists(Pending) && GUILayout.Button("重试应用并校验上次记录"))Apply();
+  EditorGUILayout.HelpBox(SessionState.GetString(StatusKey,"尚未记录调整。"),MessageType.None);
+  if(File.Exists(Pending))EditorGUILayout.HelpBox("已有待保存记录。已开启本次保存；停止 Play 时自动记录最终位置，无需重复点击。支持运行时复制的普通地形块；删除对象及其他组件参数不在保存范围。",MessageType.Warning);
+ }
+ static void SetStatus(string value){SessionState.SetString(StatusKey,value);foreach(var window in Resources.FindObjectsOfTypeAll<PlayTerrainSaveWindow>())window.Repaint();Debug.Log(value);}
+ static bool Capture(){
+  SessionState.SetBool(ArmedKey,true);
+  var scene=SceneManager.GetActiveScene();var level=UnityEngine.Object.FindObjectOfType<CampaignLevel>();
+  if(level==null||level.gameObject.scene!=scene||string.IsNullOrEmpty(scene.path)){SetStatus("记录失败：请打开并运行已保存的关卡场景。");return false;}
+  var snapshot=new Snapshot{scene=scene.path};string sceneText=File.ReadAllText(scene.path).Replace("\r\n","\n");
+  foreach(string section in new[]{"Terrain","Interactions"}){
+   var root=level.transform.Find(section);if(root==null)continue;
+   foreach(var t in root.GetComponentsInChildren<Transform>(true)){
+    // GlobalObjectId resolves to the serialized scene object after Play ends.
+    var id=GlobalObjectId.GetGlobalObjectIdSlow(t);if(id.targetObjectId==0 && section!="Terrain")continue;
+    string path=section;var chain=new List<string>();for(var n=t;n!=root;n=n.parent)chain.Add(n.name);chain.Reverse();if(chain.Count>0)path+="/"+string.Join("/",chain.ToArray());
+    var indices=new List<int>();for(var n=t;n!=level.transform;n=n.parent)indices.Add(n.GetSiblingIndex());indices.Reverse();
+    var entry=new Entry{id=id.ToString(),path=path,indices=indices.ToArray(),position=t.localPosition,rotation=t.localRotation,scale=t.localScale};
+    entry.created=section=="Terrain" && !sceneText.Contains("&"+id.targetObjectId+"\n");
+    entry.name=t.name;entry.parentPath=path.Contains("/")?path.Substring(0,path.LastIndexOf('/')):"";
+    if(entry.created){
+     var sr=t.GetComponent<SpriteRenderer>();var poly=t.GetComponent<PolygonCollider2D>();var box=t.GetComponent<BoxCollider2D>();
+     if(sr==null || (poly==null && box==null)){SetStatus("无法保存新增对象："+path+"。当前支持带图像和多边形/方形碰撞体的地形复制件。");return false;}
+     foreach(var c in t.GetComponents<Component>())if(!(c is Transform)&&!(c is SpriteRenderer)&&!(c is PolygonCollider2D)&&!(c is BoxCollider2D)){SetStatus("新增对象含未支持组件："+path+" / "+c.GetType().Name);return false;}
+     entry.layer=t.gameObject.layer;entry.spriteId=GlobalObjectId.GetGlobalObjectIdSlow(sr.sprite).ToString();entry.color=sr.color;entry.sortingLayer=sr.sortingLayerName;entry.sortingOrder=sr.sortingOrder;entry.flipX=sr.flipX;entry.flipY=sr.flipY;
+     if(poly!=null){entry.hasPolygon=true;entry.offset=poly.offset;entry.shapes=new Shape[poly.pathCount];for(int k=0;k<poly.pathCount;k++)entry.shapes[k]=new Shape{points=poly.GetPath(k)};}
+     if(box!=null){entry.hasBox=true;entry.offset=box.offset;entry.boxSize=box.size;}
+    }
+    snapshot.entries.Add(entry);
+   }
+  }
+  if(snapshot.entries.Count==0){SetStatus("没有找到可保存的原场景地图对象。");return false;}
+  File.WriteAllText(Pending,JsonUtility.ToJson(snapshot,true));SetStatus("已开启保存，当前记录 "+snapshot.entries.Count+" 个对象；停止 Play 时抓取最终调整。");
+  return true;
+ }
+ static void Changed(PlayModeStateChange state){
+  if(state==PlayModeStateChange.EnteredPlayMode)SessionState.SetBool(ArmedKey,false);
+  if(state==PlayModeStateChange.ExitingPlayMode && SessionState.GetBool(ArmedKey,false))SessionState.SetBool("PlayTerrainSave.FinalCaptureValid",Capture());
+  if(state==PlayModeStateChange.EnteredEditMode && File.Exists(Pending) && SessionState.GetBool("PlayTerrainSave.FinalCaptureValid",true))EditorApplication.delayCall+=Apply;
+ }
+ static Transform Locate(Transform level,Entry item){if(item.indices!=null && item.indices.Length>0){var t=level;foreach(int i in item.indices){if(i<0||i>=t.childCount)return null;t=t.GetChild(i);}return t;}return level.Find(item.path);}
+ static bool Same(Transform t,Entry e){
+ if(Vector3.Distance(t.localPosition,e.position)>=.0001f || Vector3.Distance(t.localScale,e.scale)>=.0001f || Quaternion.Angle(t.localRotation,e.rotation)>=.01f)return false;
+ if(!e.created)return true;
+ var sr=t.GetComponent<SpriteRenderer>();if(sr==null||sr.sprite==null||GlobalObjectId.GetGlobalObjectIdSlow(sr.sprite).ToString()!=e.spriteId)return false;
+ if(e.hasPolygon){var poly=t.GetComponent<PolygonCollider2D>();if(poly==null||poly.pathCount!=e.shapes.Length||Vector2.Distance(poly.offset,e.offset)>.0001f)return false;for(int k=0;k<poly.pathCount;k++){var points=poly.GetPath(k);if(points.Length!=e.shapes[k].points.Length)return false;for(int j=0;j<points.Length;j++)if(Vector2.Distance(points[j],e.shapes[k].points[j])>.0001f)return false;}}
+ if(e.hasBox){var box=t.GetComponent<BoxCollider2D>();if(box==null||Vector2.Distance(box.size,e.boxSize)>.0001f||Vector2.Distance(box.offset,e.offset)>.0001f)return false;}
+ return true;
+ }
+ static void VerifyDisk(Snapshot snapshot){
+  string verifyPath="Assets/__PlayTerrainVerify_"+Guid.NewGuid().ToString("N")+".unity";
+  File.Copy(snapshot.scene,verifyPath);AssetDatabase.ImportAsset(verifyPath,ImportAssetOptions.ForceSynchronousImport);
+  var previous=SceneManager.GetActiveScene();var preview=EditorSceneManager.OpenScene(verifyPath,OpenSceneMode.Additive);
+  try{foreach(var item in snapshot.entries){Transform found=null;
+    foreach(var root in preview.GetRootGameObjects()){var level=root.GetComponentInChildren<CampaignLevel>(true);if(level!=null){found=Locate(level.transform,item);if(found!=null)break;}}
+    if(found==null || !Same(found,item))throw new Exception("磁盘校验失败："+item.path);
+  }}finally{EditorSceneManager.CloseScene(preview,true);if(previous.IsValid()&&previous.isLoaded)SceneManager.SetActiveScene(previous);AssetDatabase.DeleteAsset(verifyPath);}
+ }
+ static void Apply(){try{ApplyUnchecked();}catch(Exception e){SetStatus("保存未完成："+e.Message+"。记录保留，可重试。");Debug.LogException(e);}}
+ static void ApplyUnchecked(){
+  if(EditorApplication.isPlayingOrWillChangePlaymode||!File.Exists(Pending))return;
+  var snapshot=JsonUtility.FromJson<Snapshot>(File.ReadAllText(Pending));var scene=SceneManager.GetSceneByPath(snapshot.scene);
+  if(!scene.IsValid()||!scene.isLoaded){SetStatus("应用暂停：原关卡场景未加载，记录保留在 "+Pending);return;}
+  // Resolve everything before changing anything: failed mappings leave the snapshot intact.
+  var targets=new List<Transform>();
+  foreach(var item in snapshot.entries){
+   if(!GlobalObjectId.TryParse(item.id,out var id)){SetStatus("应用失败：对象标识无效，记录已保留。");return;}
+   Transform t=null;
+   foreach(var rootObject in scene.GetRootGameObjects()){
+    var level=rootObject.GetComponentInChildren<CampaignLevel>(true);if(level!=null && !string.IsNullOrEmpty(item.path)){t=Locate(level.transform,item);if(t!=null)break;}
+   }
+   if(!item.created){var byId=GlobalObjectId.GlobalObjectIdentifierToObjectSlow(id) as Transform;if(byId!=null && byId.gameObject.scene==scene)t=byId;}
+   if(item.created)t=null;
+   if(item.created){targets.Add(null);continue;}
+   if(t==null||t.gameObject.scene!=scene){SetStatus("应用失败：地图对象已删除或替换，记录已保留。");return;}targets.Add(t);
+  }
+  string dir="art-backup/play-terrain-"+DateTime.Now.ToString("yyyyMMdd-HHmmss-fff");Directory.CreateDirectory(dir);
+  File.Copy(snapshot.scene,Path.Combine(dir,Path.GetFileName(snapshot.scene)));
+  File.Copy(Pending,Path.Combine(dir,"play-adjustments.json"));
+  // Keep a copy of existing unsaved edit-mode changes as well.
+  EditorSceneManager.SaveScene(scene,Path.Combine(dir,"loaded-scene.unity"),true);
+  for(int i=0;i<snapshot.entries.Count;i++){var item=snapshot.entries[i];if(!item.created)continue;
+   Transform parent=null;foreach(var rootObject in scene.GetRootGameObjects()){var level=rootObject.GetComponentInChildren<CampaignLevel>(true);if(level!=null){parent=level.transform.Find(item.parentPath);if(parent!=null)break;}}
+   if(parent==null)throw new Exception("找不到复制件父对象："+item.parentPath);
+   var existing=parent.Find(item.name);if(existing!=null){targets[i]=existing;continue;}
+   var go=new GameObject(item.name);Undo.RegisterCreatedObjectUndo(go,"Create saved Play terrain clone");go.layer=item.layer;go.transform.SetParent(parent,false);go.transform.SetSiblingIndex(item.indices[item.indices.Length-1]);
+   var sr=go.AddComponent<SpriteRenderer>();if(!GlobalObjectId.TryParse(item.spriteId,out var spriteId))throw new Exception("复制件图像标识无效");sr.sprite=GlobalObjectId.GlobalObjectIdentifierToObjectSlow(spriteId) as Sprite;if(sr.sprite==null)throw new Exception("复制件图像丢失："+item.path);sr.color=item.color;sr.sortingLayerName=item.sortingLayer;sr.sortingOrder=item.sortingOrder;sr.flipX=item.flipX;sr.flipY=item.flipY;
+   if(item.hasPolygon){var poly=go.AddComponent<PolygonCollider2D>();poly.offset=item.offset;poly.pathCount=item.shapes.Length;for(int k=0;k<item.shapes.Length;k++)poly.SetPath(k,item.shapes[k].points);}
+   if(item.hasBox){var box=go.AddComponent<BoxCollider2D>();box.offset=item.offset;box.size=item.boxSize;}
+   targets[i]=go.transform;
+  }
+  Undo.RecordObjects(targets.ToArray(),"Apply Play terrain adjustments");
+  for(int i=0;i<targets.Count;i++){var t=targets[i];var item=snapshot.entries[i];t.localPosition=item.position;t.localRotation=item.rotation;t.localScale=item.scale;EditorUtility.SetDirty(t);if(PrefabUtility.IsPartOfPrefabInstance(t))PrefabUtility.RecordPrefabInstancePropertyModifications(t);}
+  EditorSceneManager.MarkSceneDirty(scene);
+  if(!EditorSceneManager.SaveScene(scene)){SetStatus("场景保存失败；调整仍在编辑场景中，记录已保留。");return;}
+  for(int i=0;i<targets.Count;i++)if(!Same(targets[i],snapshot.entries[i]))throw new Exception("编辑场景校验失败："+snapshot.entries[i].path);
+  VerifyDisk(snapshot);
+  File.WriteAllText(Path.Combine(dir,"verified.txt"),"Verified live and on-disk transforms: "+snapshot.entries.Count+" objects");
+  SessionState.SetBool(ArmedKey,false);File.Move(Pending,Path.Combine(dir,"applied.json"));SetStatus("已保存并通过磁盘校验。可 Ctrl+Z 撤销；修改前备份："+dir);
+ }
+}

@@ -1,0 +1,1 @@
+Bound tiles=1588; removed detached rows=157

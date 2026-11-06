@@ -1,0 +1,7 @@
+{
+  "scene_sha256": "1df60a83f637a04fcfd045c7f9a920d75cf5d4408a9eb921a2edf321f3d0a63d",
+  "cells": 1363,
+  "batch_exit": 0,
+  "physical_traversal": "NOT RUN",
+  "visual_scope": "Structural interpretation, not source-exact tracing"
+}

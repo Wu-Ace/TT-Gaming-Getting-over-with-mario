@@ -1,0 +1,25 @@
+{
+  "utc": "2026-11-06T05:53:44.470207+00:00",
+  "files": {
+    "scripts/prepare_level03.py": "f3835f953ec5b3bca15badf25081a0dee9cf644b48a018fbbd8d67e33ea7daee",
+    "scripts/level03-designed.json": "3c47d1ba7ea8c7ae8674b5bfe78b251e2d70d9ff26219dff8ae7970fc523ad3a",
+    "Assets/Editor/Level03DesignedBuilder.cs": "e2b823ab9408ddfda3b80d82f3d8224e9b5586293250fcac2ab110c97fdaa0bc",
+    "Assets/Editor/ThirdLevelAcceptance.cs": "8ca95ea507ff82d10b607b0af13f2c5bcdbf6e339c786a606b4293fe91f3202a",
+    "Assets/Scenes/Level03_Beach.unity": "03f7d51642513cca0b610fd4c06724b345acf92112fc1617886c85fbcbd521e9",
+    "scripts\\level03-reference-evidence\\build.txt": "8d3ae96f81a3adfe132cff8db945d79f5399c35e69a14bf271217ff9d68f6a2e",
+    "scripts\\level03-reference-evidence\\L03-exit.png": "7a919a6d858f28a8517a020d81f580dd8ec9a7a3ca31693ef31daa6063b6f920",
+    "scripts\\level03-reference-evidence\\L03-map.png": "c9bf3c64f222292e51b05551a2470959dc55557b926900c60e274a828dc3ac8e",
+    "scripts\\level03-reference-evidence\\L03-star.png": "32be8dce45434f7de698f925e2a198aab2783347e6b8515dde836ebbd4b6580b",
+    "scripts\\level03-reference-evidence\\layout.png": "1c951a70101bc6e599a393717f4b6c6df6c0087c755f2d996e3af8f21a0ad841",
+    "scripts\\level03-reference-evidence\\play-results.txt": "c0da4c344d2b64cf6a8a697867966bc4b02b88aa2134642f1b6f1f3dfd73e99a",
+    "scripts\\level03-reference-evidence\\README.md": "b605c22318ddd8c8395b75410a4b942564c91b9742ca1392d9c475d16f6f7976",
+    "scripts\\level03-reference-evidence\\structure.txt": "7fe430ec6abc74ae1b1ad71ffff9aae3423fa1d974166132cacfb6c248d7b458"
+  },
+  "backups": {
+    "art-backup\\pre-level03-reference-20261106\\level03-designed.json": "23c1376dca6f07c4761b3b46a7f798359dd3b492b6e23314ccf11d460988e998",
+    "art-backup\\pre-level03-reference-20261106\\Level03DesignedBuilder.cs": "146511ee59d5c9337f30e8ceb35bdb89c55166b62ffacaa2791ed3e391c5938c",
+    "art-backup\\pre-level03-reference-20261106\\Level03_Beach.unity": "00e778776615ec1d63c41dc8e5286de6ba8dadca5f670d1a9d85bc7d6ed148b9",
+    "art-backup\\pre-level03-reference-20261106\\prepare_level03.py": "f0477e950439a1b3ebb524c7c34d0d09fada0c123566f92af0643e2ac0b78288",
+    "art-backup\\pre-level03-reference-20261106\\ThirdLevelAcceptance.cs": "5d17fede5d369dc4ab74e9558ac58be9c1c35df82ce10c9193e948f3396b6feb"
+  }
+}

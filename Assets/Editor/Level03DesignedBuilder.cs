@@ -16,6 +16,13 @@ using UnityEngine;
     static void Field(string n,object v)=>typeof(CampaignBuilder).GetField(n,Flags).SetValue(null,v);
     static object Call(string n,params object[] a)=>typeof(CampaignBuilder).GetMethod(n,Flags).Invoke(null,a);
     static Level03DesignedBuilder(){EditorApplication.delayCall+=Run;}
+    public static void ApplyReferenceBatch()
+    {
+        File.WriteAllText("scripts/level03-designed.request", "reference silhouette");
+        Run();
+        if(File.Exists("scripts/level03-designed-evidence/reference-error.txt"))throw new Exception(File.ReadAllText("scripts/level03-designed-evidence/reference-error.txt"));
+        KitTerrainRepair.Repair();
+    }
     static void Run()
     {
         if(!File.Exists("scripts/level03-designed.request") || EditorApplication.isPlayingOrWillChangePlaymode)return;
@@ -29,8 +36,12 @@ using UnityEngine;
                 Directory.CreateDirectory("art-backup/pre-level03-designed");var backup="art-backup/pre-level03-designed/"+Path.GetFileName(entry.path);if(!File.Exists(backup))File.Copy(entry.path,backup);
                 var scene=EditorSceneManager.OpenScene(entry.path);var level=scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<CampaignLevel>(true)).Single();
                 var plan=JsonUtility.FromJson<Plan>(File.ReadAllText("scripts/level03-designed.json"));
+                // Preserve the existing orbit rigs while replacing the authored route.
+                var orbits=level.GetComponentsInChildren<OrbitRidePlatform>(true);
+                foreach(var orbit in orbits)orbit.transform.SetParent(level.transform,true);
                 foreach(var t in level.transform.Cast<Transform>().Where(t=>t.name=="Terrain" || t.name=="Interactions").ToArray())UnityEngine.Object.DestroyImmediate(t.gameObject);
                 var terrain=new GameObject("Terrain");terrain.transform.SetParent(level.transform,false);var objects=new GameObject("Interactions");objects.transform.SetParent(level.transform,false);
+                foreach(var orbit in orbits){float angle=orbit.phase*Mathf.PI*2;orbit.transform.position=orbit.center+new Vector2(Mathf.Cos(angle),Mathf.Sin(angle))*orbit.radius;orbit.transform.SetParent(objects.transform,true);}
                 level.initialSpawn=plan.spawn;Field("theme",level.theme);Field("terrain",terrain.transform);Field("objects",objects.transform);
                 var cells=new HashSet<Vector2Int>(plan.cells.Select(c=>new Vector2Int(c.x,c.y)));
                 foreach(var c in cells)
@@ -69,18 +80,20 @@ using UnityEngine;
                 level.route=plan.route;level.title=plan.title;
                 // Check objective centers against the actual newly authored solid cells.
                 foreach(var p in plan.stars){int x=Mathf.FloorToInt(p.x/.8f),y=Mathf.FloorToInt((p.y+3.6f)/.8f);if(cells.Contains(new Vector2Int(x,y)))throw new Exception("Star embedded in terrain "+level.number);}
+                // The generated row colliders must be converted before users edit individual tiles.
+                BeachTerrainColliderBinding.Repair();
                 EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);
                 Render(level);
                 log+=$"PASS L{level.number:00} {level.theme}: traced cells={cells.Count}, stars=3, checkpoints={plan.checkpoints.Length}, summit exit={plan.exit}, authored route={plan.authoredLength:F1}.\n";
             }
-            EditorSceneManager.OpenScene("Assets/Scenes/Level03_Beach.unity");if(SceneView.lastActiveSceneView!=null)SceneView.lastActiveSceneView.LookAt(new Vector3(12,8,0),Quaternion.identity,8,true);File.WriteAllText("scripts/level03-designed-evidence/build.txt",log);
+            EditorSceneManager.OpenScene("Assets/Scenes/Level03_Beach.unity");if(SceneView.lastActiveSceneView!=null)SceneView.lastActiveSceneView.LookAt(new Vector3(41,19,0),Quaternion.identity,25,true);File.WriteAllText("scripts/level03-designed-evidence/build.txt",log);
         }
         catch(Exception e){File.WriteAllText("scripts/level03-designed-evidence/reference-error.txt",e.ToString());Debug.LogException(e);}
     }
     static void Render(CampaignLevel level)
     {
-        var go=new GameObject("Reference review camera");var c=go.AddComponent<Camera>();c.orthographic=true;c.orthographicSize=19;c.transform.position=new Vector3(48,7,-20);c.clearFlags=CameraClearFlags.SolidColor;c.backgroundColor=new Color(.17f,.23f,.3f);
-        var rt=new RenderTexture(2400,900,24);c.targetTexture=rt;c.Render();RenderTexture.active=rt;var image=new Texture2D(2400,900,TextureFormat.RGB24,false);image.ReadPixels(new Rect(0,0,2400,900),0,0);image.Apply();File.WriteAllBytes($"scripts/level03-designed-evidence/L{level.number:00}-map.png",image.EncodeToPNG());RenderTexture.active=null;c.targetTexture=null;UnityEngine.Object.DestroyImmediate(image);UnityEngine.Object.DestroyImmediate(rt);UnityEngine.Object.DestroyImmediate(go);
+        var go=new GameObject("Reference review camera");var c=go.AddComponent<Camera>();c.orthographic=true;c.orthographicSize=24;c.transform.position=new Vector3(41,19,-20);c.clearFlags=CameraClearFlags.SolidColor;c.backgroundColor=new Color(.17f,.23f,.3f);
+        var rt=new RenderTexture(2060,1160,24);c.targetTexture=rt;c.Render();RenderTexture.active=rt;var image=new Texture2D(2060,1160,TextureFormat.RGB24,false);image.ReadPixels(new Rect(0,0,2060,1160),0,0);image.Apply();File.WriteAllBytes($"scripts/level03-designed-evidence/L{level.number:00}-map.png",image.EncodeToPNG());RenderTexture.active=null;c.targetTexture=null;UnityEngine.Object.DestroyImmediate(image);UnityEngine.Object.DestroyImmediate(rt);UnityEngine.Object.DestroyImmediate(go);
     }
 }
 // Pipe silhouettes included.
@@ -91,3 +104,4 @@ using UnityEngine;
 // Place objectives across both aerial crossings.
 
 // Second aerial crossing uses varied landing widths and alternating rises.
+// Reference ledges cleared from cliff cells, 2026-11-06.

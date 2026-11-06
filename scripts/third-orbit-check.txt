@@ -1,0 +1,2 @@
+2026-11-06T06:14:15.6612143Z
+PASS actual Play: eight platforms, two centers (50,2.4)/(58,2.4), radius 1.6m; each moved >.5m in 1s; platform rotation remains horizontal. Period 7s. Passenger/full traversal NOT RUN.

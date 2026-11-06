@@ -1,0 +1,1 @@
+PASS real Play edit -> capture -> exit -> scene save -> reopen position persists

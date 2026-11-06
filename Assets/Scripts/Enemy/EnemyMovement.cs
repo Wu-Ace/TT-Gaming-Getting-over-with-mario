@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using UnityEngine;
 
 namespace Enemy
@@ -18,6 +18,9 @@ namespace Enemy
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
+            // Ground enemies must fall when their patrol crosses a platform edge.
+            _rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+            if (_rigidbody.gravityScale <= 0f) _rigidbody.gravityScale = 1f;
             _animator = GetComponentInChildren<Animator>();
         }
 
@@ -27,24 +30,32 @@ namespace Enemy
             UpdateAnimationDirection();
         }
 
-        private void OnCollisionEnter2D(Collision2D _)
+        private void OnCollisionEnter2D(Collision2D collision)
         {
-            ChangeDirection();
+            // Landing on the floor must not reverse the patrol.
+            foreach (var contact in collision.contacts)
+            {
+                if (Mathf.Abs(contact.normal.x) > 0.5f)
+                {
+                    ChangeDirection();
+                    break;
+                }
+            }
         }
 
         private void FixedUpdate()
         {
-            if (limitsEnabled && transform.position.x < leftLimit.position.x && _direction == Vector2.left)
+            if (limitsEnabled && leftLimit != null && transform.position.x < leftLimit.position.x && _direction == Vector2.left)
             {
                 ChangeDirection();
             }
 
-            if (limitsEnabled && transform.position.x > rightLimit.position.x && _direction == Vector2.right)
+            if (limitsEnabled && rightLimit != null && transform.position.x > rightLimit.position.x && _direction == Vector2.right)
             {
                 ChangeDirection();
             }
 
-            _rigidbody.MovePosition(_rigidbody.position + Speed * Time.fixedDeltaTime * _direction);
+            _rigidbody.velocity = new Vector2(Speed * _direction.x, _rigidbody.velocity.y);
         }
 
         private void ChangeDirection()

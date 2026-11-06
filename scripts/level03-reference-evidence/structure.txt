@@ -1,0 +1,2 @@
+PASS 1596 unique native .8m cells; 19 falling ledges outside terrain; objective/checkpoint/spawn/exit centers outside terrain.
+Hammer traversal NOT proven.

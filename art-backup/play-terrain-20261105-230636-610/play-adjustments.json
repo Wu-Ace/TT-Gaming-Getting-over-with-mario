@@ -1,0 +1,3125 @@
+{
+    "scene": "Assets/Scenes/Level05_Cave.unity",
+    "entries": [
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-555620758-0",
+            "path": "Terrain",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1120664590-0",
+            "path": "Terrain/Floor 01",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-811542656-0",
+            "path": "Terrain/Floor 01/F01_Piece01",
+            "position": {
+                "x": 0.0,
+                "y": -3.559999942779541,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-549761993-0",
+            "path": "Terrain/Floor 01/F01_Piece02",
+            "position": {
+                "x": 10.40999984741211,
+                "y": 1.8600000143051148,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-325978907-0",
+            "path": "Terrain/Floor 01/F01_Piece03",
+            "position": {
+                "x": 8.5,
+                "y": -0.6600000262260437,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1879067870-0",
+            "path": "Terrain/Floor 01/F01_Piece04",
+            "position": {
+                "x": 16.209999084472658,
+                "y": -1.0700000524520875,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1651399852-0",
+            "path": "Terrain/Floor 02",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-419779469-0",
+            "path": "Terrain/Floor 02/F02_Piece01",
+            "position": {
+                "x": 0.0,
+                "y": 4.639999866485596,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-761908372-0",
+            "path": "Terrain/Floor 02/F02_Piece02",
+            "position": {
+                "x": 5.519999980926514,
+                "y": 12.600000381469727,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1127889116-0",
+            "path": "Terrain/Floor 02/F02_Piece03",
+            "position": {
+                "x": 22.440000534057618,
+                "y": 4.639999866485596,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-2100347932-0",
+            "path": "Terrain/Floor 02/F02_Piece04",
+            "position": {
+                "x": 9.520000457763672,
+                "y": 6.340000152587891,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1850425969-0",
+            "path": "Terrain/Floor 02/F02_Piece05",
+            "position": {
+                "x": 14.699999809265137,
+                "y": 9.550000190734864,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-2075308527-0",
+            "path": "Terrain/Floor 02/F02_Piece06",
+            "position": {
+                "x": 5.590000152587891,
+                "y": 7.409999847412109,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1347280690-0",
+            "path": "Terrain/Floor 02/F02_Piece07",
+            "position": {
+                "x": 17.389999389648439,
+                "y": 5.360000133514404,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-548826050-0",
+            "path": "Terrain/Floor 02/F02_Piece08",
+            "position": {
+                "x": 7.599999904632568,
+                "y": 5.039999961853027,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1802485865-0",
+            "path": "Terrain/Floor 03",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-324472951-0",
+            "path": "Terrain/Floor 03/F03_Piece01",
+            "position": {
+                "x": 0.0,
+                "y": 12.920000076293946,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-2056344414-0",
+            "path": "Terrain/Floor 03/F03_Piece02",
+            "position": {
+                "x": 7.320000171661377,
+                "y": 20.719999313354493,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1177658465-0",
+            "path": "Terrain/Floor 03/F03_Piece03",
+            "position": {
+                "x": 23.200000762939454,
+                "y": 12.920000076293946,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1104622327-0",
+            "path": "Terrain/Floor 03/F03_Piece04",
+            "position": {
+                "x": 4.800000190734863,
+                "y": 19.15999984741211,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1421325083-0",
+            "path": "Terrain/Floor 03/F03_Piece05",
+            "position": {
+                "x": 8.600000381469727,
+                "y": 17.239999771118165,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-964731801-0",
+            "path": "Terrain/Floor 03/F03_Piece06",
+            "position": {
+                "x": 6.170000076293945,
+                "y": 16.350000381469728,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1490810692-0",
+            "path": "Terrain/Floor 03/F03_Piece07",
+            "position": {
+                "x": 10.319999694824219,
+                "y": 14.84000015258789,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1057316357-0",
+            "path": "Terrain/Floor 03/F03_Piece08",
+            "position": {
+                "x": 3.619999885559082,
+                "y": 14.5600004196167,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1089844736-0",
+            "path": "Terrain/Floor 03/F03_Piece09",
+            "position": {
+                "x": 9.140000343322754,
+                "y": 11.529999732971192,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1532448166-0",
+            "path": "Terrain/Floor 03/F03_Piece10",
+            "position": {
+                "x": 17.600000381469728,
+                "y": 13.640000343322754,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1660978977-0",
+            "path": "Terrain/Floor 04",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-573289626-0",
+            "path": "Terrain/Floor 04/F04_Piece01",
+            "position": {
+                "x": 0.0,
+                "y": 21.15999984741211,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1273629291-0",
+            "path": "Terrain/Floor 04/F04_Piece02",
+            "position": {
+                "x": 15.239999771118164,
+                "y": 26.780000686645509,
+                "z": 0.0
+            },
+            "scale": {
+                "x": -1.0059000253677369,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-312826205-0",
+            "path": "Terrain/Floor 04/F04_Piece03",
+            "position": {
+                "x": 18.15999984741211,
+                "y": 28.639999389648439,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1598280994-0",
+            "path": "Terrain/Floor 04/F04_Piece04",
+            "position": {
+                "x": 23.8799991607666,
+                "y": 21.15999984741211,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1293195154-0",
+            "path": "Terrain/Floor 04/F04_Piece05",
+            "position": {
+                "x": 16.360000610351564,
+                "y": 24.040000915527345,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-577728294-0",
+            "path": "Terrain/Floor 04/F04_Piece06",
+            "position": {
+                "x": 10.210000038146973,
+                "y": 26.59000015258789,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-445314090-0",
+            "path": "Terrain/Floor 04/F04_Piece07",
+            "position": {
+                "x": 5.519999980926514,
+                "y": 24.600000381469728,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-968195597-0",
+            "path": "Terrain/Floor 04/F04_Piece08",
+            "position": {
+                "x": 7.320000171661377,
+                "y": 23.84000015258789,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1754325138-0",
+            "path": "Terrain/Floor 04/F04_Piece09",
+            "position": {
+                "x": 5.519999980926514,
+                "y": 22.200000762939454,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-888247689-0",
+            "path": "Terrain/Floor 04/F04_Piece10",
+            "position": {
+                "x": 7.320000171661377,
+                "y": 21.15999984741211,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-596644243-0",
+            "path": "Terrain/Floor 05",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-147531753-0",
+            "path": "Terrain/Floor 05/F05_Piece01",
+            "position": {
+                "x": 0.0,
+                "y": 29.399999618530275,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-67831498-0",
+            "path": "Terrain/Floor 05/F05_Piece02",
+            "position": {
+                "x": 8.319999694824219,
+                "y": 37.31999969482422,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-658904591-0",
+            "path": "Terrain/Floor 05/F05_Piece03",
+            "position": {
+                "x": 24.200000762939454,
+                "y": 29.399999618530275,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1690957621-0",
+            "path": "Terrain/Floor 05/F05_Piece04",
+            "position": {
+                "x": 6.800000190734863,
+                "y": 36.91999816894531,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-476186062-0",
+            "path": "Terrain/Floor 05/F05_Piece05",
+            "position": {
+                "x": 8.84000015258789,
+                "y": 35.91999816894531,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1710801606-0",
+            "path": "Terrain/Floor 05/F05_Piece06",
+            "position": {
+                "x": 12.399999618530274,
+                "y": 35.560001373291019,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1724166403-0",
+            "path": "Terrain/Floor 05/F05_Piece07",
+            "position": {
+                "x": 20.450000762939454,
+                "y": 36.119998931884769,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1409649352-0",
+            "path": "Terrain/Floor 05/F05_Piece08",
+            "position": {
+                "x": 2.0799999237060549,
+                "y": 34.880001068115237,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1675841568-0",
+            "path": "Terrain/Floor 05/F05_Piece09",
+            "position": {
+                "x": 6.800000190734863,
+                "y": 34.52000045776367,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1324984528-0",
+            "path": "Terrain/Floor 05/F05_Piece10",
+            "position": {
+                "x": 5.519999980926514,
+                "y": 32.599998474121097,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-161966744-0",
+            "path": "Terrain/Floor 05/F05_Piece11",
+            "position": {
+                "x": 18.15999984741211,
+                "y": 31.559999465942384,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1403817908-0",
+            "path": "Terrain/Floor 05/F05_Piece12",
+            "position": {
+                "x": 4.880000114440918,
+                "y": 29.399999618530275,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-96800330-0",
+            "path": "Terrain/Floor 05/F05_Piece13",
+            "position": {
+                "x": 18.15999984741211,
+                "y": 29.399999618530275,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-608987831-0",
+            "path": "Terrain/Floor 06",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1818674928-0",
+            "path": "Terrain/Floor 06/F06_Piece01",
+            "position": {
+                "x": 0.0,
+                "y": 37.63999938964844,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-885804653-0",
+            "path": "Terrain/Floor 06/F06_Piece02",
+            "position": {
+                "x": 15.920000076293946,
+                "y": 44.959999084472659,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1827256383-0",
+            "path": "Terrain/Floor 06/F06_Piece03",
+            "position": {
+                "x": 15.880000114440918,
+                "y": 37.63999938964844,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-469398295-0",
+            "path": "Terrain/Floor 06/F06_Piece04",
+            "position": {
+                "x": 3.200000047683716,
+                "y": 42.79999923706055,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1922391287-0",
+            "path": "Terrain/Floor 06/F06_Piece05",
+            "position": {
+                "x": 10.479999542236329,
+                "y": 41.08000183105469,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-579821146-0",
+            "path": "Terrain/Floor 06/F06_Piece06",
+            "position": {
+                "x": 8.239999771118164,
+                "y": 39.959999084472659,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1749279980-0",
+            "path": "Terrain/Floor 06/F06_Piece07",
+            "position": {
+                "x": 6.800000190734863,
+                "y": 39.31999969482422,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-436080406-0",
+            "path": "Terrain/Floor 06/F06_Piece08",
+            "position": {
+                "x": 8.319999694824219,
+                "y": 37.63999938964844,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-783277235-0",
+            "path": "Terrain/Floor 07",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-432695692-0",
+            "path": "Terrain/Floor 07/F07_Piece01",
+            "position": {
+                "x": 0.0,
+                "y": 45.880001068115237,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-699075814-0",
+            "path": "Terrain/Floor 07/F07_Piece02",
+            "position": {
+                "x": 5.400000095367432,
+                "y": 49.68000030517578,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-845193411-0",
+            "path": "Terrain/Floor 07/F07_Piece03",
+            "position": {
+                "x": 15.640000343322754,
+                "y": 45.880001068115237,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-427148517-0",
+            "path": "Terrain/Floor 07/F07_Piece04",
+            "position": {
+                "x": 13.199999809265137,
+                "y": 49.560001373291019,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1666867563-0",
+            "path": "Terrain/Floor 07/F07_Piece05",
+            "position": {
+                "x": 15.640000343322754,
+                "y": 45.880001068115237,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-474018322-0",
+            "path": "Terrain/Floor 07/F07_Piece06",
+            "position": {
+                "x": 7.28000020980835,
+                "y": 47.31999969482422,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-766558658-0",
+            "path": "Terrain/Floor 07/F07_Piece07",
+            "position": {
+                "x": 11.600000381469727,
+                "y": 47.959999084472659,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1467327498-0",
+            "path": "Terrain/Floor 07/F07_Piece08",
+            "position": {
+                "x": 10.479999542236329,
+                "y": 45.84000015258789,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-902382983-0",
+            "path": "Terrain/Floor 08",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1513979794-0",
+            "path": "Terrain/Floor 08/F08_Piece01",
+            "position": {
+                "x": 0.03999999910593033,
+                "y": 54.08000183105469,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1414975776-0",
+            "path": "Terrain/Floor 08/F08_Piece03",
+            "position": {
+                "x": 21.0,
+                "y": 54.08000183105469,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1924546191-0",
+            "path": "Terrain/Floor 08/F08_Piece05",
+            "position": {
+                "x": 15.3100004196167,
+                "y": 58.18000030517578,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-455665597-0",
+            "path": "Terrain/Floor 08/F08_Piece05 (1)",
+            "position": {
+                "x": 11.130000114440918,
+                "y": 58.65999984741211,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.3100000023841858,
+                "y": 5.739999771118164,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1484127066-0",
+            "path": "Terrain/Floor 08/F08_Piece05 (2)",
+            "position": {
+                "x": 9.119999885559082,
+                "y": 58.65999984741211,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.3100000023841858,
+                "y": 5.739999771118164,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1333682639-0",
+            "path": "Terrain/Floor 08/F08_Piece05 (3)",
+            "position": {
+                "x": 6.78000020980835,
+                "y": 58.65999984741211,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.3100000023841858,
+                "y": 5.739999771118164,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1649042321-0",
+            "path": "Terrain/Floor 08/F08_Piece05 (4)",
+            "position": {
+                "x": 4.550000190734863,
+                "y": 58.65999984741211,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.3100000023841858,
+                "y": 5.739999771118164,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1327607574-0",
+            "path": "Terrain/Floor 08/F08_Piece05 (5)",
+            "position": {
+                "x": 11.130000114440918,
+                "y": 58.65999984741211,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.3100000023841858,
+                "y": 5.739999771118164,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1488382934-0",
+            "path": "Terrain/Floor 08/F08_Piece05 (6)",
+            "position": {
+                "x": 10.149999618530274,
+                "y": 60.630001068115237,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.3100000023841858,
+                "y": 7.190000057220459,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-260265628-0",
+            "path": "Terrain/Floor 08/F08_Piece05 (7)",
+            "position": {
+                "x": 8.029999732971192,
+                "y": 60.5099983215332,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.3100000023841858,
+                "y": 7.929999828338623,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1336021086-0",
+            "path": "Terrain/Floor 08/F08_Piece05 (8)",
+            "position": {
+                "x": 5.650000095367432,
+                "y": 60.560001373291019,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.3100000023841858,
+                "y": 7.769999980926514,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1778705520-0",
+            "path": "Terrain/Floor 08/F08_Piece06",
+            "position": {
+                "x": 16.719999313354493,
+                "y": 56.599998474121097,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1268972689-0",
+            "path": "Terrain/Floor 08/F08_Piece07",
+            "position": {
+                "x": 8.319999694824219,
+                "y": 54.08000183105469,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1188535017-0",
+            "path": "Terrain/Floor 08/F08_Piece08",
+            "position": {
+                "x": 16.719999313354493,
+                "y": 54.20000076293945,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-473992525-0",
+            "path": "Terrain/Floor 09",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-519564814-0",
+            "path": "Terrain/Floor 09/F09_Piece01",
+            "position": {
+                "x": 0.03999999910593033,
+                "y": 62.31999969482422,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1304617446-0",
+            "path": "Terrain/Floor 09/F09_Piece04",
+            "position": {
+                "x": 24.079999923706056,
+                "y": 62.31999969482422,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-2048857435-0",
+            "path": "Terrain/Floor 09/F09_Piece05",
+            "position": {
+                "x": 21.440000534057618,
+                "y": 67.5999984741211,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1466279077-0",
+            "path": "Terrain/Floor 09/F09_Piece06",
+            "position": {
+                "x": 5.210000038146973,
+                "y": 64.9000015258789,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1050861714-0",
+            "path": "Terrain/Floor 09/F09_Piece07",
+            "position": {
+                "x": 13.609999656677246,
+                "y": 68.06999969482422,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-720042896-0",
+            "path": "Terrain/Floor 09/F09_Piece07 (3)",
+            "position": {
+                "x": 15.239999771118164,
+                "y": 71.62999725341797,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1882390694-0",
+            "path": "Terrain/Floor 09/F10_Piece08",
+            "position": {
+                "x": 15.180000305175782,
+                "y": 74.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1062980385-0",
+            "path": "Terrain/Floor 09/F10_Piece09",
+            "position": {
+                "x": 13.5,
+                "y": 72.80999755859375,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1627030383-0",
+            "path": "Terrain/Floor 09/F09_Piece07 (1)",
+            "position": {
+                "x": 1.3700000047683716,
+                "y": 63.349998474121097,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1635725063-0",
+            "path": "Terrain/Floor 09/F09_Piece07 (2)",
+            "position": {
+                "x": 4.5,
+                "y": 64.63999938964844,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1008822654-0",
+            "path": "Terrain/Floor 09/F09_Piece08",
+            "position": {
+                "x": 15.119999885559082,
+                "y": 64.16000366210938,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-691047663-0",
+            "path": "Terrain/Floor 09/F09_Piece09",
+            "position": {
+                "x": 3.440000057220459,
+                "y": 62.31999969482422,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-2034371981-0",
+            "path": "Terrain/Floor 09/F09_Piece10",
+            "position": {
+                "x": 10.4399995803833,
+                "y": 65.19000244140625,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1933453304-0",
+            "path": "Terrain/Floor 09/F09_Piece11",
+            "position": {
+                "x": 21.440000534057618,
+                "y": 64.16000366210938,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-585563202-0",
+            "path": "Terrain/Floor 10",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-2017791223-0",
+            "path": "Terrain/Floor 10/F10_Piece01",
+            "position": {
+                "x": 0.03999999910593033,
+                "y": 70.55999755859375,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-266379983-0",
+            "path": "Terrain/Floor 10/F10_Piece02",
+            "position": {
+                "x": 7.119999885559082,
+                "y": 77.91999816894531,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-876394173-0",
+            "path": "Terrain/Floor 10/F10_Piece03",
+            "position": {
+                "x": 13.520000457763672,
+                "y": 77.91999816894531,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1015860922-0",
+            "path": "Terrain/Floor 10/F10_Piece04",
+            "position": {
+                "x": 18.719999313354493,
+                "y": 77.91999816894531,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-712746282-0",
+            "path": "Terrain/Floor 10/F10_Piece05",
+            "position": {
+                "x": 8.199999809265137,
+                "y": 70.55999755859375,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1087333649-0",
+            "path": "Terrain/Floor 10/F10_Piece06",
+            "position": {
+                "x": 5.360000133514404,
+                "y": 74.94000244140625,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1984224708-0",
+            "path": "Terrain/Floor 10/F10_Piece06 (1)",
+            "position": {
+                "x": 17.31999969482422,
+                "y": 79.94000244140625,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1053220820-0",
+            "path": "Terrain/Floor 10/F10_Piece07",
+            "position": {
+                "x": 8.319999694824219,
+                "y": 70.55999755859375,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1318784849-0",
+            "path": "Terrain/Floor 10/F10_Piece08",
+            "position": {
+                "x": 13.550000190734864,
+                "y": 70.44000244140625,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-401581623-0",
+            "path": "Terrain/Floor 10/F10_Piece09",
+            "position": {
+                "x": 15.15999984741211,
+                "y": 69.37999725341797,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1415926338-0",
+            "path": "Terrain/Floor 11",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-839402677-0",
+            "path": "Terrain/Floor 11/F11_Piece01",
+            "position": {
+                "x": 0.03999999910593033,
+                "y": 78.83999633789063,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-383381150-0",
+            "path": "Terrain/Floor 11/F11_Piece02",
+            "position": {
+                "x": 8.359999656677246,
+                "y": 84.83999633789063,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1500727133-0",
+            "path": "Terrain/Floor 11/F11_Piece03",
+            "position": {
+                "x": 18.8799991607666,
+                "y": 85.72000122070313,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1905451824-0",
+            "path": "Terrain/Floor 11/F11_Piece04",
+            "position": {
+                "x": 24.0,
+                "y": 78.80000305175781,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1708664240-0",
+            "path": "Terrain/Floor 11/F11_Piece05",
+            "position": {
+                "x": 13.3100004196167,
+                "y": 83.20999908447266,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-726692643-0",
+            "path": "Terrain/Floor 11/F11_Piece07",
+            "position": {
+                "x": 19.06999969482422,
+                "y": 83.05000305175781,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1374122406-0",
+            "path": "Terrain/Floor 11/F11_Piece09",
+            "position": {
+                "x": 8.890000343322754,
+                "y": 82.80000305175781,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-159753518-0",
+            "path": "Terrain/Floor 11/F11_Piece10",
+            "position": {
+                "x": 18.8799991607666,
+                "y": 81.04000091552735,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1812305240-0",
+            "path": "Terrain/Floor 11/F11_Piece11",
+            "position": {
+                "x": 13.600000381469727,
+                "y": 80.68000030517578,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1493990852-0",
+            "path": "Terrain/Floor 11/F11_Piece12",
+            "position": {
+                "x": 8.359999656677246,
+                "y": 78.80000305175781,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1671485619-0",
+            "path": "Terrain/Floor 11/F11_Piece14",
+            "position": {
+                "x": 12.069999694824219,
+                "y": 81.22000122070313,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.1599999964237213,
+                "y": 1.0099999904632569,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-767758315-0",
+            "path": "Terrain/Floor 11/F11_Piece15",
+            "position": {
+                "x": 22.270000457763673,
+                "y": 79.69000244140625,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1685913195-0",
+            "path": "Terrain/Floor 12",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1460523676-0",
+            "path": "Terrain/Floor 12/F12_Piece01",
+            "position": {
+                "x": 0.03999999910593033,
+                "y": 87.08000183105469,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1653970704-0",
+            "path": "Terrain/Floor 12/F12_Piece02",
+            "position": {
+                "x": 8.359999656677246,
+                "y": 92.19999694824219,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1009695509-0",
+            "path": "Terrain/Floor 12/F12_Piece03",
+            "position": {
+                "x": 22.8799991607666,
+                "y": 87.04000091552735,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1452041267-0",
+            "path": "Terrain/Floor 12/F12_Piece05",
+            "position": {
+                "x": 16.280000686645509,
+                "y": 91.72000122070313,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-890608676-0",
+            "path": "Terrain/Floor 12/F12_Piece05 (1)",
+            "position": {
+                "x": 20.059999465942384,
+                "y": 91.93000030517578,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.23999999463558198,
+                "y": 7.909999847412109,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1075039953-0",
+            "path": "Terrain/Floor 12/F12_Piece06",
+            "position": {
+                "x": 8.359999656677246,
+                "y": 87.04000091552735,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-756511692-0",
+            "path": "Terrain/Floor 12/F12_Piece09",
+            "position": {
+                "x": 13.600000381469727,
+                "y": 87.04000091552735,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-545646614-0",
+            "path": "Terrain/Floor 12/F12_Piece10",
+            "position": {
+                "x": 18.190000534057618,
+                "y": 88.48999786376953,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-910495914-0",
+            "path": "Terrain/Floor 13",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-968403613-0",
+            "path": "Terrain/Floor 13/F13_Piece01",
+            "position": {
+                "x": 0.03999999910593033,
+                "y": 95.31999969482422,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1117380831-0",
+            "path": "Terrain/Floor 13/F13_Piece02",
+            "position": {
+                "x": 12.399999618530274,
+                "y": 103.27999877929688,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-873748557-0",
+            "path": "Terrain/Floor 13/F13_Piece03",
+            "position": {
+                "x": 22.8799991607666,
+                "y": 95.27999877929688,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-165560474-0",
+            "path": "Terrain/Floor 13/F13_Piece05",
+            "position": {
+                "x": 12.399999618530274,
+                "y": 98.19999694824219,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-2098298182-0",
+            "path": "Terrain/Floor 13/F13_Piece06",
+            "position": {
+                "x": 18.959999084472658,
+                "y": 99.95999908447266,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-298735609-0",
+            "path": "Terrain/Floor 13/F13_Piece08",
+            "position": {
+                "x": 4.400000095367432,
+                "y": 98.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1225446514-0",
+            "path": "Terrain/Floor 13/F13_Piece10",
+            "position": {
+                "x": 11.520000457763672,
+                "y": 95.27999877929688,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-566803036-0",
+            "path": "Terrain/Floor 14",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-412385886-0",
+            "path": "Terrain/Floor 14/F14_Piece01",
+            "position": {
+                "x": 0.03999999910593033,
+                "y": 103.5199966430664,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1182589574-0",
+            "path": "Terrain/Floor 14/F14_Piece02",
+            "position": {
+                "x": 25.760000228881837,
+                "y": 103.5199966430664,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-221814612-0",
+            "path": "Terrain/Floor 14/F14_Piece03",
+            "position": {
+                "x": 11.880000114440918,
+                "y": 108.83999633789063,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-630427339-0",
+            "path": "Terrain/Floor 14/F14_Piece04",
+            "position": {
+                "x": 17.760000228881837,
+                "y": 103.19999694824219,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-2047116890-0",
+            "path": "Terrain/Floor 14/F14_Piece05",
+            "position": {
+                "x": 9.520000457763672,
+                "y": 103.5199966430664,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-847760999-0",
+            "path": "Interactions",
+            "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1475237405-0",
+            "path": "Interactions/Objective Star 1",
+            "position": {
+                "x": 17.100000381469728,
+                "y": 17.440000534057618,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.9166666269302368,
+                "y": 0.9166666269302368,
+                "z": 0.9166666269302368
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1172858842-0",
+            "path": "Interactions/Star marker",
+            "position": {
+                "x": 17.100000381469728,
+                "y": 18.34000015258789,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1195569262-0",
+            "path": "Interactions/Objective Star 2",
+            "position": {
+                "x": 6.989999771118164,
+                "y": 61.220001220703128,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.9166666269302368,
+                "y": 0.9166666269302368,
+                "z": 0.9166666269302368
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1656624454-0",
+            "path": "Interactions/Objective Star 3",
+            "position": {
+                "x": 20.290000915527345,
+                "y": 98.2300033569336,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.9166666269302368,
+                "y": 0.9166666269302368,
+                "z": 0.9166666269302368
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-320529440-0",
+            "path": "Interactions/Checkpoint trace0",
+            "position": {
+                "x": 19.31999969482422,
+                "y": 32.91999816894531,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.6666666269302368,
+                "y": 0.6666666269302368,
+                "z": 0.6666666269302368
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-1967297592-0",
+            "path": "Interactions/Checkpoint trace1",
+            "position": {
+                "x": 10.220000267028809,
+                "y": 74.2800064086914,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.6666666269302368,
+                "y": 0.6666666269302368,
+                "z": 0.6666666269302368
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-319656960-0",
+            "path": "Interactions/Three Star Exit Door",
+            "position": {
+                "x": 11.239999771118164,
+                "y": 108.31999969482422,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 3.0,
+                "y": 3.0,
+                "z": 3.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-645203530-0",
+            "path": "Interactions/Closed door seal",
+            "position": {
+                "x": 11.239999771118164,
+                "y": 108.31999969482422,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.2000000476837159,
+                "y": 1.2000000476837159,
+                "z": 1.2000000476837159
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        },
+        {
+            "id": "GlobalObjectId_V1-2-d79fb631bfdc1314e8fc72dde3d83a40-12369985-0",
+            "path": "Interactions/Exit label",
+            "position": {
+                "x": 11.239999771118164,
+                "y": 110.12000274658203,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "rotation": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 1.0
+            }
+        }
+    ]
+}

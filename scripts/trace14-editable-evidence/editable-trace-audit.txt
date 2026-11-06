@@ -1,0 +1,1 @@
+PASS independent sprite/collider alignment count=129

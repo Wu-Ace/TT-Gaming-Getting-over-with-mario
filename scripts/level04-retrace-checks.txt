@@ -1,0 +1,8 @@
+spawn: support and 2.4m center clearance True
+diamond: support and 2.4m center clearance True
+diamond: support and 2.4m center clearance True
+diamond: support and 2.4m center clearance True
+checkpoint: support and 2.4m center clearance True
+checkpoint: support and 2.4m center clearance True
+exit: support and 2.4m center clearance True
+Physical hammer traversal: NOT RUN

@@ -1,0 +1,12 @@
+spawn: support and 2.4m center clearance True
+diamond: support and 2.4m center clearance True
+diamond: support and 2.4m center clearance True
+diamond: support and 2.4m center clearance True
+checkpoint: support and 2.4m center clearance True
+checkpoint: support and 2.4m center clearance True
+exit: support and 2.4m center clearance True
+Unity regeneration: completed (337 native cells).
+Scene view, full native render and real Play spawn inspected.
+Eight intermediate tread stations omitted on broad traverses.
+Boundary expanded around 3.2m route envelopes; local platform interactions still need full traversal.
+Full hammer traversal: NOT RUN.

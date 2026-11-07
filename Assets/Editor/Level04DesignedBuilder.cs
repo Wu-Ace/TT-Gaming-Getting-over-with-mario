@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
 using System.Collections.Generic;
@@ -15,11 +15,16 @@ using UnityEngine;
     static readonly BindingFlags Flags=BindingFlags.Static|BindingFlags.NonPublic;
     static void Field(string n,object v)=>typeof(CampaignBuilder).GetField(n,Flags).SetValue(null,v);
     static object Call(string n,params object[] a)=>typeof(CampaignBuilder).GetMethod(n,Flags).Invoke(null,a);
-    static Level04DesignedBuilder(){EditorApplication.delayCall+=Run;}
+    static Level04DesignedBuilder(){EditorApplication.update+=Run;}
     static void Run()
     {
         if(!File.Exists("scripts/level04-designed.request") || EditorApplication.isPlayingOrWillChangePlaymode)return;
-        if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty){Debug.LogWarning("Save current scene before Level03 build");return;}
+        var active=UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+        if(!active.path.EndsWith("/Level04_Town.unity"))return;
+        if(active.isDirty){
+            string snapshot="art-backup/level04-unsaved-"+DateTime.Now.ToString("yyyyMMdd-HHmmss-fff");Directory.CreateDirectory(snapshot);
+            if(!EditorSceneManager.SaveScene(active,snapshot+"/loaded-scene.unity",true))return;
+        }
         File.Delete("scripts/level04-designed.request");
         try
         {
@@ -27,6 +32,7 @@ using UnityEngine;
             foreach(var entry in EditorBuildSettings.scenes.Where(s=>s.path=="Assets/Scenes/Level04_Town.unity"))
             {
                 Directory.CreateDirectory("art-backup/pre-level04-designed");var backup="art-backup/pre-level04-designed/"+Path.GetFileName(entry.path);if(!File.Exists(backup))File.Copy(entry.path,backup);
+                string scoped="art-backup/level04-generated-"+DateTime.Now.ToString("yyyyMMdd-HHmmss-fff");Directory.CreateDirectory(scoped);File.Copy(entry.path,scoped+"/Level04_Town.unity");
                 var scene=EditorSceneManager.OpenScene(entry.path);var level=scene.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<CampaignLevel>(true)).Single();
                 var plan=JsonUtility.FromJson<Plan>(File.ReadAllText("scripts/level04-designed.json"));
                 foreach(var t in level.transform.Cast<Transform>().Where(t=>t.name=="Terrain" || t.name=="Interactions").ToArray())UnityEngine.Object.DestroyImmediate(t.gameObject);
@@ -39,12 +45,6 @@ using UnityEngine;
                     string role=!up?(!left?"tl":!right?"tr":"top"):!down?(!left?"bl":!right?"br":"bottom"):!left?"left":!right?"right":"fill";
                     Call("Tile",role,c.x,c.y,terrain.transform);
                 }
-                foreach(int y in cells.Select(c=>c.y).Distinct())
-                {
-                    var xs=cells.Where(c=>c.y==y).Select(c=>c.x).OrderBy(x=>x).ToArray();int start=xs[0],end=start;
-                    Action flush=()=>{var go=new GameObject("Solid row");go.layer=6;go.transform.SetParent(terrain.transform,false);var col=go.AddComponent<BoxCollider2D>();col.offset=new Vector2((start+end+1)*.4f,(y+.5f)*.8f-3.6f);col.size=new Vector2((end-start+1)*.8f,.8f);if(level.number==7)col.sharedMaterial=AssetDatabase.LoadAssetAtPath<PhysicsMaterial2D>("Assets/Art/Campaign/IceGlide.physicsMaterial2D");};
-                    foreach(int x in xs.Skip(1)){if(x==end+1){end=x;continue;}flush();start=end=x;}flush();
-                }
                 const string donutArt="Assets/Art/Campaign/donut-beach.png";
                 AssetDatabase.ImportAsset(donutArt,ImportAssetOptions.ForceSynchronousImport);
                 var importer=(TextureImporter)AssetImporter.GetAtPath(donutArt);importer.textureType=TextureImporterType.Sprite;importer.spriteImportMode=SpriteImportMode.Single;importer.spritePixelsPerUnit=150;importer.textureCompression=TextureImporterCompression.Uncompressed;importer.wrapMode=TextureWrapMode.Clamp;importer.mipmapEnabled=false;importer.SaveAndReimport();
@@ -55,13 +55,15 @@ using UnityEngine;
                     g.AddComponent<DonutFallPlatform>();
                     for(int i=0;i<spec.width;i++){var cell=new GameObject("Native ring log");cell.transform.SetParent(g.transform,false);cell.transform.localPosition=new Vector3((i+.5f-spec.width*.5f)*.8f,0,0);var sr=cell.AddComponent<SpriteRenderer>();sr.sprite=AssetDatabase.LoadAssetAtPath<Sprite>(donutArt);sr.sortingOrder=10;}
                 }
-                foreach(var start in new[]{6,15,22,26,31,36,38,40,47})Call("Spikes",start*.8f,-3.6f, start==26?4:2);
+                // Vertical chambers use recovery landings, without the old horizontal-course spikes.
                 for(int i=0;i<3;i++)Call("Star",i,plan.stars[i]);
                 foreach(var gem in objects.GetComponentsInChildren<CampaignInteractable>().Where(i=>i.kind==CampaignInteractable.Kind.Star)){gem.name="Objective Diamond "+(gem.starId+1);gem.GetComponent<SpriteRenderer>().sprite=AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Campaign/diamond.png");}
                 foreach(var r in terrain.GetComponentsInChildren<SpriteRenderer>()){
                     var original=r.sprite;
                     r.sprite=(Sprite)typeof(KitTerrainRepair).GetMethod("SeamSafeSprite",Flags).Invoke(null,new object[]{original});
                     r.transform.localScale=Vector3.one*5;
+                    r.gameObject.layer=6;
+                    var tileCollider=r.gameObject.AddComponent<BoxCollider2D>();tileCollider.size=Vector2.one*.16f;
                 }
                 for(int i=0;i<plan.checkpoints.Length;i++)Call("Checkpoint",plan.checkpoints[i],i==0?"mid":"late");
                 Call("Door",plan.exit);
@@ -80,8 +82,8 @@ using UnityEngine;
     }
     static void Render(CampaignLevel level)
     {
-        var go=new GameObject("Reference review camera");var c=go.AddComponent<Camera>();c.orthographic=true;c.orthographicSize=13;c.transform.position=new Vector3(22,5,-20);c.clearFlags=CameraClearFlags.SolidColor;c.backgroundColor=new Color(.17f,.23f,.3f);
-        var rt=new RenderTexture(2400,900,24);c.targetTexture=rt;c.Render();RenderTexture.active=rt;var image=new Texture2D(2400,900,TextureFormat.RGB24,false);image.ReadPixels(new Rect(0,0,2400,900),0,0);image.Apply();File.WriteAllBytes($"scripts/level04-designed-evidence/L{level.number:00}-map.png",image.EncodeToPNG());RenderTexture.active=null;c.targetTexture=null;UnityEngine.Object.DestroyImmediate(image);UnityEngine.Object.DestroyImmediate(rt);UnityEngine.Object.DestroyImmediate(go);
+        var go=new GameObject("Reference review camera");var c=go.AddComponent<Camera>();c.orthographic=true;c.orthographicSize=31;c.transform.position=new Vector3(21,26,-20);c.clearFlags=CameraClearFlags.SolidColor;c.backgroundColor=new Color(.17f,.23f,.3f);
+        var rt=new RenderTexture(1400,2400,24);c.targetTexture=rt;c.Render();RenderTexture.active=rt;var image=new Texture2D(1400,2400,TextureFormat.RGB24,false);image.ReadPixels(new Rect(0,0,1400,2400),0,0);image.Apply();File.WriteAllBytes($"scripts/level04-designed-evidence/L{level.number:00}-map.png",image.EncodeToPNG());RenderTexture.active=null;c.targetTexture=null;UnityEngine.Object.DestroyImmediate(image);UnityEngine.Object.DestroyImmediate(rt);UnityEngine.Object.DestroyImmediate(go);
     }
 }
 // Pipe silhouettes included.

@@ -1,0 +1,2 @@
+System.Exception: Star embedded in terrain 4
+  at Level04DesignedBuilder.Run () [0x009bd] in E:\TT Gaming\TT-Gaming-Getting-over-with-mario\Assets\Editor\Level04DesignedBuilder.cs:73 

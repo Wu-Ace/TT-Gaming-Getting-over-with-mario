@@ -1,0 +1,2 @@
+PASS attached tiles=337; detached rows removed=195; transform/physics move-and-restore checked for every tile. Backup=art-backup/town-collider-20261106-154333-240
+Full traversal NOT RUN.

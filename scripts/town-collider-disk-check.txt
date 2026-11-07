@@ -1,0 +1,1 @@
+PASS serialized Town tile boxes=337; Solid row colliders=0. Scene inspector confirmed attached box on moved Town tl at (16.7,6.38).

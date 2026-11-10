@@ -1,0 +1,23 @@
+{
+  "scope": "High-fall body landings and quieter pickups",
+  "checks": {
+    "compile": "PASS: 0 errors/0 warnings",
+    "physical_landing": "PASS: body normal impact12/25, Default platform, prior wall cooldown, grass once",
+    "coin_route": "PASS; source gain .25->.08; campaign pickup caps .18/.22",
+    "light_hammer": "PASS: remains silent below2.2",
+    "subjective_listening": "NOT RUN",
+    "full_traversal_device": "NOT RUN",
+    "editor_restored": "PASS: stopped",
+    "test_harness_note": "Initial attempt broadcast FixedUpdate to unrelated disabled PlayerUnstuck on probe, caused test-only null exceptions. Fixed to target ContactSoundEffect through reflection; final retry clean."
+  },
+  "sha256": {
+    "Assets\\Scripts\\Character\\ContactSoundEffect.cs": "21aa6e06339084716c82123a2cfc3f0004c47b8db17aaf808f44b8dbe9652583",
+    "Assets\\Scripts\\GameplayAudio.cs": "b789a99b6aedaae1a0dadd9d301c1fa26fdf57c8f509e299dbc14a5577771e6b",
+    "Assets\\Scripts\\Winning\\FloatingCoin.cs": "2947d47bf7250c5ee306cac487dff68a5c471dc4a9a057437ab6e66a761786d1",
+    "scripts\\landing-coin-20261109\\foley-refresh-result.json": "8f3903375aeada4db493e14ead0980cea32a185ae367d0492d6c0072a0499a12",
+    "scripts\\landing-coin-20261109\\foley-state-result.json": "0ddefded1c817042e19a66674b0a32c612ef1502a2e39b931d1a48cc6f996edb",
+    "scripts\\landing-coin-20261109\\foley-stop-result.json": "580640227a219ed3b72404567a91f0e4135fc477bd3bb13b29e90770fcbd3a51",
+    "scripts\\landing-coin-20261109\\landing-play-result.json": "1d2274ea28b44d867ba2e4da6039a0876b757206cc24852e81a07b9707aa40b1",
+    "scripts\\landing-coin-20261109\\landing-play-retry-result.json": "81b801f217f277a5445cdc93b6e99a361991c1e4c5a9c13dfd1cb41db98fbad0"
+  }
+}

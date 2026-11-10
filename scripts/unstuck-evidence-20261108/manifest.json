@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "file": "Assets\\Scripts\\PlayerUnstuck.cs",
+      "sha256": "6CF149F77451776E1DECD1E11AB33AB6440D5E4782E781337584C6C9BA19522A"
+    },
+    {
+      "file": "Assets\\Scripts\\Character\\Lifecycle\\Death.cs",
+      "sha256": "A7C9C680918A60708E3FE755DA96F315A9F32C551EAC7D69224277346E73B15E"
+    },
+    {
+      "file": "scripts\\unstuck-evidence-20261108\\runtime-test-request.json",
+      "sha256": "33F4E78F46D4326E11C42F4341B2E66CA80DB5E94D7ADCA6313B99C9922FA802"
+    },
+    {
+      "file": "scripts\\unstuck-evidence-20261108\\README.md",
+      "sha256": "C1EEAB03DE0701568FCE165012D7FB2CA4E318136F03F97B1CCD148C911C7A08"
+    }
+  ],
+  "collectedAt": "2026-11-08T19:56:50.0929841+08:00"
+}

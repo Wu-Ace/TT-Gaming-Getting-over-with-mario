@@ -28,6 +28,7 @@ public sealed class CampaignEnemy : MonoBehaviour
         if(body!=null){body.Kill();return;}
         if(c.attachedRigidbody!=null && c.attachedRigidbody.name=="Hammer")
         {
+            GameplayAudio.Play(species==Species.Bee?"enemy_bee":species==Species.Ghost?"enemy_ghost":"enemy_plant");
             dead=true;hit.enabled=false;visual.enabled=true;if(defeated!=null)visual.sprite=defeated;
             var rb=gameObject.AddComponent<Rigidbody2D>();rb.gravityScale=2;rb.velocity=Vector2.up*3;Destroy(gameObject,3);
         }

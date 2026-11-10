@@ -10,6 +10,8 @@ namespace Character.Lifecycle
 
         public event Action OnEnemyDeathContactDetected;
         public event Action<GameObject> OnEnemyTopContactDetected;
+        public Vector2 LastContactPoint { get; private set; }
+        public Vector2 LastContactNormal { get; private set; }
 
         private Death _lifecycle;
 
@@ -37,6 +39,9 @@ namespace Character.Lifecycle
                 }
                 else if (weakspot)
                 {
+                    var contact = collision.GetContact(0);
+                    LastContactPoint = contact.point;
+                    LastContactNormal = contact.normal;
                     OnEnemyDeathContactDetected?.Invoke();
                 }
             }

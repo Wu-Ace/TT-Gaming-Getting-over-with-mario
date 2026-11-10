@@ -1,0 +1,69 @@
+{
+  "time": "2026-11-09T19:37:54.790231",
+  "source": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Sound\\kenney_impact-sounds (1)",
+  "license": "CC0, included License.txt explicitly permits commercial projects",
+  "grass_variants": [
+    "footstep_grass_000",
+    "footstep_grass_001",
+    "footstep_grass_002",
+    "footstep_grass_003",
+    "footstep_grass_004"
+  ],
+  "other_replacements": {
+    "star": "impactGlass_light_000",
+    "stars_complete": "impactGlass_medium_000",
+    "checkpoint": "impactWood_medium_000",
+    "key": "impactMetal_light_000",
+    "switch": "impactWood_light_000",
+    "platform_warn": "impactWood_light_000",
+    "platform_fall": "impactPlank_medium_000",
+    "enemy_bee": "impactSoft_medium_000",
+    "enemy_plant": "impactSoft_medium_000",
+    "enemy_hit": "impactSoft_medium_000",
+    "death_hit": "impactSoft_medium_000",
+    "coin": "impactMetal_light_000",
+    "ui_click": "impactWood_light_000",
+    "ui_back": "impactGeneric_light_000",
+    "warning": "impactWood_light_000",
+    "pause": "impactWood_light_000",
+    "resume": "impactGeneric_light_000"
+  },
+  "thresholds": {
+    "hammer": 2.2,
+    "body": 2.8
+  },
+  "checks": {
+    "compile": "PASS: 0 errors / 0 warnings",
+    "runtime": "PASS: light hits silent;heavy hit;cooldown;13 plays;5 variants seen;no adjacent repeat;pitch1;preference gain",
+    "subjective_listening": "NOT RUN",
+    "resource_routes": "PASS: 29 cues / 5 grass variants",
+    "isolated_physics": "PASS: real collision callbacks;light tangential/sliding collision silent;strong normal collision grass",
+    "editor_restored": "PASS: stopped",
+    "full_level_playthrough": "NOT RUN",
+    "target_device": "NOT RUN"
+  },
+  "sha256": {
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\footstep_grass_000.ogg": "9d49497777405d78d7cf7f2888e28277f3a23192300cfd1d79d54876b20f479f",
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\footstep_grass_001.ogg": "fb28781bd22b2eefdc14077f1adf5c94d7fe9c3a130194633b55f3e0d39d9f04",
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\footstep_grass_002.ogg": "73a520139f5be716a403bfe9c80e0e94d1e61d8e9de04a354b336392164b53dc",
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\footstep_grass_003.ogg": "0546e1d8ab2def714425701a18bd34c5ee2794b12e858e5b595aabcf38a34137",
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\footstep_grass_004.ogg": "086fd4ab3546a507ea5f5c759a9a10e535c95ade13705c238bc0eeffd7d4e8ba",
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\impactWood_light_000.ogg": "eb45e35b4bed784d3f120de4afec4b0d6ac09d9e143cce8cfcb7d739e1b1f3c3",
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\impactWood_medium_000.ogg": "1723a9fd25103ed41af06054814e84e65f4a772bac86ab2dc927da93d9592ff5",
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\impactPlank_medium_000.ogg": "8403cd7a043f0391574c88c55dd205743725b5363d2407f6de145f201690b68f",
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\impactMetal_light_000.ogg": "33b5e6e37c6e9d54e07bf5a89b12c76e879f40c1ea83cdd82714df1d6f9fec6d",
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\impactGlass_light_000.ogg": "d750cf88097d0c3e69920e6e14496e1444e1a9da01aa4cca8f5ec8cb44c57b4f",
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\impactGlass_medium_000.ogg": "9252d50bfb85edb17d6073c4a7806e10cdb9de56d3dbfc93a4b9727146d2df6d",
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\impactGeneric_light_000.ogg": "f0e982611e97512fee5f777986b67e8b435434b601f94992ec044f7e89fb5acb",
+    "Assets\\Resources\\NaturalAudio\\KenneyImpact\\impactSoft_medium_000.ogg": "7d3ba0bb5e60a11b5d3e558c141303dcf494256675fbf753c0d252d2cf0481e3",
+    "Assets\\Scripts\\GameplayAudio.cs": "d5e2871d5f8b28e4a2e4543b7b3f5c05a9361f7e91ea4b9bcf003258ba1c47dd",
+    "Assets\\Scripts\\Character\\ContactSoundEffect.cs": "d18471acc411970bfacffdc6056d5ebcbc27fdfdc9e94d49ddda4bf4ada3c81e",
+    "Assets\\Editor\\AudioFeedbackValidation.cs": "70f9d008a37ce84a289e3a52ab8c89573d017d168d89af7776f05ee8943e6811",
+    "scripts\\impact-grass-20261109\\foley-refresh-result.json": "8f3903375aeada4db493e14ead0980cea32a185ae367d0492d6c0072a0499a12",
+    "scripts\\impact-grass-20261109\\foley-state-result.json": "b5ebdf7a8cd5efd2d8609900233d73fd8fb3c611d635fbed682acbdf2bd0a753",
+    "scripts\\impact-grass-20261109\\foley-stop-result.json": "580640227a219ed3b72404567a91f0e4135fc477bd3bb13b29e90770fcbd3a51",
+    "scripts\\impact-grass-20261109\\grass-check-result.json": "ad4d1a0417c75f2fea57d60ee68e63dc28fc81a3468d016e85b08d55de7d09dd",
+    "scripts\\impact-grass-20261109\\grass-physics-result.json": "ebc8b0498ac6cc2cb839eecb57163ce0c6e14a077da6ce5bd80007a73a81bbdb",
+    "scripts\\impact-grass-20261109\\grass-play-result.json": "fbdf02e362ee9079519bbb5afdd97daec197ed04bed6f09ccf2cb25fd3696792"
+  }
+}

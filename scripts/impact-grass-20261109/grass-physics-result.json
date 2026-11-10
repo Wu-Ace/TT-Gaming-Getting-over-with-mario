@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 1838,\n  \"logs\": [\n    \"[Log] IMPACT_GRASS_PHYSICS_PASS: actual isolated Physics2D light sliding collision silent;strong normal collision plays grass.\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

@@ -1,0 +1,67 @@
+ M Assets/Editor/CampaignPolish.cs
+ M Assets/Prefabs/Character.prefab
+ M Assets/Scenes/Level02_Jungle.unity
+ M Assets/Scenes/Level03_Beach.unity
+ M Assets/Scenes/Level04_Town.unity
+ M Assets/Scenes/Level05_Cave.unity
+ M Assets/Scenes/Level06_Grassland_Winter.unity
+ M Assets/Scenes/Level07_Ice.unity
+ M Assets/Scenes/Level08_Castle.unity
+ M Assets/Scenes/Level09_Volcano.unity
+ M Assets/Scenes/Level10_Sky.unity
+ D Assets/Scenes/OneOneScene.unity
+ D Assets/Scenes/OneOneScene.unity.meta
+ M Assets/Scenes/Tutorial.unity
+ M Assets/Scripts/CampaignEnemy.cs
+ M Assets/Scripts/CampaignInteractable.cs
+ M Assets/Scripts/CampaignLevel.cs
+ M Assets/Scripts/Character/ContactSoundEffect.cs
+ M Assets/Scripts/Character/Lifecycle/Death.cs
+ M Assets/Scripts/Character/Lifecycle/EnemyContactDetection.cs
+ M Assets/Scripts/Character/PowerUp/TemporaryGrowth.cs
+ M Assets/Scripts/Character/PowerUp/TemporaryStrength.cs
+ M Assets/Scripts/DonutFallPlatform.cs
+ M Assets/Scripts/Enemy/EnemyDeath.cs
+ M Assets/Scripts/GameMenuUI.cs
+ M Assets/Scripts/Winning/FloatingCoin.cs
+ M Assets/Scripts/Winning/WinThresholdDetection.cs
+ M Packages/manifest.json
+ M Packages/packages-lock.json
+ M ProjectSettings/EditorBuildSettings.asset
+ M ProjectSettings/ProjectSettings.asset
+ M ai-handoff.md
+?? .skill-install/game-studios/
+?? Assets/Editor/AudioFeedbackValidation.cs
+?? Assets/Editor/AudioFeedbackValidation.cs.meta
+?? Assets/Editor/DeathFeedbackAcceptance.cs
+?? Assets/Editor/DeathFeedbackAcceptance.cs.meta
+?? Assets/Resources/GameplayAudio.meta
+?? Assets/Resources/GameplayAudio/
+?? Assets/Resources/NaturalAudio/
+?? Assets/Scenes/Level01.unity
+?? Assets/Scenes/Level01.unity.meta
+?? Assets/Scripts/Character/Lifecycle/DeathArrivalFade.cs
+?? Assets/Scripts/Character/Lifecycle/DeathArrivalFade.cs.meta
+?? Assets/Scripts/Character/Lifecycle/DeathFeedback.cs
+?? Assets/Scripts/Character/Lifecycle/DeathFeedback.cs.meta
+?? Assets/Scripts/Character/Lifecycle/FallDeathPresentation.cs
+?? Assets/Scripts/Character/Lifecycle/FallDeathPresentation.cs.meta
+?? Assets/Scripts/Character/Lifecycle/FallIrisGraphic.cs
+?? Assets/Scripts/Character/Lifecycle/FallIrisGraphic.cs.meta
+?? Assets/Scripts/GameplayAudio.cs
+?? Assets/Scripts/GameplayAudio.cs.meta
+?? Assets/Scripts/PlayerUnstuck.cs
+?? Assets/Scripts/PlayerUnstuck.cs.meta
+?? Assets/WX-WASM-SDK-V2.meta
+?? Assets/WX-WASM-SDK-V2/
+?? art-backup/camera-lag-20261109/
+?? art-backup/pre-unstuck-20261108-190358/
+?? scripts/audio-backup-20261109-163814/
+?? scripts/audio-backup-20261109-163850/
+?? scripts/audio-evidence-20261109.json
+?? scripts/camera-lag-20261109-manifest.json
+?? scripts/death-evidence-20261109/
+?? scripts/fall-polish-20261109/
+?? scripts/impact-backup-20261109-170413/
+?? scripts/natural-audio-20261109-171207/
+?? scripts/unstuck-evidence-20261108/

@@ -1,0 +1,95 @@
+{
+  "captured_utc": "2026-11-09T09:14:35.760571+00:00",
+  "root": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario",
+  "head": {
+    "exit_code": 0,
+    "output": "705a802068da9ed8521c87203cf55c6d2b188501",
+    "error": ""
+  },
+  "working_tree": {
+    "exit_code": 0,
+    "output": "M Assets/Editor/CampaignPolish.cs\n M Assets/Prefabs/Character.prefab\n M Assets/Scenes/Level02_Jungle.unity\n M Assets/Scenes/Level03_Beach.unity\n M Assets/Scenes/Level04_Town.unity\n M Assets/Scenes/Level05_Cave.unity\n M Assets/Scenes/Level06_Grassland_Winter.unity\n M Assets/Scenes/Level07_Ice.unity\n M Assets/Scenes/Level08_Castle.unity\n M Assets/Scenes/Level09_Volcano.unity\n M Assets/Scenes/Level10_Sky.unity\n D Assets/Scenes/OneOneScene.unity\n D Assets/Scenes/OneOneScene.unity.meta\n M Assets/Scenes/Tutorial.unity\n M Assets/Scripts/CampaignEnemy.cs\n M Assets/Scripts/CampaignInteractable.cs\n M Assets/Scripts/CampaignLevel.cs\n M Assets/Scripts/Character/ContactSoundEffect.cs\n M Assets/Scripts/Character/Lifecycle/Death.cs\n M Assets/Scripts/Character/Lifecycle/EnemyContactDetection.cs\n M Assets/Scripts/Character/PowerUp/TemporaryGrowth.cs\n M Assets/Scripts/Character/PowerUp/TemporaryStrength.cs\n M Assets/Scripts/DonutFallPlatform.cs\n M Assets/Scripts/Enemy/EnemyDeath.cs\n M Assets/Scripts/GameMenuUI.cs\n M Assets/Scripts/Winning/FloatingCoin.cs\n M Assets/Scripts/Winning/WinThresholdDetection.cs\n M Packages/manifest.json\n M Packages/packages-lock.json\n M ProjectSettings/EditorBuildSettings.asset\n M ProjectSettings/ProjectSettings.asset\n M ai-handoff.md\n?? .skill-install/game-studios/\n?? Assets/Editor/AudioFeedbackValidation.cs\n?? Assets/Editor/AudioFeedbackValidation.cs.meta\n?? Assets/Editor/DeathFeedbackAcceptance.cs\n?? Assets/Editor/DeathFeedbackAcceptance.cs.meta\n?? Assets/Resources/GameplayAudio.meta\n?? Assets/Resources/GameplayAudio/\n?? Assets/Resources/NaturalAudio/\n?? Assets/Scenes/Level01.unity\n?? Assets/Scenes/Level01.unity.meta\n?? Assets/Scripts/Character/Lifecycle/DeathArrivalFade.cs\n?? Assets/Scripts/Character/Lifecycle/DeathArrivalFade.cs.meta\n?? Assets/Scripts/Character/Lifecycle/DeathFeedback.cs\n?? Assets/Scripts/Character/Lifecycle/DeathFeedback.cs.meta\n?? Assets/Scripts/Character/Lifecycle/FallDeathPresentation.cs\n?? Assets/Scripts/Character/Lifecycle/FallDeathPresentation.cs.meta\n?? Assets/Scripts/Character/Lifecycle/FallIrisGraphic.cs\n?? Assets/Scripts/Character/Lifecycle/FallIrisGraphic.cs.meta\n?? Assets/Scripts/GameplayAudio.cs\n?? Assets/Scripts/GameplayAudio.cs.meta\n?? Assets/Scripts/PlayerUnstuck.cs\n?? Assets/Scripts/PlayerUnstuck.cs.meta\n?? Assets/WX-WASM-SDK-V2.meta\n?? Assets/WX-WASM-SDK-V2/\n?? art-backup/camera-lag-20261109/\n?? art-backup/pre-unstuck-20261108-190358/\n?? scripts/audio-backup-20261109-163814/\n?? scripts/audio-backup-20261109-163850/\n?? scripts/audio-evidence-20261109.json\n?? scripts/camera-lag-20261109-manifest.json\n?? scripts/death-evidence-20261109/\n?? scripts/fall-polish-20261109/\n?? scripts/impact-backup-20261109-170413/\n?? scripts/natural-audio-20261109-171207/\n?? scripts/unstuck-evidence-20261108/",
+    "error": ""
+  },
+  "files": [
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\Character\\Lifecycle\\DeathFeedback.cs",
+      "sha256": "169475e906bbc5b526731feb264bfadd3ba9edd8e47c2aa7449fc0d9fc2dc33d",
+      "bytes": 12980,
+      "modified_utc": "2026-11-09T09:12:07.724004+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\Character\\Lifecycle\\FallDeathPresentation.cs",
+      "sha256": "45071a7e62b8a41a0c2ca71ec9d6edfe4ff39c4d974e17828ee6d1274e6fb42f",
+      "bytes": 9703,
+      "modified_utc": "2026-11-09T09:12:07.726032+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\Character\\Lifecycle\\FallIrisGraphic.cs",
+      "sha256": "6418bffc7316e57595cdfe73713fe94f72944e1fb98848c2786b0ef3ff10de56",
+      "bytes": 1402,
+      "modified_utc": "2026-11-09T09:07:26.603689+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\Character\\Lifecycle\\DeathArrivalFade.cs",
+      "sha256": "7c8927a34006e638c39ba4a970d50f702fe1effd2c025bc8e762ec932ba468db",
+      "bytes": 826,
+      "modified_utc": "2026-11-09T08:43:14.414838+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Editor\\DeathFeedbackAcceptance.cs",
+      "sha256": "2077dba5944b0fd101ddd2aaf35b2e45d88b6e8aa9e0dfa79c05872f5fc88d5c",
+      "bytes": 16282,
+      "modified_utc": "2026-11-09T09:11:38.830550+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\fall-polish-20261109\\README.md",
+      "sha256": "eb079baae24d0421cf099e71e8a2325c7525cc6e7bd143cf23041f35ace1c6a4",
+      "bytes": 3592,
+      "modified_utc": "2026-11-09T09:14:35.467741+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\fall-polish-20261109\\play-results.txt",
+      "sha256": "f10b79113fc4f5870b0dd944761a8c0f78a8e64240ee60cbc3698f09016ea354",
+      "bytes": 1551,
+      "modified_utc": "2026-11-09T09:12:37.025562+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\fall-polish-20261109\\compile.json",
+      "sha256": "6931cfe5c27deeaf0e4349de80a3d991268195ca6ff9f7f44d11a9c987716d36",
+      "bytes": 1205,
+      "modified_utc": "2026-11-09T09:11:50.124835+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\fall-polish-20261109\\fall-descend.png",
+      "sha256": "dc3354df4b4aaa57876e2f3e8905fdb8a3386ce33cdf092c2840547e628f642a",
+      "bytes": 304263,
+      "modified_utc": "2026-11-09T09:12:31.265285+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\fall-polish-20261109\\fall-iris.png",
+      "sha256": "fbb59b760063bcd1cb7a92a33bb4adda453609a4b197090c6c755fd66cae52b5",
+      "bytes": 249796,
+      "modified_utc": "2026-11-09T09:12:32.291653+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\fall-polish-20261109\\final-check-result.json",
+      "sha256": "f1c0adc86154b9264102c2d858e413e87f75510882d1f53af4b2b7a635973ece",
+      "bytes": 264,
+      "modified_utc": "2026-11-09T09:13:25.878472+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\fall-polish-20261109\\restore-play-result.json",
+      "sha256": "530ceeb6a5a8fe22f664b880f7577e6bf24db4a1e17fecc50cc368bd9b7ef30f",
+      "bytes": 117,
+      "modified_utc": "2026-11-09T09:13:57.786763+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\ai-handoff.md",
+      "sha256": "ce5ac9ac11a8f64f43232bf71624f06c51a5af66f5487f30a582888d9a54f2d4",
+      "bytes": 42948,
+      "modified_utc": "2026-11-09T09:14:35.467741+00:00"
+    }
+  ],
+  "test_result": "not evaluated by this script"
+}

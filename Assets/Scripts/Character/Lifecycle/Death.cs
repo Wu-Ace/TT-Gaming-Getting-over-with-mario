@@ -1,71 +1,43 @@
-﻿using System;
+using System;
 using Character.Control;
-using Character.PowerUp;
-using Extension;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using Random = UnityEngine.Random;
 
 namespace Character.Lifecycle
 {
     public class Death : MonoBehaviour
     {
-        [SerializeField] private float animationForce = 10f;
-        [SerializeField] private float animationMaxAngle = 10f;
-        [SerializeField] private float animationTorque = 10f;
-        [SerializeField] private AudioClip sfx;
-        [SerializeField] private float sfxVolume = 1f;
-        [SerializeField] private float sfxPitch = 1f;
-
         public bool Dead { get; private set; }
         public event Action OnCharacterDeath;
-
-        private Rigidbody2D _rigidbody;
-        private ArmsSimulation _armsSimulation;
-        private AudioSource _audioSource;
-        private bool _heavy;
-
-        private void Awake()
+        FallDetection fall;
+        EnemyContactDetection contact;
+        void Awake()
         {
-            _rigidbody = GetComponent<Rigidbody2D>();
-            _armsSimulation = transform.parent.GetComponentInChildren<ArmsSimulation>();
-            _audioSource = GetComponent<AudioSource>();
-
-            GetComponent<FallDetection>().OnFallDetected += () => Die(RigidbodyConstraints2D.FreezeAll);
-            GetComponent<EnemyContactDetection>().OnEnemyDeathContactDetected += () => Die(RigidbodyConstraints2D.None);
-
-            var temporaryGrowth = FindObjectOfType<TemporaryGrowth>();
-            temporaryGrowth.OnMushroomEffectStarted += () => _heavy = true;
-            temporaryGrowth.OnMushroomEffectEnded += () => _heavy = false;
+            if (GetComponent<PlayerUnstuck>() == null) gameObject.AddComponent<PlayerUnstuck>();
+            fall = GetComponent<FallDetection>();
+            contact = GetComponent<EnemyContactDetection>();
+            if (fall != null) fall.OnFallDetected += Fell;
+            if (contact != null) contact.OnEnemyDeathContactDetected += Hit;
         }
-
-        public void Kill() { Die(RigidbodyConstraints2D.None); }
-
-        private void Die(RigidbodyConstraints2D rigidbodyConstraints)
+        void Fell() { Begin(true, transform.position, Vector2.down); }
+        void Hit() { Begin(false, contact.LastContactPoint, contact.LastContactNormal); }
+        // Retained for hazards and campaign/checkpoint integrations.
+        public void Kill() { Begin(false, transform.position, Vector2.up); }
+        void Begin(bool falling, Vector2 point, Vector2 normal)
         {
             if (Dead) return;
             Dead = true;
-
+            var root = transform.parent != null ? transform.parent : transform;
+            foreach (var arms in root.GetComponentsInChildren<ArmsSimulation>()) arms.enabled = false;
+            foreach (var target in FindObjectsOfType<TargetMovement>()) target.enabled = false;
+            var feedback = GetComponent<DeathFeedback>();
+            if (feedback == null) feedback = gameObject.AddComponent<DeathFeedback>();
+            feedback.Play(root, GetComponent<Rigidbody2D>(), falling, point, normal);
             OnCharacterDeath?.Invoke();
-
-            _rigidbody.constraints = rigidbodyConstraints;
-            _armsSimulation.enabled = false;
-
-            var direction = Quaternion.Euler(0, 0, Random.Range(-1f, 1f) * animationMaxAngle) * Vector3.up;
-            _rigidbody.AddForce(direction * (animationForce * (_heavy ? 2 : 1)), ForceMode2D.Impulse);
-            _rigidbody.AddTorque(animationTorque * (_heavy ? 2 : 1), ForceMode2D.Impulse);
-
-            PlaySoundEffect();
-
-            this.Invoke(3f, () => SceneManager.LoadScene(SceneManager.GetActiveScene().name));
         }
-
-        private void PlaySoundEffect()
+        void OnDestroy()
         {
-            _audioSource.clip = sfx;
-            _audioSource.pitch = sfxPitch;
-            _audioSource.volume = sfxVolume;
-            _audioSource.Play();
+            if (fall != null) fall.OnFallDetected -= Fell;
+            if (contact != null) contact.OnEnemyDeathContactDetected -= Hit;
         }
     }
 }

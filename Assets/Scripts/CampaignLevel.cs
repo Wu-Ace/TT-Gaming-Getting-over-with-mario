@@ -39,6 +39,7 @@ public sealed class CampaignLevel : MonoBehaviour
         root.position+=delta;
         foreach(var rb in root.GetComponentsInChildren<Rigidbody2D>()) { rb.velocity=Vector2.zero; rb.angularVelocity=0; }
         Physics2D.SyncTransforms();
+        GameplayAudio.Play("spawn", .4f);
         foreach(var camera in FindObjectsOfType<Cinemachine.CinemachineVirtualCamera>())camera.PreviousStateIsValid=false;
     }
     Transform progressPlayer;
@@ -77,7 +78,7 @@ public sealed class CampaignLevel : MonoBehaviour
         RouteProgress = Won ? 1f : (total > .001f ? Mathf.Clamp01(along/total) : 0f);
     }
     public bool HasStar(int id) => (state.stars & (1<<id))!=0;
-    public bool Collect(int id) { if(Won || id<0 || id>2 || HasStar(id))return false; state.stars|=1<<id;return true; }
+    public bool Collect(int id) { if(Won || id<0 || id>2 || HasStar(id))return false; state.stars|=1<<id;GameplayAudio.Play(StarCount==3?"stars_complete":"star");return true; }
     public bool Activated(string id) => state.switches.Contains(id);
     public void Activate(string id) { state.switches.Add(id); }
     public void Checkpoint(Vector2 position) { if(!Won)state.checkpoint=position; }
@@ -116,7 +117,7 @@ public sealed class CampaignLevel : MonoBehaviour
         if (GUI.Button(new Rect(38,157,41,42), new GUIContent("", "Replay"), GUIStyle.none)) RestartFresh();
         if (GUI.Button(new Rect(83,157,41,42), new GUIContent("", "Next level"), GUIStyle.none))
         {
-            if (!string.IsNullOrEmpty(nextScene)) { progress.Remove(nextScene); SceneManager.LoadScene(nextScene); }
+            if (number < GameMenuUI.PlayableLevelCount && !string.IsNullOrEmpty(nextScene)) { progress.Remove(nextScene); SceneManager.LoadScene(nextScene); }
             else SceneManager.LoadScene(GameMenuUI.MenuScene);
         }
         GUI.matrix=old;

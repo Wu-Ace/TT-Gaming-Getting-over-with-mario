@@ -568,7 +568,7 @@ MonoBehaviour:
   sfx: {fileID: 8300000, guid: 42c6882063a55494cbed850864009175, type: 3}
   minPitch: 1
   maxPitch: 1.5
-  interval: 3
+  interval: 0.18
   volume: 0.2
   changesWithMushroomEffect: 1
   minPitchWithMushroomEffect: 0.5
@@ -910,8 +910,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfx: {fileID: 8300000, guid: f6d87b16ffb6e1a43ba8804130fda8d3, type: 3}
-  minPitch: 15
-  maxPitch: 20
+  minPitch: 0.95
+  maxPitch: 1.1
   interval: 0.5
   volume: 1
   changesWithMushroomEffect: 0

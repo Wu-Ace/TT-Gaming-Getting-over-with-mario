@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": \"Started isolated death regression without closing editor.\",\n  \"elapsed_ms\": 2071,\n  \"logs\": [],\n  \"log_count\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}

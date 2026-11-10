@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": \"{ resultCode = 0, scene = Assets/Scenes/Level01.unity, dirty = False, engine = 2022.3.62t15 }\",\n  \"elapsed_ms\": 1901,\n  \"logs\": [],\n  \"log_count\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}

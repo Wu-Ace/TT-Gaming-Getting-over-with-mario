@@ -1,0 +1,20 @@
+UTC 2026-11-09T08:49:51.2515486Z
+Isolated physical contacts and forced fall; not full traversal/device/audio listening.
+PASS Physical top contact remains a stomp, no death feedback
+PASS Physical side contact starts impact death exactly once
+PASS Whole dead rig no longer collides
+PASS Duplicate death calls are suppressed
+PASS Death camera stops following corpse
+PASS Death overlay contains no text
+PASS Death cannot be paused by settings
+PASS Corpse releases after local hit stop and launches upwards (simulated=True, vy=7, elapsed=0.2482133)
+PASS Impact death reloads and revives after short presentation
+PASS Camera and feedback state restored on spawn
+PASS Input target restored on spawn
+PASS Arrival blackout cleaned up
+PASS Crossing actual fall threshold triggers separate fall feedback
+PASS Offscreen fall has a visible lower-screen direction marker
+PASS Fall corpse continues down instead of freezing
+PASS Fall death reloads and revives
+PASS Death preserves collected diamond and checkpoint
+PASS Second death fully cleans transition state

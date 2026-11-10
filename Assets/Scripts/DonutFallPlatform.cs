@@ -16,12 +16,14 @@ public sealed class DonutFallPlatform : MonoBehaviour
         if(actor==null || actor.Dead || Triggered)return;
         float top=GetComponent<BoxCollider2D>().bounds.max.y;
         foreach(var contact in collision.contacts)
-            if(contact.point.y>=top-.12f && actor.transform.position.y>top) { Triggered=true; timer=0; break; }
+            if(contact.point.y>=top-.12f && actor.transform.position.y>top) { Triggered=true; timer=0; GameplayAudio.Play("platform_warn",.4f); break; }
     }
     void FixedUpdate()
     {
         if(!Triggered)return;
+        bool wasFalling=Falling;
         timer+=Time.fixedDeltaTime;
+        if(!wasFalling && Falling)GameplayAudio.Play("platform_fall",.5f);
         if(timer>=resetAfter) { body.position=origin; body.velocity=Vector2.zero; Triggered=false;timer=0;return; }
         if(Falling)body.MovePosition(body.position+Vector2.down*fallSpeed*Time.fixedDeltaTime);
     }

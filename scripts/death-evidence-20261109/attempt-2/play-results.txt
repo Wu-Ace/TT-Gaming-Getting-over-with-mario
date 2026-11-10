@@ -1,0 +1,13 @@
+UTC 2026-11-09T08:48:09.1174659Z
+Isolated physical contacts and forced fall; not full traversal/device/audio listening.
+PASS Physical top contact remains a stomp, no death feedback
+PASS Physical side contact starts impact death exactly once
+PASS Whole dead rig no longer collides
+PASS Duplicate death calls are suppressed
+PASS Death camera stops following corpse
+PASS Death overlay contains no text
+PASS Death cannot be paused by settings
+FAIL Corpse releases after local hit stop and launches upwards
+FAIL System.Exception: Corpse releases after local hit stop and launches upwards
+  at DeathFeedbackAcceptance.Check (System.Boolean ok, System.String message) [0x0003d] in E:\TT Gaming\TT-Gaming-Getting-over-with-mario\Assets\Editor\DeathFeedbackAcceptance.cs:61 
+  at DeathFeedbackAcceptance.Tick () [0x002f4] in E:\TT Gaming\TT-Gaming-Getting-over-with-mario\Assets\Editor\DeathFeedbackAcceptance.cs:127 

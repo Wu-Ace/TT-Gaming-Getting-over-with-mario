@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "DeathFeedbackAcceptance.RunInEditor(); return \"Started isolated death regression without closing editor.\";", "summary": "Verify fall presentation and preserve editor session"}}

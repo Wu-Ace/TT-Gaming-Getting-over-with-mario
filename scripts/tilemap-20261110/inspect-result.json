@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": \"{ scene = Assets/Scenes/Level05_Cave.unity, dirty = False, playing = False, terrain = <>f__AnonymousType1#1`5[System.String,UnityEngine.Vector3,UnityEngine.Vector3,System.String,System.String[]][] }\",\n  \"elapsed_ms\": 2470,\n  \"logs\": [],\n  \"log_count\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}

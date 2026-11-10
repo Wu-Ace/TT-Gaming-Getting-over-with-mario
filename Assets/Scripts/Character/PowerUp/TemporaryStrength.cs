@@ -31,6 +31,7 @@ namespace Character.PowerUp
         private bool _gettingWeak;
         private float _transitionTimeElapsed;
         private float _timeLeft;
+        private int _lastWarning;
 
         private void Awake()
         {
@@ -54,8 +55,7 @@ namespace Character.PowerUp
             _transitionTimeElapsed = 0;
             _gettingStrong = true;
 
-            _audioSource.clip = startSfx;
-            _audioSource.Play();
+            GameplayAudio.Play("strength_start");
 
             if (_delayedWeakness != null)
             {
@@ -70,8 +70,7 @@ namespace Character.PowerUp
 
                 _gettingWeak = true;
 
-                _audioSource.clip = endSfx;
-                _audioSource.Play();
+                GameplayAudio.Play("strength_end");
             });
         }
 
@@ -110,6 +109,9 @@ namespace Character.PowerUp
             {
                 _timeLeft = Mathf.Max(_timeLeft - Time.deltaTime, 0f);
             }
+            int warning = Mathf.CeilToInt(_timeLeft);
+            if (warning > 0 && warning <= 3 && warning != _lastWarning) GameplayAudio.Play("warning", .3f);
+            _lastWarning = warning;
             timeLeftUi.value = _timeLeft / effectDuration;
         }
     }

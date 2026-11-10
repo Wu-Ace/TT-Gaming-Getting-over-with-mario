@@ -1,0 +1,117 @@
+{
+  "collected_utc": "2026-11-09T08:53:12.736474+00:00",
+  "project": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario",
+  "git": "none",
+  "files": [
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/Death.cs",
+      "sha256": "a1e2ef1dae19e2e16862397594574f1fdee767b9d0e7d550e7af7b0f58609b15",
+      "bytes": 1910
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/EnemyContactDetection.cs",
+      "sha256": "51db161bdf44808f2c91256f9a1195936abde3010aba568e08e8f6c191ccb63f",
+      "bytes": 1677
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/DeathFeedback.cs",
+      "sha256": "02385bcf4d323ca2fb1309666cb82082762c2ef2ab3f4b8632fb6e6cbf235e65",
+      "bytes": 15558
+    },
+    {
+      "path": "Assets/Scripts/Character/Lifecycle/DeathArrivalFade.cs",
+      "sha256": "7c8927a34006e638c39ba4a970d50f702fe1effd2c025bc8e762ec932ba468db",
+      "bytes": 826
+    },
+    {
+      "path": "Assets/Scripts/GameMenuUI.cs",
+      "sha256": "757a82ba834f5443dd7fe704aba800d689f19475893198e54477bce6f0c41b71",
+      "bytes": 14483
+    },
+    {
+      "path": "Assets/Editor/DeathFeedbackAcceptance.cs",
+      "sha256": "a3a442054b1da2cf2f971929c4f518d234c735d7a173a3f178540c1b95865756",
+      "bytes": 14472
+    },
+    {
+      "path": "ai-handoff.md",
+      "sha256": "4de45aa66b6e5852ed227051e8ede0bb4ad5649a1a4796157f21de685007dfd7",
+      "bytes": 40614
+    },
+    {
+      "path": "ProjectSettings/ProjectVersion.txt",
+      "sha256": "131094a6cd053a0ce9ad42a75feea4254ba46ad931309d5b7223df04d0b027e5",
+      "bytes": 118
+    },
+    {
+      "path": "scripts/death-evidence-20261109/fall-descend.png",
+      "sha256": "1f5c57e279d6f49ce63008b37c3736dc7f6dff4d5fffc967bbbea863c1f88408",
+      "bytes": 293821
+    },
+    {
+      "path": "scripts/death-evidence-20261109/fall-marker.png",
+      "sha256": "986f46928a672138bf615cf12e35e58990a4e4f8f32ede0d3eaf75e1bd05146d",
+      "bytes": 290424
+    },
+    {
+      "path": "scripts/death-evidence-20261109/impact-contact.png",
+      "sha256": "0de26ebb60aa73d1e0acd20617e660f7bc818651184fb31420c886528424bfcf",
+      "bytes": 265270
+    },
+    {
+      "path": "scripts/death-evidence-20261109/impact-fall.png",
+      "sha256": "dc8d5ec40daad2e3f2c341f7ef3a11a2eff82f15de066ed771cb604802c82a75",
+      "bytes": 276347
+    },
+    {
+      "path": "scripts/death-evidence-20261109/impact-launch.png",
+      "sha256": "d2de53b48a8b047c32a05265113a05b7b6d0f59ada17644077688f9ae36c530a",
+      "bytes": 267300
+    },
+    {
+      "path": "scripts/death-evidence-20261109/respawn.png",
+      "sha256": "3857312289c40d92d60ccb91eaa17e4efe3fcc60b5488ed3273676cfc6a334f1",
+      "bytes": 351945
+    },
+    {
+      "path": "scripts/death-evidence-20261109/settings.png",
+      "sha256": "47674d645d96f5b9d2cc1c88c894098cb0d962a9eebe5d64394b38232dfdb381",
+      "bytes": 385512
+    },
+    {
+      "path": "scripts/death-evidence-20261109/shell-impact.png",
+      "sha256": "ee413302af0f7fc16d5bceb381dc74f326647a6d12caaf5fa7bf0ac310c66e73",
+      "bytes": 289390
+    },
+    {
+      "path": "scripts/death-evidence-20261109/README.md",
+      "sha256": "d318e07d8a85cdb8c5c11a5f619e8df2294d05f4dcc8d0f195ef89cdf3e722a9",
+      "bytes": 3692
+    },
+    {
+      "path": "scripts/death-evidence-20261109/play-results.txt",
+      "sha256": "7d2a105d623652c9038206d902dadb33575a52213c9d5e936791d039b73851a9",
+      "bytes": 1250
+    },
+    {
+      "path": "scripts/death-evidence-20261109/editor.log",
+      "sha256": "23fd97d74eee93b868022baa829818dd551a4204e9298bf77acf081c05d034fa",
+      "bytes": 311998
+    },
+    {
+      "path": "scripts/death-evidence-20261109/backup/Death.cs",
+      "sha256": "4d5ffcb38406419da37d947e981d37d01f731a1fa9faaa14cb3f8f46f1fce2ae",
+      "bytes": 2752
+    },
+    {
+      "path": "scripts/death-evidence-20261109/backup/EnemyContactDetection.cs",
+      "sha256": "bb45b7b6a99d69c527a8959d6753eb314f71feecd7c3eb4e5a77ee6fe6bc0856",
+      "bytes": 1378
+    },
+    {
+      "path": "scripts/death-evidence-20261109/backup/GameMenuUI.cs",
+      "sha256": "73ea90bb7d176d985bdc732a22a2ee54f052524702f4b926ffddaa7e4b2f1d2b",
+      "bytes": 14006
+    }
+  ]
+}

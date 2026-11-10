@@ -53,7 +53,7 @@ using UnityEngine.SceneManagement;
                 foreach(var vcam in UnityEngine.Object.FindObjectsOfType<Cinemachine.CinemachineVirtualCamera>())
                 {
                     var framing=vcam.GetCinemachineComponent<Cinemachine.CinemachineFramingTransposer>();
-                    if(framing!=null){framing.m_ScreenY=.55f;framing.m_DeadZoneHeight=.08f;framing.m_SoftZoneHeight=.8f;framing.m_YDamping=.35f;framing.m_XDamping=.35f;}
+                    if(framing!=null){framing.m_ScreenY=.55f;framing.m_DeadZoneHeight=.08f;framing.m_SoftZoneHeight=.8f;framing.m_YDamping=.35f;framing.m_XDamping=.8f;}
                 }
                 foreach(var star in stars)
                 {

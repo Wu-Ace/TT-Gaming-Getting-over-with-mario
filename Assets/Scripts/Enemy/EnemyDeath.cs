@@ -101,7 +101,7 @@ namespace Enemy
         private void PlayDeathSound()
         {
             if (_audioSource == null || sfx == null) return;
-            _audioSource.PlayOneShot(sfx);
+            GameplayAudio.Play("enemy_hit", .3f);
         }
 
         private void OnDestroy() { Unsubscribe(); }

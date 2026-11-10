@@ -1,0 +1,28 @@
+UTC 2026-11-09T09:12:27.1719163Z
+Isolated physical contacts and forced fall; not full traversal/device/audio listening.
+PASS Physical top contact remains a stomp, no death feedback
+PASS Physical side contact starts impact death exactly once
+PASS Whole dead rig no longer collides
+PASS Duplicate death calls are suppressed
+PASS Death camera stops following corpse
+PASS Death overlay contains no text
+PASS Death cannot be paused by settings
+PASS Corpse releases after local hit stop and launches upwards (simulated=True, vy=6.4114, elapsed=0.1634731)
+PASS Impact death reloads and revives after short presentation
+PASS Camera and feedback state restored on spawn
+PASS Input target restored on spawn
+PASS Arrival blackout cleaned up
+PASS Crossing actual fall threshold triggers separate fall feedback
+PASS Offscreen fall has actual character-pose echoes
+PASS Fall pose images preserve source sprite aspect ratios
+PASS Iris is open during the fall rather than hiding the pose
+PASS Fall has screen wind, depth vignette and departure rings
+PASS Duplicate hazard during fall does not replace presentation
+PASS Fall corpse continues down instead of freezing
+PASS Fall ends with closing aperture rather than plain fade
+PASS Fall death reloads and revives
+PASS Death preserves collected diamond and checkpoint
+PASS Second death fully cleans transition state
+PASS Authored Koopa stomp handler still activates its shell
+PASS Actual active shell side collision triggers exactly one impact death
+PASS Shell collision death completes reload and presentation cleanup

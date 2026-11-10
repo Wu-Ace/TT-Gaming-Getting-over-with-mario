@@ -1,0 +1,10 @@
+# Backward unstuck recovery — 2026-11-08
+Implemented PlayerUnstuck, auto-attached by Death.Awake in all player scenes. Records up to 512 verified static-supported rig poses, retains first landing. Full rig collision checks include spikes/enemies. Normal contact skin allowed up to .025m. Body penetration over .06m with under .1m displacement for .65s triggers recovery. Revalidates saved poses using current geometry/scale, chooses closest Euclidean pose with route distance at least .05m behind current location, restores body/hammer rig and clears velocities. No campaign progress writes. One-second retry cooldown.
+
+PASS actual Unity refresh compilation: zero errors/warnings after final changes.
+PASS actual Play regression: automatic attachment; normal idle does not recover; generated overlapping collider causes automatic backward recovery; forward-only fallback rejected; newly occupied fallback rejected; vertical and return-route ordering.
+Test uses frozen bodies and disabled joints in a temporary distant fixture, with in-memory snapshot injection to exercise recovery. It does not establish full hammer traversal, all-level balance, automatic safe-pose coverage across every terrain, moving-platform passenger behavior, device or export validation. No scene saved by tests. Test preference prefix Goombas.Unstuck.TEST.; no formal progress cleared.
+
+Runtime output: UNSTUCK PASS: auto attachment, normal idle, sustained overlap recovery, backward nearest pose, forward rejected, occupied fallback rejected, vertical and return route ordering. Test rig frozen; not full traversal.
+
+Limitation: only previously verified static-supported poses are candidates. If no currently clear pose lies behind the player, no teleport occurs; retries are throttled. This avoids guessed unsafe or forward destinations. Deep sustained penetration is detected; shallow wedging without overlap is outside this recovery trigger.

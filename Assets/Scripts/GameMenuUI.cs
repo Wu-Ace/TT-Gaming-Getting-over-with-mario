@@ -13,7 +13,8 @@ public sealed class GameMenuUI : MonoBehaviour
     public const string Pref = "Goombas.UI.v1.";
     public static string PreferencePrefix = Pref;
     public static bool Testing;
-    public static readonly string[] Scenes = {"OneOneScene","Level02_Jungle","Level03_Beach","Level04_Town","Level05_Cave","Level06_Grassland_Winter","Level07_Ice","Level08_Castle","Level09_Volcano","Level10_Sky"};
+    public const int PlayableLevelCount = 5;
+    public static readonly string[] Scenes = {"Level01","Level02_Jungle","Level03_Beach","Level04_Town","Level05_Cave","Level06_Grassland_Winter","Level07_Ice","Level08_Castle","Level09_Volcano","Level10_Sky"};
     static readonly string[] Names = {"草地起点","丛林穿行","海滨冒险","小镇高台","地下探险","冬日草地","冰雪之路","城堡挑战","火山之旅","天空终点"};
     public bool IsMenu => SceneManager.GetActiveScene().name == MenuScene;
     public bool settings;
@@ -48,7 +49,8 @@ public sealed class GameMenuUI : MonoBehaviour
         RefreshResolutions(); SceneManager.sceneLoaded+=Loaded;
     }
     Texture2D Load(string s)=>Resources.Load<Texture2D>("MenuUI/"+s);
-    void Loaded(Scene scene,LoadSceneMode mode){CloseSettings();page=0;error=null;ApplyVolumes();}
+    bool showLevelsOnLoad;
+    void Loaded(Scene scene,LoadSceneMode mode){CloseSettings();page=showLevelsOnLoad && scene.name==MenuScene ? 1 : 0;showLevelsOnLoad=false;error=null;ApplyVolumes();}
     void OnDestroy(){SceneManager.sceneLoaded-=Loaded;if(Instance==this)Instance=null;}
     void RefreshResolutions()
     {
@@ -71,27 +73,28 @@ public sealed class GameMenuUI : MonoBehaviour
         if(Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame) { if(settings)CloseSettings();else if(!IsMenu)OpenSettings();else if(page>0)page--; }
         if(Screen.currentResolution.width!=monitorW || Screen.currentResolution.height!=monitorH)RefreshResolutions();
     }
-    public void OpenSettings(){if(settings)return;settings=true;dropdown=false;previousTimeScale=Time.timeScale;if(!IsMenu)Time.timeScale=0;}
-    public void CloseSettings(){if(settings && !IsMenu)Time.timeScale=previousTimeScale;settings=false;dropdown=false;}
+    public void OpenSettings(){if(settings || Character.Lifecycle.DeathFeedback.Active)return;GameplayAudio.Play("pause",.35f);settings=true;dropdown=false;previousTimeScale=Time.timeScale;if(!IsMenu)Time.timeScale=0;}
+    public void CloseSettings(){if(settings)GameplayAudio.Play("resume",.35f);if(settings && !IsMenu)Time.timeScale=previousTimeScale;settings=false;dropdown=false;}
     public void LoadLevel(int i)
     {
-        if(i<0 || i>=Scenes.Length)return;
-        if(!Application.CanStreamedLevelBeLoaded(Scenes[i])){error="关卡未加入构建，请返回重试。";return;}
-        CloseSettings();Time.timeScale=1;SceneManager.LoadScene(i==0 ? "Tutorial" : Scenes[i]);
+        if(i < -1 || i>=PlayableLevelCount)return;
+        string targetScene = i == -1 ? "Tutorial" : Scenes[i];
+        if(!Application.CanStreamedLevelBeLoaded(targetScene)){error="关卡未加入构建，请返回重试。";GameplayAudio.Play("locked",.4f);return;}
+        CloseSettings();Time.timeScale=1;SceneManager.LoadScene(targetScene);
     }
     void ApplyVolumes()
     {
         // Keep SFX routing scoped to sources. Do not mute UI with a global AudioListener volume.
         foreach(var source in FindObjectsOfType<AudioSource>())
         {
-            if(source==clicks)continue;
+            if(source==clicks || source.GetComponent<GameplayAudio>()!=null)continue;
             var gain=source.GetComponent<MenuAudioGain>();if(gain==null)gain=source.gameObject.AddComponent<MenuAudioGain>();
             gain.Apply(source,source.loop?music:effects);
         }
         clicks.volume=effects;
     }
     void SaveVolumes(){PlayerPrefs.SetFloat(PreferencePrefix+"music",music);PlayerPrefs.SetFloat(PreferencePrefix+"effects",effects);PlayerPrefs.Save();ApplyVolumes();}
-    void Sound(bool goBack=false){var clip=goBack?back:click;if(clip!=null)clicks.PlayOneShot(clip);}
+    void Sound(bool goBack=false){GameplayAudio.Play(goBack?"ui_back":"ui_click",.16f);}
     void Styles()
     {
         if(label!=null)return;
@@ -107,7 +110,7 @@ public sealed class GameMenuUI : MonoBehaviour
     }
     bool Button(Rect r,string value,Action action,bool green=true)
     {
-        if(!GUI.Button(r,value,green?button:greyButton))return false;Sound();action();return true;
+        if(!GUI.Button(r,value,green?button:greyButton))return false;if(action!=OpenSettings && action!=CloseSettings)Sound();action();return true;
     }
     void Fill(Rect r,Color c){var old=GUI.color;GUI.color=c;GUI.DrawTexture(r,Texture2D.whiteTexture);GUI.color=old;}
     void Background(){GUI.DrawTexture(new Rect(0,0,1600,900),landscape,ScaleMode.ScaleAndCrop);}
@@ -117,7 +120,7 @@ public sealed class GameMenuUI : MonoBehaviour
         var old=GUI.matrix;float scale=Mathf.Min(Screen.width/1600f,Screen.height/900f);
         // Letterboxed reference layout keeps circles round and never stretches source art.
         GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-1600*scale)/2,(Screen.height-900*scale)/2,0),Quaternion.identity,new Vector3(scale,scale,1));
-        if(IsMenu){Fill(new Rect(-4000,-4000,9600,8900),new Color32(35,63,56,255));Background();if(page==0)Home();else if(page==1)Worlds();else Levels();}
+        if(IsMenu){Fill(new Rect(-4000,-4000,9600,8900),new Color32(35,63,56,255));Background();if(page==0)Home();else Levels();}
         else if(!settings)
         {
             // HUD anchors follow the actual display, independently of the menu reference frame.
@@ -153,32 +156,27 @@ public sealed class GameMenuUI : MonoBehaviour
         Fill(new Rect(82,350,438,340),new Color32(255,246,220,255));
         Button(new Rect(115,380,370,76),"开始",()=>page=1);Button(new Rect(115,480,370,76),"设置",OpenSettings);Button(new Rect(115,580,370,76),"退出",()=>{if(!Testing)Application.Quit();});
     }
-    void Worlds()
-    {
-        Fill(new Rect(0,0,1600,900),new Color(0.08f,.2f,.16f,.25f));Text(new Rect(85,50,800,80),"选择世界",48,Color.white);
-        string[] titles={"初次冒险","深入秘境","最终挑战"};string[] ranges={"关卡 01 — 04","关卡 05 — 08","关卡 09 — 10"};
-        for(int i=0;i<3;i++)
-        {
-            int n=i;float x=230+i*410;
-            GUI.DrawTexture(new Rect(x,200,310,580),plates[i]);Text(new Rect(x+20,250,280,60),titles[i],32,Color.white,true);
-            GUI.DrawTexture(new Rect(x-25,330,360,360),worlds[i]);Text(new Rect(x+5,694,300,50),ranges[i],24,Color.white,true);
-            if(GUI.Button(new Rect(x-25,200,360,580),GUIContent.none,GUIStyle.none)){Sound();world=n;page=2;}
-        }
-        Button(new Rect(85,800,190,62),"← 返回",()=>page=0,false);
-    }
     void Levels()
     {
         Text(new Rect(85,50,1000,80),"选择关卡",48,Color.white);
-        int start=world*4,end=Mathf.Min(start+4,Scenes.Length);
+        int start=0,end=PlayableLevelCount+1;
         for(int i=start;i<end;i++)
         {
-            int n=i;float x=170+(i-start)*350;
-            Fill(new Rect(x,300,300,340),new Color32(35,63,56,240));Text(new Rect(x,330,300,70),(i+1).ToString("00"),52,Color.white,true);
-            Text(new Rect(x,420,300,60),Names[i],28,Color.white,true);
-            int best=PlayerPrefs.GetInt(PreferencePrefix+"stars."+Scenes[i],0);Text(new Rect(x,490,300,55),(i<3?"钻石 ":"★ ")+best+" / 3",24,new Color32(255,225,115,255),true);
-            Button(new Rect(x+30,560,240,60),"进入关卡",()=>LoadLevel(n));
+            int n=i-1;float x=40+i*255;
+            Fill(new Rect(x,300,245,340),new Color32(35,63,56,240));Text(new Rect(x,330,245,70),(n<0 ? "教程" : (n+1).ToString("00")),52,Color.white,true);
+            Text(new Rect(x,420,245,60),(n<0 ? "新手教程" : Names[n]),28,Color.white,true);
+            int best=PlayerPrefs.GetInt(PreferencePrefix+"stars."+(n<0 ? "Tutorial" : Scenes[n]),0);Text(new Rect(x,490,245,55),(n<3?"钻石 ":"★ ")+best+" / 3",24,new Color32(255,225,115,255),true);
+            Button(new Rect(x+15,560,215,60),"进入关卡",()=>LoadLevel(n));
         }
-        Button(new Rect(85,800,190,62),"← 返回",()=>page=1,false);
+        Button(new Rect(85,800,190,62),"← 返回",()=>page=0,false);
+    }
+    void ReturnToLevelMenu()
+    {
+        CloseSettings();
+        Time.timeScale=1;
+        if(IsMenu){page=1;return;}
+        showLevelsOnLoad=true;
+        SceneManager.LoadScene(MenuScene);
     }
     void Settings()
     {
@@ -190,8 +188,7 @@ public sealed class GameMenuUI : MonoBehaviour
         Text(new Rect(470,525,230,65),"分辨率",29);
         string current=resolutionIndex==0?"自动（跟随屏幕）":resolutions[resolutionIndex-1].width+" × "+resolutions[resolutionIndex-1].height;
         Button(new Rect(715,522,410,65),current+"  v",()=>dropdown=!dropdown,false);
-        Text(new Rect(715,590,410,60),"修改即时生效并自动保存",18,Color.white);
-        Button(new Rect(635,684,330,60),"返回",CloseSettings,false);
+        Button(new Rect(635,684,330,60),"返回菜单",ReturnToLevelMenu,false);
         if(dropdown)
         {
             Fill(new Rect(710,220,430,375),new Color32(245,245,243,255));

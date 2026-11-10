@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: dbce2074b4b8bd041b76a23111d847a5
   - enabled: 1
-    path: Assets/Scenes/OneOneScene.unity
+    path: Assets/Scenes/Level01.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/Level02_Jungle.unity
@@ -26,19 +26,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level05_Cave.unity
     guid: d79fb631bfdc1314e8fc72dde3d83a40
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level06_Grassland_Winter.unity
     guid: 129a21a502401b048b962f5752b4f1e6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level07_Ice.unity
     guid: aaaa3b9f68eaecc439699254dc3d01d1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level08_Castle.unity
     guid: 49ec0cd5bb5339c43a194eac5e37b6a6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level09_Volcano.unity
     guid: 614b314d4ea299045999ddce1d2bfa8a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level10_Sky.unity
     guid: 4265a8e51ad54884d90b752ca157b8e6
   m_BuildProfiles: []

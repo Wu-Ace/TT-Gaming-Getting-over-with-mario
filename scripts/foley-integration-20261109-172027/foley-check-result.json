@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": \"{ validated = 19, cueRoutes = 15, scene = Level01, dirty = False }\",\n  \"elapsed_ms\": 1752,\n  \"logs\": [\n    \"[Log] AUDIO_VALIDATION_PASS: 19 natural clips imported; collision pitch valid; no PlayerPrefs or scene writes.\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

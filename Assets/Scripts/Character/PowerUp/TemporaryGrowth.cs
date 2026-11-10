@@ -34,6 +34,7 @@ namespace Character.PowerUp
         private Coroutine _delayedShrinking;
         private float _baseMass;
         private float _timeLeft;
+        private int _lastWarning;
         public float GiftScale { get; set; } = 1f;
         private float _appliedGiftScale = 1f;
 
@@ -57,8 +58,7 @@ namespace Character.PowerUp
             bodyChangingMass.mass = mass;
             _growing = true;
 
-            _audioSource.clip = startSfx;
-            _audioSource.Play();
+            GameplayAudio.Play("growth_start");
 
             if (_delayedShrinking != null)
             {
@@ -91,8 +91,7 @@ namespace Character.PowerUp
                         bodyChangingMass.mass = _baseMass;
                         _shrinking = true;
 
-                        _audioSource.clip = endSfx;
-                        _audioSource.Play();
+                        GameplayAudio.Play("growth_end");
 
                         OnMushroomEffectEnded?.Invoke();
                     });
@@ -117,6 +116,9 @@ namespace Character.PowerUp
             {
                 _timeLeft = Mathf.Max(_timeLeft - Time.deltaTime, 0f);
             }
+            int warning = Mathf.CeilToInt(_timeLeft);
+            if (warning > 0 && warning <= 3 && warning != _lastWarning) GameplayAudio.Play("warning", .3f);
+            _lastWarning = warning;
             timeLeftUi.value = _timeLeft / effectDuration;
             _appliedGiftScale = Mathf.Clamp(GiftScale, 0.5f, 2f);
             cauldron.localScale *= _appliedGiftScale;

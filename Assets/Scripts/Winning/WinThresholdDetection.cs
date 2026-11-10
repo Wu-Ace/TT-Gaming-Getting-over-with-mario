@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Character.Control;
 using Character.Lifecycle;
 using UnityEngine;
@@ -41,7 +41,7 @@ namespace Winning
             _won = true;
 
             OnGameWon?.Invoke();
-            if (_audioSource != null) _audioSource.Play();
+            GameplayAudio.Play("complete", .35f);
             if (flagAnimation != null) flagAnimation.SetTrigger(Touched);
 
             _armsSimulation.enabled = false;

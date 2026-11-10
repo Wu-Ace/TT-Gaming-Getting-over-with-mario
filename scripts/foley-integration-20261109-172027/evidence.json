@@ -1,0 +1,198 @@
+{
+  "created": "2026-11-09T17:20:28.306999",
+  "engine": "2022.3.62t15 / Tuanjie 1.10.3",
+  "source_manifest": [
+    {
+      "cue": "gate",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\家用生活Household\\门\\开门Opening a door.wav",
+      "source_sha256": "4d8b409ab0e7a205d0f4cbc2c1456ec233836fdb2505893350e1941235c43a59",
+      "start_seconds": 0.212,
+      "duration_seconds": 0.85,
+      "peak": 0.42,
+      "output": "Assets\\Resources\\NaturalAudio\\gate.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "locked",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\家用生活Household\\门\\锁门Lock the door.wav",
+      "source_sha256": "c5787eb1814b91a956c3f40348dd86413fbde21542330c40356d2b494a132b76",
+      "start_seconds": 2.022,
+      "duration_seconds": 0.2,
+      "peak": 0.34,
+      "output": "Assets\\Resources\\NaturalAudio\\locked.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "platform_warn",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\自然Nature\\木\\Wood 1.wav",
+      "source_sha256": "709038f49bf6403ec4107ec901be2fc95bfc71c1a0da70c679b0c8bb32842639",
+      "start_seconds": 1.212,
+      "duration_seconds": 0.2,
+      "peak": 0.3,
+      "output": "Assets\\Resources\\NaturalAudio\\platform_warn.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "platform_fall",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\自然Nature\\破木Breaking Wood.wav",
+      "source_sha256": "e95735b12683f4a4c5984c02bf38c9fba282c3ee439f992a5bffc8ce6a43f3d3",
+      "start_seconds": 0.792,
+      "duration_seconds": 0.38,
+      "peak": 0.46,
+      "output": "Assets\\Resources\\NaturalAudio\\platform_fall.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "growth_start",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\人类 Human\\拉链.wav",
+      "source_sha256": "522a0aba1366e89406ac00c4bafb96f1038ebc70665bc8e338abb9040a109d43",
+      "start_seconds": 0.562,
+      "duration_seconds": 0.42,
+      "peak": 0.3,
+      "output": "Assets\\Resources\\NaturalAudio\\growth_start.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "growth_end",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\自然Nature\\叶子移动Leaves Moving.wav",
+      "source_sha256": "bc6963dcc2bf908734fc9e618ee7b67a6e22b9235b82ae1524f290ebeb046a2a",
+      "start_seconds": 1.522,
+      "duration_seconds": 0.25,
+      "peak": 0.24,
+      "output": "Assets\\Resources\\NaturalAudio\\growth_end.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "strength_start",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\自然Nature\\木\\Wood 2.wav",
+      "source_sha256": "3493bf93a190496f10784a3228c5db54762e27e86f3bcb74a85405098c0a8f43",
+      "start_seconds": 0.032,
+      "duration_seconds": 0.25,
+      "peak": 0.38,
+      "output": "Assets\\Resources\\NaturalAudio\\strength_start.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "strength_end",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\自然Nature\\叶子移动Leaves Moving.wav",
+      "source_sha256": "bc6963dcc2bf908734fc9e618ee7b67a6e22b9235b82ae1524f290ebeb046a2a",
+      "start_seconds": 1.522,
+      "duration_seconds": 0.32,
+      "peak": 0.22,
+      "output": "Assets\\Resources\\NaturalAudio\\strength_end.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "warning",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\自然Nature\\木\\Wood 1.wav",
+      "source_sha256": "709038f49bf6403ec4107ec901be2fc95bfc71c1a0da70c679b0c8bb32842639",
+      "start_seconds": 1.212,
+      "duration_seconds": 0.09501133786848072,
+      "peak": 0.22,
+      "output": "Assets\\Resources\\NaturalAudio\\warning.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "enemy_ghost",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\自然Nature\\叶子移动Leaves Moving.wav",
+      "source_sha256": "bc6963dcc2bf908734fc9e618ee7b67a6e22b9235b82ae1524f290ebeb046a2a",
+      "start_seconds": 1.522,
+      "duration_seconds": 0.32,
+      "peak": 0.28,
+      "output": "Assets\\Resources\\NaturalAudio\\enemy_ghost.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "spawn",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\自然Nature\\叶子移动Leaves Moving.wav",
+      "source_sha256": "bc6963dcc2bf908734fc9e618ee7b67a6e22b9235b82ae1524f290ebeb046a2a",
+      "start_seconds": 1.522,
+      "duration_seconds": 0.25,
+      "peak": 0.22,
+      "output": "Assets\\Resources\\NaturalAudio\\spawn.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "pause",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\家用生活Household\\门\\锁门Lock the door.wav",
+      "source_sha256": "c5787eb1814b91a956c3f40348dd86413fbde21542330c40356d2b494a132b76",
+      "start_seconds": 2.022,
+      "duration_seconds": 0.12,
+      "peak": 0.22,
+      "output": "Assets\\Resources\\NaturalAudio\\pause.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "resume",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\自然Nature\\木\\Wood 2.wav",
+      "source_sha256": "3493bf93a190496f10784a3228c5db54762e27e86f3bcb74a85405098c0a8f43",
+      "start_seconds": 0.032,
+      "duration_seconds": 0.1,
+      "peak": 0.1789357883530549,
+      "output": "Assets\\Resources\\NaturalAudio\\resume.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "complete",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\7 Foley（其他）\\人类 Human\\掌声欢迎Applauding.wav",
+      "source_sha256": "8c3ef8313aa8312f77208a8300c79d5d54958efdc8c035e5516411ade5aed6fb",
+      "start_seconds": 0.372,
+      "duration_seconds": 1.1,
+      "peak": 0.35,
+      "output": "Assets\\Resources\\NaturalAudio\\complete.wav",
+      "license": "User local collection; commercial license not independently verified"
+    },
+    {
+      "cue": "fall_wind",
+      "source": "E:\\510款沉浸式叙事电影级氛围音效【优品视觉】\\510款沉浸式叙事电影级氛围音效【优品视觉】\\Sam Kolder—Pulse Sound Effects\\6 Ambience（环境）\\风\\Wind 1.wav",
+      "source_sha256": "76fe98dc2f67ff96f4336d75b81ccf0ec4e06a62f4e8a3c5089a1a049100b0b9",
+      "start_seconds": 1.382,
+      "duration_seconds": 0.85,
+      "peak": 0.24999999999999997,
+      "output": "Assets\\Resources\\NaturalAudio\\fall_wind.wav",
+      "license": "User local collection; commercial license not independently verified"
+    }
+  ],
+  "checks": {
+    "waveform_format_peak_fades": "PASS",
+    "no_runtime_synthesizer": "PASS",
+    "engine_compile": "PASS: 0 errors, 2 pre-existing unused-field warnings",
+    "in_game_listening": "NOT RUN",
+    "physical_play": "NOT RUN",
+    "device": "NOT RUN",
+    "resource_loading_and_routes": "PASS: 19 clips / 15 new cue routes",
+    "runtime_audio_smoke": "PASS: 15 cues play, original pitch, preference gain",
+    "editor_state_restored": "PASS: Play stopped",
+    "subjective_listening": "NOT RUN",
+    "full_physical_play": "NOT RUN"
+  },
+  "sha256": {
+    "Assets\\Resources\\NaturalAudio\\gate.wav": "0ea24306fd51df2305830be2ad439c8b6da73edb8f4cc46aca43e0c7f98aea11",
+    "Assets\\Resources\\NaturalAudio\\locked.wav": "e32d5aae9b6e3299c171fc93f897299ba369effe5fc77f67f2fd66e0f74cada2",
+    "Assets\\Resources\\NaturalAudio\\platform_warn.wav": "55e6b6d9aa55788b4ee8d944a0dec2d87ac2708c73e3009e85ac5a4f70c3cb1a",
+    "Assets\\Resources\\NaturalAudio\\platform_fall.wav": "1fd71241cc154bd9cb4bb81ccd60bd5b7453709ebeb7616c2efb08d61957be7e",
+    "Assets\\Resources\\NaturalAudio\\growth_start.wav": "f16b187315c9df09a7fc0d570f89cf08a645a68fd0002e8c0357742915666a9e",
+    "Assets\\Resources\\NaturalAudio\\growth_end.wav": "1e65b1e77205fb10e346afb7b4f870380d43bf9d6d36316b092894cea9a57260",
+    "Assets\\Resources\\NaturalAudio\\strength_start.wav": "e5df058f9ce4284ae00f409e24fe60fddb453d93534d5c5788a3ed7754089148",
+    "Assets\\Resources\\NaturalAudio\\strength_end.wav": "6bd78c23ee55c5ccf3dcfae0d11b0c9d9945677fdf6aa3f1079ec68561bca067",
+    "Assets\\Resources\\NaturalAudio\\warning.wav": "7fd0fe97365a3a52debfbddcf7a95a7dd195154645a1d6c85badbf2529782d6d",
+    "Assets\\Resources\\NaturalAudio\\enemy_ghost.wav": "3e62ccf0c73e925b22efeadbdfa8366ee2d8d95f9ffbb79cc497c4c9494c17c7",
+    "Assets\\Resources\\NaturalAudio\\spawn.wav": "8ebd3824e1aef478355b0448ddfddb4353ba934709570b4bfc30fc2a4ac60601",
+    "Assets\\Resources\\NaturalAudio\\pause.wav": "1dce95185d047427c8db3d4256c9907f9a98feb7c1276bb4eae194475913a45d",
+    "Assets\\Resources\\NaturalAudio\\resume.wav": "0db62282d6b9405176358f3982d9a7f2a1c9d893e6465553b1d47ceb03bfce5d",
+    "Assets\\Resources\\NaturalAudio\\complete.wav": "f3ff8339dcd6aab7326ff7b49d1de1e96c2da2e274c8395b536b9cb949b09a68",
+    "Assets\\Resources\\NaturalAudio\\fall_wind.wav": "c884190160d018788c589e900d993f6bad1fd3054e7333cb3240e79462abe922",
+    "Assets\\Scripts\\GameplayAudio.cs": "3210a2e95e0770982fdf922e8939d717c5e88b42b8a04c2c9c3f694918d32627",
+    "Assets\\Scripts\\Winning\\WinThresholdDetection.cs": "54935b17594261e4b2ae68922b61057fec0d89ada547d949419cd4255c8f5b13",
+    "Assets\\Scripts\\Character\\Lifecycle\\DeathFeedback.cs": "01537afe437c93d2f200b99aaae8a50986a46bd6db52a500fc6feefacdd83789",
+    "Assets\\Editor\\AudioFeedbackValidation.cs": "da25e630988b6d0bd760d6bc834f7bc30682b5768278ca4e6eb9feee3de71f70",
+    "Assets\\Scripts\\GiftConfiguration.cs": "f242a0c40a7735bf6359ad1461eed9a3e16c2dc78df0d4d5a911b25207dc028f",
+    "Assets\\Scripts\\GiftKeyboardTester.cs": "5629c125adabccbcfe337419a0c4fc6b24dac951e348a4fe9e33a3ab0483197a",
+    "Assets\\Scripts\\GiftRuntime.cs": "40e3165031e7e9d898f18cd2bf4a1e8a9ff30e19aa1b837142add1445af5eb2a",
+    "scripts\\foley-integration-20261109-172027\\foley-check-result.json": "5512752ebff6b844f9c1b3e6b78d1ddd93e1e711bce2358cab1060511664457e",
+    "scripts\\foley-integration-20261109-172027\\foley-play-result.json": "75d455573d4e3c364e3a34bed7fe8cd2a574bd00556bb10b063e5aa76dc2f671",
+    "scripts\\foley-integration-20261109-172027\\foley-refresh-result.json": "6c1498e8d91a5b8cd93571057581ef2d07c08c00427b998f1fd1d34165ae1b8d",
+    "scripts\\foley-integration-20261109-172027\\foley-state-result.json": "9278eb284586c6906dc47ddf8460940ba914fc1e6de80941c1c0c55c587198c4",
+    "scripts\\foley-integration-20261109-172027\\foley-stop-result.json": "580640227a219ed3b72404567a91f0e4135fc477bd3bb13b29e90770fcbd3a51"
+  }
+}

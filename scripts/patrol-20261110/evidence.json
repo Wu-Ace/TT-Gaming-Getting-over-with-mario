@@ -1,0 +1,10 @@
+{
+  "source": "Assets\\Scripts\\Enemy\\EnemyMovement.cs",
+  "sha256": "9c336258ccb50930744ded1afd0ddd088768c53b535b034ccff4fc0947314cf9",
+  "unityCompile": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "physicalPlay": "not run",
+  "deviceExport": "not run"
+}

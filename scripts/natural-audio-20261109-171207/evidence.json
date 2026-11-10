@@ -1,0 +1,32 @@
+{
+  "style": "No electronic/synthesized cues; original pitch only",
+  "missing_natural_material": [
+    "gate movement",
+    "growth/strength start/end",
+    "countdown warning",
+    "ghost defeat",
+    "spawn",
+    "pause/resume",
+    "completion celebration",
+    "fall wind"
+  ],
+  "checks": {
+    "source_audit": "PASS",
+    "engine_compile": "NOT RUN",
+    "listening": "NOT RUN"
+  },
+  "sha256": {
+    "Assets\\Resources\\NaturalAudio\\table.mp3": "98cb351f66931ff799d570407b79dc69a5dc97e622702f300a7fb7bca7107de4",
+    "Assets\\Resources\\NaturalAudio\\can.mp3": "07c076cbe17b5a316a295ab5ad87b6f1c8451c18bb3e41094017f2bf0215b62e",
+    "Assets\\Resources\\NaturalAudio\\canBounce.mp3": "1009db6170b2f52548cc45de3e913da377da260a4a6013d5ec854fea718b15ae",
+    "Assets\\Resources\\NaturalAudio\\bump.mp3": "0b367bc45bf686cf09d794ba5aa7e150fd8b1d75b5c180f35e213f717c3b579b",
+    "Assets\\Scripts\\GameplayAudio.cs": "34c5895dbdf637ab2d7e74eb3c080fde834da0eb94b12c2c102b1f598a3adbf2",
+    "Assets\\Scripts\\GameMenuUI.cs": "6f66f5f61a7280166442731278a39f809cba9519c7a18a7fee1d638ad5b66be3",
+    "Assets\\Scripts\\Enemy\\EnemyDeath.cs": "c95296633cb8cc239155ec9bc197df83ad657e21a1a3f58e68fb25c513093fdf",
+    "Assets\\Scripts\\Winning\\FloatingCoin.cs": "468f81e9970bedf2e77be586ee39d0bb64aaf48c338f652aabf4ee598cb2a151",
+    "Assets\\Scripts\\Winning\\WinThresholdDetection.cs": "17b31c49180bcb0f17a3a4042def535afdc51cef7b95465c3989946d1ab042e6",
+    "Assets\\Scripts\\Character\\Lifecycle\\DeathFeedback.cs": "169475e906bbc5b526731feb264bfadd3ba9edd8e47c2aa7449fc0d9fc2dc33d",
+    "Assets\\Scripts\\Character\\Lifecycle\\FallDeathPresentation.cs": "45071a7e62b8a41a0c2ca71ec9d6edfe4ff39c4d974e17828ee6d1274e6fb42f",
+    "Assets\\Editor\\AudioFeedbackValidation.cs": "81679812118bd029d32be297d6e4dabdade96f161bf97d665a8b9e6887ad6adf"
+  }
+}

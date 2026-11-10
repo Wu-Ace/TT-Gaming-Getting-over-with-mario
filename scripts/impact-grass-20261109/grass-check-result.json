@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": \"{ passed = True, scene = Level01, dirty = False }\",\n  \"elapsed_ms\": 1973,\n  \"logs\": [\n    \"[Log] IMPACT_GRASS_STATIC_PASS: 29 cue routes,5 grass variants,light-hit thresholds.\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

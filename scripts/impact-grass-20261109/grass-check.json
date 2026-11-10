@@ -1,0 +1,1 @@
+{"name":"exec_editor_script","arguments":{"script":"AudioFeedbackValidation.Run(); return new {passed=true,scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().name,dirty=UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty};","summary":"Validate all natural audio routes, grass variants and light-hit thresholds"}}

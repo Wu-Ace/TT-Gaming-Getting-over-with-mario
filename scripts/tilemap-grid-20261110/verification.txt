@@ -1,0 +1,6 @@
+Tutorial: one ground map; cells=50 missing=0 nonidentity=0 grid=(0.80, 0.80, 1.00) origin=(0.00, -3.60, 0.00)
+Level01: one ground map; cells=756 missing=0 nonidentity=0 grid=(0.80, 0.80, 1.00) origin=(0.00, -3.60, 0.00)
+Level02_Jungle: one ground map; cells=1527 missing=0 nonidentity=0 grid=(0.80, 0.80, 1.00) origin=(0.00, -3.60, 0.00)
+Level03_Beach: one ground map; cells=1579 missing=0 nonidentity=0 grid=(0.80, 0.80, 1.00) origin=(0.00, -3.60, 0.00)
+Level04_Town: one ground map; cells=337 missing=0 nonidentity=0 grid=(0.80, 0.80, 1.00) origin=(0.00, -3.60, 0.00)
+Level05_Cave: one ground map; cells=724 missing=0 nonidentity=0 grid=(0.80, 0.80, 1.00) origin=(0.00, -3.60, 0.00)

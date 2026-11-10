@@ -1,0 +1,4 @@
+Tutorial: unchanged (irregular terrain retained)
+Level01: unchanged (irregular terrain retained)
+Level02_Jungle: solidCells=1527 replacedBoxes=184 maps=1
+Level03_Beach: solidCells=1579 replacedBoxes=1579 maps=5

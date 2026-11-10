@@ -1,0 +1,7 @@
+Tutorial: unchanged (irregular terrain retained)
+Level01: unchanged (irregular terrain retained)
+Level02_Jungle: unchanged (irregular terrain retained)
+Level03_Beach: unchanged (irregular terrain retained)
+Level04_Town Terrain 0: merge coverage failed; validated TilemapCollider2D without Composite
+Level04_Town: solidCells=337 replacedBoxes=337 maps=19
+Level05_Cave: unchanged (irregular terrain retained)

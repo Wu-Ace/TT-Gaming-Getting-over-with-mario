@@ -1,0 +1,26 @@
+{
+  "Level01.unity": {
+    "collidersIdentical": true,
+    "colliderCount": 6
+  },
+  "Level02_Jungle.unity": {
+    "collidersIdentical": true,
+    "colliderCount": 199
+  },
+  "Level03_Beach.unity": {
+    "collidersIdentical": true,
+    "colliderCount": 1648
+  },
+  "Level04_Town.unity": {
+    "collidersIdentical": true,
+    "colliderCount": 344
+  },
+  "Level05_Cave.unity": {
+    "collidersIdentical": true,
+    "colliderCount": 130
+  },
+  "Tutorial.unity": {
+    "collidersIdentical": true,
+    "colliderCount": 6
+  }
+}

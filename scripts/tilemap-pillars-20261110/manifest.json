@@ -1,0 +1,18 @@
+{
+  "Assets\\Editor\\StaticPillarTilemapMigration.cs": "1af61fd48f48c65ef37e5d1fbd4e67c0182b45ca35c26ec2495fd24db3acd91c",
+  "Assets\\Scenes\\Level01.unity": "76bbf2a93a2e76d1b961b9c445461954089f4e85826aa1a54aeaf1b68aa73bda",
+  "ai-handoff.md": "41acec39f2172446691172a5767437732a626962a53b7d1d7f7fbda8cb5f5029",
+  "scripts\\tilemap-pillars-20261110\\footprints.txt": "49effde5ded8a81bb9ad10ae78eda03a2cae25f0daa2a3cb2430854002886347",
+  "scripts\\tilemap-pillars-20261110\\inventory.txt": "151108ea1f1290608fd35a132d860448bf48bea437113258b0ceca8d3e4c0c88",
+  "scripts\\tilemap-pillars-20261110\\migration.txt": "5c8a407e39352cf17ea871b0d5c8d5decd8186e17e26d5eb9ef4ae2d5f125689",
+  "scripts\\tilemap-pillars-20261110\\play-tests.txt": "aafbda4f88474c71416e3d4e72df859dd32e7b8071b7be3f952bba058e275461",
+  "scripts\\tilemap-pillars-20261110\\restore-scene.txt": "f93e522db6b9265b90ca2f4f618bfeccb6f25e37bb35e04d6feafbe0cda54fd8",
+  "scripts\\tilemap-pillars-20261110\\verification.txt": "5a5ad5574e890d7fd1c049ee7265fa1c385ef9900171a98170c21cdb9e1e4889",
+  "scripts\\tilemap-pillars-20261110\\Level01-scene.png": "2a8202eb5ceb61965229b616f48a686e4899a7f09e299a0e3289db81df2d8eb9",
+  "scripts\\tilemap-pillars-20261110\\Level01-stairs.png": "bbbab028df2bd0065f513c03d8449ddf06e488e9cc3ee0fbfc7a3123d7603a32",
+  "scripts\\tilemap-pillars-20261110\\play-frame-0.png": "a66a5ad13f85e8df42f2939b1582cb722211aa507efed08d08afcdcbe64a3ef1",
+  "scripts\\tilemap-pillars-20261110\\play-frame-1.png": "66a6a7680ea86812ffc3f5573c54aa6723a8f3001661cd4a1e00ca12b7f48bc2",
+  "scripts\\tilemap-pillars-20261110\\pillar-landings.mp4": "bc4eef9a189b8788ebb615aaccfd6d5a1a1bbdecc4b486d2a4c22656d3b22ec5",
+  "scripts\\tilemap-pillars-20261110\\README.md": "ab5d597f41f6f8fca30871ac4fcebdbd9eeedebced708a2b2463cae96ae96847",
+  "scripts\\tilemap-pillars-20261110\\unchanged-scenes.json": "fba400c19eb8d78ccd79fa15f5d2e4ea7b574bda0004d4ae4b641dd55d8a143e"
+}

@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "UnityEditor.SceneManagement.EditorSceneManager.OpenScene(\"Assets/Scenes/Tutorial.unity\");return \"Tutorial opened\";", "summary": "Open actual saved Tutorial for collider smoke test"}}

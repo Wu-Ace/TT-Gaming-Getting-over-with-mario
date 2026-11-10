@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "UnityEditor.SceneView.lastActiveSceneView.LookAt(new UnityEngine.Vector3(0,-1,0),UnityEngine.Quaternion.identity,5,true);return \"Tutorial terrain framed\";", "summary": "Inspect real Tutorial Scene terrain after collider configuration"}}

@@ -1,0 +1,8 @@
+Tutorial.unity: already unified
+Level01: gridCells=756 sourceSprites=776 movedSprites=776 maximumShift=0.3540 convertedOldColliders=40 preservedMaps=0
+Level02_Jungle: unmerged fallback
+Level02_Jungle: gridCells=1527 sourceSprites=1527 movedSprites=0 maximumShift=0.0000 convertedOldColliders=0 preservedMaps=0
+Level03_Beach: gridCells=1579 sourceSprites=1579 movedSprites=7 maximumShift=0.4738 convertedOldColliders=0 preservedMaps=0
+Level04_Town: unmerged fallback
+Level04_Town: gridCells=337 sourceSprites=337 movedSprites=51 maximumShift=0.4982 convertedOldColliders=0 preservedMaps=0
+Level05_Cave: gridCells=724 sourceSprites=0 movedSprites=0 maximumShift=0.0000 convertedOldColliders=99 preservedMaps=9

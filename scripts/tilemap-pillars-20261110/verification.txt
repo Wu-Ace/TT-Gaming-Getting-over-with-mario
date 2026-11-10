@@ -1,0 +1,1 @@
+Level01: one ground map; cells=1268 missing=0 nonidentity=0 grid=(0.80, 0.80, 1.00) origin=(0.00, -3.60, 0.00)

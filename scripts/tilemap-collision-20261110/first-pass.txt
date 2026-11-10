@@ -1,0 +1,6 @@
+Tutorial: solidCells=50 replacedBoxes=1 maps=1
+Level01: solidCells=736 replacedBoxes=736 maps=65
+Level02_Jungle: unchanged (irregular terrain retained)
+Level03_Beach: unchanged (irregular terrain retained)
+Level04_Town: unchanged (irregular terrain retained)
+Level05_Cave: unchanged (irregular terrain retained)

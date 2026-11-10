@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "return string.Join(\"\\n\",Enumerable.Range(0,UnityEngine.SceneManagement.SceneManager.sceneCount).Select(i=>{var s=UnityEngine.SceneManagement.SceneManager.GetSceneAt(i);return s.path+\" dirty=\"+s.isDirty;}));", "summary": "Identify unsaved scene before preserving current edits"}}

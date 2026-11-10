@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "UnifiedTerrainGridMigration.Run();return System.IO.File.ReadAllText(\"scripts/tilemap-grid-20261110/migration.txt\");", "summary": "Snap ordinary terrain to one native grid and create auto-tiling terrain"}}

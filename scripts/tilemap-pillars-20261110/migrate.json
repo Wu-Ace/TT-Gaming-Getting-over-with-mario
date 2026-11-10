@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "StaticPillarTilemapMigration.Run();return System.IO.File.ReadAllText(\"scripts/tilemap-pillars-20261110/migration.txt\");", "summary": "Merge static pillars and stair blocks into existing ground Tilemap"}}

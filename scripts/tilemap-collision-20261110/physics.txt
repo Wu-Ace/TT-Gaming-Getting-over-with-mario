@@ -1,0 +1,2 @@
+Play falling body PASS (0.0000, -1.8450, 0.0000)
+Play paint/erase automatic collision update PASS

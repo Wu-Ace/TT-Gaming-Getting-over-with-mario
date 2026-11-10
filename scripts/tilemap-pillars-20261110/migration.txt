@@ -1,0 +1,7 @@
+Tutorial: no static pillar/stair objects
+Level01: Composite coverage failed, using unmerged TilemapCollider2D
+Level01: pillars=13 stairs=446 cellsTouched=512 skipped=0 maximumCenterShift=0.3301
+Level02_Jungle: no static pillar/stair objects
+Level03_Beach: no static pillar/stair objects
+Level04_Town: no static pillar/stair objects
+Level05_Cave: no static pillar/stair objects

@@ -1,0 +1,6 @@
+Tutorial: migrated=50 maps=1; original colliders retained
+Level01: migrated=776 maps=75; original colliders retained
+Level02_Jungle: migrated=1527 maps=1; original colliders retained
+Level03_Beach: migrated=1579 maps=5; original colliders retained
+Level04_Town: migrated=337 maps=19; original colliders retained
+Level05_Cave: migrated=108 maps=101; original colliders retained

@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": \"cells=6 type=Grid tc=0 paths=0 bounds=Center: (-9.60, -3.60, 0.00), Extents: (0.00, 0.00, 0.00) operation=Merge rb=True enabled=True scale=1\",\n  \"elapsed_ms\": 325,\n  \"logs\": [],\n  \"log_count\": 0\n}"}]}, "jsonrpc": "2.0", "id": 2}

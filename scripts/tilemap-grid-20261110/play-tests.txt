@@ -1,0 +1,12 @@
+Level05_Cave probe falling-body PASS
+Level04_Town probe falling-body PASS
+Level03_Beach probe falling-body PASS
+Level02_Jungle probe falling-body PASS
+Level01 probe falling-body PASS
+Tutorial probe falling-body PASS
+Level05_Cave paint/erase collision and RuleTile neighbor refresh PASS
+Level04_Town paint/erase collision and RuleTile neighbor refresh PASS
+Level03_Beach paint/erase collision and RuleTile neighbor refresh PASS
+Level02_Jungle paint/erase collision and RuleTile neighbor refresh PASS
+Level01 paint/erase collision and RuleTile neighbor refresh PASS
+Tutorial paint/erase collision and RuleTile neighbor refresh PASS

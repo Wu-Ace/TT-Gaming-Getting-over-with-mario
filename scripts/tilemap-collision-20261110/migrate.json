@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "TerrainTilemapCollisionMigration.Run();return System.IO.File.ReadAllText(\"scripts/tilemap-collision-20261110/migration.txt\");", "summary": "Configure regular terrain Tilemap colliders and preserve irregular terrain"}}

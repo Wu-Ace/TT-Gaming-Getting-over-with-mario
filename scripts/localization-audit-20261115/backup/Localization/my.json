@@ -1,0 +1,120 @@
+{
+  "rtl": false,
+  "review": "draft; native review pending",
+  "font": "Noto Sans Myanmar",
+  "code": "my",
+  "entries": [
+    {
+      "key": "menu.start",
+      "text": "စတင်ရန်",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.title",
+      "text": "ဆက်တင်များ",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.exit",
+      "text": "ထွက်ရန်",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.level_select",
+      "text": "အဆင့်ရွေးရန်",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.number",
+      "text": "အဆင့် {number}",
+      "context": "Level card heading; {number}=two digit display number; max two lines"
+    },
+    {
+      "key": "level.play",
+      "text": "ကစားရန်",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.back",
+      "text": "နောက်သို့",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.resolution",
+      "text": "ရုပ်ထွက်အရည်အသွေး",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.auto",
+      "text": "အလိုအလျောက်",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.sfx",
+      "text": "အသံအထူးပြုလုပ်ချက်",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.music",
+      "text": "တေးဂီတ",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.language",
+      "text": "ဘာသာစကား",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "result.complete",
+      "text": "အဆင့်ပြီးဆုံးပြီ",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "hud.progress",
+      "text": "အဆင့်တိုးတက်မှု {progress}%",
+      "context": "Loading/HUD; {progress}=integer 0–100; max two lines"
+    },
+    {
+      "key": "loading.progress",
+      "text": "အဆင့်ပြင်ဆင်နေသည်… {progress}%",
+      "context": "Loading/HUD; {progress}=integer 0–100; max two lines"
+    },
+    {
+      "key": "error.level_unavailable",
+      "text": "အဆင့်ကို မဖွင့်နိုင်ပါ။ နောက်ပြန်သွားပြီး ထပ်ကြိုးစားပါ။",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.1",
+      "text": "မြက်ခင်းမှအစ",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.2",
+      "text": "တောတွင်းလမ်း",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.3",
+      "text": "ကမ်းခြေစွန့်စားခန်း",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.4",
+      "text": "မြို့၏အမြင့်များ",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.5",
+      "text": "ဂူတွင်းစွန့်စားခန်း",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.collectibles",
+      "text": "{coins}/{total}  ★ {stars}/3",
+      "context": "Level card: coins collected, total coins, stars earned; numeric icon label"
+    }
+  ],
+  "priority": "P1",
+  "nativeName": "မြန်မာ"
+}

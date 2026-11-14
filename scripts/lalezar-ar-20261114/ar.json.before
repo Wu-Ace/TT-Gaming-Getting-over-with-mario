@@ -1,0 +1,120 @@
+{
+  "rtl": true,
+  "review": "draft; native review pending",
+  "font": "Noto Sans Arabic",
+  "code": "ar",
+  "entries": [
+    {
+      "key": "menu.start",
+      "text": "ابدأ",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.title",
+      "text": "الإعدادات",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.exit",
+      "text": "خروج",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.level_select",
+      "text": "اختيار المرحلة",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.number",
+      "text": "المرحلة {number}",
+      "context": "Level card heading; {number}=two digit display number; max two lines"
+    },
+    {
+      "key": "level.play",
+      "text": "العب",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.back",
+      "text": "رجوع",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.resolution",
+      "text": "دقة العرض",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.auto",
+      "text": "تلقائي",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.sfx",
+      "text": "المؤثرات",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.music",
+      "text": "الموسيقى",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.language",
+      "text": "اللغة",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "result.complete",
+      "text": "اكتملت المرحلة",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "hud.progress",
+      "text": "تقدم المرحلة {progress}%",
+      "context": "Loading/HUD; {progress}=integer 0–100; max two lines"
+    },
+    {
+      "key": "loading.progress",
+      "text": "جارٍ تجهيز المرحلة… {progress}%",
+      "context": "Loading/HUD; {progress}=integer 0–100; max two lines"
+    },
+    {
+      "key": "error.level_unavailable",
+      "text": "المرحلة غير متاحة. ارجع وحاول مجددًا.",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.1",
+      "text": "بداية المروج",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.2",
+      "text": "درب الأدغال",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.3",
+      "text": "مغامرة الشاطئ",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.4",
+      "text": "مرتفعات البلدة",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.5",
+      "text": "مغامرة الكهف",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.collectibles",
+      "text": "{coins}/{total}  ★ {stars}/3",
+      "context": "Level card: coins collected, total coins, stars earned; numeric icon label"
+    }
+  ],
+  "priority": "P0",
+  "nativeName": "العربية"
+}

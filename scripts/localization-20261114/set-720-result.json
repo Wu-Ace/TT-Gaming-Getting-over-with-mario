@@ -1,0 +1,12 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true,\n  \"message\": \"Game view resolution set to 1280x720.\",\n  \"data\": {\n    \"action\": \"set_resolution\",\n    \"width\": 1280,\n    \"height\": 720,\n    \"selectedIndex\": 12,\n    \"wasAdded\": false,\n    \"label\": \"Codely 1280x720\"\n  }\n}"
+      }
+    ]
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

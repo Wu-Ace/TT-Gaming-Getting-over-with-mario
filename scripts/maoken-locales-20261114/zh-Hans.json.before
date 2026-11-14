@@ -1,0 +1,120 @@
+{
+  "rtl": false,
+  "review": "draft; native review pending",
+  "font": "Noto Sans CJK SC",
+  "code": "zh-Hans",
+  "entries": [
+    {
+      "key": "menu.start",
+      "text": "开始游戏",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.title",
+      "text": "设置",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.exit",
+      "text": "退出",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.level_select",
+      "text": "选择关卡",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.number",
+      "text": "关卡 {number}",
+      "context": "Level card heading; {number}=two digit display number; max two lines"
+    },
+    {
+      "key": "level.play",
+      "text": "进入关卡",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.back",
+      "text": "返回",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.resolution",
+      "text": "分辨率",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.auto",
+      "text": "自动",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.sfx",
+      "text": "音效",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.music",
+      "text": "音乐",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.language",
+      "text": "语言",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "result.complete",
+      "text": "关卡完成",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "hud.progress",
+      "text": "关卡进度 {progress}%",
+      "context": "Loading/HUD; {progress}=integer 0–100; max two lines"
+    },
+    {
+      "key": "loading.progress",
+      "text": "正在准备关卡… {progress}%",
+      "context": "Loading/HUD; {progress}=integer 0–100; max two lines"
+    },
+    {
+      "key": "error.level_unavailable",
+      "text": "关卡暂不可用，请返回后重试。",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.1",
+      "text": "草地起点",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.2",
+      "text": "丛林小径",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.3",
+      "text": "海滨冒险",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.4",
+      "text": "小镇高台",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.5",
+      "text": "洞穴冒险",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.collectibles",
+      "text": "{coins}/{total}  ★ {stars}/3",
+      "context": "Level card: coins collected, total coins, stars earned; numeric icon label"
+    }
+  ],
+  "priority": "P1",
+  "nativeName": "简体中文"
+}

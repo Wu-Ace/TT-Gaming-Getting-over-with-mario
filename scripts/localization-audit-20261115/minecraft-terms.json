@@ -1,0 +1,556 @@
+{
+  "versionMetadata": "https://piston-meta.mojang.com/v1/packages/9aa86ea608c3ec777dcdc09e6c5a06c85b53599e/1.21.1.json",
+  "assetIndex": "https://piston-meta.mojang.com/v1/packages/fe8483e9e95c56b261ed6ab05aa57f83d669edf1/17.json",
+  "results": [
+    {
+      "code": "de",
+      "locale": "de_de",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/38/3898b0f0dd8c716fd9aa364206acde766f8c675f",
+      "hash": "3898b0f0dd8c716fd9aa364206acde766f8c675f",
+      "terms": {
+        "menu.options": "Optionen …",
+        "menu.singleplayer": "Einzelspieler",
+        "menu.quit": "Spiel beenden",
+        "gui.back": "Zurück",
+        "gui.done": "Fertig",
+        "options.sounds": "Musik & Geräusche …",
+        "options.language": "Sprache …",
+        "options.fullscreen.resolution": "Vollbildauflösung",
+        "selectWorld.select": "Ausgewählte Welt spielen",
+        "menu.returnToMenu": "Speichern und zurück zum Hauptmenü"
+      }
+    },
+    {
+      "code": "en",
+      "locale": "en_us",
+      "status": "not in external language assets"
+    },
+    {
+      "code": "bg",
+      "locale": "bg_bg",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/7f/7f9394368d3b451a0ab60d2f631db3e2bd445ee0",
+      "hash": "7f9394368d3b451a0ab60d2f631db3e2bd445ee0",
+      "terms": {
+        "menu.options": "Настройки...",
+        "menu.singleplayer": "Самостоятелна игра",
+        "menu.quit": "Изход от играта",
+        "gui.back": "Назад",
+        "gui.done": "Готово",
+        "options.sounds": "Музика и звуци...",
+        "options.language": "Език…",
+        "options.fullscreen.resolution": "Разделителна способност на цял екран",
+        "selectWorld.select": "Игра в избрания свят",
+        "menu.returnToMenu": "Запазване и излизане"
+      }
+    },
+    {
+      "code": "el",
+      "locale": "el_gr",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/a2/a2f949973816e155b3d7f54e0ce1c81e9d9371e2",
+      "hash": "a2f949973816e155b3d7f54e0ce1c81e9d9371e2",
+      "terms": {
+        "menu.options": "Επιλογές...",
+        "menu.singleplayer": "Παιχνίδι Ενός Παίκτη",
+        "menu.quit": "Έξοδος Παιχνιδιού",
+        "gui.back": "Πίσω",
+        "gui.done": "Τέλος",
+        "options.sounds": "Μουσική & Ήχοι...",
+        "options.language": "Γλώσσα...",
+        "options.fullscreen.resolution": "Ανάλυση Πλήρους Οθόνης",
+        "selectWorld.select": "Παιχνίδι Επιλεγμένου Κόσμου",
+        "menu.returnToMenu": "Αποθήκευση και Έξοδος"
+      }
+    },
+    {
+      "code": "az",
+      "locale": "az_az",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/80/80d5a4422e71fce4d27a076f362c614b6e1a56df",
+      "hash": "80d5a4422e71fce4d27a076f362c614b6e1a56df",
+      "terms": {
+        "menu.options": "Seçimlər...",
+        "menu.singleplayer": "Tək Oyunçulu",
+        "menu.quit": "Oyundan Çıx",
+        "gui.back": "Geri",
+        "gui.done": "Bitdi",
+        "options.sounds": "Musiqi və Səslər...",
+        "options.language": "Dil...",
+        "options.fullscreen.resolution": "Tam Ekran Çözünürlüğü",
+        "selectWorld.select": "Seçilən Dünyada Oyna",
+        "menu.returnToMenu": "Qeyd Et ve Əsas Menyuya Dön"
+      }
+    },
+    {
+      "code": "ar",
+      "locale": "ar_sa",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/7b/7bc980eab09031d3bc3092761566cf367700a9e4",
+      "hash": "7bc980eab09031d3bc3092761566cf367700a9e4",
+      "terms": {
+        "menu.options": "الخيارات...",
+        "menu.singleplayer": "اللعب الفردي",
+        "menu.quit": "خروج من اللعبة",
+        "gui.back": "رجوع",
+        "gui.done": "تم",
+        "options.sounds": "الموسيقى و الاصوات...",
+        "options.language": "اللغة...",
+        "options.fullscreen.resolution": "دقة ملء الشاشة",
+        "selectWorld.select": "لعب العالم المحدد",
+        "menu.returnToMenu": "حفظ والرجوع الى صفحة البداية"
+      }
+    },
+    {
+      "code": "he",
+      "locale": "he_il",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/26/26bd625013f6e3304e6ae4890b82efbd1f7ef07f",
+      "hash": "26bd625013f6e3304e6ae4890b82efbd1f7ef07f",
+      "terms": {
+        "menu.options": "אפשרויות...",
+        "menu.singleplayer": "שחקן יחיד",
+        "menu.quit": "צא מהמשחק",
+        "gui.back": "חזרה",
+        "gui.done": "סיום",
+        "options.sounds": "מוזיקה וצלילים",
+        "options.language": "שפה...",
+        "options.fullscreen.resolution": "רזולוציית מסך מלא",
+        "selectWorld.select": "שחק בעולם הנבחר",
+        "menu.returnToMenu": "שמור וחזור לתפריט הראשי"
+      }
+    },
+    {
+      "code": "fr",
+      "locale": "fr_fr",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/2d/2da111e8c48fe0e4bbd0653a4c13820834364604",
+      "hash": "2da111e8c48fe0e4bbd0653a4c13820834364604",
+      "terms": {
+        "menu.options": "Options...",
+        "menu.singleplayer": "Solo",
+        "menu.quit": "Quitter le jeu",
+        "gui.back": "Retour",
+        "gui.done": "Terminé",
+        "options.sounds": "Musique et sons...",
+        "options.language": "Langue...",
+        "options.fullscreen.resolution": "Résolution plein écran",
+        "selectWorld.select": "Jouer dans ce monde",
+        "menu.returnToMenu": "Sauvegarder et quitter la partie"
+      }
+    },
+    {
+      "code": "es",
+      "locale": "es_es",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/14/14c2b71a831ea16735c7b8128a6b826216c638d8",
+      "hash": "14c2b71a831ea16735c7b8128a6b826216c638d8",
+      "terms": {
+        "menu.options": "Opciones...",
+        "menu.singleplayer": "Un jugador",
+        "menu.quit": "Cerrar Minecraft",
+        "gui.back": "Volver",
+        "gui.done": "Hecho",
+        "options.sounds": "Música y sonido...",
+        "options.language": "Idioma...",
+        "options.fullscreen.resolution": "Resolución de pantalla completa",
+        "selectWorld.select": "Jugar al mundo seleccionado",
+        "menu.returnToMenu": "Guardar y salir al menú principal"
+      }
+    },
+    {
+      "code": "hr",
+      "locale": "hr_hr",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/60/60f252f89b4a535ef9241a6904da18420ad4012c",
+      "hash": "60f252f89b4a535ef9241a6904da18420ad4012c",
+      "terms": {
+        "menu.options": "Postavke...",
+        "menu.singleplayer": "Igraj sam",
+        "menu.quit": "Izlaz",
+        "gui.back": "Natrag",
+        "gui.done": "Gotovo",
+        "options.sounds": "Glazba i zvuk...",
+        "options.language": "Jezik...",
+        "options.fullscreen.resolution": "Razlučivost punog zaslona",
+        "selectWorld.select": "Igraj odabrani svijet",
+        "menu.returnToMenu": "Spremi i izađi"
+      }
+    },
+    {
+      "code": "hu",
+      "locale": "hu_hu",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/37/379dc5c28df595580307d0c10ff230f5f9752727",
+      "hash": "379dc5c28df595580307d0c10ff230f5f9752727",
+      "terms": {
+        "menu.options": "Beállítások...",
+        "menu.singleplayer": "Egyjátékos mód",
+        "menu.quit": "Kilépés a játékból",
+        "gui.back": "Vissza",
+        "gui.done": "Kész",
+        "options.sounds": "Zene és hangok...",
+        "options.language": "Nyelv...",
+        "options.fullscreen.resolution": "Teljes képernyő felbontása",
+        "selectWorld.select": "Játék a kiválasztott világgal",
+        "menu.returnToMenu": "Mentés és kilépés a főmenübe"
+      }
+    },
+    {
+      "code": "id",
+      "locale": "id_id",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/70/70d5a145c743f460b47a5a70a77dd51e5ea2c402",
+      "hash": "70d5a145c743f460b47a5a70a77dd51e5ea2c402",
+      "terms": {
+        "menu.options": "Opsi...",
+        "menu.singleplayer": "Ekapemain",
+        "menu.quit": "Keluar Permainan",
+        "gui.back": "Kembali",
+        "gui.done": "Selesai",
+        "options.sounds": "Musik & Suara...",
+        "options.language": "Bahasa...",
+        "options.fullscreen.resolution": "Resolusi Layar Penuh",
+        "selectWorld.select": "Mainkan Dunia Terpilih",
+        "menu.returnToMenu": "Simpan dan Keluar ke Menu"
+      }
+    },
+    {
+      "code": "my",
+      "locale": "my_mm",
+      "status": "not in external language assets"
+    },
+    {
+      "code": "it",
+      "locale": "it_it",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/d4/d4de73d63ddfdfe61406815a9479f7e7fab298a4",
+      "hash": "d4de73d63ddfdfe61406815a9479f7e7fab298a4",
+      "terms": {
+        "menu.options": "Opzioni...",
+        "menu.singleplayer": "Giocatore singolo",
+        "menu.quit": "Esci dal gioco",
+        "gui.back": "Indietro",
+        "gui.done": "Fatto",
+        "options.sounds": "Audio...",
+        "options.language": "Lingua...",
+        "options.fullscreen.resolution": "Risoluzione a schermo intero",
+        "selectWorld.select": "Gioca in questo mondo",
+        "menu.returnToMenu": "Salva ed esci dal mondo"
+      }
+    },
+    {
+      "code": "ja",
+      "locale": "ja_jp",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/c3/c387ff7892ec632945829bad546c7ff4381c375f",
+      "hash": "c387ff7892ec632945829bad546c7ff4381c375f",
+      "terms": {
+        "menu.options": "設定…",
+        "menu.singleplayer": "シングルプレイ",
+        "menu.quit": "終了",
+        "gui.back": "戻る",
+        "gui.done": "完了",
+        "options.sounds": "サウンド設定…",
+        "options.language": "言語設定…",
+        "options.fullscreen.resolution": "フルスクリーンでの解像度",
+        "selectWorld.select": "選択したワールドで遊ぶ",
+        "menu.returnToMenu": "セーブしてタイトルへ戻る"
+      }
+    },
+    {
+      "code": "ms",
+      "locale": "ms_my",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/db/db03ae89f6d5a271c3dce4161ec5e0bd96ede2d3",
+      "hash": "db03ae89f6d5a271c3dce4161ec5e0bd96ede2d3",
+      "terms": {
+        "menu.options": "Tetapan...",
+        "menu.singleplayer": "Ekapemain",
+        "menu.quit": "Keluar Permainan",
+        "gui.back": "Kembali",
+        "gui.done": "Selesai",
+        "options.sounds": "Muzik & Bunyi...",
+        "options.language": "Bahasa...",
+        "options.fullscreen.resolution": "Resolusi Skrin Penuh",
+        "selectWorld.select": "Main Dunia yang Dipilih",
+        "menu.returnToMenu": "Simpan dan Keluar ke Menu Utama"
+      }
+    },
+    {
+      "code": "nl",
+      "locale": "nl_nl",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/97/97b2c386972d863a5a46b6261c871bd81fc9d1b5",
+      "hash": "97b2c386972d863a5a46b6261c871bd81fc9d1b5",
+      "terms": {
+        "menu.options": "Instellingen",
+        "menu.singleplayer": "Alleen spelen",
+        "menu.quit": "Spel afsluiten",
+        "gui.back": "Terug",
+        "gui.done": "Gereed",
+        "options.sounds": "Muziek en geluiden",
+        "options.language": "Taal",
+        "options.fullscreen.resolution": "Volledigschermresolutie",
+        "selectWorld.select": "Wereld spelen",
+        "menu.returnToMenu": "Opslaan en terug naar het hoofdmenu"
+      }
+    },
+    {
+      "code": "ko",
+      "locale": "ko_kr",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/a1/a11cfec809ceabe534f55d4106aaf98869360c9f",
+      "hash": "a11cfec809ceabe534f55d4106aaf98869360c9f",
+      "terms": {
+        "menu.options": "설정...",
+        "menu.singleplayer": "싱글플레이",
+        "menu.quit": "게임 종료",
+        "gui.back": "뒤로",
+        "gui.done": "완료",
+        "options.sounds": "음악 및 소리...",
+        "options.language": "언어...",
+        "options.fullscreen.resolution": "전체 화면 해상도",
+        "selectWorld.select": "선택한 세계 플레이",
+        "menu.returnToMenu": "저장하고 나가기"
+      }
+    },
+    {
+      "code": "pl",
+      "locale": "pl_pl",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/0c/0ce4456a8ec4545a83309e6710534eeb79749030",
+      "hash": "0ce4456a8ec4545a83309e6710534eeb79749030",
+      "terms": {
+        "menu.options": "Ustawienia…",
+        "menu.singleplayer": "Tryb jednoosobowy",
+        "menu.quit": "Wyjdź z gry",
+        "gui.back": "Wstecz",
+        "gui.done": "Gotowe",
+        "options.sounds": "Muzyka i dźwięk…",
+        "options.language": "Język…",
+        "options.fullscreen.resolution": "Rozdzielczość w pełnym ekranie",
+        "selectWorld.select": "Graj w wybranym świecie",
+        "menu.returnToMenu": "Zapisz i wyjdź do menu"
+      }
+    },
+    {
+      "code": "pt-BR",
+      "locale": "pt_br",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/be/bea44c61c94f2c544cb6406d6f4dae42554d553c",
+      "hash": "bea44c61c94f2c544cb6406d6f4dae42554d553c",
+      "terms": {
+        "menu.options": "Opções...",
+        "menu.singleplayer": "Um jogador",
+        "menu.quit": "Sair do jogo",
+        "gui.back": "Voltar",
+        "gui.done": "Concluído",
+        "options.sounds": "Música e sons...",
+        "options.language": "Idioma...",
+        "options.fullscreen.resolution": "Resolução em tela cheia",
+        "selectWorld.select": "Jogar no mundo selecionado",
+        "menu.returnToMenu": "Salvar e voltar ao menu principal"
+      }
+    },
+    {
+      "code": "ro",
+      "locale": "ro_ro",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/ab/ab7e730294a18362b8f3d934bded9eaaea6b81f5",
+      "hash": "ab7e730294a18362b8f3d934bded9eaaea6b81f5",
+      "terms": {
+        "menu.options": "Opțiuni…",
+        "menu.singleplayer": "Singleplayer",
+        "menu.quit": "Închide jocul",
+        "gui.back": "Înapoi",
+        "gui.done": "Gata",
+        "options.sounds": "Muzică și sunete…",
+        "options.language": "Limbă…",
+        "options.fullscreen.resolution": "Rezoluție în ecran complet",
+        "selectWorld.select": "Joacă în această lume",
+        "menu.returnToMenu": "Salvează și mergi la meniul principal"
+      }
+    },
+    {
+      "code": "sv",
+      "locale": "sv_se",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/32/32882b5e80fa7ac1d14c649c9e84ace14aacaf28",
+      "hash": "32882b5e80fa7ac1d14c649c9e84ace14aacaf28",
+      "terms": {
+        "menu.options": "Alternativ...",
+        "menu.singleplayer": "Enspelarläge",
+        "menu.quit": "Avsluta",
+        "gui.back": "Tillbaka",
+        "gui.done": "Klar",
+        "options.sounds": "Musik och ljud...",
+        "options.language": "Språk...",
+        "options.fullscreen.resolution": "Helskärmsupplösning",
+        "selectWorld.select": "Spela vald värld",
+        "menu.returnToMenu": "Spara och återgå till huvudmenyn"
+      }
+    },
+    {
+      "code": "ru",
+      "locale": "ru_ru",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/6e/6e99abd3bef550b1723b2e0af539467192e56baa",
+      "hash": "6e99abd3bef550b1723b2e0af539467192e56baa",
+      "terms": {
+        "menu.options": "Настройки...",
+        "menu.singleplayer": "Одиночная игра",
+        "menu.quit": "Выйти из игры",
+        "gui.back": "Назад",
+        "gui.done": "Готово",
+        "options.sounds": "Музыка и звуки...",
+        "options.language": "Язык...",
+        "options.fullscreen.resolution": "Полноэкранное разрешение",
+        "selectWorld.select": "Играть в выбранном мире",
+        "menu.returnToMenu": "Сохранить и выйти"
+      }
+    },
+    {
+      "code": "tr",
+      "locale": "tr_tr",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/c0/c0bb6394a07c7d00b35ab5a14610d15b340d90c5",
+      "hash": "c0bb6394a07c7d00b35ab5a14610d15b340d90c5",
+      "terms": {
+        "menu.options": "Ayarlar...",
+        "menu.singleplayer": "Tek Oyunculu",
+        "menu.quit": "Oyundan Çık",
+        "gui.back": "Geri",
+        "gui.done": "Bitti",
+        "options.sounds": "Müzik ve Sesler...",
+        "options.language": "Dil...",
+        "options.fullscreen.resolution": "Tam Ekran Çözünürlüğü",
+        "selectWorld.select": "Seçilen dünyada oyna",
+        "menu.returnToMenu": "Kaydet ve Ana Menüye Dön"
+      }
+    },
+    {
+      "code": "uk",
+      "locale": "uk_ua",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/8d/8ddae9fafd1991be6c0dcc21f46af8a9b3bbb3ec",
+      "hash": "8ddae9fafd1991be6c0dcc21f46af8a9b3bbb3ec",
+      "terms": {
+        "menu.options": "Налаштування…",
+        "menu.singleplayer": "Гра наодинці",
+        "menu.quit": "Вийти з гри",
+        "gui.back": "Назад",
+        "gui.done": "Готово",
+        "options.sounds": "Музика та звуки…",
+        "options.language": "Мова…",
+        "options.fullscreen.resolution": "Роздільність у повному екрані",
+        "selectWorld.select": "Грати у вибраному світі",
+        "menu.returnToMenu": "Зберегти та вийти в головне меню"
+      }
+    },
+    {
+      "code": "vi",
+      "locale": "vi_vn",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/d9/d9d303dd47ebe318e47be008a61126714035bcb6",
+      "hash": "d9d303dd47ebe318e47be008a61126714035bcb6",
+      "terms": {
+        "menu.options": "Tuỳ chọn...",
+        "menu.singleplayer": "Chơi đơn",
+        "menu.quit": "Thoát trò chơi",
+        "gui.back": "Quay lại",
+        "gui.done": "Xong",
+        "options.sounds": "Nhạc & âm thanh...",
+        "options.language": "Ngôn ngữ...",
+        "options.fullscreen.resolution": "Độ phân giải toàn màn hình",
+        "selectWorld.select": "Chơi thế giới đã chọn",
+        "menu.returnToMenu": "Lưu & trở về màn hình chính"
+      }
+    },
+    {
+      "code": "th",
+      "locale": "th_th",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/d7/d7f9e71c6bd3675a079e3e4674cac679f18a7d35",
+      "hash": "d7f9e71c6bd3675a079e3e4674cac679f18a7d35",
+      "terms": {
+        "menu.options": "ตัวเลือก...",
+        "menu.singleplayer": "ผู้เล่นคนเดียว",
+        "menu.quit": "ออกจากเกม",
+        "gui.back": "กลับ",
+        "gui.done": "เสร็จสิ้น",
+        "options.sounds": "เพลงและเสียง...",
+        "options.language": "ภาษา...",
+        "options.fullscreen.resolution": "ความละเอียดเต็มจอ",
+        "selectWorld.select": "เล่นโลกที่เลือก",
+        "menu.returnToMenu": "บันทึกและออกไปยังเมนูหลัก"
+      }
+    },
+    {
+      "code": "zh-Hans",
+      "locale": "zh_cn",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/dc/dc7a2a97cd71031e709e3d3c90ee1b511fad1269",
+      "hash": "dc7a2a97cd71031e709e3d3c90ee1b511fad1269",
+      "terms": {
+        "menu.options": "选项…",
+        "menu.singleplayer": "单人游戏",
+        "menu.quit": "退出游戏",
+        "gui.back": "返回",
+        "gui.done": "完成",
+        "options.sounds": "音乐和声音…",
+        "options.language": "语言…",
+        "options.fullscreen.resolution": "全屏分辨率",
+        "selectWorld.select": "进入选中的世界",
+        "menu.returnToMenu": "保存并退回到标题屏幕"
+      }
+    },
+    {
+      "code": "zh-Hant",
+      "locale": "zh_tw",
+      "version": "1.21.1",
+      "status": "downloaded",
+      "url": "https://resources.download.minecraft.net/7c/7c91a0c17b55fd1bc37b22e54e2191239ed48dea",
+      "hash": "7c91a0c17b55fd1bc37b22e54e2191239ed48dea",
+      "terms": {
+        "menu.options": "選項...",
+        "menu.singleplayer": "單人遊戲",
+        "menu.quit": "離開遊戲",
+        "gui.back": "返回",
+        "gui.done": "完成",
+        "options.sounds": "音樂和音效...",
+        "options.language": "語言...",
+        "options.fullscreen.resolution": "全螢幕解析度",
+        "selectWorld.select": "進入所選的世界",
+        "menu.returnToMenu": "儲存並回到標題畫面"
+      }
+    }
+  ]
+}

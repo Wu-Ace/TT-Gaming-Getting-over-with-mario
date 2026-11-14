@@ -1,0 +1,12 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true,\n  \"message\": \"Current Game view resolution: 1830x916.\",\n  \"data\": {\n    \"action\": \"get_resolution\",\n    \"width\": 1830,\n    \"height\": 916,\n    \"name\": \"Free Aspect\",\n    \"selectedIndex\": 0,\n    \"sizeType\": \"AspectRatio\"\n  }\n}"
+      }
+    ]
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

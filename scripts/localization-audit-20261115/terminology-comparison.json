@@ -1,0 +1,5063 @@
+[
+  {
+    "code": "ar",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "ابدأ",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "إبدأ",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ar.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "اللعب الفردي",
+            "source": "https://resources.download.minecraft.net/7b/7bc980eab09031d3bc3092761566cf367700a9e4",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "الإعدادات",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "خيارات",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ar.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "الخيارات...",
+            "source": "https://resources.download.minecraft.net/7b/7bc980eab09031d3bc3092761566cf367700a9e4",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "خروج",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "أنهِ",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ar.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "خروج من اللعبة",
+            "source": "https://resources.download.minecraft.net/7b/7bc980eab09031d3bc3092761566cf367700a9e4",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "رجوع",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "ارجع",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ar.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "رجوع",
+            "source": "https://resources.download.minecraft.net/7b/7bc980eab09031d3bc3092761566cf367700a9e4",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "الموسيقى",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "الموسيقى",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ar.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "الموسيقى و الاصوات...",
+            "source": "https://resources.download.minecraft.net/7b/7bc980eab09031d3bc3092761566cf367700a9e4",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "المؤثرات الصوتية",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "المؤثّرات الصّوتيّة",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ar.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "الموسيقى و الاصوات...",
+            "source": "https://resources.download.minecraft.net/7b/7bc980eab09031d3bc3092761566cf367700a9e4",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "اللغة",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "اللغة",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ar.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "اللغة...",
+            "source": "https://resources.download.minecraft.net/7b/7bc980eab09031d3bc3092761566cf367700a9e4",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "دقة العرض",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "الميز",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ar.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "دقة ملء الشاشة",
+            "source": "https://resources.download.minecraft.net/7b/7bc980eab09031d3bc3092761566cf367700a9e4",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "az",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Başla",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Tək Oyunçulu",
+            "source": "https://resources.download.minecraft.net/80/80d5a4422e71fce4d27a076f362c614b6e1a56df",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Parametrlər",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Seçimlər...",
+            "source": "https://resources.download.minecraft.net/80/80d5a4422e71fce4d27a076f362c614b6e1a56df",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Çıxış",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Oyundan Çıx",
+            "source": "https://resources.download.minecraft.net/80/80d5a4422e71fce4d27a076f362c614b6e1a56df",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Geri",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Geri",
+            "source": "https://resources.download.minecraft.net/80/80d5a4422e71fce4d27a076f362c614b6e1a56df",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Musiqi",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Musiqi və Səslər...",
+            "source": "https://resources.download.minecraft.net/80/80d5a4422e71fce4d27a076f362c614b6e1a56df",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Səs effektləri",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Musiqi və Səslər...",
+            "source": "https://resources.download.minecraft.net/80/80d5a4422e71fce4d27a076f362c614b6e1a56df",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Dil",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Dil...",
+            "source": "https://resources.download.minecraft.net/80/80d5a4422e71fce4d27a076f362c614b6e1a56df",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Ekran təsvir ölçüsü",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Tam Ekran Çözünürlüğü",
+            "source": "https://resources.download.minecraft.net/80/80d5a4422e71fce4d27a076f362c614b6e1a56df",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "bg",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Играй",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Играй",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_bg.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Старт",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/bg.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Самостоятелна игра",
+            "source": "https://resources.download.minecraft.net/7f/7f9394368d3b451a0ab60d2f631db3e2bd445ee0",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Настройки",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Настройки",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_bg.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Настройки",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/bg.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Настройки...",
+            "source": "https://resources.download.minecraft.net/7f/7f9394368d3b451a0ab60d2f631db3e2bd445ee0",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Изход",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Изход",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_bg.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Изход",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/bg.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Изход от играта",
+            "source": "https://resources.download.minecraft.net/7f/7f9394368d3b451a0ab60d2f631db3e2bd445ee0",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Назад",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Назад",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_bg.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Назад",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/bg.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Назад",
+            "source": "https://resources.download.minecraft.net/7f/7f9394368d3b451a0ab60d2f631db3e2bd445ee0",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Музика",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Сила на Звука",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_bg.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Музика",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/bg.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Музика и звуци...",
+            "source": "https://resources.download.minecraft.net/7f/7f9394368d3b451a0ab60d2f631db3e2bd445ee0",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Звукови ефекти",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Сила на Звуковите Ефекти",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_bg.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Звукови ефекти",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/bg.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Музика и звуци...",
+            "source": "https://resources.download.minecraft.net/7f/7f9394368d3b451a0ab60d2f631db3e2bd445ee0",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Език",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Език",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/bg.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Език…",
+            "source": "https://resources.download.minecraft.net/7f/7f9394368d3b451a0ab60d2f631db3e2bd445ee0",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Резолюция",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Разделителна способност",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/bg.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Разделителна способност на цял екран",
+            "source": "https://resources.download.minecraft.net/7f/7f9394368d3b451a0ab60d2f631db3e2bd445ee0",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "de",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Spielen",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Spielen",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_de.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Start",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/de.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Einzelspieler",
+            "source": "https://resources.download.minecraft.net/38/3898b0f0dd8c716fd9aa364206acde766f8c675f",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Optionen",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Einstellungen",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_de.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Einstellungen",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/de.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Optionen …",
+            "source": "https://resources.download.minecraft.net/38/3898b0f0dd8c716fd9aa364206acde766f8c675f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Beenden",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Verlassen",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_de.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Beenden",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/de.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Spiel beenden",
+            "source": "https://resources.download.minecraft.net/38/3898b0f0dd8c716fd9aa364206acde766f8c675f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Zurück",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Zurück",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_de.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Zurück",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/de.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Zurück",
+            "source": "https://resources.download.minecraft.net/38/3898b0f0dd8c716fd9aa364206acde766f8c675f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Musik",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Musiklautstärke",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_de.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Musik",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/de.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Musik & Geräusche …",
+            "source": "https://resources.download.minecraft.net/38/3898b0f0dd8c716fd9aa364206acde766f8c675f",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Soundeffekte",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Audioeffekt-Lautstärke",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_de.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Klangeffekte",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/de.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Musik & Geräusche …",
+            "source": "https://resources.download.minecraft.net/38/3898b0f0dd8c716fd9aa364206acde766f8c675f",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Sprache",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Sprache",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/de.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Sprache …",
+            "source": "https://resources.download.minecraft.net/38/3898b0f0dd8c716fd9aa364206acde766f8c675f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Auflösung",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Auflösung",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/de.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Vollbildauflösung",
+            "source": "https://resources.download.minecraft.net/38/3898b0f0dd8c716fd9aa364206acde766f8c675f",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "el",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Παίξε",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Έναρξη",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/el.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Παιχνίδι Ενός Παίκτη",
+            "source": "https://resources.download.minecraft.net/a2/a2f949973816e155b3d7f54e0ce1c81e9d9371e2",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Ρυθμίσεις",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Ρυθμίσεις",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/el.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Επιλογές...",
+            "source": "https://resources.download.minecraft.net/a2/a2f949973816e155b3d7f54e0ce1c81e9d9371e2",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Έξοδος",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Έξοδος",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/el.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Έξοδος Παιχνιδιού",
+            "source": "https://resources.download.minecraft.net/a2/a2f949973816e155b3d7f54e0ce1c81e9d9371e2",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Πίσω",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Πίσω",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/el.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Πίσω",
+            "source": "https://resources.download.minecraft.net/a2/a2f949973816e155b3d7f54e0ce1c81e9d9371e2",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Μουσική",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Μουσική",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/el.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Μουσική & Ήχοι...",
+            "source": "https://resources.download.minecraft.net/a2/a2f949973816e155b3d7f54e0ce1c81e9d9371e2",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Ηχητικά εφέ",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Ηχητικά εφέ",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/el.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Μουσική & Ήχοι...",
+            "source": "https://resources.download.minecraft.net/a2/a2f949973816e155b3d7f54e0ce1c81e9d9371e2",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Γλώσσα",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Γλώσσα",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/el.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Γλώσσα...",
+            "source": "https://resources.download.minecraft.net/a2/a2f949973816e155b3d7f54e0ce1c81e9d9371e2",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Ανάλυση",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Ανάλυση",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/el.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Ανάλυση Πλήρους Οθόνης",
+            "source": "https://resources.download.minecraft.net/a2/a2f949973816e155b3d7f54e0ce1c81e9d9371e2",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "en",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Start",
+        "examples": []
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Options",
+        "examples": []
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Exit",
+        "examples": []
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Back",
+        "examples": []
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Music",
+        "examples": []
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Sound FX",
+        "examples": []
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Language",
+        "examples": []
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Resolution",
+        "examples": []
+      }
+    ],
+    "referenceStatus": "source locale",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "es",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Jugar",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Jugar",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_es.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Un jugador",
+            "source": "https://resources.download.minecraft.net/14/14c2b71a831ea16735c7b8128a6b826216c638d8",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Opciones",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Ajustes",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_es.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Opciones...",
+            "source": "https://resources.download.minecraft.net/14/14c2b71a831ea16735c7b8128a6b826216c638d8",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Salir",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Salir",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_es.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Cerrar Minecraft",
+            "source": "https://resources.download.minecraft.net/14/14c2b71a831ea16735c7b8128a6b826216c638d8",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Volver",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Atrás",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_es.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Volver",
+            "source": "https://resources.download.minecraft.net/14/14c2b71a831ea16735c7b8128a6b826216c638d8",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Música",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Volumen de la música",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_es.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Música y sonido...",
+            "source": "https://resources.download.minecraft.net/14/14c2b71a831ea16735c7b8128a6b826216c638d8",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Efectos de sonido",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Volumen del sonido",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_es.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Música y sonido...",
+            "source": "https://resources.download.minecraft.net/14/14c2b71a831ea16735c7b8128a6b826216c638d8",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Idioma",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Idioma...",
+            "source": "https://resources.download.minecraft.net/14/14c2b71a831ea16735c7b8128a6b826216c638d8",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Resolución",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Resolución de pantalla completa",
+            "source": "https://resources.download.minecraft.net/14/14c2b71a831ea16735c7b8128a6b826216c638d8",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "fr",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Jouer",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Jouer",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_fr.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Commencer",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/fr.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Solo",
+            "source": "https://resources.download.minecraft.net/2d/2da111e8c48fe0e4bbd0653a4c13820834364604",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Options",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Paramètres",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_fr.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Options",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/fr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Options...",
+            "source": "https://resources.download.minecraft.net/2d/2da111e8c48fe0e4bbd0653a4c13820834364604",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Quitter",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Quitter",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_fr.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Quitter",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/fr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Quitter le jeu",
+            "source": "https://resources.download.minecraft.net/2d/2da111e8c48fe0e4bbd0653a4c13820834364604",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Retour",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Retour",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_fr.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Retour",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/fr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Retour",
+            "source": "https://resources.download.minecraft.net/2d/2da111e8c48fe0e4bbd0653a4c13820834364604",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Musique",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Volume de la Musique",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_fr.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Musique",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/fr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Musique et sons...",
+            "source": "https://resources.download.minecraft.net/2d/2da111e8c48fe0e4bbd0653a4c13820834364604",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Effets sonores",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Volume des Sons et Effets",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_fr.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Effets sonores",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/fr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Musique et sons...",
+            "source": "https://resources.download.minecraft.net/2d/2da111e8c48fe0e4bbd0653a4c13820834364604",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Langue",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Langue",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/fr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Langue...",
+            "source": "https://resources.download.minecraft.net/2d/2da111e8c48fe0e4bbd0653a4c13820834364604",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Résolution",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Résolution",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/fr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Résolution plein écran",
+            "source": "https://resources.download.minecraft.net/2d/2da111e8c48fe0e4bbd0653a4c13820834364604",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "he",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "התחלה",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "התחלה (Start)",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/he.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "שחקן יחיד",
+            "source": "https://resources.download.minecraft.net/26/26bd625013f6e3304e6ae4890b82efbd1f7ef07f",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "הגדרות",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "אפשרויות",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/he.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "אפשרויות...",
+            "source": "https://resources.download.minecraft.net/26/26bd625013f6e3304e6ae4890b82efbd1f7ef07f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "יציאה",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "יציאה",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/he.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "צא מהמשחק",
+            "source": "https://resources.download.minecraft.net/26/26bd625013f6e3304e6ae4890b82efbd1f7ef07f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "חזרה",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "חזרה",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/he.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "חזרה",
+            "source": "https://resources.download.minecraft.net/26/26bd625013f6e3304e6ae4890b82efbd1f7ef07f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "מוזיקה",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "מוזיקה",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/he.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "מוזיקה וצלילים",
+            "source": "https://resources.download.minecraft.net/26/26bd625013f6e3304e6ae4890b82efbd1f7ef07f",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "אפקטים קוליים",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "אפקטים קוליים",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/he.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "מוזיקה וצלילים",
+            "source": "https://resources.download.minecraft.net/26/26bd625013f6e3304e6ae4890b82efbd1f7ef07f",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "שפה",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "שפה",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/he.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "שפה...",
+            "source": "https://resources.download.minecraft.net/26/26bd625013f6e3304e6ae4890b82efbd1f7ef07f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "רזולוציה",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "רזולוציה",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/he.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "רזולוציית מסך מלא",
+            "source": "https://resources.download.minecraft.net/26/26bd625013f6e3304e6ae4890b82efbd1f7ef07f",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "hr",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Igraj",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Igraj sam",
+            "source": "https://resources.download.minecraft.net/60/60f252f89b4a535ef9241a6904da18420ad4012c",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Postavke",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Postavke",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Postavke...",
+            "source": "https://resources.download.minecraft.net/60/60f252f89b4a535ef9241a6904da18420ad4012c",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Izlaz",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Izlaz",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Izlaz",
+            "source": "https://resources.download.minecraft.net/60/60f252f89b4a535ef9241a6904da18420ad4012c",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Natrag",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Natrag",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Natrag",
+            "source": "https://resources.download.minecraft.net/60/60f252f89b4a535ef9241a6904da18420ad4012c",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Glazba",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Glazba",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Glazba i zvuk...",
+            "source": "https://resources.download.minecraft.net/60/60f252f89b4a535ef9241a6904da18420ad4012c",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Zvučni efekti",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Zvučni efekti",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Glazba i zvuk...",
+            "source": "https://resources.download.minecraft.net/60/60f252f89b4a535ef9241a6904da18420ad4012c",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Jezik",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Jezik",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Jezik...",
+            "source": "https://resources.download.minecraft.net/60/60f252f89b4a535ef9241a6904da18420ad4012c",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Razlučivost",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Rezolucija",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Razlučivost punog zaslona",
+            "source": "https://resources.download.minecraft.net/60/60f252f89b4a535ef9241a6904da18420ad4012c",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "hu",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Játék",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Indítás",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hu.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Egyjátékos mód",
+            "source": "https://resources.download.minecraft.net/37/379dc5c28df595580307d0c10ff230f5f9752727",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Beállítások",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Beállítások",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hu.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Beállítások...",
+            "source": "https://resources.download.minecraft.net/37/379dc5c28df595580307d0c10ff230f5f9752727",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Kilépés",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Kilépés",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hu.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Kilépés a játékból",
+            "source": "https://resources.download.minecraft.net/37/379dc5c28df595580307d0c10ff230f5f9752727",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Vissza",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Vissza",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hu.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Vissza",
+            "source": "https://resources.download.minecraft.net/37/379dc5c28df595580307d0c10ff230f5f9752727",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Zene",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Zene",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hu.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Zene és hangok...",
+            "source": "https://resources.download.minecraft.net/37/379dc5c28df595580307d0c10ff230f5f9752727",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Hangeffektek",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Hanghatások",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hu.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Zene és hangok...",
+            "source": "https://resources.download.minecraft.net/37/379dc5c28df595580307d0c10ff230f5f9752727",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Nyelv",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Nyelv",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hu.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Nyelv...",
+            "source": "https://resources.download.minecraft.net/37/379dc5c28df595580307d0c10ff230f5f9752727",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Felbontás",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Felbontás",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hu.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Teljes képernyő felbontása",
+            "source": "https://resources.download.minecraft.net/37/379dc5c28df595580307d0c10ff230f5f9752727",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "id",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Mulai",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Mulai",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/id.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Ekapemain",
+            "source": "https://resources.download.minecraft.net/70/70d5a145c743f460b47a5a70a77dd51e5ea2c402",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Pengaturan",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Pengaturan",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/id.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Opsi...",
+            "source": "https://resources.download.minecraft.net/70/70d5a145c743f460b47a5a70a77dd51e5ea2c402",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Keluar",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Keluar",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/id.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Keluar Permainan",
+            "source": "https://resources.download.minecraft.net/70/70d5a145c743f460b47a5a70a77dd51e5ea2c402",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Kembali",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Kembali",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/id.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Kembali",
+            "source": "https://resources.download.minecraft.net/70/70d5a145c743f460b47a5a70a77dd51e5ea2c402",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Musik",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Musik",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/id.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Musik & Suara...",
+            "source": "https://resources.download.minecraft.net/70/70d5a145c743f460b47a5a70a77dd51e5ea2c402",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Efek Suara",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Efek Suara",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/id.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Musik & Suara...",
+            "source": "https://resources.download.minecraft.net/70/70d5a145c743f460b47a5a70a77dd51e5ea2c402",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Bahasa",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Bahasa",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/id.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Bahasa...",
+            "source": "https://resources.download.minecraft.net/70/70d5a145c743f460b47a5a70a77dd51e5ea2c402",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Resolusi",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Resolusi",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/id.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Resolusi Layar Penuh",
+            "source": "https://resources.download.minecraft.net/70/70d5a145c743f460b47a5a70a77dd51e5ea2c402",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "it",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Gioca",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Gioca",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_it.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Inizia",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/it.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Giocatore singolo",
+            "source": "https://resources.download.minecraft.net/d4/d4de73d63ddfdfe61406815a9479f7e7fab298a4",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Opzioni",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Impostazioni",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_it.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Opzioni",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/it.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Opzioni...",
+            "source": "https://resources.download.minecraft.net/d4/d4de73d63ddfdfe61406815a9479f7e7fab298a4",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Esci",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Esci",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_it.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Esci",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/it.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Esci dal gioco",
+            "source": "https://resources.download.minecraft.net/d4/d4de73d63ddfdfe61406815a9479f7e7fab298a4",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Indietro",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Indietro",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_it.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Indietro",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/it.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Indietro",
+            "source": "https://resources.download.minecraft.net/d4/d4de73d63ddfdfe61406815a9479f7e7fab298a4",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Musica",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Volume Musica",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_it.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Musica",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/it.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Audio...",
+            "source": "https://resources.download.minecraft.net/d4/d4de73d63ddfdfe61406815a9479f7e7fab298a4",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Effetti sonori",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Volume Effetti",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_it.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Effetti sonori",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/it.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Audio...",
+            "source": "https://resources.download.minecraft.net/d4/d4de73d63ddfdfe61406815a9479f7e7fab298a4",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Lingua",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Lingua",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/it.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Lingua...",
+            "source": "https://resources.download.minecraft.net/d4/d4de73d63ddfdfe61406815a9479f7e7fab298a4",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Risoluzione",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Risoluzione",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/it.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Risoluzione a schermo intero",
+            "source": "https://resources.download.minecraft.net/d4/d4de73d63ddfdfe61406815a9479f7e7fab298a4",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "ja",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "はじめる",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "プレイ",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ja.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "スタート",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ja.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "シングルプレイ",
+            "source": "https://resources.download.minecraft.net/c3/c387ff7892ec632945829bad546c7ff4381c375f",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "設定",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "設定",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ja.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "設定",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ja.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "設定…",
+            "source": "https://resources.download.minecraft.net/c3/c387ff7892ec632945829bad546c7ff4381c375f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "終了",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "終了",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ja.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "終了",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ja.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "終了",
+            "source": "https://resources.download.minecraft.net/c3/c387ff7892ec632945829bad546c7ff4381c375f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "戻る",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "戻る",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ja.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "先へ",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ja.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "戻る",
+            "source": "https://resources.download.minecraft.net/c3/c387ff7892ec632945829bad546c7ff4381c375f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "音楽",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "音楽 音量",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ja.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "BGM",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ja.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "サウンド設定…",
+            "source": "https://resources.download.minecraft.net/c3/c387ff7892ec632945829bad546c7ff4381c375f",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "効果音",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "効果音 音量",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ja.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "効果音",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ja.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "サウンド設定…",
+            "source": "https://resources.download.minecraft.net/c3/c387ff7892ec632945829bad546c7ff4381c375f",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "言語",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "言語",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ja.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "言語設定…",
+            "source": "https://resources.download.minecraft.net/c3/c387ff7892ec632945829bad546c7ff4381c375f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "解像度",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "モニタの解像度",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ja.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "フルスクリーンでの解像度",
+            "source": "https://resources.download.minecraft.net/c3/c387ff7892ec632945829bad546c7ff4381c375f",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "ko",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "시작",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "플레이",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ko.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "시작",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ko.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "싱글플레이",
+            "source": "https://resources.download.minecraft.net/a1/a11cfec809ceabe534f55d4106aaf98869360c9f",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "설정",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "설정",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ko.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "옵션",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ko.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "설정...",
+            "source": "https://resources.download.minecraft.net/a1/a11cfec809ceabe534f55d4106aaf98869360c9f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "종료",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "나가기",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ko.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "종료",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ko.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "게임 종료",
+            "source": "https://resources.download.minecraft.net/a1/a11cfec809ceabe534f55d4106aaf98869360c9f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "뒤로",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "뒤로가기",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ko.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "뒤로",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ko.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "뒤로",
+            "source": "https://resources.download.minecraft.net/a1/a11cfec809ceabe534f55d4106aaf98869360c9f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "음악",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "음악 크기",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ko.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "음악",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ko.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "음악 및 소리...",
+            "source": "https://resources.download.minecraft.net/a1/a11cfec809ceabe534f55d4106aaf98869360c9f",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "효과음",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "효과음 크기",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ko.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "효과음",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ko.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "음악 및 소리...",
+            "source": "https://resources.download.minecraft.net/a1/a11cfec809ceabe534f55d4106aaf98869360c9f",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "언어",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "언어",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ko.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "언어...",
+            "source": "https://resources.download.minecraft.net/a1/a11cfec809ceabe534f55d4106aaf98869360c9f",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "해상도",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "해상도",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ko.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "전체 화면 해상도",
+            "source": "https://resources.download.minecraft.net/a1/a11cfec809ceabe534f55d4106aaf98869360c9f",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "ms",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Mula",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Ekapemain",
+            "source": "https://resources.download.minecraft.net/db/db03ae89f6d5a271c3dce4161ec5e0bd96ede2d3",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Tetapan",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Tetapan...",
+            "source": "https://resources.download.minecraft.net/db/db03ae89f6d5a271c3dce4161ec5e0bd96ede2d3",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Keluar",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Keluar Permainan",
+            "source": "https://resources.download.minecraft.net/db/db03ae89f6d5a271c3dce4161ec5e0bd96ede2d3",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Kembali",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Kembali",
+            "source": "https://resources.download.minecraft.net/db/db03ae89f6d5a271c3dce4161ec5e0bd96ede2d3",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Muzik",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Muzik & Bunyi...",
+            "source": "https://resources.download.minecraft.net/db/db03ae89f6d5a271c3dce4161ec5e0bd96ede2d3",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Kesan Bunyi",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Muzik & Bunyi...",
+            "source": "https://resources.download.minecraft.net/db/db03ae89f6d5a271c3dce4161ec5e0bd96ede2d3",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Bahasa",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Bahasa...",
+            "source": "https://resources.download.minecraft.net/db/db03ae89f6d5a271c3dce4161ec5e0bd96ede2d3",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Resolusi",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Resolusi Skrin Penuh",
+            "source": "https://resources.download.minecraft.net/db/db03ae89f6d5a271c3dce4161ec5e0bd96ede2d3",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "my",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "စတင်ရန်",
+        "examples": []
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "ဆက်တင်များ",
+        "examples": []
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "ထွက်ရန်",
+        "examples": []
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "နောက်သို့",
+        "examples": []
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "တေးဂီတ",
+        "examples": []
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "အသံအထူးပြုလုပ်ချက်",
+        "examples": []
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "ဘာသာစကား",
+        "examples": []
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "ကြည်လင်ပြတ်သားမှု",
+        "examples": []
+      }
+    ],
+    "referenceStatus": "NO RELEASED-GAME LANGUAGE REFERENCE FOUND",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "nl",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Spelen",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Speel",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_nl.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Start",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/nl.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Alleen spelen",
+            "source": "https://resources.download.minecraft.net/97/97b2c386972d863a5a46b6261c871bd81fc9d1b5",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Opties",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Instellingen",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_nl.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Instellingen",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/nl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Instellingen",
+            "source": "https://resources.download.minecraft.net/97/97b2c386972d863a5a46b6261c871bd81fc9d1b5",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Afsluiten",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Stoppen",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_nl.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Afsluiten",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/nl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Spel afsluiten",
+            "source": "https://resources.download.minecraft.net/97/97b2c386972d863a5a46b6261c871bd81fc9d1b5",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Terug",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Terug",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_nl.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Terug",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/nl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Terug",
+            "source": "https://resources.download.minecraft.net/97/97b2c386972d863a5a46b6261c871bd81fc9d1b5",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Muziek",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Muziek Volume",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_nl.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Muziek",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/nl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Muziek en geluiden",
+            "source": "https://resources.download.minecraft.net/97/97b2c386972d863a5a46b6261c871bd81fc9d1b5",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Geluidseffecten",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "SFX Volume",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_nl.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Geluidseffecten",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/nl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Muziek en geluiden",
+            "source": "https://resources.download.minecraft.net/97/97b2c386972d863a5a46b6261c871bd81fc9d1b5",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Taal",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Taal",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/nl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Taal",
+            "source": "https://resources.download.minecraft.net/97/97b2c386972d863a5a46b6261c871bd81fc9d1b5",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Resolutie",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Resolutie",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/nl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Volledigschermresolutie",
+            "source": "https://resources.download.minecraft.net/97/97b2c386972d863a5a46b6261c871bd81fc9d1b5",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "pl",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Graj",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Graj",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pl.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Start",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pl.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Tryb jednoosobowy",
+            "source": "https://resources.download.minecraft.net/0c/0ce4456a8ec4545a83309e6710534eeb79749030",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Opcje",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Ustawienia",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pl.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Opcje",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Ustawienia…",
+            "source": "https://resources.download.minecraft.net/0c/0ce4456a8ec4545a83309e6710534eeb79749030",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Wyjdź",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Wyjdź",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pl.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Wyjście",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Wyjdź z gry",
+            "source": "https://resources.download.minecraft.net/0c/0ce4456a8ec4545a83309e6710534eeb79749030",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Wstecz",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Wróć",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pl.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Powrót",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Wstecz",
+            "source": "https://resources.download.minecraft.net/0c/0ce4456a8ec4545a83309e6710534eeb79749030",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Muzyka",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Głośność muzyki",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pl.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Muzyka",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Muzyka i dźwięk…",
+            "source": "https://resources.download.minecraft.net/0c/0ce4456a8ec4545a83309e6710534eeb79749030",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Efekty dźwiękowe",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Głośność dźwięków",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pl.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Efekty dźwiękowe",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Muzyka i dźwięk…",
+            "source": "https://resources.download.minecraft.net/0c/0ce4456a8ec4545a83309e6710534eeb79749030",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Język",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Język",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Język…",
+            "source": "https://resources.download.minecraft.net/0c/0ce4456a8ec4545a83309e6710534eeb79749030",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Rozdzielczość",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Rozdzielczość",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pl.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Rozdzielczość w pełnym ekranie",
+            "source": "https://resources.download.minecraft.net/0c/0ce4456a8ec4545a83309e6710534eeb79749030",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "pt-BR",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Jogar",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Jogar",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pt_BR.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Start",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pt_BR.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Um jogador",
+            "source": "https://resources.download.minecraft.net/be/bea44c61c94f2c544cb6406d6f4dae42554d553c",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Opções",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Configu-\\nrações",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pt_BR.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Configurações",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pt_BR.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Opções...",
+            "source": "https://resources.download.minecraft.net/be/bea44c61c94f2c544cb6406d6f4dae42554d553c",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Sair",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Sair",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pt_BR.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Sair",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pt_BR.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Sair do jogo",
+            "source": "https://resources.download.minecraft.net/be/bea44c61c94f2c544cb6406d6f4dae42554d553c",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Voltar",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Voltar",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pt_BR.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Voltar",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pt_BR.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Voltar",
+            "source": "https://resources.download.minecraft.net/be/bea44c61c94f2c544cb6406d6f4dae42554d553c",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Música",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Volume da Música",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pt_BR.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Música",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pt_BR.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Música e sons...",
+            "source": "https://resources.download.minecraft.net/be/bea44c61c94f2c544cb6406d6f4dae42554d553c",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Efeitos sonoros",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Volume de Efeitos",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pt_BR.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Efeitos sonoros",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pt_BR.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Música e sons...",
+            "source": "https://resources.download.minecraft.net/be/bea44c61c94f2c544cb6406d6f4dae42554d553c",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Idioma",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Idioma",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pt_BR.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Idioma...",
+            "source": "https://resources.download.minecraft.net/be/bea44c61c94f2c544cb6406d6f4dae42554d553c",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Resolução",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Resolução",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pt_BR.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Resolução em tela cheia",
+            "source": "https://resources.download.minecraft.net/be/bea44c61c94f2c544cb6406d6f4dae42554d553c",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "ro",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Joacă",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Joacă",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ro.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Singleplayer",
+            "source": "https://resources.download.minecraft.net/ab/ab7e730294a18362b8f3d934bded9eaaea6b81f5",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Opțiuni",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Setări",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ro.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Optiuni",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ro.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Opțiuni…",
+            "source": "https://resources.download.minecraft.net/ab/ab7e730294a18362b8f3d934bded9eaaea6b81f5",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Ieșire",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Abandonează",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ro.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Iesire",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ro.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Închide jocul",
+            "source": "https://resources.download.minecraft.net/ab/ab7e730294a18362b8f3d934bded9eaaea6b81f5",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Înapoi",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Înapoi",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ro.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Înapoi",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ro.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Înapoi",
+            "source": "https://resources.download.minecraft.net/ab/ab7e730294a18362b8f3d934bded9eaaea6b81f5",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Muzică",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Volumul Muzicii",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ro.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Muzică și sunete…",
+            "source": "https://resources.download.minecraft.net/ab/ab7e730294a18362b8f3d934bded9eaaea6b81f5",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Efecte sonore",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Volum Efecte Sonore",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ro.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Efecte sonore",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ro.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Muzică și sunete…",
+            "source": "https://resources.download.minecraft.net/ab/ab7e730294a18362b8f3d934bded9eaaea6b81f5",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Limbă",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Limbă…",
+            "source": "https://resources.download.minecraft.net/ab/ab7e730294a18362b8f3d934bded9eaaea6b81f5",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Rezoluție",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Rezoluție în ecran complet",
+            "source": "https://resources.download.minecraft.net/ab/ab7e730294a18362b8f3d934bded9eaaea6b81f5",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "ru",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Играть",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Старт",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ru.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Одиночная игра",
+            "source": "https://resources.download.minecraft.net/6e/6e99abd3bef550b1723b2e0af539467192e56baa",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Настройки",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Настройки",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ru.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Настройки...",
+            "source": "https://resources.download.minecraft.net/6e/6e99abd3bef550b1723b2e0af539467192e56baa",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Выход",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Выход",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ru.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Выйти из игры",
+            "source": "https://resources.download.minecraft.net/6e/6e99abd3bef550b1723b2e0af539467192e56baa",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Назад",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Назад",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ru.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Назад",
+            "source": "https://resources.download.minecraft.net/6e/6e99abd3bef550b1723b2e0af539467192e56baa",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Музыка",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Музыка",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ru.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Музыка и звуки...",
+            "source": "https://resources.download.minecraft.net/6e/6e99abd3bef550b1723b2e0af539467192e56baa",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Звуки",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Звуковые эффекты",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ru.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Музыка и звуки...",
+            "source": "https://resources.download.minecraft.net/6e/6e99abd3bef550b1723b2e0af539467192e56baa",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Язык",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Язык",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ru.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Язык...",
+            "source": "https://resources.download.minecraft.net/6e/6e99abd3bef550b1723b2e0af539467192e56baa",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Разрешение",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Разрешение монитора",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ru.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Полноэкранное разрешение",
+            "source": "https://resources.download.minecraft.net/6e/6e99abd3bef550b1723b2e0af539467192e56baa",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "sv",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Spela",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Spela",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_sv.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Starta",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/sv.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Enspelarläge",
+            "source": "https://resources.download.minecraft.net/32/32882b5e80fa7ac1d14c649c9e84ace14aacaf28",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Inställningar",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Inställningar",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_sv.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Alternativ",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/sv.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Alternativ...",
+            "source": "https://resources.download.minecraft.net/32/32882b5e80fa7ac1d14c649c9e84ace14aacaf28",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Avsluta",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Avsluta",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_sv.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Avsluta",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/sv.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Avsluta",
+            "source": "https://resources.download.minecraft.net/32/32882b5e80fa7ac1d14c649c9e84ace14aacaf28",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Tillbaka",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Tillbaka",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_sv.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Tillbaka",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/sv.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Tillbaka",
+            "source": "https://resources.download.minecraft.net/32/32882b5e80fa7ac1d14c649c9e84ace14aacaf28",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Musik",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Musikvolym",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_sv.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Musik",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/sv.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Musik och ljud...",
+            "source": "https://resources.download.minecraft.net/32/32882b5e80fa7ac1d14c649c9e84ace14aacaf28",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Ljudeffekter",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Ljudeffektvolym",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_sv.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Ljudeffekter",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/sv.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Musik och ljud...",
+            "source": "https://resources.download.minecraft.net/32/32882b5e80fa7ac1d14c649c9e84ace14aacaf28",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Språk",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Språk",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/sv.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Språk...",
+            "source": "https://resources.download.minecraft.net/32/32882b5e80fa7ac1d14c649c9e84ace14aacaf28",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Upplösning",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Upplösning",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/sv.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Helskärmsupplösning",
+            "source": "https://resources.download.minecraft.net/32/32882b5e80fa7ac1d14c649c9e84ace14aacaf28",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "th",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "เริ่มเกม",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "เล่น",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_th.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "เริ่มต้น",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/th.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "ผู้เล่นคนเดียว",
+            "source": "https://resources.download.minecraft.net/d7/d7f9e71c6bd3675a079e3e4674cac679f18a7d35",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "ตั้งค่า",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "ตั้งค่า",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_th.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "ตัวเลือก",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/th.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "ตัวเลือก...",
+            "source": "https://resources.download.minecraft.net/d7/d7f9e71c6bd3675a079e3e4674cac679f18a7d35",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "ออก",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "ออก",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_th.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "ออก",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/th.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "ออกจากเกม",
+            "source": "https://resources.download.minecraft.net/d7/d7f9e71c6bd3675a079e3e4674cac679f18a7d35",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "กลับ",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "กลับ",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_th.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "กลับ",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/th.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "กลับ",
+            "source": "https://resources.download.minecraft.net/d7/d7f9e71c6bd3675a079e3e4674cac679f18a7d35",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "เพลง",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "ระดับเสียงเพลง",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_th.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "เพลง",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/th.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "เพลงและเสียง...",
+            "source": "https://resources.download.minecraft.net/d7/d7f9e71c6bd3675a079e3e4674cac679f18a7d35",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "เสียงเอฟเฟกต์",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "ระดับเสียง SFX",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_th.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "เอฟเฟกต์เสียง",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/th.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "เพลงและเสียง...",
+            "source": "https://resources.download.minecraft.net/d7/d7f9e71c6bd3675a079e3e4674cac679f18a7d35",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "ภาษา",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "ภาษา",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/th.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "ภาษา...",
+            "source": "https://resources.download.minecraft.net/d7/d7f9e71c6bd3675a079e3e4674cac679f18a7d35",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "ความละเอียด",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "ความละเอียด",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/th.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "ความละเอียดเต็มจอ",
+            "source": "https://resources.download.minecraft.net/d7/d7f9e71c6bd3675a079e3e4674cac679f18a7d35",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "tr",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Başla",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Oyna",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_tr.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Başlat",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/tr.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Tek Oyunculu",
+            "source": "https://resources.download.minecraft.net/c0/c0bb6394a07c7d00b35ab5a14610d15b340d90c5",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Ayarlar",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Ayarlar",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_tr.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Seçenekler",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/tr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Ayarlar...",
+            "source": "https://resources.download.minecraft.net/c0/c0bb6394a07c7d00b35ab5a14610d15b340d90c5",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Çıkış",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Çık",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_tr.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Çık",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/tr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Oyundan Çık",
+            "source": "https://resources.download.minecraft.net/c0/c0bb6394a07c7d00b35ab5a14610d15b340d90c5",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Geri",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Geri",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_tr.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Geri",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/tr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Geri",
+            "source": "https://resources.download.minecraft.net/c0/c0bb6394a07c7d00b35ab5a14610d15b340d90c5",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Müzik",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Müzik Sesi",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_tr.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Müzik",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/tr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Müzik ve Sesler...",
+            "source": "https://resources.download.minecraft.net/c0/c0bb6394a07c7d00b35ab5a14610d15b340d90c5",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Ses Efektleri",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Oyun Sesi",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_tr.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Ses Efektleri",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/tr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Müzik ve Sesler...",
+            "source": "https://resources.download.minecraft.net/c0/c0bb6394a07c7d00b35ab5a14610d15b340d90c5",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Dil",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Diller",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/tr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Dil...",
+            "source": "https://resources.download.minecraft.net/c0/c0bb6394a07c7d00b35ab5a14610d15b340d90c5",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Çözünürlük",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Çözünürlük",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/tr.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Tam Ekran Çözünürlüğü",
+            "source": "https://resources.download.minecraft.net/c0/c0bb6394a07c7d00b35ab5a14610d15b340d90c5",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "uk",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Грати",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Кнопка Start",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/uk.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Гра наодинці",
+            "source": "https://resources.download.minecraft.net/8d/8ddae9fafd1991be6c0dcc21f46af8a9b3bbb3ec",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Налаштування",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Параметри",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/uk.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Налаштування…",
+            "source": "https://resources.download.minecraft.net/8d/8ddae9fafd1991be6c0dcc21f46af8a9b3bbb3ec",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Вихід",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Вийти",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/uk.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Вийти з гри",
+            "source": "https://resources.download.minecraft.net/8d/8ddae9fafd1991be6c0dcc21f46af8a9b3bbb3ec",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Назад",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Повернутися",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/uk.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Назад",
+            "source": "https://resources.download.minecraft.net/8d/8ddae9fafd1991be6c0dcc21f46af8a9b3bbb3ec",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Музика",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Музика",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/uk.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Музика та звуки…",
+            "source": "https://resources.download.minecraft.net/8d/8ddae9fafd1991be6c0dcc21f46af8a9b3bbb3ec",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Звуки",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Звукові ефекти",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/uk.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Музика та звуки…",
+            "source": "https://resources.download.minecraft.net/8d/8ddae9fafd1991be6c0dcc21f46af8a9b3bbb3ec",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Мова",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Мова",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/uk.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Мова…",
+            "source": "https://resources.download.minecraft.net/8d/8ddae9fafd1991be6c0dcc21f46af8a9b3bbb3ec",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Роздільність",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Роздільна здатність",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/uk.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Роздільність у повному екрані",
+            "source": "https://resources.download.minecraft.net/8d/8ddae9fafd1991be6c0dcc21f46af8a9b3bbb3ec",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "vi",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "Bắt đầu",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Chơi",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_vi.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Chơi đơn",
+            "source": "https://resources.download.minecraft.net/d9/d9d303dd47ebe318e47be008a61126714035bcb6",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "Cài đặt",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Cài đặt",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_vi.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Cài Đặt",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/vi.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Tuỳ chọn...",
+            "source": "https://resources.download.minecraft.net/d9/d9d303dd47ebe318e47be008a61126714035bcb6",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "Thoát",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Thoát",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_vi.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Thoát",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/vi.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Thoát trò chơi",
+            "source": "https://resources.download.minecraft.net/d9/d9d303dd47ebe318e47be008a61126714035bcb6",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "Quay lại",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Quay lại",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_vi.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Quay về",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/vi.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Quay lại",
+            "source": "https://resources.download.minecraft.net/d9/d9d303dd47ebe318e47be008a61126714035bcb6",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "Âm nhạc",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Âm lượng nhạc",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_vi.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Âm nhạc",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/vi.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Nhạc & âm thanh...",
+            "source": "https://resources.download.minecraft.net/d9/d9d303dd47ebe318e47be008a61126714035bcb6",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "Hiệu ứng âm thanh",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "Âm lượng SFX",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_vi.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "Hiệu Ứng Âm thanh",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/vi.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Nhạc & âm thanh...",
+            "source": "https://resources.download.minecraft.net/d9/d9d303dd47ebe318e47be008a61126714035bcb6",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "Ngôn ngữ",
+        "examples": [
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Ngôn ngữ...",
+            "source": "https://resources.download.minecraft.net/d9/d9d303dd47ebe318e47be008a61126714035bcb6",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "Độ phân giải",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "Độ phân giải",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/vi.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "Độ phân giải toàn màn hình",
+            "source": "https://resources.download.minecraft.net/d9/d9d303dd47ebe318e47be008a61126714035bcb6",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "zh-Hans",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "开始游戏",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "开始游戏",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_CN.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "开始",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_CN.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "单人游戏",
+            "source": "https://resources.download.minecraft.net/dc/dc7a2a97cd71031e709e3d3c90ee1b511fad1269",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "设置",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "设置",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_CN.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "选项",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_CN.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "选项…",
+            "source": "https://resources.download.minecraft.net/dc/dc7a2a97cd71031e709e3d3c90ee1b511fad1269",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "退出",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "退出",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_CN.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "退出",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_CN.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "退出游戏",
+            "source": "https://resources.download.minecraft.net/dc/dc7a2a97cd71031e709e3d3c90ee1b511fad1269",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "返回",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "返回",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_CN.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "后退",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_CN.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "返回",
+            "source": "https://resources.download.minecraft.net/dc/dc7a2a97cd71031e709e3d3c90ee1b511fad1269",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "音乐",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "音乐音量",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_CN.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "音乐",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_CN.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "音乐和声音…",
+            "source": "https://resources.download.minecraft.net/dc/dc7a2a97cd71031e709e3d3c90ee1b511fad1269",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "音效",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "音效音量",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_CN.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "音效",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_CN.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "音乐和声音…",
+            "source": "https://resources.download.minecraft.net/dc/dc7a2a97cd71031e709e3d3c90ee1b511fad1269",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "语言",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "语言",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_CN.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "语言…",
+            "source": "https://resources.download.minecraft.net/dc/dc7a2a97cd71031e709e3d3c90ee1b511fad1269",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "分辨率",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "分辨率",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_CN.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "全屏分辨率",
+            "source": "https://resources.download.minecraft.net/dc/dc7a2a97cd71031e709e3d3c90ee1b511fad1269",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  },
+  {
+    "code": "zh-Hant",
+    "terms": [
+      {
+        "key": "menu.start",
+        "english": "Start",
+        "chinese": "开始游戏",
+        "current": "開始遊戲",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "開始遊戲",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_TW.properties",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "開始",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_TW.po",
+            "contextWarning": "Start/play contexts differ; do not blindly copy"
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "單人遊戲",
+            "source": "https://resources.download.minecraft.net/7c/7c91a0c17b55fd1bc37b22e54e2191239ed48dea",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.title",
+        "english": "Options",
+        "chinese": "设置",
+        "current": "設定",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "設定",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_TW.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "選項",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_TW.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "選項...",
+            "source": "https://resources.download.minecraft.net/7c/7c91a0c17b55fd1bc37b22e54e2191239ed48dea",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.exit",
+        "english": "Exit",
+        "chinese": "退出",
+        "current": "離開",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "退出",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_TW.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "結束",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_TW.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "離開遊戲",
+            "source": "https://resources.download.minecraft.net/7c/7c91a0c17b55fd1bc37b22e54e2191239ed48dea",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "menu.back",
+        "english": "Back",
+        "chinese": "返回",
+        "current": "返回",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "返回",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_TW.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "返回",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_TW.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "返回",
+            "source": "https://resources.download.minecraft.net/7c/7c91a0c17b55fd1bc37b22e54e2191239ed48dea",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.music",
+        "english": "Music",
+        "chinese": "音乐",
+        "current": "音樂",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "音樂音量",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_TW.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "音樂",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_TW.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "音樂和音效...",
+            "source": "https://resources.download.minecraft.net/7c/7c91a0c17b55fd1bc37b22e54e2191239ed48dea",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.sfx",
+        "english": "Sound FX",
+        "chinese": "音效",
+        "current": "音效",
+        "examples": [
+          {
+            "game": "Mindustry",
+            "text": "音效音量",
+            "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_TW.properties",
+            "contextWarning": ""
+          },
+          {
+            "game": "SuperTuxKart",
+            "text": "音效",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_TW.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "音樂和音效...",
+            "source": "https://resources.download.minecraft.net/7c/7c91a0c17b55fd1bc37b22e54e2191239ed48dea",
+            "contextWarning": "Different scope: audio category or single-player entry; terminology evidence only"
+          }
+        ]
+      },
+      {
+        "key": "settings.language",
+        "english": "Language",
+        "chinese": "语言",
+        "current": "語言",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "語言",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_TW.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "語言...",
+            "source": "https://resources.download.minecraft.net/7c/7c91a0c17b55fd1bc37b22e54e2191239ed48dea",
+            "contextWarning": ""
+          }
+        ]
+      },
+      {
+        "key": "settings.resolution",
+        "english": "Resolution",
+        "chinese": "分辨率",
+        "current": "解析度",
+        "examples": [
+          {
+            "game": "SuperTuxKart",
+            "text": "解析度",
+            "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_TW.po",
+            "contextWarning": ""
+          },
+          {
+            "game": "Minecraft 1.21.1",
+            "text": "全螢幕解析度",
+            "source": "https://resources.download.minecraft.net/7c/7c91a0c17b55fd1bc37b22e54e2191239ed48dea",
+            "contextWarning": ""
+          }
+        ]
+      }
+    ],
+    "referenceStatus": "released-game terminology available",
+    "nativeSignOff": "NOT PERFORMED"
+  }
+]

@@ -1,0 +1,120 @@
+{
+  "rtl": true,
+  "review": "draft; native review pending",
+  "font": "Suez One",
+  "code": "he",
+  "entries": [
+    {
+      "key": "menu.start",
+      "text": "התחלה",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.title",
+      "text": "הגדרות",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.exit",
+      "text": "יציאה",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.level_select",
+      "text": "בחירת שלב",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.number",
+      "text": "שלב {number}",
+      "context": "Level card heading; {number}=two digit display number; max two lines"
+    },
+    {
+      "key": "level.play",
+      "text": "משחק",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.back",
+      "text": "חזרה",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.resolution",
+      "text": "רזולוציה",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.auto",
+      "text": "אוטומטי",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.sfx",
+      "text": "אפקטים קוליים",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.music",
+      "text": "מוזיקה",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.language",
+      "text": "שפה",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "result.complete",
+      "text": "השלב הושלם",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "hud.progress",
+      "text": "התקדמות השלב {progress}%",
+      "context": "Loading/HUD; {progress}=integer 0–100; max two lines"
+    },
+    {
+      "key": "loading.progress",
+      "text": "השלב בהכנה… {progress}%",
+      "context": "Loading/HUD; {progress}=integer 0–100; max two lines"
+    },
+    {
+      "key": "error.level_unavailable",
+      "text": "השלב אינו זמין. יש לחזור ולנסות שוב.",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.1",
+      "text": "התחלה באחו",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.2",
+      "text": "שביל בג'ונגל",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.3",
+      "text": "הרפתקה בחוף",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.4",
+      "text": "גבהי העיירה",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.5",
+      "text": "הרפתקה במערה",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.collectibles",
+      "text": "{coins}/{total}  ★ {stars}/3",
+      "context": "Level card: coins collected, total coins, stars earned; numeric icon label"
+    }
+  ],
+  "priority": "P1",
+  "nativeName": "עברית"
+}

@@ -1,0 +1,120 @@
+{
+  "rtl": false,
+  "review": "draft; native review pending",
+  "font": "Noto Sans",
+  "code": "id",
+  "entries": [
+    {
+      "key": "menu.start",
+      "text": "Mulai",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.title",
+      "text": "Pengaturan",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.exit",
+      "text": "Keluar",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.level_select",
+      "text": "Pilih Level",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.number",
+      "text": "Level {number}",
+      "context": "Level card heading; {number}=two digit display number; max two lines"
+    },
+    {
+      "key": "level.play",
+      "text": "Main",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "menu.back",
+      "text": "Kembali",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.resolution",
+      "text": "Resolusi",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.auto",
+      "text": "Otomatis",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.sfx",
+      "text": "Efek Suara",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.music",
+      "text": "Musik",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "settings.language",
+      "text": "Bahasa",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "result.complete",
+      "text": "Level Selesai",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "hud.progress",
+      "text": "Progres level {progress}%",
+      "context": "Loading/HUD; {progress}=integer 0–100; max two lines"
+    },
+    {
+      "key": "loading.progress",
+      "text": "Menyiapkan level… {progress}%",
+      "context": "Loading/HUD; {progress}=integer 0–100; max two lines"
+    },
+    {
+      "key": "error.level_unavailable",
+      "text": "Level tidak tersedia. Kembali dan coba lagi.",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.1",
+      "text": "Awal Padang Rumput",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.2",
+      "text": "Jalur Rimba",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.3",
+      "text": "Petualangan Pantai",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.4",
+      "text": "Ketinggian Kota",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.name.5",
+      "text": "Petualangan Gua",
+      "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
+    },
+    {
+      "key": "level.collectibles",
+      "text": "{coins}/{total}  ★ {stars}/3",
+      "context": "Level card: coins collected, total coins, stars earned; numeric icon label"
+    }
+  ],
+  "priority": "P0",
+  "nativeName": "Bahasa Indonesia"
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "file": "Assets/Resources/Localization/ko.json",
+    "sha256": "ED612F79031A8D0B6230BFD96661B0C5D1F2C8FACC4115E34B755D53E54DB26F"
+  },
+  {
+    "file": "Assets/StreamingAssets/LocalizationFonts/Dokdo-Regular.ttf",
+    "sha256": "3305A80B136E22A62FD96C896A04160ADD8172D300426606B17584A6EF855B22"
+  },
+  {
+    "file": "Assets/StreamingAssets/LocalizationFonts/Dokdo-OFL.txt",
+    "sha256": "C431EF7E73FA7C8F5471C4B69144843C9D0011812042F8BDF7E5E4B0D09FB061"
+  },
+  {
+    "file": "scripts/localization-20261114/build-tables.ps1",
+    "sha256": "EF6450004072CF5948F6A5CDDC411741FB7C3044DB4F68E99D03E82110166BD9"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\dokdo-ko-20261114\\build-tables.ps1.before",
+    "sha256": "3A9658976AA17A1D45DB3066F07E55BC7B6C8C5B4E9570AFFBB57E90F4FCCCD5"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\dokdo-ko-20261114\\check-ui.json",
+    "sha256": "3729DB561A439D7280B596A63D5C9A806289911D79F8FC34778BC7DFB74F6430"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\dokdo-ko-20261114\\coverage.txt",
+    "sha256": "9B48E88D588D315B7E7CEA648D7BE2BA956FA7B7680F74A0BECAD7AB0EE91DF4"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\dokdo-ko-20261114\\ko.json.before",
+    "sha256": "05CA78B21F005A44D2C0614A5B2C81A05801F9C1488780DB79088E60A2EF9E50"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\dokdo-ko-20261114\\ui\\ko-home.png",
+    "sha256": "F5BA89CAD41B77818B27003665860070083FF99378129FAC3D59A882A1C373B4"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\dokdo-ko-20261114\\ui\\ko-levels.png",
+    "sha256": "083157EAEF4F7E579384C2EAD7A3031E3B85CA654159A10D5A245C4DF3E021E0"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\dokdo-ko-20261114\\ui\\ko-settings.png",
+    "sha256": "738874A86402F20B8F383A0CD0344C164F524D16A9F3021F2E0DFAD01834A00F"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\dokdo-ko-20261114\\ui\\language-picker.png",
+    "sha256": "61CE33323CAFC4D261EA0C6A8824593F45364BBE65466AF5B807A8C71B46FC33"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\dokdo-ko-20261114\\ui\\render-results.txt",
+    "sha256": "1EB32E494940DE14C243B2A123892017E76F49B4740BAC8074AB72002C536195"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\dokdo-ko-20261114\\ui\\resolution-picker.png",
+    "sha256": "8CD6E34F6CFA1020A2CE212580D4234C3A36DAFED7F328739B092C3BBDA1303D"
+  }
+]

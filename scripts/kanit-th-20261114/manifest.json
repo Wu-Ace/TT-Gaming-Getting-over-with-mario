@@ -1,0 +1,58 @@
+[
+  {
+    "file": "Assets/Resources/Localization/th.json",
+    "sha256": "550A943494DA60F299563639BA350A59CABFC940A04B6DD1DD66DA0A5DF37127"
+  },
+  {
+    "file": "Assets/StreamingAssets/LocalizationFonts/Kanit-Regular.ttf",
+    "sha256": "7B3EC7E81C6E18E82BBD1512B21B8489103E71ED9A956AA70BF0725E590BE2DF"
+  },
+  {
+    "file": "Assets/StreamingAssets/LocalizationFonts/Kanit-OFL.txt",
+    "sha256": "3DFB28C9787CF641126B8A35326E41F2C3B88EDD83C8608EBD35C27ACF6BBF44"
+  },
+  {
+    "file": "scripts/localization-20261114/build-tables.ps1",
+    "sha256": "0910AA1EE0A5455AF42380CD1D601BFEB968CD56AE2A293B7EFDC1ECE35DB2CD"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\kanit-th-20261114\\build-tables.ps1.before",
+    "sha256": "EF6450004072CF5948F6A5CDDC411741FB7C3044DB4F68E99D03E82110166BD9"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\kanit-th-20261114\\check-ui.json",
+    "sha256": "D1338516B2823074D59B1D90E0AE1804068CC62104B32774745E4D10ABE6353C"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\kanit-th-20261114\\coverage.txt",
+    "sha256": "24C2776641B4A3D99EF285A0062A176DB784AC9388238279EB2D01B930B1FC30"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\kanit-th-20261114\\th.json.before",
+    "sha256": "44D5FAA01DD4FA054EFB64F5AB471516587A3FAD2555E6A2DD56652930C80DC7"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\kanit-th-20261114\\ui\\language-picker.png",
+    "sha256": "61CE33323CAFC4D261EA0C6A8824593F45364BBE65466AF5B807A8C71B46FC33"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\kanit-th-20261114\\ui\\render-results.txt",
+    "sha256": "D34EE559D8FCD26F3BD2A6D332898C2F4C6ACE29079551A7DC84913B1FDA3674"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\kanit-th-20261114\\ui\\resolution-picker.png",
+    "sha256": "8CD6E34F6CFA1020A2CE212580D4234C3A36DAFED7F328739B092C3BBDA1303D"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\kanit-th-20261114\\ui\\th-home.png",
+    "sha256": "81F0E22D6FBD387E66293C1D4FFC30BFB75378E6CA3EB8B3501F40034B687E84"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\kanit-th-20261114\\ui\\th-levels.png",
+    "sha256": "2279676074473915C1B2FBF88AF99C5DA1EE2C355DF557C4F63B5D05461D216A"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\kanit-th-20261114\\ui\\th-settings.png",
+    "sha256": "6E801758E863C62EBE98F0639D1F7B714A53D879405FD3C4D74879C59BB7AD50"
+  }
+]

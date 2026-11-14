@@ -1,0 +1,26 @@
+[
+  {
+    "code": "es",
+    "key": "settings.sfx",
+    "text": "Efectos de sonido",
+    "reason": "Efectos alone can mean visual effects; explicitly retain the Chinese 音效 / English Sound FX meaning.",
+    "reference": "SuperTuxKart 1.4 Spanish/Minecraft audio category context; retained sound-specific wording",
+    "before": "Efectos"
+  },
+  {
+    "code": "ar",
+    "key": "settings.sfx",
+    "text": "المؤثرات الصوتية",
+    "reason": "Specify sound effects rather than effects in general.",
+    "reference": "SuperTuxKart 1.4 ar.po: Sound Effects",
+    "before": "المؤثرات"
+  },
+  {
+    "code": "my",
+    "key": "settings.resolution",
+    "text": "ကြည်လင်ပြတ်သားမှု",
+    "reason": "Previous ရုပ်ထွက်အရည်အသွေး means picture quality; this control selects pixel resolution.",
+    "reference": "https://www.nara.accu.or.jp/el/textpdf/Basic_Knowledge_of_Cultural_Properties_Photograph_%5BWorksheet%5D.pdf; technical Burmese reference, NOT a released-game/native sign-off",
+    "before": "ရုပ်ထွက်အရည်အသွေး"
+  }
+]

@@ -1,0 +1,1 @@
+PASS: Suez One font selected; all Hebrew table characters covered (with configured fallback).

@@ -15,7 +15,6 @@ public sealed class GameMenuUI : MonoBehaviour
     public static bool Testing;
     public const int PlayableLevelCount = 5;
     public static readonly string[] Scenes = {"Level01","Level02_Jungle","Level03_Beach","Level04_Town","Level05_Cave","Level06_Grassland_Winter","Level07_Ice","Level08_Castle","Level09_Volcano","Level10_Sky"};
-    static readonly string[] Names = {"Grassland Start","Jungle Trail","Beach Adventure","Town Heights","Cave Adventure","Winter Grassland","Frozen Path","Castle Challenge","Volcano Journey","Sky Finale"};
     public bool IsMenu => SceneManager.GetActiveScene().name == MenuScene;
     public bool settings;
     public int page, world;
@@ -38,6 +37,8 @@ public sealed class GameMenuUI : MonoBehaviour
     Resolution[] resolutions;
     Vector2 scroll;
     bool dropdown;
+    bool languageDropdown;
+    Vector2 languageScroll;
     string error;
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
     static void Install()
@@ -54,7 +55,7 @@ public sealed class GameMenuUI : MonoBehaviour
         levelSelectBackground=Load("levelSelectBackground");
         homeButtons=new[]{Load("homeStart"),Load("homeOptions"),Load("homeExit")};
         plates=Enumerable.Range(0,3).Select(i=>Load("plate"+i)).ToArray();worlds=Enumerable.Range(0,3).Select(i=>Load("world"+i)).ToArray();
-        font=GameFont.Main;
+        font=GameFont.Main;GameLocalization.Initialize();
         clicks=gameObject.AddComponent<AudioSource>();clicks.playOnAwake=false;
         click=Resources.Load<AudioClip>("MenuUI/click");back=Resources.Load<AudioClip>("MenuUI/back");
         music=PlayerPrefs.GetFloat(PreferencePrefix+"music",1);effects=PlayerPrefs.GetFloat(PreferencePrefix+"effects",1);
@@ -127,13 +128,13 @@ public sealed class GameMenuUI : MonoBehaviour
         if(Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame) { if(settings)CloseSettings();else if(!IsMenu)OpenSettings();else if(page>0)page--; }
         if(Screen.currentResolution.width!=monitorW || Screen.currentResolution.height!=monitorH)RefreshResolutions();
     }
-    public void OpenSettings(){if(settings || Character.Lifecycle.DeathFeedback.Active)return;GameplayAudio.Play("pause",.35f);settings=true;dropdown=false;previousTimeScale=Time.timeScale;if(!IsMenu)Time.timeScale=0;}
-    public void CloseSettings(){if(settings)GameplayAudio.Play("resume",.35f);if(settings && !IsMenu)Time.timeScale=previousTimeScale;settings=false;dropdown=false;}
+    public void OpenSettings(){if(settings || Character.Lifecycle.DeathFeedback.Active)return;GameplayAudio.Play("pause",.35f);settings=true;dropdown=false;languageDropdown=false;previousTimeScale=Time.timeScale;if(!IsMenu)Time.timeScale=0;}
+    public void CloseSettings(){if(settings)GameplayAudio.Play("resume",.35f);if(settings && !IsMenu)Time.timeScale=previousTimeScale;settings=false;dropdown=false;languageDropdown=false;}
     public void LoadLevel(int i)
     {
         if(loading || i < -1 || i>=PlayableLevelCount)return;
         string targetScene = i == -1 ? "Tutorial" : Scenes[i];
-        if(!Application.CanStreamedLevelBeLoaded(targetScene)){error="Level unavailable. Please return and try again.";GameplayAudio.Play("locked",.4f);return;}
+        if(!Application.CanStreamedLevelBeLoaded(targetScene)){error="error.level_unavailable";GameplayAudio.Play("locked",.4f);return;}
         CampaignLevel.ResetLivesForEntry(targetScene);
         CloseSettings();StartCoroutine(LoadPreparedLevel(targetScene));
     }
@@ -145,7 +146,7 @@ public sealed class GameMenuUI : MonoBehaviour
         yield return new WaitForEndOfFrame();
         AsyncOperation operation=null;
         try { operation=SceneManager.LoadSceneAsync(targetScene); }
-        catch(Exception exception) { error=exception.Message; }
+        catch(Exception exception) { Debug.LogException(exception);error="error.level_unavailable"; }
         if(operation==null){loading=false;Time.timeScale=1;yield break;}
         while(!operation.isDone){loadingProgress=operation.progress;yield return null;}
         // sceneLoaded callbacks and Start finish while physics remains paused.
@@ -191,7 +192,7 @@ public sealed class GameMenuUI : MonoBehaviour
     }
     void Text(Rect r,string value,int size=28,Color? color=null,bool center=false)
     {
-        var s=new GUIStyle(label){fontSize=size,alignment=center?TextAnchor.MiddleCenter:TextAnchor.MiddleLeft};s.normal.textColor=color??label.normal.textColor;GUI.Label(r,value,s);
+        LocalizedWindowsText.Draw(r,value,size,color??label.normal.textColor,center);
     }
     bool Button(Rect r,string value,Action action,bool green=true)
     {
@@ -261,8 +262,7 @@ public sealed class GameMenuUI : MonoBehaviour
         {
             GUI.depth=-1000;
             GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height),Texture2D.blackTexture);
-            var loadingStyle=new GUIStyle(GUI.skin.label){font=font,fontSize=28,alignment=TextAnchor.MiddleCenter};
-            GUI.Label(new Rect(0,Screen.height*.45f,Screen.width,80),"正在准备关卡… "+Mathf.RoundToInt(Mathf.Clamp01(loadingProgress/.9f)*100)+"%",loadingStyle);
+            LocalizedWindowsText.Draw(new Rect(0,Screen.height*.45f,Screen.width,80),GameLocalization.Format("loading.progress","progress",Mathf.RoundToInt(Mathf.Clamp01(loadingProgress/.9f)*100)),28,Color.white,true);
             return;
         }
         if(!legacyHudHidden)HideLegacyHud();
@@ -270,7 +270,13 @@ public sealed class GameMenuUI : MonoBehaviour
         var old=GUI.matrix;float scale=Mathf.Min(Screen.width/1600f,Screen.height/900f);
         // Letterboxed reference layout keeps circles round and never stretches source art.
         GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-1600*scale)/2,(Screen.height-900*scale)/2,0),Quaternion.identity,new Vector3(scale,scale,1));
-        if(IsMenu){Fill(new Rect(-4000,-4000,9600,8900),new Color32(35,63,56,255));Background();if(page==0)Home();else Levels();}
+        if(IsMenu)
+        {
+            Fill(new Rect(-4000,-4000,9600,8900),new Color32(35,63,56,255));Background();
+            bool enabled=GUI.enabled;GUI.enabled=enabled && !settings;
+            if(page==0)Home();else Levels();
+            GUI.enabled=enabled;
+        }
         else if(!settings)
         {
             float hudScale=Mathf.Min(Screen.width/2443f,Screen.height/1125f);
@@ -287,7 +293,7 @@ public sealed class GameMenuUI : MonoBehaviour
                 float width=Mathf.Min(600,canvasWidth-720),x=(canvasWidth-width)/2;
                 float progress=Mathf.Clamp01(CampaignLevel.Current.RouteProgress);
                 Fill(new Rect(x,18,width,130),new Color32(31,31,34,204));
-                Text(new Rect(x,34,width,58),"关卡进度 "+Mathf.FloorToInt(progress*100)+"%",34,Color.white,true);
+                Text(new Rect(x,34,width,58),GameLocalization.Format("hud.progress","progress",Mathf.FloorToInt(progress*100)),34,Color.white,true);
                 float barWidth=width-40;
                 Fill(new Rect(x+20,104,barWidth,25),new Color32(28,22,29,255));
                 Fill(new Rect(x+20,104,barWidth*progress,25),new Color32(62,100,90,255));
@@ -302,7 +308,7 @@ public sealed class GameMenuUI : MonoBehaviour
         }
         GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-1600*scale)/2,(Screen.height-900*scale)/2,0),Quaternion.identity,new Vector3(scale,scale,1));
         if(settings)Settings();
-        if(!string.IsNullOrEmpty(error))Text(new Rect(450,800,800,65),error,24,Color.white,true);
+        if(!string.IsNullOrEmpty(error))Text(new Rect(450,800,800,65),GameLocalization.Get(error),24,Color.white,true);
         GUI.matrix=old;
     }
     void Home()
@@ -315,20 +321,18 @@ public sealed class GameMenuUI : MonoBehaviour
         GUI.matrix=Matrix4x4.identity;
         GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height),homeBackground,ScaleMode.ScaleAndCrop);
         GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-2443*homeScale)/2,(Screen.height-1221*homeScale)/2,0),Quaternion.identity,Vector3.one*homeScale);
-        Text(new Rect(95,55,1500,175),"GET OVER WITH",137,Color.white);
-        Text(new Rect(95,205,1500,250),"ODYSSEY",205,Color.white);
-        HomeButton(new Rect(95,710,400,115),0,"START",()=>page=1);
-        HomeButton(new Rect(95,850,400,115),1,"OPTIONS",OpenSettings);
-        HomeButton(new Rect(95,990,400,115),2,"EXIT",()=>{if(!Testing)Application.Quit();});
+        GUI.Label(new Rect(95,55,1500,175),"GET OVER WITH",BrandStyle(137));
+        GUI.Label(new Rect(95,205,1500,250),"ODYSSEY",BrandStyle(205));
+        HomeButton(new Rect(95,710,400,115),0,GameLocalization.Get("menu.start"),()=>page=1);
+        HomeButton(new Rect(95,850,400,115),1,GameLocalization.Get("settings.title"),OpenSettings);
+        HomeButton(new Rect(95,990,400,115),2,GameLocalization.Get("menu.exit"),()=>{if(!Testing)Application.Quit();});
         GUI.matrix=previous;
     }
     void HomeButton(Rect rect,int index,string caption,Action action)
     {
         HudArt(rect,homeButtons[index]);
-        var style=new GUIStyle(label){fontSize=56,alignment=TextAnchor.MiddleCenter};
-        style.normal.textColor=Color.white;
         if(FeedbackButton(rect,GUIContent.none,GUIStyle.none)){Sound();action();}
-        GUI.Label(rect,caption,style);
+        LocalizedWindowsText.Draw(rect,caption,56,Color.white,true);
     }
 
     void LevelPaper(Rect rect, Color color, float angle)
@@ -353,7 +357,7 @@ public sealed class GameMenuUI : MonoBehaviour
             if(Event.current.type==EventType.MouseDrag)GUI.changed=true;
             GUI.matrix=matrix;
         }
-        Text(new Rect(75,45,1200,100),"选择关卡",72,Color.white);
+        Text(new Rect(75,45,1200,100),GameLocalization.Get("menu.level_select"),72,Color.white);
         float uiScaleForCards=Mathf.Min(Screen.width/1600f,Screen.height/900f);
         float screenRight=800+Screen.width/(2*uiScaleForCards);
         float screenLeft=800-Screen.width/(2*uiScaleForCards);
@@ -381,7 +385,7 @@ public sealed class GameMenuUI : MonoBehaviour
             levelDragging=false;
             if(levelDragMoved)ev.Use();
         }
-        if(ev.type==EventType.ScrollWheel && viewport.Contains(ev.mousePosition))
+        if(!settings && ev.type==EventType.ScrollWheel && viewport.Contains(ev.mousePosition))
         {
             levelScroll=Mathf.Clamp(levelScroll+(ev.delta.x+ev.delta.y)*35,0,maxScroll);
             ev.Use();
@@ -393,20 +397,20 @@ public sealed class GameMenuUI : MonoBehaviour
             float x=cardInset+n*spacing-levelScroll;
             HudArt(new Rect(x,70,360,312),Load("level_bg_1"));
             HudArt(new Rect(x+65,15,230,110),Load("level_tab_1"));
-            PanelText(new Rect(x+65,30,230,78),"关卡 "+(n+1).ToString("00"),36,-8);
-            Text(new Rect(x+35,145,290,90),Names[n],30,Color.white,true);
-            Text(new Rect(x+35,245,290,55),"金币 "+CampaignLevel.SavedCoins(Scenes[n])+"/"+CampaignLevel.CoinTotal+"   "+CampaignLevel.CoinStars(CampaignLevel.SavedCoins(Scenes[n]))+"/3 星",24,new Color32(235,172,61,255),true);
+            PanelText(new Rect(x+65,30,230,78),GameLocalization.Format("level.number","number",(n+1).ToString("00")),36,0);
+            Text(new Rect(x+35,145,290,90),GameLocalization.Get("level.name."+(n+1)),30,Color.white,true);
+            Text(new Rect(x+35,245,290,55),GameLocalization.Get("level.collectibles").Replace("{coins}",CampaignLevel.SavedCoins(Scenes[n]).ToString()).Replace("{total}",CampaignLevel.CoinTotal.ToString()).Replace("{stars}",CampaignLevel.CoinStars(CampaignLevel.SavedCoins(Scenes[n])).ToString()),24,new Color32(235,172,61,255),true);
             var enter=new Rect(x+75,345,210,60);
             HudArt(enter,Load("level_button_1"));
             if(FeedbackButton(enter,GUIContent.none,GUIStyle.none))
             {GameplayAudio.Play("click",.4f);LoadLevel(n);}
-            PanelText(enter,"进入关卡",32,-3);
+            PanelText(enter,GameLocalization.Get("level.play"),32,-3);
 
         }
         GUI.EndGroup();
         HudArt(new Rect(80,770,260,75),Load("level_button_3"),new Rect(75,755,270,95));
         if(FeedbackButton(new Rect(75,755,270,95),GUIContent.none,GUIStyle.none)){GameplayAudio.Play("click",.4f);page=0;}
-        PanelText(new Rect(75,755,270,95),"返回",40,-3);
+        PanelText(new Rect(75,755,270,95),GameLocalization.Get("menu.back"),40,-3);
 
     }
 
@@ -435,10 +439,11 @@ public sealed class GameMenuUI : MonoBehaviour
         Text(r,text,size,Color.white,true);
         GUI.matrix=matrix;
     }
-    public bool PanelButton(Rect r,string art,string text,Action action)
+    public bool PanelButton(Rect r,string art,string text,Action action,int textSize=0)
     {
         PanelArt(r,art);
-        PanelText(r,text,art=="button_quality"?26:text=="LEVEL SELECT"?36:48,art=="button_quality"?-7:-4);
+        var textRect=new Rect(r.x+r.width*.12f,r.y+r.height*.1f,r.width*.76f,r.height*.8f);
+        PanelText(textRect,text,textSize>0?textSize:(art=="button_quality"?32:36),art=="button_quality"?-7:-4);
         if(!FeedbackButton(r,GUIContent.none,GUIStyle.none))return false;
         Sound();action();return true;
     }
@@ -448,8 +453,9 @@ public sealed class GameMenuUI : MonoBehaviour
         Fill(new Rect(-4000,-4000,9600,8900),new Color(0,0,0,.65f));
         PanelArt(new Rect(380,180,840,570),"bg_2");
         PanelArt(new Rect(620,108,390,188),"tab_1");
-        PanelText(new Rect(620,160,390,100),dropdown?"RESOLUTION":"OPTIONS",dropdown?48:60,-8);
-        PanelButton(new Rect(1190,160,90,90),"button_close","",()=>{if(dropdown)dropdown=false;else CloseSettings();});
+        PanelText(new Rect(660,166,310,85),GameLocalization.Get(languageDropdown?"settings.language":dropdown?"settings.resolution":"settings.title"),dropdown||languageDropdown?48:60,-8);
+        PanelButton(new Rect(1190,160,90,90),"button_close","",()=>{if(languageDropdown)languageDropdown=false;else if(dropdown)dropdown=false;else CloseSettings();});
+        if(languageDropdown){LanguageOptions();return;}
         if(dropdown)
         {
             int count=resolutions.Length+1;
@@ -458,34 +464,13 @@ public sealed class GameMenuUI : MonoBehaviour
             scroll=GUI.BeginScrollView(new Rect(530,300,540,240),scroll,new Rect(0,0,530,count*80),false,false,GUIStyle.none,GUIStyle.none);
             for(int i=0;i<count;i++)
             {
-                int n=i;string caption=i==0?"AUTO":resolutions[i-1].width+"×"+resolutions[i-1].height;
+                int n=i;string caption=i==0?GameLocalization.Get("settings.auto"):resolutions[i-1].width+"×"+resolutions[i-1].height;
                 PanelArt(new Rect(0,i*80,520,65),i%3==0?"tab_quality_1":i%3==1?"resolution_variant_2":"resolution_variant_1");
-                PanelText(new Rect(0,i*80,520,65),(resolutionIndex==i?"✓  ":"")+caption,32,i%2==0?1:-3);
+                PanelText(new Rect(0,i*80,520,65),(resolutionIndex==i?"✓  ":"")+caption,32,0);
                 if(FeedbackButton(new Rect(0,i*80,520,65),GUIContent.none,GUIStyle.none)){resolutionIndex=n;ApplyResolution(true);Sound();}
             }
             GUI.EndScrollView();
-            // Match the authored tilted rail and red grip; the invisible slider handles dragging.
-            var railMatrix=GUI.matrix;
-            RotateInCanvas(90,new Vector2(1125,420));
-            PanelArt(new Rect(1005,395,240,50),"tab_soundfx_1");
-            GUI.matrix=railMatrix;
-            float fraction=maxScroll>0?scroll.y/maxScroll:0;
-            // Native rail centerline rotated 90 degrees around (1125,420).
-            // Both the visible grip and input project onto this same sloped segment.
-            Vector2 railStart=new Vector2(1107,322),railEnd=new Vector2(1125,518);
-            Vector2 railAxis=railEnd-railStart;
-            int railId=GUIUtility.GetControlID(19383,FocusType.Passive);
-            Event railEvent=Event.current;
-            float projected=Vector2.Dot(railEvent.mousePosition-railStart,railAxis)/railAxis.sqrMagnitude;
-            Vector2 closest=Vector2.Lerp(railStart,railEnd,Mathf.Clamp01(projected));
-            if(maxScroll>0 && railEvent.type==EventType.MouseDown && railEvent.button==0 && Vector2.Distance(railEvent.mousePosition,closest)<35)
-            {heldSlider=3;GUIUtility.hotControl=railId;fraction=Mathf.Clamp01(projected);scroll.y=fraction*maxScroll;railEvent.Use();}
-            else if(railEvent.type==EventType.MouseDrag && GUIUtility.hotControl==railId)
-            {fraction=Mathf.Clamp01(projected);scroll.y=fraction*maxScroll;railEvent.Use();}
-            else if(railEvent.type==EventType.MouseUp && GUIUtility.hotControl==railId)
-            {GUIUtility.hotControl=0;railEvent.Use();}
-            Vector2 grip=Vector2.Lerp(railStart,railEnd,fraction);
-            SliderKnob(new Rect(grip.x-32.5f,grip.y-32.5f,65,65),3);
+            DrawOptionScrollRail(ref scroll,maxScroll,3);
             Rect confirm=new Rect(676,576,295,130);
             PanelArt(confirm,"button_10");
             PanelArt(new Rect(confirm.center.x-58,confirm.center.y-44,116,88),"icon_yes");
@@ -494,16 +479,109 @@ public sealed class GameMenuUI : MonoBehaviour
         }
         float e=VolumeRow(318,"SOUND FX",effects),m=VolumeRow(389,"MUSIC",music);
         if(Mathf.Abs(m-music)>.001f || Mathf.Abs(e-effects)>.001f){music=m;effects=e;SaveVolumes();}
-        PanelButton(new Rect(549,464,235,103),"button_quality","RESOLUTION",()=>dropdown=true);
+        SettingsButton(new Rect(549,464,235,103),"button_quality","settings.resolution",()=>dropdown=true);
+        SettingsButton(new Rect(815,464,290,103),"tab_1","settings.language",()=>{languageDropdown=true;languageScroll=Vector2.zero;});
         if(!IsMenu)
-            PanelButton(new Rect(676,576,295,130),"button_10","LEVEL SELECT",ReturnToLevelMenu);
+            PanelButton(new Rect(676,576,295,130),"button_10",GameLocalization.Get("menu.level_select"),ReturnToLevelMenu);
+    }
+    GUIStyle BrandStyle(int size)
+    {
+        var style=new GUIStyle(label){fontSize=size,alignment=TextAnchor.MiddleLeft};
+        style.normal.textColor=Color.white;return style;
+    }
+    string settingsFontLocale;
+    int settingsFontSize;
+    public int SettingsCaptionSize
+    {
+        get
+        {
+            if(settingsFontLocale==GameLocalization.Current)return settingsFontSize;
+            string[] keys={"settings.sfx","settings.music","settings.resolution","settings.language"};
+            Vector2[] bounds={new Vector2(202*.84f,69),new Vector2(203*.84f,59),new Vector2(235*.76f,103*.8f),new Vector2(290*.76f,103*.8f)};
+            for(int size=32;size>=8;size--)
+            {
+                bool fits=true;
+                for(int i=0;i<keys.Length;i++)
+                {
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
+                    var layout=LocalizedWindowsText.MeasureLayout(GameLocalization.Get(keys[i]),GameLocalization.Active.font,(int)bounds[i].x-4,(int)bounds[i].y-4,size);
+                    if(!layout.Fits){fits=false;break;}
+#else
+                    Vector2 measured=new GUIStyle(GUI.skin.label){font=GameFont.Main,fontSize=size,wordWrap=false}.CalcSize(new GUIContent(GameLocalization.Get(keys[i])));
+                    if(measured.x>bounds[i].x-12 || measured.y>bounds[i].y-8){fits=false;break;}
+#endif
+                }
+                if(fits){settingsFontSize=size;settingsFontLocale=GameLocalization.Current;return size;}
+            }
+            settingsFontSize=8;settingsFontLocale=GameLocalization.Current;return settingsFontSize;
+        }
+    }
+    void SettingsCaption(Rect rect,string caption,float angle)
+    {
+        var matrix=GUI.matrix;RotateInCanvas(angle,rect.center);
+        LocalizedWindowsText.Draw(rect,caption,SettingsCaptionSize,Color.white,true,fixedSize:true);
+        GUI.matrix=matrix;
+    }
+    void SettingsButton(Rect rect,string art,string key,Action action)
+    {
+        PanelArt(rect,art);
+        SettingsCaption(new Rect(rect.x+rect.width*.12f,rect.y+rect.height*.1f,rect.width*.76f,rect.height*.8f),GameLocalization.Get(key),art=="button_quality"?-7:-4);
+        if(FeedbackButton(rect,GUIContent.none,GUIStyle.none)){Sound();action();}
+    }
+    void DrawOptionScrollRail(ref Vector2 position,float maxScroll,int sliderKey)
+    {
+            // Match the authored tilted rail and red grip; the invisible slider handles dragging.
+            var railMatrix=GUI.matrix;
+            RotateInCanvas(90,new Vector2(1125,420));
+            PanelArt(new Rect(1005,395,240,50),"tab_soundfx_1");
+            GUI.matrix=railMatrix;
+            float fraction=maxScroll>0?position.y/maxScroll:0;
+            // Native rail centerline rotated 90 degrees around (1125,420).
+            // Both the visible grip and input project onto this same sloped segment.
+            Vector2 railStart=new Vector2(1107,322),railEnd=new Vector2(1125,518);
+            Vector2 railAxis=railEnd-railStart;
+            int railId=GUIUtility.GetControlID(19380+sliderKey,FocusType.Passive);
+            Event railEvent=Event.current;
+            float projected=Vector2.Dot(railEvent.mousePosition-railStart,railAxis)/railAxis.sqrMagnitude;
+            Vector2 closest=Vector2.Lerp(railStart,railEnd,Mathf.Clamp01(projected));
+            if(maxScroll>0 && railEvent.type==EventType.MouseDown && railEvent.button==0 && Vector2.Distance(railEvent.mousePosition,closest)<35)
+            {heldSlider=sliderKey;GUIUtility.hotControl=railId;fraction=Mathf.Clamp01(projected);position.y=fraction*maxScroll;railEvent.Use();}
+            else if(railEvent.type==EventType.MouseDrag && GUIUtility.hotControl==railId)
+            {fraction=Mathf.Clamp01(projected);position.y=fraction*maxScroll;railEvent.Use();}
+            else if(railEvent.type==EventType.MouseUp && GUIUtility.hotControl==railId)
+            {GUIUtility.hotControl=0;railEvent.Use();}
+            Vector2 grip=Vector2.Lerp(railStart,railEnd,fraction);
+            SliderKnob(new Rect(grip.x-32.5f,grip.y-32.5f,65,65),sliderKey);
+    }
+    void LanguageOptions()
+    {
+        var locales=GameLocalization.Locales;
+        float maxScroll=Mathf.Max(0,locales.Count*80-240);
+        languageScroll.y=Mathf.Clamp(languageScroll.y,0,maxScroll);
+        languageScroll=GUI.BeginScrollView(new Rect(530,300,540,240),languageScroll,new Rect(0,0,530,locales.Count*80),false,false,GUIStyle.none,GUIStyle.none);
+        for(int i=0;i<locales.Count;i++)
+        {
+            var locale=locales[i];var row=new Rect(0,i*80,520,65);
+            PanelArt(row,i%3==0?"tab_quality_1":i%3==1?"resolution_variant_2":"resolution_variant_1");
+
+            LocalizedWindowsText.Draw(new Rect(20,i*80,480,65),(GameLocalization.Current==locale.code?"✓  ":"")+locale.nativeName,32,Color.white,true,locale);
+            if(FeedbackButton(row,GUIContent.none,GUIStyle.none))
+            {GameLocalization.SetLanguage(locale.code);Sound();}
+        }
+        GUI.EndScrollView();
+        DrawOptionScrollRail(ref languageScroll,maxScroll,4);
+        Rect confirm=new Rect(676,576,295,130);
+        PanelArt(confirm,"button_10");
+        PanelArt(new Rect(confirm.center.x-58,confirm.center.y-44,116,88),"icon_yes");
+        if(FeedbackButton(confirm,GUIContent.none,GUIStyle.none)){Sound();languageDropdown=false;}
     }
     float VolumeRow(float y,string name,float value)
     {
         bool musicRow=name=="MUSIC";
         Rect plate=musicRow?new Rect(549,y,203,59):new Rect(570,y,202,69);
         PanelArt(plate,musicRow?"tab_music":"tab_soundfx");
-        PanelText(plate,name,32,musicRow?-2:4);
+        var captionRect=new Rect(plate.x+plate.width*.08f,plate.y,plate.width*.84f,plate.height);
+        SettingsCaption(captionRect,GameLocalization.Get(musicRow?"settings.music":"settings.sfx"),musicRow?-2:4);
         if(FeedbackButton(plate,new GUIContent("",value>0?"Mute":"Unmute"),GUIStyle.none))
         {
             string restoreKey=PreferencePrefix+(musicRow?"music.restore":"effects.restore");
@@ -549,4 +627,3 @@ public sealed class MenuAudioGain : MonoBehaviour
     float original;bool captured;
     public void Apply(AudioSource source,float gain){if(!captured){original=source.volume;captured=true;}source.volume=original*gain;}
 }
-

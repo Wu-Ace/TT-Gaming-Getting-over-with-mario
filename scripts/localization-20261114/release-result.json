@@ -1,0 +1,12 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"result\": \"Released private fonts before replacing same-family Myanmar file\",\n  \"elapsed_ms\": 358,\n  \"logs\": [],\n  \"log_count\": 0\n}"
+      }
+    ]
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

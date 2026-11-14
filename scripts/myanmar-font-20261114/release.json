@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "script": "LocalizedWindowsText.Release();return \"Released private fonts before replacing same-family Myanmar file\";",
+    "summary": "Release cached private fonts before replacing Myanmar font file"
+  }
+}

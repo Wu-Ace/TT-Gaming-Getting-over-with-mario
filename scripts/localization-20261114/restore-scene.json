@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "summary": "Restore original clean editor scene after localization acceptance",
+    "script": "if(UnityEditor.EditorApplication.isPlayingOrWillChangePlaymode)throw new System.Exception(\"Stop Play before restoring editor scene.\");\nvar scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();\nif(scene.isDirty)throw new System.Exception(\"Do not discard newly unsaved edits.\");\nstring previous=UnityEditor.SessionState.GetString(\"LocalizationAcceptance.OriginalScene\",\"\");\nif(!string.IsNullOrEmpty(previous) && scene.path!=previous)UnityEditor.SceneManagement.EditorSceneManager.OpenScene(previous);\nUnityEngine.Time.timeScale=1;\nreturn new{restoredScene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().path,dirty=UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty,playing=UnityEditor.EditorApplication.isPlaying};\n"
+  },
+  "name": "exec_editor_script"
+}

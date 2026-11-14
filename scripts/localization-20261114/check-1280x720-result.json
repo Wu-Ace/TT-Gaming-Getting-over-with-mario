@@ -1,0 +1,12 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 13290,\n  \"logs\": [],\n  \"log_count\": 0\n}"
+      }
+    ]
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

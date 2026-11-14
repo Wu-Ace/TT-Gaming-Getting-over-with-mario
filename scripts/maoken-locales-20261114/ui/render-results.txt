@@ -1,0 +1,4 @@
+en: home/levels/settings rendered
+zh-Hans: home/levels/settings rendered
+zh-Hant: home/levels/settings rendered
+Isolated language preference write/read passed; source checks preserve scene IDs and save keys.

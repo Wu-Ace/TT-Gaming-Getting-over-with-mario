@@ -1,0 +1,2 @@
+ko: home/levels/settings rendered
+Isolated language preference write/read passed; source checks preserve scene IDs and save keys.

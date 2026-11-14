@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "script": "var t=typeof(UnityEditor.EditorWindow).Assembly.GetType(\"UnityEditor.GameView\"); var windows=UnityEngine.Resources.FindObjectsOfTypeAll(t); foreach(var w in windows){var p=t.GetProperty(\"selectedSizeIndex\",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.NonPublic);p.SetValue(w,0);((UnityEditor.EditorWindow)w).Repaint();}return new{restoredFreeAspect=true};",
+    "summary": "Restore original Free Aspect GameView"
+  },
+  "name": "exec_editor_script"
+}

@@ -1,0 +1,1 @@
+PASS: Kanit font selected; all Thai table characters covered (with configured fallback).

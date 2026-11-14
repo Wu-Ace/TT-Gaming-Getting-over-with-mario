@@ -1,0 +1,24 @@
+de: home/levels/settings rendered
+en: home/levels/settings rendered
+es: home/levels/settings rendered
+fr: home/levels/settings rendered
+id: home/levels/settings rendered
+pt-BR: home/levels/settings rendered
+ru: home/levels/settings rendered
+tr: home/levels/settings rendered
+vi: home/levels/settings rendered
+az: home/levels/settings rendered
+bg: home/levels/settings rendered
+el: home/levels/settings rendered
+hr: home/levels/settings rendered
+hu: home/levels/settings rendered
+it: home/levels/settings rendered
+ms: home/levels/settings rendered
+nl: home/levels/settings rendered
+pl: home/levels/settings rendered
+ro: home/levels/settings rendered
+sv: home/levels/settings rendered
+uk: home/levels/settings rendered
+zh-Hans: home/levels/settings rendered
+zh-Hant: home/levels/settings rendered
+Isolated language preference write/read passed; source checks preserve scene IDs and save keys.

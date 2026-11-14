@@ -1,0 +1,181 @@
+{
+  "status": "PASS",
+  "generatedUtc": "2026-11-14T15:35:51.3602278Z",
+  "results": [
+    {
+      "locale": "ar",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "de",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "en",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "es",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "fr",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "id",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "ja",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "pt-BR",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "ru",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "th",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "tr",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "vi",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "az",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "bg",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "el",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "he",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "hr",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "hu",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "it",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "ko",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "ms",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "my",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "nl",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "pl",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "ro",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "sv",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "uk",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "zh-Hans",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "zh-Hant",
+      "keys": 22,
+      "coverage": "PASS",
+      "translationReview": "draft; native review pending"
+    }
+  ],
+  "failures": []
+}

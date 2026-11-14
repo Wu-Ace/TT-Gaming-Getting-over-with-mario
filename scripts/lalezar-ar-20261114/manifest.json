@@ -1,0 +1,58 @@
+[
+  {
+    "file": "Assets/Resources/Localization/ar.json",
+    "sha256": "8D9E9954179C3ED27BE1441309856EFF8E02B3489A8A7948EEE1090E3CE9D5A2"
+  },
+  {
+    "file": "Assets/StreamingAssets/LocalizationFonts/Lalezar-Regular.ttf",
+    "sha256": "87AC2CEFAD76A91ADBE9286A6D3D683741C781A7DDF841914479674D7939A8CD"
+  },
+  {
+    "file": "Assets/StreamingAssets/LocalizationFonts/Lalezar-OFL.txt",
+    "sha256": "679AA100AFF7AE176C9891CCE8C536841647789F77BAAD6A062131CE17EFF1EE"
+  },
+  {
+    "file": "scripts/localization-20261114/build-tables.ps1",
+    "sha256": "7D2DC11BF438757F69CB7D1D9ED3AC47BC215F5C41400681B8EF2AB03B4617E2"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\lalezar-ar-20261114\\ar.json.before",
+    "sha256": "8288FF2216B17457412C8B159CAEDDE7A068400F4AF3ADAA1C87FF279E5563FF"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\lalezar-ar-20261114\\build-tables.ps1.before",
+    "sha256": "8093A02BD6156BDA02FC597CEE260B9F5492615E702C8FC5BD28169A3309697A"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\lalezar-ar-20261114\\check-ui.json",
+    "sha256": "D738D28AE2E5ACB409C3DD0F88B8F4CF263258000F3F5A3EAC38DA6CD32A5055"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\lalezar-ar-20261114\\coverage.txt",
+    "sha256": "6157996E88AFEC3B737DA5841A6A30B0E5FEF97B0745346D5E7E31DB2158D6AB"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\lalezar-ar-20261114\\ui\\ar-home.png",
+    "sha256": "4136FFFF9A831F2175D717505FDA3CF0FEEDC67B35A1561654A32FAB0489DE6C"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\lalezar-ar-20261114\\ui\\ar-levels.png",
+    "sha256": "618FA070DB9295234E034FB9D78365F7CBF31F39A22D30C4527833E984656C9D"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\lalezar-ar-20261114\\ui\\ar-settings.png",
+    "sha256": "36D792807BBFDC6F5B79619B4E5B9C3AA8F8AF20E61EC88F7A4118E8C8EA6B3F"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\lalezar-ar-20261114\\ui\\language-picker.png",
+    "sha256": "88BBBCD438E5A13323EA75A2F7540B291671AF256AD3B3DD2A970A62A271F9DB"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\lalezar-ar-20261114\\ui\\render-results.txt",
+    "sha256": "B5ED734CDD462F26D63176E20AAAFC4B4E267E93F0524F8F4619A67ED113D9E1"
+  },
+  {
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\lalezar-ar-20261114\\ui\\resolution-picker.png",
+    "sha256": "6ECDC8C65DD21A40881E9B00E8A90F0D909ADCA753D13033E3BDB37988B975F6"
+  }
+]

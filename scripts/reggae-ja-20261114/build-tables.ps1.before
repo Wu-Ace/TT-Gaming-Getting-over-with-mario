@@ -1,0 +1,15 @@
+$ErrorActionPreference='Stop'
+$root=Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
+$out=Join-Path $root 'Assets/Resources/Localization'
+New-Item -ItemType Directory -Force $out | Out-Null
+$keys=@('menu.start','settings.title','menu.exit','menu.level_select','level.number','level.play','menu.back','settings.resolution','settings.auto','settings.sfx','settings.music','settings.language','result.complete','hud.progress','loading.progress','error.level_unavailable','level.name.1','level.name.2','level.name.3','level.name.4','level.name.5')
+$fonts=@{'ar'='Lalezar';'he'='Noto Sans Hebrew';'th'='Noto Sans Thai';'my'='Noto Sans Myanmar';'ja'='Noto Sans CJK JP';'ko'='Noto Sans CJK KR';'zh-Hans'='MaokenAssortedSans';'zh-Hant'='MaokenAssortedSans';'en'='MaokenAssortedSans'}
+foreach($line in Get-Content -LiteralPath (Join-Path $PSScriptRoot 'translations.tsv') -Encoding utf8){
+ $cells=$line.Split('|'); if($cells.Length -ne $keys.Count+3){throw "Incorrect column count: $($cells[0]) $($cells.Length)"}
+ $entries=@();for($i=0;$i -lt $keys.Count;$i++){
+  $entries+=@{key=$keys[$i];text=$cells[$i+3];context=if($keys[$i] -match 'progress'){'Loading/HUD; {progress}=integer 0–100; max two lines'}elseif($keys[$i] -eq 'level.number'){'Level card heading; {number}=two digit display number; max two lines'}else{'Menu/settings/result or level card; fit within authored button/card; max two lines'}}
+ }
+ $entries+=@{key='level.collectibles';text='{coins}/{total}  ★ {stars}/3';context='Level card: coins collected, total coins, stars earned; numeric icon label'}
+ $font=if($fonts.ContainsKey($cells[0])){$fonts[$cells[0]]}else{'Noto Sans'}
+ @{code=$cells[0];nativeName=$cells[1];priority=$cells[2];font=$font;rtl=($cells[0] -in @('ar','he'));review='draft; native review pending';entries=$entries}|ConvertTo-Json -Depth 5|Set-Content -LiteralPath (Join-Path $out ($cells[0]+'.json')) -Encoding utf8
+}

@@ -1,0 +1,12 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"success\": true,\n  \"message\": \"Game view resolution set to 1920x1080.\",\n  \"data\": {\n    \"action\": \"set_resolution\",\n    \"width\": 1920,\n    \"height\": 1080,\n    \"selectedIndex\": 3,\n    \"wasAdded\": false,\n    \"label\": \"Full HD\"\n  }\n}"
+      }
+    ]
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

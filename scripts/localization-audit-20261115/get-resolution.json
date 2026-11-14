@@ -1,0 +1,6 @@
+{
+  "arguments": {
+    "action": "get_resolution"
+  },
+  "name": "unity_gameview"
+}

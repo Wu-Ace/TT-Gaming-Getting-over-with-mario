@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "script": "return LocalizedWindowsText.SelectedFontByteLength(\"Noto Sans Myanmar\");",
+    "summary": "Identify selected Myanmar font revision size"
+  }
+}

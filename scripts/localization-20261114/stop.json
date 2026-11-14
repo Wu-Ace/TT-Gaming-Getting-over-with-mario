@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "action": "stop",
+    "timeoutSeconds": 50
+  },
+  "name": "unity_editor"
+}

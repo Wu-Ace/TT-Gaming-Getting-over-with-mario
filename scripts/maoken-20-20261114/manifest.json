@@ -1,0 +1,502 @@
+[
+  {
+    "sha256": "8D9E9954179C3ED27BE1441309856EFF8E02B3489A8A7948EEE1090E3CE9D5A2",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\ar.json"
+  },
+  {
+    "sha256": "4D43BFF0064D63E8B928C1E499E800C614772D1C093ABE6BC2D42D4481B7E2BF",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\az.json"
+  },
+  {
+    "sha256": "2CAE0F9123DB3E499D530288B60CBFAC0980265C4526C001C5CC77790D17CD79",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\bg.json"
+  },
+  {
+    "sha256": "71802562E3754F4A0159AFE9E409C533D3EDCF157678C9796D070F73DC147846",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\de.json"
+  },
+  {
+    "sha256": "187537D9E6B029F928B056E30724B50B88624E5C09556B924DDB1A80A17AFFC2",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\el.json"
+  },
+  {
+    "sha256": "459BADC1D5178D5129F0D99B941D984997AF8D53E4B0015925964C47566665AB",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\en.json"
+  },
+  {
+    "sha256": "8D59A96FB94592D69DAFDD70420AD2B886723781FB0D6F572034791619E9F3FF",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\es.json"
+  },
+  {
+    "sha256": "611DFAE3C85E1F132FE37622BA6583C06735D90B968FB4B1D872325D4FE60A74",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\fr.json"
+  },
+  {
+    "sha256": "2B1472F8B728A5AE67E55FB7B8D96D8DA57E83B0E2735A8ABF3DB4F2CFBD8F66",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\he.json"
+  },
+  {
+    "sha256": "3F185FECE535238C3A18147D9B5555CF27DCE1C028A4E39DB49453A16F58D21E",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\hr.json"
+  },
+  {
+    "sha256": "02142CE1BE47533F3B417DDA90D890674C0840A58DEFA517F93B754A20C6BB93",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\hu.json"
+  },
+  {
+    "sha256": "627C10E2292229A1199CA6EE7CDB90A1440AC3DE3A29E6DA84E09CF90968E158",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\id.json"
+  },
+  {
+    "sha256": "D294432379E12A21FB600A1790111E542DBD81C6A6B2C414DE8B8C60CF2EF74E",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\it.json"
+  },
+  {
+    "sha256": "F70B946BDED34DF14BDAE0204EB8DC316A0C4BEE961BEED3AE7A1FCFB0B6C6E3",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\ja.json"
+  },
+  {
+    "sha256": "05CA78B21F005A44D2C0614A5B2C81A05801F9C1488780DB79088E60A2EF9E50",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\ko.json"
+  },
+  {
+    "sha256": "03E8351D43572DD633E2A4AF8BBE4A930EE63CCC752E5AE29DDD2A13ABA39505",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\ms.json"
+  },
+  {
+    "sha256": "1A7FA343A097DF62A0D12309165E2FC48298454E068D63B92B5C8812CFD0305F",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\my.json"
+  },
+  {
+    "sha256": "98B5E176671257C98F8DDEC44DF65E9F35C456B5E1AB0765D60706DBC8F59D3E",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\nl.json"
+  },
+  {
+    "sha256": "5C25DFA4F454B3853B899AD9FAB82E7EAFE99E1572234D083C837734A00E1869",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\pl.json"
+  },
+  {
+    "sha256": "43678CAE3D4C3F242BA3B16BE09B86511EBFC4C07382AE7545CA4939B7B699B5",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\pt-BR.json"
+  },
+  {
+    "sha256": "6D299ACA9D84EFB87DCE338F54C934BEC88C1E4C849FF3B91AD32BE19CF49061",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\ro.json"
+  },
+  {
+    "sha256": "7742EF9F4697D8CA4B28601F470CD32BC0F2CAD9403FDAFD5C9CBDFB6C5B8995",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\ru.json"
+  },
+  {
+    "sha256": "C2CDF42030AC00BD01796983932821C053678E8281BAC6F69C15B592F883F455",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\sv.json"
+  },
+  {
+    "sha256": "44D5FAA01DD4FA054EFB64F5AB471516587A3FAD2555E6A2DD56652930C80DC7",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\th.json"
+  },
+  {
+    "sha256": "B66F05551381FBFD001A9DFDF95510D30B72F1887EA035E4E14929AE9A14DDB9",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\tr.json"
+  },
+  {
+    "sha256": "CCB1DCFF0161A014EA4AFE2F335A77B603BBA19A8B8AD182E10842DECBA319A2",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\uk.json"
+  },
+  {
+    "sha256": "E9C5B0F876D9581AEF062B3915920CEC2189586EE9AFBE2CC2A0B25C6D6FBF25",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\vi.json"
+  },
+  {
+    "sha256": "5CEE544311BB2E91D235CF6FC1D9626BB8517A78A3AA651C4FD8D2A67CCF996A",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\zh-Hans.json"
+  },
+  {
+    "sha256": "6C578C38423CB746D3FDD419534DF6A4770BCF1843D6519257D1540EC9E490BD",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\zh-Hant.json"
+  },
+  {
+    "sha256": "3A9658976AA17A1D45DB3066F07E55BC7B6C8C5B4E9570AFFBB57E90F4FCCCD5",
+    "file": "scripts/localization-20261114/build-tables.ps1"
+  },
+  {
+    "sha256": "D5D1870586CA93366118000FF51EDDBE66A92C92DA1C01AE7074D331516CAD39",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\az.json.before"
+  },
+  {
+    "sha256": "77A48C2988B2B848DEC74D6527141EF3690D26CCA13EB2FC36C5AA5135CFA9D0",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\bg.json.before"
+  },
+  {
+    "sha256": "23969DA1B9C4817A6B8B0844B1507AC7E726B334B8D34987F1F542CBC70FDFA7",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\build-tables.ps1.before"
+  },
+  {
+    "sha256": "8E45088EF093A5F2F809CD40C78C70A97F4217F6E944751B976E08E38F0E6CE5",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\check-ui.json"
+  },
+  {
+    "sha256": "32F726C9DC61A03F373FA47BCB100D2518E6F3F384886D95B3EA8D2475B905C4",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\de.json.before"
+  },
+  {
+    "sha256": "0705548CC685021418986E3672E871473C441A00ADC67233B9367CEDFB03E199",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\el.json.before"
+  },
+  {
+    "sha256": "8EBCC72C8DCBA6E6E265B0A760F4F8C1A390226468BA3F35E8BCC0370F9599CA",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\es.json.before"
+  },
+  {
+    "sha256": "555C52500FF5410219A8CEDB5C7A8D5C309DFB5E53A8C9E708A618BBD470C205",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\fr.json.before"
+  },
+  {
+    "sha256": "C255F71C5557210DFE27F86CD26553CA856CA1494E808ACAB9FDB9495177802F",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\hr.json.before"
+  },
+  {
+    "sha256": "6C31A0B2D3ED3D46EFAAC2FE05CC9A89AC9C9C6573BBDD17814230D1860A6CAB",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\hu.json.before"
+  },
+  {
+    "sha256": "FCEAF9B5234A95DDB33036230A48D91EAC906999EC74C75E66536EC5A72BE54C",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\id.json.before"
+  },
+  {
+    "sha256": "448D0D296B5B835A0CDC172DEA6B8226B4C3B85CAE6BCD8744B5B083CD2BE400",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\it.json.before"
+  },
+  {
+    "sha256": "8BDB6BA17658EF93ABDB77AC8C05BDC13CB126FF38E008508145A576ABD44A5B",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ms.json.before"
+  },
+  {
+    "sha256": "DBF21B13105CFE4D42ADE49BB5D8F788B2D219520D0B242215D9B041C0A3FF63",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\nl.json.before"
+  },
+  {
+    "sha256": "D958BA40A909E6001489E2107CF6D3FE3E1F15D55FEC339360862CD312C674EF",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\pl.json.before"
+  },
+  {
+    "sha256": "060203119DB4EDF927BD0455E447B1F224F37F5BC590EF0A3A044F3702AFA9C4",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\pt-BR.json.before"
+  },
+  {
+    "sha256": "DAE2AA562CC04D05BFB4ED9552801EF17A05D8BBEB0F1DDAD054CEFD5AEEE451",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ro.json.before"
+  },
+  {
+    "sha256": "3BE6744AB5AC5525ECFD64077625DB533C7E1E9B74CEFF1E0D336BD13AD5B8DA",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ru.json.before"
+  },
+  {
+    "sha256": "1B862DF700229970C7913FB719966CFC69B9DB52592B058286B6F7DB12B960A8",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\sv.json.before"
+  },
+  {
+    "sha256": "717413D2424BBBAD46062B18FD0DDD5F5709A370D1D6408A0F855CE52A480549",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\table-check.json"
+  },
+  {
+    "sha256": "DDAE34A33DA7A83606C8FD62793721732A5F83DE5180D190E626C290B2D779BB",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\tr.json.before"
+  },
+  {
+    "sha256": "137FE417B7F4C76863340BE7B9F2D280060CFE127E702C19E253A949A3E97115",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\uk.json.before"
+  },
+  {
+    "sha256": "E6CC9ADCE95FBF1600A1D82EAA5CCF15F0C8AA7C639E7EFA474FE3A575E57EAC",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\vi.json.before"
+  },
+  {
+    "sha256": "D019631EEDD6721CB683356D47701E6EC0481D10FD34AB6F5D1E42B858BC5B49",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\az-home.png"
+  },
+  {
+    "sha256": "594AD867E77C0E1E3842F9EFD8A775D94584B452B7A854BB8A0001116EE5B8F1",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\az-levels.png"
+  },
+  {
+    "sha256": "998ECC3BA8A287E5D6ED196C4B826A8C41E0F780673ADB75B6A03C3E232B195C",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\az-settings.png"
+  },
+  {
+    "sha256": "204E9C63155094121037C29D709045AD7765209A95C38CB060ADDEF086C1C8B4",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\bg-home.png"
+  },
+  {
+    "sha256": "00B002558CF04ED3F633F5F4C9F99850C6CA54E41E40DCD069BDA0131855F9A1",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\bg-levels.png"
+  },
+  {
+    "sha256": "8683EE445117C81536DBBDA288B005617C0F87E91504CE77C4FC7AB9BDED5B84",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\bg-settings.png"
+  },
+  {
+    "sha256": "D43CCF90CD527D109206C2E25915CA6B4B3204A25AD4388D1A895E6B2E30CB3A",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\de-home.png"
+  },
+  {
+    "sha256": "21B5B9E139EB41A0BE0DE68C4ACC4F64AD6C091C879D4475A68D8D6919F43C39",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\de-levels.png"
+  },
+  {
+    "sha256": "9887A90F031A0ACA13F6038EB3E377E8C7907756D75A228E37AF90295B76C235",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\de-settings.png"
+  },
+  {
+    "sha256": "38552DDA97A75FBADC9F52072264819BD8711E3D131DB7D8384BBA7E3E7963CF",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\el-home.png"
+  },
+  {
+    "sha256": "8E894B74B739938C5E4B8536A153AB254D0E297ACF468236DD7AE74F5649CF03",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\el-levels.png"
+  },
+  {
+    "sha256": "54144E39F0874C52C9A61C07E54C071247FFB1A5883ED31615F93AD3D71700FB",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\el-settings.png"
+  },
+  {
+    "sha256": "030C2529BDA2C60BCEA9DD49DBC323E1A9648C301FB57281EBE41EDD6341BD04",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\en-home.png"
+  },
+  {
+    "sha256": "754C4910FED028BEAA21910F985D76003F0DEC6AD3F5F727A372E32902D06624",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\en-levels.png"
+  },
+  {
+    "sha256": "65F7785C3A2C91B1D4CCB50F2C0BA9C03DFD8628169C8CD6416EE4098C288645",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\en-settings.png"
+  },
+  {
+    "sha256": "EF56B14B76DD65CB504C8E3E68B5CA76AF7F43EF05508EB7E58D21BE5E535ED4",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\es-home.png"
+  },
+  {
+    "sha256": "2CACC0E2F27F7BD55033C3B11B4D14997354980F7B9743C6850D9DCCC7A2150B",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\es-levels.png"
+  },
+  {
+    "sha256": "7EF6ADBE6698EF7F0851E83C8FFCE65E836AF5A2EBFE0D884F8BA9F8BC1990B4",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\es-settings.png"
+  },
+  {
+    "sha256": "7B26665D1D575C88D5F0BC19FDF0F003A1E1E653A740750B9B3263A22F7526E4",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\fr-home.png"
+  },
+  {
+    "sha256": "F8F80F40E35C6A3B6DDA6E932B32AB303127BB0F9D6CE26CD53F6D4451BEE403",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\fr-levels.png"
+  },
+  {
+    "sha256": "824D604FEAA3719FE5E3F636FE7B623BE1B70B100233907EE4A87043ACFC4748",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\fr-settings.png"
+  },
+  {
+    "sha256": "E59D4A0B3363861234CA2BC73D679BF6111EFA2B731015502345FB20F5B5B1F5",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\hr-home.png"
+  },
+  {
+    "sha256": "7355D2A8EE1B6439986C97568521DA435770698C195B5267E8A12D358EA1B5A3",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\hr-levels.png"
+  },
+  {
+    "sha256": "B3C3A334EEF97CCAFF035FA8BAA768EF2EA8971CF6D724E701A5F854F2F541B9",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\hr-settings.png"
+  },
+  {
+    "sha256": "0A8E1605046B4CA17055725766A8A86CDCD38BA0B896F241E0791EB02249D2FF",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\hu-home.png"
+  },
+  {
+    "sha256": "37B6DC529C05BCCAEF31C7223558972762415EB49A2F5A93EFF8C2FEAF981FFE",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\hu-levels.png"
+  },
+  {
+    "sha256": "5EA37123A4BBC76BDE324F1BB67B28D1F59CC8BE475864F19EDFAB5208C58CD7",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\hu-settings.png"
+  },
+  {
+    "sha256": "E1451E3C0B458D92329968B771E2D66803CA4C4E117E937CEE493D8BC315BBAF",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\id-home.png"
+  },
+  {
+    "sha256": "71FE3CC6CAFDB8D9E6CFB84C7B23E84E89546D47075CCB5F7D5FC5788F040A2F",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\id-levels.png"
+  },
+  {
+    "sha256": "A10E076CD04B8C73A35E17838362403F71AD214A8BC988BDBCDE3FDE081753C5",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\id-settings.png"
+  },
+  {
+    "sha256": "F593ACB025578B75F63CE10B61F58B68399C6DA3355C7431C3423F6272D415BF",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\it-home.png"
+  },
+  {
+    "sha256": "B79DD43F254E8FBA30390D0ECD2AC6E3042E555BE8F6C53710479F0E537796C8",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\it-levels.png"
+  },
+  {
+    "sha256": "22C556C0E5F21E7D414F551CC677E24E84D9D4D3787B67A7BB292CAB81A0B71F",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\it-settings.png"
+  },
+  {
+    "sha256": "61CE33323CAFC4D261EA0C6A8824593F45364BBE65466AF5B807A8C71B46FC33",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\language-picker.png"
+  },
+  {
+    "sha256": "0B4C20E42958986DA46912F2B3B2D55B6B9FAFAA91132064BD98C9CAB56F98EA",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\ms-home.png"
+  },
+  {
+    "sha256": "DF4F43FF76AF6F5A0B88A82B674C72D1638498FE953FF0E7F901E697FEC9A2F1",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\ms-levels.png"
+  },
+  {
+    "sha256": "6CFF3755BBFB9FA796092A103CB8C4014FD11B0E0228D39CE8DD2C26965AF944",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\ms-settings.png"
+  },
+  {
+    "sha256": "F02AB6978CE2A308039FC53A60EB0F74E13EC7E45F24EAF9CAAE0DCB12B8404D",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\nl-home.png"
+  },
+  {
+    "sha256": "F853B2126DA52A988985E263E0BA75B892957B41C04772FB8463E274CAEE6BD5",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\nl-levels.png"
+  },
+  {
+    "sha256": "75D8D3066ABF974EA55A45D20E160084FC35C9D4F6D46D978278CA24ED09F4CC",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\nl-settings.png"
+  },
+  {
+    "sha256": "C4A102D471669D6B57CF7B33C4A07D1AF38196AD34A0FF20AAB9019B29C257AD",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\pl-home.png"
+  },
+  {
+    "sha256": "41F5408A5CCE0769DA443E2790AA06ABF0A23F69C7B33F3591087CBCA2347386",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\pl-levels.png"
+  },
+  {
+    "sha256": "C20B949E0B5D97931B7AF4891D9D8E3AEE5CCE2528C755650C83C60D5884B309",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\pl-settings.png"
+  },
+  {
+    "sha256": "88764FC159F926DC3AA89D9B87BA86589A16D587E7F600F194D39B4C49095E5B",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\pt-BR-home.png"
+  },
+  {
+    "sha256": "8E42477BE824BBF2B14BEA9FD0B1207E5283BD0C3A2B863AF75B8714F56F0449",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\pt-BR-levels.png"
+  },
+  {
+    "sha256": "98798301AF05EEE6D08DB841ACA9F1B5B3283C9D208F89552C4AD4BAF00C1E0C",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\pt-BR-settings.png"
+  },
+  {
+    "sha256": "1FE77E4DF2CA6E1257E0FD50AF1EB6E013462641FB3698DD6DCE7912E0CC2452",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\render-results.txt"
+  },
+  {
+    "sha256": "8CD6E34F6CFA1020A2CE212580D4234C3A36DAFED7F328739B092C3BBDA1303D",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\resolution-picker.png"
+  },
+  {
+    "sha256": "4E2C3CCBA7A2A93865AC3DF33FEB7923A7E025206833B84CA333D12F9D83CCA7",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\ro-home.png"
+  },
+  {
+    "sha256": "703F5885B1BBF941E3F30A32D10B3C3A1ED71C99823906A8789E8B94C8EDF399",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\ro-levels.png"
+  },
+  {
+    "sha256": "71FB4EE70367150365BBD44852F073108804C99EC34EA0A524275657400E1678",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\ro-settings.png"
+  },
+  {
+    "sha256": "30D999EBDAAADD126445679728178DA591CB329913BF5B45948111D900E4CCF7",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\ru-home.png"
+  },
+  {
+    "sha256": "B1746EC8280FB2D0797F0E7D210AF459457FC1FB672A223136DBDC6405582114",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\ru-levels.png"
+  },
+  {
+    "sha256": "223AD1B18FE8266F10FBD1E19653F7D3DA101916FB2307AC9750870C51357330",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\ru-settings.png"
+  },
+  {
+    "sha256": "B3D6DE99E3F323149692BDF673C58EA70CCC0F8DBCD76076950246A69FAB01CA",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\sv-home.png"
+  },
+  {
+    "sha256": "0562E58364A0D59F6A2A4C72BDA0DCF4B160AED268570CC7850E6982ED628434",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\sv-levels.png"
+  },
+  {
+    "sha256": "523A9C20BAAFEE438A621E38EA321796B33621CABC4BB255EC351A145B7940C7",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\sv-settings.png"
+  },
+  {
+    "sha256": "99C8591A6838D9224B8D294DAF3C03DFAF2C260185A0AAD2CE5EC8226AD9A627",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\tr-home.png"
+  },
+  {
+    "sha256": "19CB47F0D9E4DB7E4B689B4F4C3BB04C67218368A50BFFAB5EAFAF2DC1D41EF1",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\tr-levels.png"
+  },
+  {
+    "sha256": "2A91FF48622F730B2274745B04B2A510AB0D8F6E7DDFD08AFF3EE44155D81DC8",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\tr-settings.png"
+  },
+  {
+    "sha256": "87A87C4EE2276A2B28334F8F928DFB34F9114FEB3420315564BC932F1A4EFA82",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\uk-home.png"
+  },
+  {
+    "sha256": "BDA9384500FEAF58A897D2E56D6D2B367CE302B6BAA86C458774B6E67B1ABBDE",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\uk-levels.png"
+  },
+  {
+    "sha256": "85383A7D1F3A3DAD7A5CC1D1512EC98F284473186B4536083B7C5284F97633FA",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\uk-settings.png"
+  },
+  {
+    "sha256": "F77CA629F4CE7A0830893FB31E20ABCEF9C4292A8DB408B24374A2F47A8824A8",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\vi-home.png"
+  },
+  {
+    "sha256": "14781DB76FF36EADC200FF09042A0B55F1B5C195BE08EA644E192498164DD532",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\vi-levels.png"
+  },
+  {
+    "sha256": "099F31316E1770BB54E08E03448D6642A57A467E7970B63DF6B3BAB64D19F774",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\vi-settings.png"
+  },
+  {
+    "sha256": "3CBFC0080FCE50456E58996E8F8ECAFF0BC629A5C0C7C6F99E5554D64C4D204B",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\zh-Hans-home.png"
+  },
+  {
+    "sha256": "19B0D7B532693032C080C5417D0DFA8867C28039F4956C7F95EBBD0D085CD3C0",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\zh-Hans-levels.png"
+  },
+  {
+    "sha256": "090CC8B62D39DE2A36BE9D58DE1BA87144FF26854DAA0CB697CF33DB1F0DAE26",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\zh-Hans-settings.png"
+  },
+  {
+    "sha256": "804EDFB2C4D9A61C117A09F234FF2843557706C46D706DDE6FBBD853F60CCDCD",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\zh-Hant-home.png"
+  },
+  {
+    "sha256": "C55D66BC18EBFF480B9D3E52AA0754F1A98651BB65AE9572D03806DE3096C89D",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\zh-Hant-levels.png"
+  },
+  {
+    "sha256": "D7DFECDDF8E28C3AD68AF3B747E40BDD93464CA0859128A2C71D84405A27AA70",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\maoken-20-20261114\\ui\\zh-Hant-settings.png"
+  }
+]

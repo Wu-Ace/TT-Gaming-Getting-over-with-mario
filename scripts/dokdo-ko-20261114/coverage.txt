@@ -1,0 +1,1 @@
+PASS: Dokdo font selected; all Korean table characters covered (with configured fallback).

@@ -1,0 +1,8 @@
+{
+  "arguments": {
+    "action": "set_resolution",
+    "height": 720,
+    "width": 1280
+  },
+  "name": "unity_gameview"
+}

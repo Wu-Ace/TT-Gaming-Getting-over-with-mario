@@ -1,0 +1,62 @@
+[
+  {
+    "sha256": "2D34CD361B7C9318DE7B5EC688B86527456C6A5202329B052A5F5E48FA53E4CE",
+    "file": "Assets/Scripts/LocalizedWindowsText.cs"
+  },
+  {
+    "sha256": "52C27FE2643E3E34BAE3B3D8865F6A2400E8C955D1ADBE311979EA012116EB13",
+    "file": "Assets/StreamingAssets/LocalizationFonts/NotoSansMyanmar-User-Regular.ttf"
+  },
+  {
+    "sha256": "7216FDC43507E474AED8AE96659EF2601881DCC278C3EBC2C13F0EEF65CDDBF7",
+    "file": "Assets/StreamingAssets/LocalizationFonts/NotoSansMyanmar-OFL.txt"
+  },
+  {
+    "sha256": "C6593063FFF05131D5BFD3E74B3CF0D3882DACEFFFB867A6E95E8D6CCE3515A8",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\myanmar-font-20261114\\check-ui.json"
+  },
+  {
+    "sha256": "ED4226BECD7E309DB19B2A4A54A987B501F5A7E66882D8B67145249363AAA0AB",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\myanmar-font-20261114\\coverage.txt"
+  },
+  {
+    "sha256": "5E12EC1E0F904DE691F7B72B22B21EBB5E92B3B10738523897CD96C63F6B4C98",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\myanmar-font-20261114\\font-size.json"
+  },
+  {
+    "sha256": "35EB7FD9744BA2247770C11EDE44554571E5F99CFF1F4AD92AC0DC9C1B297333",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\myanmar-font-20261114\\LocalizedWindowsText.cs.before"
+  },
+  {
+    "sha256": "9DD2BC76A822A974EFCE803A4B07302D14D01D5C1FA9E33A258D15A9CB513A7D",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\myanmar-font-20261114\\NotoSansMyanmar-Regular.ttf.before"
+  },
+  {
+    "sha256": "59FD18CF3334B2B65C207DC764C0C5214D908FD6D27653BB7B07E6F9F7879E29",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\myanmar-font-20261114\\release.json"
+  },
+  {
+    "sha256": "61CE33323CAFC4D261EA0C6A8824593F45364BBE65466AF5B807A8C71B46FC33",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\myanmar-font-20261114\\ui\\language-picker.png"
+  },
+  {
+    "sha256": "F331F2D6FDE9A303B26BB5916F2E9F3A168DB9897F29F65F8E07B4DB8141B29B",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\myanmar-font-20261114\\ui\\my-home.png"
+  },
+  {
+    "sha256": "A7B8C82B5CD7404F35567E4B956D14CD0EA1DA28074F010AF1B3E938D39BA5CF",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\myanmar-font-20261114\\ui\\my-levels.png"
+  },
+  {
+    "sha256": "2452D413285230FF0F9E6BC605E343CB2385E657D200100F60DD3B9FDB46E083",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\myanmar-font-20261114\\ui\\my-settings.png"
+  },
+  {
+    "sha256": "E9BB5DEDFA77D84EDB7D0E86B082E069C9CAD7BA41EDDFBC05A2DA0AF0A4DABE",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\myanmar-font-20261114\\ui\\render-results.txt"
+  },
+  {
+    "sha256": "8CD6E34F6CFA1020A2CE212580D4234C3A36DAFED7F328739B092C3BBDA1303D",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\myanmar-font-20261114\\ui\\resolution-picker.png"
+  }
+]

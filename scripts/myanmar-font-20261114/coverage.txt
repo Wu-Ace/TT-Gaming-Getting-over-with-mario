@@ -1,0 +1,1 @@
+PASS: Noto Sans Myanmar font selected; all Myanmar table characters covered (with configured fallback).

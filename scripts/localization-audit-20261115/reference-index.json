@@ -1,0 +1,374 @@
+[
+  {
+    "game": "Mindustry",
+    "code": "ar",
+    "status": "unavailable in release"
+  },
+  {
+    "game": "Mindustry",
+    "code": "az",
+    "status": "unavailable in release"
+  },
+  {
+    "game": "Mindustry",
+    "code": "el",
+    "status": "unavailable in release"
+  },
+  {
+    "game": "Mindustry",
+    "code": "he",
+    "status": "unavailable in release"
+  },
+  {
+    "game": "Mindustry",
+    "code": "hr",
+    "status": "unavailable in release"
+  },
+  {
+    "game": "Mindustry",
+    "code": "es",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_es.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_es.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "id",
+    "status": "unavailable in release"
+  },
+  {
+    "game": "Mindustry",
+    "code": "it",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_it.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_it.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "ja",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_ja.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ja.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "ko",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_ko.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ko.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "ms",
+    "status": "unavailable in release"
+  },
+  {
+    "game": "Mindustry",
+    "code": "my",
+    "status": "unavailable in release"
+  },
+  {
+    "game": "Mindustry",
+    "code": "de",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_de.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_de.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "nl",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_nl.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_nl.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "pl",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_pl.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pl.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "en",
+    "error": "fetch failed"
+  },
+  {
+    "game": "Mindustry",
+    "code": "hu",
+    "error": "fetch failed"
+  },
+  {
+    "game": "Mindustry",
+    "code": "fr",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_fr.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_fr.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "ro",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_ro.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_ro.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "pt-BR",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_pt_BR.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_pt_BR.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "uk",
+    "status": "unavailable in release"
+  },
+  {
+    "game": "Mindustry",
+    "code": "sv",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_sv.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_sv.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "bg",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_bg.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_bg.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "zh-Hans",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_zh_CN.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_CN.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "vi",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_vi.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_vi.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "tr",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_tr.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_tr.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "ru",
+    "error": "fetch failed"
+  },
+  {
+    "game": "Mindustry",
+    "code": "th",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_th.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_th.properties"
+  },
+  {
+    "game": "Mindustry",
+    "code": "zh-Hant",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/Anuken/Mindustry/v146/core/assets/bundles/bundle_zh_TW.properties",
+    "source": "https://github.com/Anuken/Mindustry/blob/v146/core/assets/bundles/bundle_zh_TW.properties"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "az",
+    "status": "unavailable in release"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "de",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/de.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/de.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "el",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/el.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/el.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "fr",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/fr.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/fr.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "hr",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/hr.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hr.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "ar",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/ar.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ar.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "he",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/he.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/he.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "hu",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/hu.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/hu.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "es",
+    "error": "fetch failed"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "en",
+    "error": "fetch failed"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "ms",
+    "status": "unavailable in release"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "my",
+    "status": "unavailable in release"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "id",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/id.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/id.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "bg",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/bg.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/bg.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "ja",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/ja.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ja.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "it",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/it.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/it.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "ro",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/ro.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ro.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "pl",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/pl.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pl.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "pt-BR",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/pt_BR.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/pt_BR.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "ru",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/ru.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ru.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "ko",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/ko.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/ko.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "nl",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/nl.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/nl.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "sv",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/sv.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/sv.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "tr",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/tr.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/tr.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "uk",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/uk.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/uk.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "th",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/th.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/th.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "zh-Hans",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/zh_CN.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_CN.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "vi",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/vi.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/vi.po"
+  },
+  {
+    "game": "SuperTuxKart",
+    "code": "zh-Hant",
+    "status": "downloaded",
+    "url": "https://raw.githubusercontent.com/supertuxkart/stk-code/1.4/data/po/zh_TW.po",
+    "source": "https://github.com/supertuxkart/stk-code/blob/1.4/data/po/zh_TW.po"
+  }
+]

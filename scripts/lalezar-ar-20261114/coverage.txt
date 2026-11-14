@@ -1,0 +1,1 @@
+PASS: Lalezar font selected; all Arabic table characters covered (with configured fallback).

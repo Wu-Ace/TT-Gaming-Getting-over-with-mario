@@ -1,0 +1,1331 @@
+{
+  "status": "PASS",
+  "generatedUtc": "2026-11-14T16:41:52.4116174Z",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "records": [
+    {
+      "locale": "ar",
+      "font": "Lalezar",
+      "coverage": "PASS",
+      "settingsSize": 26,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 26,
+          "lines": [
+            "المؤثرات الصوتية"
+          ],
+          "width": 155.0,
+          "height": 40.0
+        },
+        {
+          "key": "settings.music",
+          "size": 26,
+          "lines": [
+            "الموسيقى"
+          ],
+          "width": 95.0,
+          "height": 40.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 26,
+          "lines": [
+            "دقة العرض"
+          ],
+          "width": 98.0,
+          "height": 40.0
+        },
+        {
+          "key": "settings.language",
+          "size": 26,
+          "lines": [
+            "اللغة"
+          ],
+          "width": 44.0,
+          "height": 40.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "de",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 25,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 25,
+          "lines": [
+            "Soundeffekte"
+          ],
+          "width": 155.0,
+          "height": 26.0
+        },
+        {
+          "key": "settings.music",
+          "size": 25,
+          "lines": [
+            "Musik"
+          ],
+          "width": 67.0,
+          "height": 26.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 25,
+          "lines": [
+            "Auflösung"
+          ],
+          "width": 116.0,
+          "height": 26.0
+        },
+        {
+          "key": "settings.language",
+          "size": 25,
+          "lines": [
+            "Sprache"
+          ],
+          "width": 95.0,
+          "height": 26.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "en",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 32,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 32,
+          "lines": [
+            "Sound FX"
+          ],
+          "width": 145.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.music",
+          "size": 32,
+          "lines": [
+            "Music"
+          ],
+          "width": 86.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 32,
+          "lines": [
+            "Resolution"
+          ],
+          "width": 156.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.language",
+          "size": 32,
+          "lines": [
+            "Language"
+          ],
+          "width": 141.0,
+          "height": 33.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "es",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Efectos de",
+            "sonido"
+          ],
+          "width": 145.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Música"
+          ],
+          "width": 93.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Resolución"
+          ],
+          "width": 145.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Idioma"
+          ],
+          "width": 90.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "fr",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Effets",
+            "sonores"
+          ],
+          "width": 106.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Musique"
+          ],
+          "width": 110.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Résolution"
+          ],
+          "width": 140.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Langue"
+          ],
+          "width": 96.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "id",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Efek Suara"
+          ],
+          "width": 151.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Musik"
+          ],
+          "width": 78.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Resolusi"
+          ],
+          "width": 110.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Bahasa"
+          ],
+          "width": 98.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "ja",
+      "font": "Reggae One",
+      "coverage": "PASS",
+      "settingsSize": 32,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 32,
+          "lines": [
+            "効果音"
+          ],
+          "width": 96.0,
+          "height": 46.0
+        },
+        {
+          "key": "settings.music",
+          "size": 32,
+          "lines": [
+            "音楽"
+          ],
+          "width": 64.0,
+          "height": 46.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 32,
+          "lines": [
+            "解像度"
+          ],
+          "width": 96.0,
+          "height": 46.0
+        },
+        {
+          "key": "settings.language",
+          "size": 32,
+          "lines": [
+            "言語"
+          ],
+          "width": 64.0,
+          "height": 46.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "pt-BR",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Efeitos",
+            "sonoros"
+          ],
+          "width": 108.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Música"
+          ],
+          "width": 93.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Resolução"
+          ],
+          "width": 136.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Idioma"
+          ],
+          "width": 90.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "ru",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Звуки"
+          ],
+          "width": 82.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Музыка"
+          ],
+          "width": 106.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Разрешение"
+          ],
+          "width": 162.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Язык"
+          ],
+          "width": 68.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "th",
+      "font": "Kanit",
+      "coverage": "PASS",
+      "settingsSize": 26,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 26,
+          "lines": [
+            "เสียงเอฟเฟกต์"
+          ],
+          "width": 157.0,
+          "height": 41.0
+        },
+        {
+          "key": "settings.music",
+          "size": 26,
+          "lines": [
+            "เพลง"
+          ],
+          "width": 57.0,
+          "height": 41.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 26,
+          "lines": [
+            "ความละเอียด"
+          ],
+          "width": 135.0,
+          "height": 41.0
+        },
+        {
+          "key": "settings.language",
+          "size": 26,
+          "lines": [
+            "ภาษา"
+          ],
+          "width": 56.0,
+          "height": 41.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "tr",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Ses",
+            "Efektleri"
+          ],
+          "width": 117.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Müzik"
+          ],
+          "width": 79.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Çözünürlük"
+          ],
+          "width": 152.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Dil"
+          ],
+          "width": 34.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "vi",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Hiệu ứng",
+            "âm thanh"
+          ],
+          "width": 128.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Âm nhạc"
+          ],
+          "width": 118.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Độ phân",
+            "giải"
+          ],
+          "width": 112.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Ngôn ngữ"
+          ],
+          "width": 130.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "az",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 28,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 28,
+          "lines": [
+            "Səs",
+            "effektləri"
+          ],
+          "width": 122.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.music",
+          "size": 28,
+          "lines": [
+            "Musiqi"
+          ],
+          "width": 83.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 28,
+          "lines": [
+            "Ekran təsvir",
+            "ölçüsü"
+          ],
+          "width": 165.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.language",
+          "size": 28,
+          "lines": [
+            "Dil"
+          ],
+          "width": 33.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "bg",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Звукови",
+            "ефекти"
+          ],
+          "width": 114.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Музика"
+          ],
+          "width": 102.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Резолюция"
+          ],
+          "width": 146.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Език"
+          ],
+          "width": 63.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "el",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Ηχητικά",
+            "εφέ"
+          ],
+          "width": 110.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Μουσική"
+          ],
+          "width": 116.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Ανάλυση"
+          ],
+          "width": 120.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Γλώσσα"
+          ],
+          "width": 112.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "he",
+      "font": "Suez One",
+      "coverage": "PASS",
+      "settingsSize": 25,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 25,
+          "lines": [
+            "אפקטים קוליים"
+          ],
+          "width": 149.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.music",
+          "size": 25,
+          "lines": [
+            "מוזיקה"
+          ],
+          "width": 70.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 25,
+          "lines": [
+            "רזולוציה"
+          ],
+          "width": 85.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.language",
+          "size": 25,
+          "lines": [
+            "שפה"
+          ],
+          "width": 46.0,
+          "height": 33.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "hr",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Zvučni",
+            "efekti"
+          ],
+          "width": 91.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Glazba"
+          ],
+          "width": 91.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Razlučivost"
+          ],
+          "width": 155.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Jezik"
+          ],
+          "width": 70.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "hu",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 25,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 25,
+          "lines": [
+            "Hangeffektek"
+          ],
+          "width": 155.0,
+          "height": 26.0
+        },
+        {
+          "key": "settings.music",
+          "size": 25,
+          "lines": [
+            "Zene"
+          ],
+          "width": 56.0,
+          "height": 26.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 25,
+          "lines": [
+            "Felbontás"
+          ],
+          "width": 113.0,
+          "height": 26.0
+        },
+        {
+          "key": "settings.language",
+          "size": 25,
+          "lines": [
+            "Nyelv"
+          ],
+          "width": 66.0,
+          "height": 26.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "it",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Effetti",
+            "sonori"
+          ],
+          "width": 86.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Musica"
+          ],
+          "width": 93.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Risoluzione"
+          ],
+          "width": 152.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Lingua"
+          ],
+          "width": 89.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "ko",
+      "font": "Dokdo",
+      "coverage": "PASS",
+      "settingsSize": 32,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 32,
+          "lines": [
+            "효과음"
+          ],
+          "width": 66.0,
+          "height": 35.0
+        },
+        {
+          "key": "settings.music",
+          "size": 32,
+          "lines": [
+            "음악"
+          ],
+          "width": 44.0,
+          "height": 35.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 32,
+          "lines": [
+            "해상도"
+          ],
+          "width": 66.0,
+          "height": 35.0
+        },
+        {
+          "key": "settings.language",
+          "size": 32,
+          "lines": [
+            "언어"
+          ],
+          "width": 44.0,
+          "height": 35.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "ms",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Kesan",
+            "Bunyi"
+          ],
+          "width": 79.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Muzik"
+          ],
+          "width": 79.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Resolusi"
+          ],
+          "width": 110.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Bahasa"
+          ],
+          "width": 98.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "my",
+      "font": "Noto Sans Myanmar",
+      "coverage": "PASS",
+      "settingsSize": 15,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 15,
+          "lines": [
+            "အသံအထူးပြုလုပ်ချက်"
+          ],
+          "width": 155.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.music",
+          "size": 15,
+          "lines": [
+            "တေးဂီတ"
+          ],
+          "width": 58.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 15,
+          "lines": [
+            "ကြည်လင်ပြတ်သားမှု"
+          ],
+          "width": 133.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.language",
+          "size": 15,
+          "lines": [
+            "ဘာသာစကား"
+          ],
+          "width": 87.0,
+          "height": 33.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "nl",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 21,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 21,
+          "lines": [
+            "Geluidseffecten"
+          ],
+          "width": 150.0,
+          "height": 22.0
+        },
+        {
+          "key": "settings.music",
+          "size": 21,
+          "lines": [
+            "Muziek"
+          ],
+          "width": 69.0,
+          "height": 22.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 21,
+          "lines": [
+            "Resolutie"
+          ],
+          "width": 89.0,
+          "height": 22.0
+        },
+        {
+          "key": "settings.language",
+          "size": 21,
+          "lines": [
+            "Taal"
+          ],
+          "width": 43.0,
+          "height": 22.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "pl",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 25,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 25,
+          "lines": [
+            "Efekty",
+            "dźwiękowe"
+          ],
+          "width": 127.0,
+          "height": 52.0
+        },
+        {
+          "key": "settings.music",
+          "size": 25,
+          "lines": [
+            "Muzyka"
+          ],
+          "width": 90.0,
+          "height": 26.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 25,
+          "lines": [
+            "Rozdzielczość"
+          ],
+          "width": 163.0,
+          "height": 26.0
+        },
+        {
+          "key": "settings.language",
+          "size": 25,
+          "lines": [
+            "Język"
+          ],
+          "width": 69.0,
+          "height": 26.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "ro",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 29,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 29,
+          "lines": [
+            "Efecte",
+            "sonore"
+          ],
+          "width": 92.0,
+          "height": 60.0
+        },
+        {
+          "key": "settings.music",
+          "size": 29,
+          "lines": [
+            "Muzică"
+          ],
+          "width": 94.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 29,
+          "lines": [
+            "Rezoluție"
+          ],
+          "width": 124.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 29,
+          "lines": [
+            "Limbă"
+          ],
+          "width": 82.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "sv",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 27,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 27,
+          "lines": [
+            "Ljudeffekter"
+          ],
+          "width": 157.0,
+          "height": 29.0
+        },
+        {
+          "key": "settings.music",
+          "size": 27,
+          "lines": [
+            "Musik"
+          ],
+          "width": 72.0,
+          "height": 29.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 27,
+          "lines": [
+            "Upplösning"
+          ],
+          "width": 138.0,
+          "height": 29.0
+        },
+        {
+          "key": "settings.language",
+          "size": 27,
+          "lines": [
+            "Språk"
+          ],
+          "width": 75.0,
+          "height": 29.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "uk",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 28,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 28,
+          "lines": [
+            "Звуки"
+          ],
+          "width": 78.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.music",
+          "size": 28,
+          "lines": [
+            "Музика"
+          ],
+          "width": 97.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 28,
+          "lines": [
+            "Роздільність"
+          ],
+          "width": 160.0,
+          "height": 30.0
+        },
+        {
+          "key": "settings.language",
+          "size": 28,
+          "lines": [
+            "Мова"
+          ],
+          "width": 71.0,
+          "height": 30.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "zh-Hans",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 32,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 32,
+          "lines": [
+            "音效"
+          ],
+          "width": 64.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.music",
+          "size": 32,
+          "lines": [
+            "音乐"
+          ],
+          "width": 64.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 32,
+          "lines": [
+            "分辨率"
+          ],
+          "width": 96.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.language",
+          "size": 32,
+          "lines": [
+            "语言"
+          ],
+          "width": 64.0,
+          "height": 33.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    },
+    {
+      "locale": "zh-Hant",
+      "font": "MaokenAssortedSans",
+      "coverage": "PASS",
+      "settingsSize": 32,
+      "captions": [
+        {
+          "key": "settings.sfx",
+          "size": 32,
+          "lines": [
+            "音效"
+          ],
+          "width": 64.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.music",
+          "size": 32,
+          "lines": [
+            "音樂"
+          ],
+          "width": 64.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.resolution",
+          "size": 32,
+          "lines": [
+            "解析度"
+          ],
+          "width": 96.0,
+          "height": 33.0
+        },
+        {
+          "key": "settings.language",
+          "size": 32,
+          "lines": [
+            "語言"
+          ],
+          "width": 64.0,
+          "height": 33.0
+        }
+      ],
+      "translationReview": "draft; native review pending"
+    }
+  ],
+  "failures": []
+}

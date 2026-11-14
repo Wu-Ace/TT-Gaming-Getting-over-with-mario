@@ -1,0 +1,66 @@
+[
+  {
+    "sha256": "F70B946BDED34DF14BDAE0204EB8DC316A0C4BEE961BEED3AE7A1FCFB0B6C6E3",
+    "file": "Assets/Resources/Localization/ja.json"
+  },
+  {
+    "sha256": "AF08AB391DC73091052C2AF8D8949833DC8382921006B3ABC5F5AE2F2052715E",
+    "file": "Assets/Scripts/GameMenuUI.cs"
+  },
+  {
+    "sha256": "257F35DEEF5ACE5DBFF8C9FFEF9ECF21ACA4D3FE423909D9D539B7282E056C06",
+    "file": "Assets/StreamingAssets/LocalizationFonts/ReggaeOne-Regular.ttf"
+  },
+  {
+    "sha256": "D1E11860CFCDD5A72B4BD8B8D35F07A42B83879A99AF7BF75DE57C334A2B570B",
+    "file": "Assets/StreamingAssets/LocalizationFonts/ReggaeOne-OFL.txt"
+  },
+  {
+    "sha256": "23969DA1B9C4817A6B8B0844B1507AC7E726B334B8D34987F1F542CBC70FDFA7",
+    "file": "scripts/localization-20261114/build-tables.ps1"
+  },
+  {
+    "sha256": "7D2DC11BF438757F69CB7D1D9ED3AC47BC215F5C41400681B8EF2AB03B4617E2",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\reggae-ja-20261114\\build-tables.ps1.before"
+  },
+  {
+    "sha256": "3D6993FB1C5568D28B501C383DF530BF579DBDA0DEAAAD207C5068522164363E",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\reggae-ja-20261114\\check-ui.json"
+  },
+  {
+    "sha256": "9EF0DA5E9B339D020CBD14714E846B06910C424818ACCD4FECF08B64F80F38BA",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\reggae-ja-20261114\\coverage.txt"
+  },
+  {
+    "sha256": "CA5439039E8BD2D67A6B536DAC6ACA599D38F10E77B17304B6417136387D1B47",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\reggae-ja-20261114\\GameMenuUI.cs.before"
+  },
+  {
+    "sha256": "C115860DB7BF64CE7A136F07606EFD926492AB1A6DAC2B558D4366B4366DFB19",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\reggae-ja-20261114\\ja.json.before"
+  },
+  {
+    "sha256": "DE10FDB194ADB9E5C0B2D20D061BF5AF946A038C497700C9BEFA86679DD4A516",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\reggae-ja-20261114\\ui\\ja-home.png"
+  },
+  {
+    "sha256": "97D4463B9062A175446EE39C580719BC6584849D00DD3C59FCB530BF4864364B",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\reggae-ja-20261114\\ui\\ja-levels.png"
+  },
+  {
+    "sha256": "C0E09A910BE6F4DFD2EAABEC2F06CB438194564287AAA2AA498EAE250334CA1D",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\reggae-ja-20261114\\ui\\ja-settings.png"
+  },
+  {
+    "sha256": "58175DAD345B276771921162B00DB29399FE77923794DC908BAB1105610A8D9E",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\reggae-ja-20261114\\ui\\language-picker.png"
+  },
+  {
+    "sha256": "942FD47F1289FFF3DB1BD693A0EFBAF7113D3A4AB0669D44D27D7D421903997E",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\reggae-ja-20261114\\ui\\render-results.txt"
+  },
+  {
+    "sha256": "8CD6E34F6CFA1020A2CE212580D4234C3A36DAFED7F328739B092C3BBDA1303D",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\reggae-ja-20261114\\ui\\resolution-picker.png"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"result\": \"{ restoredScene = Assets/Scenes/Level02_Jungle.unity, dirty = False, playing = False }\",\n  \"elapsed_ms\": 1132,\n  \"logs\": [],\n  \"log_count\": 0\n}"
+      }
+    ]
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

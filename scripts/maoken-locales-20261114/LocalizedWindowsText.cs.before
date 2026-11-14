@@ -1,0 +1,151 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Runtime.InteropServices;
+using UnityEngine;
+
+// Windows-only text rasterizer. GDI performs logical-order shaping, BiDi and
+// script-aware line breaking; the existing IMGUI transform/clip/input stay intact.
+public static class LocalizedWindowsText
+{
+    static readonly Dictionary<string,Texture2D> cache=new Dictionary<string,Texture2D>();
+    static long cacheBytes;
+    static bool fontsLoaded;
+    public static void Clear()
+    {
+        foreach(var texture in cache.Values)if(texture!=null)UnityEngine.Object.Destroy(texture);
+        cache.Clear();cacheBytes=0;
+    }
+    public static void Release()
+    {
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
+        Shutdown();
+#else
+        Clear();
+#endif
+    }
+    public static void Draw(Rect rect,string text,int size,Color color,bool center,GameLocalization.Locale locale=null,bool brand=false)
+    {
+        if(string.IsNullOrEmpty(text) || Event.current.type!=EventType.Repaint || rect.width<=0 || rect.height<=0)return;
+        locale=locale??GameLocalization.Active;
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
+        EnsureFonts();
+        float scale=Mathf.Clamp(GUI.matrix.MultiplyVector(Vector3.right).magnitude,1,2);
+        int width=Mathf.Clamp(Mathf.CeilToInt(rect.width*scale),1,4096),height=Mathf.Clamp(Mathf.CeilToInt(rect.height*scale),1,1024);
+        string face=brand?"Maoken Assorted Sans":locale.font;
+        string key=face+"|"+locale.rtl+"|"+center+"|"+width+"|"+height+"|"+size+"|"+text;
+        Texture2D texture;
+        if(!cache.TryGetValue(key,out texture))
+        {
+            if(cacheBytes>24*1024*1024)Clear();
+            texture=Rasterize(text,face,width,height,Mathf.RoundToInt(size*scale),locale.rtl,center);
+            texture.Apply(false,true);
+            cache.Add(key,texture);cacheBytes+=(long)width*height*4;
+        }
+        var old=GUI.color;GUI.color=old*color;
+        GUI.DrawTexture(rect,texture,ScaleMode.StretchToFill,true);
+        GUI.color=old;
+#else
+        // Other targets require an equivalent shaping backend before shipping.
+        var style=new GUIStyle(GUI.skin.label){font=GameFont.Main,fontSize=size,wordWrap=true,alignment=center?TextAnchor.MiddleCenter:(locale.rtl?TextAnchor.MiddleRight:TextAnchor.MiddleLeft)};
+        style.normal.textColor=color;GUI.Label(rect,text,style);
+#endif
+    }
+#if UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN
+    static readonly List<string> registered=new List<string>();
+    public static void EnsureFonts()
+    {
+        if(fontsLoaded)return;
+        string path=Path.Combine(Application.streamingAssetsPath,"LocalizationFonts");
+        if(Directory.Exists(path))foreach(string file in Directory.GetFiles(path))
+            if(file.EndsWith(".ttf",StringComparison.OrdinalIgnoreCase)||file.EndsWith(".otf",StringComparison.OrdinalIgnoreCase))
+            {if(AddFontResourceEx(file,0x10,IntPtr.Zero)>0)registered.Add(file);else Debug.LogError("Unable to register bundled font: "+file);}
+        fontsLoaded=true;
+        Application.quitting-=Shutdown;Application.quitting+=Shutdown;
+    }
+    static void Shutdown(){Clear();foreach(var file in registered)RemoveFontResourceEx(file,0x10,IntPtr.Zero);registered.Clear();fontsLoaded=false;}
+    public static string InspectCoverage(string text,string face)
+    {
+        EnsureFonts();IntPtr dc=CreateCompatibleDC(IntPtr.Zero);
+        IntPtr font=CreateFont(-32,0,0,0,400,0,0,0,1,0,0,4,0,face),previous=SelectObject(dc,font);
+        try
+        {
+            var actual=new System.Text.StringBuilder(128);GetTextFace(dc,actual.Capacity,actual);
+            if(!string.Equals(actual.ToString(),face,StringComparison.OrdinalIgnoreCase))return "Font substitution: "+face+" -> "+actual;
+            ushort[] glyphs=new ushort[text.Length];
+            if(GetGlyphIndices(dc,text,text.Length,glyphs,1)==uint.MaxValue)return "Glyph query failed: "+face;
+            foreach(string fallback in new[]{"Noto Sans","Segoe UI Symbol"})
+            {
+                IntPtr fallbackFont=CreateFont(-32,0,0,0,400,0,0,0,1,0,0,4,0,fallback);
+                SelectObject(dc,fallbackFont);var fallbackGlyphs=new ushort[text.Length];
+                if(GetGlyphIndices(dc,text,text.Length,fallbackGlyphs,1)!=uint.MaxValue)
+                    for(int i=0;i<glyphs.Length;i++)if(glyphs[i]==65535 && fallbackGlyphs[i]!=65535)glyphs[i]=fallbackGlyphs[i];
+                SelectObject(dc,font);DeleteObject(fallbackFont);
+            }
+            var missing=new System.Text.StringBuilder();
+            for(int i=0;i<glyphs.Length;i++)if(glyphs[i]==65535 && !char.IsWhiteSpace(text[i]))missing.Append(" U+"+((int)text[i]).ToString("X4"));
+            return missing.ToString();
+        }
+        finally {SelectObject(dc,previous);DeleteObject(font);DeleteDC(dc);}
+    }
+    [StructLayout(LayoutKind.Sequential)] struct NativeRect {public int left,top,right,bottom;public NativeRect(int w,int h){left=top=0;right=w;bottom=h;}}
+    [StructLayout(LayoutKind.Sequential)] struct BitmapInfo
+    {
+        public uint size;public int width,height;public ushort planes,bits;public uint compression,imageSize;public int xppm,yppm;public uint used,important;
+    }
+    public static Texture2D Rasterize(string text,string face,int width,int height,int requestedSize,bool rtl,bool center)
+    {
+        EnsureFonts();
+        IntPtr dc=CreateCompatibleDC(IntPtr.Zero),bitmap=IntPtr.Zero,oldBitmap=IntPtr.Zero,font=IntPtr.Zero,oldFont=IntPtr.Zero;
+        if(dc==IntPtr.Zero)throw new InvalidOperationException("Cannot create text drawing context.");
+        try
+        {
+            var info=new BitmapInfo{size=40,width=width,height=-height,planes=1,bits=32};IntPtr bits;
+            bitmap=CreateDIBSection(dc,ref info,0,out bits,IntPtr.Zero,0);
+            if(bitmap==IntPtr.Zero)throw new InvalidOperationException("Cannot create text bitmap.");
+            oldBitmap=SelectObject(dc,bitmap);
+            byte[] data=new byte[checked(width*height*4)];Marshal.Copy(data,0,bits,data.Length);
+            SetBkMode(dc,1);SetTextColor(dc,0x00ffffff);
+            uint flags=0x10u|0x800u|(rtl?0x20000u:0u)|(center?1u:rtl?2u:0u);
+            NativeRect measured=new NativeRect();
+            // Fit both dimensions using the shaped, wrapped measurement, not character count.
+            int minSize=Math.Max(10,requestedSize/2),fontSize=requestedSize;
+            for(;;)
+            {
+                font=CreateFont(-fontSize,0,0,0,400,0,0,0,1,0,0,4,0,face);
+                if(font==IntPtr.Zero)throw new InvalidOperationException("Cannot create font: "+face);
+                IntPtr previous=SelectObject(dc,font);if(oldFont==IntPtr.Zero)oldFont=previous;
+                measured=new NativeRect(width-8,height-4);DrawText(dc,text,text.Length,ref measured,flags|0x400u);
+                if((measured.bottom<=height-4 && measured.right-measured.left<=width-8) || fontSize<=minSize)break;
+                SelectObject(dc,oldFont);DeleteObject(font);font=IntPtr.Zero;fontSize-=2;
+            }
+            var target=new NativeRect(width-4,height-2);target.left=4;target.top=Math.Max(1,(height-measured.bottom)/2);
+            DrawText(dc,text,text.Length,ref target,flags);GdiFlush();Marshal.Copy(bits,data,0,data.Length);
+            var pixels=new Color32[width*height];
+            for(int y=0;y<height;y++)for(int x=0;x<width;x++)
+            {int i=(y*width+x)*4;byte alpha=Math.Max(data[i],Math.Max(data[i+1],data[i+2]));pixels[(height-1-y)*width+x]=new Color32(255,255,255,alpha);}
+            var texture=new Texture2D(width,height,TextureFormat.RGBA32,false){name="Localized text",hideFlags=HideFlags.HideAndDontSave,filterMode=FilterMode.Bilinear,wrapMode=TextureWrapMode.Clamp};
+            texture.SetPixels32(pixels);texture.Apply(false,false);return texture;
+        }
+        finally
+        {
+            if(oldFont!=IntPtr.Zero)SelectObject(dc,oldFont);if(font!=IntPtr.Zero)DeleteObject(font);
+            if(oldBitmap!=IntPtr.Zero)SelectObject(dc,oldBitmap);if(bitmap!=IntPtr.Zero)DeleteObject(bitmap);DeleteDC(dc);
+        }
+    }
+    [DllImport("gdi32.dll")] static extern IntPtr CreateCompatibleDC(IntPtr dc);
+    [DllImport("gdi32.dll")] static extern bool DeleteDC(IntPtr dc);
+    [DllImport("gdi32.dll")] static extern IntPtr SelectObject(IntPtr dc,IntPtr obj);
+    [DllImport("gdi32.dll")] static extern bool DeleteObject(IntPtr obj);
+    [DllImport("gdi32.dll")] static extern bool GdiFlush();
+    [DllImport("gdi32.dll")] static extern int SetBkMode(IntPtr dc,int mode);
+    [DllImport("gdi32.dll")] static extern uint SetTextColor(IntPtr dc,uint color);
+    [DllImport("gdi32.dll")] static extern IntPtr CreateDIBSection(IntPtr dc,ref BitmapInfo info,uint usage,out IntPtr bits,IntPtr section,uint offset);
+    [DllImport("gdi32.dll",CharSet=CharSet.Unicode,EntryPoint="CreateFontW")] static extern IntPtr CreateFont(int height,int width,int escape,int orientation,int weight,uint italic,uint underline,uint strike,uint charset,uint output,uint clip,uint quality,uint family,string face);
+    [DllImport("user32.dll",CharSet=CharSet.Unicode,EntryPoint="DrawTextW")] static extern int DrawText(IntPtr dc,string text,int count,ref NativeRect rect,uint flags);
+    [DllImport("gdi32.dll",CharSet=CharSet.Unicode,EntryPoint="AddFontResourceExW")] static extern int AddFontResourceEx(string path,uint flags,IntPtr reserved);
+    [DllImport("gdi32.dll",CharSet=CharSet.Unicode,EntryPoint="RemoveFontResourceExW")] static extern bool RemoveFontResourceEx(string path,uint flags,IntPtr reserved);
+    [DllImport("gdi32.dll",CharSet=CharSet.Unicode,EntryPoint="GetTextFaceW")] static extern int GetTextFace(IntPtr dc,int count,System.Text.StringBuilder face);
+    [DllImport("gdi32.dll",CharSet=CharSet.Unicode,EntryPoint="GetGlyphIndicesW")] static extern uint GetGlyphIndices(IntPtr dc,string text,int count,[Out] ushort[] glyphs,uint flags);
+#endif
+}

@@ -1,0 +1,12 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"result\": \"{ status = PASS, generatedUtc = 2026/11/14 16:29:43, results = System.Collections.Generic.List`1[System.Object], failures = System.Collections.Generic.List`1[System.String] }\",\n  \"elapsed_ms\": 3335,\n  \"logs\": [],\n  \"log_count\": 0\n}"
+      }
+    ]
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

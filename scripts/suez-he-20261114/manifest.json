@@ -1,0 +1,58 @@
+[
+  {
+    "sha256": "12E8CBC8C67D2273E86C39770B0D37A4E55EC9B02BED86E754200EDAA3CCEDD5",
+    "file": "Assets/Resources/Localization/he.json"
+  },
+  {
+    "sha256": "2918DA136A51BF8EFD783D3D916CBE6C2CF7A3F6DE034EE631DAA0D0084A3C4F",
+    "file": "Assets/StreamingAssets/LocalizationFonts/SuezOne-Regular.ttf"
+  },
+  {
+    "sha256": "FE21BD2C0166E944CA98975B321C27D91FF202A0B10F158941DF5717D99608A6",
+    "file": "Assets/StreamingAssets/LocalizationFonts/SuezOne-OFL.txt"
+  },
+  {
+    "sha256": "141ABEEA53A675B6DEC03F0B2DC8F02493177F04AACD35E83607A22512CF58D4",
+    "file": "scripts/localization-20261114/build-tables.ps1"
+  },
+  {
+    "sha256": "0910AA1EE0A5455AF42380CD1D601BFEB968CD56AE2A293B7EFDC1ECE35DB2CD",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\suez-he-20261114\\build-tables.ps1.before"
+  },
+  {
+    "sha256": "187F3AE8A42A1D3ED4E3BFD4E585917A632B6A2D8623934ABCCCF164CE1EE447",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\suez-he-20261114\\check-ui.json"
+  },
+  {
+    "sha256": "BC22AD29D0C99A2D36EDAFA7B963838C375B5701C0CB67C6883C15729380E7CF",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\suez-he-20261114\\coverage.txt"
+  },
+  {
+    "sha256": "2B1472F8B728A5AE67E55FB7B8D96D8DA57E83B0E2735A8ABF3DB4F2CFBD8F66",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\suez-he-20261114\\he.json.before"
+  },
+  {
+    "sha256": "19FEF29152CDAAAD45A0B811BA0652AC894922C480825B6099CFD2189ECF8793",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\suez-he-20261114\\ui\\he-home.png"
+  },
+  {
+    "sha256": "AD4817D48772D4EA1668F83FD3F47A9CAEBCB39D9E21071F05D16DBF05EB6CAC",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\suez-he-20261114\\ui\\he-levels.png"
+  },
+  {
+    "sha256": "E82169568388E55716D3C14D866BAC536111F7D14D470F84C90E6E9B336C0C57",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\suez-he-20261114\\ui\\he-settings.png"
+  },
+  {
+    "sha256": "61CE33323CAFC4D261EA0C6A8824593F45364BBE65466AF5B807A8C71B46FC33",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\suez-he-20261114\\ui\\language-picker.png"
+  },
+  {
+    "sha256": "A2B27AD5AD780E4CD2D7F31709AB29C2DB4172AFB0A14EF6C641421B4B4F8B8D",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\suez-he-20261114\\ui\\render-results.txt"
+  },
+  {
+    "sha256": "8CD6E34F6CFA1020A2CE212580D4234C3A36DAFED7F328739B092C3BBDA1303D",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\suez-he-20261114\\ui\\resolution-picker.png"
+  }
+]

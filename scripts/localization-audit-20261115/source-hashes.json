@@ -1,0 +1,138 @@
+[
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\GameMenuUI.cs",
+    "Hash": "BE9D1109B50B2DCFDD5875F81BD3B4DA712FDC32A48B795597CF59182AE985A0"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\LocalizedWindowsText.cs",
+    "Hash": "F5099756C0091E2C06C63D7C1A44D3911B9BD2B92322907A1F4160DEABDC92F8"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\GameLocalization.cs",
+    "Hash": "96A6E15C4EEB9BDEB63C08889EA1E08F49FA6CD11C2B3E9F0F0550597F084E25"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\CampaignLevel.cs",
+    "Hash": "9583397995B1FBB409E17162BEA848387475439C237141E3EF9AFA9C15300A72"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Editor\\LocalizationResourceCleanup.cs",
+    "Hash": "53936276E69F1C8A5E8327A68065D7E4416CAA97432FC0445815E97E3E271F33"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\ar.json",
+    "Hash": "61F4426A4FD9BDE1866749B57DB3837FF0753C7229A899FE61BD86065B1FC5D7"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\az.json",
+    "Hash": "F0D1EE040922B3979DAD1532D51436EFAFB39B8E2544FD05F5190C5F15C2FFB0"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\bg.json",
+    "Hash": "2CAE0F9123DB3E499D530288B60CBFAC0980265C4526C001C5CC77790D17CD79"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\de.json",
+    "Hash": "71802562E3754F4A0159AFE9E409C533D3EDCF157678C9796D070F73DC147846"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\el.json",
+    "Hash": "187537D9E6B029F928B056E30724B50B88624E5C09556B924DDB1A80A17AFFC2"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\en.json",
+    "Hash": "459BADC1D5178D5129F0D99B941D984997AF8D53E4B0015925964C47566665AB"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\es.json",
+    "Hash": "84BE09B59686DCF84424858DB955947885614588D3C6ED14816476AE1BB325A0"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\fr.json",
+    "Hash": "611DFAE3C85E1F132FE37622BA6583C06735D90B968FB4B1D872325D4FE60A74"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\he.json",
+    "Hash": "84D1F52FB7D9698AE1DE430B94DC527ECA0E85F1D2EDABB333D41FF22347C01D"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\hr.json",
+    "Hash": "3F185FECE535238C3A18147D9B5555CF27DCE1C028A4E39DB49453A16F58D21E"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\hu.json",
+    "Hash": "02142CE1BE47533F3B417DDA90D890674C0840A58DEFA517F93B754A20C6BB93"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\id.json",
+    "Hash": "627C10E2292229A1199CA6EE7CDB90A1440AC3DE3A29E6DA84E09CF90968E158"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\it.json",
+    "Hash": "D294432379E12A21FB600A1790111E542DBD81C6A6B2C414DE8B8C60CF2EF74E"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\ja.json",
+    "Hash": "F70B946BDED34DF14BDAE0204EB8DC316A0C4BEE961BEED3AE7A1FCFB0B6C6E3"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\ko.json",
+    "Hash": "ED612F79031A8D0B6230BFD96661B0C5D1F2C8FACC4115E34B755D53E54DB26F"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\ms.json",
+    "Hash": "03E8351D43572DD633E2A4AF8BBE4A930EE63CCC752E5AE29DDD2A13ABA39505"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\my.json",
+    "Hash": "E8DCB4523C97C90AA4101D25A225C25F248B8481CB5B2E724AAC738C24F6E8BD"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\nl.json",
+    "Hash": "98B5E176671257C98F8DDEC44DF65E9F35C456B5E1AB0765D60706DBC8F59D3E"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\pl.json",
+    "Hash": "5C25DFA4F454B3853B899AD9FAB82E7EAFE99E1572234D083C837734A00E1869"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\pt-BR.json",
+    "Hash": "43678CAE3D4C3F242BA3B16BE09B86511EBFC4C07382AE7545CA4939B7B699B5"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\ro.json",
+    "Hash": "6D299ACA9D84EFB87DCE338F54C934BEC88C1E4C849FF3B91AD32BE19CF49061"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\ru.json",
+    "Hash": "7742EF9F4697D8CA4B28601F470CD32BC0F2CAD9403FDAFD5C9CBDFB6C5B8995"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\sv.json",
+    "Hash": "C2CDF42030AC00BD01796983932821C053678E8281BAC6F69C15B592F883F455"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\th.json",
+    "Hash": "550A943494DA60F299563639BA350A59CABFC940A04B6DD1DD66DA0A5DF37127"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\tr.json",
+    "Hash": "B66F05551381FBFD001A9DFDF95510D30B72F1887EA035E4E14929AE9A14DDB9"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\uk.json",
+    "Hash": "CCB1DCFF0161A014EA4AFE2F335A77B603BBA19A8B8AD182E10842DECBA319A2"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\vi.json",
+    "Hash": "8FA34832CF44A05F59946374164008935030CAF9E9F9E6D8B06A0F9FBFAE759C"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\zh-Hans.json",
+    "Hash": "5CEE544311BB2E91D235CF6FC1D9626BB8517A78A3AA651C4FD8D2A67CCF996A"
+  },
+  {
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Resources\\Localization\\zh-Hant.json",
+    "Hash": "6C578C38423CB746D3FDD419534DF6A4770BCF1843D6519257D1540EC9E490BD"
+  }
+]

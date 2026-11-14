@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "summary": "Prepare clean main menu for isolated localization UI acceptance",
+    "script": "if(UnityEditor.EditorApplication.isPlayingOrWillChangePlaymode)throw new System.Exception(\"Editor must be stopped before isolated UI acceptance.\");\nif(UnityEngine.SceneManagement.SceneManager.sceneCount!=1)throw new System.Exception(\"Preserve additive scene setup: UI test not started.\");\nvar scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();\nif(scene.isDirty)throw new System.Exception(\"Unsaved scene: UI test not started.\");\nUnityEditor.SessionState.SetString(\"LocalizationAcceptance.OriginalScene\",scene.path);\nUnityEditor.SceneManagement.EditorSceneManager.OpenScene(\"Assets/Scenes/MainMenu.unity\");\nreturn \"Prepared clean MainMenu; original editor scene recorded for restoration.\";\n"
+  },
+  "name": "exec_editor_script"
+}

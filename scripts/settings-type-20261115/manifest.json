@@ -1,0 +1,142 @@
+[
+  {
+    "sha256": "97CFCFB2AC5A2877484C6B7043179AF73A220AD13E563F374C59EB2155BBF1DA",
+    "file": "Assets/Scripts/GameMenuUI.cs"
+  },
+  {
+    "sha256": "CC128A523BD31F59FC3CF7CA943A28FF167534CBB5C26DC7894F9FC3FA09BF29",
+    "file": "Assets/Scripts/LocalizedWindowsText.cs"
+  },
+  {
+    "sha256": "446BCA8ABF32B163D613E0C8A86DE6A3F188F872EB1D18BFA5B42D9AEE9C1822",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\ar-settings.png"
+  },
+  {
+    "sha256": "AFA15D0BCEF64F61B04037C1275DDCF9B490F5953BA8764946001D3B23A37AFE",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\az-settings.png"
+  },
+  {
+    "sha256": "9479B3CCBEFAFA17FC0A1DD2608B98D73D1625F6E7A75296AA9618F9E3F08962",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\bg-settings.png"
+  },
+  {
+    "sha256": "79B909602A84A143D81D20FE2976FCBC792CB63958F5820E47DB5224A5CA502D",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\check.json"
+  },
+  {
+    "sha256": "E39A3F2A64CEE3FE125225591CB56283EC188D9659BDDDE5AEE5D4C64A8604A9",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\de-settings.png"
+  },
+  {
+    "sha256": "D8A8D07161DE3AEB2C53C736C74A3A6CE9B53717AB9DDF128FA2DC147B440B62",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\el-settings.png"
+  },
+  {
+    "sha256": "E4DEE6C452ADD8B8D292D015D2DDBF4F186A9866082F611A533736F0B784556E",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\en-settings.png"
+  },
+  {
+    "sha256": "FB653A68C81207E213E9339DBFF4593C0AA7DFC6DFDC2B2C5BEC9922C8D69224",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\es-settings.png"
+  },
+  {
+    "sha256": "DE9197D477FD2A78E008CDBFAEEDF54E8257C62DC3014686268D8E4CE90C6559",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\fr-settings.png"
+  },
+  {
+    "sha256": "7B3CCB5054D81FDFDB957F60027748131423C5C1712E22047657BA866DDA1577",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\GameMenuUI.cs.before"
+  },
+  {
+    "sha256": "D0F294936153AA37E65456EEE2FD5AF851CDEB6414335B9CEC3923E5730B3BF8",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\he-settings.png"
+  },
+  {
+    "sha256": "54B498679A9F9DFB4A67089818822D954B8434BF935A364FED35E35AD2671685",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\hr-settings.png"
+  },
+  {
+    "sha256": "FA5F420E5234A2BDD60722ED3DC2FA45343413DB20745D2C1230DBAD5FCA08B7",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\hu-settings.png"
+  },
+  {
+    "sha256": "CD034996EE8C3CC26955251A5D251D18FC25A6576D10E9F125ADD698E1087687",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\id-settings.png"
+  },
+  {
+    "sha256": "01F73844C42577A81E5F4AFBDA4991773A13A30E88808F1C9352B26EBB3246D1",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\it-settings.png"
+  },
+  {
+    "sha256": "C748D216E5A8629B1D0DF269E887EB52FA1DF564CB05AB996AF970064CF52275",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\ja-settings.png"
+  },
+  {
+    "sha256": "CD8A2A4DD08D5A73899834CF690E20B31DDE9E5E5C3A7E4DCDED0B86641D68D9",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\ko-settings.png"
+  },
+  {
+    "sha256": "2D34CD361B7C9318DE7B5EC688B86527456C6A5202329B052A5F5E48FA53E4CE",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\LocalizedWindowsText.cs.before"
+  },
+  {
+    "sha256": "DB314D7C30E9E21EAF58C023C57E34E84A751BB480C6EEB4018DF91497321DCB",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\ms-settings.png"
+  },
+  {
+    "sha256": "24E85FF938BFF18B4E480F9D02348DDCC0ED438F7B88FC8F842B4DFDF93256E1",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\my-settings.png"
+  },
+  {
+    "sha256": "19830438696B2BCCA167BA1A7B63A648E80CC9B176CA656A111C4E9C2E0CB5A7",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\nl-settings.png"
+  },
+  {
+    "sha256": "7CCB9FE5D21C59DFE5778C187C0C8771E43CB3985EB7514E930C748E0A9B6F97",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\pl-settings.png"
+  },
+  {
+    "sha256": "332FF90DCCA61E2BE715033230A379B240545FEA2EBF3F6926D7278270FF8D88",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\pt-BR-settings.png"
+  },
+  {
+    "sha256": "5AFF8534BE3C9BB2083434A8EB18ED635F8D40FAAAFB610AFF79280D505C95BF",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\results.txt"
+  },
+  {
+    "sha256": "7B07DEFD5BC02A7F5959166FEA74E5C387020801159714BA1F768699D2B90D7B",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\ro-settings.png"
+  },
+  {
+    "sha256": "48546F89ED4901980C6E211379BB8B26558B8C73C556B2FBE7B54466A43A2A2A",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\ru-settings.png"
+  },
+  {
+    "sha256": "00C5A25FCFED5D2F1FC59D8D4549923CC9D3E95F73B1A5A861BF8690720B14EE",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\sv-settings.png"
+  },
+  {
+    "sha256": "E12BF3F9244A24374DC0503E9FA15013E46294B12D5FAF1C7091A4B185C86756",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\th-settings.png"
+  },
+  {
+    "sha256": "033648919A0A93D9B54C4D7E92BAA7871BEAF802EFD005F60D0B09CA67EEDE81",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\tr-settings.png"
+  },
+  {
+    "sha256": "018642FE4C7525340D5ABD2F3D6ECC99DAA0E8927682A1BF5C3C61B4EA07EC94",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\uk-settings.png"
+  },
+  {
+    "sha256": "05E005CB4BF0EE283D4E2743FB89B17F181B730295005F0F5299EF7B3F4E8A5A",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\vi-settings.png"
+  },
+  {
+    "sha256": "FADE83C3CCBB9B8D6796A4499BD612FD1575897A72C029BEC512A4E538804B9E",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\zh-Hans-settings.png"
+  },
+  {
+    "sha256": "FFFEBE91826908FDF50F13E8A192339E7D2EEDB2556187FCAC52C487A9ABF47E",
+    "file": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\settings-type-20261115\\zh-Hant-settings.png"
+  }
+]

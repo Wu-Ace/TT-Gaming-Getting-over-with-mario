@@ -206,7 +206,7 @@ public sealed class CampaignLevel : MonoBehaviour
         GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-1600*scale)/2,(Screen.height-900*scale)/2,0),Quaternion.identity,Vector3.one*scale);
         ui.PanelArt(new Rect(380,180,840,570),"bg_2");
         ui.PanelArt(new Rect(480,125,640,155),"tab_1");
-        ui.PanelText(new Rect(480,145,640,110),"LEVEL COMPLETE",60,-8);
+        ui.PanelText(new Rect(665,145,270,110),GameLocalization.Get("result.complete"),48,-8);
         for(int i=0;i<3;i++)ui.PanelArt(new Rect(590+i*140,i==1?290:330,150,160),(i<StarCount)?"icon_start_1":"icon_start_2");
         ui.PanelArt(new Rect(630,500,340,100),"bg_score");
         ui.PanelText(new Rect(630,500,340,100),CoinCount+"/"+CoinTotal,76,-5);

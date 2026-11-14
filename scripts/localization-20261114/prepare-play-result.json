@@ -1,0 +1,12 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"result\": \"Prepared clean MainMenu; original editor scene recorded for restoration.\",\n  \"elapsed_ms\": 972,\n  \"logs\": [],\n  \"log_count\": 0\n}"
+      }
+    ]
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

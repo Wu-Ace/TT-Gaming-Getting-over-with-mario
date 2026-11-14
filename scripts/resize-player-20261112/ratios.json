@@ -1,0 +1,7 @@
+{
+  "bodyScale": 0.8414501508143727,
+  "paddleScale": 0.534103221625368,
+  "targetBodyColliderHeight": 1.5,
+  "targetPaddleColliderLength": 1.2132267375,
+  "tipPositionPreserved": true
+}

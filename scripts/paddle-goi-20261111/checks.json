@@ -1,0 +1,10 @@
+{
+  "head": "b96b2d04280c510e3f583bc45a4f379f1fb67fab",
+  "static_checks": "passed: no arm physics joints or direct forces; retract-to-pivot; hard stops; 20 slider boundary command cases",
+  "compile": "not run: no active editor or generated csproj found",
+  "play": "not run",
+  "sha256": {
+    "Assets/Scripts/Character/Control/ArmsSimulation.cs": "0809ff54b1bfcd90073fcd8f74cfd3fcf1851373b61c890c575f0ed962e815ea",
+    "Assets/Scripts/Character/Control/PaddleCharacterVisual.cs": "0a90f9b6e48bfa23f2d5a208e345b4b050770f2831fff012bbb69dd8c2c329c2"
+  }
+}

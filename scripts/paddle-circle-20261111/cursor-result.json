@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 708,\n  \"logs\": [\n    \"[Log] Circle input: signed rotation(last299 ticks)=538.1998 stalls=0 largest angular step=1.800056 max reach=0.9005837\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

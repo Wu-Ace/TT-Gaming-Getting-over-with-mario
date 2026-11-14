@@ -1,0 +1,8 @@
+{
+  "arguments": {
+    "timeoutSeconds": 180,
+    "summary": "Align visible terrain surface with unchanged collider plane",
+    "script": "UnityEditor.AssetDatabase.Refresh();foreach(var path in System.IO.Directory.GetFiles(\"Assets/Tiles/RockVariations\",\"m*.png\")){int mask=int.Parse(System.IO.Path.GetFileNameWithoutExtension(path).Split('-')[0].Substring(1));if((mask&1)!=0)continue;var ti=(UnityEditor.TextureImporter)UnityEditor.AssetImporter.GetAtPath(path);var s=new UnityEditor.TextureImporterSettings();ti.ReadTextureSettings(s);s.spriteAlignment=(int)UnityEngine.SpriteAlignment.Custom;s.spritePivot=new UnityEngine.Vector2(.5f,61f/154f);ti.SetTextureSettings(s);ti.SaveAndReimport();}foreach(var map in UnityEngine.Object.FindObjectsOfType<UnityEngine.Tilemaps.Tilemap>())map.RefreshAllTiles();UnityEditor.SceneView.RepaintAll();"
+  },
+  "name": "exec_editor_script"
+}

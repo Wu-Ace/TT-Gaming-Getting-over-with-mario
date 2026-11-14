@@ -1,4 +1,4 @@
-using System.Linq;
+﻿using System.Linq;
 using UnityEngine;
 
 namespace Enemy
@@ -19,47 +19,50 @@ namespace Enemy
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
-            _collider = GetComponentsInChildren<Collider2D>().FirstOrDefault(c => !c.isTrigger && c.attachedRigidbody == _rigidbody);
+            _collider = GetComponentsInChildren<Collider2D>().FirstOrDefault(c => c.enabled && !c.isTrigger && c.attachedRigidbody == _rigidbody);
             // Keep gravity so patrol resumes naturally after landing.
-            _rigidbody.constraints &= ~RigidbodyConstraints2D.FreezePositionY;
+            _rigidbody.constraints &= ~(RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY);
             if (_rigidbody.gravityScale <= 0f) _rigidbody.gravityScale = 1f;
             _animator = GetComponentInChildren<Animator>();
         }
 
         private void Start()
         {
+            // Initialize after the complete prefab hierarchy is active, including runtime spawns.
+            if (GetComponent<ForestEnemyVisual>() == null)
+                gameObject.AddComponent<ForestEnemyVisual>();
             _direction = Random.value < 0.5 ? Vector2.right : Vector2.left;
             UpdateAnimationDirection();
         }
 
-        private void OnCollisionEnter2D(Collision2D collision)
-        {
-            if (!Obstacle(collision.collider)) return;
-            // Only contacts facing our movement reverse us; floors and rear contacts do not.
-            foreach (var contact in collision.contacts)
-            {
-                if (contact.normal.x * _direction.x < -0.5f)
-                {
-                    ChangeDirection();
-                    break;
-                }
-            }
-        }
+        // Direction is decided only in FixedUpdate. Tile seam contacts must not
+        // reverse an enemy again immediately after its cliff probe turned it inward.
 
         private void FixedUpdate()
         {
+            GetComponent<ForestEnemyVisual>()?.HitEnemiesAhead(_collider);
             if (_collider != null)
             {
                 var bounds = _collider.bounds;
                 float step = Mathf.Abs(Speed) * Time.fixedDeltaTime + .04f;
                 float front = bounds.center.x + _direction.x * (bounds.extents.x + step);
                 bool grounded = Supported(new Vector2(bounds.center.x, bounds.min.y + .05f));
-                bool wall = Physics2D.OverlapBoxAll(
-                    new Vector2(front, bounds.center.y + .04f),
-                    new Vector2(.04f, Mathf.Max(.02f, bounds.size.y - .16f)), 0f).Any(Obstacle);
+                bool wall = WallAt(front, bounds);
                 bool edge = grounded && _rigidbody.velocity.y <= .1f &&
                     !Supported(new Vector2(front, bounds.min.y + .05f));
-                if (wall || edge) ChangeDirection();
+                if (wall || edge)
+                {
+                    float back = bounds.center.x - _direction.x * (bounds.extents.x + step);
+                    bool backWall = WallAt(back, bounds);
+                    bool backEdge = grounded && _rigidbody.velocity.y <= .1f &&
+                        !Supported(new Vector2(back, bounds.min.y + .05f));
+                    if (backWall || backEdge)
+                    {
+                        _rigidbody.velocity = new Vector2(0, _rigidbody.velocity.y);
+                        return;
+                    }
+                    ChangeDirection();
+                }
             }
 
             _rigidbody.velocity = new Vector2(Speed * _direction.x, _rigidbody.velocity.y);
@@ -77,8 +80,20 @@ namespace Enemy
 
         private bool Supported(Vector2 point)
         {
-            return Physics2D.RaycastAll(point, Vector2.down, .16f)
-                .Any(hit => hit.normal.y > .5f && Obstacle(hit.collider));
+            // A small footprint straddles tile seams; a single ray can hit their gap.
+            return new[] { -.025f, 0f, .025f }.Any(offset =>
+                Physics2D.RaycastAll(point + Vector2.right * offset, Vector2.down, .16f)
+                    .Any(hit => Obstacle(hit.collider)));
+        }
+
+        private bool WallAt(float x, Bounds bounds)
+        {
+            // Probe above the feet. A broad floor collider is not a side wall.
+            float bottom = bounds.min.y + Mathf.Max(.12f, bounds.size.y * .25f);
+            float top = bounds.max.y - .04f;
+            return Physics2D.OverlapBoxAll(new Vector2(x, (bottom + top) * .5f),
+                new Vector2(.025f, Mathf.Max(.02f, top - bottom)), 0f)
+                .Any(c => Obstacle(c) && c.ClosestPoint(new Vector2(x, bottom)).y > bounds.min.y + .08f);
         }
 
         private void ChangeDirection()

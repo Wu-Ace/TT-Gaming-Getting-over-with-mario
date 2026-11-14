@@ -16,6 +16,7 @@ namespace Winning
         private Stopwatch _stopwatch;
         private int _elapsedSeconds;
         private bool _running;
+        public string ElapsedDisplay => TimeSpan.FromSeconds(_elapsedSeconds+initialSecondsPassed).ToString(@"mm\:ss");
 
         private void Awake()
         {
@@ -41,6 +42,7 @@ namespace Winning
         private void Update()
         {
             if (!_running) return;
+            if (_stopwatch==null) { _stopwatch=new Stopwatch(); _stopwatch.Start(); }
             if (GameMenuUI.IsPaused) { _stopwatch.Stop(); return; }
             if (!_stopwatch.IsRunning) _stopwatch.Start();
 

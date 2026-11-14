@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "script": "int count=0;foreach(var t in UnityEngine.Object.FindObjectsOfType<UnityEngine.TextMesh>(true)){if(t.text==\"FINISH\"||t.text.StartsWith(\"DIAMOND \")){t.text=\"\";count++;}}UnityEngine.Debug.Log(\"Cleared live labels=\"+count);",
+    "summary": "Hide obsolete diamond and finish labels in current game"
+  },
+  "name": "exec_runtime_script"
+}

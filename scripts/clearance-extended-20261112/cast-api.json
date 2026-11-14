@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "summary": "Inspect collider sweep API and temporary probe state",
+    "script": "UnityEngine.Debug.Log(string.Join(\"\\n\",typeof(UnityEngine.Collider2D).GetMethods().Where(m=>m.Name==\"Cast\").Select(m=>m.ToString()))); UnityEngine.Debug.Log(\"probes=\"+UnityEngine.Object.FindObjectsOfType<UnityEngine.GameObject>().Count(g=>g.name.Contains(\"Temporary full-rig\")));"
+  },
+  "name": "exec_editor_script"
+}

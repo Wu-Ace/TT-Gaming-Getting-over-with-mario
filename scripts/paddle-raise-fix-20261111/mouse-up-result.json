@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 665,\n  \"logs\": [\n    \"[Log] Continuous upward mouse: axis=(-0.07, 1.00) virtualTarget=(-28.12, 8.06) angleError=-0.2007689\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

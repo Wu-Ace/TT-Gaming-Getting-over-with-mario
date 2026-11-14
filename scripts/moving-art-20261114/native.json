@@ -1,0 +1,8 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "summary": "Set exact native cell scale and inspect platform scene",
+    "script": "foreach(var p in UnityEngine.Object.FindObjectsOfType<VerticalRidePlatform>(true))foreach(var r in p.GetComponentsInChildren<UnityEngine.SpriteRenderer>())r.transform.localScale=UnityEngine.Vector3.one;var sc=UnityEngine.SceneManagement.SceneManager.GetActiveScene();UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(sc);UnityEditor.SceneManagement.EditorSceneManager.SaveScene(sc);var v=UnityEditor.SceneView.lastActiveSceneView;v.in2DMode=true;v.LookAt(new UnityEngine.Vector3(47.2f,0,0),UnityEngine.Quaternion.identity,3,true,true);v.Repaint();return \"Saved native 0.8 cell scale; platform colliders unchanged\";",
+    "timeoutSeconds": 60
+  }
+}

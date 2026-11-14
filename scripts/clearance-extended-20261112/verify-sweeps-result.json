@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 17012,\n  \"logs\": [\n    \"[Log] Assets/Scenes/Level01.unity samples=480 min=0.02540392 failures=0\",\n    \"[Log] Assets/Scenes/Level05_Cave.unity samples=1146 min=0.08512928 failures=0\"\n  ],\n  \"log_count\": 2\n}"}]}, "jsonrpc": "2.0", "id": 2}

@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "summary": "Verify original editor scene restored and temporary clearance probes removed",
+    "script": "UnityEngine.Debug.Log(\"scene=\"+UnityEngine.SceneManagement.SceneManager.GetActiveScene().path+\" dirty=\"+UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty+\" playing=\"+UnityEditor.EditorApplication.isPlaying);UnityEngine.Debug.Log(\"temporaryProbes=\"+UnityEngine.Object.FindObjectsOfType<UnityEngine.GameObject>().Count(g=>g.name.StartsWith(\"Temporary \")&&g.name.Contains(\"probe\")));UnityEngine.Debug.Log(\"ignoreCharacterSelf=\"+UnityEngine.Physics2D.GetIgnoreLayerCollision(7,7));"
+  }
+}

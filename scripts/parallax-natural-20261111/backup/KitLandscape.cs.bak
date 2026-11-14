@@ -1,0 +1,122 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+// Camera-relative visual layers; terrain, actors and colliders remain in world space.
+[ExecuteAlways, DisallowMultipleComponent, RequireComponent(typeof(Camera))]
+[DefaultExecutionOrder(10000)]
+public sealed class KitLandscape : MonoBehaviour
+{
+    static readonly string[] Names = { "01 Sky", "02 Mountains", "03 Temple Hill", "04 Arches Gate Trees", "05 River Plain", "06 Near Slopes" };
+    static readonly string[] Files = { "sky", "mountains", "hill", "architecture", "plain", "foreground" };
+    static readonly float[] Rates = { 0f, .035f, .075f, .12f, .19f, .29f };
+    Camera view;
+    GameObject visuals;
+    SpriteRenderer[][] layers;
+    Vector2 origin;
+    bool layered;
+
+    public bool HasLayeredBackground { get { return layered && visuals != null; } }
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    static void Install()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        Attach();
+    }
+    static void OnSceneLoaded(Scene scene, LoadSceneMode mode) { Attach(); }
+    static void Attach()
+    {
+        if (SceneManager.GetActiveScene().name != "OneOneScene" && FindObjectOfType<CampaignLevel>() == null) return;
+        var camera = Camera.main;
+        if (camera != null && camera.GetComponent<KitLandscape>() == null)
+            camera.gameObject.AddComponent<KitLandscape>();
+    }
+    void OnEnable() { Rebuild(); }
+    void OnDisable() { Cleanup(); }
+    void OnDestroy() { Cleanup(); }
+
+    void Cleanup()
+    {
+        if (visuals != null)
+        {
+            visuals.SetActive(false);
+            if (Application.isPlaying) Destroy(visuals); else DestroyImmediate(visuals);
+        }
+        visuals = null;
+        layers = null;
+        layered = false;
+    }
+
+    public void Rebuild()
+    {
+        Cleanup();
+        view = GetComponent<Camera>();
+        var level = FindObjectOfType<CampaignLevel>();
+        origin = level != null ? level.initialSpawn : (Vector2)transform.position;
+        var sprites = new Sprite[Files.Length];
+        layered = true;
+        for (int i = 0; i < sprites.Length; i++)
+        {
+            sprites[i] = Resources.Load<Sprite>("ValleyParallax/" + Files[i]);
+            if (sprites[i] == null) layered = false;
+        }
+        if (!layered)
+        {
+            var fallback = level != null && level.background != null ? level.background : Resources.Load<Sprite>("KitBackground");
+            if (fallback == null) return;
+            sprites = new[] { fallback };
+        }
+        visuals = new GameObject("Valley Parallax (preview/runtime)");
+        visuals.hideFlags = HideFlags.HideAndDontSave;
+        visuals.transform.SetParent(transform, false);
+        layers = new SpriteRenderer[sprites.Length][];
+        for (int i = 0; i < sprites.Length; i++)
+        {
+            layers[i] = new SpriteRenderer[layered && i > 0 ? 3 : 1];
+            for (int j = 0; j < layers[i].Length; j++)
+            {
+                var child = new GameObject(layered ? Names[i] + " / " + j : "Legacy Landscape");
+                child.hideFlags = HideFlags.HideAndDontSave;
+                child.transform.SetParent(visuals.transform, false);
+                var renderer = child.AddComponent<SpriteRenderer>();
+                renderer.sprite = sprites[i];
+                renderer.sortingOrder = -32000 + i;
+                layers[i][j] = renderer;
+            }
+        }
+        UpdateLayers();
+    }
+
+    void LateUpdate() { UpdateLayers(); }
+    // Re-evaluate after camera followers, including Cinemachine and death-camera effects.
+    void OnPreCull() { UpdateLayers(); }
+
+    public void UpdateLayers()
+    {
+        if (layers == null || view == null || !view.orthographic) return;
+        float height = view.orthographicSize * 2f;
+        float visibleWidth = height * view.aspect;
+        Vector2 travel = (Vector2)transform.position - origin;
+        for (int i = 0; i < layers.Length; i++)
+        {
+            var size = layers[i][0].sprite.bounds.size;
+            float scale = Mathf.Max(height * (layered ? 1.3f : 1f) / size.y, visibleWidth * (layered ? 1.08f : 1f) / size.x);
+            float width = size.x * scale;
+            float shift = layered ? travel.x * Rates[i] : 0f;
+            int center = Mathf.FloorToInt(shift / width + .5f);
+            // Bounded vertical drift retains coverage over arbitrarily tall climbs.
+            float limit = height * .10f;
+            float y = layered ? -limit * (2f / Mathf.PI) * Mathf.Atan(travel.y * Rates[i] * .30f / limit) : 0f;
+            for (int j = 0; j < layers[i].Length; j++)
+            {
+                int tile = layers[i].Length == 1 ? 0 : center + j - 1;
+                var renderer = layers[i][j];
+                // Mirrored panels meet at the identical source edge without teleporting scenery.
+                renderer.flipX = layers[i].Length > 1 && (tile & 1) != 0;
+                renderer.transform.localScale = new Vector3(scale, scale, 1f);
+                renderer.transform.localPosition = new Vector3(layers[i].Length == 1 ? 0f : tile * width - shift, y,
+                    Mathf.Min(30f, Mathf.Lerp(view.nearClipPlane, view.farClipPlane, .9f)));
+            }
+        }
+    }
+}

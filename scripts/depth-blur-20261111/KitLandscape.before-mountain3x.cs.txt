@@ -1,0 +1,208 @@
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+
+// Camera-relative visual layers; terrain, actors and colliders remain in world space.
+[ExecuteAlways, DisallowMultipleComponent, RequireComponent(typeof(Camera))]
+[DefaultExecutionOrder(10000)]
+public sealed class KitLandscape : MonoBehaviour
+{
+    static readonly string[] Names = { "01 Sky", "02 Mountains", "03 Temple Hill", "04 Arches Gate Trees", "05 River Plain", "06 Near Slopes", "07 FG mountain 1", "08 FG mountain 2", "09 FG mountain 3", "10 FG mountain 4" };
+    static readonly string[] Files = { "sky", "mountains", "hill", "architecture", "plain", "foreground", "FG_mountain1", "FG_mountain2", "FG_mountain3", "FG_mountain4" };
+    static readonly float[] Rates = { 0f, .035f, .075f, .12f, .19f, .29f, .34f, .40f, .46f, .52f };
+    static readonly float[] BlurRadii = { 2.5f, 7.0f, 4.5f, 3.2f, .8f, 0f, 1.2f, 1.5f, 1.8f, 2.1f };
+    Material[] depthMaterials;
+    Camera view;
+    GameObject visuals;
+    SpriteRenderer[][] layers;
+    Vector2 origin;
+    float minX, maxX;
+    float foregroundTopY;
+    bool layered;
+
+    public bool HasLayeredBackground { get { return layered && visuals != null; } }
+    public Vector2 HorizontalTravelRange { get { return new Vector2(minX, maxX); } }
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    static void Install()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        Attach();
+    }
+    static void OnSceneLoaded(Scene scene, LoadSceneMode mode) { Attach(); }
+    static void Attach()
+    {
+        if (SceneManager.GetActiveScene().name != "OneOneScene" && FindObjectOfType<CampaignLevel>() == null) return;
+        var camera = Camera.main;
+        if (camera != null && camera.GetComponent<KitLandscape>() == null)
+            camera.gameObject.AddComponent<KitLandscape>();
+    }
+    void OnEnable() { Rebuild(); }
+    void OnDisable() { Cleanup(); }
+    void OnDestroy() { Cleanup(); }
+
+    void Cleanup()
+    {
+        if (visuals != null)
+        {
+            visuals.SetActive(false);
+            if (Application.isPlaying) Destroy(visuals); else DestroyImmediate(visuals);
+        }
+        if (depthMaterials != null)
+            foreach (var material in depthMaterials)
+                if (material != null) {
+                    if (Application.isPlaying) Destroy(material); else DestroyImmediate(material);
+                }
+        depthMaterials = null;
+        visuals = null;
+        layers = null;
+        layered = false;
+    }
+
+    public void Rebuild()
+    {
+        Cleanup();
+        view = GetComponent<Camera>();
+        var level = FindObjectOfType<CampaignLevel>();
+        origin = level != null ? level.initialSpawn : (Vector2)transform.position;
+        // The foreground belongs below the bottom edge of the ground strip,
+        // not below the player's spawn or the platform's walkable surface.
+        float groundBottom = float.PositiveInfinity;
+        foreach (var terrain in FindObjectsOfType<UnityEngine.Tilemaps.TilemapRenderer>())
+        {
+            if (terrain.gameObject.scene != gameObject.scene || !terrain.enabled
+                || !terrain.name.StartsWith("Ground") || terrain.bounds.size.x < .01f) continue;
+            groundBottom = Mathf.Min(groundBottom, terrain.bounds.min.y);
+        }
+        foregroundTopY = float.IsPositiveInfinity(groundBottom)
+            ? origin.y - 8f : groundBottom - .15f;
+        minX = maxX = origin.x;
+        if (level != null && level.route != null)
+            foreach (var point in level.route) IncludeX(point.x);
+        foreach (var exit in FindObjectsOfType<Winning.WinThresholdDetection>())
+            if (exit.gameObject.scene == gameObject.scene) IncludeX(exit.transform.position.x);
+        foreach (var terrain in FindObjectsOfType<UnityEngine.Tilemaps.TilemapRenderer>())
+            if (terrain.gameObject.scene == gameObject.scene && terrain.bounds.size.x > .01f)
+            {
+                IncludeX(terrain.bounds.min.x);
+                IncludeX(terrain.bounds.max.x);
+            }
+        float padding = Mathf.Max(5f, view.orthographicSize * view.aspect);
+        minX -= padding;
+        maxX += padding;
+        var sprites = new Sprite[Files.Length];
+        layered = true;
+        for (int i = 0; i < sprites.Length; i++)
+        {
+            sprites[i] = Resources.Load<Sprite>("ValleyParallax/" + Files[i]);
+            if (sprites[i] == null) layered = false;
+        }
+        if (!layered)
+        {
+            var fallback = level != null && level.background != null ? level.background : Resources.Load<Sprite>("KitBackground");
+            if (fallback == null) return;
+            sprites = new[] { fallback };
+        }
+        visuals = new GameObject("Valley Parallax (preview/runtime)");
+        visuals.hideFlags = HideFlags.HideAndDontSave;
+        visuals.transform.SetParent(transform, false);
+        layers = new SpriteRenderer[sprites.Length][];
+        var blurShader = Resources.Load<Shader>("ParallaxDepthBlur");
+        depthMaterials = new Material[sprites.Length];
+        for (int i = 0; i < sprites.Length; i++)
+        {
+            layers[i] = new SpriteRenderer[layered && i >= 6 ? 3 : 1];
+            for (int j = 0; j < layers[i].Length; j++)
+            {
+                var child = new GameObject(layered ? Names[i] + " / " + j : "Legacy Landscape");
+                child.hideFlags = HideFlags.HideAndDontSave;
+                child.transform.SetParent(visuals.transform, false);
+                var renderer = child.AddComponent<SpriteRenderer>();
+                renderer.sprite = sprites[i];
+                if (layered && blurShader != null && blurShader.isSupported && BlurRadii[i] > 0f) {
+                    if (depthMaterials[i] == null) {
+                        depthMaterials[i] = new Material(blurShader) { hideFlags = HideFlags.HideAndDontSave };
+                        depthMaterials[i].SetFloat("_Radius", BlurRadii[i]);
+                    }
+                    renderer.sharedMaterial = depthMaterials[i];
+                }
+                renderer.sortingOrder = i >= 6 ? 300 + i : -32000 + i;
+                layers[i][j] = renderer;
+            }
+        }
+        UpdateLayers();
+    }
+
+    void IncludeX(float x)
+    {
+        minX = Mathf.Min(minX, x);
+        maxX = Mathf.Max(maxX, x);
+    }
+
+    void LateUpdate() { UpdateLayers(); }
+    // Re-evaluate after camera followers, including Cinemachine and death-camera effects.
+    void OnPreCull() { UpdateLayers(); }
+
+    public void UpdateLayers()
+    {
+        if (layers == null || view == null || !view.orthographic) return;
+        float height = view.orthographicSize * 2f;
+        float visibleWidth = height * view.aspect;
+        Vector2 travel = (Vector2)transform.position - origin;
+        for (int i = 0; i < layers.Length; i++)
+        {
+            var size = layers[i][0].sprite.bounds.size;
+            float scale = Mathf.Max(height * (layered ? 1.3f : 1f) / size.y, visibleWidth * (layered ? 1.08f : 1f) / size.x);
+            if (layered && i >= 6)
+            {
+                UpdateForeground(i, size, visibleWidth);
+                continue;
+            }
+            float width = size.x * scale;
+            // One continuous panorama per layer. Distribute the available image margin
+            // over the authored level span, so landmarks never repeat or reflect.
+            float progress = Mathf.Clamp((transform.position.x - (minX + maxX) * .5f) / Mathf.Max(1f, (maxX - minX) * .5f), -1f, 1f);
+            float margin = Mathf.Max(0f, (width - visibleWidth) * .5f) * .8f;
+            margin = Mathf.Min(margin, (maxX - minX) * .5f * Rates[5]);
+            float shift = layered ? progress * margin * Rates[i] / Rates[5] : 0f;
+            // Bounded vertical drift retains coverage over arbitrarily tall climbs.
+            float limit = height * .10f;
+            float y = layered ? -limit * (2f / Mathf.PI) * Mathf.Atan(travel.y * Rates[i] * .30f / limit) : 0f;
+            for (int j = 0; j < layers[i].Length; j++)
+            {
+                var renderer = layers[i][j];
+                renderer.flipX = false;
+                renderer.transform.localScale = new Vector3(scale, scale, 1f);
+                renderer.transform.localPosition = new Vector3(-shift, y,
+                    Mathf.Min(30f, Mathf.Lerp(view.nearClipPlane, view.farClipPlane, .9f)));
+            }
+        }
+    }
+    // Separate landmarks pass the camera faster than world terrain. Four variants
+    // occupy successive slots; recycling happens several screens out of view.
+    void UpdateForeground(int layer, Vector3 size, float visibleWidth)
+    {
+        int variant = layer - 6;
+        // World spacing is stable when the viewport changes or the camera zooms.
+        const float spacing = 34f;
+        const float speed = 1.25f;
+        const float landmarkWidth = 22f;
+        float cycle = spacing * 4f;
+        float first = origin.x + 12f + variant * spacing;
+        int nearest = Mathf.RoundToInt((transform.position.x - first) / cycle);
+        float scale = landmarkWidth / size.x;
+        // Cancel the parent camera's vertical translation: the mountain keeps
+        // a fixed world height, including during jumps, falls and camera zoom.
+        float y = foregroundTopY - size.y * scale * .5f - transform.position.y;
+        for (int j = 0; j < layers[layer].Length; j++)
+        {
+            float anchor = first + (nearest + j - 1) * cycle;
+            float x = (anchor - transform.position.x) * speed;
+            var renderer = layers[layer][j];
+            renderer.enabled = Mathf.Abs(x) < (visibleWidth + landmarkWidth) * .5f + 2f;
+            renderer.transform.localScale = new Vector3(scale, scale, 1f);
+            renderer.transform.localPosition = new Vector3(x, y,
+                Mathf.Min(30f, Mathf.Lerp(view.nearClipPlane, view.farClipPlane, .9f)));
+        }
+    }
+
+}

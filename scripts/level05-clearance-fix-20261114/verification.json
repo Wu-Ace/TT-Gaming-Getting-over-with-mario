@@ -1,0 +1,7 @@
+{
+  "checkedVerticalGaps": 809,
+  "violations": 0,
+  "missingMappedCells": 0,
+  "physicalTraversal": "NOT TESTED",
+  "cameraRenders": "Scene camera only, not Game input validation"
+}

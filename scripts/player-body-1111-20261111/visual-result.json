@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 2786,\n  \"logs\": [\n    \"[Log] PASS 48 continuous visual poses in actual Play, no physical input test; wrist error=0\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

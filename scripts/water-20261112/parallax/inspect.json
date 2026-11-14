@@ -1,0 +1,1 @@
+{"name": "exec_runtime_script", "arguments": {"script": "UnityEngine.Debug.Log(\"Camera components: \"+string.Join(\",\",System.Array.ConvertAll(UnityEngine.Camera.main.GetComponents<UnityEngine.Component>(),c=>c.GetType().FullName)));", "summary": "Inspect live camera for controlled water parallax verification"}}

@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 2924,\n  \"logs\": [\n    \"[Log] Shared torso replaced from11.11; identical159x311 canvas\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

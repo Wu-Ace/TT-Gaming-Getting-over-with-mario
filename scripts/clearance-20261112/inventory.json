@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "summary": "Inspect current player collision shapes",
+    "script": "var p = UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.GameObject>(\"Assets/Prefabs/Character.prefab\"); UnityEngine.Debug.Log(\"PREFAB=\"+(p==null?\"missing\":UnityEditor.AssetDatabase.GetAssetPath(p))); foreach(var s in UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects()) foreach(var c in s.GetComponentsInChildren<UnityEngine.Collider2D>(true)) if(c.attachedRigidbody!=null) UnityEngine.Debug.Log(c.name+\" \"+c.GetType().Name+\" \"+c.bounds+\" trigger=\"+c.isTrigger);"
+  },
+  "name": "exec_editor_script"
+}

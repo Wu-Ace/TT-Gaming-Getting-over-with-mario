@@ -1,0 +1,3 @@
+source grip rows (42.00, 74.00): max shoulder-wrist distance=1.478061, natural arm=.98, rotation=244 radial=1.975
+source grip rows (10.00, 42.00): max shoulder-wrist distance=1.759344, natural arm=.98, rotation=114 radial=0.75
+source grip rows (18.00, 48.00): max shoulder-wrist distance=1.684762, natural arm=.98, rotation=115 radial=0.75

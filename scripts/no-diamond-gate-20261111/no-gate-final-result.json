@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 2435,\n  \"logs\": [\n    \"[Log] 00:03.472\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

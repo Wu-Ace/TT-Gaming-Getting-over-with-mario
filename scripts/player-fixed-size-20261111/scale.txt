@@ -1,0 +1,1 @@
+3249 poses: normalized sprite scale change=5.960464E-07 wrist error=1.969661E-06 max elbow anchor separation=0.0208405; all sprite aspect ratios preserved

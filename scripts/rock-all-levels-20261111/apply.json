@@ -1,0 +1,8 @@
+{
+  "arguments": {
+    "summary": "Apply no-adjacent-repeat Rock art to tutorial and all ten levels",
+    "timeoutSeconds": 180,
+    "script": "ApplyRockVariations.Apply();"
+  },
+  "name": "exec_editor_script"
+}

@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 2030,\n  \"logs\": [\n    \"[Log] 2163 poses: no sprite/frame switches; constant scale delta=0 paddle-local target drift=1.731041E-06 max elbow move per .5deg=0.0687331 wrist error=1.966107E-06\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

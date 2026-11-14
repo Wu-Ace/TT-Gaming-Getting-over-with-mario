@@ -1,0 +1,102 @@
+[
+  {
+    "scene": "Assets/Scenes/Tutorial.unity",
+    "radii": {
+      "2.4": {
+        "anchorComponents": [
+          1
+        ],
+        "connected": true
+      },
+      "4.0": {
+        "anchorComponents": [
+          2
+        ],
+        "connected": true
+      },
+      "6.0": {
+        "anchorComponents": [
+          1
+        ],
+        "connected": true
+      }
+    }
+  },
+  {
+    "scene": "Assets/Scenes/Level01.unity",
+    "corridor": "not applicable: no detailed authored route"
+  },
+  {
+    "scene": "Assets/Scenes/Level02_Jungle.unity",
+    "radii": {
+      "2.4": {
+        "anchorComponents": [
+          1
+        ],
+        "connected": true
+      },
+      "4.0": {
+        "anchorComponents": [
+          1
+        ],
+        "connected": true
+      },
+      "6.0": {
+        "anchorComponents": [
+          1
+        ],
+        "connected": true
+      }
+    }
+  },
+  {
+    "scene": "Assets/Scenes/Level03_Beach.unity",
+    "radii": {
+      "2.4": {
+        "anchorComponents": [
+          1
+        ],
+        "connected": true
+      },
+      "4.0": {
+        "anchorComponents": [
+          1
+        ],
+        "connected": true
+      },
+      "6.0": {
+        "anchorComponents": [
+          1
+        ],
+        "connected": true
+      }
+    }
+  },
+  {
+    "scene": "Assets/Scenes/Level04_Town.unity",
+    "radii": {
+      "2.4": {
+        "anchorComponents": [
+          4
+        ],
+        "connected": true
+      },
+      "4.0": {
+        "anchorComponents": [
+          2
+        ],
+        "connected": true
+      },
+      "6.0": {
+        "anchorComponents": [
+          1
+        ],
+        "connected": true
+      }
+    }
+  },
+  {
+    "scene": "Assets/Scenes/Level05_Cave.unity",
+    "corridor": "not applicable: no detailed authored route"
+  }
+]

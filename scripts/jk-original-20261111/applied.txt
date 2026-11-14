@@ -1,0 +1,1 @@
+Original-only cells=7565; extra cells=0; original slope cells=121; original tile differences=0; physics subcell samples=339595; physics differences=0; spawn=(11.80, -1.15); finish=(11.40, 244.45, 0.00)

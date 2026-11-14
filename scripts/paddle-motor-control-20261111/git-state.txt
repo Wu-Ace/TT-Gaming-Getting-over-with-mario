@@ -1,0 +1,90 @@
+ M Assets/Prefabs/Character.prefab
+ M Assets/Scenes/Level01.unity
+ M Assets/Scenes/Level02_Jungle.unity
+ M Assets/Scenes/Level03_Beach.unity
+ M Assets/Scenes/Level04_Town.unity
+ M Assets/Scenes/Level05_Cave.unity
+ M Assets/Scenes/Level06_Grassland_Winter.unity
+ M Assets/Scenes/Level07_Ice.unity
+ M Assets/Scenes/Level08_Castle.unity
+ M Assets/Scenes/Level09_Volcano.unity
+ M Assets/Scenes/Level10_Sky.unity
+ M Assets/Scenes/Tutorial.unity
+ M Assets/Scripts/CampaignInteractable.cs
+ M Assets/Scripts/CampaignLevel.cs
+ M Assets/Scripts/Character/Control/ArmsSimulation.cs
+ M Assets/Scripts/Character/Control/TargetMovement.cs
+ M Assets/Scripts/GameMenuUI.cs
+ M Assets/Scripts/KitLandscape.cs
+ M Assets/Scripts/Winning/WinThresholdDetection.cs
+ M ai-handoff.md
+?? .skill-install/game-studios/
+?? Assets/Art/11.10.meta
+?? Assets/Art/11.10/
+?? Assets/Art/FinishFlag.meta
+?? Assets/Art/FinishFlag/
+?? Assets/Art/PlayerArmPoses.meta
+?? Assets/Art/PlayerArmPoses/
+?? Assets/Editor/ApplyRockVariations.cs
+?? Assets/Editor/ApplyRockVariations.cs.meta
+?? Assets/Editor/BakeRemakeArms.cs
+?? Assets/Editor/BakeRemakeArms.cs.meta
+?? Assets/Editor/FitPaddleColliders.cs
+?? Assets/Editor/FitPaddleColliders.cs.meta
+?? Assets/Editor/InstallJumpKingFifth.cs
+?? Assets/Editor/InstallJumpKingFifth.cs.meta
+?? Assets/Editor/InstallPaddleCharacter.cs
+?? Assets/Editor/InstallPaddleCharacter.cs.meta
+?? Assets/Editor/InstallRockTerrain.cs
+?? Assets/Editor/InstallRockTerrain.cs.meta
+?? Assets/Editor/InstallValleyParallax.cs
+?? Assets/Editor/InstallValleyParallax.cs.meta
+?? Assets/Resources/Fonts.meta
+?? Assets/Resources/Fonts/
+?? Assets/Resources/ValleyParallax.meta
+?? Assets/Resources/ValleyParallax/
+?? Assets/Scripts/Character/Control/PaddleCharacterVisual.cs
+?? Assets/Scripts/Character/Control/PaddleCharacterVisual.cs.meta
+?? Assets/Scripts/GameFont.cs
+?? Assets/Scripts/GameFont.cs.meta
+?? Assets/Scripts/JumpKingRockTile.cs
+?? Assets/Scripts/JumpKingRockTile.cs.meta
+?? Assets/Scripts/RockVariationTile.cs
+?? Assets/Scripts/RockVariationTile.cs.meta
+?? Assets/Tiles/JumpKingFifth.meta
+?? Assets/Tiles/JumpKingFifth/
+?? Assets/Tiles/RockTerrain.meta
+?? Assets/Tiles/RockTerrain/
+?? Assets/Tiles/RockVariations.meta
+?? Assets/Tiles/RockVariations/
+?? scripts/dec-20261111/
+?? scripts/dec-contact.png
+?? scripts/finish-flag-20261111/
+?? scripts/font-20261111/
+?? scripts/ground-contact-20261111/
+?? scripts/jk-original-20261111/
+?? scripts/jk-tilemap-20261111/
+?? scripts/no-diamond-gate-20261111/
+?? scripts/paddle-motor-control-20261111/
+?? scripts/parallax-20261111/
+?? scripts/parallax-natural-20261111/
+?? scripts/player-arm-reach-20261111/
+?? scripts/player-art-20261111/
+?? scripts/player-black-torso-20261111/
+?? scripts/player-colliders-20261111/
+?? scripts/player-continuous-arms-20261111/
+?? scripts/player-fixed-size-20261111/
+?? scripts/player-frame-arms-20261111/
+?? scripts/player-grip-20261111/
+?? scripts/player-grip-swap-20261111/
+?? scripts/player-locked-grips-20261111/
+?? scripts/player-natural-grip-20261111/
+?? scripts/player-proportions-20261111/
+?? scripts/player-raised-grips-20261111/
+?? scripts/remove-checkpoints-20261111/
+?? scripts/remove-diamonds-20261111/
+?? scripts/rock-all-levels-20261111/
+?? scripts/rock-sides-20261111/
+?? scripts/rock-terrain-20261111/
+?? scripts/rock-variation-20261111/
+b96b2d04280c510e3f583bc45a4f379f1fb67fab

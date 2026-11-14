@@ -1,0 +1,12 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "1A5B225D9EF4FB4D9809719D0C28AA6ED6CC57DD7D5BCBCF6B5BB15AF83A607E",
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\Enemy\\ForestEnemyVisual.cs"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3E7CD1007C7117DA3E09FDD0C54A718E5C8962A794D683E6B9623350031D57AD",
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\Enemy\\EnemyMovement.cs"
+  }
+]

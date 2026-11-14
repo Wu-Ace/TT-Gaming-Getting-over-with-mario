@@ -1,0 +1,9 @@
+{
+  "Assets/Scripts/CampaignLevel.cs": "2fb97bb10733621e330327ced70e67bd2528b0cf95d3f6ae6025ebc57deaff00",
+  "Assets/Scripts/GameMenuUI.cs": "2aee9e0009f64e1b7c1cdfd576c8809fcf4562247617e365bab03d6bbc0c1870",
+  "Assets/Scripts/Winning/FloatingCoin.cs": "ebc14898e285b4a125668df956cba285a02353dc2b377496e1d7eeacba569e42",
+  "Assets/Scripts/Character/Lifecycle/Death.cs": "c87dca2ae019353ce022c3de77286c3a57c6876d28e21f5f1a67d809bf800726",
+  "Assets/Scripts/OptionalCampaignCoin.cs": "ec09c02cc48d375abc8bcfcca59453f5be98746314687bb61c30115a405b3222",
+  "scripts\\coin-lives-20261112\\compile.log": "3739648e84461811a4e397c36ecf845f6f89e19897c8a07f3238d5b9e9a0933f",
+  "scripts\\coin-lives-20261112\\logic-test.log": "42ac622f5868bf55e7639f7d9a4a954a7823f12f0a6a10cd3c56da3250c143ac"
+}

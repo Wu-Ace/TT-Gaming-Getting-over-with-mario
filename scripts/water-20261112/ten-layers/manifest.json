@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "Assets\\Resources\\KingdomWater.shader": "656be6339562e478784a50d92288e0494ac69a8ca9d7efa468c6ddbe33da9465",
+    "Assets\\Scripts\\FirstLevelWater.cs": "6c8a3a25424f1ddaede935ba1e6dbc0f18ff0b233da80f2e882a93416cfe278c",
+    "scripts\\water-20261112\\ten-layers\\move-end.png": "1a60a6498bedb831824d1b4f9c5a3c0d943abff10c5c512038f8e058ee04e35c",
+    "scripts\\water-20261112\\ten-layers\\move-mid.png": "283272cf5ec031b0dc07ce11edf2573f92622c6dad636acc24329ceabe146f52",
+    "scripts\\water-20261112\\ten-layers\\pan-0.png": "78cfedc3f87aee5baf452db9490f087c9037692f75e1ff286826d172b404864f",
+    "scripts\\water-20261112\\ten-layers\\pan-1.png": "78cfedc3f87aee5baf452db9490f087c9037692f75e1ff286826d172b404864f",
+    "scripts\\water-20261112\\ten-layers\\settled.png": "5c2bcabbe70a445f451c622443e2dd640a409d325492697456f06a992b13a9dd",
+    "scripts\\water-20261112\\ten-layers\\still.png": "db4a9134a0fd61b7fb2566d6dd0b7ea38c5f49a6dcc2baf7b6e32b8bb6c13459",
+    "scripts\\water-20261112\\verification\\import-result.json": "1620cf891272fcee1f0dbc373dad3efb96a43e30b0844893f9f32d90657569b1",
+    "scripts\\water-20261112\\verification\\test-result.json": "6f4b65464d5574f7a7cf07227585e1ef63bb93ccc0e3ec99219e8c764a7e3bf8"
+  },
+  "verification": "Shader supported, no shader messages. Actual Level01 Play camera pan and stop captured; motion decays from 0.4064 to 0.00065. Test camera repositioned vertically to show water then restored; brain/timeScale restored. Offscreen pan-0/1 images invalid for water acceptance: water out of frame. still/move-mid/move-end/settled are final actual Play evidence. Not a player-controlled traversal or device/performance test."
+}

@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 579,\n  \"logs\": [\n    \"[Log] scene=Assets/Scenes/Level01.unity dirty=False playing=False\",\n    \"[Log] temporaryProbes=0\",\n    \"[Log] ignoreCharacterSelf=True\"\n  ],\n  \"log_count\": 3\n}"}]}, "jsonrpc": "2.0", "id": 2}

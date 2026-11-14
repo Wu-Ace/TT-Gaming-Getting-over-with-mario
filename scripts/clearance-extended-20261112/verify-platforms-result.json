@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 7873,\n  \"logs\": [\n    \"[Log] Assets/Scenes/Level02_Jungle.unity moving platforms=4\",\n    \"[Log] Assets/Scenes/Level03_Beach.unity moving platforms=12\"\n  ],\n  \"log_count\": 2\n}"}]}, "jsonrpc": "2.0", "id": 2}

@@ -1,0 +1,10 @@
+{
+  "restoredContact": "before launch compensation",
+  "restoredGeometryPositions": "before parity audit",
+  "airborneTrackingRetained": true,
+  "hashes": {
+    "Assets\\Prefabs\\Character.prefab": "40a45e14207533aa6bba11b57c69d93865db7436fa5fb55c0b9db75a0b243cc5",
+    "Assets\\Scripts\\Character\\Control\\ArmsSimulation.cs": "f0a052a32580b88c7c22ac7ba074e486dde741a24577ed7d2a285741b4c13b52"
+  },
+  "runtimeVerified": false
+}

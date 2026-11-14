@@ -1,0 +1,6 @@
+{
+  "source": "Assets\\Resources\\KingdomWater.shader",
+  "sha256": "6e0f0a0a4483db58d3a630368b5b9e6df94bbce0fd5ce940c18d8b3c24865720",
+  "validation": "Source only; Unity compile and render not verified",
+  "reference": "Installed IL2CPP metadata: WaterProperites, SPDisplacement1Tex, SPDisplacement2Tex, scrollSpeedFast/Slow, SPAlphaTop/Bottom, SPMattenessTop/Bottom; method bodies not decoded"
+}

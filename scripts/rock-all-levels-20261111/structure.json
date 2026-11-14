@@ -1,0 +1,57 @@
+[
+  {
+    "scene": "Level01.unity",
+    "colliders_unchanged": 3,
+    "transforms_unchanged": 50
+  },
+  {
+    "scene": "Level02_Jungle.unity",
+    "colliders_unchanged": 7,
+    "transforms_unchanged": 71
+  },
+  {
+    "scene": "Level03_Beach.unity",
+    "colliders_unchanged": 35,
+    "transforms_unchanged": 151
+  },
+  {
+    "scene": "Level04_Town.unity",
+    "colliders_unchanged": 3,
+    "transforms_unchanged": 55
+  },
+  {
+    "scene": "Level05_Cave.unity",
+    "colliders_unchanged": 3,
+    "transforms_unchanged": 20
+  },
+  {
+    "scene": "Level06_Grassland_Winter.unity",
+    "colliders_unchanged": 417,
+    "transforms_unchanged": 3479
+  },
+  {
+    "scene": "Level07_Ice.unity",
+    "colliders_unchanged": 421,
+    "transforms_unchanged": 2743
+  },
+  {
+    "scene": "Level08_Castle.unity",
+    "colliders_unchanged": 478,
+    "transforms_unchanged": 3422
+  },
+  {
+    "scene": "Level09_Volcano.unity",
+    "colliders_unchanged": 418,
+    "transforms_unchanged": 3836
+  },
+  {
+    "scene": "Level10_Sky.unity",
+    "colliders_unchanged": 488,
+    "transforms_unchanged": 2562
+  },
+  {
+    "scene": "Tutorial.unity",
+    "colliders_unchanged": 4,
+    "transforms_unchanged": 53
+  }
+]

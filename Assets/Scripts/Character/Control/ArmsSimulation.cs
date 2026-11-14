@@ -1,71 +1,62 @@
-﻿using UnityEngine;
-
-namespace Character.Control
-{
-    public class ArmsSimulation : MonoBehaviour
-    {
-        [SerializeField] private Rigidbody2D hammer;
-        [SerializeField] private Transform hammerHead;
-        [SerializeField] private Transform center;
-        [SerializeField] private bool torqueEnabled = true;
-        [field: SerializeField] public int MaxTorque { get; set; } = 1000;
-        [SerializeField] private int torqueDampFactor = 1;
-        [SerializeField] private ForceMode2D torqueMode = ForceMode2D.Force;
-        [SerializeField] private bool forceEnabled = true;
-        [SerializeField] private int maxHammerForce = 10;
-        [SerializeField] private ForceMode2D hammerForceMode = ForceMode2D.Force;
-        [field: SerializeField] public int MaxBodyForce { get; set; } = 50;
-        [SerializeField] private ForceMode2D bodyForceMode = ForceMode2D.Force;
-
-        private Rigidbody2D _rigidbody;
-        private Vector2 _targetPosition;
-        private bool _firstPositionChange;
-        private bool _hammerHeadInContact;
-
-        private void Awake()
-        {
-            _rigidbody = GetComponent<Rigidbody2D>();
-            FindObjectOfType<TargetMovement>().OnPositionChanged += newPosition =>
-            {
-                _targetPosition = newPosition;
-                _firstPositionChange = true;
-            };
-            var hammerHeadCollisionDetection = hammerHead.gameObject.GetComponentInChildren<CollisionDetection>();
-            hammerHeadCollisionDetection.OnCollisionEnter += () => _hammerHeadInContact = true;
-            hammerHeadCollisionDetection.OnCollisionExit += () => _hammerHeadInContact = false;
-        }
-
-        private void FixedUpdate()
-        {
-            if (!_firstPositionChange) return;
-
-            var cauldronPosition = (Vector2) center.position;
-            var hammerHeadPosition = (Vector2) hammerHead.position;
-            var centerToHammerHead = cauldronPosition - hammerHeadPosition;
-            var centerToTarget = cauldronPosition - _targetPosition;
-
-            var angleDifference = Vector2.SignedAngle(centerToHammerHead, centerToTarget);
-            if (Mathf.Abs(angleDifference) > 0.01 && torqueEnabled)
-            {
-                var torque = angleDifference * MaxTorque / 180f - _rigidbody.angularVelocity * torqueDampFactor;
-                _rigidbody.AddTorque(torque, torqueMode);
-            }
-
-            var radialDifference = centerToHammerHead.magnitude - centerToTarget.magnitude;
-            if (Mathf.Abs(radialDifference) > 0.01 && forceEnabled)
-            {
-                var direction = centerToHammerHead.normalized;
-                if (_hammerHeadInContact)
-                {
-                    var bodyForce = -direction * (Mathf.Pow(radialDifference, 3) * MaxBodyForce);
-                    _rigidbody.AddForce(bodyForce * Time.fixedDeltaTime, bodyForceMode);
-                }
-                else
-                {
-                    var hammerForce = direction * (Mathf.Pow(radialDifference, 3) * maxHammerForce) - hammer.velocity;
-                    hammer.AddForce(hammerForce * Time.fixedDeltaTime, hammerForceMode);
-                }
-            }
-        }
-    }
+using UnityEngine;
+namespace Character.Control {
+ public class ArmsSimulation : MonoBehaviour {
+  [SerializeField] Rigidbody2D hammer;
+  [SerializeField] Transform hammerHead, center;
+  [SerializeField] bool torqueEnabled=true, forceEnabled=true;
+  [field:SerializeField] public int MaxTorque {get;set;}=1000;
+  [field:SerializeField] public int MaxBodyForce {get;set;}=50;
+  [SerializeField] float angularGain=10, angularDamping=.35f, extensionGain=12;
+  [SerializeField] float maxAngularSpeed=720, maxExtensionSpeed=3;
+  Rigidbody2D pivot; HingeJoint2D hinge; SliderJoint2D slide; TargetMovement input;
+  Vector2 target; float baseRadius; JointTranslationLimits2D travel;
+  public Transform HammerTip=>hammerHead;
+  public float AngleError {get;private set;}
+  public float ExtensionError {get;private set;}
+  void Awake(){
+   pivot=GetComponent<Rigidbody2D>();slide=hammer.GetComponent<SliderJoint2D>();
+   foreach(var j in transform.root.GetComponentsInChildren<HingeJoint2D>())
+    if(j.connectedBody==pivot||j.attachedRigidbody==pivot){hinge=j;break;}
+   if(!slide||!hinge){enabled=false;return;}
+   baseRadius=Vector2.Dot((Vector2)hammerHead.position-(Vector2)center.position,hammer.transform.right)+slide.jointTranslation;
+   travel=slide.limits;
+   // Preserve the existing authored travel during this controller-only trial.
+   slide.useLimits=true;
+   input=transform.root.GetComponentInChildren<TargetMovement>();
+   if(input)input.OnPositionChanged+=ReceiveTarget;
+   target=hammerHead.position;
+  }
+  public bool TryReachInterval(Vector2 direction,out float low,out float high){low=Mathf.Max(0,baseRadius-travel.max);high=Mathf.Max(low,baseRadius-travel.min);return true;}
+  public Vector2 ConstrainTarget(Vector2 requested){
+   Vector2 delta=requested-(Vector2)center.position;TryReachInterval(delta,out float low,out float high);
+   return (Vector2)center.position+Vector2.ClampMagnitude(delta,high);
+  }
+  public void ReceiveTarget(Vector2 value){target=value;}
+  void OnEnable(){if(hammerHead)target=hammerHead.position;}
+  void OnDestroy(){if(input)input.OnPositionChanged-=ReceiveTarget;}
+  void OnDisable(){if(hinge)hinge.useMotor=false;if(slide)slide.useMotor=false;}
+  void FixedUpdate(){
+   if(!hinge||!slide)return;
+   Vector2 axis=hammer.transform.right, actual=(Vector2)hammerHead.position-(Vector2)center.position;
+   Vector2 wanted=ConstrainTarget(target)-(Vector2)center.position;
+   AngleError=wanted.sqrMagnitude>.0025f?Vector2.SignedAngle(actual,wanted):0;
+   float sign=hinge.attachedRigidbody==pivot?-1:1;
+   var turn=hinge.motor;
+   // The joint motor regulates velocity itself; derivative feedback here adds tracking lag.
+   turn.motorSpeed=Mathf.Clamp(sign*AngleError*angularGain*Mathf.Clamp(Mathf.Abs(AngleError)/20f,1f,3f),-maxAngularSpeed,maxAngularSpeed);
+   turn.maxMotorTorque=Mathf.Max(1,MaxTorque);hinge.motor=turn;hinge.useMotor=torqueEnabled;
+   // Track radius concurrently with rotation, including large direction changes.
+   float radius=Mathf.Clamp(wanted.magnitude,Mathf.Max(0,baseRadius-travel.max),baseRadius-travel.min);
+   ExtensionError=radius-Vector2.Dot(actual,axis);
+   // The slider motor already regulates velocity; extra jointSpeed feedback caused alternating saturation.
+   // Preserve the responsive linear baseline; boost only larger errors.
+   float response=Mathf.Clamp(Mathf.Abs(ExtensionError)/.35f,1f,2f);
+   float outward=Mathf.Clamp(ExtensionError*extensionGain*response,-maxExtensionSpeed,maxExtensionSpeed);
+   float current=Vector2.Dot(actual,axis),dt=Time.fixedDeltaTime;
+   // Do not command a step beyond either hard stop.
+   outward=Mathf.Clamp(outward,-Mathf.Max(0,slide.limits.max-slide.jointTranslation)/dt,Mathf.Max(0,slide.jointTranslation-slide.limits.min)/dt);
+   var push=slide.motor;push.motorSpeed=-outward;push.maxMotorTorque=Mathf.Max(1,MaxBodyForce);
+   slide.motor=push;slide.useMotor=forceEnabled;
+  }
+ }
 }

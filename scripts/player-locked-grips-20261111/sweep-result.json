@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 600,\n  \"logs\": [\n    \"[Log] 1080 poses; paddle-local grip drift=1.658853E-06 left=(0.00, 0.81, 0.00) right=(0.00, 0.49, 0.00) max right elbow anchor gap=0.4980614\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

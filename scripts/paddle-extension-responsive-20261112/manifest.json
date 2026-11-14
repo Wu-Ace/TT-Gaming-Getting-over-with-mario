@@ -1,0 +1,13 @@
+{
+  "extensionGain": [
+    12,
+    20
+  ],
+  "maxExtensionSpeed": [
+    3,
+    4.5
+  ],
+  "forceCapUnchanged": 400,
+  "prefabSha256": "491a57ebdbfe9d5ecaeee663379c6432c72d5e2952233208c01f78df25281743",
+  "runtimeVerified": false
+}

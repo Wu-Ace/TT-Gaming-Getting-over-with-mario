@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 422,\n  \"logs\": [\n    \"[Log] WATER {\\\"alignToPlatformMiddle\\\":true,\\\"waterHeight\\\":-4.399999618530273,\\\"depth\\\":5.0} camera=(-24.18, -1.80, -10.00)\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

@@ -1,0 +1,19 @@
+{
+  "changes": {
+    "MaxTorque": [
+      1700,
+      900
+    ],
+    "maxAngularSpeed": [
+      480,
+      240
+    ],
+    "angularDamping": [
+      0.35,
+      0.5
+    ]
+  },
+  "extensionUnchanged": true,
+  "prefabSha256": "bcb3423277d1ce8ef294b72d03db792c9f75ba38741c222712c53df944c09561",
+  "runtimeVerified": false
+}

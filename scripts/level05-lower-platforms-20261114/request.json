@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "summary": "Render actual Play camera for visual inspection",
+    "script": "var c=UnityEngine.Camera.main;var rt=new UnityEngine.RenderTexture(960,540,24);var prev=c.targetTexture;var old=UnityEngine.RenderTexture.active;c.targetTexture=rt;c.Render();UnityEngine.RenderTexture.active=rt;var tex=new UnityEngine.Texture2D(960,540,UnityEngine.TextureFormat.RGB24,false);tex.ReadPixels(new UnityEngine.Rect(0,0,960,540),0,0);tex.Apply();System.IO.File.WriteAllBytes(\"scripts/level05-lower-platforms-20261114/game-render.png\",tex.EncodeToPNG());c.targetTexture=prev;UnityEngine.RenderTexture.active=old;rt.Release();UnityEngine.Object.Destroy(tex);UnityEngine.Object.Destroy(rt);"
+  }
+}

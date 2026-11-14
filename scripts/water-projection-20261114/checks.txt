@@ -1,0 +1,2 @@
+Projection regression (analytic): main aspect 2.0 vs capture 16/9 gives horizontal scale 1.125; a landmark 600 pixels from center is displaced by 75 pixels. Matching projection matrices gives scale 1 and displacement 0 for all horizontal camera positions (orthographic camera). Source inspected for explicit projection/aspect assignment after targetTexture and render-time synchronization.
+Unity process unavailable in this session: real compile and Scene/Game moving-camera validation NOT RUN.

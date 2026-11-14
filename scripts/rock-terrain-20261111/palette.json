@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "script": "var root=UnityEditor.PrefabUtility.LoadPrefabContents(\"Assets/Tiles/UnifiedTerrain/Forest Palette.prefab\");try{root.name=\"Rock Palette\";var tile=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Tilemaps.RuleTile>(\"Assets/Tiles/RockTerrain/Rock.asset\");foreach(var m in root.GetComponentsInChildren<UnityEngine.Tilemaps.Tilemap>()){m.ClearAllTiles();m.SetTile(UnityEngine.Vector3Int.zero,tile);}UnityEditor.PrefabUtility.SaveAsPrefabAsset(root,\"Assets/Tiles/RockTerrain/Rock Palette.prefab\");}finally{UnityEditor.PrefabUtility.UnloadPrefabContents(root);}var target=\"Assets/Tiles/RockTerrain/Rock Palette.prefab\";var settings=UnityEditor.AssetDatabase.LoadAllAssetsAtPath(\"Assets/Tiles/UnifiedTerrain/Forest Palette.prefab\").FirstOrDefault(a=>a is UnityEditor.Tilemaps.GridPalette);if(settings)UnityEditor.AssetDatabase.AddObjectToAsset(UnityEngine.Object.Instantiate(settings),target);UnityEditor.AssetDatabase.SaveAssets();",
+    "summary": "Create paintable Rock RuleTile palette"
+  }
+}

@@ -1,0 +1,335 @@
+using System;
+using System.Linq;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
+
+// Menu art is generated from the native Kit; gameplay geometry stays in its own scenes.
+public sealed class GameMenuUI : MonoBehaviour
+{
+    public static GameMenuUI Instance { get; private set; }
+    public static bool IsPaused => Instance != null && Instance.settings && !Instance.IsMenu;
+    public const string MenuScene = "MainMenu";
+    public const string Pref = "Goombas.UI.v1.";
+    public static string PreferencePrefix = Pref;
+    public static bool Testing;
+    public const int PlayableLevelCount = 5;
+    public static readonly string[] Scenes = {"Level01","Level02_Jungle","Level03_Beach","Level04_Town","Level05_Cave","Level06_Grassland_Winter","Level07_Ice","Level08_Castle","Level09_Volcano","Level10_Sky"};
+    static readonly string[] Names = {"Grassland Start","Jungle Trail","Beach Adventure","Town Heights","Cave Adventure","Winter Grassland","Frozen Path","Castle Challenge","Volcano Journey","Sky Finale"};
+    public bool IsMenu => SceneManager.GetActiveScene().name == MenuScene;
+    public bool settings;
+    public int page, world;
+    Texture2D landscape, homeBackground;
+    Texture2D[] homeButtons;
+    Texture2D hudPlate, hudCoin, hudHeart, hudSettings;
+    Texture2D[] plates, worlds;
+    GUIStyle label, title, button, greyButton;
+    Font font;
+    AudioSource clicks;
+    AudioClip click, back;
+    float music=1, effects=1, previousTimeScale=1;
+    int resolutionIndex, monitorW, monitorH;
+    Resolution[] resolutions;
+    Vector2 scroll;
+    bool dropdown;
+    string error;
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    static void Install()
+    {
+        if(Instance!=null)return;
+        var go=new GameObject("Game Menu UI"); DontDestroyOnLoad(go); go.AddComponent<GameMenuUI>();
+    }
+    void Awake()
+    {
+        Instance=this;
+        landscape=Load("landscape");
+        hudPlate=Load("hud_tab_coin");hudCoin=Load("hud_icon_coin");hudHeart=Load("hud_icon_heart");hudSettings=Load("hud_button_4");
+        homeBackground=Load("odyssey");
+        homeButtons=new[]{Load("homeStart"),Load("homeOptions"),Load("homeExit")};
+        plates=Enumerable.Range(0,3).Select(i=>Load("plate"+i)).ToArray();worlds=Enumerable.Range(0,3).Select(i=>Load("world"+i)).ToArray();
+        font=GameFont.Main;
+        clicks=gameObject.AddComponent<AudioSource>();clicks.playOnAwake=false;
+        click=Resources.Load<AudioClip>("MenuUI/click");back=Resources.Load<AudioClip>("MenuUI/back");
+        music=PlayerPrefs.GetFloat(PreferencePrefix+"music",1);effects=PlayerPrefs.GetFloat(PreferencePrefix+"effects",1);
+        RefreshResolutions(); HideLegacyHud(); SceneManager.sceneLoaded+=Loaded;
+    }
+    Texture2D Load(string s)=>Resources.Load<Texture2D>("MenuUI/"+s);
+    bool showLevelsOnLoad;
+    void Loaded(Scene scene,LoadSceneMode mode){CloseSettings();page=showLevelsOnLoad && scene.name==MenuScene ? 1 : 0;showLevelsOnLoad=false;error=null;ApplyVolumes();HideLegacyHud();}
+    void OnDestroy(){SceneManager.sceneLoaded-=Loaded;if(Instance==this)Instance=null;}
+    void RefreshResolutions()
+    {
+        monitorW=Screen.currentResolution.width;monitorH=Screen.currentResolution.height;
+        resolutions=Screen.resolutions.Where(r=>r.width<=monitorW && r.height<=monitorH).GroupBy(r=>r.width+"x"+r.height).Select(g=>g.First()).OrderByDescending(r=>r.width*r.height).ToArray();
+        string saved=PlayerPrefs.GetString(PreferencePrefix+"resolution","auto");
+        resolutionIndex=Array.FindIndex(resolutions,r=>r.width+"x"+r.height==saved)+1;
+        ApplyResolution(false);
+    }
+    void ApplyResolution(bool save)
+    {
+        string value="auto";int w=monitorW,h=monitorH;
+        if(resolutionIndex>0 && resolutionIndex<=resolutions.Length){var r=resolutions[resolutionIndex-1];w=r.width;h=r.height;value=w+"x"+h;}
+        if(save){PlayerPrefs.SetString(PreferencePrefix+"resolution",value);PlayerPrefs.Save();}
+        // The editor Game view belongs to the editor; do not resize the user's editor.
+        if(!Application.isEditor && w>0 && h>0)Screen.SetResolution(w,h,Screen.fullScreenMode);
+    }
+    void Update()
+    {
+        if(Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame) { if(settings)CloseSettings();else if(!IsMenu)OpenSettings();else if(page>0)page--; }
+        if(Screen.currentResolution.width!=monitorW || Screen.currentResolution.height!=monitorH)RefreshResolutions();
+    }
+    public void OpenSettings(){if(settings || Character.Lifecycle.DeathFeedback.Active)return;GameplayAudio.Play("pause",.35f);settings=true;dropdown=false;previousTimeScale=Time.timeScale;if(!IsMenu)Time.timeScale=0;}
+    public void CloseSettings(){if(settings)GameplayAudio.Play("resume",.35f);if(settings && !IsMenu)Time.timeScale=previousTimeScale;settings=false;dropdown=false;}
+    public void LoadLevel(int i)
+    {
+        if(i < -1 || i>=PlayableLevelCount)return;
+        string targetScene = i == -1 ? "Tutorial" : Scenes[i];
+        if(!Application.CanStreamedLevelBeLoaded(targetScene)){error="Level unavailable. Please return and try again.";GameplayAudio.Play("locked",.4f);return;}
+        CloseSettings();Time.timeScale=1;SceneManager.LoadScene(targetScene);
+    }
+    bool legacyHudHidden;
+    void HideLegacyHud()
+    {
+        foreach(var canvas in FindObjectsOfType<Canvas>())
+            foreach(var rect in canvas.GetComponentsInChildren<RectTransform>(true))
+                if(rect.name=="PowerUpsUi" || rect.name=="TimeUi")
+                    foreach(var graphic in rect.GetComponentsInChildren<UnityEngine.UI.Graphic>(true))
+                        graphic.enabled=false;
+        legacyHudHidden=true;
+    }
+    void ApplyVolumes()
+    {
+        // Keep SFX routing scoped to sources. Do not mute UI with a global AudioListener volume.
+        foreach(var source in FindObjectsOfType<AudioSource>())
+        {
+            if(source==clicks || source.GetComponent<GameplayAudio>()!=null)continue;
+            var gain=source.GetComponent<MenuAudioGain>();if(gain==null)gain=source.gameObject.AddComponent<MenuAudioGain>();
+            gain.Apply(source,source.loop?music:effects);
+        }
+        clicks.volume=effects;
+    }
+    void SaveVolumes(){PlayerPrefs.SetFloat(PreferencePrefix+"music",music);PlayerPrefs.SetFloat(PreferencePrefix+"effects",effects);PlayerPrefs.Save();ApplyVolumes();}
+    void Sound(bool goBack=false){GameplayAudio.Play(goBack?"ui_back":"ui_click",.16f);}
+    void Styles()
+    {
+        if(label!=null)return;
+        label=new GUIStyle(GUI.skin.label){font=font,fontSize=28,alignment=TextAnchor.MiddleLeft};label.normal.textColor=new Color32(40,72,61,255);
+        title=new GUIStyle(label){fontSize=48};title.normal.textColor=new Color32(255,248,223,255);
+        button=new GUIStyle(GUI.skin.button){font=font,fontSize=28,border=new RectOffset(12,12,10,10),alignment=TextAnchor.MiddleCenter};
+        foreach(var state in new[]{button.normal,button.hover,button.active,button.focused}){state.background=Load("button");state.textColor=Color.white;}
+        greyButton=new GUIStyle(button);foreach(var state in new[]{greyButton.normal,greyButton.hover,greyButton.active,greyButton.focused}){state.background=Load("buttonGrey");state.textColor=new Color32(40,72,61,255);}
+    }
+    void Text(Rect r,string value,int size=28,Color? color=null,bool center=false)
+    {
+        var s=new GUIStyle(label){fontSize=size,alignment=center?TextAnchor.MiddleCenter:TextAnchor.MiddleLeft};s.normal.textColor=color??label.normal.textColor;GUI.Label(r,value,s);
+    }
+    bool Button(Rect r,string value,Action action,bool green=true)
+    {
+        if(!GUI.Button(r,value,green?button:greyButton))return false;if(action!=OpenSettings && action!=CloseSettings)Sound();action();return true;
+    }
+    void Fill(Rect r,Color c){var old=GUI.color;GUI.color=c;GUI.DrawTexture(r,Texture2D.whiteTexture);GUI.color=old;}
+    void HudArt(Rect rect,Texture2D texture){if(texture!=null)GUI.DrawTexture(rect,texture,ScaleMode.ScaleToFit,true);}
+    void Background(){GUI.DrawTexture(new Rect(0,0,1600,900),landscape,ScaleMode.ScaleAndCrop);}
+    void OnGUI()
+    {
+        if(!legacyHudHidden)HideLegacyHud();
+        Styles();GUI.depth=-20;
+        var old=GUI.matrix;float scale=Mathf.Min(Screen.width/1600f,Screen.height/900f);
+        // Letterboxed reference layout keeps circles round and never stretches source art.
+        GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-1600*scale)/2,(Screen.height-900*scale)/2,0),Quaternion.identity,new Vector3(scale,scale,1));
+        if(IsMenu){Fill(new Rect(-4000,-4000,9600,8900),new Color32(35,63,56,255));Background();if(page==0)Home();else Levels();}
+        else if(!settings)
+        {
+            float hudScale=Mathf.Min(Screen.width/2443f,Screen.height/1125f);
+            GUI.matrix=Matrix4x4.Scale(new Vector3(hudScale,hudScale,1));
+            float canvasWidth=Screen.width/hudScale;
+            HudArt(new Rect(40,28,260,80),hudPlate);
+            HudArt(new Rect(40,118,260,80),hudPlate);
+            HudArt(new Rect(58,38,58,58),hudCoin);
+            HudArt(new Rect(58,128,58,58),hudHeart);
+            Text(new Rect(132,32,150,62),"0",44,Color.white);
+            Text(new Rect(132,122,150,62),"×0",44,Color.white);
+            if(CampaignLevel.Current!=null)
+            {
+                float width=Mathf.Min(600,canvasWidth-720),x=(canvasWidth-width)/2;
+                float progress=Mathf.Clamp01(CampaignLevel.Current.RouteProgress);
+                Fill(new Rect(x,18,width,130),new Color32(31,31,34,204));
+                Text(new Rect(x,34,width,58),"关卡进度 "+Mathf.FloorToInt(progress*100)+"%",34,Color.white,true);
+                float barWidth=width-40;
+                Fill(new Rect(x+20,104,barWidth,25),new Color32(28,22,29,255));
+                Fill(new Rect(x+20,104,barWidth*progress,25),new Color32(62,100,90,255));
+                Fill(new Rect(x+20+Mathf.Clamp(barWidth*progress-7,0,barWidth-14),100,14,33),new Color32(204,137,31,255));
+            }
+            Rect settingsRect=new Rect(canvasWidth-155,20,130,130);
+            var clock=FindObjectOfType<Winning.Clock>();
+            if(clock!=null)Text(new Rect(settingsRect.x-300,40,275,90),clock.ElapsedDisplay,48,Color.white,true);
+            HudArt(settingsRect,hudSettings);
+            if(GUI.Button(settingsRect,GUIContent.none,GUIStyle.none))OpenSettings();
+        }
+        GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-1600*scale)/2,(Screen.height-900*scale)/2,0),Quaternion.identity,new Vector3(scale,scale,1));
+        if(settings)Settings();
+        if(!string.IsNullOrEmpty(error))Text(new Rect(450,800,800,65),error,24,Color.white,true);
+        GUI.matrix=old;
+    }
+    void Home()
+    {
+        // Artwork reference is 2443 x 1221; point sizes follow the supplied design.
+        var previous=GUI.matrix;
+        float homeScale=Mathf.Min(Screen.width/2443f,Screen.height/1221f);
+        GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-2443*homeScale)/2,(Screen.height-1221*homeScale)/2,0),Quaternion.identity,Vector3.one*homeScale);
+        // Fill the entire viewport independently of the safe UI reference frame.
+        GUI.matrix=Matrix4x4.identity;
+        GUI.DrawTexture(new Rect(0,0,Screen.width,Screen.height),homeBackground,ScaleMode.ScaleAndCrop);
+        GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-2443*homeScale)/2,(Screen.height-1221*homeScale)/2,0),Quaternion.identity,Vector3.one*homeScale);
+        Text(new Rect(95,55,1500,175),"GET OVER WITH",137,Color.white);
+        Text(new Rect(95,205,1500,250),"ODYSSEY",205,Color.white);
+        HomeButton(new Rect(95,710,400,115),0,"START",()=>page=1);
+        HomeButton(new Rect(95,850,400,115),1,"OPTIONS",OpenSettings);
+        HomeButton(new Rect(95,990,400,115),2,"EXIT",()=>{if(!Testing)Application.Quit();});
+        GUI.matrix=previous;
+    }
+    void HomeButton(Rect rect,int index,string caption,Action action)
+    {
+        GUI.DrawTexture(rect,homeButtons[index],ScaleMode.ScaleToFit);
+        var style=new GUIStyle(label){fontSize=56,alignment=TextAnchor.MiddleCenter};
+        style.normal.textColor=Color.white;
+        if(GUI.Button(rect,GUIContent.none,GUIStyle.none)){Sound();action();}
+        GUI.Label(rect,caption,style);
+    }
+
+    void Levels()
+    {
+        Text(new Rect(85,50,1000,80),"Select Level",48,Color.white);
+        int start=0,end=PlayableLevelCount+1;
+        for(int i=start;i<end;i++)
+        {
+            int n=i-1;float x=40+i*255;
+            Fill(new Rect(x,300,245,340),new Color32(35,63,56,240));Text(new Rect(x,330,245,70),(n<0 ? "Tutorial" : (n+1).ToString("00")),52,Color.white,true);
+            Text(new Rect(x,420,245,60),(n<0 ? "Getting Started" : Names[n]),28,Color.white,true);
+            Button(new Rect(x+15,560,215,60),"Play",()=>LoadLevel(n));
+        }
+        Button(new Rect(85,800,190,62),"← Back",()=>page=0,false);
+    }
+    void ReturnToLevelMenu()
+    {
+        CloseSettings();
+        Time.timeScale=1;
+        if(IsMenu){page=1;return;}
+        showLevelsOnLoad=true;
+        SceneManager.LoadScene(MenuScene);
+    }
+    public void PanelArt(Rect r,string name){HudArt(r,Load("panel_"+name));}
+    public void PanelText(Rect r,string text,int size,float angle=0)
+    {
+        var matrix=GUI.matrix;
+        GUIUtility.RotateAroundPivot(angle,r.center);
+        Text(r,text,size,Color.white,true);
+        GUI.matrix=matrix;
+    }
+    Texture2D menuShape;
+    Texture2D CreateMenuShape()
+    {
+        // Reference silhouette in top-left UI coordinates, native-size antialiasing.
+        Vector2[] points={new Vector2(.02f,.04f),new Vector2(.78f,.04f),new Vector2(.98f,.19f),new Vector2(.73f,.97f),new Vector2(.14f,.68f)};
+        int w=590,h=260;
+        var texture=new Texture2D(w,h,TextureFormat.RGBA32,false);
+        texture.wrapMode=TextureWrapMode.Clamp;
+        var pixels=new Color32[w*h];
+        for(int y=0;y<h;y++)for(int x=0;x<w;x++)
+        {
+            int covered=0;
+            for(int sy=0;sy<2;sy++)for(int sx=0;sx<2;sx++)
+            {
+                Vector2 q=new Vector2((x+(sx+.5f)/2)/w,1-(y+(sy+.5f)/2)/h);
+                bool inside=false;
+                for(int i=0,j=points.Length-1;i<points.Length;j=i++)
+                    if((points[i].y>q.y)!=(points[j].y>q.y) && q.x<(points[j].x-points[i].x)*(q.y-points[i].y)/(points[j].y-points[i].y)+points[i].x)inside=!inside;
+                if(inside)covered++;
+            }
+            pixels[y*w+x]=new Color32(62,100,90,(byte)(covered*255/4));
+        }
+        texture.SetPixels32(pixels);texture.Apply();return texture;
+    }
+    public bool PanelButton(Rect r,string art,string text,Action action)
+    {
+        if(text=="MENU")
+        {
+            if(menuShape==null)menuShape=CreateMenuShape();
+            GUI.DrawTexture(r,menuShape,ScaleMode.ScaleToFit,true);
+        }
+        else PanelArt(r,art);
+        PanelText(r,text,art=="button_quality"?32:(text=="BACK" || text=="MENU")?60:48,text=="MENU"?6:art=="button_quality"?-7:-4);
+        if(!GUI.Button(r,GUIContent.none,GUIStyle.none))return false;
+        Sound();action();return true;
+    }
+    void Settings()
+    {
+        if(resolutions==null)RefreshResolutions();
+        Fill(new Rect(-4000,-4000,9600,8900),new Color(0,0,0,.65f));
+        PanelArt(new Rect(380,180,840,570),"bg_2");
+        PanelArt(new Rect(620,108,390,188),"tab_1");
+        PanelText(new Rect(620,160,390,100),dropdown?"分辨率":"OPTIONS",60,-8);
+        PanelButton(new Rect(1190,160,90,90),"button_close","",()=>{if(dropdown)dropdown=false;else CloseSettings();});
+        if(dropdown)
+        {
+            int count=resolutions.Length+1;
+            scroll=GUI.BeginScrollView(new Rect(530,300,560,300),scroll,new Rect(0,0,530,count*80));
+            for(int i=0;i<count;i++)
+            {
+                int n=i;string caption=i==0?"AUTO":resolutions[i-1].width+"×"+resolutions[i-1].height;
+                PanelArt(new Rect(0,i*80,520,65),i%2==0?"tab_quality_1":"tab_quality_2");
+                PanelText(new Rect(0,i*80,520,65),(resolutionIndex==i?"✓  ":"")+caption,32,i%2==0?1:-3);
+                if(GUI.Button(new Rect(0,i*80,520,65),GUIContent.none,GUIStyle.none)){resolutionIndex=n;ApplyResolution(true);Sound();}
+            }
+            GUI.EndScrollView();
+            PanelButton(new Rect(670,640,260,100),"button_10","✓",()=>dropdown=false);
+            return;
+        }
+        float e=VolumeRow(318,"SOUND FX",effects),m=VolumeRow(389,"MUSIC",music);
+        if(Mathf.Abs(m-music)>.001f || Mathf.Abs(e-effects)>.001f){music=m;effects=e;SaveVolumes();}
+        PanelButton(new Rect(549,464,235,103),"button_quality","QUALITY",()=>dropdown=true);
+        PanelButton(new Rect(676,576,295,130),"button_10","BACK",CloseSettings);
+        if(!IsMenu && !(CampaignLevel.Current!=null && CampaignLevel.Current.Won))
+            PanelButton(new Rect(676,716,295,130),"button_10","MENU",ReturnToLevelMenu);
+    }
+    float VolumeRow(float y,string name,float value)
+    {
+        bool musicRow=name=="MUSIC";
+        Rect plate=musicRow?new Rect(549,y,203,59):new Rect(570,y,202,69);
+        PanelArt(plate,musicRow?"tab_music":"tab_soundfx");
+        PanelText(plate,name,32,musicRow?-2:4);
+        // Each row has its own segment. Draw and input share these exact endpoints.
+        Vector2 start=new Vector2(872,y+(musicRow?18:34));
+        Vector2 end=new Vector2(1032,y+(musicRow?34:18));
+        Vector2 axis=end-start;
+        float angle=Mathf.Atan2(axis.y,axis.x)*Mathf.Rad2Deg;
+        var matrix=GUI.matrix;
+        Vector2 middle=(start+end)*.5f;
+        // Source track itself rises to the right by approximately 5.49 degrees.
+        GUIUtility.RotateAroundPivot(angle+5.49f,middle);
+        PanelArt(new Rect(middle.x-90,middle.y-18.7f,180,37.4f),"tab_soundfx_1");
+        GUI.matrix=matrix;
+        int id=GUIUtility.GetControlID(musicRow?19381:19382,FocusType.Passive);
+        Event ev=Event.current;
+        Vector2 visualOffset=musicRow?new Vector2(0,13):Vector2.zero;
+        Vector2 pointer=ev.mousePosition-visualOffset;
+        float projection=Vector2.Dot(pointer-start,axis)/axis.sqrMagnitude;
+        Vector2 nearest=start+Mathf.Clamp01(projection)*axis;
+        if(ev.type==EventType.MouseDown && ev.button==0 && Vector2.Distance(pointer,nearest)<40)
+        {GUIUtility.hotControl=id;value=Mathf.Clamp01(projection);ev.Use();}
+        else if(ev.type==EventType.MouseDrag && GUIUtility.hotControl==id)
+        {value=Mathf.Clamp01(projection);ev.Use();}
+        else if(ev.type==EventType.MouseUp && GUIUtility.hotControl==id)
+        {GUIUtility.hotControl=0;ev.Use();}
+        Vector2 knob=Vector2.Lerp(start,end,value)+visualOffset;
+        PanelArt(new Rect(knob.x-35,knob.y-38,70,76),"tab_soundfx_2");
+        return value;
+    }
+
+}
+
+public sealed class MenuAudioGain : MonoBehaviour
+{
+    float original;bool captured;
+    public void Apply(AudioSource source,float gain){if(!captured){original=source.volume;captured=true;}source.volume=original*gain;}
+}

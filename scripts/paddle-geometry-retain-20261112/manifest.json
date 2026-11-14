@@ -1,0 +1,15 @@
+{
+  "restored": [
+    {
+      "name": "Shape",
+      "position": "m_LocalPosition: {x: 0.161782656, y: 0, z: 0}"
+    },
+    {
+      "name": "Head",
+      "position": "m_LocalPosition: {x: -0, y: 0.0463, z: 0}"
+    }
+  ],
+  "contactCompensationRemoved": true,
+  "airTrackingRetained": true,
+  "prefabSha256": "9e1bdddcbcf94b2802c4f79f96168bdf3e50e116aa278b21fad5390fc1caa2f2"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "88547590F93F525E8BD3B588F55083288AD2B5F58DF91C1382126E8102E9F0D9",
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\CampaignLevel.cs"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "260C690D42123B65E04066BA70F08E1AC058CFF514E590AD7FC62BD0005B7B94",
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\OptionalCampaignCoin.cs"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "17729C78C40823331387D6B3115585FE2944926BF0D3F2231DBE5C6F411C3D02",
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\Winning\\FloatingCoin.cs"
+  }
+]

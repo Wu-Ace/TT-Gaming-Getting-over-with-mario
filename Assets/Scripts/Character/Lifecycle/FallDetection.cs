@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using UnityEngine;
 
 namespace Character.Lifecycle
@@ -9,10 +9,16 @@ namespace Character.Lifecycle
 
         public event Action OnFallDetected;
         private bool _detected;
+        private FirstLevelWater water;
 
         private void Update()
         {
-            if (!_detected && transform.position.y < deathThreshold.position.y)
+            if (!water) water = FindObjectOfType<FirstLevelWater>();
+            // Let the body cross the visible surface before drowning.
+            float threshold = water && water.gameObject.scene == gameObject.scene
+                ? water.waterHeight - 0.2f
+                : deathThreshold ? deathThreshold.position.y : float.NegativeInfinity;
+            if (!_detected && transform.position.y < threshold)
             {
                 OnFallDetected?.Invoke();
                 _detected = true;

@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "var g=UnityEngine.GameObject.Find(\"Collision outline preview\");if(g)UnityEngine.Object.DestroyImmediate(g);", "summary": "Remove temporary collision preview without saving scene"}}

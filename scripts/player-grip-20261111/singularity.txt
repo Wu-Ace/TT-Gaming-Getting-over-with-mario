@@ -1,0 +1,1 @@
+Repeated shoulder singularity crossings: max one-frame upper-arm rotation=26.99994 (cap27deg); max wrist error=1.96605E-06 min grip separation=0.6

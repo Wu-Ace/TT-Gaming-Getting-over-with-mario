@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"success\": false,\n  \"message\": \"Play mode exiting.\",\n  \"code\": \"Play mode exiting.\",\n  \"error\": \"Play mode exiting.\",\n  \"request_id\": \"ntb-1\"\n}"}]}, "jsonrpc": "2.0", "id": 2}

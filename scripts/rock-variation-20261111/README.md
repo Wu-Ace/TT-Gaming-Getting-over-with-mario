@@ -1,0 +1,4 @@
+# Rock top variation — 2026-11-11
+Corrected the previous single-top mapping. Rock RuleTile now uses both Rock_top1 and Rock_top2 on ordinary top edges, single-row surfaces, isolated cells and column tops. Corner sprites retain their authored corner silhouettes. Deterministic Perlin selection, scale .47, no sprite flips or rotations; same position remains stable across refresh/reentry. All four levels share this RuleTile, so no scene geometry edits required. Existing standalone moving platform renderers were not randomized this turn.
+
+Real Unity refresh: zero errors/warnings. Loaded Level01 Tilemap selected top=175 and top2=108; thin=2/thin2=4 and coltop=5/coltop2=9; other counts in counts.txt. Actual Game screenshot game.png opened and inspected. Actual Scene view inspected. Play stopped. No collider, movement or source Rock PNG edits; full traversal/device/export not rerun. Scoped source/RuleTile backups retained.

@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 // Dedicated persistent voices preserve cues through scene reloads and object cleanup.
@@ -28,6 +28,7 @@ public sealed class GameplayAudio : MonoBehaviour
             case "platform_fall": return "KenneyImpact/impactPlank_medium_000";
             case "enemy_bee": return "KenneyImpact/impactSoft_medium_000";
             case "enemy_plant": return "KenneyImpact/impactSoft_medium_000";
+            case "pig_charge": return "KenneyImpact/footstep_grass_000";
             case "enemy_hit": return "KenneyImpact/impactSoft_medium_000";
             case "death_hit": return "KenneyImpact/impactSoft_medium_000";
             case "coin": return "KenneyImpact/impactMetal_light_000";

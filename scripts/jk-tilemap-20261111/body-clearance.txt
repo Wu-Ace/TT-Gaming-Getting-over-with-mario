@@ -1,0 +1,1 @@
+3x4 cell conservative body flood: highest row=627 of 627. This is geometric connectivity only.

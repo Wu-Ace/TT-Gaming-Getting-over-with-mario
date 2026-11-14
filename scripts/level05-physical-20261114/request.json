@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "script": "UnityEditor.AssetDatabase.DeleteAsset(\"Assets/Scenes/Level05_ClearanceWorking.unity\");GameMenuUI.PreferencePrefix=GameMenuUI.Pref;GameMenuUI.Testing=false;UnityEngine.Time.timeScale=1;UnityEngine.Debug.Log(\"Test state cleared; current scene=\"+UnityEngine.SceneManagement.SceneManager.GetActiveScene().path);",
+    "summary": "Clear isolated test state and remove temporary baseline import"
+  }
+}

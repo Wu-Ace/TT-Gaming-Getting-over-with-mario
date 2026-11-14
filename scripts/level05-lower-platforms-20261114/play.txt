@@ -1,0 +1,1 @@
+dead=False body=(11.80, -1.95, 0.00) arms=True input=True

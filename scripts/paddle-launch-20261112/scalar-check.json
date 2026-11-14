@@ -1,0 +1,8 @@
+{
+  "scope": "scalar fixed-tip vertical push, mass12 gravity9.81; excludes joints/contact transitions",
+  "peakRise": 0.6383380545370109,
+  "initialForce": 400,
+  "weight": 117.72,
+  "unityCompilation": "not run",
+  "actualTraversal": "not run"
+}

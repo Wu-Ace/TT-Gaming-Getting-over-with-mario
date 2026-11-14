@@ -1,0 +1,10 @@
+{
+  "bladeSourcePixelStart": 160,
+  "solidPointCount": 12,
+  "localCutoff": -0.05341010217391304,
+  "hashes": {
+    "Assets\\Prefabs\\Character.prefab": "542d8b7ff453546977b374668dfa54afe092f25afb1adc7c52d41966f0bfca79",
+    "Assets\\Editor\\FitPaddleColliders.cs": "07b2bb7c35aa14102a0948d74fe20540d2419e916850089cb1672c1e52a9987a"
+  },
+  "physicsVerified": false
+}

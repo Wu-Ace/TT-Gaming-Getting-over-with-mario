@@ -1,0 +1,350 @@
+[
+  {
+    "patch": 0,
+    "bounds": [
+      26.25,
+      27.85,
+      28.2,
+      29.2
+    ],
+    "thresholds": {
+      "0": {
+        "crossings": {
+          "left-right": [],
+          "left-top": [],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 891
+      },
+      "0.005": {
+        "crossings": {
+          "left-right": [],
+          "left-top": [],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 880
+      },
+      "0.01": {
+        "crossings": {
+          "left-right": [],
+          "left-top": [],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 813
+      },
+      "0.015": {
+        "crossings": {
+          "left-right": [],
+          "left-top": [],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 765
+      },
+      "0.02": {
+        "crossings": {
+          "left-right": [],
+          "left-top": [],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 731
+      }
+    }
+  },
+  {
+    "patch": 1,
+    "bounds": [
+      26.55,
+      27.85,
+      30.8,
+      31.6
+    ],
+    "thresholds": {
+      "0": {
+        "crossings": {
+          "left-right": [
+            1
+          ],
+          "left-top": [
+            1
+          ],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [
+            1
+          ],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 915
+      },
+      "0.005": {
+        "crossings": {
+          "left-right": [
+            1
+          ],
+          "left-top": [
+            1
+          ],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [
+            1
+          ],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 906
+      },
+      "0.01": {
+        "crossings": {
+          "left-right": [
+            1
+          ],
+          "left-top": [
+            1
+          ],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [
+            1
+          ],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 860
+      },
+      "0.015": {
+        "crossings": {
+          "left-right": [
+            1
+          ],
+          "left-top": [
+            1
+          ],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [
+            1
+          ],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 814
+      },
+      "0.02": {
+        "crossings": {
+          "left-right": [
+            1
+          ],
+          "left-top": [
+            1
+          ],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [
+            1
+          ],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 788
+      }
+    }
+  },
+  {
+    "patch": 2,
+    "bounds": [
+      15.45,
+      16.85,
+      38.05,
+      38.85
+    ],
+    "thresholds": {
+      "0": {
+        "crossings": {
+          "left-right": [
+            1
+          ],
+          "left-top": [
+            1
+          ],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [
+            1
+          ],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 998
+      },
+      "0.005": {
+        "crossings": {
+          "left-right": [
+            1
+          ],
+          "left-top": [
+            1
+          ],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [
+            1
+          ],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 959
+      },
+      "0.01": {
+        "crossings": {
+          "left-right": [
+            1
+          ],
+          "left-top": [
+            1
+          ],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [
+            1
+          ],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 947
+      },
+      "0.015": {
+        "crossings": {
+          "left-right": [
+            1
+          ],
+          "left-top": [
+            1
+          ],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [
+            1
+          ],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 939
+      },
+      "0.02": {
+        "crossings": {
+          "left-right": [
+            1
+          ],
+          "left-top": [
+            1
+          ],
+          "right-top": [
+            1
+          ],
+          "bottom-left": [
+            1
+          ],
+          "bottom-right": [
+            1
+          ],
+          "bottom-top": [
+            1
+          ]
+        },
+        "freeSamples": 869
+      }
+    }
+  }
+]

@@ -1,0 +1,21 @@
+var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();
+if(UnityEditor.EditorApplication.isPlaying)throw new System.Exception("Stop Play required");
+if(scene.isDirty){System.IO.File.Copy(scene.path,"scripts/moving-art-20261114/pre-save-"+System.IO.Path.GetFileName(scene.path),true);UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene);}
+var report=new System.Collections.Generic.List<string>();
+var setup=UnityEditor.SceneManagement.EditorSceneManager.GetSceneManagerSetup();
+try {foreach(var path in System.IO.Directory.GetFiles("Assets/Scenes","*.unity")){
+var raw=System.IO.File.ReadAllText(path);var guid=UnityEditor.AssetDatabase.AssetPathToGUID("Assets/Scripts/VerticalRidePlatform.cs");if(!raw.Contains(guid))continue;
+var backup="scripts/moving-art-20261114/"+System.IO.Path.GetFileName(path)+".backup";if(!System.IO.File.Exists(backup))System.IO.File.Copy(path,backup);
+var sc=UnityEditor.SceneManagement.EditorSceneManager.OpenScene(path);
+var rule=UnityEditor.AssetDatabase.LoadAssetAtPath<RockVariationTile>("Assets/Tiles/RockVariations/"+sc.name+".asset");if(!rule)throw new System.Exception("Missing rule "+sc.name);
+foreach(var platform in UnityEngine.Object.FindObjectsOfType<VerticalRidePlatform>(true)){
+var rs=platform.GetComponentsInChildren<UnityEngine.SpriteRenderer>(true);foreach(var r in rs){
+var pos=r.transform.position;var cell=new UnityEngine.Vector3Int(UnityEngine.Mathf.RoundToInt(pos.x/.8f-.5f),UnityEngine.Mathf.RoundToInt((pos.y+3.6f)/.8f-.5f),0);
+int mask=0;foreach(var n in rs){if(n==r)continue;var delta=n.transform.position-pos;if(UnityEngine.Mathf.Abs(delta.y)<.05f){if(UnityEngine.Mathf.Abs(delta.x+.8f)<.05f)mask|=4;if(UnityEngine.Mathf.Abs(delta.x-.8f)<.05f)mask|=8;}}
+var old=r.sprite;var next=rule.Surface(mask,cell);var scale=r.transform.localScale;float factor=(old.rect.width-2)/old.pixelsPerUnit/((next.rect.width-2)/next.pixelsPerUnit);r.sprite=next;r.transform.localScale=scale*factor;
+report.Add(sc.name+"/"+platform.name+"/"+r.name+" -> "+UnityEditor.AssetDatabase.GetAssetPath(next)+" scale="+r.transform.localScale);
+}}
+UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(sc);UnityEditor.SceneManagement.EditorSceneManager.SaveScene(sc);
+}}finally{UnityEditor.SceneManagement.EditorSceneManager.RestoreSceneManagerSetup(setup);}
+System.IO.File.WriteAllLines("scripts/moving-art-20261114/applied.txt",report);return report;
+

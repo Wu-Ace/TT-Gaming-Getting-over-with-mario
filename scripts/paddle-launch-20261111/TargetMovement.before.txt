@@ -1,0 +1,52 @@
+using System;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
+namespace Character.Control {
+ public class TargetMovement:MonoBehaviour {
+  [SerializeField] Transform bodyCenter;
+  [SerializeField] float minRadius=0,maxRadius=2;
+  [SerializeField] float relativeSensitivity=.006f;
+  ArmsSimulation rig;float lastMotionTime;
+  Vector2 target;bool initialized,skipDelta=true,ownsCursor;
+  public event Action<Vector2> OnPositionChanged;
+  public Vector2 VirtualTarget=>target;
+  void Start(){ResetTarget();}
+  public void ResetTarget(){rig=transform.root.GetComponentInChildren<ArmsSimulation>();target=rig&&rig.HammerTip? (Vector2)rig.HammerTip.position:(Vector2)transform.position;initialized=true;skipDelta=true;transform.position=target;}
+  // Existing PlayerInput position binding is kept for serialization; absolute position no longer drives the tool.
+  public void OnMousePositionChanged(InputAction.CallbackContext context){}
+  void OnApplicationFocus(bool focus){skipDelta=true;if(!focus)ReleaseCursor();}
+  void OnDisable(){ReleaseCursor();skipDelta=true;}
+  void ReleaseCursor(){if(ownsCursor){Cursor.lockState=CursorLockMode.None;Cursor.visible=true;ownsCursor=false;}}
+  void Update(){
+   if(!initialized||!bodyCenter)return;
+   if(Time.timeScale<=0||!Application.isFocused){ReleaseCursor();skipDelta=true;return;}
+   if(Keyboard.current!=null&&Keyboard.current.escapeKey.wasPressedThisFrame){ReleaseCursor();skipDelta=true;return;}
+   bool ui=EventSystem.current&&EventSystem.current.IsPointerOverGameObject();
+   if(Mouse.current!=null&&Mouse.current.leftButton.wasPressedThisFrame&&!ui){Cursor.lockState=CursorLockMode.Locked;Cursor.visible=false;ownsCursor=true;skipDelta=true;}
+   if(ui&&!ownsCursor){skipDelta=true;return;}
+   if(!ownsCursor){
+    if(rig && rig.HammerTip){target=rig.HammerTip.position;transform.position=target;OnPositionChanged?.Invoke(target);}
+    skipDelta=true;return;
+   }
+   var delta=Mouse.current==null?Vector2.zero:Mouse.current.delta.ReadValue();
+   if(skipDelta){delta=Vector2.zero;skipDelta=false;}
+   // Let an unforced virtual target yield toward the physical tool after a push.
+   // This is world-space feedback, independent of camera position.
+   if(delta.sqrMagnitude<.01f && Time.unscaledTime-lastMotionTime>.08f && rig && rig.HammerTip)
+    target=Vector2.Lerp(target,rig.HammerTip.position,1-Mathf.Exp(-5f*Time.unscaledDeltaTime));
+   ApplyRelativeMotion(delta);
+  }
+  public void ApplyRelativeMotion(Vector2 pixels){
+   if(!initialized)ResetTarget();
+   if(float.IsNaN(pixels.x)||float.IsNaN(pixels.y)||float.IsInfinity(pixels.x)||float.IsInfinity(pixels.y))return;
+   if(pixels.sqrMagnitude>.01f)lastMotionTime=Time.unscaledTime;
+   target+=Vector2.ClampMagnitude(pixels,300)*relativeSensitivity;
+   Vector2 center=bodyCenter.position,offset=target-center;
+   float length=offset.magnitude;if(length>maxRadius)target=center+offset/length*maxRadius;
+   else if(length<minRadius&&length>.00001f)target=center+offset/length*minRadius;
+   if(rig)target=rig.ConstrainTarget(target);
+   transform.position=target;OnPositionChanged?.Invoke(target);
+  }
+ }
+}

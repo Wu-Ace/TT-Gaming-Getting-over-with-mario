@@ -1,0 +1,6 @@
+Assets/Scenes/Tutorial.unity hidden legacy seal renderers; blocker components preserved
+Assets/Scenes/Level01.unity hidden legacy seal renderers; blocker components preserved
+Assets/Scenes/Level02_Jungle.unity hidden legacy seal renderers; blocker components preserved
+Assets/Scenes/Level03_Beach.unity hidden legacy seal renderers; blocker components preserved
+Assets/Scenes/Level04_Town.unity hidden legacy seal renderers; blocker components preserved
+Assets/Scenes/Level05_Cave.unity hidden legacy seal renderers; blocker components preserved

@@ -1,0 +1,1 @@
+{"result":{"content":[{"type":"text","text":"{\n  \"result\": null,\n  \"elapsed_ms\": 1143,\n  \"logs\": [\n    \"[Log] {\\\"cells\\\":1527,\\\"cuts\\\":[35,41,66,72,116],\\\"grid\\\":0.8,\\\"gapsAfter\\\":2,\\\"totalAddedWidth\\\":4.0,\\\"movedObjects\\\":63}\"\n  ],\n  \"log_count\": 1\n}"}]},"jsonrpc":"2.0","id":2}

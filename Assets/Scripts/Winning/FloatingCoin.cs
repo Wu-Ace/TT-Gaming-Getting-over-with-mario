@@ -1,9 +1,73 @@
 using UnityEngine;
 namespace Winning
 {
-    // Retain the component identity for existing scene references.
     public class FloatingCoin : MonoBehaviour
     {
-        private void Awake() { gameObject.SetActive(false); }
+        private bool collected;
+        private string identity;
+        private void EnsureIdentity() {
+            if(identity!=null)return;
+            var p=transform.position;
+            identity="world:"+p.x.ToString("R",System.Globalization.CultureInfo.InvariantCulture)+":"+p.y.ToString("R",System.Globalization.CultureInfo.InvariantCulture);
+        }
+        public bool WasCollected() {
+            EnsureIdentity();
+            return CampaignLevel.Current!=null && CampaignLevel.Current.HasLegacyCoin(identity);
+        }
+        // Includes collected generated slots so an old pickup cannot reappear beneath one.
+        private bool SuppressedByCampaign() {
+            return CampaignLevel.Current!=null && CampaignLevel.Current.HasGeneratedCoinNear(transform.position);
+        }
+        private Transform visual;
+        private Vector3 visualScale;
+        private float phase;
+        private void Start()
+        {
+            if(SuppressedByCampaign() || WasCollected()){gameObject.SetActive(false);return;}
+            var animator = GetComponent<Animator>();
+            if (animator != null) animator.enabled = false;
+            var source = GetComponentInChildren<SpriteRenderer>();
+            var sprite = Resources.Load<Sprite>("MenuUI/hud_icon_coin");
+            if (source == null || sprite == null) return;
+            float height = source.bounds.size.y;
+            var child = new GameObject("Spinning icon coin");
+            visual = child.transform;
+            visual.SetParent(transform, false);
+            var renderer = child.AddComponent<SpriteRenderer>();
+            renderer.sprite = sprite;
+            renderer.sortingLayerID = source.sortingLayerID;
+            renderer.sortingOrder = source.sortingOrder;
+            float scale = height / (sprite.bounds.size.y * Mathf.Abs(transform.lossyScale.y));
+            visualScale = Vector3.one * scale;
+            visual.localScale = visualScale;
+            source.enabled = false;
+            phase = Random.value * Mathf.PI * 2f;
+        }
+        private void Update()
+        {
+            if(SuppressedByCampaign() || WasCollected()){gameObject.SetActive(false);return;}
+            if (visual == null) return;
+            float width = Mathf.Max(0.08f, Mathf.Abs(Mathf.Cos(Time.time * 4.5f + phase)));
+            visual.localScale = new Vector3(visualScale.x * width, visualScale.y, visualScale.z);
+        }
+        private void Awake()
+        {
+            if (name != "Coin(Clone)") gameObject.SetActive(false);
+        }
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            var body = CampaignInteractable.Body(other);
+            if (collected || body == null || body.Dead || SuppressedByCampaign()) return;
+            EnsureIdentity();
+            if(CampaignLevel.Current!=null) {
+                if(!CampaignLevel.Current.CollectLegacyCoin(identity))return;
+                collected=true;Destroy(gameObject);return;
+            }
+            collected = true;
+            var purse = FindObjectOfType<CoinPurse>();
+            if (purse != null) purse.Increment();
+            else if (CampaignLevel.Current != null) CampaignLevel.Current.CollectLegacyCoin();
+            Destroy(gameObject);
+        }
     }
 }

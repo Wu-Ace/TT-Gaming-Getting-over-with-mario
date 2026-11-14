@@ -1,0 +1,29 @@
+{
+  "time": "2026-11-11T03:05:07.697471",
+  "sha256": {
+    "Assets\\Scripts\\CampaignLevel.cs": "e4b29a8833b3e9d586ee2741b742e9d78b77a8ddba9b99e73bce1ea2ce710f42",
+    "Assets\\Scripts\\CampaignInteractable.cs": "3720a01042e3fbffe01d80870c97c1ee4587f1eb2b3e004bfd29e2530962df09",
+    "ai-handoff.md": "baef09fe053f85fc24ca94db495d10bdd45e21af928a7dd81a0408bc3d86dae5",
+    "Assets\\Scenes\\Level01.unity": "457af4a6f766717007b2e43be9978ac8454c9e7685a806f4b4b3fb6342b9d419",
+    "Assets\\Scenes\\Level02_Jungle.unity": "b79d5d7b0dfaf6d03503739599edb361dd41f1c53b1dfe7ca063009769235625",
+    "Assets\\Scenes\\Level03_Beach.unity": "c8fc04a6f44bebf1e867d4d78fcad62a8fabbdea273f23dcc5b09fb491cb8ec5",
+    "Assets\\Scenes\\Level04_Town.unity": "cfd9ff673610e2eada6a3a79ed2418e2e9cb48045a8b52c4c8cb8f2c18a97934",
+    "Assets\\Scenes\\Level05_Cave.unity": "462255d836e404d4f6e27ccb9e77b9603704a6317f2009dad0c664e26eca63f9",
+    "Assets\\Scenes\\Level06_Grassland_Winter.unity": "260870d36c1bf93060060f4f12a12a5962e487143488a86f8ad1dee013032488",
+    "Assets\\Scenes\\Level07_Ice.unity": "3b5aeb04ee6fa617fb998f9495a666df6fa2c7475a3b8b2f9b0e2bb1dbc488d1",
+    "Assets\\Scenes\\Level08_Castle.unity": "e58a7af88f52b5d30d425572ae08172f3fce0d35928ccaaac35d03051b2cd6e7",
+    "Assets\\Scenes\\Level09_Volcano.unity": "a9c0c09c8895bd6e008e445961152337c695415be8f333dec1390edd607a12da",
+    "Assets\\Scenes\\Level10_Sky.unity": "ec283cdb7f0524c436bf20295f999397f7d22e3a12e7338885ceae5d10a21db9",
+    "Assets\\Scenes\\MainMenu.unity": "9132854c03264235a0396c1b9521c6edecf5a9e4926b4aa8dedde1aa05d3840b",
+    "Assets\\Scenes\\Tutorial.unity": "7915e373b89c953cbe4878ab77323ea0294e0e35ddfb754d0cf0085631192179",
+    "scripts\\remove-checkpoints-20261111\\flag-refresh-result.json": "8f3903375aeada4db493e14ead0980cea32a185ae367d0492d6c0072a0499a12",
+    "scripts\\remove-checkpoints-20261111\\flag-stop-result.json": "580640227a219ed3b72404567a91f0e4135fc477bd3bb13b29e90770fcbd3a51",
+    "scripts\\remove-checkpoints-20261111\\play.txt": "c3c19dbb46dc2444fce8aa59b69aedf9a722c9d5419e67a1707a1ecb80859a52",
+    "scripts\\remove-checkpoints-20261111\\README.md": "2f57b9a90d29c152183efb00ebc973c7c2289b4b95adfaf22c3071b79f32eb5a",
+    "scripts\\remove-checkpoints-20261111\\remove-checkpoints-scenes-result.json": "17c2cb337c1dbb0c98caf968ccb798c1c47534886061e805816d0020a64b701d",
+    "scripts\\remove-checkpoints-20261111\\remove-checkpoints-scenes.cs": "8f8249e00ec8a983776507a393fb6e37dcb6d275fc8683527d73ccaf44ec6c4d",
+    "scripts\\remove-checkpoints-20261111\\remove-checkpoints-test-result.json": "cd2bc98d9d32e7f8fa86e10c556a3ee735208b31585cca82e86dd6309d9f633c",
+    "scripts\\remove-checkpoints-20261111\\remove-checkpoints-test.cs": "e31f5cd022681155af8b856b544b76670a51a099ea685dd3e71de9e29056d2a0",
+    "scripts\\remove-checkpoints-20261111\\removed.txt": "8a356b64cb61f78db47828e85ad9f1883e037870c3384b33d177434c406a893f"
+  }
+}

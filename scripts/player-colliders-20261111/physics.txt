@@ -1,0 +1,1 @@
+PASS isolated actual Physics2D floor drop: body bottom=-2.785, paddle bottom=-2.785012 (floor=-2.8). Blade enter/exit=1/1. Shaft excluded from blade trigger. No gameplay components or saves cloned.

@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "summary": "Remove isolated regression scene and restore original user scene",
+    "script": "var path=UnityEditor.SessionState.GetString(\"CrushDeathAcceptance.OriginalScene\",\"Assets/Scenes/Level01.unity\");UnityEditor.SceneManagement.EditorSceneManager.OpenScene(path);UnityEditor.AssetDatabase.DeleteAsset(\"Assets/Scenes/CrushDeath_Acceptance_Temp.unity\");UnityEditor.SessionState.EraseString(\"CrushDeathAcceptance.OriginalScene\");UnityEngine.Debug.Log(\"RESTORED \"+UnityEngine.SceneManagement.SceneManager.GetActiveScene().path+\" dirty=\"+UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty+\" playing=\"+UnityEditor.EditorApplication.isPlaying);"
+  }
+}

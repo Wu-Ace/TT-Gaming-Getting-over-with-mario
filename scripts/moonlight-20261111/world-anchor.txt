@@ -1,0 +1,1 @@
+PASS: camera translated (5,2); beam world position unchanged; root has no camera parent.

@@ -1,0 +1,14 @@
+{
+  "tileCount": 1527,
+  "allRowPlatformWidthsUnchanged": true,
+  "files": [
+    {
+      "path": "scripts/level02-gaps-20261114/backup/Level02_Jungle.unity",
+      "sha256": "785aeeda9cedcb4da7cdad423174273bd75ce5a68e9b5f5eb1b21785275c0904"
+    },
+    {
+      "path": "Assets/Scenes/Level02_Jungle.unity",
+      "sha256": "956b3e6ab99a9e98633ed13affc5fe7a57b02cea9339ce625dbec85410011356"
+    }
+  ]
+}

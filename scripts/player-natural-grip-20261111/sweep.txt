@@ -1,0 +1,1 @@
+6489 full-circle poses; wrist error=1.96605E-06 min grip gap/scale=0.2001341 max elbow displacement per .5deg/scale=0.03052855 projected limb length excess=2.384186E-06

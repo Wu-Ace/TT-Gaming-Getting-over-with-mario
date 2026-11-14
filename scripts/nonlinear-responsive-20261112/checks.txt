@@ -1,0 +1,1 @@
+PASS: 20002 curve samples; never slower than prior linear baseline; monotonic and capped. Unity compile/Play not run.

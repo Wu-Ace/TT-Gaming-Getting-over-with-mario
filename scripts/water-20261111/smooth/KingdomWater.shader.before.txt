@@ -1,0 +1,30 @@
+Shader "Game/KingdomWater" {
+Properties { _Reflection("Reflection",2D)="black"{} }
+SubShader { Tags { "Queue"="Transparent+100" "RenderType"="Transparent" "RenderPipeline"="UniversalPipeline" } Pass {
+ZWrite Off ZTest Always Cull Off
+HLSLPROGRAM
+#pragma vertex vert
+#pragma fragment frag
+#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+TEXTURE2D(_Reflection); SAMPLER(sampler_Reflection);
+float4 _View; float _WaterY,_Depth,_Clock;
+struct V { float4 position:POSITION; }; struct F { float4 position:SV_POSITION; float2 world:TEXCOORD0; };
+F vert(V v) { F o; float3 w=TransformObjectToWorld(v.position.xyz); o.position=TransformWorldToHClip(w); o.world=w.xy; return o; }
+float hash(float2 p){return frac(sin(dot(p,float2(127.1,311.7)))*43758.5453);}
+half4 frag(F i):SV_Target {
+ float d=saturate((_WaterY-i.world.y)/_Depth);
+ float row=floor(i.world.y*45);
+ float offset=round((sin(row*.31+_Clock*1.3)+sin(row*.83-_Clock*.7))*(1+d*2))/640;
+ float2 uv=(float2(i.world.x,2*_WaterY-i.world.y)-_View.xy)/_View.zw;
+ uv.x+=offset;
+ half3 reflected=SAMPLE_TEXTURE2D(_Reflection,sampler_Reflection,saturate(uv)).rgb;
+ float valid=step(0,uv.y)*step(uv.y,1);
+ half3 col=lerp(half3(.035,.075,.10),reflected*half3(.62,.78,.85),lerp(.70,.32,d)*valid);
+ float2 cell=floor(float2(i.world.x*9,row));
+ float glint=step(.976,hash(cell))*step(.35,sin(_Clock*.7+hash(cell)*6.28));
+ col+=glint*half3(.16,.21,.22)*(1-d*.5);
+ col+=half3(.06,.10,.11)*(1-smoothstep(0,.035,abs(i.world.y-_WaterY)));
+ return half4(col,1);
+}
+ENDHLSL
+} } }

@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "UnityEditor.SceneManagement.EditorSceneManager.OpenScene(\"Assets/Scenes/Level04_Town.unity\");var v=UnityEditor.SceneView.lastActiveSceneView;v.in2DMode=true;v.LookAt(new UnityEngine.Vector3(12,-1,0),UnityEngine.Quaternion.identity,8,true,true);v.Repaint();", "summary": "Open Level04_Town for actual Scene and Game review"}}

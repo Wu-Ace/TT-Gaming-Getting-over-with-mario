@@ -1,0 +1,1214 @@
+[
+  {
+    "scene": "Assets/Scenes/Tutorial.unity",
+    "step": 0.05,
+    "staticColliders": 1,
+    "components": 1,
+    "anchors": [
+      {
+        "target": [
+          0.0,
+          -1.5
+        ],
+        "nearestFree": [
+          0.0,
+          -1.5499999999999998
+        ],
+        "distance": 0.1,
+        "component": 1
+      },
+      {
+        "target": [
+          0.0,
+          -1.0
+        ],
+        "nearestFree": [
+          0.0,
+          -1.1499999999999995
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          -6.4,
+          -1.0
+        ],
+        "nearestFree": [
+          -6.3999999999999995,
+          -1.1499999999999995
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          5.6,
+          -1.0
+        ],
+        "nearestFree": [
+          5.600000000000001,
+          -1.1499999999999995
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          5.600000155,
+          -0.7999999499999999
+        ],
+        "nearestFree": [
+          5.600000000000001,
+          -0.9499999999999993
+        ],
+        "distance": 0.0,
+        "component": 1
+      }
+    ],
+    "bodyBounds": [
+      0.765,
+      1.5
+    ],
+    "bounds": [
+      [
+        -14.0,
+        -8.0
+      ],
+      [
+        15.0,
+        3.0
+      ]
+    ]
+  },
+  {
+    "scene": "Assets/Scenes/Level01.unity",
+    "step": 0.05,
+    "staticColliders": 75,
+    "components": 1,
+    "anchors": [
+      {
+        "target": [
+          -28.01,
+          6.09
+        ],
+        "nearestFree": [
+          -28.0,
+          5.9
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          289.5,
+          -2.399999905
+        ],
+        "nearestFree": [
+          289.5,
+          -2.55
+        ],
+        "distance": 0.0,
+        "component": 1
+      }
+    ],
+    "bodyBounds": [
+      0.765,
+      1.5
+    ],
+    "bounds": [
+      [
+        -61.0,
+        -10.0
+      ],
+      [
+        322.0,
+        27.0
+      ]
+    ]
+  },
+  {
+    "scene": "Assets/Scenes/Level02_Jungle.unity",
+    "step": 0.05,
+    "staticColliders": 6,
+    "components": 1,
+    "anchors": [
+      {
+        "target": [
+          2.0,
+          -2.9
+        ],
+        "nearestFree": [
+          2.0,
+          -3.049999999999999
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          2.0,
+          -2.6
+        ],
+        "nearestFree": [
+          2.0,
+          -2.75
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          36.0,
+          4.6
+        ],
+        "nearestFree": [
+          36.0,
+          4.450000000000003
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          65.0,
+          3.0
+        ],
+        "nearestFree": [
+          65.0,
+          2.8500000000000014
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          90.0,
+          3.8
+        ],
+        "nearestFree": [
+          90.0,
+          3.650000000000002
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          140.0,
+          -2.6
+        ],
+        "nearestFree": [
+          140.0,
+          -2.75
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          140.0,
+          -2.399999905
+        ],
+        "nearestFree": [
+          140.0,
+          -2.549999999999999
+        ],
+        "distance": 0.0,
+        "component": 1
+      }
+    ],
+    "bodyBounds": [
+      0.765,
+      1.5
+    ],
+    "bounds": [
+      [
+        -11.0,
+        -15.0
+      ],
+      [
+        152.0,
+        8.0
+      ]
+    ]
+  },
+  {
+    "scene": "Assets/Scenes/Level03_Beach.unity",
+    "step": 0.05,
+    "staticColliders": 1,
+    "components": 2,
+    "anchors": [
+      {
+        "target": [
+          76.64,
+          15.6
+        ],
+        "nearestFree": [
+          76.65,
+          15.450000000000003
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          76.64,
+          15.6
+        ],
+        "nearestFree": [
+          76.65,
+          15.450000000000003
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          61.12,
+          8.16
+        ],
+        "nearestFree": [
+          61.10000000000001,
+          8.0
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          55.2,
+          6.24
+        ],
+        "nearestFree": [
+          55.2,
+          6.050000000000001
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          47.68,
+          6.24
+        ],
+        "nearestFree": [
+          47.7,
+          6.050000000000001
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          36.0,
+          5.44
+        ],
+        "nearestFree": [
+          36.0,
+          5.25
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          15.2,
+          3.44
+        ],
+        "nearestFree": [
+          15.200000000000003,
+          3.25
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          9.6,
+          9.28
+        ],
+        "nearestFree": [
+          9.600000000000001,
+          9.100000000000001
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          11.6,
+          22.24
+        ],
+        "nearestFree": [
+          11.600000000000001,
+          22.05
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          16.8,
+          32.08
+        ],
+        "nearestFree": [
+          16.8,
+          31.900000000000006
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          27.6,
+          42.24
+        ],
+        "nearestFree": [
+          27.6,
+          42.45
+        ],
+        "distance": 0.4,
+        "component": 1
+      },
+      {
+        "target": [
+          38.4,
+          39.84
+        ],
+        "nearestFree": [
+          38.400000000000006,
+          39.650000000000006
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          60.4,
+          36.4
+        ],
+        "nearestFree": [
+          60.400000000000006,
+          36.25
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          60.399999650000005,
+          37.60000205
+        ],
+        "nearestFree": [
+          60.400000000000006,
+          37.45
+        ],
+        "distance": 0.0,
+        "component": 1
+      }
+    ],
+    "bodyBounds": [
+      0.765,
+      1.5
+    ],
+    "bounds": [
+      [
+        -5.0,
+        -8.0
+      ],
+      [
+        87.0,
+        47.0
+      ]
+    ]
+  },
+  {
+    "scene": "Assets/Scenes/Level04_Town.unity",
+    "step": 0.05,
+    "staticColliders": 1,
+    "components": 8,
+    "anchors": [
+      {
+        "target": [
+          10.0,
+          -0.7
+        ],
+        "nearestFree": [
+          10.0,
+          -0.8499999999999996
+        ],
+        "distance": 0.0,
+        "component": 2
+      },
+      {
+        "target": [
+          10.0,
+          -2.0
+        ],
+        "nearestFree": [
+          9.700000000000001,
+          -1.5499999999999998
+        ],
+        "distance": 0.670820393249937,
+        "component": 2
+      },
+      {
+        "target": [
+          11.6,
+          -1.2
+        ],
+        "nearestFree": [
+          11.600000000000001,
+          -0.75
+        ],
+        "distance": 0.6000000000000001,
+        "component": 2
+      },
+      {
+        "target": [
+          13.2,
+          -1.2
+        ],
+        "nearestFree": [
+          12.900000000000002,
+          -0.75
+        ],
+        "distance": 0.670820393249937,
+        "component": 2
+      },
+      {
+        "target": [
+          14.8,
+          -0.4
+        ],
+        "nearestFree": [
+          14.8,
+          0.05000000000000071
+        ],
+        "distance": 0.6000000000000001,
+        "component": 3
+      },
+      {
+        "target": [
+          14.8,
+          1.2
+        ],
+        "nearestFree": [
+          14.850000000000001,
+          1.0500000000000007
+        ],
+        "distance": 0.05,
+        "component": 3
+      },
+      {
+        "target": [
+          14.8,
+          2.0
+        ],
+        "nearestFree": [
+          14.900000000000002,
+          1.5
+        ],
+        "distance": 0.3640054944640259,
+        "component": 3
+      },
+      {
+        "target": [
+          16.4,
+          2.8
+        ],
+        "nearestFree": [
+          16.150000000000002,
+          3.25
+        ],
+        "distance": 0.65,
+        "component": 1
+      },
+      {
+        "target": [
+          18.0,
+          4.4
+        ],
+        "nearestFree": [
+          17.700000000000003,
+          4.850000000000001
+        ],
+        "distance": 0.670820393249937,
+        "component": 1
+      },
+      {
+        "target": [
+          19.6,
+          5.2
+        ],
+        "nearestFree": [
+          19.6,
+          5.65
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          21.2,
+          5.2
+        ],
+        "nearestFree": [
+          20.900000000000002,
+          5.65
+        ],
+        "distance": 0.670820393249937,
+        "component": 1
+      },
+      {
+        "target": [
+          22.8,
+          6.0
+        ],
+        "nearestFree": [
+          22.8,
+          6.450000000000001
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          23.6,
+          7.6
+        ],
+        "nearestFree": [
+          23.6,
+          7.600000000000001
+        ],
+        "distance": 0.15000000000000002,
+        "component": 1
+      },
+      {
+        "target": [
+          24.4,
+          9.2
+        ],
+        "nearestFree": [
+          24.400000000000002,
+          9.05
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          23.6,
+          10.8
+        ],
+        "nearestFree": [
+          23.6,
+          11.25
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          22.8,
+          12.4
+        ],
+        "nearestFree": [
+          23.700000000000003,
+          11.900000000000002
+        ],
+        "distance": 0.9656603957913984,
+        "component": 1
+      },
+      {
+        "target": [
+          22.8,
+          14.0
+        ],
+        "nearestFree": [
+          22.8,
+          15.25
+        ],
+        "distance": 1.4000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          22.8,
+          15.6
+        ],
+        "nearestFree": [
+          22.8,
+          15.450000000000003
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          21.2,
+          16.4
+        ],
+        "nearestFree": [
+          21.200000000000003,
+          16.85
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          19.6,
+          16.4
+        ],
+        "nearestFree": [
+          19.6,
+          16.85
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          18.0,
+          17.2
+        ],
+        "nearestFree": [
+          18.0,
+          17.650000000000002
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          17.2,
+          18.8
+        ],
+        "nearestFree": [
+          17.200000000000003,
+          18.650000000000002
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          16.4,
+          19.6
+        ],
+        "nearestFree": [
+          16.400000000000002,
+          19.1
+        ],
+        "distance": 0.35000000000000003,
+        "component": 1
+      },
+      {
+        "target": [
+          17.2,
+          21.2
+        ],
+        "nearestFree": [
+          16.950000000000003,
+          21.650000000000002
+        ],
+        "distance": 0.65,
+        "component": 1
+      },
+      {
+        "target": [
+          18.0,
+          22.8
+        ],
+        "nearestFree": [
+          17.700000000000003,
+          22.8
+        ],
+        "distance": 0.3354101966249685,
+        "component": 1
+      },
+      {
+        "target": [
+          19.6,
+          23.6
+        ],
+        "nearestFree": [
+          19.6,
+          24.050000000000004
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          21.2,
+          24.4
+        ],
+        "nearestFree": [
+          20.900000000000002,
+          24.25
+        ],
+        "distance": 0.30000000000000004,
+        "component": 1
+      },
+      {
+        "target": [
+          22.8,
+          25.2
+        ],
+        "nearestFree": [
+          22.8,
+          25.65
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          24.4,
+          26.0
+        ],
+        "nearestFree": [
+          24.1,
+          25.85
+        ],
+        "distance": 0.30000000000000004,
+        "component": 1
+      },
+      {
+        "target": [
+          26.0,
+          26.8
+        ],
+        "nearestFree": [
+          25.75,
+          27.25
+        ],
+        "distance": 0.65,
+        "component": 1
+      },
+      {
+        "target": [
+          27.6,
+          28.4
+        ],
+        "nearestFree": [
+          26.8,
+          28.65
+        ],
+        "distance": 0.894427190999916,
+        "component": 5
+      },
+      {
+        "target": [
+          28.4,
+          29.2
+        ],
+        "nearestFree": [
+          28.300000000000004,
+          29.200000000000003
+        ],
+        "distance": 0.18027756377319948,
+        "component": 6
+      },
+      {
+        "target": [
+          26.8,
+          30.0
+        ],
+        "nearestFree": [
+          27.6,
+          29.75
+        ],
+        "distance": 0.8062257748298549,
+        "component": 6
+      },
+      {
+        "target": [
+          26.0,
+          30.8
+        ],
+        "nearestFree": [
+          26.0,
+          31.25
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          24.4,
+          31.6
+        ],
+        "nearestFree": [
+          24.400000000000002,
+          32.050000000000004
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          22.8,
+          31.6
+        ],
+        "nearestFree": [
+          22.900000000000002,
+          32.0
+        ],
+        "distance": 0.5590169943749475,
+        "component": 1
+      },
+      {
+        "target": [
+          21.2,
+          32.4
+        ],
+        "nearestFree": [
+          21.200000000000003,
+          32.85
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          19.6,
+          32.4
+        ],
+        "nearestFree": [
+          19.700000000000003,
+          32.800000000000004
+        ],
+        "distance": 0.5590169943749475,
+        "component": 1
+      },
+      {
+        "target": [
+          18.0,
+          33.2
+        ],
+        "nearestFree": [
+          18.0,
+          33.650000000000006
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          17.2,
+          34.8
+        ],
+        "nearestFree": [
+          17.3,
+          35.25
+        ],
+        "distance": 0.608276253029822,
+        "component": 1
+      },
+      {
+        "target": [
+          16.4,
+          35.6
+        ],
+        "nearestFree": [
+          16.5,
+          36.050000000000004
+        ],
+        "distance": 0.608276253029822,
+        "component": 1
+      },
+      {
+        "target": [
+          14.8,
+          36.4
+        ],
+        "nearestFree": [
+          16.400000000000002,
+          36.7
+        ],
+        "distance": 1.6620770138594663,
+        "component": 1
+      },
+      {
+        "target": [
+          14.8,
+          38.0
+        ],
+        "nearestFree": [
+          14.8,
+          38.45
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          14.8,
+          39.6
+        ],
+        "nearestFree": [
+          14.5,
+          39.45
+        ],
+        "distance": 0.30000000000000004,
+        "component": 1
+      },
+      {
+        "target": [
+          16.4,
+          40.4
+        ],
+        "nearestFree": [
+          16.1,
+          40.85
+        ],
+        "distance": 0.670820393249937,
+        "component": 1
+      },
+      {
+        "target": [
+          17.2,
+          41.2
+        ],
+        "nearestFree": [
+          17.1,
+          41.2
+        ],
+        "distance": 0.18027756377319948,
+        "component": 1
+      },
+      {
+        "target": [
+          18.0,
+          42.8
+        ],
+        "nearestFree": [
+          17.900000000000002,
+          42.800000000000004
+        ],
+        "distance": 0.18027756377319948,
+        "component": 1
+      },
+      {
+        "target": [
+          18.0,
+          44.4
+        ],
+        "nearestFree": [
+          18.0,
+          44.25
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          19.6,
+          45.2
+        ],
+        "nearestFree": [
+          19.6,
+          44.7
+        ],
+        "distance": 0.35000000000000003,
+        "component": 1
+      },
+      {
+        "target": [
+          21.2,
+          46.0
+        ],
+        "nearestFree": [
+          20.900000000000002,
+          46.45
+        ],
+        "distance": 0.670820393249937,
+        "component": 1
+      },
+      {
+        "target": [
+          22.8,
+          46.8
+        ],
+        "nearestFree": [
+          22.8,
+          47.25
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          24.4,
+          47.6
+        ],
+        "nearestFree": [
+          24.1,
+          47.45
+        ],
+        "distance": 0.30000000000000004,
+        "component": 1
+      },
+      {
+        "target": [
+          26.0,
+          48.4
+        ],
+        "nearestFree": [
+          26.0,
+          48.85
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          27.6,
+          48.4
+        ],
+        "nearestFree": [
+          27.700000000000003,
+          47.900000000000006
+        ],
+        "distance": 0.3640054944640259,
+        "component": 1
+      },
+      {
+        "target": [
+          29.2,
+          49.2
+        ],
+        "nearestFree": [
+          28.950000000000003,
+          49.650000000000006
+        ],
+        "distance": 0.65,
+        "component": 1
+      },
+      {
+        "target": [
+          30.8,
+          50.0
+        ],
+        "nearestFree": [
+          29.9,
+          50.800000000000004
+        ],
+        "distance": 1.3086252328302401,
+        "component": 1
+      },
+      {
+        "target": [
+          31.6,
+          50.8
+        ],
+        "nearestFree": [
+          31.6,
+          51.25
+        ],
+        "distance": 0.6000000000000001,
+        "component": 1
+      },
+      {
+        "target": [
+          31.6400006,
+          52.0499987
+        ],
+        "nearestFree": [
+          31.65,
+          51.900000000000006
+        ],
+        "distance": 0.0,
+        "component": 1
+      }
+    ],
+    "bodyBounds": [
+      0.765,
+      1.5
+    ],
+    "bounds": [
+      [
+        -5.0,
+        -8.0
+      ],
+      [
+        51.0,
+        59.0
+      ]
+    ]
+  },
+  {
+    "scene": "Assets/Scenes/Level05_Cave.unity",
+    "step": 0.05,
+    "staticColliders": 1,
+    "components": 8,
+    "anchors": [
+      {
+        "target": [
+          11.8,
+          -1.14999974
+        ],
+        "nearestFree": [
+          11.8,
+          -1.2999999999999998
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          11.8,
+          -1.14999974
+        ],
+        "nearestFree": [
+          11.8,
+          -1.2999999999999998
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          11.4000006,
+          244.450012
+        ],
+        "nearestFree": [
+          11.400000000000002,
+          244.3
+        ],
+        "distance": 0.0,
+        "component": 1
+      },
+      {
+        "target": [
+          8.88,
+          112.92999750000001
+        ],
+        "nearestFree": [
+          10.0,
+          112.55000000000001
+        ],
+        "distance": 1.118033988749895,
+        "component": 1
+      }
+    ],
+    "bodyBounds": [
+      0.765,
+      1.5
+    ],
+    "bounds": [
+      [
+        -5.0,
+        -8.0
+      ],
+      [
+        29.0,
+        253.0
+      ]
+    ]
+  }
+]

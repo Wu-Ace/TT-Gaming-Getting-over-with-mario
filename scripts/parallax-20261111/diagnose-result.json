@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 415,\n  \"logs\": [\n    \"[Log] CAM (-28.01, 6.38, -10.00) brain=True\",\n    \"[Log] VirtualCamera enabled=False follow=Mario pos=(-4.09, 6.38, 0.00)\",\n    \"[Log] BODY (-4.01, 6.08, 0.00) parent=(-4.01, 6.09, 0.00)\"\n  ],\n  \"log_count\": 3\n}"}]}, "jsonrpc": "2.0", "id": 2}

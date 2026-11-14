@@ -1,0 +1,1 @@
+dead=False body=(11.80, -1.15, 0.00) arms=True input=True simulated=Cauldron:True,ArmsSimulation:True,Hammer:True

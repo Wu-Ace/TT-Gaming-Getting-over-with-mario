@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"success\": false,\n  \"message\": \"C# is performing domain reloading.\",\n  \"code\": \"C# is performing domain reloading.\",\n  \"error\": \"C# is performing domain reloading.\",\n  \"request_id\": \"ntb-1\"\n}"}]}, "jsonrpc": "2.0", "id": 2}

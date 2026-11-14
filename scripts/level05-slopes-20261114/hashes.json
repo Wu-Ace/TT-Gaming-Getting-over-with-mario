@@ -1,0 +1,17 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "83FA9F95868AA21BFDFB2BBF08C2F242474E9F071C06CE25668E7F9E8D844D86",
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scenes\\Level05_Cave.unity"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "EDA5728666EC764B6395C3A9C80970E61CC847DB3C729100762532EA390ED55C",
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\level05-slopes-20261114\\plan.json"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "089104DFD337AE358744161B47A5E856E624488D5A081C6375878DC0924D6AB1",
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\level05-slopes-20261114\\collision.txt"
+  }
+]

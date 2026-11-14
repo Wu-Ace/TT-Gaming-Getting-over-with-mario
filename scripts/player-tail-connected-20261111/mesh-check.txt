@@ -1,0 +1,1 @@
+1080 actual mesh poses: max elbow seam=3.814959E-06 fixed paddle-local target drift=1.608378E-06 cross-section change=9.268761E-08

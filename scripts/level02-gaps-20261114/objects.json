@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "summary": "Inspect attached gameplay objects",
+    "script": "using System.Linq;var sc=UnityEngine.SceneManagement.SceneManager.GetActiveScene();var level=sc.GetRootGameObjects().First(r=>r.name==\"Level\");UnityEngine.Debug.Log(string.Join(\"\\n\",level.GetComponentsInChildren<UnityEngine.Transform>(true).Take(65).Select(t=>t.name+\" parent=\"+(t.parent?t.parent.name:\"\")+\" p=\"+t.position)));"
+  }
+}

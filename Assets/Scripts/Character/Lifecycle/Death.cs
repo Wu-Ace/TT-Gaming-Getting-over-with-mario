@@ -12,7 +12,10 @@ namespace Character.Lifecycle
         EnemyContactDetection contact;
         void Awake()
         {
-            if (GetComponent<PlayerUnstuck>() == null) gameObject.AddComponent<PlayerUnstuck>();
+            // Crushing is fatal; the previous automatic rewind must not rescue it.
+            var recovery = GetComponent<PlayerUnstuck>();
+            if (recovery != null) recovery.enabled = false;
+            if (GetComponent<PlayerCrushDetection>() == null) gameObject.AddComponent<PlayerCrushDetection>();
             fall = GetComponent<FallDetection>();
             contact = GetComponent<EnemyContactDetection>();
             if (fall != null) fall.OnFallDetected += Fell;
@@ -26,6 +29,7 @@ namespace Character.Lifecycle
         {
             if (Dead) return;
             Dead = true;
+            if (CampaignLevel.Current != null) CampaignLevel.Current.LoseLife();
             var root = transform.parent != null ? transform.parent : transform;
             foreach (var arms in root.GetComponentsInChildren<ArmsSimulation>()) arms.enabled = false;
             foreach (var target in FindObjectsOfType<TargetMovement>()) target.enabled = false;

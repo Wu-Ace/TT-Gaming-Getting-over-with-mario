@@ -1,0 +1,37 @@
+using UnityEngine;
+namespace Character.Control {
+ public class ArmsSimulation:MonoBehaviour {
+  [SerializeField] Rigidbody2D hammer;
+  [SerializeField] Transform hammerHead,center;
+  [SerializeField] bool torqueEnabled=true,forceEnabled=true;
+  [field:SerializeField] public int MaxTorque{get;set;}=1000;
+  [field:SerializeField] public int MaxBodyForce{get;set;}=50;
+  [SerializeField] float angularGain=14,extensionGain=14,maxAngularSpeed=480,maxExtensionSpeed=2;
+  Rigidbody2D pivot;HingeJoint2D hinge;SliderJoint2D slide;TargetMovement input;Vector2 target;bool ready;
+  public Transform HammerTip=>hammerHead;
+  public float AngleError{get;private set;}public float ExtensionError{get;private set;}
+  void Awake(){
+   pivot=GetComponent<Rigidbody2D>();slide=hammer.GetComponent<SliderJoint2D>();
+   foreach(var j in transform.root.GetComponentsInChildren<HingeJoint2D>())if(j.connectedBody==pivot||j.attachedRigidbody==pivot){hinge=j;break;}
+   input=transform.root.GetComponentInChildren<TargetMovement>();if(input)input.OnPositionChanged+=ReceiveTarget;
+   target=hammerHead.position;ready=true;
+  }
+  public void ReceiveTarget(Vector2 value){target=value;ready=true;}
+  void OnDestroy(){if(input)input.OnPositionChanged-=ReceiveTarget;}
+  void OnDisable(){StopMotors();}
+  void StopMotors(){if(hinge)hinge.useMotor=false;if(slide)slide.useMotor=false;}
+  void FixedUpdate(){
+   if(!ready||!hinge||!slide)return;
+   Vector2 axis=hammer.transform.right,actual=(Vector2)hammerHead.position-(Vector2)center.position,wanted=target-(Vector2)center.position;
+   AngleError=wanted.sqrMagnitude>.0025f?Vector2.SignedAngle(actual,wanted):0;
+   // Motor sign depends on which side owns the pivot; verified against this prefab in Physics2D.
+   float sign=hinge.attachedRigidbody==pivot?-1:1;
+   var turn=hinge.motor;turn.motorSpeed=sign*Mathf.Clamp(AngleError*angularGain-pivot.angularVelocity*.35f,-maxAngularSpeed,maxAngularSpeed);
+   turn.maxMotorTorque=Mathf.Max(1,MaxTorque);hinge.motor=turn;hinge.useMotor=torqueEnabled;
+   ExtensionError=Vector2.Dot(target-(Vector2)hammerHead.position,axis);
+   float alignment=wanted.sqrMagnitude>.0025f?Mathf.Pow(Mathf.Clamp01(Vector2.Dot(axis,wanted.normalized)),2):1;
+   var push=slide.motor;push.motorSpeed=Mathf.Clamp(-ExtensionError*extensionGain*alignment,-maxExtensionSpeed,maxExtensionSpeed);
+   push.maxMotorTorque=Mathf.Max(1,MaxBodyForce)*.5f;slide.motor=push;slide.useMotor=forceEnabled;
+  }
+ }
+}

@@ -1,0 +1,14 @@
+{
+  "opaque_white_text_pixels": 489,
+  "unchanged": 489,
+  "transparent_corner_unchanged": true,
+  "pressed_bounds": [
+    556,
+    465,
+    793,
+    567
+  ],
+  "drag_out_restored": true,
+  "release_restored": true,
+  "source_sha256": "c86a5fbc8d05b81e246aad476f98984ee77d23877923f002572e4ed995118cf9"
+}

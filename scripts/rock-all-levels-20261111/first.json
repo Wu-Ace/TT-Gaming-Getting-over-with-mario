@@ -1,0 +1,1 @@
+{"name": "exec_runtime_script", "arguments": {"script": "System.Collections.IEnumerator C(){yield return new UnityEngine.WaitForEndOfFrame();UnityEngine.ScreenCapture.CaptureScreenshot(System.IO.Path.GetFullPath(\"scripts/rock-all-levels-20261111/Level01-game.png\"));yield return null;}return C();", "summary": "Capture first level actual Game"}}

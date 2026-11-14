@@ -1,0 +1,8 @@
+{
+  "arguments": {
+    "script": "System.Collections.IEnumerator Capture(){foreach(var c in UnityEngine.Object.FindObjectsOfType<Cinemachine.CinemachineVirtualCamera>())c.enabled=false;var p=UnityEngine.Object.FindObjectOfType<VerticalRidePlatform>();var cam=UnityEngine.Camera.main;cam.orthographicSize=3;cam.transform.position=p.transform.position+new UnityEngine.Vector3(0,0,-10);yield return null;yield return new UnityEngine.WaitForEndOfFrame();UnityEngine.ScreenCapture.CaptureScreenshot(System.IO.Path.GetFullPath(\"scripts/moving-art-20261114/game.png\"));yield return null;}return Capture();",
+    "timeoutSeconds": 60,
+    "summary": "Capture actual moving platform in Game"
+  },
+  "name": "exec_runtime_script"
+}

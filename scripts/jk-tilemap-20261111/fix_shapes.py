@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('Assets/Editor/InstallJumpKingFifth.cs');s=p.read_text().replace('if(tile)return tile;','');s=s.replace('tile=ScriptableObject.CreateInstance<Tile>();tile.name=', 'if(!tile){tile=ScriptableObject.CreateInstance<Tile>();AssetDatabase.CreateAsset(tile,path);}tile.name=').replace('AssetDatabase.CreateAsset(tile,path);return tile;','EditorUtility.SetDirty(tile);return tile;');p.write_text(s)

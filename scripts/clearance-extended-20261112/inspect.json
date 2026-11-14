@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "summary": "Inspect current articulation limits and scene before extended clearance audit",
+    "script": "UnityEngine.Debug.Log(\"SCENE=\"+UnityEngine.SceneManagement.SceneManager.GetActiveScene().path+\" dirty=\"+UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty);\nvar p=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.GameObject>(\"Assets/Prefabs/Character.prefab\");\nforeach(var j in p.GetComponentsInChildren<UnityEngine.Joint2D>(true)){\n UnityEngine.Debug.Log(j.name+\" \"+j.GetType().Name+\" anchor=\"+(j is UnityEngine.AnchoredJoint2D a?a.anchor.ToString():\"\")+\" connected=\"+(j.connectedBody==null?\"null\":j.connectedBody.name));\n if(j is UnityEngine.SliderJoint2D s)UnityEngine.Debug.Log(\"slide angle=\"+s.angle+\" limits=\"+s.limits.min+\",\"+s.limits.max+\" use=\"+s.useLimits+\" translation=\"+s.jointTranslation);\n if(j is UnityEngine.HingeJoint2D h)UnityEngine.Debug.Log(\"hinge limits=\"+h.limits.min+\",\"+h.limits.max+\" use=\"+h.useLimits);\n}"
+  }
+}

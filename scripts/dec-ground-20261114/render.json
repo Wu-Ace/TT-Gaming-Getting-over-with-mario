@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "script": "var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();var go=new UnityEngine.GameObject(\"Temporary terrain audit camera\");var c=go.AddComponent<UnityEngine.Camera>();c.orthographic=true;c.orthographicSize=11;c.clearFlags=UnityEngine.CameraClearFlags.SolidColor;c.backgroundColor=new UnityEngine.Color(.08f,.1f,.13f);var rt=new UnityEngine.RenderTexture(720,720,24);c.targetTexture=rt;var old=UnityEngine.RenderTexture.active;int i=0;foreach(float y in new[]{5f,30f,60f,90f,115f}){go.transform.position=new UnityEngine.Vector3(12,y,-20);c.Render();UnityEngine.RenderTexture.active=rt;var tex=new UnityEngine.Texture2D(720,720,UnityEngine.TextureFormat.RGB24,false);tex.ReadPixels(new UnityEngine.Rect(0,0,720,720),0,0);tex.Apply();System.IO.File.WriteAllBytes(\"scripts/dec-ground-20261114/scene-\"+(i++)+\".png\",tex.EncodeToPNG());UnityEngine.Object.DestroyImmediate(tex);}UnityEngine.RenderTexture.active=old;c.targetTexture=null;rt.Release();UnityEngine.Object.DestroyImmediate(rt);UnityEngine.Object.DestroyImmediate(go);UnityEngine.Debug.Log(\"Rendered five route regions\");\r\n",
+    "summary": "Capture actual Unity rendering after decoration grounding"
+  },
+  "name": "exec_editor_script"
+}

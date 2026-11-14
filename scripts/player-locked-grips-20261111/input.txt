@@ -1,0 +1,1 @@
+Actual mouse input / dynamic paddle: max tip travel=7.291125 max wrist error=4.78928E-07 min hand spacing=0.2991299 max sampled elbow angle step=0.0001525879

@@ -1,0 +1,20 @@
+TopLeft
+20 20 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+98 20 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+20 98 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+98 98 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+TopRight
+20 20 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+98 20 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+20 98 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+98 98 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+BottomLeft
+20 20 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+98 20 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+20 98 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+98 98 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+BottomRight
+20 20 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+98 20 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+20 98 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}
+98 98 -> NoCollision adjusted={X:2147483647 Y:2147483647 Width:1 Height:1}

@@ -1,0 +1,29 @@
+{
+  "utc": "2026-11-10T18:40:03.363957+00:00",
+  "head": "b96b2d04280c510e3f583bc45a4f379f1fb67fab",
+  "sha256": {
+    "Assets\\Scripts\\Character\\Control\\PaddleCharacterVisual.cs": "4e3f19e31f1a174d7d65af7c5d33220a5e8f27f513b3c0e72b14bad11b1642e2",
+    "Assets\\Prefabs\\Character.prefab": "3a2f2b5aa0feb2501f33d9ddff88fb2d65d5f25e86c737d71daa6276ce0ec31e",
+    "ai-handoff.md": "9b35285f95b371765f5f538523c4c09837e40e64a4b162b50d3be3f26a479732",
+    "scripts\\player-fixed-size-20261111\\compile.json": "ab6287e62c042c1283db205246e712d92ea8b8c2b3d2c3dc30459feaa34e3f33",
+    "scripts\\player-fixed-size-20261111\\final-state.json": "b75da3e0b241836ef392a6782f0a0a2f3ba9747b04e90783ca0633eebaa9265a",
+    "scripts\\player-fixed-size-20261111\\fixed-size.mp4": "ec2a5f8a2f9acc92e8f16f92756e0b0b3d819c86fbbc41f05fee22dcf7ec4fb5",
+    "scripts\\player-fixed-size-20261111\\frames.jpg": "3d6caf87dceda4900596504a5092772aebd0304008cff9ab54785f7335d9b399",
+    "scripts\\player-fixed-size-20261111\\input-105.png": "c92ff4d8dd7572c737484b8ad2e9ea95f141ba3accc7aaa36fc0b478622ce017",
+    "scripts\\player-fixed-size-20261111\\input-15.png": "56391f6f749d87dd7e1aaa948074573914192f2a58a57b7dd000b96d1bf25d1e",
+    "scripts\\player-fixed-size-20261111\\input-45.png": "953ab04a63c803bc95e6a27669628a065968cfb8b0f901716cea1e9a10ded590",
+    "scripts\\player-fixed-size-20261111\\input-75.png": "abc40a692b20d3b1623503fe520882dcf7713cf2ff0a99f80e03b80ff63af6a1",
+    "scripts\\player-fixed-size-20261111\\input-result.json": "30ab01991b31965d26543de72cc6ede90a7eba4eb3dad6d87f5417cdee5b23da",
+    "scripts\\player-fixed-size-20261111\\input.json": "197e9a9046cd65c6e5458bdd5bcafe8b040df5ff3c7968318edea3f3ae352ad8",
+    "scripts\\player-fixed-size-20261111\\input.txt": "f539a8dc4caff7f91f264731dcfee8fabe705d92b5fa3964dc02e90f43ec0ca6",
+    "scripts\\player-fixed-size-20261111\\PaddleCharacterVisual.cs.bak": "ddb591ec5e822191814a919e5cc8aebc9521d9031d39b027ff06c353c5de77f7",
+    "scripts\\player-fixed-size-20261111\\README.md": "9666ec54f4484b0cd9e6f743ef0d189e5bb42a6b14e50603ca59a13c9a88d972",
+    "scripts\\player-fixed-size-20261111\\restored.json": "a26ddbe220f5d4f4985613159e6636e7f8dd5b51f5747991e991ed6bbbbbcc42",
+    "scripts\\player-fixed-size-20261111\\scale-result.json": "8b6e245a693717a18e8684ebf6d959fa9217d3064ce24bc2672e62841638e3ae",
+    "scripts\\player-fixed-size-20261111\\scale.json": "f257ac2ad2aeca8817f94c3cdc0f95fbd1744684db820a036e6e508c7eed445f",
+    "scripts\\player-fixed-size-20261111\\scale.txt": "367ef89cd777b8ee463cf4e641abd8cbfb92f04b0dff4fe129fff8610f025a10",
+    "scripts\\player-fixed-size-20261111\\scene-final.png": "5cdbdd64ef1159591903e524bdf744c9a0ef7820f12b5dc7a3563a37963a5296",
+    "scripts\\player-fixed-size-20261111\\shot-result.json": "0caa49301ec42a4f252acd0f5c9d736b729a56dcc7d1896959df63793094d21d",
+    "scripts\\player-fixed-size-20261111\\shot.json": "8c9d8be7503bffd314dbde2d4e3743195c2617a1d42590849cb919e1d34cdfb9"
+  }
+}

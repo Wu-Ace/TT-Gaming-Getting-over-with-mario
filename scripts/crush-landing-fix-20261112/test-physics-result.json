@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 2915,\n  \"logs\": [\n    \"[Log] solver squeeze step=46\",\n    \"[Log] CRUSH_TESTS_PASS 13\"\n  ],\n  \"log_count\": 2\n}"}]}, "jsonrpc": "2.0", "id": 2}

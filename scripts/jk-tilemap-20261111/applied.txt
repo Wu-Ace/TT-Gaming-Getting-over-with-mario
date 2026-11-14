@@ -1,0 +1,1 @@
+FINAL: original footprint cells=7565; retained extra cells=4182; total=11747; continuous-band boundary triangles=114; ambiguous/interior original red cells use full tiles; square world grid=0.4m; width=24m; height=252m; one editable Tilemap; one TilemapCollider2D; CompositeCollider2D removed after detecting two lost square islands.

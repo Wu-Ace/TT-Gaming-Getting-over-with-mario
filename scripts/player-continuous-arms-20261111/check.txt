@@ -1,0 +1,1 @@
+2163 poses: no sprite/frame switches; constant scale delta=0 paddle-local target drift=1.691194E-06 max elbow move per .5deg=0.03455677 wrist error=1.966177E-06

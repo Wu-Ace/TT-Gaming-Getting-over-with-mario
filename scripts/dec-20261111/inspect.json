@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "script": "UnityEngine.Debug.Log(string.Join(\"\\n\",UnityEngine.Object.FindObjectsOfType<UnityEngine.SpriteRenderer>().Where(r=>r.sprite!=null).Select(r=>r.name+\" | \"+UnityEditor.AssetDatabase.GetAssetPath(r.sprite)).Distinct().Take(65)));",
+    "summary": "Inspect current decoration"
+  }
+}

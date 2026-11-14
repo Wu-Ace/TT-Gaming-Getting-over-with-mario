@@ -1,0 +1,11 @@
+Level01: cells=1272 legacySprites=0 movingSprites=0 slopes=0
+Level02_Jungle: cells=1527 legacySprites=0 movingSprites=0 slopes=0
+Level03_Beach: cells=1579 legacySprites=0 movingSprites=65 slopes=0
+Level04_Town: cells=337 legacySprites=0 movingSprites=0 slopes=0
+Level05_Cave: cells=7444 legacySprites=0 movingSprites=0 slopes=3
+Level06_Grassland_Winter: cells=0 legacySprites=3012 movingSprites=0 slopes=0
+Level07_Ice: cells=0 legacySprites=2272 movingSprites=0 slopes=0
+Level08_Castle: cells=0 legacySprites=2894 movingSprites=0 slopes=0
+Level09_Volcano: cells=0 legacySprites=3368 movingSprites=0 slopes=0
+Level10_Sky: cells=0 legacySprites=2024 movingSprites=0 slopes=0
+Tutorial: cells=50 legacySprites=0 movingSprites=0 slopes=0

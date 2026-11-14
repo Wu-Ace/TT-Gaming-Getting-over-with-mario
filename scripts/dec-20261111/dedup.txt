@@ -1,0 +1,11 @@
+Level01: replaced 5 neighboring duplicates
+Level02_Jungle: replaced 0 neighboring duplicates
+Level03_Beach: replaced 2 neighboring duplicates
+Level04_Town: replaced 1 neighboring duplicates
+Level05_Cave: replaced 3 neighboring duplicates
+Level06_Grassland_Winter: replaced 0 neighboring duplicates
+Level07_Ice: replaced 0 neighboring duplicates
+Level08_Castle: replaced 0 neighboring duplicates
+Level09_Volcano: replaced 0 neighboring duplicates
+Level10_Sky: replaced 0 neighboring duplicates
+Tutorial: replaced 0 neighboring duplicates

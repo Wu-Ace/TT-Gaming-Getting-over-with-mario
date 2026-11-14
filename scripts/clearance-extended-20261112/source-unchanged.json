@@ -1,0 +1,11 @@
+{
+  "Assets\\Prefabs\\Character.prefab": true,
+  "Assets\\Scripts\\CampaignInteractable.cs": true,
+  "Assets\\Scripts\\Character\\Control\\ArmsSimulation.cs": true,
+  "Assets\\Scenes\\Tutorial.unity": true,
+  "Assets\\Scenes\\Level01.unity": true,
+  "Assets\\Scenes\\Level02_Jungle.unity": true,
+  "Assets\\Scenes\\Level03_Beach.unity": true,
+  "Assets\\Scenes\\Level04_Town.unity": true,
+  "Assets\\Scenes\\Level05_Cave.unity": true
+}

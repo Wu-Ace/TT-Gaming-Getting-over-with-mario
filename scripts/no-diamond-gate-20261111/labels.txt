@@ -1,0 +1,12 @@
+Assets/Scenes/Tutorial.unity: EXIT
+3 DIAMONDS -> 终点
+Assets/Scenes/Level01.unity: EXIT
+3 DIAMONDS -> 终点
+Assets/Scenes/Level02_Jungle.unity: EXIT
+3 DIAMONDS -> 终点
+Assets/Scenes/Level03_Beach.unity: EXIT
+3 DIAMONDS -> 终点
+Assets/Scenes/Level04_Town.unity: EXIT
+3 DIAMONDS -> 终点
+Assets/Scenes/Level05_Cave.unity: EXIT
+3 STARS -> 终点

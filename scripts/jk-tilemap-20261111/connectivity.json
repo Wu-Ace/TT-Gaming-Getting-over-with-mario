@@ -1,0 +1,18 @@
+{
+  "original": {
+    "start": [
+      30,
+      6
+    ],
+    "highestConnectedRow": 629,
+    "topRowReached": true
+  },
+  "union": {
+    "start": [
+      30,
+      6
+    ],
+    "highestConnectedRow": 629,
+    "topRowReached": true
+  }
+}

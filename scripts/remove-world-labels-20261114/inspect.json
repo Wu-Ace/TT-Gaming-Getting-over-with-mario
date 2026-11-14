@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "script": "using System.Linq; UnityEngine.Debug.Log(string.Join(\"\\n\",UnityEngine.Object.FindObjectsOfType<UnityEngine.TextMesh>(true).Select(t=>t.name+\" text=\"+t.text)));",
+    "summary": "Identify yellow world-space labels"
+  },
+  "name": "exec_runtime_script"
+}

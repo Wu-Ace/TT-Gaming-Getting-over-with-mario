@@ -1,0 +1,31 @@
+{
+  "time": "2026-11-11T03:02:37.686602",
+  "sha256": {
+    "Assets\\Scripts\\GameMenuUI.cs": "2016dda7e044340fffc07f5da167121e47ef0676e3622cdaf807896917e71bd8",
+    "ai-handoff.md": "35f065701da809c1bacbf702c7b1d803d2acc82c715f138d66576d09af5bbf5b",
+    "Assets\\Scenes\\Level01.unity": "63e2dad0717a8afb63a5e24049d0511ea97fc9bd3c497b81b176cd9a5876bbde",
+    "Assets\\Scenes\\Level02_Jungle.unity": "fc0d237acdf8b2e4610f9ff366172e5feaf840c2b8234c3b83d971eae2df36b4",
+    "Assets\\Scenes\\Level03_Beach.unity": "3a84acf879ebc8a809dc9d7694e9344d5edfd7db559079093ddc623aabc20d51",
+    "Assets\\Scenes\\Level04_Town.unity": "24c1ac56e5844b61aa98c2c129add6a67419473bfc16cd62f8f4ea0984dbc149",
+    "Assets\\Scenes\\Level05_Cave.unity": "83d55750ff9194ccb03315acd34bc4d0df3c339de8258f2c98c0fd305c881d20",
+    "Assets\\Scenes\\Level06_Grassland_Winter.unity": "260870d36c1bf93060060f4f12a12a5962e487143488a86f8ad1dee013032488",
+    "Assets\\Scenes\\Level07_Ice.unity": "3b5aeb04ee6fa617fb998f9495a666df6fa2c7475a3b8b2f9b0e2bb1dbc488d1",
+    "Assets\\Scenes\\Level08_Castle.unity": "e58a7af88f52b5d30d425572ae08172f3fce0d35928ccaaac35d03051b2cd6e7",
+    "Assets\\Scenes\\Level09_Volcano.unity": "a9c0c09c8895bd6e008e445961152337c695415be8f333dec1390edd607a12da",
+    "Assets\\Scenes\\Level10_Sky.unity": "ec283cdb7f0524c436bf20295f999397f7d22e3a12e7338885ceae5d10a21db9",
+    "Assets\\Scenes\\MainMenu.unity": "9132854c03264235a0396c1b9521c6edecf5a9e4926b4aa8dedde1aa05d3840b",
+    "Assets\\Scenes\\Tutorial.unity": "7915e373b89c953cbe4878ab77323ea0294e0e35ddfb754d0cf0085631192179",
+    "scripts\\remove-diamonds-20261111\\flag-refresh-result.json": "8f3903375aeada4db493e14ead0980cea32a185ae367d0492d6c0072a0499a12",
+    "scripts\\remove-diamonds-20261111\\flag-stop-result.json": "580640227a219ed3b72404567a91f0e4135fc477bd3bb13b29e90770fcbd3a51",
+    "scripts\\remove-diamonds-20261111\\game.png": "5cfbb4ff831dd4d637babf2a8b1a1f1b289096145c095e180f6df4bcc5602130",
+    "scripts\\remove-diamonds-20261111\\play.txt": "e3eeea3c1ef8356a7cb72d9c556a1d42397656e87a1108d093d94e7b69ff4182",
+    "scripts\\remove-diamonds-20261111\\README.md": "691f8d714c33f931aace4db2102c29091251d6a39fc73736a42d1af600426ef3",
+    "scripts\\remove-diamonds-20261111\\remove-diamonds-scenes-result.json": "ff2ceea264d0bc36bc3f48fa908c5e100aa9473770e1c330d2ec0292dcfc7cee",
+    "scripts\\remove-diamonds-20261111\\remove-diamonds-scenes.cs": "7b09953a923a3a9e00e2639c8c3c4eefff1c41138cc79900a9c091b8a7e95f31",
+    "scripts\\remove-diamonds-20261111\\remove-diamonds-test-result.json": "94066b21c79472f3f8bd590c42924e07967814fcd79145a77fcdff9f077e848a",
+    "scripts\\remove-diamonds-20261111\\remove-diamonds-test.cs": "d6c31fc8475e9c607f5c82a20bc0de79bb83624fd1790c3412c36d12f1f6dcdc",
+    "scripts\\remove-diamonds-20261111\\removed.txt": "2b6051a4d31ca135cd4d422f7591a0505af519a9713693fc018e8e993d876b5c",
+    "scripts\\remove-diamonds-20261111\\structural.json": "68954c9cbc10fdb319443da64ca3bc62ee42c95f55484252816508a2681d2d33",
+    "scripts/remove-diamonds-20261111/structural.json": "291cfd18c1c4ad402a1ce3c4252ea628c9b521175be65dfa2dc5bdf18c276a7d"
+  }
+}

@@ -1,0 +1,145 @@
+JumpKing.Level.BlockCollisionType JumpKing.Level.IBlock.Intersects(Microsoft.Xna.Framework.Rectangle, Microsoft.Xna.Framework.Rectangle ByRef)
+0000: ldarg.2 
+0001: initobj Microsoft.Xna.Framework.Rectangle
+0007: ldarg.0 
+0008: ldflda Microsoft.Xna.Framework.Rectangle m_box
+000D: ldarg.1 
+000E: call Boolean Intersects(Microsoft.Xna.Framework.Rectangle)
+0013: brtrue.s 23
+0015: ldc.i4.0 
+0016: ret 
+0017: ldarg.0 
+0018: ldfld ErikMaths.Line[] m_lines
+001D: ldarg.1 
+001E: call ErikMaths.Line[] CreateLinesFromRectangle(Microsoft.Xna.Framework.Rectangle)
+0023: ldloca.s 0
+0025: call Boolean LineShapeIntersect(ErikMaths.Line[], ErikMaths.Line[], System.Collections.Generic.List`1[Microsoft.Xna.Framework.Vector2] ByRef)
+002A: stloc.1 
+002B: ldarg.0 
+002C: ldfld ErikMaths.Line[] m_lines
+0031: stloc.s 4
+0033: ldc.i4.0 
+0034: stloc.s 5
+0036: br 196
+003B: ldloc.s 4
+003D: ldloc.s 5
+003F: ldelem ErikMaths.Line
+0044: stloc.s 6
+0046: ldarga.s 1
+0048: ldloc.s 6
+004A: ldfld Microsoft.Xna.Framework.Point p0
+004F: call Boolean Contains(Microsoft.Xna.Framework.Point)
+0054: brtrue.s 102
+0056: ldarga.s 1
+0058: ldloc.s 6
+005A: ldfld Microsoft.Xna.Framework.Point p1
+005F: call Boolean Contains(Microsoft.Xna.Framework.Point)
+0064: brfalse.s 150
+0066: ldc.i4.1 
+0067: stloc.1 
+0068: ldloc.0 
+0069: ldloc.s 6
+006B: ldfld Microsoft.Xna.Framework.Point p0
+0070: stloc.s 7
+0072: ldloca.s 7
+0074: call Microsoft.Xna.Framework.Vector2 ToVector2()
+0079: callvirt Void Add(Microsoft.Xna.Framework.Vector2)
+007E: ldloc.0 
+007F: ldloc.s 6
+0081: ldfld Microsoft.Xna.Framework.Point p1
+0086: stloc.s 7
+0088: ldloca.s 7
+008A: call Microsoft.Xna.Framework.Vector2 ToVector2()
+008F: callvirt Void Add(Microsoft.Xna.Framework.Vector2)
+0094: br.s 190
+0096: ldarga.s 1
+0098: ldloca.s 6
+009A: call Microsoft.Xna.Framework.Point get_middle()
+009F: call Boolean Contains(Microsoft.Xna.Framework.Point)
+00A4: brfalse.s 190
+00A6: ldc.i4.1 
+00A7: stloc.1 
+00A8: ldloc.0 
+00A9: ldloca.s 6
+00AB: call Microsoft.Xna.Framework.Point get_middle()
+00B0: stloc.s 7
+00B2: ldloca.s 7
+00B4: call Microsoft.Xna.Framework.Vector2 ToVector2()
+00B9: callvirt Void Add(Microsoft.Xna.Framework.Vector2)
+00BE: ldloc.s 5
+00C0: ldc.i4.1 
+00C1: add 
+00C2: stloc.s 5
+00C4: ldloc.s 5
+00C6: ldloc.s 4
+00C8: ldlen 
+00C9: conv.i4 
+00CA: blt 59
+00CF: ldloca.s 2
+00D1: ldc.i4 2147483647
+00D6: ldc.i4 2147483647
+00DB: call Void .ctor(Int32, Int32)
+00E0: ldloca.s 3
+00E2: ldc.i4 -2147483648
+00E7: ldc.i4 -2147483648
+00EC: call Void .ctor(Int32, Int32)
+00F1: ldloc.0 
+00F2: callvirt Enumerator GetEnumerator()
+00F7: stloc.s 8
+00F9: br.s 322
+00FB: ldloca.s 8
+00FD: call Microsoft.Xna.Framework.Vector2 get_Current()
+0102: stloc.s 9
+0104: ldloc.s 9
+0106: ldfld Single X
+010B: ldloc.2 
+010C: ldfld Int32 X
+0111: conv.r4 
+0112: bge.un.s 291
+0114: ldloca.s 2
+0116: ldloc.s 9
+0118: ldfld Single X
+011D: conv.i4 
+011E: stfld Int32 X
+0123: ldloc.s 9
+0125: ldfld Single Y
+012A: ldloc.2 
+012B: ldfld Int32 Y
+0130: conv.r4 
+0131: bge.un.s 322
+0133: ldloca.s 2
+0135: ldloc.s 9
+0137: ldfld Single Y
+013C: conv.i4 
+013D: stfld Int32 Y
+0142: ldloca.s 8
+0144: call Boolean MoveNext()
+0149: brtrue.s 251
+014B: leave.s 347
+014D: ldloca.s 8
+014F: constrained. System.Collections.Generic.List`1+Enumerator[Microsoft.Xna.Framework.Vector2]
+0155: callvirt Void Dispose()
+015A: endfinally 
+015B: ldarg.2 
+015C: ldloc.2 
+015D: ldfld Int32 X
+0162: ldloc.2 
+0163: ldfld Int32 Y
+0168: ldloc.3 
+0169: ldfld Int32 X
+016E: ldloc.2 
+016F: ldfld Int32 X
+0174: sub 
+0175: ldloc.3 
+0176: ldfld Int32 Y
+017B: ldloc.2 
+017C: ldfld Int32 Y
+0181: sub 
+0182: newobj Void .ctor(Int32, Int32, Int32, Int32)
+0187: stobj Microsoft.Xna.Framework.Rectangle
+018C: ldloc.1 
+018D: brtrue.s 401
+018F: ldc.i4.0 
+0190: ret 
+0191: ldc.i4.1 
+0192: ret 

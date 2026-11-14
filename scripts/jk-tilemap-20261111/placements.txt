@@ -1,0 +1,6 @@
+Three Star Exit Door (9.40, 246.05)
+Checkpoint trace0 (20.20, 76.05)
+Objective Star 2 (3.80, 137.90)
+Objective Star 1 (15.40, 41.90)
+Objective Star 3 (17.40, 226.30)
+Checkpoint trace1 (9.40, 165.65)

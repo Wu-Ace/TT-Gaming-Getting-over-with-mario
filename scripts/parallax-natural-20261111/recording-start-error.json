@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"success\": false,\n  \"message\": \"'record_game_view' requires Unity to already be in Play Mode.\",\n  \"code\": \"'record_game_view' requires Unity to already be in Play Mode.\",\n  \"error\": \"'record_game_view' requires Unity to already be in Play Mode.\",\n  \"request_id\": \"ntb-1\"\n}"}]}, "jsonrpc": "2.0", "id": 2}

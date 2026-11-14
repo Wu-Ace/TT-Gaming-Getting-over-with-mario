@@ -1,0 +1,47 @@
+{
+  "captured_utc": "2026-11-11T06:59:33.177543+00:00",
+  "root": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario",
+  "head": {
+    "exit_code": 0,
+    "output": "b96b2d04280c510e3f583bc45a4f379f1fb67fab",
+    "error": ""
+  },
+  "working_tree": {
+    "exit_code": 0,
+    "output": "M Assets/Prefabs/Character.prefab\n M Assets/Scenes/Level01.unity\n M Assets/Scenes/Level02_Jungle.unity\n M Assets/Scenes/Level03_Beach.unity\n M Assets/Scenes/Level04_Town.unity\n M Assets/Scenes/Level05_Cave.unity\n M Assets/Scenes/Level06_Grassland_Winter.unity\n M Assets/Scenes/Level07_Ice.unity\n M Assets/Scenes/Level08_Castle.unity\n M Assets/Scenes/Level09_Volcano.unity\n M Assets/Scenes/Level10_Sky.unity\n M Assets/Scenes/Tutorial.unity\n M Assets/Scripts/Block/QuestionMarkBlock.cs\n M Assets/Scripts/CampaignInteractable.cs\n M Assets/Scripts/CampaignLevel.cs\n M Assets/Scripts/Character/Control/ArmsSimulation.cs\n M Assets/Scripts/Character/Control/TargetMovement.cs\n M Assets/Scripts/GameMenuUI.cs\n M Assets/Scripts/KitLandscape.cs\n M Assets/Scripts/Winning/FloatingCoin.cs\n M Assets/Scripts/Winning/WinThresholdDetection.cs\n M ai-handoff.md\n?? .skill-install/game-studios/\n?? Assets/Art/11.10.meta\n?? Assets/Art/11.10/\n?? Assets/Art/FinishFlag.meta\n?? Assets/Art/FinishFlag/\n?? Assets/Art/PlayerArmPoses.meta\n?? Assets/Art/PlayerArmPoses/\n?? Assets/Editor/ApplyRockVariations.cs\n?? Assets/Editor/ApplyRockVariations.cs.meta\n?? Assets/Editor/BakeRemakeArms.cs\n?? Assets/Editor/BakeRemakeArms.cs.meta\n?? Assets/Editor/FirstLevelMoonlightPreview.cs\n?? Assets/Editor/FirstLevelMoonlightPreview.cs.meta\n?? Assets/Editor/FitPaddleColliders.cs\n?? Assets/Editor/FitPaddleColliders.cs.meta\n?? Assets/Editor/InstallJumpKingFifth.cs\n?? Assets/Editor/InstallJumpKingFifth.cs.meta\n?? Assets/Editor/InstallPaddleCharacter.cs\n?? Assets/Editor/InstallPaddleCharacter.cs.meta\n?? Assets/Editor/InstallRockTerrain.cs\n?? Assets/Editor/InstallRockTerrain.cs.meta\n?? Assets/Editor/InstallValleyParallax.cs\n?? Assets/Editor/InstallValleyParallax.cs.meta\n?? Assets/Resources/BlockPickups.meta\n?? Assets/Resources/BlockPickups/\n?? Assets/Resources/Fonts.meta\n?? Assets/Resources/Fonts/\n?? Assets/Resources/MoonlightShaft.shader\n?? Assets/Resources/MoonlightShaft.shader.meta\n?? Assets/Resources/ValleyParallax.meta\n?? Assets/Resources/ValleyParallax/\n?? Assets/Scripts/Character/Control/PaddleCharacterVisual.cs\n?? Assets/Scripts/Character/Control/PaddleCharacterVisual.cs.meta\n?? Assets/Scripts/FirstLevelMoonlight.cs\n?? Assets/Scripts/FirstLevelMoonlight.cs.meta\n?? Assets/Scripts/GameFont.cs\n?? Assets/Scripts/GameFont.cs.meta\n?? Assets/Scripts/JumpKingRockTile.cs\n?? Assets/Scripts/JumpKingRockTile.cs.meta\n?? Assets/Scripts/RockVariationTile.cs\n?? Assets/Scripts/RockVariationTile.cs.meta\n?? Assets/Tiles/JumpKingFifth.meta\n?? Assets/Tiles/JumpKingFifth/\n?? Assets/Tiles/RockTerrain.meta\n?? Assets/Tiles/RockTerrain/\n?? Assets/Tiles/RockVariations.meta\n?? Assets/Tiles/RockVariations/\n?? scripts/dec-20261111/\n?? scripts/dec-contact.png\n?? scripts/finish-flag-20261111/\n?? scripts/font-20261111/\n?? scripts/ground-contact-20261111/\n?? scripts/jk-original-20261111/\n?? scripts/jk-tilemap-20261111/\n?? scripts/moonlight-20261111/\n?? scripts/no-diamond-gate-20261111/\n?? scripts/paddle-motor-control-20261111/\n?? scripts/parallax-20261111/\n?? scripts/parallax-natural-20261111/\n?? scripts/player-arm-reach-20261111/\n?? scripts/player-art-20261111/\n?? scripts/player-black-torso-20261111/\n?? scripts/player-colliders-20261111/\n?? scripts/player-continuous-arms-20261111/\n?? scripts/player-fixed-size-20261111/\n?? scripts/player-frame-arms-20261111/\n?? scripts/player-grip-20261111/\n?? scripts/player-grip-swap-20261111/\n?? scripts/player-locked-grips-20261111/\n?? scripts/player-natural-grip-20261111/\n?? scripts/player-proportions-20261111/\n?? scripts/player-raised-grips-20261111/\n?? scripts/player-tail-connected-20261111/\n?? scripts/remove-checkpoints-20261111/\n?? scripts/remove-diamonds-20261111/\n?? scripts/rock-all-levels-20261111/\n?? scripts/rock-sides-20261111/\n?? scripts/rock-terrain-20261111/\n?? scripts/rock-variation-20261111/",
+    "error": ""
+  },
+  "files": [
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\Character\\Control\\PaddleCharacterVisual.cs",
+      "sha256": "773d4ce4ab8d466c86cfe4e189a8119cc66dd546710b3a1c5f1695de03db92c1",
+      "bytes": 15489,
+      "modified_utc": "2026-11-11T06:53:24.168031+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\player-tail-connected-20261111\\README.md",
+      "sha256": "dd82b277720a7aa7f7e8a6dd9f4309c46e881701e0904d6a1275c04a93f9b9fa",
+      "bytes": 2433,
+      "modified_utc": "2026-11-11T06:59:32.967353+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\player-tail-connected-20261111\\mesh-render-final.json",
+      "sha256": "668a718e1cc98dabb3601ed3557c05c3176b905d9e5653212b5565e59af0690e",
+      "bytes": 321,
+      "modified_utc": "2026-11-11T06:53:39.481937+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\player-tail-connected-20261111\\visual-final-result.json",
+      "sha256": "09069a48fdb728706ba64ec28f4623df653fb4c12a7549aecaff866b6301a903",
+      "bytes": 287,
+      "modified_utc": "2026-11-11T06:55:38.556717+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\player-tail-connected-20261111\\verification-refresh.json",
+      "sha256": "ab6287e62c042c1283db205246e712d92ea8b8c2b3d2c3dc30459feaa34e3f33",
+      "bytes": 461,
+      "modified_utc": "2026-11-11T06:59:32.789672+00:00"
+    }
+  ],
+  "test_result": "not evaluated by this script"
+}

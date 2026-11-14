@@ -1,0 +1,1 @@
+Slope cells=121 triangle samples=3025 mismatches=0

@@ -1,0 +1,1 @@
+Occupied=11747; empty=26053; center classification mismatches=0; screenshots=14; actual physical traversal NOT RUN

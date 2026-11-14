@@ -1,0 +1,11 @@
+Extracted 7565 original collision cells
+{
+  "TopRight": 50,
+  "BottomRight": 23,
+  "TopLeft": 37,
+  "BottomLeft": 11
+}
+{
+  "{R:128 G:128 B:128 A:255}": 4,
+  "{R:156 G:0 B:255 A:255}": 9
+}

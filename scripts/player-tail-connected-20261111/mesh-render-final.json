@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 3178,\n  \"logs\": [\n    \"[Log] 1080 actual mesh poses: max elbow seam=3.814959E-06 fixed paddle-local target drift=1.608378E-06 cross-section change=9.268761E-08\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

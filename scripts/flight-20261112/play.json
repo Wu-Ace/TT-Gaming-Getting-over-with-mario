@@ -1,0 +1,8 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "timeoutSeconds": 60,
+    "script": "UnityEditor.EditorApplication.isPlaying=true;",
+    "summary": "Enter Play for flight verification"
+  }
+}

@@ -1,0 +1,52 @@
+using UnityEngine;
+namespace Winning
+{
+    public class FloatingCoin : MonoBehaviour
+    {
+        private bool collected;
+        private Transform visual;
+        private Vector3 visualScale;
+        private float phase;
+        private void Start()
+        {
+            var animator = GetComponent<Animator>();
+            if (animator != null) animator.enabled = false;
+            var source = GetComponentInChildren<SpriteRenderer>();
+            var sprite = Resources.Load<Sprite>("MenuUI/hud_icon_coin");
+            if (source == null || sprite == null) return;
+            float height = source.bounds.size.y;
+            var child = new GameObject("Spinning icon coin");
+            visual = child.transform;
+            visual.SetParent(transform, false);
+            var renderer = child.AddComponent<SpriteRenderer>();
+            renderer.sprite = sprite;
+            renderer.sortingLayerID = source.sortingLayerID;
+            renderer.sortingOrder = source.sortingOrder;
+            float scale = height / (sprite.bounds.size.y * Mathf.Abs(transform.lossyScale.y));
+            visualScale = Vector3.one * scale;
+            visual.localScale = visualScale;
+            source.enabled = false;
+            phase = Random.value * Mathf.PI * 2f;
+        }
+        private void Update()
+        {
+            if (visual == null) return;
+            float width = Mathf.Max(0.08f, Mathf.Abs(Mathf.Cos(Time.time * 4.5f + phase)));
+            visual.localScale = new Vector3(visualScale.x * width, visualScale.y, visualScale.z);
+        }
+        private void Awake()
+        {
+            if (name != "Coin(Clone)") gameObject.SetActive(false);
+        }
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            var body = CampaignInteractable.Body(other);
+            if (collected || body == null || body.Dead) return;
+            if (CampaignLevel.Current != null && !CampaignLevel.Current.CollectLegacyCoin()) return;
+            collected = true;
+            var purse = FindObjectOfType<CoinPurse>();
+            if (purse != null) purse.Increment();
+            Destroy(gameObject);
+        }
+    }
+}

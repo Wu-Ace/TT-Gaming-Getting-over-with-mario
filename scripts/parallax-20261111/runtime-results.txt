@@ -1,0 +1,3 @@
+Camera follows moved player (physics isolated): camera dx=23.88166, far screen dx=0.835858, near screen dx=6.925681
+PASS six layers / 16 sprites; actual player-follow depth rates; uniform scale; continuous mirrored panel bounds at +/-150 and +/-10000m; tall-climb bounded vertical coverage.
+PASS twelve disable/rebuild cycles retain exactly 16 renderers; no scene/preference writes in runtime test. Physical traversal/device/export not tested.

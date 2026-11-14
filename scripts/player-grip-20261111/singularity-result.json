@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 1938,\n  \"logs\": [\n    \"[Log] Repeated shoulder singularity crossings: max one-frame upper-arm rotation=26.99994 (cap27deg); max wrist error=1.96605E-06 min grip separation=0.6\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

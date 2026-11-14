@@ -1,0 +1,7 @@
+{
+  "name": "exec_runtime_script",
+  "arguments": {
+    "script": "System.Collections.IEnumerator Run(){ var f=GameFont.Main; if(f==null)throw new System.Exception(\"Font missing\"); string chars=\"开始游戏设置返回关卡选择音乐音效草地起点丛林穿行海滨冒险小镇高台地下探险0123456789%\"; foreach(char c in chars)if(!f.HasCharacter(c))throw new System.Exception(\"Missing glyph \"+c); UnityEngine.Debug.Log(\"Font=\"+f.name+\"; required glyphs PASS\"); yield return UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(\"MainMenu\"); yield return null; yield return new UnityEngine.WaitForEndOfFrame(); UnityEngine.ScreenCapture.CaptureScreenshot(System.IO.Path.GetFullPath(\"scripts/font-20261111/menu.png\")); yield return null; GameMenuUI.Instance.OpenSettings(); yield return new UnityEngine.WaitForEndOfFrame(); UnityEngine.ScreenCapture.CaptureScreenshot(System.IO.Path.GetFullPath(\"scripts/font-20261111/settings.png\")); yield return null; GameMenuUI.Instance.CloseSettings(); } return Run();",
+    "summary": "Check bundled font and render menu and settings"
+  }
+}

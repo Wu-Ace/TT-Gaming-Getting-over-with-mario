@@ -1,0 +1,78 @@
+{
+  "Level01.unity": {
+    "removed_blocks": 27,
+    "added_blocks": 0,
+    "changed_existing": [
+      [
+        "563883300",
+        "4"
+      ]
+    ]
+  },
+  "Level02_Jungle.unity": {
+    "removed_blocks": 15,
+    "added_blocks": 0,
+    "changed_existing": [
+      [
+        "7264345",
+        "1839735485"
+      ],
+      [
+        "553321637",
+        "4"
+      ]
+    ]
+  },
+  "Level03_Beach.unity": {
+    "removed_blocks": 15,
+    "added_blocks": 0,
+    "changed_existing": [
+      [
+        "2022985532",
+        "4"
+      ],
+      [
+        "2104669462",
+        "1839735485"
+      ]
+    ]
+  },
+  "Level04_Town.unity": {
+    "removed_blocks": 15,
+    "added_blocks": 0,
+    "changed_existing": [
+      [
+        "182038692",
+        "1839735485"
+      ],
+      [
+        "665258113",
+        "4"
+      ]
+    ]
+  },
+  "Level05_Cave.unity": {
+    "removed_blocks": 15,
+    "added_blocks": 0,
+    "changed_existing": [
+      [
+        "847760999",
+        "4"
+      ],
+      [
+        "3994175667874472089",
+        "1001"
+      ]
+    ]
+  },
+  "Tutorial.unity": {
+    "removed_blocks": 15,
+    "added_blocks": 0,
+    "changed_existing": [
+      [
+        "1023768462",
+        "4"
+      ]
+    ]
+  }
+}

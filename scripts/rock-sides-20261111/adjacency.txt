@@ -1,0 +1,12 @@
+Level01 top=219 down=219 distinctTop=6 distinctDown=6 checkedAdjacentPairs=298
+Level02_Jungle top=184 down=184 distinctTop=6 distinctDown=6 checkedAdjacentPairs=325
+Level03_Beach top=151 down=151 distinctTop=6 distinctDown=6 checkedAdjacentPairs=232
+Level04_Town top=201 down=201 distinctTop=6 distinctDown=6 checkedAdjacentPairs=185
+Level05_Cave top=1780 down=1755 distinctTop=6 distinctDown=6 checkedAdjacentPairs=3304
+Level06_Grassland_Winter top=411 down=411 distinctTop=6 distinctDown=6 checkedAdjacentPairs=270
+Level07_Ice top=415 down=415 distinctTop=6 distinctDown=6 checkedAdjacentPairs=326
+Level08_Castle top=471 down=471 distinctTop=6 distinctDown=6 checkedAdjacentPairs=359
+Level09_Volcano top=411 down=411 distinctTop=6 distinctDown=6 checkedAdjacentPairs=251
+Level10_Sky top=481 down=481 distinctTop=6 distinctDown=6 checkedAdjacentPairs=389
+Tutorial top=2 down=2 distinctTop=2 distinctDown=2 checkedAdjacentPairs=2
+ERRORS=0

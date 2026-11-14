@@ -1,0 +1,47 @@
+{
+  "captured_utc": "2026-11-11T06:17:39.776476+00:00",
+  "root": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario",
+  "head": {
+    "exit_code": 0,
+    "output": "b96b2d04280c510e3f583bc45a4f379f1fb67fab",
+    "error": ""
+  },
+  "working_tree": {
+    "exit_code": 0,
+    "output": "M Assets/Prefabs/Character.prefab\n M Assets/Scenes/Level01.unity\n M Assets/Scenes/Level02_Jungle.unity\n M Assets/Scenes/Level03_Beach.unity\n M Assets/Scenes/Level04_Town.unity\n M Assets/Scenes/Level05_Cave.unity\n M Assets/Scenes/Level06_Grassland_Winter.unity\n M Assets/Scenes/Level07_Ice.unity\n M Assets/Scenes/Level08_Castle.unity\n M Assets/Scenes/Level09_Volcano.unity\n M Assets/Scenes/Level10_Sky.unity\n M Assets/Scenes/Tutorial.unity\n M Assets/Scripts/CampaignInteractable.cs\n M Assets/Scripts/CampaignLevel.cs\n M Assets/Scripts/Character/Control/ArmsSimulation.cs\n M Assets/Scripts/Character/Control/TargetMovement.cs\n M Assets/Scripts/GameMenuUI.cs\n M Assets/Scripts/KitLandscape.cs\n M Assets/Scripts/Winning/WinThresholdDetection.cs\n M ai-handoff.md\n?? .skill-install/game-studios/\n?? Assets/Art/11.10.meta\n?? Assets/Art/11.10/\n?? Assets/Art/FinishFlag.meta\n?? Assets/Art/FinishFlag/\n?? Assets/Art/PlayerArmPoses.meta\n?? Assets/Art/PlayerArmPoses/\n?? Assets/Editor/ApplyRockVariations.cs\n?? Assets/Editor/ApplyRockVariations.cs.meta\n?? Assets/Editor/BakeRemakeArms.cs\n?? Assets/Editor/BakeRemakeArms.cs.meta\n?? Assets/Editor/FitPaddleColliders.cs\n?? Assets/Editor/FitPaddleColliders.cs.meta\n?? Assets/Editor/InstallJumpKingFifth.cs\n?? Assets/Editor/InstallJumpKingFifth.cs.meta\n?? Assets/Editor/InstallPaddleCharacter.cs\n?? Assets/Editor/InstallPaddleCharacter.cs.meta\n?? Assets/Editor/InstallRockTerrain.cs\n?? Assets/Editor/InstallRockTerrain.cs.meta\n?? Assets/Editor/InstallValleyParallax.cs\n?? Assets/Editor/InstallValleyParallax.cs.meta\n?? Assets/Resources/Fonts.meta\n?? Assets/Resources/Fonts/\n?? Assets/Resources/ValleyParallax.meta\n?? Assets/Resources/ValleyParallax/\n?? Assets/Scripts/Character/Control/PaddleCharacterVisual.cs\n?? Assets/Scripts/Character/Control/PaddleCharacterVisual.cs.meta\n?? Assets/Scripts/GameFont.cs\n?? Assets/Scripts/GameFont.cs.meta\n?? Assets/Scripts/JumpKingRockTile.cs\n?? Assets/Scripts/JumpKingRockTile.cs.meta\n?? Assets/Scripts/RockVariationTile.cs\n?? Assets/Scripts/RockVariationTile.cs.meta\n?? Assets/Tiles/JumpKingFifth.meta\n?? Assets/Tiles/JumpKingFifth/\n?? Assets/Tiles/RockTerrain.meta\n?? Assets/Tiles/RockTerrain/\n?? Assets/Tiles/RockVariations.meta\n?? Assets/Tiles/RockVariations/\n?? scripts/dec-20261111/\n?? scripts/dec-contact.png\n?? scripts/finish-flag-20261111/\n?? scripts/font-20261111/\n?? scripts/ground-contact-20261111/\n?? scripts/jk-original-20261111/\n?? scripts/jk-tilemap-20261111/\n?? scripts/no-diamond-gate-20261111/\n?? scripts/paddle-motor-control-20261111/\n?? scripts/parallax-20261111/\n?? scripts/parallax-natural-20261111/\n?? scripts/player-arm-reach-20261111/\n?? scripts/player-art-20261111/\n?? scripts/player-black-torso-20261111/\n?? scripts/player-colliders-20261111/\n?? scripts/player-continuous-arms-20261111/\n?? scripts/player-fixed-size-20261111/\n?? scripts/player-frame-arms-20261111/\n?? scripts/player-grip-20261111/\n?? scripts/player-grip-swap-20261111/\n?? scripts/player-locked-grips-20261111/\n?? scripts/player-natural-grip-20261111/\n?? scripts/player-proportions-20261111/\n?? scripts/player-raised-grips-20261111/\n?? scripts/remove-checkpoints-20261111/\n?? scripts/remove-diamonds-20261111/\n?? scripts/rock-all-levels-20261111/\n?? scripts/rock-sides-20261111/\n?? scripts/rock-terrain-20261111/\n?? scripts/rock-variation-20261111/",
+    "error": ""
+  },
+  "files": [
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\Character\\Control\\TargetMovement.cs",
+      "sha256": "6f43fe2c613969fae11c90cb70dd9af6e69685cf7d0cfedc8886540856b9b24d",
+      "bytes": 3146,
+      "modified_utc": "2026-11-11T06:07:47.655268+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\Character\\Control\\ArmsSimulation.cs",
+      "sha256": "11e6caa46378f19c12c469d70c1c9d4275a3507e7248d25e41092ae53a4bcc8c",
+      "bytes": 2483,
+      "modified_utc": "2026-11-11T06:03:55.773641+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\paddle-motor-control-20261111\\README.md",
+      "sha256": "ccd61d22286d2067ea7ebaf696d34a1316b51acb5e13bb026f73c86cbaa6ade3",
+      "bytes": 3017,
+      "modified_utc": "2026-11-11T06:17:39.216242+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\paddle-motor-control-20261111\\final-check-result.json",
+      "sha256": "49402938087068f2e35243bb1af3aa07a60e638909208abc65a3851f08a764b5",
+      "bytes": 446,
+      "modified_utc": "2026-11-11T06:08:10.520536+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\paddle-motor-control-20261111\\compile-final.json",
+      "sha256": "ab6287e62c042c1283db205246e712d92ea8b8c2b3d2c3dc30459feaa34e3f33",
+      "bytes": 461,
+      "modified_utc": "2026-11-11T06:07:58.767885+00:00"
+    }
+  ],
+  "test_result": "not evaluated by this script"
+}

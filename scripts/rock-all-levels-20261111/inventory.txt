@@ -1,0 +1,37 @@
+Level01 maps=1 renderers=0
+ map Ground — paint here used=Assets/Tiles/RockTerrain/Rock.asset
+Level02_Jungle maps=1 renderers=0
+ map Ground — paint here used=Assets/Tiles/RockTerrain/Rock.asset
+Level03_Beach maps=1 renderers=0
+ map Ground — paint here used=Assets/Tiles/RockTerrain/Rock.asset
+Level04_Town maps=1 renderers=0
+ map Ground — paint here used=Assets/Tiles/RockTerrain/Rock.asset
+Level05_Cave maps=1 renderers=0
+ map Jump King 01-14 - paint here used=Assets/Tiles/JumpKingFifth/Slope3.asset,Assets/Tiles/JumpKingFifth/Slope2.asset,Assets/Tiles/JumpKingFifth/Slope1.asset,Assets/Tiles/JumpKingFifth/Slope4.asset,Assets/Tiles/JumpKingFifth/Terrain.asset
+Level06_Grassland_Winter maps=0 renderers=3012
+ sprite Grassland_Winter bl Assets/Art/Campaign/Grassland_Winter/bl.png pos=(0.40, -6.40, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Grassland_Winter left Assets/Art/Campaign/Grassland_Winter/left.png pos=(0.40, -5.60, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Grassland_Winter left Assets/Art/Campaign/Grassland_Winter/left.png pos=(0.40, -4.80, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Grassland_Winter tl Assets/Art/Campaign/Grassland_Winter/tl.png pos=(0.40, -4.00, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+Level07_Ice maps=0 renderers=2272
+ sprite Ice bl Assets/Art/Campaign/Ice/bl.png pos=(0.40, -6.40, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Ice left Assets/Art/Campaign/Ice/left.png pos=(0.40, -5.60, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Ice left Assets/Art/Campaign/Ice/left.png pos=(0.40, -4.80, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Ice tl Assets/Art/Campaign/Ice/tl.png pos=(0.40, -4.00, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+Level08_Castle maps=0 renderers=2894
+ sprite Castle bl Assets/Art/Campaign/Castle/bl.png pos=(0.40, -6.40, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Castle left Assets/Art/Campaign/Castle/left.png pos=(0.40, -5.60, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Castle left Assets/Art/Campaign/Castle/left.png pos=(0.40, -4.80, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Castle tl Assets/Art/Campaign/Castle/tl.png pos=(0.40, -4.00, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+Level09_Volcano maps=0 renderers=3368
+ sprite Volcano bl Assets/Art/Campaign/Volcano/bl.png pos=(0.40, -6.40, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Volcano left Assets/Art/Campaign/Volcano/left.png pos=(0.40, -5.60, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Volcano left Assets/Art/Campaign/Volcano/left.png pos=(0.40, -4.80, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Volcano tl Assets/Art/Campaign/Volcano/tl.png pos=(0.40, -4.00, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+Level10_Sky maps=0 renderers=2024
+ sprite Sky bl Assets/Art/Campaign/Sky/bl.png pos=(0.40, -6.40, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Sky left Assets/Art/Campaign/Sky/left.png pos=(0.40, -5.60, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Sky left Assets/Art/Campaign/Sky/left.png pos=(0.40, -4.80, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+ sprite Sky tl Assets/Art/Campaign/Sky/tl.png pos=(0.40, -4.00, 0.00) scale=(1.00, 1.00, 1.00) size=(0.81, 0.81, 0.20)
+Tutorial maps=1 renderers=0
+ map Ground — paint here used=Assets/Tiles/UnifiedTerrain/Grassland.asset

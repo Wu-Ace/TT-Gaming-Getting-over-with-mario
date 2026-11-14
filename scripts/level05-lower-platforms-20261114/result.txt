@@ -1,0 +1,1 @@
+Existing terrain rows remapped floor(y/3), native .4 cells and horizontal positions preserved; no added footholds. Spawn=(11.80, 2.05) cellsBefore=7575 bounds=Position: (0, 0, 0), Size: (60, 210, 1)

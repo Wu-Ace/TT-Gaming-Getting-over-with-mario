@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 796,\n  \"logs\": [\n    \"[Log] 3249 poses: normalized sprite scale change=5.960464E-07 wrist error=1.969661E-06 max elbow anchor separation=0.0208405; all sprite aspect ratios preserved\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

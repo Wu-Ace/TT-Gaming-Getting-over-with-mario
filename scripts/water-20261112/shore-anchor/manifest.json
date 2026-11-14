@@ -1,0 +1,4 @@
+{
+  "shader_sha256": "d26c55553543a6ec0ac9372868c300b5ad85307a2e7d56d9e3027cfd53cbfc6e",
+  "validation": "Unity shader import: supported True, no compiler messages. Layer 0 parallax=1, drift=0, positional animation=0; glint world positions invariant to camera travel/time. Brightness shimmer retained. No new visual capture."
+}

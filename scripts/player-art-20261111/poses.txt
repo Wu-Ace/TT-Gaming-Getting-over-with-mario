@@ -1,0 +1,8 @@
+0 hand error=0
+45 hand error=0
+90 hand error=0
+135 hand error=0
+180 hand error=0
+225 hand error=0
+270 hand error=0
+315 hand error=0

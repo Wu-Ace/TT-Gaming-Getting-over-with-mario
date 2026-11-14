@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "script": "UnityEditor.SceneVisibilityManager.instance.ShowAll();var v=UnityEditor.SceneView.lastActiveSceneView;v.in2DMode=true;v.LookAt(new UnityEngine.Vector3(15,-2,0),UnityEngine.Quaternion.identity,7,true,true);v.Focus();v.Repaint();",
+    "summary": "Show refreshed Rock terrain in Scene view"
+  },
+  "name": "exec_editor_script"
+}

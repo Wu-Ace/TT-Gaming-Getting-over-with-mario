@@ -1,0 +1,63 @@
+using UnityEngine;
+namespace Character.Control {
+ public class ArmsSimulation : MonoBehaviour {
+  [SerializeField] Rigidbody2D hammer;
+  [SerializeField] Transform hammerHead, center;
+  [SerializeField] bool torqueEnabled=true, forceEnabled=true;
+  [field:SerializeField] public int MaxTorque {get;set;}=1000;
+  [field:SerializeField] public int MaxBodyForce {get;set;}=50;
+  [SerializeField] float angularGain=10, angularDamping=.35f, extensionGain=12;
+  [SerializeField] float maxAngularSpeed=480, maxExtensionSpeed=3;
+  Rigidbody2D pivot; HingeJoint2D hinge; SliderJoint2D slide; TargetMovement input;
+  Vector2 target; float baseRadius; JointTranslationLimits2D travel;
+  public Transform HammerTip=>hammerHead;
+  public float AngleError {get;private set;}
+  public float ExtensionError {get;private set;}
+  void Awake(){
+   pivot=GetComponent<Rigidbody2D>();slide=hammer.GetComponent<SliderJoint2D>();
+   foreach(var j in transform.root.GetComponentsInChildren<HingeJoint2D>())
+    if(j.connectedBody==pivot||j.attachedRigidbody==pivot){hinge=j;break;}
+   if(!slide||!hinge){enabled=false;return;}
+   baseRadius=Vector2.Dot((Vector2)hammerHead.position-(Vector2)center.position,hammer.transform.right)+slide.jointTranslation;
+   travel=slide.limits;
+   // Preserve the existing authored travel during this controller-only trial.
+   slide.useLimits=true;
+   input=transform.root.GetComponentInChildren<TargetMovement>();
+   if(input)input.OnPositionChanged+=ReceiveTarget;
+   target=hammerHead.position;
+  }
+  public bool TryReachInterval(Vector2 direction,out float low,out float high){low=Mathf.Max(0,baseRadius-travel.max);high=Mathf.Max(low,baseRadius-travel.min);return true;}
+  public Vector2 ConstrainTarget(Vector2 requested){
+   Vector2 delta=requested-(Vector2)center.position;TryReachInterval(delta,out float low,out float high);
+   return (Vector2)center.position+Vector2.ClampMagnitude(delta,high);
+  }
+  public void ReceiveTarget(Vector2 value){target=value;}
+  void OnEnable(){if(hammerHead)target=hammerHead.position;}
+  void OnDestroy(){if(input)input.OnPositionChanged-=ReceiveTarget;}
+  void OnDisable(){if(hinge)hinge.useMotor=false;if(slide)slide.useMotor=false;}
+  void FixedUpdate(){
+   if(!hinge||!slide)return;
+   Vector2 axis=hammer.transform.right, actual=(Vector2)hammerHead.position-(Vector2)center.position;
+   Vector2 wanted=ConstrainTarget(target)-(Vector2)center.position;
+   AngleError=wanted.sqrMagnitude>.0025f?Vector2.SignedAngle(actual,wanted):0;
+   float sign=hinge.attachedRigidbody==pivot?-1:1;
+   var turn=hinge.motor;
+   // jointSpeed and motorSpeed share the same joint coordinate convention.
+   turn.motorSpeed=Mathf.Clamp(sign*AngleError*angularGain-hinge.jointSpeed*angularDamping,-maxAngularSpeed,maxAngularSpeed);
+   turn.maxMotorTorque=Mathf.Max(1,MaxTorque);hinge.motor=turn;hinge.useMotor=torqueEnabled;
+   // Track radius concurrently with rotation, including large direction changes.
+   float radius=Mathf.Clamp(Vector2.Dot(wanted,axis),Mathf.Max(0,baseRadius-travel.max),baseRadius-travel.min);
+   ExtensionError=radius-Vector2.Dot(actual,axis);
+   // The slider motor already regulates velocity; extra jointSpeed feedback caused alternating saturation.
+   // Original-style signed-square error and load-dependent extension gain.
+   float loadGain=Mathf.Clamp(16f-Mathf.Max(5f,slide.reactionTorque*.001f),1f,11f);
+   float alignment=wanted.sqrMagnitude>.0001f?Mathf.Clamp01(Vector2.Dot(wanted.normalized,axis)):0f;
+   float outward=Mathf.Clamp(ExtensionError*Mathf.Abs(ExtensionError)*loadGain*Mathf.Pow(alignment,4f),-maxExtensionSpeed,maxExtensionSpeed);
+   float current=Vector2.Dot(actual,axis),dt=Time.fixedDeltaTime;
+   // Do not command a step beyond either hard stop.
+   outward=Mathf.Clamp(outward,-Mathf.Max(0,slide.limits.max-slide.jointTranslation)/dt,Mathf.Max(0,slide.jointTranslation-slide.limits.min)/dt);
+   var push=slide.motor;push.motorSpeed=-outward;push.maxMotorTorque=Mathf.Max(1,MaxBodyForce);
+   slide.motor=push;slide.useMotor=forceEnabled;
+  }
+ }
+}

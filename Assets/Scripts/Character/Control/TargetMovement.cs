@@ -1,83 +1,49 @@
-﻿using System;
-using Extension;
-using JetBrains.Annotations;
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-
 namespace Character.Control
 {
     public class TargetMovement : MonoBehaviour
     {
         [SerializeField] private Transform bodyCenter;
-        [SerializeField] private float minRadius = 0f;
-        [SerializeField] private float maxRadius = 2f;
-        [SerializeField] private float reactionTimeMultiplier = 10f;
-        [SerializeField] private bool autoAdjustmentEnabled;
-        [SerializeField] private Rigidbody2D followedBody;
-        [SerializeField] private float adjustmentDurationSeconds = 0.25f;
-        [SerializeField] private float adjustmentWaitSeconds = 0.5f;
-
-        private Vector2 _mousePosition;
-        private Camera _camera;
-        private bool _recentMovement;
-        private float _adjustmentTimeSpent;
-        private bool _readyToReceiveInput;
-
+        [SerializeField] private float minRadius = 0f, maxRadius = 1.9f;
+        [SerializeField] private float mouseUnitsPerPixel = 0.008f;
+        private ArmsSimulation arms;
+        private Vector2 virtualTarget;
+        private bool active;
         public event Action<Vector2> OnPositionChanged;
-
-        private void Awake()
+        private void Awake() { arms = transform.root.GetComponentInChildren<ArmsSimulation>(); }
+        // Existing PlayerInput binding remains valid; delta is consumed once in Update.
+        public void OnMousePositionChanged(InputAction.CallbackContext context) { }
+        private void OnDisable() { ReleaseCursor(); }
+        private void ReleaseCursor()
         {
-            _camera = Camera.main;
+            if (active) { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
+            active = false;
         }
-
-        private void Start()
-        {
-            _readyToReceiveInput = true;
-        }
-
-        [UsedImplicitly]
-        public void OnMousePositionChanged(InputAction.CallbackContext context)
-        {
-            if (!_readyToReceiveInput) return;
-
-            var input = context.ReadValue<Vector2>();
-            if (input == Vector2.zero) return; // to avoid weird behaviour when clicking outside the game window
-            _mousePosition = input;
-
-            _recentMovement = true;
-            this.Invoke(adjustmentWaitSeconds, () =>
-            {
-                _recentMovement = false;
-                _adjustmentTimeSpent = 0;
-            });
-        }
-
         private void Update()
         {
-            if (!_readyToReceiveInput) return;
-
-            if (_recentMovement || !autoAdjustmentEnabled)
+            if (!bodyCenter || Mouse.current == null || !Application.isFocused || Time.timeScale <= 0
+                || (CampaignLevel.Current != null && CampaignLevel.Current.Won)
+                || (arms != null && !arms.isActiveAndEnabled))
+            { ReleaseCursor(); return; }
+            if (!active)
             {
-                var mouseWorldPosition = _camera.ScreenToWorldPoint(_mousePosition);
-                var mousePlanePosition = new Vector2(mouseWorldPosition.x, mouseWorldPosition.y);
-                var center = (Vector2) bodyCenter.position;
-                var difference = mousePlanePosition - center;
-                var distanceToCenter = Mathf.Clamp(difference.magnitude, minRadius, maxRadius);
-                var targetPosition = center + difference.normalized * distanceToCenter;
-                transform.position = Vector2.Lerp(
-                    transform.position,
-                    targetPosition,
-                    Time.deltaTime * reactionTimeMultiplier);
-                OnPositionChanged?.Invoke(transform.position);
+                virtualTarget = arms && arms.HammerTip ? (Vector2)arms.HammerTip.position : (Vector2)transform.position;
+                Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
+                active = true;
             }
             else
             {
-                _adjustmentTimeSpent += Time.deltaTime;
-                transform.position = Vector2.Lerp(
-                    transform.position,
-                    followedBody.position,
-                    _adjustmentTimeSpent / adjustmentDurationSeconds);
+                var delta = Mouse.current.delta.ReadValue() * mouseUnitsPerPixel;
+                // Apply the full mouse delta immediately; no input smoothing lag.
+                virtualTarget += delta;
             }
+            var center = (Vector2)bodyCenter.position;
+            var offset = virtualTarget - center;
+            virtualTarget = center + offset.normalized * Mathf.Clamp(offset.magnitude, minRadius, maxRadius);
+            transform.position = virtualTarget;
+            OnPositionChanged?.Invoke(virtualTarget);
         }
     }
 }

@@ -1,0 +1,20 @@
+using System;using System.IO;using UnityEngine;using UnityEditor;using Character.Control;
+public static class FitPaddleColliders {
+ static void Fit(PolygonCollider2D c,SpriteRenderer r,Vector2[] pixels){var points=new Vector2[pixels.Length];for(int i=0;i<points.Length;i++)points[i]=c.transform.InverseTransformPoint(PaddleCharacterVisual.PixelPosition(r,pixels[i]));c.offset=Vector2.zero;c.pathCount=1;c.SetPath(0,points);c.enabled=true;}
+ [MenuItem("Tools/Art/Fit New Player Colliders")]
+ public static void Apply(){
+ var root=PrefabUtility.LoadPrefabContents("Assets/Prefabs/Character.prefab");
+ try {var r=root.GetComponent<PaddleCharacterVisual>();r.Pose();
+ Fit(r.body.GetComponent<PolygonCollider2D>(),r.torso,new Vector2[]{new Vector2(19,174),new Vector2(25,181),new Vector2(25,187),new Vector2(6,221),new Vector2(1,238),new Vector2(1,252),new Vector2(7,271),new Vector2(17,286),new Vector2(36,303),new Vector2(42,306),new Vector2(57,309),new Vector2(103,309),new Vector2(117,306),new Vector2(131,297),new Vector2(149,276),new Vector2(158,252),new Vector2(158,237),new Vector2(156,229),new Vector2(148,211),new Vector2(134,189),new Vector2(134,180),new Vector2(139,174)});
+ Fit(r.body.Find("Mario").GetComponent<PolygonCollider2D>(),r.torso,new Vector2[]{new Vector2(106,3),new Vector2(101,4),new Vector2(94,3),new Vector2(92,1),new Vector2(82,1),new Vector2(78,3),new Vector2(69,2),new Vector2(63,5),new Vector2(59,10),new Vector2(55,11),new Vector2(49,19),new Vector2(50,23),new Vector2(44,35),new Vector2(46,38),new Vector2(45,41),new Vector2(48,42),new Vector2(50,50),new Vector2(54,52),new Vector2(56,56),new Vector2(64,58),new Vector2(63,67),new Vector2(58,74),new Vector2(34,83),new Vector2(26,89),new Vector2(26,104),new Vector2(28,112),new Vector2(42,141),new Vector2(42,161),new Vector2(44,168),new Vector2(110,169),new Vector2(108,165),new Vector2(110,153),new Vector2(104,152),new Vector2(111,149),new Vector2(118,138),new Vector2(127,106),new Vector2(127,94),new Vector2(119,88),new Vector2(110,87),new Vector2(97,79),new Vector2(92,79),new Vector2(96,66),new Vector2(109,60),new Vector2(111,48),new Vector2(110,43),new Vector2(114,40),new Vector2(109,31),new Vector2(110,25),new Vector2(108,20),new Vector2(112,17),new Vector2(112,13),new Vector2(115,12),new Vector2(111,10),new Vector2(110,5)});
+ Fit(r.tool.Find("Shape").GetComponent<PolygonCollider2D>(),r.paddle,new Vector2[]{new Vector2(12,2),new Vector2(10,5),new Vector2(10,8),new Vector2(17,14),new Vector2(18,24),new Vector2(16,152),new Vector2(3,181),new Vector2(1,230),new Vector2(3,238),new Vector2(7,242),new Vector2(12,244),new Vector2(35,243),new Vector2(43,239),new Vector2(46,233),new Vector2(41,177),new Vector2(37,169),new Vector2(28,159),new Vector2(24,145),new Vector2(24,22),new Vector2(25,13),new Vector2(31,7),new Vector2(31,3),new Vector2(28,1)});
+ r.tool.Find("Shape/HandleExtension").GetComponent<BoxCollider2D>().enabled=false;
+ var trigger=r.tip.GetComponent<CapsuleCollider2D>();
+ Vector2 min=new Vector2(float.PositiveInfinity,float.PositiveInfinity),max=new Vector2(float.NegativeInfinity,float.NegativeInfinity);
+ foreach(var v in new[]{new Vector2(0,148),new Vector2(48,148),new Vector2(0,246),new Vector2(48,246)}){Vector2 pt=r.tip.InverseTransformPoint(PaddleCharacterVisual.PixelPosition(r.paddle,v));min=Vector2.Min(min,pt);max=Vector2.Max(max,pt);}
+ trigger.offset=(min+max)*.5f;trigger.size=max-min;trigger.direction=0;trigger.isTrigger=true;
+ PrefabUtility.SaveAsPrefabAsset(root,"Assets/Prefabs/Character.prefab");
+ File.WriteAllText("scripts/player-colliders-20261111/install.txt","Fitted torso/cauldron, upper body, paddle contour; disabled obsolete handle box; aligned blade trigger. "+DateTime.UtcNow.ToString("O"));
+ }finally{PrefabUtility.UnloadPrefabContents(root);}
+ }
+}

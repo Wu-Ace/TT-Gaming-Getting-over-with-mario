@@ -1,0 +1,1 @@
+3240 poses: wrist error=2.384186E-06; min hand separation/scale=0.2001344; max proportional segment deviation=1.833989E-06; max total arm reach/scale=1.005608

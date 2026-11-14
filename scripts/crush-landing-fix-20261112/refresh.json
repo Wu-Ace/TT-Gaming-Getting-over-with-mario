@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "action": "refresh",
+    "timeoutSeconds": 180
+  },
+  "name": "unity_editor"
+}

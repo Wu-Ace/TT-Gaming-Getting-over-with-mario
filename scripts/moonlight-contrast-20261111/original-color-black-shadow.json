@@ -1,0 +1,8 @@
+{
+  "shader_sha256": "54a20bf5c4617991028921e37a27bccd3594c70e1e84aaab19e0e17d6fdd89d5",
+  "shadow_rgb_multiplier": 0.045,
+  "lit_rgb_multiplier": 1,
+  "lit_color_added": 0,
+  "alpha_changed": false,
+  "verification": "source checks only; Unity rendering unverified"
+}

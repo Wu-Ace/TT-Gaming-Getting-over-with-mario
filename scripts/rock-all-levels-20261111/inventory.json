@@ -1,0 +1,8 @@
+{
+  "arguments": {
+    "script": "var setup=UnityEditor.SceneManagement.EditorSceneManager.GetSceneManagerSetup();var lines=new System.Collections.Generic.List<string>();try{foreach(var path in System.IO.Directory.GetFiles(\"Assets/Scenes\",\"*.unity\").Where(p=>!p.Contains(\"MainMenu\"))){var s=UnityEditor.SceneManagement.EditorSceneManager.OpenScene(path);var roots=s.GetRootGameObjects();var maps=roots.SelectMany(g=>g.GetComponentsInChildren<UnityEngine.Tilemaps.Tilemap>(true)).ToArray();var rs=roots.SelectMany(g=>g.GetComponentsInChildren<UnityEngine.SpriteRenderer>(true)).Where(r=>r.sprite&&r.enabled&&(r.name.StartsWith(\"GroundTile\")||r.GetComponentsInParent<UnityEngine.Transform>(true).Any(t=>t.name==\"Terrain\"))).ToArray();lines.Add(s.name+\" maps=\"+maps.Length+\" renderers=\"+rs.Length);foreach(var m in maps){var ts=new UnityEngine.Tilemaps.TileBase[m.GetUsedTilesCount()];m.GetUsedTilesNonAlloc(ts);lines.Add(\" map \"+m.name+\" used=\"+string.Join(\",\",ts.Select(t=>UnityEditor.AssetDatabase.GetAssetPath(t)).Distinct().Take(6)));}foreach(var r in rs.Take(4))lines.Add(\" sprite \"+r.name+\" \"+UnityEditor.AssetDatabase.GetAssetPath(r.sprite)+\" pos=\"+r.transform.position+\" scale=\"+r.transform.lossyScale+\" size=\"+r.bounds.size);}}finally{UnityEditor.SceneManagement.EditorSceneManager.RestoreSceneManagerSetup(setup);System.IO.File.WriteAllLines(\"scripts/rock-all-levels-20261111/inventory.txt\",lines);}",
+    "timeoutSeconds": 120,
+    "summary": "Inventory editable terrain across every scene"
+  },
+  "name": "exec_editor_script"
+}

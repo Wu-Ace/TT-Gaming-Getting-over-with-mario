@@ -1,0 +1,76 @@
+Shader "Game/KingdomWater" {
+Properties { _Reflection("Reflection",2D)="black"{} }
+SubShader { Tags { "Queue"="Transparent+100" "RenderType"="Transparent" "RenderPipeline"="UniversalPipeline" } Pass {
+Blend SrcAlpha OneMinusSrcAlpha
+ZWrite Off ZTest Always Cull Off
+HLSLPROGRAM
+#pragma vertex vert
+#pragma fragment frag
+#include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Core.hlsl"
+TEXTURE2D(_Reflection); SAMPLER(sampler_Reflection);
+float4 _View; float2 _CameraOffset; float _WaterY,_Depth,_Clock,_CameraTravel,_CameraMotion;
+struct V { float4 position:POSITION; }; struct F { float4 position:SV_POSITION; float2 world:TEXCOORD0; };
+F vert(V v) { F o; float3 w=TransformObjectToWorld(v.position.xyz); o.position=TransformWorldToHClip(w); o.world=w.xy; return o; }
+float hash21(float2 p) { return frac(sin(dot(p,float2(127.1,311.7)))*43758.5453); }
+float noise2(float2 p) {
+ float2 cell=floor(p), f=frac(p); f=f*f*(3-2*f);
+ return lerp(lerp(hash21(cell),hash21(cell+float2(1,0)),f.x),
+             lerp(hash21(cell+float2(0,1)),hash21(cell+1),f.x),f.y);
+}
+float waterNoise(float2 p) { return noise2(p)*.65+noise2(p*2.13+17.3)*.35; }
+// Jitter each cell independently; smooth elliptical glints, never full-width rows.
+float glints(float2 p,float seed,float t) {
+ float2 grid=p*float2(3.4,10.5);
+ float2 cell=floor(grid); float light=0;
+ [unroll] for(int y=-1;y<=1;y++) {
+  [unroll] for(int x=-1;x<=1;x++) {
+   float2 id=cell+float2(x,y);
+   float h=hash21(id+seed);
+   float2 center=id+float2(hash21(id+seed+13),hash21(id+seed+37));
+   center+=float2(.13*sin(t*.7+h*28),.07*cos(t*.53+h*33));
+   float2 v=(grid-center)/float2(lerp(.09,.28,h),lerp(.04,.09,h));
+   float shape=1-smoothstep(.35,1,length(v));
+   float shimmer=.65+.35*sin(t*(.5+h*.8)+h*41);
+   light+=shape*shimmer*step(.77,h);
+  }
+ }
+ return saturate(light);
+}
+half4 frag(F i):SV_Target {
+ float2 p=i.world; float t=_Clock;
+ float surface=_WaterY-.025+.014*sin(p.x*2.3-t*.9)+.009*sin(p.x*5.7+t*1.3);
+ float below=surface-p.y;
+ float d=saturate(below/max(_Depth,.001));
+ // Independent advected fields: no repeating phase rows.
+ float2 q=p*float2(3.0,18.0)+float2(_CameraTravel*.55,0);
+ float2 warp=float2(noise2(p*.9+float2(t*.07,0)),noise2(p*1.1-float2(0,t*.05)));
+ float n=waterNoise(q+warp*1.4+float2(-t*.23,t*.12));
+ float m=waterNoise(q*float2(.71,1.31)-warp*1.2+float2(t*.15,-t*.19)+31);
+ float wave=(n-.5)*2;
+ float2 uv=(float2(p.x,2*_WaterY-p.y)-_View.xy)/_View.zw;
+ uv+=float2(wave*(.003+.010*d)*(1+_CameraMotion*.65), (m-.5)*(.002+.004*d)*(1+_CameraMotion*.4));
+ // Two moving roughness scales break up the reflected image without drawing stripes.
+ float fine=waterNoise(p*float2(9,32)+float2(t*.38,-t*.21)+warp);
+ float rough=smoothstep(.30,.70,fine);
+ float2 spread=float2(.0015,.0008)*lerp(.4,1.4,rough);
+ half3 reflected=SAMPLE_TEXTURE2D(_Reflection,sampler_Reflection,saturate(uv)).rgb*.4;
+ reflected+=SAMPLE_TEXTURE2D(_Reflection,sampler_Reflection,saturate(uv+spread)).rgb*.15;
+ reflected+=SAMPLE_TEXTURE2D(_Reflection,sampler_Reflection,saturate(uv-spread)).rgb*.15;
+ reflected+=SAMPLE_TEXTURE2D(_Reflection,sampler_Reflection,saturate(uv+float2(spread.x,-spread.y))).rgb*.15;
+ reflected+=SAMPLE_TEXTURE2D(_Reflection,sampler_Reflection,saturate(uv+float2(-spread.x,spread.y))).rgb*.15;
+ float valid=step(0,uv.y)*step(uv.y,1);
+ float reflectionWeight=lerp(.84,.55,d)*lerp(1,.78,rough);
+ half3 waterTint=half3(.055,.095,.115)*lerp(.85,1.12,m);
+ half3 col=lerp(waterTint,reflected*half3(.88,.94,.98),reflectionWeight*valid);
+ // Two water planes retain stable patterns and different camera-relative travel.
+ float2 farP=p-_CameraOffset*float2(.42,.18)+float2(t*.025,0);
+ float2 nearP=p+_CameraOffset*float2(.18,.06)+float2(-t*.045,.008*t);
+ float lights=glints(farP,7,t)*lerp(.45,.12,d)
+             +glints(nearP,83,t)*smoothstep(.04,.65,d)*.65;
+ col+=half3(.72,.81,.82)*lights;
+
+ float edge=max(fwidth(below),.001);
+ return half4(col,smoothstep(0,edge,below));
+}
+ENDHLSL
+} } }

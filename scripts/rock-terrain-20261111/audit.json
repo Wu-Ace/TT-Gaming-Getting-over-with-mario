@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "script": "var setup=UnityEditor.SceneManagement.EditorSceneManager.GetSceneManagerSetup();var lines=new System.Collections.Generic.List<string>();foreach(var n in new[]{\"Level01\",\"Level02_Jungle\",\"Level03_Beach\",\"Level04_Town\"}){var s=UnityEditor.SceneManagement.EditorSceneManager.OpenScene(\"Assets/Scenes/\"+n+\".unity\");foreach(var r in s.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<UnityEngine.SpriteRenderer>(true)).Where(r=>r.sprite!=null&&(r.GetComponentsInParent<UnityEngine.Transform>(true).Any(t=>t.name==\"Terrain\")||r.GetComponentInParent<DonutFallPlatform>()||r.GetComponentInParent<OrbitRidePlatform>())))lines.Add(n+\" \"+r.name+\" \"+UnityEditor.AssetDatabase.GetAssetPath(r.sprite)+\" size=\"+r.bounds.size);foreach(var m in s.GetRootGameObjects().SelectMany(g=>g.GetComponentsInChildren<UnityEngine.Tilemaps.Tilemap>()))foreach(var t in m.GetUsedTilesCount()>0?Enumerable.Range(0,1):Enumerable.Empty<int>())lines.Add(n+\" map=\"+m.name+\" tiles=\"+m.GetUsedTilesCount());}UnityEditor.SceneManagement.EditorSceneManager.RestoreSceneManagerSetup(setup);System.IO.File.WriteAllLines(\"scripts/rock-terrain-20261111/remaining.txt\",lines);",
+    "summary": "Audit remaining terrain visuals in first four levels"
+  }
+}

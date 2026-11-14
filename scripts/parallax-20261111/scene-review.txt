@@ -1,0 +1,6 @@
+Tutorial: serialized background resolves six layers; actual gameplay-camera editor render captured; no scene saves during review
+Level01: serialized background resolves six layers; actual gameplay-camera editor render captured; no scene saves during review
+Level02_Jungle: serialized background resolves six layers; actual gameplay-camera editor render captured; no scene saves during review
+Level03_Beach: serialized background resolves six layers; actual gameplay-camera editor render captured; no scene saves during review
+Level04_Town: serialized background resolves six layers; actual gameplay-camera editor render captured; no scene saves during review
+Level05_Cave: serialized background resolves six layers; actual gameplay-camera editor render captured; no scene saves during review

@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('Assets/Editor/InstallJumpKingFifth.cs');s=p.read_text().replace('int misses=0;foreach(var c','var missing=new List<string>();int misses=0;foreach(var c').replace('if(!composite.OverlapPoint(p))misses++;','if(!composite.OverlapPoint(p)){misses++;missing.Add(c.x+","+c.y+" kind="+c.kind+" p="+p+" actual="+mapNew.GetCellCenterWorld(new Vector3Int(c.x,c.y,0)));}').replace('if(misses>0)throw','File.WriteAllLines(Out+"/misses.txt",missing);if(misses>0)throw');p.write_text(s)

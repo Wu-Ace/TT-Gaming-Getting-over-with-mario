@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "if(UnityEngine.SceneManagement.SceneManager.GetActiveScene().isDirty) throw new System.Exception(\"Unsaved scene\"); UnityEditor.SceneManagement.EditorSceneManager.OpenScene(\"Assets/Scenes/Level01.unity\");", "summary": "Open first level for actual water Play verification"}}

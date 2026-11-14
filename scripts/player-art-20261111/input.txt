@@ -1,0 +1,1 @@
+Mouse input event -> TargetMovement -> actual physical paddle motion=0.173859; max grip error=0; dead=False

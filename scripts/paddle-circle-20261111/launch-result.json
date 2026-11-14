@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 467,\n  \"logs\": [\n    \"[Log] Fast downward mouse stroke: peak rise=1.215964 peak upward speed=3.993551 max reach=0.9283087\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

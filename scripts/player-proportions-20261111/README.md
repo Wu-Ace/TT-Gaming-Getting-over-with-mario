@@ -1,0 +1,11 @@
+# Shorter proportional arms, adaptive grips — 2026-11-11
+
+User explicitly rejected reducing paddle travel; authorized moving grip points to suit shorter arms. Only PaddleCharacterVisual changed. Removed1.3x base limb enlargement and the elbow-lag algorithm that independently rescaled forearms. Natural upper/forearm segments are.49m each at normal body scale (previous rest segments~.61m). Both segments use the same length, preserving sprite aspect ratios. Shoulder/hand circle intersection selects the continuous elbow branch. Two reachable intervals on the existing paddle shaft determine adaptive separated hand grips, keeping left/right ordering. Preferred spacing.40m; minimum.20m. No input, torque, force, slider, collider, prefab or scene asset edits this turn.
+
+For transient physical poses outside ideal radial geometry, solve the minimum shared arm reach for two shaft grips via convex search; this avoids detachment without the old unbounded independent forearm scaling. Thus segment lengths are natural at rest, not mathematically fixed in every extreme physical pose. Static3240 pose sweep peak total reach1.005608m vs nominal.98m (~2.6% correction). This supersedes commentary describing strictly fixed length.
+
+PASS editor compile0errors0warnings (compile-final.json).
+PASS3240 rotation/reach/growth poses: max rendered wrist error2.39e-6m;min hand separation normalized.2001344m;upper/forearm length equality error<2e-6m (range.txt).
+PASS actual mouse input->existing physics paddle, body frozen:3.184201m max paddle-tip travel, max rendered wrist error1.97e-6m,min spacing.200135m. Native video natural-arms.mp4 recorded; six frames and final Scene closeup natural-rest.png inspected.
+Initial dynamic test with rigid lengths failed from physical joint transient offsets (input-result.json retained); fixed with minimal shared reach solver; final input-retry-result.json passed. Earlier natural-rest camera framing was invalid and replaced by final stopped Scene capture. Runtime tests temporarily fixed body only, no explicit preference writes/reset or scene saves. Editor restored stopped Level01.
+NOT RUN full free-body traversal, enemy/death regressions, device/export, user-calibrated feel. Existing terrain/flag/font work preserved.

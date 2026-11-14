@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 2168,\n  \"logs\": [\n    \"[Log] pan=0 offset=(149.72, 8.50, 0.00, 0.00)\",\n    \"[Log] pan=1 offset=(149.72, 8.50, 0.00, 0.00)\"\n  ],\n  \"log_count\": 2\n}"}]}, "jsonrpc": "2.0", "id": 2}

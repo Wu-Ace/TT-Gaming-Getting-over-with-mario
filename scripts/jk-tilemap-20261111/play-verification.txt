@@ -1,0 +1,2 @@
+Live scene=Level05_Cave; spawn=(11.80, -0.75); body=(11.80, -0.75, 0.00); dead=False
+Exact triangle inside/outside tests=114; mismatch=0

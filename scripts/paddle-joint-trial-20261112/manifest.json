@@ -1,0 +1,8 @@
+{
+  "sourceSha256": "ffb65d7994d7d0efbdf7bbdc111115ca2a35b9242c5a2050bdbc1c28f791fdfe",
+  "method": "hinge and slider motor tracking; no trigger-dependent body forces",
+  "input": "existing absolute mouse retained",
+  "travelAndGeometry": "unchanged",
+  "originalParity": "method trial, not exact original constants/controller",
+  "runtimeVerified": false
+}

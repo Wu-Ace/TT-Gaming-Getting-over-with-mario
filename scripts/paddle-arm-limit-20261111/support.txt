@@ -1,0 +1,1 @@
+Arm-limited gravity support: body rise=0.4061203 max shoulder-grip=0.554402 natural arm=.98

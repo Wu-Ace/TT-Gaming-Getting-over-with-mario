@@ -1,0 +1,11 @@
+Level01: 49 decorations, 107 platform spans
+Level02_Jungle: 13 decorations, 28 platform spans
+Level03_Beach: 14 decorations, 51 platform spans
+Level04_Town: 28 decorations, 103 platform spans
+Level05_Cave: 67 decorations, 195 platform spans
+Level06_Grassland_Winter: 0 decorations, 0 platform spans
+Level07_Ice: 0 decorations, 0 platform spans
+Level08_Castle: 0 decorations, 0 platform spans
+Level09_Volcano: 0 decorations, 0 platform spans
+Level10_Sky: 0 decorations, 0 platform spans
+Tutorial: 0 decorations, 1 platform spans

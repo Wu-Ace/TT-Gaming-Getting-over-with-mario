@@ -1,0 +1,83 @@
+{
+  "captured_utc": "2026-11-10T19:07:49.507800+00:00",
+  "root": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario",
+  "head": {
+    "exit_code": 0,
+    "output": "b96b2d04280c510e3f583bc45a4f379f1fb67fab",
+    "error": ""
+  },
+  "working_tree": {
+    "exit_code": 0,
+    "output": "M Assets/Prefabs/Character.prefab\n M Assets/Scenes/Level01.unity\n M Assets/Scenes/Level02_Jungle.unity\n M Assets/Scenes/Level03_Beach.unity\n M Assets/Scenes/Level04_Town.unity\n M Assets/Scenes/Level05_Cave.unity\n M Assets/Scenes/Tutorial.unity\n M Assets/Scripts/CampaignInteractable.cs\n M Assets/Scripts/CampaignLevel.cs\n M Assets/Scripts/GameMenuUI.cs\n M Assets/Scripts/KitLandscape.cs\n M Assets/Scripts/Winning/WinThresholdDetection.cs\n M ai-handoff.md\n?? .skill-install/game-studios/\n?? Assets/Art/11.10.meta\n?? Assets/Art/11.10/\n?? Assets/Art/FinishFlag.meta\n?? Assets/Art/FinishFlag/\n?? Assets/Art/PlayerArmPoses.meta\n?? Assets/Art/PlayerArmPoses/\n?? Assets/Editor/BakeRemakeArms.cs\n?? Assets/Editor/BakeRemakeArms.cs.meta\n?? Assets/Editor/FitPaddleColliders.cs\n?? Assets/Editor/FitPaddleColliders.cs.meta\n?? Assets/Editor/InstallJumpKingFifth.cs\n?? Assets/Editor/InstallJumpKingFifth.cs.meta\n?? Assets/Editor/InstallPaddleCharacter.cs\n?? Assets/Editor/InstallPaddleCharacter.cs.meta\n?? Assets/Editor/InstallRockTerrain.cs\n?? Assets/Editor/InstallRockTerrain.cs.meta\n?? Assets/Editor/InstallValleyParallax.cs\n?? Assets/Editor/InstallValleyParallax.cs.meta\n?? Assets/Resources/Fonts.meta\n?? Assets/Resources/Fonts/\n?? Assets/Resources/ValleyParallax.meta\n?? Assets/Resources/ValleyParallax/\n?? Assets/Scripts/Character/Control/PaddleCharacterVisual.cs\n?? Assets/Scripts/Character/Control/PaddleCharacterVisual.cs.meta\n?? Assets/Scripts/GameFont.cs\n?? Assets/Scripts/GameFont.cs.meta\n?? Assets/Scripts/JumpKingRockTile.cs\n?? Assets/Scripts/JumpKingRockTile.cs.meta\n?? Assets/Tiles/JumpKingFifth.meta\n?? Assets/Tiles/JumpKingFifth/\n?? Assets/Tiles/RockTerrain.meta\n?? Assets/Tiles/RockTerrain/\n?? scripts/finish-flag-20261111/\n?? scripts/font-20261111/\n?? scripts/jk-tilemap-20261111/\n?? scripts/no-diamond-gate-20261111/\n?? scripts/parallax-20261111/\n?? scripts/parallax-natural-20261111/\n?? scripts/player-art-20261111/\n?? scripts/player-colliders-20261111/\n?? scripts/player-fixed-size-20261111/\n?? scripts/player-frame-arms-20261111/\n?? scripts/player-grip-20261111/\n?? scripts/player-grip-swap-20261111/\n?? scripts/player-locked-grips-20261111/\n?? scripts/player-natural-grip-20261111/\n?? scripts/player-proportions-20261111/\n?? scripts/remove-checkpoints-20261111/\n?? scripts/remove-diamonds-20261111/\n?? scripts/rock-terrain-20261111/\n?? scripts/rock-variation-20261111/",
+    "error": ""
+  },
+  "files": [
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scripts\\KitLandscape.cs",
+      "sha256": "bc7a623fa0736e62cfc21fd931f4a9e50cb80297b64f6d24383053c0d63d89e6",
+      "bytes": 6602,
+      "modified_utc": "2026-11-10T19:01:11.767456+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\parallax-natural-20261111\\README.md",
+      "sha256": "295bf8851d06786f201f833ab1b3d9f1134a368e0ec6039e547bb73398522e1c",
+      "bytes": 2602,
+      "modified_utc": "2026-11-10T19:07:48.355783+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\parallax-natural-20261111\\results.txt",
+      "sha256": "3eba27cb81eca3eca878050a4c2522507df1509c0b72b79cfbce5aae0cc39839",
+      "bytes": 348,
+      "modified_utc": "2026-11-10T19:03:12.827809+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\parallax-natural-20261111\\powerup-ui-exceptions.json",
+      "sha256": "3e93eb084dc9d3b997d925ec19b465268c76806c9f2e2ed0368c1dd12542814d",
+      "bytes": 381187,
+      "modified_utc": "2026-11-10T19:03:12.876127+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\parallax-natural-20261111\\compile.json",
+      "sha256": "ab6287e62c042c1283db205246e712d92ea8b8c2b3d2c3dc30459feaa34e3f33",
+      "bytes": 461,
+      "modified_utc": "2026-11-10T19:07:22.528062+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\parallax-natural-20261111\\final-state.json",
+      "sha256": "0624b0fc8768383ccfa1a6b1eb2d673cc0678dee11267578496e6d09f6f47c17",
+      "bytes": 1494,
+      "modified_utc": "2026-11-10T19:07:24.066519+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\parallax-natural-20261111\\scene-final.png",
+      "sha256": "ce2240a825c68ba77802358fd4f574aa5069c912a70a3711711891c117c6a846",
+      "bytes": 589585,
+      "modified_utc": "2026-11-10T19:07:20.890760+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\parallax-natural-20261111\\range-start.png",
+      "sha256": "19efbd0ced82ef1befed0305f9ace16c1d0e3984b55491b3f96a363c9ca8d5d7",
+      "bytes": 1278074,
+      "modified_utc": "2026-11-10T19:03:12.516786+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\parallax-natural-20261111\\range-middle.png",
+      "sha256": "c87611fb9830e7a4c9c46215cc0132c6a5edf0e384853e0aed1081b4f610e0a1",
+      "bytes": 1287454,
+      "modified_utc": "2026-11-10T19:03:12.599506+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\parallax-natural-20261111\\range-end.png",
+      "sha256": "837a0e4c7e0802fbad2df56323f5d2a73c5102c16a56d5681084add7a9a53f00",
+      "bytes": 1288319,
+      "modified_utc": "2026-11-10T19:03:12.747649+00:00"
+    },
+    {
+      "path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\parallax-natural-20261111\\moved-game.png",
+      "sha256": "d0e2b402f04c4659e664e1df89d85dc471a05a43bc81f9c889c6decd9d917c36",
+      "bytes": 862227,
+      "modified_utc": "2026-11-10T19:03:12.825295+00:00"
+    }
+  ],
+  "test_result": "not evaluated by this script"
+}

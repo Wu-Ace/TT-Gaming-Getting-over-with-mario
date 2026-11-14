@@ -1,0 +1,32 @@
+{
+  "utc": "2026-11-10T17:21:03.662071+00:00",
+  "head": "b96b2d04280c510e3f583bc45a4f379f1fb67fab",
+  "sha256": {
+    "Assets\\Scripts\\Character\\Control\\PaddleCharacterVisual.cs": "9e95bcaafc2fbf29d0f79afef4d969e6c417d4a1d33d453d681bdfe59f2e124b",
+    "Assets\\Prefabs\\Character.prefab": "da8cd1e783b6d5d104678bdbdabcb4dc16b43315e11d257a846626029cea6d60",
+    "ai-handoff.md": "2b81a59b7c3d511567b5158d4e7ec47d8069255baf275da3c89caf2eb00f5759",
+    "scripts\\player-grip-20261111\\before-state.json": "5da3e61858b79e9c876576b5451b2e449809aeea67507f76ec0b1cf4bef14b35",
+    "scripts\\player-grip-20261111\\compile.json": "ab6287e62c042c1283db205246e712d92ea8b8c2b3d2c3dc30459feaa34e3f33",
+    "scripts\\player-grip-20261111\\fixed-grips.mp4": "30c11da1c24680662f0931a755f2904e9d56e72d679d5507f6d2520cb63c152b",
+    "scripts\\player-grip-20261111\\frames.jpg": "f3e01f1d1d4d4116271530b249004053720c1078d446f3b2ef3595c23fd54bbd",
+    "scripts\\player-grip-20261111\\input-105.png": "56abffcef94c28c9dde1313df437ccb130ebf2ffd08ae44674bab46d5f244a0c",
+    "scripts\\player-grip-20261111\\input-15.png": "90edef60fe2137dab9367e008172d1327e3309e691b0593ed5c973cc6f88dcbc",
+    "scripts\\player-grip-20261111\\input-45.png": "e2d690ec4ff741e27baaed489053ca7507212b44675415493d1a30361aa0712e",
+    "scripts\\player-grip-20261111\\input-75.png": "3d97a3fb7148d7c2d317f0a7ac74f3dc69ed1ad9ca6b7931326196fbacdc326f",
+    "scripts\\player-grip-20261111\\input-result.json": "e371923c1daa930d33502e2a8ce10670da843369cb5f3b0c691a1f3ff2a60e01",
+    "scripts\\player-grip-20261111\\input.json": "a03b0569d71d1dd69634ec4bcdcf940cfa188e7ee2b05920070bd689536c5761",
+    "scripts\\player-grip-20261111\\input.txt": "9a7d7f6bf4485ec2733587cc791d0d3360dc1b0d2055913e197ac09dab94aa5d",
+    "scripts\\player-grip-20261111\\range-result.json": "2f703dfaa5a987114a5eec72d717e48fc71b29f0424a18b9e9f7aaddcbe57966",
+    "scripts\\player-grip-20261111\\range.json": "d7ceb4254dfacd98081ede0572e7a6bc9bc8d6e2ec3e1815c68555208351fabc",
+    "scripts\\player-grip-20261111\\range.txt": "525725cb1b89e77a15fcc60447544515af0ada9edfcab00e054c08aa251fa3d8",
+    "scripts\\player-grip-20261111\\README.md": "8c93cf5f28d407506731ad2ca7f2a2b602154b5a7850eead9811468349204670",
+    "scripts\\player-grip-20261111\\restored.json": "ebb1befccd4863da0fdc69c54f5590a6109bd1620d5db9c2bd37403f0d72c41c",
+    "scripts\\player-grip-20261111\\scene-final.png": "e3625da402d18f5662d83066b4cfc4adf410011257843efa5f6ea41f7a179409",
+    "scripts\\player-grip-20261111\\scene-shot-result.json": "ab8723e9e5894bc71bdcec709147c6a4e17786b35e39a98fda9e3a226eb81916",
+    "scripts\\player-grip-20261111\\scene-shot.json": "78aaa19496b2e19ac67a13eec805ddbc699ea837fe1166803aaffa57fcae69f0",
+    "scripts\\player-grip-20261111\\singularity-result.json": "246ac8ee808837d13ae94cbdfce9e79459fd2259b020aada311f83e7dbef187f",
+    "scripts\\player-grip-20261111\\singularity.json": "d700aa15cab3bf6cef47150e742cafbd6558234e93430c4c4377545110d64e82",
+    "scripts\\player-grip-20261111\\singularity.txt": "26138bfd0ef5751002e58e806f2ba6ebaa2691469864fbfa143a1c2fd8765cf7",
+    "scripts\\player-grip-20261111\\backup\\PaddleCharacterVisual.cs": "cfd71527a83240b73d2006a53d5d79c46573ec1cbdfcff4e732c88beb61cf075"
+  }
+}

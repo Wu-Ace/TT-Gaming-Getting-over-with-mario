@@ -1,0 +1,261 @@
+JumpKing.Level.SlopeType GetSlopeType(JumpKing.Level.Sampler.LevelTexture, Int32, Int32, Int32)
+0000: ldarg.3 
+0001: stloc.0 
+0002: ldarg.s 4
+0004: stloc.1 
+0005: ldarg.1 
+0006: ldarg.2 
+0007: ldloc.0 
+0008: ldc.i4.1 
+0009: add 
+000A: ldloc.1 
+000B: call Boolean IsBlockEdge(JumpKing.Level.Sampler.LevelTexture, Int32, Int32, Int32)
+0010: brfalse.s 33
+0012: ldarg.1 
+0013: ldarg.2 
+0014: ldloc.0 
+0015: ldloc.1 
+0016: ldc.i4.1 
+0017: add 
+0018: call Boolean IsBlockEdge(JumpKing.Level.Sampler.LevelTexture, Int32, Int32, Int32)
+001D: brfalse.s 33
+001F: ldc.i4.0 
+0020: ret 
+0021: ldarg.1 
+0022: ldarg.2 
+0023: ldloc.0 
+0024: ldc.i4.1 
+0025: sub 
+0026: ldloc.1 
+0027: call Boolean IsBlockEdge(JumpKing.Level.Sampler.LevelTexture, Int32, Int32, Int32)
+002C: brfalse.s 61
+002E: ldarg.1 
+002F: ldarg.2 
+0030: ldloc.0 
+0031: ldloc.1 
+0032: ldc.i4.1 
+0033: add 
+0034: call Boolean IsBlockEdge(JumpKing.Level.Sampler.LevelTexture, Int32, Int32, Int32)
+0039: brfalse.s 61
+003B: ldc.i4.1 
+003C: ret 
+003D: ldarg.1 
+003E: ldarg.2 
+003F: ldloc.0 
+0040: ldc.i4.1 
+0041: add 
+0042: ldloc.1 
+0043: call Boolean IsBlockEdge(JumpKing.Level.Sampler.LevelTexture, Int32, Int32, Int32)
+0048: brfalse.s 89
+004A: ldarg.1 
+004B: ldarg.2 
+004C: ldloc.0 
+004D: ldloc.1 
+004E: ldc.i4.1 
+004F: sub 
+0050: call Boolean IsBlockEdge(JumpKing.Level.Sampler.LevelTexture, Int32, Int32, Int32)
+0055: brfalse.s 89
+0057: ldc.i4.2 
+0058: ret 
+0059: ldarg.1 
+005A: ldarg.2 
+005B: ldloc.0 
+005C: ldc.i4.1 
+005D: sub 
+005E: ldloc.1 
+005F: call Boolean IsBlockEdge(JumpKing.Level.Sampler.LevelTexture, Int32, Int32, Int32)
+0064: brfalse.s 117
+0066: ldarg.1 
+0067: ldarg.2 
+0068: ldloc.0 
+0069: ldloc.1 
+006A: ldc.i4.1 
+006B: sub 
+006C: call Boolean IsBlockEdge(JumpKing.Level.Sampler.LevelTexture, Int32, Int32, Int32)
+0071: brfalse.s 117
+0073: ldc.i4.3 
+0074: ret 
+0075: ldc.i4.4 
+0076: ret 
+JumpKing.Level.IBlock GetBlock(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Rectangle, JumpKing.Workshop.Level, JumpKing.Level.Sampler.LevelTexture, Int32, Int32, Int32)
+0000: ldnull 
+0001: stloc.0 
+0002: ldarg.1 
+0003: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_SOLID
+0008: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+000D: brfalse.s 27
+000F: ldarg.2 
+0010: newobj Void .ctor(Microsoft.Xna.Framework.Rectangle)
+0015: stloc.0 
+0016: br 295
+001B: ldarg.1 
+001C: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_ICE
+0021: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+0026: brfalse.s 52
+0028: ldarg.2 
+0029: newobj Void .ctor(Microsoft.Xna.Framework.Rectangle)
+002E: stloc.0 
+002F: br 295
+0034: ldarg.1 
+0035: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_SNOW
+003A: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+003F: brfalse.s 77
+0041: ldarg.2 
+0042: newobj Void .ctor(Microsoft.Xna.Framework.Rectangle)
+0047: stloc.0 
+0048: br 295
+004D: ldarg.1 
+004E: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_SLOPE
+0053: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+0058: brfalse.s 116
+005A: ldarg.2 
+005B: ldarg.0 
+005C: ldarg.s 4
+005E: ldarg.s 5
+0060: ldarg.s 6
+0062: ldarg.s 7
+0064: call JumpKing.Level.SlopeType GetSlopeType(JumpKing.Level.Sampler.LevelTexture, Int32, Int32, Int32)
+0069: newobj Void .ctor(Microsoft.Xna.Framework.Rectangle, JumpKing.Level.SlopeType)
+006E: stloc.0 
+006F: br 295
+0074: ldarg.1 
+0075: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_NO_WIND
+007A: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+007F: brfalse.s 141
+0081: ldarg.2 
+0082: newobj Void .ctor(Microsoft.Xna.Framework.Rectangle)
+0087: stloc.0 
+0088: br 295
+008D: ldarg.1 
+008E: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_WATER
+0093: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+0098: brfalse.s 166
+009A: ldarg.2 
+009B: newobj Void .ctor(Microsoft.Xna.Framework.Rectangle)
+00A0: stloc.0 
+00A1: br 295
+00A6: ldarg.1 
+00A7: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_SAND
+00AC: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+00B1: brfalse.s 188
+00B3: ldarg.2 
+00B4: newobj Void .ctor(Microsoft.Xna.Framework.Rectangle)
+00B9: stloc.0 
+00BA: br.s 295
+00BC: ldarg.1 
+00BD: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_QUARK
+00C2: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+00C7: brfalse.s 210
+00C9: ldarg.2 
+00CA: newobj Void .ctor(Microsoft.Xna.Framework.Rectangle)
+00CF: stloc.0 
+00D0: br.s 295
+00D2: ldstr {0} is unable to create a block of Color code ({1}, {2}, {3})
+00D7: ldc.i4.4 
+00D8: newarr System.Object
+00DD: dup 
+00DE: ldc.i4.0 
+00DF: ldtoken JumpKing.Level.Factory.BaseBlockFactory
+00E4: call System.Type GetTypeFromHandle(System.RuntimeTypeHandle)
+00E9: callvirt System.String get_Name()
+00EE: stelem.ref 
+00EF: dup 
+00F0: ldc.i4.1 
+00F1: ldarga.s 1
+00F3: call Byte get_R()
+00F8: box System.Byte
+00FD: stelem.ref 
+00FE: dup 
+00FF: ldc.i4.2 
+0100: ldarga.s 1
+0102: call Byte get_G()
+0107: box System.Byte
+010C: stelem.ref 
+010D: dup 
+010E: ldc.i4.3 
+010F: ldarga.s 1
+0111: call Byte get_B()
+0116: box System.Byte
+011B: stelem.ref 
+011C: call System.String Format(System.String, System.Object[])
+0121: newobj Void .ctor(System.String)
+0126: throw 
+0127: ldloc.0 
+0128: ret 
+Boolean IsSolidBlock(Microsoft.Xna.Framework.Color)
+0000: ldarg.1 
+0001: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_SOLID
+0006: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+000B: brtrue.s 65
+000D: ldarg.1 
+000E: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_SLOPE
+0013: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+0018: brtrue.s 65
+001A: ldarg.1 
+001B: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_ICE
+0020: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+0025: brtrue.s 65
+0027: ldarg.1 
+0028: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_SNOW
+002D: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+0032: brtrue.s 65
+0034: ldarg.1 
+0035: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_SAND
+003A: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+003F: brfalse.s 67
+0041: ldc.i4.1 
+0042: ret 
+0043: ldc.i4.0 
+0044: ret 
+Microsoft.Xna.Framework.Point GetCoord(Int32, Int32, Int32, Int32)
+0000: br.s 21
+0002: ldarg.3 
+0003: ldsflda Microsoft.Xna.Framework.Point TILE
+0008: ldfld Int32 Y
+000D: add 
+000E: starg.s 3
+0010: ldarg.0 
+0011: ldc.i4.1 
+0012: add 
+0013: starg.s 0
+0015: ldarg.3 
+0016: ldc.i4.0 
+0017: blt.s 2
+0019: br.s 46
+001B: ldarg.3 
+001C: ldsflda Microsoft.Xna.Framework.Point TILE
+0021: ldfld Int32 Y
+0026: sub 
+0027: starg.s 3
+0029: ldarg.0 
+002A: ldc.i4.1 
+002B: sub 
+002C: starg.s 0
+002E: ldarg.3 
+002F: ldsflda Microsoft.Xna.Framework.Point TILE
+0034: ldfld Int32 Y
+0039: bge.s 27
+003B: ldarg.0 
+003C: ldarg.1 
+003D: div 
+003E: stloc.0 
+003F: ldarg.0 
+0040: ldloc.0 
+0041: ldarg.1 
+0042: mul 
+0043: sub 
+0044: stloc.1 
+0045: ldloc.0 
+0046: ldsflda Microsoft.Xna.Framework.Point TILE
+004B: ldfld Int32 X
+0050: mul 
+0051: ldarg.2 
+0052: add 
+0053: ldloc.1 
+0054: ldsflda Microsoft.Xna.Framework.Point TILE
+0059: ldfld Int32 Y
+005E: mul 
+005F: ldarg.3 
+0060: add 
+0061: newobj Void .ctor(Int32, Int32)
+0066: ret 

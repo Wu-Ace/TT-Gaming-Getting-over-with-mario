@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "InstallPaddleCharacter.Apply(); UnityEngine.Debug.Log(\"PLAYER_INSTALLED\");", "summary": "Install shared paddle character art and arm IK"}}

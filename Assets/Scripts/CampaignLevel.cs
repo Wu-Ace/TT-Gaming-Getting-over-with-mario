@@ -14,26 +14,56 @@ public sealed class CampaignLevel : MonoBehaviour
     public Sprite background;
     public Vector2[] route;
     public static CampaignLevel Current { get; private set; }
-    sealed class Progress { public int stars; public Vector2? checkpoint; public HashSet<string> switches = new HashSet<string>(); }
+    sealed class Progress { public int stars; public HashSet<string> switches = new HashSet<string>(); }
     static readonly Dictionary<string, Progress> progress = new Dictionary<string, Progress>();
     Progress state;
-    public int StarCount => state == null ? 0 : CountBits(state.stars);
+    public int StarCount => state == null ? 0 : CoinStars(CoinCount);
     public bool Won { get; private set; }
     public Vector2 SpawnPosition { get; private set; }
     public static int CountBits(int mask) { int n=0; for(int i=0;i<3;i++) if((mask&(1<<i))!=0)n++; return n; }
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     static void ResetSession() { progress.Clear(); Current=null; }
+    public static void ResetLivesForEntry(string scene) {
+        PlayerPrefs.SetInt(GameMenuUI.PreferencePrefix+"lives.v1."+scene,3);PlayerPrefs.Save();
+    }
+    string LivesKey => GameMenuUI.PreferencePrefix+"lives.v1."+gameObject.scene.name;
+    public int Lives => Mathf.Clamp(PlayerPrefs.GetInt(LivesKey,3),0,3);
+    public void LoseLife() {
+        if(Won || Lives<=0)return;
+        int remaining=Lives-1;PlayerPrefs.SetInt(LivesKey,remaining);
+        if(remaining==0)for(int i=0;i<CoinTotal;i++){PlayerPrefs.DeleteKey(CoinKey(gameObject.scene.name,i));PlayerPrefs.DeleteKey(CoinKey(gameObject.scene.name,i)+".source");}
+        PlayerPrefs.Save();
+    }
+    public bool HasLegacyCoin(string identity) {
+        for(int i=0;i<CoinTotal;i++)if(HasCoin(i) && PlayerPrefs.GetString(CoinKey(gameObject.scene.name,i)+".source", "")==identity)return true;
+        return false;
+    }
+    public bool CollectLegacyCoin(string identity) {
+        if(HasLegacyCoin(identity))return false;
+        for(int i=0;i<CoinTotal;i++)if(!HasCoin(i)) {
+            if(!CollectCoin(i))return false;
+            PlayerPrefs.SetString(CoinKey(gameObject.scene.name,i)+".source",identity);PlayerPrefs.Save();return true;
+        }
+        return false;
+    }
+    public bool CollectLegacyCoin() {
+        for(int i=0;i<CoinTotal;i++)if(!HasCoin(i))return CollectCoin(i);
+        return false;
+    }
+    public bool HasCoin(int id) => PlayerPrefs.GetInt(CoinKey(gameObject.scene.name,id),0)==1;
     void Awake()
     {
         Current=this;
+        if(Lives<=0){PlayerPrefs.SetInt(LivesKey,3);PlayerPrefs.Save();}
         string key=SceneManager.GetActiveScene().path;
         if(!progress.TryGetValue(key,out state))progress[key]=state=new Progress();
     }
     void Start()
     {
+        InstallCoins();
         var death=FindObjectOfType<Death>();
         var root=death.transform.parent;
-        Vector2 spawn=state.checkpoint ?? initialSpawn;
+        Vector2 spawn=initialSpawn;
         SpawnPosition=spawn;
         var delta=(Vector3)spawn-death.transform.position;
         root.position+=delta;
@@ -77,14 +107,84 @@ public sealed class CampaignLevel : MonoBehaviour
         }
         RouteProgress = Won ? 1f : (total > .001f ? Mathf.Clamp01(along/total) : 0f);
     }
+    public const int CoinTotal = 40;
+    static string CoinKey(string scene, int id) => GameMenuUI.PreferencePrefix+"collect.v1."+scene+"."+id;
+    public static int SavedCoins(string scene) { int count=0; for(int i=0;i<CoinTotal;i++) count+=PlayerPrefs.GetInt(CoinKey(scene,i),0)==1?1:0; return count; }
+    public int CoinCount => SavedCoins(gameObject.scene.name);
+    public static int CoinStars(int count) => count>=CoinTotal?3:count>=24?2:count>=10?1:0;
+    public bool CollectCoin(int id) {
+        if(Won || Lives<=0 || id<0 || id>=CoinTotal || PlayerPrefs.GetInt(CoinKey(gameObject.scene.name,id),0)==1)return false;
+        PlayerPrefs.SetInt(CoinKey(gameObject.scene.name,id),1);PlayerPrefs.Save();GameplayAudio.Play("coin");return true;
+    }
+    readonly List<Vector2> generatedCoinPositions = new List<Vector2>();
+    public bool HasGeneratedCoinNear(Vector2 position) {
+        foreach(var point in generatedCoinPositions)
+            if((point-position).sqrMagnitude < .8f*.8f)return true;
+        return false;
+    }
+    void InstallCoins() {
+        generatedCoinPositions.Clear();
+        if(route==null || route.Length<2)return;
+        float total=0;for(int i=1;i<route.Length;i++)total+=Vector2.Distance(route[i-1],route[i]);
+        Physics2D.SyncTransforms();
+        var placed = new List<Vector2>();
+        for(int id=0;id<CoinTotal;id++) {
+
+            float remaining=total*(id+1)/(CoinTotal+1f);Vector2 point=route[0];
+            for(int j=1;j<route.Length;j++) {float length=Vector2.Distance(route[j-1],route[j]);if(remaining<=length){point=Vector2.Lerp(route[j-1],route[j],length>0?remaining/length:0);break;}remaining-=length;}
+            if(number>=2) {
+                Vector2 supported;
+                if(!FindCoinPlatform(point,placed,out supported)) {
+                    Debug.LogWarning("No clear platform for coin "+id+" in "+gameObject.scene.name);
+                    continue;
+                }
+                point=supported;
+            }
+            placed.Add(point);
+            generatedCoinPositions.Add(point);
+            if(HasCoin(id))continue;
+            var coin=new GameObject("Optional coin "+id);coin.transform.position=point;
+            var renderer=coin.AddComponent<SpriteRenderer>();renderer.sprite=Resources.Load<Sprite>("MenuUI/hud_icon_coin");renderer.sortingOrder=100;
+            if(renderer.sprite!=null)coin.transform.localScale=Vector3.one*(.5f/renderer.sprite.bounds.size.y);
+            var trigger=coin.AddComponent<CircleCollider2D>();trigger.isTrigger=true;trigger.radius=renderer.sprite!=null?renderer.sprite.bounds.size.y*.55f:1;
+            coin.AddComponent<OptionalCampaignCoin>().id=id;
+        }
+    }
+    // Resolve every slot, including collected slots, so saves do not shift positions.
+    bool FindCoinPlatform(Vector2 target, List<Vector2> placed, out Vector2 position) {
+        int mask=LayerMask.GetMask("Collider");
+        float best=float.PositiveInfinity;
+        position=target;
+        for(int x=-24;x<=24;x++) {
+            var hits=Physics2D.RaycastAll(new Vector2(target.x+x*.4f,target.y+8),Vector2.down,40,mask);
+            foreach(var hit in hits) {
+                var c=hit.collider;
+                if(!c || c.isTrigger || c.gameObject.scene!=gameObject.scene || hit.normal.y<.9f)continue;
+                if(c.attachedRigidbody && c.attachedRigidbody.bodyType!=RigidbodyType2D.Static)continue;
+                Vector2 candidate=hit.point+Vector2.up*.65f;
+                bool clear=true;
+                foreach(var other in Physics2D.OverlapCircleAll(candidate,.32f,mask))
+                    if(!other.isTrigger)clear=false;
+                foreach(var old in placed)if(Vector2.Distance(old,candidate)<1.1f)clear=false;
+                for(int side=-1;side<=1;side+=2) {
+                    var support=Physics2D.Raycast(candidate+Vector2.right*(side*.3f),Vector2.down,.85f,mask);
+                    if(!support.collider || support.collider.isTrigger || support.normal.y<.9f || Mathf.Abs(support.point.y-hit.point.y)>.15f)clear=false;
+                }
+                float score=(candidate-target).sqrMagnitude;
+                if(clear && score<best){best=score;position=candidate;}
+            }
+        }
+        return !float.IsPositiveInfinity(best);
+    }
     public bool HasStar(int id) => (state.stars & (1<<id))!=0;
     public bool Collect(int id) { if(Won || id<0 || id>2 || HasStar(id))return false; state.stars|=1<<id;GameplayAudio.Play(StarCount==3?"stars_complete":"star");return true; }
     public bool Activated(string id) => state.switches.Contains(id);
     public void Activate(string id) { state.switches.Add(id); }
-    public void Checkpoint(Vector2 position) { if(!Won)state.checkpoint=position; }
+    // Kept for legacy editor tools; checkpoints no longer affect respawning.
+    public void Checkpoint(Vector2 position) { }
     public bool TryExit()
     {
-        if(Won || StarCount!=3 || FindObjectOfType<Death>().Dead)return false;
+        if(Won || FindObjectOfType<Death>().Dead)return false;
         Won=true;
         string key=GameMenuUI.PreferencePrefix+"stars."+SceneManager.GetActiveScene().name;
         PlayerPrefs.SetInt(key,Mathf.Max(PlayerPrefs.GetInt(key,0),StarCount));PlayerPrefs.Save();
@@ -97,29 +197,24 @@ public sealed class CampaignLevel : MonoBehaviour
         progress.Remove(SceneManager.GetActiveScene().path);
         SceneManager.LoadScene(SceneManager.GetActiveScene().path);
     }
-    Texture2D completionPanel;
-    GUIStyle completionLabel;
     void OnGUI()
     {
-        if (!Won) return;
-        if (completionPanel == null) completionPanel = Resources.Load<Texture2D>("CompletionUI/panel");
-        if (completionPanel == null) return;
-        float scale = Mathf.Min(Screen.height / 270f, Screen.width / 200f);
-        var old = GUI.matrix;
-        GUI.matrix = Matrix4x4.TRS(new Vector3((Screen.width-164*scale)/2, (Screen.height-202*scale)/2, 0), Quaternion.identity, new Vector3(scale,scale,1));
-        GUI.DrawTexture(new Rect(0,0,164,202), completionPanel, ScaleMode.ScaleToFit);
-        if (completionLabel == null) completionLabel = new GUIStyle(GUI.skin.label) { alignment=TextAnchor.MiddleCenter, fontSize=8, fontStyle=FontStyle.Bold };
-        completionLabel.normal.textColor=Color.white;
-        GUI.Label(new Rect(30,66,104,16), "Level " + number, completionLabel);
-        completionLabel.normal.textColor=new Color32(75,75,78,255);
-        GUI.Label(new Rect(20,99,120,16), "LEVEL COMPLETE!", completionLabel);
-        GUI.Label(new Rect(20,114,120,16), StarCount + " / 3", completionLabel);
-        if (GUI.Button(new Rect(38,157,41,42), new GUIContent("", "Replay"), GUIStyle.none)) RestartFresh();
-        if (GUI.Button(new Rect(83,157,41,42), new GUIContent("", "Next level"), GUIStyle.none))
-        {
-            if (number < GameMenuUI.PlayableLevelCount && !string.IsNullOrEmpty(nextScene)) { progress.Remove(nextScene); SceneManager.LoadScene(nextScene); }
+        if(!Won || GameMenuUI.Instance==null || GameMenuUI.Instance.settings)return;
+        var ui=GameMenuUI.Instance;
+        var old=GUI.matrix;
+        float scale=Mathf.Min(Screen.width/1600f,Screen.height/900f);
+        GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-1600*scale)/2,(Screen.height-900*scale)/2,0),Quaternion.identity,Vector3.one*scale);
+        ui.PanelArt(new Rect(380,180,840,570),"bg_2");
+        ui.PanelArt(new Rect(480,125,640,155),"tab_1");
+        ui.PanelText(new Rect(480,145,640,110),"LEVEL COMPLETE",60,-8);
+        for(int i=0;i<3;i++)ui.PanelArt(new Rect(590+i*140,i==1?290:330,150,160),(i<StarCount)?"icon_start_1":"icon_start_2");
+        ui.PanelArt(new Rect(630,500,340,100),"bg_score");
+        ui.PanelText(new Rect(630,500,340,100),CoinCount+"/"+CoinTotal,76,-5);
+        ui.PanelButton(new Rect(620,640,150,150),"button_5","",RestartFresh);
+        ui.PanelButton(new Rect(830,640,150,150),"button_6","",()=>{
+            if(number<GameMenuUI.PlayableLevelCount && !string.IsNullOrEmpty(nextScene)){progress.Remove(nextScene);ResetLivesForEntry(nextScene);SceneManager.LoadScene(nextScene);}
             else SceneManager.LoadScene(GameMenuUI.MenuScene);
-        }
+        });
         GUI.matrix=old;
     }
     void OnDestroy(){if(Current==this)Current=null;}

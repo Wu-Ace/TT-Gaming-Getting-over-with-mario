@@ -1,0 +1,9 @@
+# Constant arm and palm sprite dimensions — 2026-11-11
+
+User confirmed removal of pose-driven size changes. Only PaddleCharacterVisual changed. Replaced projected-length uniform bitmap rescaling with actual sprite-plane3D rotation: a tangent follows each limb, a screen-plane width vector preserves apparent width, and the sprite normal follows the tangent/width frame. Both upper/forearm sprite scales derive only from authored .49m segment length and overall character growth. Palms retain fixed scale, rigid shaft orientation and exact hand anchors. Forearm anchors at wrist; source joint padding overlaps small elbow differences from out-of-arc grip geometry. Physical control/travel, colliders, original PNGs, prefab and scene assets untouched this turn.
+
+PASS editor compile0errors0warnings.
+PASS3249 full rotation/reach/growth poses: normalized scale variation5.96e-7 (float noise), max wrist error1.97e-6m,all original aspect ratios preserved. Maximum ideal-elbow anchor separation.02084m at extreme pose, within source joint overlap; does not establish every physical collision pose.
+PASS actual mouse-driven original paddle physics,body temporarily fixed: max tip travel3.159559m,wrist error1.91e-6m,min grip gap.3999985m. Native Game movie fixed-size.mp4 and extracted six-frame montage inspected,actual input-45/75 captures and final Scene closeup inspected.
+Original stopped Level01 restored with clean scene. No explicit preferences writes/reset or scene saves. Full free-body traversal,enemy/death regression,device/export and user subjective acceptance NOT RUN. Overall growth/shrink effects intentionally still scale the whole character; pose motion no longer changes sprite scale.
+Source backup PaddleCharacterVisual.cs.bak; prior projected-scaling evidence retained in player-natural-grip-20261111 and superseded for sizing behavior.

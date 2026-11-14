@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "summary": "Replace first four levels with Rock RuleTile",
+    "script": "InstallRockTerrain.Apply();"
+  },
+  "name": "exec_editor_script"
+}

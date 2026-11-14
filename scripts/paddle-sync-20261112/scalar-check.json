@@ -1,0 +1,23 @@
+{
+  "scope": "isolated scalar convergence only; not Unity joint/contact simulation",
+  "cases": [
+    {
+      "initial": 1,
+      "target": 0.4,
+      "final": 0.4000000000831879,
+      "peakSpeed": 2.6496047973632812
+    },
+    {
+      "initial": 0.4,
+      "target": 1,
+      "final": 0.9999999999168123,
+      "peakSpeed": 2.6496047973632812
+    },
+    {
+      "initial": 1,
+      "target": 1.05,
+      "final": 1.0499999999838365,
+      "peakSpeed": 0.26178838784802577
+    }
+  ]
+}

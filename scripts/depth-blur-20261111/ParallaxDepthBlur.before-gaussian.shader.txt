@@ -1,0 +1,26 @@
+Shader "Custom/ParallaxDepthBlur" {
+ Properties { [PerRendererData] _MainTex ("Sprite", 2D) = "white" {} _Radius ("Blur radius in source pixels", Float) = 0 }
+ SubShader {
+ Tags { "Queue"="Transparent" "RenderType"="Transparent" "CanUseSpriteAtlas"="False" }
+ Cull Off Lighting Off ZWrite Off Blend One OneMinusSrcAlpha
+ Pass {
+ CGPROGRAM
+ #pragma vertex vert
+ #pragma fragment frag
+ #include "UnityCG.cginc"
+ sampler2D _MainTex; float4 _MainTex_TexelSize; float _Radius;
+ struct input { float4 vertex:POSITION; float2 uv:TEXCOORD0; fixed4 color:COLOR; };
+ struct output { float4 vertex:SV_POSITION; float2 uv:TEXCOORD0; fixed4 color:COLOR; };
+ output vert(input v) { output o; o.vertex=UnityObjectToClipPos(v.vertex); o.uv=v.uv; o.color=v.color; return o; }
+ float4 samplePremult(float2 uv) { float4 c=tex2D(_MainTex,saturate(uv)); c.rgb*=c.a; return c; }
+ fixed4 frag(output i):SV_Target {
+ float2 d=_MainTex_TexelSize.xy*_Radius;
+ float4 c=samplePremult(i.uv)*4;
+ c+=(samplePremult(i.uv+float2(d.x,0))+samplePremult(i.uv-float2(d.x,0))+samplePremult(i.uv+float2(0,d.y))+samplePremult(i.uv-float2(0,d.y)))*2;
+ c+=samplePremult(i.uv+d)+samplePremult(i.uv-d)+samplePremult(i.uv+float2(d.x,-d.y))+samplePremult(i.uv+float2(-d.x,d.y));
+ c/=16; c.rgb*=i.color.rgb*i.color.a; c.a*=i.color.a; return c;
+ }
+ ENDCG
+ }
+ }
+}

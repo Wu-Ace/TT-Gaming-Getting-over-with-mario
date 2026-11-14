@@ -1,0 +1,1 @@
+{"result":{"content":[{"type":"text","text":"{\n  \"result\": null,\n  \"elapsed_ms\": 1986,\n  \"logs\": [\n    \"[Log] Diamond marker text=DIAMOND 2\\nExit label text=FINISH\\nDiamond marker text=DIAMOND 3\\nDiamond marker text=DIAMOND 1\"\n  ],\n  \"log_count\": 1\n}"}]},"jsonrpc":"2.0","id":2}

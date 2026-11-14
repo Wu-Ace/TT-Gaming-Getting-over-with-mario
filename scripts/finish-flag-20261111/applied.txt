@@ -1,0 +1,6 @@
+Assets/Scenes/Tutorial.unity | Three Star Exit Door | height=2.4 | collider unchanged
+Assets/Scenes/Level01.unity | Three Diamond Exit Door | height=2.4 | collider unchanged
+Assets/Scenes/Level02_Jungle.unity | Three Diamond Exit Door | height=2.4 | collider unchanged
+Assets/Scenes/Level03_Beach.unity | Three Star Exit Door | height=2.4 | collider unchanged
+Assets/Scenes/Level04_Town.unity | Three Star Exit Door | height=2.4 | collider unchanged
+Assets/Scenes/Level05_Cave.unity | Three Star Exit Door | height=2.4 | collider unchanged

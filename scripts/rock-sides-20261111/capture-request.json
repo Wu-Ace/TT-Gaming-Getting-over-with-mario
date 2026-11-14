@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "UnityEditor.SceneManagement.EditorSceneManager.OpenScene(\"Assets/Scenes/Level01.unity\");var v=UnityEditor.SceneView.lastActiveSceneView;v.in2DMode=true;v.LookAt(new UnityEngine.Vector3(15,-2,0),UnityEngine.Quaternion.identity,6,true,true);v.Focus();v.Repaint();", "summary": "Restore stopped editor on first level"}}

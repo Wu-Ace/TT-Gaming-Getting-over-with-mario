@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "BakeRemakeArms.Apply();", "summary": "Bake authored full-arm pose frames from original art and bind shared character"}}

@@ -1,0 +1,18 @@
+[
+  {
+    "scene": "Level01.unity",
+    "verified_collider_transform_chains": 7
+  },
+  {
+    "scene": "Level02_Jungle.unity",
+    "verified_collider_transform_chains": 12
+  },
+  {
+    "scene": "Level03_Beach.unity",
+    "verified_collider_transform_chains": 40
+  },
+  {
+    "scene": "Level04_Town.unity",
+    "verified_collider_transform_chains": 8
+  }
+]

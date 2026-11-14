@@ -1,0 +1,6 @@
+{
+  "arguments": {
+    "action": "get_state"
+  },
+  "name": "unity_editor"
+}

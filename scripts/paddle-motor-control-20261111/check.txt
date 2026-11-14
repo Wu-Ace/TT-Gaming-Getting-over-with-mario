@@ -1,0 +1,1 @@
+Relative input moved target=0.1081666; zero delta stable; up direction final=(0.00, 1.60) angleError=0 extensionError=2.906331E-07; radial short=1.099609 long=1.676242; pre-support tip=(0.00, -0.95, 0.00) slide=0.314362; blocked paddle lifts body=1.146493; disabled motors off

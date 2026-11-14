@@ -1,0 +1,27 @@
+[
+  {
+    "path": "Assets/Scenes/Level02_Jungle.unity",
+    "count": 4,
+    "sha256": "6f3954a21725c8cea29c0d674ec39f4adc16ecb1678f78e0c288add87df9d1b0"
+  },
+  {
+    "path": "Assets/Scenes/Level03_Beach.unity",
+    "count": 4,
+    "sha256": "c9e1b95de7debd3e067d91fd33f858ff051a4ead772ed0aa4c6e97943e477567"
+  },
+  {
+    "path": "Assets/Scenes/Level04_Town.unity",
+    "count": 4,
+    "sha256": "186f5cc601c12afd6b20ef3db7592877587456eade607b56284d7e226e79b646"
+  },
+  {
+    "path": "Assets/Scenes/Level05_Cave.unity",
+    "count": 1,
+    "sha256": "5cd91a4a3acf54eee22e8bf946e6c3127d1eac11324a52b77d30f9740babe549"
+  },
+  {
+    "path": "Assets/Scenes/Tutorial.unity",
+    "count": 1,
+    "sha256": "857380b7488efa5d64229c9141089e35cc669158d60c35fc8c5619daa7846cb9"
+  }
+]

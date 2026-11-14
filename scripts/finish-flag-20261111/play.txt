@@ -1,0 +1,1 @@
+PASS: down at 0/3; locked exit rejected; up at 3/3; old door hidden. No completion or save writes. Frozen rig, not traversal.

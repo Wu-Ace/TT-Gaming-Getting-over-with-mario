@@ -1,0 +1,9 @@
+{
+  "physicsUnchanged": true,
+  "sha256": {
+    "Assets\\Prefabs\\Character.prefab": "c80bcc6ad59e760a3cafa1c6eb79d1a6a947054d37d49483ff37549c41349cf2",
+    "Assets\\Art\\11.11\\Player_body.png": "83d169101a688fcb6f280ba3e0fbbeedf6a5ca08633b137f6ada0b53c921f7ab",
+    "Assets\\Art\\11.11\\Player_body.png.meta": "13fec024c4ad454f575aad87eb2897aa92839a65191ac8524c3fc337a6b84971",
+    "scripts\\player-body-1111-20261111\\visual-0.png": "9311cdaa10b935379c29a2c4b975f17c835af60ba94388cce08a0130fed64163"
+  }
+}

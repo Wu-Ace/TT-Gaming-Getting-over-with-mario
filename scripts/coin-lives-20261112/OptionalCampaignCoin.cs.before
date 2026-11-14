@@ -1,0 +1,9 @@
+using UnityEngine;
+public sealed class OptionalCampaignCoin : MonoBehaviour {
+    public int id;
+    void OnTriggerEnter2D(Collider2D other) {
+        var body=CampaignInteractable.Body(other);
+        if(body==null || body.Dead || CampaignLevel.Current==null)return;
+        if(CampaignLevel.Current.CollectCoin(id))Destroy(gameObject);
+    }
+}

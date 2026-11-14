@@ -1,0 +1,9 @@
+{
+  "outside_left": 0.0,
+  "outside_right": 0.0,
+  "outside_top": 0.0,
+  "outside_bottom": 0.0,
+  "core": 0.2,
+  "soft_edge": 0.006858710562414262,
+  "overlap_invariant": true
+}

@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 3200,\n  \"logs\": [\n    \"[Log] 0 hand error=0\\n45 hand error=0\\n90 hand error=0\\n135 hand error=0\\n180 hand error=0\\n225 hand error=0\\n270 hand error=0\\n315 hand error=0\\n\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

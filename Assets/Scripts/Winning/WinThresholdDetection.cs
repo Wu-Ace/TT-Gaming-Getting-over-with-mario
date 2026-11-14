@@ -30,14 +30,13 @@ namespace Winning
             if (_characterLifecycle.Dead) return;
             if (_won) return;
 
-            if (CampaignLevel.Current != null) return; // Campaign exits are owned by the three-star door.
+            if (CampaignLevel.Current != null) return; // Campaign exits are owned by the finish flag.
             TryWin();
         }
 
         public void TryWin()
         {
             if (_won || _characterLifecycle.Dead) return;
-            if (CampaignLevel.Current != null && CampaignLevel.Current.StarCount != 3) return;
             _won = true;
 
             OnGameWon?.Invoke();

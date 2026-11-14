@@ -1,0 +1,91 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+[ExecuteAlways, DisallowMultipleComponent, RequireComponent(typeof(Camera))]
+[DefaultExecutionOrder(11000)]
+public sealed class FirstLevelMoonlight : MonoBehaviour
+{
+    [Range(0,1)] public float intensity=.25f;
+    GameObject root;
+    Texture2D texture;
+    Sprite sprite;
+    Camera view;
+    Material decorationMaterial;
+    readonly System.Collections.Generic.Dictionary<SpriteRenderer,Material> originals=new System.Collections.Generic.Dictionary<SpriteRenderer,Material>();
+    readonly Vector4[] moonX=new Vector4[64],moonY=new Vector4[64];
+    static readonly float[] Positions={-.85f,-.54f,-.35f,-.12f,.04f,.22f,.39f,.53f,.77f,1.03f};
+    static readonly float[] Widths={.32f,.18f,.42f,.13f,.26f,.44f,.12f,.31f,.19f,.39f};
+    static readonly float[] Strengths={.36f,.68f,.28f,.85f,.45f,.24f,.75f,.38f,.60f,.30f};
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+    static void Install(){SceneManager.sceneLoaded-=Loaded;SceneManager.sceneLoaded+=Loaded;Attach();}
+    static void Loaded(Scene scene,LoadSceneMode mode){Attach();}
+    public static void Attach(){if(!CampaignAtmosphere.IsLevel(SceneManager.GetActiveScene().name))return;var c=Camera.main;if(c&&!c.GetComponent<FirstLevelMoonlight>())c.gameObject.AddComponent<FirstLevelMoonlight>();}
+    void OnEnable(){Build();}
+    void OnDisable(){Cleanup();}
+    void OnDestroy(){Cleanup();}
+    void Release(Object o){if(!o)return;if(Application.isPlaying)Destroy(o);else DestroyImmediate(o);}
+    void Cleanup(){foreach(var pair in originals)if(pair.Key)pair.Key.sharedMaterial=pair.Value;originals.Clear();Release(decorationMaterial);if(root)root.SetActive(false);Release(root);Release(sprite);root=null;}
+    public void Build(){
+        Cleanup();view=GetComponent<Camera>();if(!CampaignAtmosphere.IsLevel(gameObject.scene.name))return;
+        // Real white RGBA pixels; no imported image, checkerboard, dithering or shader noise.
+        texture=Resources.Load<Texture2D>("MoonlightGradient");
+        if(!texture)return;
+        sprite=Sprite.Create(texture,new Rect(0,0,texture.width,texture.height),new Vector2(.5f,0),128,0,SpriteMeshType.FullRect);sprite.hideFlags=HideFlags.HideAndDontSave;
+        root=new GameObject("Layered white moonlight"){hideFlags=HideFlags.HideAndDontSave};
+        SceneManager.MoveGameObjectToScene(root,gameObject.scene);
+        var level=FindObjectOfType<CampaignLevel>();
+        Vector2 anchor=level ? level.initialSpawn : Vector2.zero;
+        float minX=anchor.x-24,maxX=anchor.x+24,minY=anchor.y,maxY=anchor.y;
+        if(level && level.route!=null)foreach(var p in level.route){minX=Mathf.Min(minX,p.x-24);maxX=Mathf.Max(maxX,p.x+24);minY=Mathf.Min(minY,p.y);maxY=Mathf.Max(maxY,p.y);}
+        foreach(var map in FindObjectsOfType<UnityEngine.Tilemaps.TilemapRenderer>())if(map.gameObject.scene==gameObject.scene){minX=Mathf.Min(minX,map.bounds.min.x-24);maxX=Mathf.Max(maxX,map.bounds.max.x+24);minY=Mathf.Min(minY,map.bounds.min.y);maxY=Mathf.Max(maxY,map.bounds.max.y);}
+        // Authored world-space patches. Neither camera movement nor zoom changes their transforms.
+        for(float patchX=minX;patchX<=maxX;patchX+=36)
+        for(float patchY=minY;patchY<=maxY;patchY+=24)
+        for(int i=0;i<Positions.Length;i++){
+            var g=new GameObject("Moonlight layer "+i){hideFlags=HideFlags.HideAndDontSave};g.transform.SetParent(root.transform,false);
+            var r=g.AddComponent<SpriteRenderer>();r.sprite=sprite;r.sortingOrder=-31000+i%3;
+            g.transform.localPosition=new Vector3(patchX+Positions[i]*24-14*.40f,patchY-14*.95f,12-i%3);
+            g.transform.localRotation=Quaternion.Euler(0,0,-34-i%3*2);
+            g.transform.localScale=new Vector3(24*Widths[i]*.28f,14*1.15f,1);
+            // Use the same built-in sprite rendering path as the existing background.
+        }
+        var decorationShader=Resources.Load<Shader>("MoonlitDecoration");
+        if(decorationShader){
+            decorationMaterial=new Material(decorationShader){hideFlags=HideFlags.HideAndDontSave};
+            foreach(var r in FindObjectsOfType<SpriteRenderer>()){
+                if(r.gameObject.scene!=gameObject.scene)continue;
+                bool decoration=false;
+                for(var p=r.transform;p;p=p.parent)if(p.name=="DEC platform dressing")decoration=true;
+                if(!decoration)continue;
+                originals[r]=r.sharedMaterial;r.sharedMaterial=decorationMaterial;
+            }
+        }
+        UpdateBeams();
+    }
+    void LateUpdate(){if(!root && CampaignAtmosphere.IsLevel(gameObject.scene.name))Build();UpdateBeams();}
+    void OnPreCull(){UpdateBeams();}
+    void UpdateBeams(){
+        if(!root||!view)return;
+        for(int i=0;i<root.transform.childCount;i++){
+            var t=root.transform.GetChild(i);
+            int band=i%Positions.Length;
+            t.GetComponent<SpriteRenderer>().color=new Color(.91f,.96f,1,intensity*Strengths[band]*(.97f+.03f*Mathf.Sin(Time.time*.12f+band)));
+        }
+        if(decorationMaterial){
+            int count=0;
+            for(int i=0;i<root.transform.childCount && count<64;i++){
+                var t=root.transform.GetChild(i);var r=t.GetComponent<SpriteRenderer>();
+                if(Mathf.Abs(r.bounds.center.x-view.transform.position.x)>view.orthographicSize*view.aspect+r.bounds.extents.x+2 || Mathf.Abs(r.bounds.center.y-view.transform.position.y)>view.orthographicSize+r.bounds.extents.y+2)continue;
+                var m=t.worldToLocalMatrix;
+                // Decoration exposure is independent of each atmospheric band's opacity.
+                // All beam cores restore the same authored color.
+                moonX[count]=new Vector4(m.m00,m.m01,m.m03,intensity);
+                // Generated sprite is 1 x 2 local units; normalize its full height to UV 0..1.
+                moonY[count]=new Vector4(m.m10*.5f,m.m11*.5f,m.m13*.5f,0);count++;
+            }
+            decorationMaterial.SetInt("_MoonCount",count);
+            decorationMaterial.SetVectorArray("_MoonX",moonX);decorationMaterial.SetVectorArray("_MoonY",moonY);
+        }
+    }
+}
+

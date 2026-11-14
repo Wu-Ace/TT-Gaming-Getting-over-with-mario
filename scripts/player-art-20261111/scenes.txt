@@ -1,0 +1,12 @@
+Assets/Scenes/Level01.unity players=1
+Assets/Scenes/Level02_Jungle.unity players=1
+Assets/Scenes/Level03_Beach.unity players=1
+Assets/Scenes/Level04_Town.unity players=1
+Assets/Scenes/Level05_Cave.unity players=1
+Assets/Scenes/Level06_Grassland_Winter.unity players=1
+Assets/Scenes/Level07_Ice.unity players=1
+Assets/Scenes/Level08_Castle.unity players=1
+Assets/Scenes/Level09_Volcano.unity players=1
+Assets/Scenes/Level10_Sky.unity players=1
+Assets/Scenes/MainMenu.unity players=0
+Assets/Scenes/Tutorial.unity players=1

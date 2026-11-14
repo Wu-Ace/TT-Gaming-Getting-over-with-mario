@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "InstallJumpKingFifth.Apply();", "summary": "Replace union terrain with exact original-only Jump King collision tiles and source-derived slopes"}}

@@ -1,0 +1,1 @@
+Restored original slope cells=121 mismatches=0 live additions retained=32 live deletions retained=12

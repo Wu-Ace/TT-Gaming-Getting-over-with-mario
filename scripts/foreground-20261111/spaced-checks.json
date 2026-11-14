@@ -1,0 +1,5 @@
+{
+  "checks": "PASS: sequential variants, 1.25 camera-relative speed, forward/reverse recycling coverage",
+  "sha256": "940fa9622814032fcb744810799d26d6082cf7cf70acb5c7501932420098398d",
+  "unity_render": "NOT RUN: editor process absent"
+}

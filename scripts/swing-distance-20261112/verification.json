@@ -1,0 +1,19 @@
+{
+  "changes": {
+    "maxAngularSpeed": [
+      480,
+      360
+    ],
+    "maxExtensionSpeed": [
+      10,
+      7
+    ]
+  },
+  "validation": "PASS: exact two-field reversible change; torque600/force500 preserved",
+  "runtime": "NOT RUN: no running Unity/Tuanjie process",
+  "head": "b96b2d04280c510e3f583bc45a4f379f1fb67fab",
+  "sha256": {
+    "Assets\\Prefabs\\Character.prefab": "e3dfe8efaed83f10be1837cfb1af03437e9884049b3f5b6e53a586aacc054877",
+    "Assets/Scripts/Character/Control/ArmsSimulation.cs": "6ae66ff611339fcedf153442f3acafc7be3e01a9ff2d05999b4d54713ee2ed97"
+  }
+}

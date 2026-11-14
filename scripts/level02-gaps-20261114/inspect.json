@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "script": "using System.Linq; var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene(); UnityEngine.Debug.Log(string.Join(\"\\n\",scene.GetRootGameObjects().Select(r=>r.name+\" children=\"+r.transform.childCount+\" pos=\"+r.transform.position)));",
+    "summary": "Inspect Level02 object hierarchy before widening gaps"
+  },
+  "name": "exec_editor_script"
+}

@@ -1,0 +1,21 @@
+{
+  "changes": [
+    "relative mouse delta with velocity smoothing",
+    "persistent world target with body radius/tip-error feedback",
+    "projected signed-square extension and reactionTorque gain"
+  ],
+  "retained": [
+    "existing angular controller",
+    "current motor caps",
+    "blade-only geometry"
+  ],
+  "notImplemented": [
+    "original exact input curve and gain constants",
+    "original stuck/ghost collision handling"
+  ],
+  "sourceHashes": {
+    "Assets\\Scripts\\Character\\Control\\TargetMovement.cs": "367208a892e6022482d2bdd9b4a79fee2700f3295f18ad202709d5ddb86cb241",
+    "Assets\\Scripts\\Character\\Control\\ArmsSimulation.cs": "85024f91913bfbd563a15d034c148aa2c1e2a5a154f267ee5a0a3eae10d8fe75"
+  },
+  "runtimeVerified": false
+}

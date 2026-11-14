@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 685,\n  \"logs\": [\n    \"[Log] CAM MainCamera (119.72, 6.89, -10.00) size=5 aspect=1.784845 components=Transform,Camera,AudioListener,UniversalAdditionalCameraData,CinemachineBrain\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

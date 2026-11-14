@@ -1,0 +1,4 @@
+from pathlib import Path
+import json
+p=Path('scripts/jk-original-20261111');v=json.loads((p/'reopen.json').read_text());v['arguments']['script']=v['arguments']['script'].replace('if(!UnityEditor.AssetDatabase.GetAssetPath(tile).EndsWith(wanted))mismatch++;','if(k==0){if(tile==null||m.GetColliderType(pos)!=UnityEngine.Tilemaps.Tile.ColliderType.Grid)mismatch++;}else if(!UnityEditor.AssetDatabase.GetAssetPath(tile).EndsWith(wanted))mismatch++;');(p/'reopen.json').write_text(json.dumps(v))
+s=Path('Assets/Editor/InstallJumpKingFifth.cs');v=s.read_text().replace('var rule=AssetDatabase.LoadAssetAtPath<JumpKingRockTile>(Folder+"/Terrain.asset");','var rule=map.GetTile(Vector3Int.zero) as RuleTile;\n  if(!rule)rule=AssetDatabase.LoadAssetAtPath<JumpKingRockTile>(Folder+"/Terrain.asset");');s.write_text(v)

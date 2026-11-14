@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "summary": "Inspect refreshed Level01 Scene view",
+    "script": "var v=UnityEditor.SceneView.lastActiveSceneView;v.in2DMode=true;var rig=UnityEngine.Object.FindObjectOfType<Character.Control.PaddleCharacterVisual>();v.LookAt(rig.body.position+UnityEngine.Vector3.up*1.5f,UnityEngine.Quaternion.identity,8,true,true);v.Focus();v.Repaint();"
+  },
+  "name": "exec_editor_script"
+}

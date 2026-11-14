@@ -1,0 +1,1 @@
+{"name": "exec_runtime_script", "arguments": {"script": "return string.Join(\"\\n\",typeof(UnityEditor.EditorGUIUtility).GetMethods(System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.NonPublic).Where(m=>m.Name.Contains(\"Event\")).Select(m=>m.ToString()));", "summary": "Inspect supported Game View event forwarding API"}}

@@ -1,0 +1,224 @@
+JumpKing.Level.LevelManager
+Boolean IsBlockEdge(JumpKing.Level.Sampler.LevelTexture, Int32, Int32, Int32)
+0000: newobj Void .ctor()
+0005: stloc.0 
+0006: ldc.i4.1 
+0007: stloc.1 
+0008: ldarg.2 
+0009: ldc.i4.0 
+000A: bge.s 14
+000C: ldloc.1 
+000D: ret 
+000E: ldarg.2 
+000F: ldc.i4.s 60
+0011: blt.s 21
+0013: ldloc.1 
+0014: ret 
+0015: ldloc.0 
+0016: ldarg.0 
+0017: ldarg.1 
+0018: ldarg.2 
+0019: ldarg.3 
+001A: callvirt Microsoft.Xna.Framework.Color GetColor(Int32, Int32, Int32)
+001F: stfld Microsoft.Xna.Framework.Color color
+0024: ldsfld System.Collections.Generic.List`1[JumpKing.API.IBlockFactory] BlockFactories
+0029: ldloc.0 
+002A:  
+002C: conv.u2 
+002D: stloc.1 
+002E: nop 
+002F: ldloc.0 
+0030: newobj Void .ctor(System.Object, IntPtr)
+0035: call Boolean Any[IBlockFactory](System.Collections.Generic.IEnumerable`1[JumpKing.API.IBlockFactory], System.Func`2[JumpKing.API.IBlockFactory,System.Boolean])
+003A: brtrue.s 77
+003C: ldloc.0 
+003D: ldfld Microsoft.Xna.Framework.Color color
+0042: ldsfld Microsoft.Xna.Framework.Color BLOCKCODE_FAKE
+0047: call Boolean op_Equality(Microsoft.Xna.Framework.Color, Microsoft.Xna.Framework.Color)
+004C: ret 
+004D: ldc.i4.1 
+004E: ret 
+Void MakeLines()
+0000: ldarg.0 
+0001: ldflda Microsoft.Xna.Framework.Rectangle m_box
+0006: ldloca.s 0
+0008: ldloca.s 1
+000A: ldloca.s 2
+000C: ldloca.s 3
+000E: call Void Deconstruct(Int32 ByRef, Int32 ByRef, Int32 ByRef, Int32 ByRef)
+0013: ldarg.0 
+0014: ldc.i4.3 
+0015: newarr ErikMaths.Line
+001A: stfld ErikMaths.Line[] m_lines
+001F: ldarg.0 
+0020: ldfld JumpKing.Level.SlopeType m_type
+0025: stloc.s 7
+0027: ldloc.s 7
+0029: switch switch(4)
+003E: br 205
+0043: ldloca.s 4
+0045: ldloc.0 
+0046: ldloc.2 
+0047: add 
+0048: ldloc.1 
+0049: call Void .ctor(Int32, Int32)
+004E: ldloca.s 5
+0050: ldloc.0 
+0051: ldloc.2 
+0052: add 
+0053: ldloc.1 
+0054: ldloc.3 
+0055: add 
+0056: call Void .ctor(Int32, Int32)
+005B: ldloca.s 6
+005D: ldloc.0 
+005E: ldloc.1 
+005F: ldloc.3 
+0060: add 
+0061: call Void .ctor(Int32, Int32)
+0066: br.s 229
+0068: ldloca.s 4
+006A: ldloc.0 
+006B: ldloc.1 
+006C: call Void .ctor(Int32, Int32)
+0071: ldloca.s 5
+0073: ldloc.0 
+0074: ldloc.2 
+0075: add 
+0076: ldloc.1 
+0077: ldloc.3 
+0078: add 
+0079: call Void .ctor(Int32, Int32)
+007E: ldloca.s 6
+0080: ldloc.0 
+0081: ldloc.1 
+0082: ldloc.3 
+0083: add 
+0084: call Void .ctor(Int32, Int32)
+0089: br.s 229
+008B: ldloca.s 4
+008D: ldloc.0 
+008E: ldloc.1 
+008F: call Void .ctor(Int32, Int32)
+0094: ldloca.s 5
+0096: ldloc.0 
+0097: ldloc.2 
+0098: add 
+0099: ldloc.1 
+009A: call Void .ctor(Int32, Int32)
+009F: ldloca.s 6
+00A1: ldloc.0 
+00A2: ldloc.1 
+00A3: ldloc.3 
+00A4: add 
+00A5: call Void .ctor(Int32, Int32)
+00AA: br.s 229
+00AC: ldloca.s 4
+00AE: ldloc.0 
+00AF: ldloc.1 
+00B0: call Void .ctor(Int32, Int32)
+00B5: ldloca.s 5
+00B7: ldloc.0 
+00B8: ldloc.2 
+00B9: add 
+00BA: ldloc.1 
+00BB: call Void .ctor(Int32, Int32)
+00C0: ldloca.s 6
+00C2: ldloc.0 
+00C3: ldloc.1 
+00C4: ldloc.3 
+00C5: add 
+00C6: call Void .ctor(Int32, Int32)
+00CB: br.s 229
+00CD: ldloca.s 4
+00CF:  
+00D1: jmp 302055424
+00D6: ldarg.3 
+00D7:  
+00D9: jmp 302055424
+00DE: ldloc.0 
+00DF:  
+00E1: jmp 33619968
+00E6: ldfld ErikMaths.Line[] m_lines
+00EB: ldc.i4.0 
+00EC: ldloca.s 8
+00EE:  
+00F0: stloc.1 
+00F1: nop 
+00F2: nop 
+00F3: ldarg.0 
+00F4: ldloca.s 8
+00F6: ldloc.s 4
+00F8: stfld Microsoft.Xna.Framework.Point p0
+00FD: ldloca.s 8
+00FF: ldloc.s 5
+0101: stfld Microsoft.Xna.Framework.Point p1
+0106: ldloc.s 8
+0108: stelem ErikMaths.Line
+010D: ldarg.0 
+010E: ldfld ErikMaths.Line[] m_lines
+0113: ldc.i4.1 
+0114: ldloca.s 8
+0116:  
+0118: stloc.1 
+0119: nop 
+011A: nop 
+011B: ldarg.0 
+011C: ldloca.s 8
+011E: ldloc.s 5
+0120: stfld Microsoft.Xna.Framework.Point p0
+0125: ldloca.s 8
+0127: ldloc.s 6
+0129: stfld Microsoft.Xna.Framework.Point p1
+012E: ldloc.s 8
+0130: stelem ErikMaths.Line
+0135: ldarg.0 
+0136: ldfld ErikMaths.Line[] m_lines
+013B: ldc.i4.2 
+013C: ldloca.s 8
+013E:  
+0140: stloc.1 
+0141: nop 
+0142: nop 
+0143: ldarg.0 
+0144: ldloca.s 8
+0146: ldloc.s 6
+0148: stfld Microsoft.Xna.Framework.Point p0
+014D: ldloca.s 8
+014F: ldloc.s 4
+0151: stfld Microsoft.Xna.Framework.Point p1
+0156: ldloc.s 8
+0158: stelem ErikMaths.Line
+015D: ret 
+Microsoft.Xna.Framework.Vector2 GetNormal()
+0000: call Microsoft.Xna.Framework.Vector2 get_Zero()
+0005: stloc.0 
+0006: ldarg.0 
+0007: ldfld JumpKing.Level.SlopeType m_type
+000C: stloc.1 
+000D: ldloc.1 
+000E: switch switch(4)
+0023: br.s 111
+0025: ldloca.s 0
+0027: ldc.r4 -1
+002C: ldc.r4 -1
+0031: call Void .ctor(Single, Single)
+0036: br.s 111
+0038: ldloca.s 0
+003A: ldc.r4 1
+003F: ldc.r4 -1
+0044: call Void .ctor(Single, Single)
+0049: br.s 111
+004B: ldloca.s 0
+004D: ldc.r4 -1
+0052: ldc.r4 1
+0057: call Void .ctor(Single, Single)
+005C: br.s 111
+005E: ldloca.s 0
+0060: ldc.r4 1
+0065: ldc.r4 1
+006A: call Void .ctor(Single, Single)
+006F: ldloca.s 0
+0071: call Void Normalize()
+0076: ldloc.0 
+0077: ret 

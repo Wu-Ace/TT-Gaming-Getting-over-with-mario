@@ -1,0 +1,6 @@
+Tutorial: PASS zero-diamond body finish, non-body rejected, raised flag, blocker disabled, underlying win, duplicate rejected
+Level01: PASS zero-diamond body finish, non-body rejected, raised flag, blocker disabled, underlying win, duplicate rejected
+Level02_Jungle: PASS zero-diamond body finish, non-body rejected, raised flag, blocker disabled, underlying win, duplicate rejected
+Level03_Beach: PASS zero-diamond body finish, non-body rejected, raised flag, blocker disabled, underlying win, duplicate rejected
+Level04_Town: PASS zero-diamond body finish, non-body rejected, raised flag, blocker disabled, underlying win, duplicate rejected
+Level05_Cave: PASS zero-diamond body finish, non-body rejected, raised flag, blocker disabled, underlying win, duplicate rejected

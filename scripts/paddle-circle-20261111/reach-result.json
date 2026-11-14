@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 660,\n  \"logs\": [\n    \"[Log] 72 oversized directional requests; constrained=72 max actual shoulder-to-fixed-tail-grip=0.9431506 natural arm=1.47\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

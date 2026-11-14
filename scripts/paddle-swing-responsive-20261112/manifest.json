@@ -1,0 +1,7 @@
+{
+  "maxAngularSpeed": 480,
+  "angularDamping": 0.35,
+  "MaxTorque": 900,
+  "prefabSha256": "6580671d32a022e9dcbfe6ec146ed7ff5ae2802ffd8cf5bf79136f8f7b365df1",
+  "runtimeVerified": false
+}

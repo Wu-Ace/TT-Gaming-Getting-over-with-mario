@@ -1,0 +1,27 @@
+{
+  "utc": "2026-11-10T17:39:01.573397+00:00",
+  "head": "b96b2d04280c510e3f583bc45a4f379f1fb67fab",
+  "sha256": {
+    "Assets\\Prefabs\\Character.prefab": "3a2f2b5aa0feb2501f33d9ddff88fb2d65d5f25e86c737d71daa6276ce0ec31e",
+    "Assets\\Editor\\FitPaddleColliders.cs": "7ee60d847e453fb8cdf61da2a3431f11c8dd70c81d79035f648b2f3dc63e43fc",
+    "Assets\\Scripts\\Character\\Control\\PaddleCharacterVisual.cs": "d5675dc9d24e2344811729ace88bc9ff34f1edb5fdae255b838edd11996d6c22",
+    "ai-handoff.md": "0fe24bf5c8fa088d54d4ff0438c80899aeb223b54f31233dd641edc366cc47f6",
+    "scripts\\player-colliders-20261111\\apply-result.json": "6b5c79531e2de5fc5833309047f561dad75d25ba0ba3661ad7c4228f6644a134",
+    "scripts\\player-colliders-20261111\\apply.json": "450866e705d9a646de11b392b10fc9a92c37c842c35aaa7f7ba616977dfc0ee7",
+    "scripts\\player-colliders-20261111\\Character.prefab.bak": "da8cd1e783b6d5d104678bdbdabcb4dc16b43315e11d257a846626029cea6d60",
+    "scripts\\player-colliders-20261111\\cleanup-result.json": "19cacc67bdf5cf30964fb05006622bddc3b69dd79cad545aaf75eaadfc8c7623",
+    "scripts\\player-colliders-20261111\\cleanup.json": "ac4f7254840be578ed4386c0f351bab5441d7f629a905e29cadf2c8343b2bca9",
+    "scripts\\player-colliders-20261111\\collider-overlay.png": "98798d73c4403aeba5a6b8c43b0bb5badce20741e2fda7425f6e3950934fbfc7",
+    "scripts\\player-colliders-20261111\\compile.json": "ab6287e62c042c1283db205246e712d92ea8b8c2b3d2c3dc30459feaa34e3f33",
+    "scripts\\player-colliders-20261111\\install.txt": "7075be769e80978ae24e4295efd73c45c1afa5c822e857f4c428084e5ee9f94f",
+    "scripts\\player-colliders-20261111\\physics-result.json": "016aa6ccc20dbb7277de8c724e0e7ab51adbc142ef0bbdda99f4309196c3afa2",
+    "scripts\\player-colliders-20261111\\physics.json": "de9afd5692f8dc84642a14abd899755aba1b467211d3f73d471427e7c2041555",
+    "scripts\\player-colliders-20261111\\physics.txt": "d10d2879e50a0006b1802c0e1fa636f6fc45954601f437404f94a19b528ef88e",
+    "scripts\\player-colliders-20261111\\preview-result.json": "91e4c3d6b154cafff2aba1d18c59531dfa1000b391747ff267cc26c525f33d0c",
+    "scripts\\player-colliders-20261111\\preview.json": "70202d5ee8898f712af16a4d4365a1d0b0474c0a6e882a90beda62c5a4e8178f",
+    "scripts\\player-colliders-20261111\\README.md": "aef31d6f481d876c4426b4df0af287955017564e2907b74efe05abab6776ff8b",
+    "scripts\\player-colliders-20261111\\restored.json": "eee4d9dfbdc64cee354eee71c0cf2d227052e9e32382488d02fb2fec9b792f1c",
+    "scripts\\player-colliders-20261111\\shot-result.json": "16817c59e3dee3860670c59f11b468dd452fee3e6e40c179554c50ff2d666de8",
+    "scripts\\player-colliders-20261111\\shot.json": "b6387ba231b22a49d66cfdab0370e449d6f0fd6e12d96a1c9bdde4552d2138e4"
+  }
+}

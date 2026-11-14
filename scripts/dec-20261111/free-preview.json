@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "summary": "Check DEC arch composition in Unity",
+    "script": "var r=UnityEngine.GameObject.Find(\"DEC platform dressing\").GetComponentsInChildren<UnityEngine.SpriteRenderer>().First(x=>x.name.StartsWith(\"DEC 4\"));var c=UnityEngine.Camera.main;var pos=c.transform.position;var size=c.orthographicSize;c.transform.position=new UnityEngine.Vector3(r.bounds.center.x,r.bounds.center.y,-20);c.orthographicSize=5;var rt=new UnityEngine.RenderTexture(1200,800,24);c.targetTexture=rt;c.Render();UnityEngine.RenderTexture.active=rt;var t=new UnityEngine.Texture2D(1200,800);t.ReadPixels(new UnityEngine.Rect(0,0,1200,800),0,0);t.Apply();System.IO.File.WriteAllBytes(\"scripts/dec-20261111/preview.png\",t.EncodeToPNG());c.targetTexture=null;UnityEngine.RenderTexture.active=null;UnityEngine.Object.DestroyImmediate(rt);UnityEngine.Object.DestroyImmediate(t);c.transform.position=pos;c.orthographicSize=size;var v=UnityEditor.SceneView.lastActiveSceneView;if(v!=null){v.LookAt(r.bounds.center,UnityEngine.Quaternion.identity,6,true);v.Repaint();}"
+  },
+  "name": "exec_editor_script"
+}

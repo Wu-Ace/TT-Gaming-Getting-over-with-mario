@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\"success\":false,\"error\":\"Tool parameter validation failed: record_game_view.durationSeconds must be between 1 and 8\"}"}]}, "jsonrpc": "2.0", "id": 2}

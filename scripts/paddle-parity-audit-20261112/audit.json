@@ -1,0 +1,8 @@
+{
+  "headPreserved": true,
+  "colliderCorrectionWorldUnits": 0.16178265629059094,
+  "cause": "tool collider was scaled about Shape origin while visual was scaled about fixed tip",
+  "confirmedRootCauseOfLaunchFailure": false,
+  "runtimeComparison": "not run; editor unavailable",
+  "gitHead": "b96b2d04280c510e3f583bc45a4f379f1fb67fab"
+}

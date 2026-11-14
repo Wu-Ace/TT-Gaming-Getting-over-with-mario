@@ -1,0 +1,1 @@
+{"name": "exec_editor_script", "arguments": {"script": "FitPaddleColliders.Apply();", "summary": "Fit player and paddle collision geometry to new source silhouettes"}}

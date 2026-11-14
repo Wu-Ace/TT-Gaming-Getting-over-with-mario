@@ -1,0 +1,54 @@
+using UnityEngine;
+namespace Character.Control
+{
+ // Whole-arm authored pose selection, following the remake's Hand.cs approach.
+ [ExecuteAlways,DefaultExecutionOrder(200)]
+ public sealed class PaddleCharacterVisual:MonoBehaviour
+ {
+  public Transform body,tool,tip;
+  public SpriteRenderer torso,paddle,leftUpper,leftLower,rightUpper,rightLower;
+  public SpriteRenderer[] legacy;
+  public Sprite[] leftPoses,rightPoses;
+  const float Pixel=1.8f/311f;
+  static readonly float[] Distances={.20f,.32f,.44f,.56f,.68f,.80f,.90f,.98f};
+  SpriteRenderer leftArm,rightArm;
+  public Vector3 LeftHand{get;private set;} public Vector3 RightHand{get;private set;}
+  public Vector3 LeftElbow{get;private set;} public Vector3 RightElbow{get;private set;}
+  public float HandError{get;private set;} public float ArmReach{get{return .98f;}}
+  public int LeftPose{get;private set;} public int RightPose{get;private set;}
+  void OnDisable(){if(leftArm)Remove(leftArm.gameObject);if(rightArm)Remove(rightArm.gameObject);}
+  static void Remove(Object o){if(Application.isPlaying)Destroy(o);else DestroyImmediate(o);}
+  SpriteRenderer NewArm(string name,int order){var go=new GameObject(name);go.hideFlags=HideFlags.DontSave;go.transform.SetParent(transform,false);var r=go.AddComponent<SpriteRenderer>();r.sharedMaterial=leftUpper.sharedMaterial;r.sortingLayerID=torso.sortingLayerID;r.sortingOrder=order;return r;}
+  void LateUpdate(){Pose();}
+  public void Pose(){
+   if(!body||!tool||!tip||!torso)return;
+   if(leftPoses==null||rightPoses==null||leftPoses.Length!=8||rightPoses.Length!=8)return;
+   if(!leftArm)leftArm=NewArm("Remake left arm",3);if(!rightArm)rightArm=NewArm("Remake right arm",6);
+   foreach(var r in legacy)if(r)r.enabled=false;
+   leftUpper.enabled=leftLower.enabled=rightUpper.enabled=rightLower.enabled=false;
+   float g=Mathf.Abs(body.lossyScale.x)/7.5f;
+   Place(torso,body.position+body.up*(.3f*g),Vector2.zero,Vector2.up,body.up,Pixel*g);
+   Place(paddle,tip.position,new Vector2(24,240),Vector2.up,-tool.right,2.15f/230f*g);
+   LeftHand=PixelPosition(paddle,new Vector2(24,42));RightHand=PixelPosition(paddle,new Vector2(24,74));
+   Vector3 sl=body.position+body.up*(.66f*g)-body.right*(.245f*g),sr=body.position+body.up*(.66f*g)+body.right*(.245f*g);
+   float a=DrawArm(leftArm,leftPoses,sl,LeftHand,false,g,LeftPose,out int lp);
+   float b=DrawArm(rightArm,rightPoses,sr,RightHand,true,g,RightPose,out int rp);LeftPose=lp;RightPose=rp;HandError=Mathf.Max(a,b);
+  }
+  float DrawArm(SpriteRenderer r,Sprite[] frames,Vector3 shoulder,Vector3 target,bool right,float growth,int previous,out int frame){
+   var delta=target-shoulder;float d=delta.magnitude/growth;frame=0;float best=float.PositiveInfinity;
+   for(int i=0;i<Distances.Length;i++){float e=Mathf.Abs(d-Distances[i]);if(e<best){best=e;frame=i;}}
+   // Small hysteresis prevents frame chatter at a distance boundary.
+   if(Mathf.Abs(d-Distances[previous])<best+.012f)frame=previous;
+   r.sprite=frames[frame];r.flipX=right ^ (Vector3.Dot(delta,body.up)>0);
+   r.transform.SetPositionAndRotation(shoulder,Quaternion.Euler(0,0,Mathf.Atan2(delta.y,delta.x)*Mathf.Rad2Deg+90));
+   r.transform.localScale=Vector3.one*(growth/r.transform.parent.lossyScale.x);
+   return Mathf.Abs(delta.magnitude-Distances[frame]*growth);
+  }
+  public static Vector3 PixelPosition(SpriteRenderer r,Vector2 pixel){return r.transform.TransformPoint(new Vector3(pixel.x-r.sprite.pivot.x,r.sprite.rect.height-pixel.y-r.sprite.pivot.y,0)/r.sprite.pixelsPerUnit);}
+  static void Place(SpriteRenderer r,Vector3 anchor,Vector2 pixel,Vector2 sourceAxis,Vector3 direction,float scale){
+   if(!r||!r.sprite)return;var q=Quaternion.Euler(0,0,(Mathf.Atan2(direction.y,direction.x)-Mathf.Atan2(sourceAxis.y,sourceAxis.x))*Mathf.Rad2Deg);
+   Vector3 local=pixel==Vector2.zero?Vector3.zero:new Vector3(pixel.x-r.sprite.pivot.x,r.sprite.rect.height-pixel.y-r.sprite.pivot.y,0);
+   r.transform.SetPositionAndRotation(anchor-q*(local*scale),q);r.transform.localScale=Vector3.one*(scale*r.sprite.pixelsPerUnit/r.transform.parent.lossyScale.x);
+  }
+ }
+}

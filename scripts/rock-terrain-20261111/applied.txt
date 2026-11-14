@@ -1,0 +1,4 @@
+Level01: 0 RuleTile cells replaced; moving/falling platform visuals=0; collider components unchanged
+Level02_Jungle: 0 RuleTile cells replaced; moving/falling platform visuals=0; collider components unchanged
+Level03_Beach: 0 RuleTile cells replaced; moving/falling platform visuals=65; collider components unchanged
+Level04_Town: 0 RuleTile cells replaced; moving/falling platform visuals=0; collider components unchanged

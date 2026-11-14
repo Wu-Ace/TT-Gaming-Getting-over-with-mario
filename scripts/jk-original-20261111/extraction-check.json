@@ -1,0 +1,13 @@
+{
+  "sourceCells": 7565,
+  "sourceSlopes": 121,
+  "removedUnionCells": 4182,
+  "correctedSlopeShapes": 16,
+  "kindCounts": {
+    "0": 7444,
+    "1": 50,
+    "2": 37,
+    "3": 34,
+    "4": 0
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "utc": "2026-11-10T18:35:03.333655+00:00",
+  "head": "b96b2d04280c510e3f583bc45a4f379f1fb67fab",
+  "sha256": {
+    "Assets\\Scripts\\Character\\Control\\PaddleCharacterVisual.cs": "ddb591ec5e822191814a919e5cc8aebc9521d9031d39b027ff06c353c5de77f7",
+    "Assets\\Prefabs\\Character.prefab": "3a2f2b5aa0feb2501f33d9ddff88fb2d65d5f25e86c737d71daa6276ce0ec31e",
+    "ai-handoff.md": "46559185d2633b256c9802d9efd42ecd3ee9282c0653b72cceae570529222e2f",
+    "scripts\\player-natural-grip-20261111\\compile.json": "ab6287e62c042c1283db205246e712d92ea8b8c2b3d2c3dc30459feaa34e3f33",
+    "scripts\\player-natural-grip-20261111\\final-state.json": "7af3b1693670e30be40182b82e6028a0efdae8522594105247a60476a1c73e77",
+    "scripts\\player-natural-grip-20261111\\frame-result.json": "1c2e9973018be38ab5d7f45f09e063dc456196fb3e844775b554223e64bd84bb",
+    "scripts\\player-natural-grip-20261111\\frames.jpg": "fd126221b42856c30e50dfc2e3c6e7b6cac7ce4ef74835dab64a94e2bd5b9df8",
+    "scripts\\player-natural-grip-20261111\\input-105.png": "b4872a0ab867b907fb891918c2948e41462787374d253abff534964ed9efe4fc",
+    "scripts\\player-natural-grip-20261111\\input-15.png": "83c1f641272bf89dadf1fa053be47096e617ead34f87307f59b97dd346f6df6c",
+    "scripts\\player-natural-grip-20261111\\input-45.png": "1c7673b31d0143df3b32180b579847c8e4e29735fc4d926beab750f912239aad",
+    "scripts\\player-natural-grip-20261111\\input-75.png": "aea442bd3cf4fc3069c1d0ae3260c5ec10b2eb9b46d79592f6b1819425c2da6c",
+    "scripts\\player-natural-grip-20261111\\input-result.json": "57a2e19a4b736a420d8b0129c5e0f8d8547b2195b0d5c73f3b2c4d585da74b60",
+    "scripts\\player-natural-grip-20261111\\input.json": "13992c957496decca55901d3725791e419d652df9a29093033d11c2d501657d1",
+    "scripts\\player-natural-grip-20261111\\input.txt": "f7ee44d37c60e62be7877e3cf39764147b953ff0b4d59c8467b1a8a823d2fbdf",
+    "scripts\\player-natural-grip-20261111\\lifecycle-result.json": "197441368cfa267dcf83968a88d0b446944f569715892fc9532efebbbc97409f",
+    "scripts\\player-natural-grip-20261111\\lifecycle.json": "c13c47f89b7bc6dc39545a4661ecda7ef2eca1ee7164c5916adfbe2a934f4ac3",
+    "scripts\\player-natural-grip-20261111\\lifecycle.txt": "07cc5a017fe50cf443973bbac87363a05b665cd4db66c39102d7eb6b568365cb",
+    "scripts\\player-natural-grip-20261111\\natural-grip.mp4": "48f09bbbbfb943f496047db957c2fcdc1bc0f578890bd6b739f4c24f36a3f38c",
+    "scripts\\player-natural-grip-20261111\\PaddleCharacterVisual.cs.bak": "c260c434a49db7b7ff9026698800c491858a08d67b9b5b1e0d65e5e51c97074b",
+    "scripts\\player-natural-grip-20261111\\README.md": "47d96d017d6ce2ecbe8eed9e0d14e427028ca4f9badccba27241b42775aa6858",
+    "scripts\\player-natural-grip-20261111\\restored.json": "8373e690bc3216e3f92df1f1e9622ce693e8d32b1776a6ecda545b220cd0a0c0",
+    "scripts\\player-natural-grip-20261111\\scene-final.png": "c1001fde98123cd800cbd4814f2bd8523ae2db698bebbfed3b89d5e620d1d81a",
+    "scripts\\player-natural-grip-20261111\\shot-result.json": "1f1444d209ffd0cb15c544017a62ace9993af6f3bf5ba81deda1a50d66627ff2",
+    "scripts\\player-natural-grip-20261111\\shot.json": "7f5b45f0f1bf65db158ed84c84f2a5135b5486146f3ffd2266fefd7756b3351c",
+    "scripts\\player-natural-grip-20261111\\sweep-result.json": "177b5d8a197b05fb44cb7d0a18fc0bee269c775df03425956098053ade4ee4f2",
+    "scripts\\player-natural-grip-20261111\\sweep.json": "57519c8957c0ce967f05a609467adc20e586feb501ce2d4f4ba5f888f768f407",
+    "scripts\\player-natural-grip-20261111\\sweep.txt": "b1cd5b8ba6b6b054168c51ae30fd1114cd730f9333a215e0d15f9f5b48dcef79"
+  }
+}

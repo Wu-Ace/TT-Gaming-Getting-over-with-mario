@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 2987,\n  \"logs\": [\n    \"[Log] Blade best rotation=225 min=0.3254783 samples=410\",\n    \"[Log] Blade best rotation=10 min=0.5691267 samples=365\",\n    \"[Log] Blade best rotation=170 min=0.6518943 samples=345\"\n  ],\n  \"log_count\": 3\n}"}]}, "jsonrpc": "2.0", "id": 2}

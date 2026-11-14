@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "summary": "Save reviewed first level after scoped backup",
+    "script": "var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();if(scene.isDirty){System.IO.File.Copy(scene.path,\"scripts/rock-terrain-20261111/backup/pre-final-editor-save.unity\",true);UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene);}UnityEngine.Debug.Log(\"Rock terrain review complete; Play stopped\");"
+  }
+}

@@ -1,0 +1,4 @@
+Slope3 :: Assets/Tiles/JumpKingFifth/Slope3.asset
+Slope2 :: Assets/Tiles/JumpKingFifth/Slope2.asset
+Slope1 :: Assets/Tiles/JumpKingFifth/Slope1.asset
+Level05_Cave :: Assets/Tiles/RockVariations/Level05_Cave.asset

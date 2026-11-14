@@ -1,0 +1,1 @@
+PASS Level05: no checkpoints; legacy checkpoint request ignored; actual Death.Kill -> automatic scene reload -> living body at initial spawn. SpawnPosition=(11.80, -0.75) body=(11.80, -0.75, 0.00). No explicit save writes.

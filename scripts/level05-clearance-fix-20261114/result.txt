@@ -1,0 +1,1 @@
+Existing terrain rows remapped clearance constrained row mapping, native .4 cells and horizontal positions preserved; no added footholds. Spawn=(11.80, -1.95) cellsBefore=7575 bounds=Position: (0, 0, 0), Size: (60, 252, 1)

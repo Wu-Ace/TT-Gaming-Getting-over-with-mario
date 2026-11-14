@@ -1,0 +1,7 @@
+{
+  "arguments": {
+    "summary": "Mix both authored Rock top sprites using stable cell noise",
+    "script": "InstallRockTerrain.ApplyTopVariation();"
+  },
+  "name": "exec_editor_script"
+}

@@ -1,0 +1,1 @@
+PASS 12 rebuild/cleanup cycles, four transient parts, original asset references intact

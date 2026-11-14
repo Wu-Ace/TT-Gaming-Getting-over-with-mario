@@ -1,0 +1,7 @@
+{
+  "kernel": "9x9 Gaussian, sigma radius/3",
+  "taps": 81,
+  "normalizedWeightSum": 1.0,
+  "shaderSHA256": "914b89075b5122e2c048cd353a41fea83a7e6fc197642139542d20c86b9d2a47",
+  "unityCompileAndRender": "not verified"
+}

@@ -1,0 +1,96 @@
+using UnityEngine;
+
+namespace Character.Control
+{
+    // Visual-only two-bone rig. Physics, joints and input remain on the original objects.
+    [ExecuteAlways, DefaultExecutionOrder(200)]
+    public sealed class PaddleCharacterVisual : MonoBehaviour
+    {
+        public Transform body, tool, tip;
+        public SpriteRenderer torso, paddle, leftUpper, leftLower, rightUpper, rightLower;
+        public SpriteRenderer[] legacy;
+        const float Pixel = 1.8f / 311f;
+        public float HandError { get; private set; }
+        readonly float[] elbowAngles = new float[2];
+        readonly bool[] initialized = new bool[2];
+        public Vector3 LeftHand { get; private set; }
+        public Vector3 RightHand { get; private set; }
+        public Vector3 LeftElbow { get; private set; }
+        public Vector3 RightElbow { get; private set; }
+        void OnEnable() { initialized[0] = initialized[1] = false; }
+        void LateUpdate() { Pose(); }
+        public void Pose()
+        {
+            if (!body || !tool || !tip || !torso) return;
+            foreach (var r in legacy) if (r) r.enabled = false;
+            float growth = Mathf.Abs(body.lossyScale.x) / 7.5f;
+            float px = Pixel * growth;
+            Vector3 up = body.up, right = body.right;
+            Vector3 origin = body.position + up * (.3f * growth);
+            Place(torso, origin, Vector2.zero, Vector2.up, up, px);
+            Vector3 blade = tip.position;
+            Vector3 axis = -tool.right;
+            // Bottom of blade stays on the existing physical contact point.
+            Place(paddle, blade, new Vector2(24, 240), Vector2.up, axis, 2.15f / 230f * growth);
+            Vector3 shoulderL = body.position + up * (.66f * growth) - right * (.245f * growth);
+            Vector3 shoulderR = body.position + up * (.66f * growth) + right * (.245f * growth);
+            // Two distinct material points on the paddle. Neither hand slides or swaps grips.
+            LeftHand = blade + axis * (1.10f * growth);
+            RightHand = blade + axis * (1.70f * growth);
+            float a = Arm(leftUpper, leftLower, shoulderL, LeftHand, -1, px * 1.3f, 0,
+                new Vector2(16,16), new Vector2(68,70), new Vector2(13,17), new Vector2(94,16));
+            float b = Arm(rightUpper, rightLower, shoulderR, RightHand, 1, px * 1.3f, 1,
+                new Vector2(66,16), new Vector2(12,74), new Vector2(12,28), new Vector2(99,15));
+            HandError = Mathf.Max(a,b);
+        }
+        float Arm(SpriteRenderer upper, SpriteRenderer lower, Vector3 shoulder, Vector3 hand, float bend,
+            float px, int index, Vector2 s, Vector2 e, Vector2 elbowPixel, Vector2 wristPixel)
+        {
+            Vector3 delta = hand - shoulder;
+            float distance = delta.magnitude;
+            float restLength = Mathf.Max(Vector2.Distance(s,e), Vector2.Distance(elbowPixel,wristPixel)) * px;
+            // Existing slider travel can exceed the new art's arm reach. Uniform limb scaling
+            // keeps the wrist on its grip without changing sprites' aspect ratios or physics.
+            float length = Mathf.Max(restLength, distance * .505f);
+            float bodyAngle = body.eulerAngles.z;
+            float targetAngle = initialized[index] ? elbowAngles[index] : (index == 0 ? -130f : -50f);
+            if (distance > .04f * Mathf.Abs(body.lossyScale.x) / 7.5f)
+            {
+                float direction = Mathf.Atan2(delta.y,delta.x) * Mathf.Rad2Deg;
+                float fold = Mathf.Acos(Mathf.Clamp(distance / (2f * length),0f,1f)) * Mathf.Rad2Deg;
+                targetAngle = direction + bend * fold - bodyAngle;
+            }
+            // Keep the last direction at the shoulder singularity. Bound angular motion across
+            // either side of it; smoothing the elbow must never introduce lag at the hand grip.
+            if (!initialized[index] || !Application.isPlaying)
+                elbowAngles[index] = targetAngle;
+            else
+                elbowAngles[index] = Mathf.MoveTowardsAngle(elbowAngles[index],targetAngle,540f * Mathf.Min(Time.deltaTime,.05f));
+            initialized[index] = true;
+            float radians = (elbowAngles[index] + bodyAngle) * Mathf.Deg2Rad;
+            Vector3 elbow = shoulder + new Vector3(Mathf.Cos(radians),Mathf.Sin(radians),0) * length;
+            Place(upper,shoulder,s,ImageDirection(e-s),elbow-shoulder,length / Vector2.Distance(s,e));
+            Place(lower,elbow,elbowPixel,ImageDirection(wristPixel-elbowPixel),hand-elbow,
+                Vector3.Distance(hand,elbow) / Vector2.Distance(elbowPixel,wristPixel));
+            if (index == 0) LeftElbow = elbow; else RightElbow = elbow;
+            return Vector3.Distance(PixelPosition(lower,wristPixel),hand);
+        }
+        public static Vector3 PixelPosition(SpriteRenderer r, Vector2 pixel)
+        {
+            var local = new Vector3(pixel.x-r.sprite.pivot.x,r.sprite.rect.height-pixel.y-r.sprite.pivot.y,0) / r.sprite.pixelsPerUnit;
+            return r.transform.TransformPoint(local);
+        }
+        static Vector2 ImageDirection(Vector2 v) { return new Vector2(v.x,-v.y); }
+        static void Place(SpriteRenderer r, Vector3 anchor, Vector2 pixel, Vector2 sourceAxis, Vector3 direction, float scale)
+        {
+            if (!r || !r.sprite) return;
+            float angle = Mathf.Atan2(direction.y,direction.x)*Mathf.Rad2Deg-Mathf.Atan2(sourceAxis.y,sourceAxis.x)*Mathf.Rad2Deg;
+            var rotation=Quaternion.Euler(0,0,angle);
+            // A zero pixel denotes the center anchor used by the torso.
+            Vector2 local = pixel == Vector2.zero ? Vector2.zero : new Vector2(pixel.x-r.sprite.pivot.x,r.sprite.rect.height-pixel.y-r.sprite.pivot.y);
+            r.transform.SetPositionAndRotation(anchor-rotation*(Vector3)(local*scale),rotation);
+            float parentScale = r.transform.parent.lossyScale.x;
+            r.transform.localScale=Vector3.one*(scale*r.sprite.pixelsPerUnit/parentScale);
+        }
+    }
+}

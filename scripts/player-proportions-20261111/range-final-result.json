@@ -1,0 +1,1 @@
+{"result": {"content": [{"type": "text", "text": "{\n  \"result\": null,\n  \"elapsed_ms\": 454,\n  \"logs\": [\n    \"[Log] 3240 poses: wrist error=2.384186E-06; min hand separation/scale=0.2001344; max proportional segment deviation=1.833989E-06; max total arm reach/scale=1.005608\"\n  ],\n  \"log_count\": 1\n}"}]}, "jsonrpc": "2.0", "id": 2}

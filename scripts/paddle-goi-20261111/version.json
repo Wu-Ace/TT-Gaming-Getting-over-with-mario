@@ -1,0 +1,1 @@
+{"name": "exec_runtime_script", "arguments": {"script": "UnityEngine.Debug.Log(UnityEngine.Application.dataPath);foreach(var f in typeof(Character.Control.ArmsSimulation).GetFields(System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic))UnityEngine.Debug.Log(f.Name);", "summary": "Verify editor project and loaded controller version"}}

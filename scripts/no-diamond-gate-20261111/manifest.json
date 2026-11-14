@@ -1,0 +1,30 @@
+{
+  "time": "2026-11-11T01:39:50.095832",
+  "sha256": {
+    "Assets\\Scripts\\CampaignLevel.cs": "b97b61e8354606198ac8508536abb8c5541cd77222dbef96b09fbb466a8fe4f0",
+    "Assets\\Scripts\\CampaignInteractable.cs": "91805ef71e5403275a6ec3720a4dd8d5604644d7d4d90b3883d4791223ca7a0c",
+    "Assets\\Scripts\\Winning\\WinThresholdDetection.cs": "b5963bdc03d0b61488c1273f1006d18a5491787f21614aa42e78bdfb1418859e",
+    "Assets\\Scripts\\GameMenuUI.cs": "1380c0e83139901fd9ce3091b66cc48e257993db643a4346e443bd91b145f3d3",
+    "ai-handoff.md": "28e118bc7e38c129fd6bc9c6670cbc35311c442689384858b1ed509b8359466d",
+    "scripts\\no-diamond-gate-20261111\\completion.png": "82e5114e9b7fbb69b5a96c46e2ce20b80db71ea2ab6fd74c094b763cbdfb26af",
+    "scripts\\no-diamond-gate-20261111\\final-completion.png": "15467627086cad8fa479a0967ca714d3a2103cad5bba3d0f492b4b3006acf527",
+    "scripts\\no-diamond-gate-20261111\\final-play.txt": "fca449fa5ab93fe2c5c41c607e33246ef276226972308d740f21487fbc681071",
+    "scripts\\no-diamond-gate-20261111\\flag-refresh-result.json": "8f3903375aeada4db493e14ead0980cea32a185ae367d0492d6c0072a0499a12",
+    "scripts\\no-diamond-gate-20261111\\flag-stop-result.json": "580640227a219ed3b72404567a91f0e4135fc477bd3bb13b29e90770fcbd3a51",
+    "scripts\\no-diamond-gate-20261111\\labels.txt": "f40ca4d0addbbcca6a8a32ae12aad26e303db80bfb1cff3f6ed58071e17a16ae",
+    "scripts\\no-diamond-gate-20261111\\no-gate-final-result.json": "5d9d40e1895f8ef0d97fa5d53f88f63b02251aa63f67decfdadee5d679b2fe79",
+    "scripts\\no-diamond-gate-20261111\\no-gate-final.cs": "0791fb14f2978ce2e678d60e83960c9845020d01c03de41151745c55f1c07033",
+    "scripts\\no-diamond-gate-20261111\\no-gate-labels-result.json": "169887b052d45e000d88482aba717b86a35c54abb3e377319a20d6cf21ab2c52",
+    "scripts\\no-diamond-gate-20261111\\no-gate-labels.cs": "71da4f8c22c7b86f94426f43573f918f2c1deca0d07f4a94ad7d4c39fd1b332b",
+    "scripts\\no-diamond-gate-20261111\\no-gate-test-result.json": "6a2b02d3b1ddc931fbae273eb21d8fe5792247d98fcf2110e7715f420d43c883",
+    "scripts\\no-diamond-gate-20261111\\no-gate-test.cs": "c7f04250e4782b8116bdd03f9d85601ba8468fce93d6ee95570509b90933ad9a",
+    "scripts\\no-diamond-gate-20261111\\play.txt": "b7e4c089aae8d367b95523d32fb6d60b3aa9e97fa226cf4c5b3ad040fe0b5b79",
+    "scripts\\no-diamond-gate-20261111\\README.md": "e638bb7e8924e82df3e28d265ec5cdb000b26d35ca16001700132eeffcef054f",
+    "Assets\\Scenes\\Tutorial.unity": "8cdf75bbaa1a4bc2c260301f3717a3192e35dcc6e74d9c080e820c0e61732476",
+    "Assets\\Scenes\\Level01.unity": "433ea90e9642574f9ed73458aa14e94344de727353d2efcf5907c83fcc9e00ff",
+    "Assets\\Scenes\\Level02_Jungle.unity": "c5890c63d20e79ef3e7daaa144dee46c5389daa7a6d706f1dc79f57215a28e59",
+    "Assets\\Scenes\\Level03_Beach.unity": "f654c9583ae3b5d545a51ce006e2ef5f4d864ce549edd7ab8c7a412fa0ce5d12",
+    "Assets\\Scenes\\Level04_Town.unity": "7a476a1fe20128726c79793670081b8d58ab5e47f1e73a3a4d96587466c7cf78",
+    "Assets\\Scenes\\Level05_Cave.unity": "ad1ea7e9bee3637446f3937de77ecc6e00a5f66172f7809a38d9be574ebf6bfa"
+  }
+}

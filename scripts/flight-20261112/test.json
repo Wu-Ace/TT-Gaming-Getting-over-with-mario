@@ -1,0 +1,8 @@
+{
+  "arguments": {
+    "summary": "Validate flight on live Play character",
+    "timeoutSeconds": 60,
+    "script": "if(!UnityEngine.Application.isPlaying) throw new System.Exception(\"Play required\");\nvar flight=UnityEngine.Object.FindObjectOfType<LevelTestFlight>();\nif(!flight) throw new System.Exception(\"Flight not attached\");\nvar method=typeof(LevelTestFlight).GetMethod(\"SetFlying\",System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic);\nvar root=flight.transform.parent;var bodies=root.GetComponentsInChildren<UnityEngine.Rigidbody2D>(true);var before=System.Array.ConvertAll(bodies,b=>b.simulated);\ntry {method.Invoke(flight,new object[]{true});foreach(var b in bodies)if(b.simulated)throw new System.Exception(\"body still simulated\");method.Invoke(flight,new object[]{false});for(int i=0;i<bodies.Length;i++)if(bodies[i].simulated!=before[i])throw new System.Exception(\"restore failed\");UnityEngine.Debug.Log(\"FLIGHT PASS: actual Play rig simulation suspended and restored; bodies=\"+bodies.Length);}finally{method.Invoke(flight,new object[]{false});}"
+  },
+  "name": "exec_editor_script"
+}

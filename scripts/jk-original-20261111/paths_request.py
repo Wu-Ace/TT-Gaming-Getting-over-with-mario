@@ -1,0 +1,3 @@
+import json
+from pathlib import Path
+p=Path('scripts/jk-original-20261111');s='''var m=UnityEngine.Object.FindObjectsOfType<UnityEngine.Tilemaps.Tilemap>().Single(t=>t.name.StartsWith("Jump King"));var tiles=new UnityEngine.Tilemaps.TileBase[m.GetUsedTilesCount()];m.GetUsedTilesNonAlloc(tiles);System.IO.File.WriteAllLines("scripts/jk-original-20261111/tile-paths.txt",tiles.Select(t=>t.name+" :: "+UnityEditor.AssetDatabase.GetAssetPath(t)));''';(p/'paths.json').write_text(json.dumps(dict(name='exec_editor_script',arguments=dict(script=s,summary='Inspect serialized rule tile paths during saved-map verification'))))

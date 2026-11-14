@@ -1,0 +1,7 @@
+{
+  "name": "exec_editor_script",
+  "arguments": {
+    "script": "var rule=UnityEditor.AssetDatabase.LoadAssetAtPath<UnityEngine.Tilemaps.RuleTile>(\"Assets/Tiles/RockTerrain/Rock.asset\");var counts=new System.Collections.Generic.Dictionary<string,int>();foreach(var map in UnityEngine.Object.FindObjectsOfType<UnityEngine.Tilemaps.Tilemap>()){map.RefreshAllTiles();foreach(var c in map.cellBounds.allPositionsWithin){if(map.GetTile(c)!=rule)continue;var sp=map.GetSprite(c);if(sp){if(!counts.ContainsKey(sp.name))counts[sp.name]=0;counts[sp.name]++;}}}System.IO.File.WriteAllLines(\"scripts/rock-variation-20261111/counts.txt\",counts.Select(p=>p.Key+\"=\"+p.Value));var v=UnityEditor.SceneView.lastActiveSceneView;v.in2DMode=true;v.LookAt(new UnityEngine.Vector3(15,-2,0),UnityEngine.Quaternion.identity,5,true,true);v.Focus();v.Repaint();",
+    "summary": "Verify actual stable Rock top variation counts"
+  }
+}

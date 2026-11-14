@@ -1,0 +1,11 @@
+{
+  "files": {
+    "Assets\\Resources\\KingdomWater.shader": "34330d5231cf54943d71bdb5817e2032834e8fe7ed8b0042d52f4ce9de92d1bb",
+    "Assets\\Scripts\\FirstLevelWater.cs": "6c8a3a25424f1ddaede935ba1e6dbc0f18ff0b233da80f2e882a93416cfe278c",
+    "scripts\\water-20261112\\verification\\refresh-result.json": "8f3903375aeada4db493e14ead0980cea32a185ae367d0492d6c0072a0499a12",
+    "scripts\\water-20261112\\verification\\shader-check-result.json": "ed4d0d0660bc83278190413726dad1c28b937c7281f19573f4f70659b2c36f0c"
+  },
+  "compile": "Unity refresh 0 errors 0 warnings; shader supported; no shader diagnostics",
+  "visual": "Not verified for this revision. Camera pan test aborted before mutation: current camera has no FirstLevelWater; state confirmed user now playing Level05_Cave. Current gameplay left intact.",
+  "parallax": "Far camera factor 0.58; near 1.18 relative to world-fixed point 1.0. Cell positions seeded independently; smooth glint silhouettes; no pixel quantization."
+}

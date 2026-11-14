@@ -1,0 +1,98 @@
+using UnityEngine;
+namespace Character.Control {
+ public class ArmsSimulation:MonoBehaviour {
+  [SerializeField] Rigidbody2D hammer;
+  [SerializeField] Transform hammerHead,center;
+  [SerializeField] bool torqueEnabled=true,forceEnabled=true;
+  [field:SerializeField] public int MaxTorque{get;set;}=1000;
+  [field:SerializeField] public int MaxBodyForce{get;set;}=50;
+  [SerializeField] float angularGain=14,extensionGain=14,maxAngularSpeed=480,maxExtensionSpeed=2;
+  JointTranslationLimits2D originalLimits;Transform torso;DistanceJoint2D leftReach,rightReach;
+  public float ArmLength=>.98f*(torso?Mathf.Abs(torso.lossyScale.x)/7.5f:1);
+  Rigidbody2D pivot;HingeJoint2D hinge;SliderJoint2D slide;TargetMovement input;Vector2 target;bool ready;
+  public Transform HammerTip=>hammerHead;
+  public float AngleError{get;private set;}public float ExtensionError{get;private set;}
+  void Awake(){
+   pivot=GetComponent<Rigidbody2D>();slide=hammer.GetComponent<SliderJoint2D>();
+   foreach(var j in transform.root.GetComponentsInChildren<HingeJoint2D>())if(j.connectedBody==pivot||j.attachedRigidbody==pivot){hinge=j;break;}
+   originalLimits=slide.limits;torso=hinge?(hinge.attachedRigidbody==pivot?hinge.connectedBody.transform:hinge.transform):null;
+   // The old Mario slider travel cannot place fixed tail grips above the shoulders.
+   // Allow clearance; the two arm-distance joints remain the final reach limit.
+   if(torso){originalLimits.min-=.65f*Mathf.Abs(torso.lossyScale.x)/7.5f;slide.limits=originalLimits;}
+   if(torso){leftReach=MakeReachJoint();rightReach=MakeReachJoint();UpdateReachJoints();}
+   input=transform.root.GetComponentInChildren<TargetMovement>();if(input)input.OnPositionChanged+=ReceiveTarget;
+   target=hammerHead.position;ready=true;
+  }
+  public bool TryReachInterval(Vector2 direction,out float low,out float high){
+   direction.Normalize();Vector2 axis=hammer.transform.right;
+   float baseRadius=Vector2.Dot((Vector2)hammerHead.position-(Vector2)center.position,axis)+slide.jointTranslation;
+   low=baseRadius-originalLimits.max;high=baseRadius-originalLimits.min;
+   if(!torso)return true;
+   float growth=Mathf.Abs(torso.lossyScale.x)/7.5f;float reach=.94f*growth;
+   for(int i=0;i<2;i++){
+    Vector2 shoulder=torso.position+torso.up*(.66f*growth)+torso.right*((i==0?-.19f:.19f)*growth);
+    Vector2 d=shoulder-(Vector2)center.position;float projection=Vector2.Dot(d,direction);float side=Mathf.Max(0,d.sqrMagnitude-projection*projection);
+    if(side>reach*reach){low=1;high=0;return false;}
+    float span=Mathf.Sqrt(reach*reach-side),grip=(240-(i==0?12:40))*2.15f/230f*growth;
+    low=Mathf.Max(low,grip+projection-span);high=Mathf.Min(high,grip+projection+span);
+   }
+   return low<=high;
+  }
+  public Vector2 ConstrainTarget(Vector2 requested){
+   if(!ready||!slide)return requested;Vector2 origin=center.position,delta=requested-origin;
+   Vector2 dir=delta.sqrMagnitude>.00001f?delta.normalized:(Vector2)hammer.transform.right;
+   if(TryReachInterval(dir,out float low,out float high))return origin+dir*Mathf.Clamp(delta.magnitude,low,high);
+   float best=float.PositiveInfinity;Vector2 result=hammerHead.position;
+   for(int i=0;i<720;i++){float a=i*Mathf.PI/360;var d=new Vector2(Mathf.Cos(a),Mathf.Sin(a));if(!TryReachInterval(d,out low,out high))continue;
+    var candidate=origin+d*Mathf.Clamp(Vector2.Dot(delta,d),low,high);float score=(candidate-requested).sqrMagnitude;if(score<best){best=score;result=candidate;}}
+   return result;
+  }
+  float SafeTurnSpeed(Vector2 axis,float radius,float speed){
+   if(!TryReachInterval(axis,out float low,out float high)||radius<low-.001f||radius>high+.001f)return 0;
+   float step=speed*Time.fixedDeltaTime;
+   bool Valid(float fraction){var d=(Vector2)(Quaternion.Euler(0,0,step*fraction)*(Vector3)axis);return TryReachInterval(d,out float a,out float b)&&radius>=a&&radius<=b;}
+   if(Valid(1))return speed;
+   float lo=0,hi=1;for(int i=0;i<16;i++){float mid=(lo+hi)*.5f;if(Valid(mid))lo=mid;else hi=mid;}return speed*lo*.8f;
+  }
+  Vector2 mouseVelocity;
+  // Keep stroke speed before target projection: a hard reach boundary must not erase input effort.
+  public void ReceiveMouseMotion(Vector2 worldDelta,float seconds){mouseVelocity=Vector2.ClampMagnitude(worldDelta/Mathf.Max(.001f,seconds),8f);}
+  public void ReceiveTarget(Vector2 value){target=ConstrainTarget(value);ready=true;}
+  void OnDestroy(){if(input)input.OnPositionChanged-=ReceiveTarget;if(leftReach)Destroy(leftReach);if(rightReach)Destroy(rightReach);}
+  DistanceJoint2D MakeReachJoint(){var j=hammer.gameObject.AddComponent<DistanceJoint2D>();j.autoConfigureDistance=false;j.autoConfigureConnectedAnchor=false;j.connectedBody=torso.GetComponent<Rigidbody2D>();j.maxDistanceOnly=true;j.enableCollision=false;return j;}
+  void UpdateReachJoints(){
+   if(!torso)return;float g=Mathf.Abs(torso.lossyScale.x)/7.5f;
+   for(int i=0;i<2;i++){var j=i==0?leftReach:rightReach;if(!j)continue;
+    Vector3 grip=hammerHead.position-hammer.transform.right*((240-(i==0?12:40))*2.15f/230*g);
+    Vector3 shoulder=torso.position+torso.up*(.66f*g)+torso.right*((i==0?-.19f:.19f)*g);
+    j.anchor=hammer.transform.InverseTransformPoint(grip);j.connectedAnchor=torso.InverseTransformPoint(shoulder);j.distance=.94f*g;
+   }
+  }
+  void OnDisable(){StopMotors();}
+  void StopMotors(){if(hinge)hinge.useMotor=false;if(slide)slide.useMotor=false;}
+  void FixedUpdate(){
+   if(!ready||!hinge||!slide)return;
+   Vector2 axis=hammer.transform.right,actual=(Vector2)hammerHead.position-(Vector2)center.position,wanted=target-(Vector2)center.position;
+   target=ConstrainTarget(target);wanted=target-(Vector2)center.position;
+   UpdateReachJoints();
+   AngleError=wanted.sqrMagnitude>.0025f?Vector2.SignedAngle(actual,wanted):0;
+   // Motor sign depends on which side owns the pivot; verified against this prefab in Physics2D.
+   float sign=hinge.attachedRigidbody==pivot?-1:1;
+   var turn=hinge.motor;float requestedTurn=Mathf.Clamp(AngleError*angularGain-pivot.angularVelocity*.35f,-maxAngularSpeed,maxAngularSpeed);turn.motorSpeed=sign*requestedTurn;
+   turn.maxMotorTorque=Mathf.Max(1,MaxTorque);hinge.motor=turn;hinge.useMotor=torqueEnabled;
+   // Prepare extension for the next turn instead of freezing rotation at a reach boundary.
+   float lookAngle=Mathf.Clamp(AngleError,-15f,15f);
+   Vector2 lookAxis=Quaternion.Euler(0,0,lookAngle)*axis;
+   float wantedRadius=wanted.magnitude;
+   if(TryReachInterval(lookAxis,out float nextMin,out float nextMax))wantedRadius=Mathf.Clamp(wantedRadius,nextMin+.002f,nextMax-.002f);
+   if(TryReachInterval(axis,out float minReach,out float maxReach))wantedRadius=Mathf.Clamp(wantedRadius,minReach,maxReach);
+   ExtensionError=wantedRadius-Vector2.Dot(actual,axis);
+   float alignment=wanted.sqrMagnitude>.0025f?Mathf.Max(.25f,Mathf.Pow(Mathf.Clamp01(Vector2.Dot(axis,wanted.normalized)),2)):1;
+   float stroke=Vector2.Dot(mouseVelocity,axis);
+   float extensionSpeed=Mathf.Max(maxExtensionSpeed,Mathf.Abs(stroke),Mathf.Abs(requestedTurn)*Mathf.Deg2Rad*.8f);
+   var push=slide.motor;push.motorSpeed=Mathf.Clamp(-(ExtensionError*extensionGain*alignment+stroke),-extensionSpeed,extensionSpeed);
+   mouseVelocity*=Mathf.Exp(-Time.fixedDeltaTime/.06f);
+   push.maxMotorTorque=Mathf.Max(1,MaxBodyForce);slide.motor=push;slide.useMotor=forceEnabled;
+  }
+ }
+}

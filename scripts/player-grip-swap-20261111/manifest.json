@@ -1,0 +1,5 @@
+{
+  "source": "Assets\\Scripts\\Character\\Control\\PaddleCharacterVisual.cs",
+  "sha256": "d5675dc9d24e2344811729ace88bc9ff34f1edb5fdae255b838edd11996d6c22",
+  "validation": "Editor compile 0 errors 0 warnings; actual Scene View inspected. Play not rerun for this two-constant swap."
+}

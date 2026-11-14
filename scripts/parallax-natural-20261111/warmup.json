@@ -1,0 +1,1 @@
+{"name":"exec_runtime_script","arguments":{"script":"UnityEngine.Debug.Log(\"Natural parallax check: runtime ready\");","summary":"Enter current gameplay scene for continuous background validation"}}

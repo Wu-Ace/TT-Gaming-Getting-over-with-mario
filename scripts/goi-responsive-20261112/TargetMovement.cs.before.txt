@@ -1,0 +1,53 @@
+using System;
+using UnityEngine;
+using UnityEngine.InputSystem;
+namespace Character.Control
+{
+    public class TargetMovement : MonoBehaviour
+    {
+        [SerializeField] private Transform bodyCenter;
+        [SerializeField] private float minRadius = 0f, maxRadius = 1.9f;
+        [SerializeField] private float mouseUnitsPerPixel = 0.008f;
+        [SerializeField] private float inputResponse = 30f;
+        [SerializeField] private float maxTipError = 0.6f;
+        private ArmsSimulation arms;
+        private Vector2 virtualTarget, filteredDelta;
+        private bool active;
+        public event Action<Vector2> OnPositionChanged;
+        private void Awake() { arms = transform.root.GetComponentInChildren<ArmsSimulation>(); }
+        // Existing PlayerInput binding remains valid; delta is consumed once in Update.
+        public void OnMousePositionChanged(InputAction.CallbackContext context) { }
+        private void OnDisable() { ReleaseCursor(); }
+        private void ReleaseCursor()
+        {
+            if (active) { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
+            active = false; filteredDelta = Vector2.zero;
+        }
+        private void Update()
+        {
+            if (!bodyCenter || Mouse.current == null || !Application.isFocused || Time.timeScale <= 0)
+            { ReleaseCursor(); return; }
+            if (!active)
+            {
+                virtualTarget = arms && arms.HammerTip ? (Vector2)arms.HammerTip.position : (Vector2)transform.position;
+                Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
+                active = true; filteredDelta = Vector2.zero;
+            }
+            else
+            {
+                var delta = Mouse.current.delta.ReadValue() * mouseUnitsPerPixel;
+                // Filter velocity so smoothing does not vary with rendered frame duration.
+                var dt = Mathf.Max(Time.unscaledDeltaTime, 0.0001f);
+                filteredDelta = Vector2.Lerp(filteredDelta, delta / dt, 1f - Mathf.Exp(-inputResponse * dt));
+                virtualTarget += filteredDelta * dt;
+            }
+            var center = (Vector2)bodyCenter.position;
+            var offset = virtualTarget - center;
+            virtualTarget = center + offset.normalized * Mathf.Clamp(offset.magnitude, minRadius, maxRadius);
+            if (arms && arms.HammerTip)
+                virtualTarget = (Vector2)arms.HammerTip.position + Vector2.ClampMagnitude(virtualTarget - (Vector2)arms.HammerTip.position, maxTipError);
+            transform.position = virtualTarget;
+            OnPositionChanged?.Invoke(virtualTarget);
+        }
+    }
+}

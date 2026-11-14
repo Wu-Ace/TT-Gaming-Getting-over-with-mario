@@ -1,0 +1,17 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "1631591593AC2A93FFF1D6A8ABB36ACD436A1C8A84F0882F827518A6EC33BA9E",
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\Assets\\Scenes\\Level05_Cave.unity"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "748CC87760ED250A6DD736C08C42DD264C88B4D1A61092C85FEB00F37CFEDD33",
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\level05-lower-platforms-20261114\\before.unity"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3119E61F0B3C6EDE67AB1853B2FBF2DFE5177A0AC101897D683CF37212B80187",
+    "Path": "E:\\TT Gaming\\TT-Gaming-Getting-over-with-mario\\scripts\\level05-physical-20261114\\candidate-ascent.txt"
+  }
+]

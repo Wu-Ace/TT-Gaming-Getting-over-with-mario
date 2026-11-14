@@ -1,0 +1,32 @@
+{
+  "Level01": {
+    "pass": true,
+    "only_change": "one camera background component added",
+    "all_existing_non_camera_nodes_colliders_tilemaps_transforms": "identical to scoped pre-task backup"
+  },
+  "Level02_Jungle": {
+    "pass": true,
+    "only_change": "one camera background component added",
+    "all_existing_non_camera_nodes_colliders_tilemaps_transforms": "identical to scoped pre-task backup"
+  },
+  "Level03_Beach": {
+    "pass": true,
+    "only_change": "one camera background component added",
+    "all_existing_non_camera_nodes_colliders_tilemaps_transforms": "identical to scoped pre-task backup"
+  },
+  "Level04_Town": {
+    "pass": true,
+    "only_change": "one camera background component added",
+    "all_existing_non_camera_nodes_colliders_tilemaps_transforms": "identical to scoped pre-task backup"
+  },
+  "Level05_Cave": {
+    "pass": true,
+    "only_change": "one camera background component added",
+    "all_existing_non_camera_nodes_colliders_tilemaps_transforms": "identical to scoped pre-task backup"
+  },
+  "Tutorial": {
+    "pass": true,
+    "only_change": "one camera background component added",
+    "all_existing_non_camera_nodes_colliders_tilemaps_transforms": "identical to scoped pre-task backup"
+  }
+}

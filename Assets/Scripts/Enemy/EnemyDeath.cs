@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Character.Lifecycle;
@@ -42,7 +42,7 @@ namespace Enemy
         {
             if (enemy != gameObject || _defeated || _shelled) return;
             // Stomping a Koopa still creates a playable shell, as before.
-            if (deadEntity != null && deadEntity.GetComponent<KoopaTroopaShellContactDetection>() != null)
+            if (GetComponent<ForestEnemyVisual>() == null && deadEntity != null && deadEntity.GetComponent<KoopaTroopaShellContactDetection>() != null)
             {
                 _shelled = true;
                 Unsubscribe();
@@ -62,14 +62,17 @@ namespace Enemy
         }
 
         // Retain the authored death visual, then launch it above the world rendering layers.
-        public void Defeat()
+        public void Defeat(bool fromCharge = false)
         {
             if (_defeated) return;
+            var forest = GetComponent<ForestEnemyVisual>();
+            if (!fromCharge && forest != null && forest.ReceiveAttack()) return;
             _defeated = true;
+            if (forest != null) forest.BeginDeath();
             Unsubscribe();
             if (_movement != null) _movement.enabled = false;
             var visual = deadEntity != null ? deadEntity : aliveEntity;
-            if (deadEntity != null)
+            if (deadEntity != null && forest == null)
             {
                 // A defeated Koopa must not restart shell movement during its death fall.
                 foreach (var shellMovement in deadEntity.GetComponentsInChildren<KoopaTroopaShellMovement>(true)) shellMovement.enabled = false;
@@ -100,7 +103,6 @@ namespace Enemy
 
         private void PlayDeathSound()
         {
-            if (_audioSource == null || sfx == null) return;
             GameplayAudio.Play("enemy_hit", .3f);
         }
 

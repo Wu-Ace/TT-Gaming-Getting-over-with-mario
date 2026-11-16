@@ -24,6 +24,14 @@ public sealed class CampaignEnemy : MonoBehaviour
     void OnTriggerEnter2D(Collider2D c)
     {
         if(dead || CampaignLevel.Current==null || CampaignLevel.Current.Won)return;
+        if(Odyssey.Pvp.PvpLevelCatalog.IsPvpScene(gameObject.scene.name))
+        {
+            var session=Odyssey.Pvp.PvpSession.Current;
+            if(!session.IsHost || session.Phase!=Odyssey.Pvp.PvpPhase.Racing)return;
+            var actor=c.GetComponentInParent<Odyssey.Pvp.PvpActor>();
+            if(!actor || !actor.ContactActive)return;
+            if(c.attachedRigidbody==actor.Body) { Odyssey.Pvp.PvpArena.QueueRespawn(actor);return; }
+        }
         var body=CampaignInteractable.Body(c);
         if(body!=null){body.Kill();return;}
         if(c.attachedRigidbody!=null && c.attachedRigidbody.name=="Hammer")

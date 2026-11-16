@@ -66,6 +66,7 @@ namespace Character.Lifecycle
                 foreach (var other in Physics2D.OverlapBoxAll(bounds.center, bounds.size + Vector3.one * (contactTolerance * 2), 0))
                 {
                     if (other.isTrigger || other.transform.IsChildOf(rig) ||
+                        GetComponentInParent<Odyssey.Pvp.PvpActor>() && other.GetComponentInParent<Odyssey.Pvp.PvpActor>() ||
                         Physics2D.GetIgnoreLayerCollision(c.gameObject.layer, other.gameObject.layer) ||
                         Physics2D.GetIgnoreCollision(c, other)) continue;
                     var distance = c.Distance(other);

@@ -5,6 +5,291 @@
   "code": "en",
   "entries": [
     {
+      "key": "pvp.online",
+      "text": "Multiplayer",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.create",
+      "text": "Create Room",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.join",
+      "text": "Join Room",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.room_name",
+      "text": "Room name",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.host_address",
+      "text": "Shareable IPv4 address (optional)",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.host_address_hint",
+      "text": "Leave blank for LAN. For internet play, enter your public IPv4 and forward the UDP port.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.listen_port",
+      "text": "Local UDP port",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.public_port",
+      "text": "Shareable UDP port (optional)",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.default_room",
+      "text": "Odyssey Room",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.invite",
+      "text": "Room invite",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.paste",
+      "text": "Paste",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.invite_hint",
+      "text": "Send the invite to the players you want to join.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.invite_endpoint",
+      "text": "Address",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.renew_invite",
+      "text": "New invite",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.invite_renewed",
+      "text": "Invite updated",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.copied",
+      "text": "Copied",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.copy",
+      "text": "Copy Invite",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.start",
+      "text": "Start Match",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.cancel_ready",
+      "text": "Cancel Ready",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.ready",
+      "text": "Ready",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.leave",
+      "text": "Leave Room",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.loading",
+      "text": "Loading",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.loaded_count",
+      "text": "Players loaded: {loaded}/{count}",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.seats",
+      "text": "Players: {count}/4",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.available",
+      "text": "Open seat",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.host",
+      "text": "Host",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.player",
+      "text": "Player {number}",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.you",
+      "text": "{name} (you)",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.disconnected",
+      "text": "Disconnected",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.loaded",
+      "text": "Loaded",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.not_ready",
+      "text": "Not ready",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.finished_count",
+      "text": "Finished: {finished}/{count}",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.options_hint",
+      "text": "Esc • Options",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.winner",
+      "text": "Winner: {name}",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.wait_finish",
+      "text": "Waiting for the other players to finish",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.results",
+      "text": "Match Results",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.unfinished",
+      "text": "Unfinished",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.return",
+      "text": "Return to Room",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.wait_host",
+      "text": "Waiting for the host to return to the room",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.connecting",
+      "text": "Connecting",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.returning",
+      "text": "Returning to room",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.busy",
+      "text": "Finish the current connection first.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.address",
+      "text": "Enter a valid IPv4 address.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.port",
+      "text": "Enter a UDP port from 1 to 65535.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.invite",
+      "text": "The invite is invalid or has expired.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.version",
+      "text": "The host and guest must use the same game version.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.start_host",
+      "text": "The room could not start. Check whether the UDP port is already in use.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.start_client",
+      "text": "Could not start the connection.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.connect_timeout",
+      "text": "Connection timed out. Check the address, UDP port and firewall.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.transport",
+      "text": "The network connection was interrupted.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.room_closed",
+      "text": "The room is closed to new players.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.room_full",
+      "text": "The room is full.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.replay",
+      "text": "This connection attempt was already used. Try joining again.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.host_disconnected",
+      "text": "The host left or lost their connection.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.load",
+      "text": "The map did not load for everyone. Back in the room.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.match_interrupted",
+      "text": "A player left before finishing. The match was stopped.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.room_name",
+      "text": "Enter a valid room name.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
       "key": "menu.start",
       "text": "Start",
       "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
@@ -113,6 +398,76 @@
       "key": "level.collectibles",
       "text": "{coins}/{total}  ★ {stars}/3",
       "context": "Level card: coins collected, total coins, stars earned; numeric icon label"
+    },
+    {
+      "key": "pvp.choose_level",
+      "text": "Choose Level",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.choose_level_hint",
+      "text": "The host chooses the next level. Players need to ready up again after a change.",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.level_selected",
+      "text": "Selected",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.tutorial",
+      "text": "Tutorial",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.add_bot",
+      "text": "Add Test Bot",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.remove_bot",
+      "text": "Remove Bot",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.bot_name",
+      "text": "Test Bot",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.bot_stationary",
+      "text": "Stationary",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.bot_unranked",
+      "text": "Collision test · Unranked",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "level.name.6",
+      "text": "Snow Overhang",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "level.name.7",
+      "text": "Ice Wall Grips",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "level.name.8",
+      "text": "Castle Climb",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "level.name.9",
+      "text": "Volcanic Switchback",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "level.name.10",
+      "text": "Cloud Needle Summit",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
     }
   ],
   "priority": "P0",

@@ -14,6 +14,19 @@ public sealed class DonutFallPlatform : MonoBehaviour
     void OnCollisionStay2D(Collision2D collision)
     {
         if(Triggered || collision.rigidbody==null)return;
+        if(Odyssey.Pvp.PvpLevelCatalog.IsPvpScene(gameObject.scene.name))
+        {
+            var session=Odyssey.Pvp.PvpSession.Current;
+            if(!session.IsHost || session.Phase!=Odyssey.Pvp.PvpPhase.Racing)return;
+            var pvp=collision.rigidbody.GetComponentInParent<Odyssey.Pvp.PvpActor>();
+            if(!pvp || !pvp.ContactActive)return;
+            if(collision.rigidbody.name=="Hammer") { BeginCountdown();return; }
+            if(collision.rigidbody!=pvp.Body)return;
+            float pvpTop=GetComponent<BoxCollider2D>().bounds.max.y;
+            foreach(var point in collision.contacts)
+                if(point.point.y>=pvpTop-.12f && pvp.Body.position.y>pvpTop) { BeginCountdown();break; }
+            return;
+        }
         var owner=collision.rigidbody.transform.root.GetComponentInChildren<Character.Lifecycle.Death>();
         var arms=collision.rigidbody.transform.root.GetComponentInChildren<Character.Control.ArmsSimulation>();
         if(owner!=null && !owner.Dead && arms!=null && arms.HammerTip!=null &&

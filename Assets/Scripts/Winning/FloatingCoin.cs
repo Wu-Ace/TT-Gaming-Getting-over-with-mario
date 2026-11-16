@@ -56,6 +56,14 @@ namespace Winning
         }
         private void OnTriggerEnter2D(Collider2D other)
         {
+            if(Odyssey.Pvp.PvpLevelCatalog.IsPvpScene(gameObject.scene.name)) {
+                var actor=other.GetComponentInParent<Odyssey.Pvp.PvpActor>();
+                if(Odyssey.Pvp.PvpSession.Current.IsHost && actor && actor.ContactActive && other.attachedRigidbody==actor.Body && !SuppressedByCampaign()) {
+                    EnsureIdentity();
+                    if(CampaignLevel.Current!=null && CampaignLevel.Current.CollectLegacyCoin(identity))gameObject.SetActive(false);
+                }
+                return;
+            }
             var body = CampaignInteractable.Body(other);
             if (collected || body == null || body.Dead || SuppressedByCampaign()) return;
             EnsureIdentity();

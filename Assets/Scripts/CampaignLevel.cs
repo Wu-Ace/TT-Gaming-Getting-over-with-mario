@@ -19,6 +19,9 @@ public sealed class CampaignLevel : MonoBehaviour
     Progress state;
     public int StarCount => state == null ? 0 : CoinStars(CoinCount);
     public bool Won { get; private set; }
+    bool pvp;
+    readonly HashSet<int> pvpCoins = new HashSet<int>();
+    readonly HashSet<string> pvpLegacyCoins = new HashSet<string>();
     public Vector2 SpawnPosition { get; private set; }
     public static int CountBits(int mask) { int n=0; for(int i=0;i<3;i++) if((mask&(1<<i))!=0)n++; return n; }
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
@@ -27,18 +30,20 @@ public sealed class CampaignLevel : MonoBehaviour
         PlayerPrefs.SetInt(GameMenuUI.PreferencePrefix+"lives.v1."+scene,3);PlayerPrefs.Save();
     }
     string LivesKey => GameMenuUI.PreferencePrefix+"lives.v1."+gameObject.scene.name;
-    public int Lives => Mathf.Clamp(PlayerPrefs.GetInt(LivesKey,3),0,3);
+    public int Lives => pvp ? 3 : Mathf.Clamp(PlayerPrefs.GetInt(LivesKey,3),0,3);
     public void LoseLife() {
-        if(Won || Lives<=0)return;
+        if(pvp || Won || Lives<=0)return;
         int remaining=Lives-1;PlayerPrefs.SetInt(LivesKey,remaining);
         if(remaining==0)for(int i=0;i<CoinTotal;i++){PlayerPrefs.DeleteKey(CoinKey(gameObject.scene.name,i));PlayerPrefs.DeleteKey(CoinKey(gameObject.scene.name,i)+".source");}
         PlayerPrefs.Save();
     }
     public bool HasLegacyCoin(string identity) {
+        if(pvp)return pvpLegacyCoins.Contains(identity);
         for(int i=0;i<CoinTotal;i++)if(HasCoin(i) && PlayerPrefs.GetString(CoinKey(gameObject.scene.name,i)+".source", "")==identity)return true;
         return false;
     }
     public bool CollectLegacyCoin(string identity) {
+        if(pvp) { if(!pvpLegacyCoins.Add(identity))return false;return CollectLegacyCoin(); }
         if(HasLegacyCoin(identity))return false;
         for(int i=0;i<CoinTotal;i++)if(!HasCoin(i)) {
             if(!CollectCoin(i))return false;
@@ -50,10 +55,12 @@ public sealed class CampaignLevel : MonoBehaviour
         for(int i=0;i<CoinTotal;i++)if(!HasCoin(i))return CollectCoin(i);
         return false;
     }
-    public bool HasCoin(int id) => PlayerPrefs.GetInt(CoinKey(gameObject.scene.name,id),0)==1;
+    public bool HasCoin(int id) => pvp ? pvpCoins.Contains(id) : PlayerPrefs.GetInt(CoinKey(gameObject.scene.name,id),0)==1;
     void Awake()
     {
         Current=this;
+        pvp=Odyssey.Pvp.PvpLevelCatalog.IsPvpScene(gameObject.scene.name);
+        if(pvp) { state=new Progress();SpawnPosition=initialSpawn;return; }
         if(Lives<=0){PlayerPrefs.SetInt(LivesKey,3);PlayerPrefs.Save();}
         string key=SceneManager.GetActiveScene().path;
         if(!progress.TryGetValue(key,out state))progress[key]=state=new Progress();
@@ -61,6 +68,7 @@ public sealed class CampaignLevel : MonoBehaviour
     void Start()
     {
         InstallCoins();
+        if(pvp)return;
         var death=FindObjectOfType<Death>();
         var root=death.transform.parent;
         Vector2 spawn=initialSpawn;
@@ -77,6 +85,7 @@ public sealed class CampaignLevel : MonoBehaviour
     public float RouteProgress { get; private set; }
     void LateUpdate()
     {
+        if(pvp)return;
         if (progressPlayer == null)
         {
             var player = FindObjectOfType<Death>();
@@ -110,9 +119,10 @@ public sealed class CampaignLevel : MonoBehaviour
     public const int CoinTotal = 40;
     static string CoinKey(string scene, int id) => GameMenuUI.PreferencePrefix+"collect.v1."+scene+"."+id;
     public static int SavedCoins(string scene) { int count=0; for(int i=0;i<CoinTotal;i++) count+=PlayerPrefs.GetInt(CoinKey(scene,i),0)==1?1:0; return count; }
-    public int CoinCount => SavedCoins(gameObject.scene.name);
+    public int CoinCount => pvp ? pvpCoins.Count : SavedCoins(gameObject.scene.name);
     public static int CoinStars(int count) => count>=CoinTotal?3:count>=24?2:count>=10?1:0;
     public bool CollectCoin(int id) {
+        if(pvp) { if(id<0 || id>=CoinTotal)return false;return pvpCoins.Add(id); }
         if(Won || Lives<=0 || id<0 || id>=CoinTotal || PlayerPrefs.GetInt(CoinKey(gameObject.scene.name,id),0)==1)return false;
         PlayerPrefs.SetInt(CoinKey(gameObject.scene.name,id),1);PlayerPrefs.Save();GameplayAudio.Play("coin");return true;
     }
@@ -184,7 +194,7 @@ public sealed class CampaignLevel : MonoBehaviour
     public void Checkpoint(Vector2 position) { }
     public bool TryExit()
     {
-        if(Won || FindObjectOfType<Death>().Dead)return false;
+        if(pvp || Won || FindObjectOfType<Death>().Dead)return false;
         Won=true;
         string key=GameMenuUI.PreferencePrefix+"stars."+SceneManager.GetActiveScene().name;
         PlayerPrefs.SetInt(key,Mathf.Max(PlayerPrefs.GetInt(key,0),StarCount));PlayerPrefs.Save();
@@ -199,7 +209,7 @@ public sealed class CampaignLevel : MonoBehaviour
     }
     void OnGUI()
     {
-        if(!Won || GameMenuUI.Instance==null || GameMenuUI.Instance.settings)return;
+        if(pvp || !Won || GameMenuUI.Instance==null || GameMenuUI.Instance.settings)return;
         var ui=GameMenuUI.Instance;
         var old=GUI.matrix;
         float scale=Mathf.Min(Screen.width/1600f,Screen.height/900f);

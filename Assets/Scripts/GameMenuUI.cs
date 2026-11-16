@@ -1,14 +1,15 @@
 using System;
 using System.Linq;
+using Odyssey.Pvp;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 
 // Menu art is generated from the native Kit; gameplay geometry stays in its own scenes.
-public sealed class GameMenuUI : MonoBehaviour
+public sealed partial class GameMenuUI : MonoBehaviour
 {
     public static GameMenuUI Instance { get; private set; }
-    public static bool IsPaused => Instance != null && Instance.settings && !Instance.IsMenu;
+    public static bool IsPaused => Instance != null && Instance.settingsPausedTime;
     public const string MenuScene = "MainMenu";
     public const string Pref = "Goombas.UI.v1.";
     public static string PreferencePrefix = Pref;
@@ -33,6 +34,7 @@ public sealed class GameMenuUI : MonoBehaviour
     float musicEnvelope=1;
     AudioClip click, back;
     float music=1, effects=1, previousTimeScale=1;
+    bool settingsPausedTime;
     int resolutionIndex, monitorW, monitorH;
     Resolution[] resolutions;
     Vector2 scroll;
@@ -125,11 +127,43 @@ public sealed class GameMenuUI : MonoBehaviour
     void Update()
     {
         if(loading)return;
-        if(Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame) { if(settings)CloseSettings();else if(!IsMenu)OpenSettings();else if(page>0)page--; }
+        if (Keyboard.current != null && Keyboard.current.escapeKey.wasPressedThisFrame)
+        {
+            if (settings) CloseSettings();
+            else if (PvpVisible) HandlePvpEscape();
+            else if (!IsMenu) OpenSettings();
+            else if (page > 0) page--;
+        }
         if(Screen.currentResolution.width!=monitorW || Screen.currentResolution.height!=monitorH)RefreshResolutions();
     }
-    public void OpenSettings(){if(settings || Character.Lifecycle.DeathFeedback.Active)return;GameplayAudio.Play("pause",.35f);settings=true;dropdown=false;languageDropdown=false;previousTimeScale=Time.timeScale;if(!IsMenu)Time.timeScale=0;}
-    public void CloseSettings(){if(settings)GameplayAudio.Play("resume",.35f);if(settings && !IsMenu)Time.timeScale=previousTimeScale;settings=false;dropdown=false;languageDropdown=false;}
+    public void OpenSettings()
+    {
+        if (settings || (!OnlinePvp && Character.Lifecycle.DeathFeedback.Active)) return;
+        GameplayAudio.Play("pause", .35f);
+        settings = true;
+        dropdown = false;
+        languageDropdown = false;
+        if (OnlinePvp)
+        {
+            PvpSession.Current.ControlsBlocked = true;
+        }
+        else if (!IsMenu)
+        {
+            settingsPausedTime = true;
+            previousTimeScale = Time.timeScale;
+            Time.timeScale = 0;
+        }
+    }
+    public void CloseSettings()
+    {
+        if (settings) GameplayAudio.Play("resume", .35f);
+        if (settingsPausedTime) Time.timeScale = previousTimeScale;
+        if (PvpSession.Current != null) PvpSession.Current.ControlsBlocked = false;
+        settingsPausedTime = false;
+        settings = false;
+        dropdown = false;
+        languageDropdown = false;
+    }
     public void LoadLevel(int i)
     {
         if(loading || i < -1 || i>=PlayableLevelCount)return;
@@ -210,9 +244,9 @@ public sealed class GameMenuUI : MonoBehaviour
         GUI.color=color;
     }
     void Background(){GUI.DrawTexture(new Rect(0,0,1600,900),landscape,ScaleMode.ScaleAndCrop);}
-    bool FeedbackButton(Rect rect, GUIContent content, GUIStyle style)
+    bool FeedbackButton(Rect rect, GUIContent content, GUIStyle style, bool keyboard = false)
     {
-        int id = GUIUtility.GetControlID(FocusType.Passive, rect);
+        int id = GUIUtility.GetControlID(keyboard ? FocusType.Keyboard : FocusType.Passive, rect);
         Event e = Event.current;
         Rect screenRect = new Rect(GUIUtility.GUIToScreenPoint(rect.position), rect.size);
         bool inside = rect.Contains(e.mousePosition);
@@ -220,7 +254,18 @@ public sealed class GameMenuUI : MonoBehaviour
         {
             case EventType.MouseDown:
                 if(GUI.enabled && e.button == 0 && inside)
-                {GUIUtility.hotControl = id; pressedButtonRect = screenRect; buttonHeld = true; buttonPointerInside = true; e.Use();}
+                {
+                    if (keyboard) GUIUtility.keyboardControl = id;
+                    GUIUtility.hotControl = id; pressedButtonRect = screenRect; buttonHeld = true; buttonPointerInside = true; e.Use();
+                }
+                break;
+            case EventType.KeyDown:
+                if (keyboard && GUI.enabled && GUIUtility.keyboardControl == id &&
+                    (e.keyCode == KeyCode.Return || e.keyCode == KeyCode.KeypadEnter || e.keyCode == KeyCode.Space))
+                {
+                    e.Use();
+                    return true;
+                }
                 break;
             case EventType.MouseDrag:
                 if(buttonHeld && pressedButtonRect == screenRect)buttonPointerInside = inside;
@@ -237,8 +282,11 @@ public sealed class GameMenuUI : MonoBehaviour
                 bool pressed = GUI.enabled && buttonHeld && buttonPointerInside && pressedButtonRect == screenRect;
                 var background=GUI.backgroundColor;
                 if(pressed)GUI.backgroundColor=new Color(background.r*.68f,background.g*.68f,background.b*.68f,background.a);
-                style.Draw(rect, content, inside, pressed, false, false);
+                bool focused = keyboard && GUI.enabled && GUIUtility.keyboardControl == id;
+                style.Draw(rect, content, inside, pressed, false, focused);
                 GUI.backgroundColor=background;
+                if (focused)
+                    Fill(new Rect(rect.x + 14, rect.yMax - 8, rect.width - 28, 4), new Color32(231, 168, 53, 255));
                 break;
         }
         return false;
@@ -270,7 +318,14 @@ public sealed class GameMenuUI : MonoBehaviour
         var old=GUI.matrix;float scale=Mathf.Min(Screen.width/1600f,Screen.height/900f);
         // Letterboxed reference layout keeps circles round and never stretches source art.
         GUI.matrix=Matrix4x4.TRS(new Vector3((Screen.width-1600*scale)/2,(Screen.height-900*scale)/2,0),Quaternion.identity,new Vector3(scale,scale,1));
-        if(IsMenu)
+        if (PvpVisible)
+        {
+            bool enabled = GUI.enabled;
+            GUI.enabled = enabled && !settings;
+            DrawPvp(PvpSession.Current);
+            GUI.enabled = enabled;
+        }
+        else if(IsMenu)
         {
             Fill(new Rect(-4000,-4000,9600,8900),new Color32(35,63,56,255));Background();
             bool enabled=GUI.enabled;GUI.enabled=enabled && !settings;
@@ -324,14 +379,15 @@ public sealed class GameMenuUI : MonoBehaviour
         GUI.Label(new Rect(95,55,1500,175),"GET OVER WITH",BrandStyle(137));
         GUI.Label(new Rect(95,205,1500,250),"ODYSSEY",BrandStyle(205));
         HomeButton(new Rect(95,710,400,115),0,GameLocalization.Get("menu.start"),()=>page=1);
+        HomeButton(new Rect(525,710,400,115),0,PvpText("online"),OpenPvp, keyboard: true);
         HomeButton(new Rect(95,850,400,115),1,GameLocalization.Get("settings.title"),OpenSettings);
         HomeButton(new Rect(95,990,400,115),2,GameLocalization.Get("menu.exit"),()=>{if(!Testing)Application.Quit();});
         GUI.matrix=previous;
     }
-    void HomeButton(Rect rect,int index,string caption,Action action)
+    void HomeButton(Rect rect,int index,string caption,Action action,bool keyboard=false)
     {
         HudArt(rect,homeButtons[index]);
-        if(FeedbackButton(rect,GUIContent.none,GUIStyle.none)){Sound();action();}
+        if(FeedbackButton(rect,GUIContent.none,GUIStyle.none,keyboard && GUI.enabled)){Sound();action();}
         LocalizedWindowsText.Draw(rect,caption,56,Color.white,true);
     }
 
@@ -481,7 +537,9 @@ public sealed class GameMenuUI : MonoBehaviour
         if(Mathf.Abs(m-music)>.001f || Mathf.Abs(e-effects)>.001f){music=m;effects=e;SaveVolumes();}
         SettingsButton(new Rect(549,464,235,103),"button_quality","settings.resolution",()=>dropdown=true);
         SettingsButton(new Rect(815,464,290,103),"tab_1","settings.language",()=>{languageDropdown=true;languageScroll=Vector2.zero;});
-        if(!IsMenu)
+        if (OnlinePvp)
+            PanelButton(new Rect(676,576,295,130), "button_10", PvpText("leave"), LeavePvp);
+        else if(!IsMenu)
             PanelButton(new Rect(676,576,295,130),"button_10",GameLocalization.Get("menu.level_select"),ReturnToLevelMenu);
     }
     GUIStyle BrandStyle(int size)

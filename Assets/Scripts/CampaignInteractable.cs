@@ -30,6 +30,18 @@ public sealed class CampaignInteractable : MonoBehaviour
     public void Touch(Collider2D c)
     {
         var level=CampaignLevel.Current;if(level==null || level.Won)return;
+        var session=Odyssey.Pvp.PvpSession.Current;
+        if(Odyssey.Pvp.PvpLevelCatalog.IsPvpScene(gameObject.scene.name))
+        {
+            if(!session.IsHost || session.Phase!=Odyssey.Pvp.PvpPhase.Racing)return;
+            var actor=c.GetComponentInParent<Odyssey.Pvp.PvpActor>();
+            if(!actor || !actor.ContactActive)return;
+            bool isBody=c.attachedRigidbody==actor.Body;
+            if(kind==Kind.Switch || isBody && kind==Kind.Key) { level.Activate(link); Refresh(); }
+            if(isBody && kind==Kind.Star) { level.Collect(starId); Refresh(); }
+            if(isBody && kind==Kind.Spikes) Odyssey.Pvp.PvpArena.QueueRespawn(actor);
+            return;
+        }
         var body=Body(c);
         if(kind==Kind.Switch)
         {

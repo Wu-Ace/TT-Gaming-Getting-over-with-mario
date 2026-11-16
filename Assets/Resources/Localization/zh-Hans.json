@@ -5,6 +5,291 @@
   "code": "zh-Hans",
   "entries": [
     {
+      "key": "pvp.online",
+      "text": "联机",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.create",
+      "text": "创建房间",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.join",
+      "text": "加入房间",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.room_name",
+      "text": "房间名称",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.host_address",
+      "text": "分享用 IPv4 地址（选填）",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.host_address_hint",
+      "text": "局域网可留空。公网联机请填写公网 IPv4，并配置 UDP 端口转发。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.listen_port",
+      "text": "本地 UDP 端口",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.public_port",
+      "text": "分享用 UDP 端口（选填）",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.default_room",
+      "text": "奥德赛房间",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.invite",
+      "text": "房间邀请",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.paste",
+      "text": "粘贴",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.invite_hint",
+      "text": "复制邀请并发给要一起游玩的玩家。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.invite_endpoint",
+      "text": "接入地址",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.renew_invite",
+      "text": "更新邀请",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.invite_renewed",
+      "text": "邀请已更新",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.copied",
+      "text": "已复制",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.copy",
+      "text": "复制邀请",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.start",
+      "text": "开始比赛",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.cancel_ready",
+      "text": "取消准备",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.ready",
+      "text": "准备",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.leave",
+      "text": "离开房间",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.loading",
+      "text": "加载中",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.loaded_count",
+      "text": "玩家已加载：{loaded}/{count}",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.seats",
+      "text": "玩家：{count}/4",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.available",
+      "text": "空位",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.host",
+      "text": "房主",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.player",
+      "text": "玩家 {number}",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.you",
+      "text": "{name}（你）",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.disconnected",
+      "text": "已断开",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.loaded",
+      "text": "已加载",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.not_ready",
+      "text": "未准备",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.finished_count",
+      "text": "已完赛：{finished}/{count}",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.options_hint",
+      "text": "Esc · 设置",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.winner",
+      "text": "胜者：{name}",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.wait_finish",
+      "text": "等待其他玩家抵达终点",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.results",
+      "text": "比赛结算",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.unfinished",
+      "text": "未完赛",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.return",
+      "text": "返回房间",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.wait_host",
+      "text": "等待房主返回房间",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.connecting",
+      "text": "正在连接",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.returning",
+      "text": "正在返回房间",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.busy",
+      "text": "请先结束当前连接。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.address",
+      "text": "请输入有效的 IPv4 地址。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.port",
+      "text": "请输入 1 至 65535 之间的 UDP 端口。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.invite",
+      "text": "邀请无效或已失效。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.version",
+      "text": "房主和客机需要使用相同的游戏版本。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.start_host",
+      "text": "无法创建房间。请检查 UDP 端口是否已被占用。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.start_client",
+      "text": "无法启动连接。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.connect_timeout",
+      "text": "连接超时。请核对地址、UDP 端口和防火墙。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.transport",
+      "text": "网络连接已中断。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.room_closed",
+      "text": "房间暂不接受新玩家。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.room_full",
+      "text": "房间已满。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.replay",
+      "text": "这次入房请求已使用，请重新加入。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.host_disconnected",
+      "text": "房主已离开或掉线。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.load",
+      "text": "有玩家未能加载地图，已返回房间。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.match_interrupted",
+      "text": "有玩家未完赛就离开了，对局已中止。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.room_name",
+      "text": "请输入有效的房间名称。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
       "key": "menu.start",
       "text": "开始游戏",
       "context": "Menu/settings/result or level card; fit within authored button/card; max two lines"
@@ -113,6 +398,76 @@
       "key": "level.collectibles",
       "text": "{coins}/{total}  ★ {stars}/3",
       "context": "Level card: coins collected, total coins, stars earned; numeric icon label"
+    },
+    {
+      "key": "pvp.choose_level",
+      "text": "选择关卡",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.choose_level_hint",
+      "text": "由房主选择下一局关卡，更换关卡后其他玩家需要重新准备。",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.level_selected",
+      "text": "已选择",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.tutorial",
+      "text": "教学关卡",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.add_bot",
+      "text": "添加测试 Bot",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.remove_bot",
+      "text": "移除测试 Bot",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.bot_name",
+      "text": "测试 Bot",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.bot_stationary",
+      "text": "静止",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "pvp.bot_unranked",
+      "text": "碰撞测试 · 不参与排名",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "level.name.6",
+      "text": "雪原悬崖",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "level.name.7",
+      "text": "冰壁攀登",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "level.name.8",
+      "text": "城堡攀登",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "level.name.9",
+      "text": "火山回廊",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
+    },
+    {
+      "key": "level.name.10",
+      "text": "云端尖峰",
+      "context": "PvP level selection or stationary collision-test bot; preserve authored UI layout"
     }
   ],
   "priority": "P1",

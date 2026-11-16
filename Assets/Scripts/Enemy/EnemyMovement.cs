@@ -74,6 +74,8 @@ namespace Enemy
                 other.attachedRigidbody == _rigidbody) return false;
             // Ignore the player's body, but keep the separately simulated hammer solid.
             if (CampaignInteractable.Body(other) != null) return false;
+            var pvp = other.GetComponentInParent<Odyssey.Pvp.PvpActor>();
+            if (pvp && other.attachedRigidbody == pvp.Body) return false;
             return !Physics2D.GetIgnoreLayerCollision(_collider.gameObject.layer, other.gameObject.layer) &&
                 !Physics2D.GetIgnoreCollision(_collider, other);
         }

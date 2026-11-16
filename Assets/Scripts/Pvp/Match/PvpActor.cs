@@ -109,8 +109,7 @@ namespace Odyssey.Pvp
 
         public Vector2 ReadInput() => sampledInput;
 
-        // A collision-test dummy has no controller or gravity. Contact displacement still
-        // translates its whole rig; it stays wherever the last contact left it.
+        // Disable the controller while the passive rig settles under gravity.
         public void ConfigureTestBot()
         {
             testBot = true;
@@ -118,7 +117,6 @@ namespace Odyssey.Pvp
             arms.enabled = false;
             foreach (var part in rig)
             {
-                part.bodyType = RigidbodyType2D.Kinematic;
                 part.velocity = Vector2.zero;
                 part.angularVelocity = 0;
             }

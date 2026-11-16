@@ -10,7 +10,8 @@ public sealed partial class GameMenuUI
     {
         Entry,
         Create,
-        Join
+        Join,
+        CreateDirect
     }
 
     const string PvpMode = "who is really odyssey？";
@@ -21,6 +22,7 @@ public sealed partial class GameMenuUI
     static readonly Color32 PvpInk = new Color32(23, 33, 46, 255);
     bool pvpOpen;
     bool pvpChoosingLevel;
+    bool pvpFormSubmitted;
     PvpForm pvpForm;
     string pvpName = "";
     string pvpAddress = "";
@@ -56,8 +58,17 @@ public sealed partial class GameMenuUI
     {
         pvpForm = form;
         pvpChoosingLevel = false;
+        pvpFormSubmitted = false;
         pvpFormError = null;
+        pvpCopiedUntil = 0;
+        pvpRenewedUntil = 0;
         if (Event.current != null) GUI.FocusControl(null);
+    }
+
+    void BackFromPvpForm()
+    {
+        if (pvpForm == PvpForm.Entry) ClosePvp();
+        else SelectPvpForm(pvpForm == PvpForm.CreateDirect ? PvpForm.Create : PvpForm.Entry);
     }
 
     void LeavePvp()
@@ -72,8 +83,7 @@ public sealed partial class GameMenuUI
         var session = PvpSession.Current;
         if (session == null || session.Phase == PvpPhase.Idle)
         {
-            if (pvpForm == PvpForm.Entry) ClosePvp();
-            else SelectPvpForm(PvpForm.Entry);
+            BackFromPvpForm();
             return;
         }
 
@@ -140,49 +150,68 @@ public sealed partial class GameMenuUI
 
     void DrawPvpForm(PvpSession session)
     {
-        string heading = pvpForm == PvpForm.Create ? "create" : pvpForm == PvpForm.Join ? "join" : "online";
-        BeginPvpScreen(PvpText(heading), entrance: true);
-        if (pvpForm == PvpForm.Create) DrawPvpCreate(session);
-        else if (pvpForm == PvpForm.Join) DrawPvpJoin(session);
-        else
+        switch (pvpForm)
         {
-            PvpButton(new Rect(75, 495, 365, 105), "create", () => SelectPvpForm(PvpForm.Create));
-            PvpButton(new Rect(462, 495, 365, 105), "join", () => SelectPvpForm(PvpForm.Join), primary: false);
+            case PvpForm.Create:
+            case PvpForm.CreateDirect:
+                bool direct = pvpForm == PvpForm.CreateDirect;
+                BeginPvpScreen(PvpText(direct ? "direct_options" : "create"), entrance: true);
+                DrawPvpCreate(session, direct);
+                break;
+            case PvpForm.Join:
+                BeginPvpScreen(PvpText("join"), entrance: true);
+                DrawPvpJoin(session);
+                break;
+            default:
+                BeginPvpScreen(PvpText("online"), entrance: true);
+                PvpButton(new Rect(75, 495, 365, 105), "create", () => SelectPvpForm(PvpForm.Create));
+                PvpButton(new Rect(462, 495, 365, 105), "join", () => SelectPvpForm(PvpForm.Join), primary: false);
+                break;
         }
-        DrawPvpStatus(session, pvpForm != PvpForm.Entry);
-        PvpButton(new Rect(75, 760, 255, 73), "menu.back", () =>
-        {
-            if (pvpForm == PvpForm.Entry) ClosePvp();
-            else SelectPvpForm(PvpForm.Entry);
-        }, primary: false);
+        if (pvpFormSubmitted) DrawPvpStatus(session, inForm: true);
+        PvpButton(new Rect(75, 760, 255, 73), "menu.back", BackFromPvpForm, primary: false);
     }
 
-    void DrawPvpCreate(PvpSession session)
+    void DrawPvpCreate(PvpSession session, bool direct)
     {
         HudArt(new Rect(74, 191, 970, 565), pvpBoardArt);
         Text(new Rect(212, 253, 650, 32), PvpText("room_name"), 26, Color.white);
         pvpName = PvpField(new Rect(212, 287, 650, 51), "pvp-room", pvpName, 32);
-        Text(new Rect(212, 363, 650, 30), PvpText("host_address"), 26, Color.white);
-        pvpAddress = PvpField(new Rect(212, 399, 650, 51), "pvp-address", pvpAddress, 45);
-        Text(new Rect(212, 454, 650, 56), PvpText("host_address_hint"), 20, PvpMuted);
-        Text(new Rect(212, 516, 301, 32), PvpText("listen_port"), 25, Color.white);
-        Text(new Rect(555, 516, 307, 32), PvpText("public_port"), 25, Color.white);
-        pvpListenPort = PvpField(new Rect(212, 555, 307, 51), "pvp-local-port", pvpListenPort, 5);
-        pvpPublicPort = PvpField(new Rect(555, 555, 307, 51), "pvp-public-port", pvpPublicPort, 5);
-        PvpButton(new Rect(633, 746, 335, 96), "create", () => SubmitPvpCreate(session));
+        if (direct)
+        {
+            Text(new Rect(212, 363, 650, 30), PvpText("host_address"), 26, Color.white);
+            pvpAddress = PvpField(new Rect(212, 399, 650, 51), "pvp-address", pvpAddress, 45);
+            Text(new Rect(212, 454, 650, 56), PvpText("host_address_hint"), 20, PvpMuted);
+            Text(new Rect(212, 516, 301, 32), PvpText("listen_port"), 25, Color.white);
+            Text(new Rect(555, 516, 307, 32), PvpText("public_port"), 25, Color.white);
+            pvpListenPort = PvpField(new Rect(212, 555, 307, 51), "pvp-local-port", pvpListenPort, 5);
+            pvpPublicPort = PvpField(new Rect(555, 555, 307, 51), "pvp-public-port", pvpPublicPort, 5);
+        }
+        else
+            PvpButton(new Rect(212, 498, 330, 73), "direct_options",
+                () => SelectPvpForm(PvpForm.CreateDirect), primary: false);
+
+        PvpButton(new Rect(633, 746, 335, 96), "create", () => SubmitPvpCreate(session, direct));
     }
 
-    void SubmitPvpCreate(PvpSession session)
+    void SubmitPvpCreate(PvpSession session, bool direct)
     {
+        pvpFormSubmitted = true;
+        pvpFormError = null;
+        GUI.FocusControl(null);
+        string room = string.IsNullOrWhiteSpace(pvpName) ? PvpText("default_room") : pvpName.Trim();
+        if (!direct)
+        {
+            session.CreateOnline(room);
+            return;
+        }
+
         if (!TryPvpPort(pvpListenPort, DefaultPvpPort, out ushort listenPort) ||
             !TryPvpPort(pvpPublicPort, 0, out ushort publicPort))
         {
             pvpFormError = "pvp.error.port";
             return;
         }
-        pvpFormError = null;
-        GUI.FocusControl(null);
-        string room = string.IsNullOrWhiteSpace(pvpName) ? PvpText("default_room") : pvpName.Trim();
         session.Create(room, pvpAddress.Trim(), listenPort, publicPort);
     }
 
@@ -199,16 +228,17 @@ public sealed partial class GameMenuUI
     void DrawPvpJoin(PvpSession session)
     {
         HudArt(new Rect(74, 191, 970, 565), pvpBoardArt);
-        Text(new Rect(212, 342, 650, 47), PvpText("invite"), 32, Color.white);
+        Text(new Rect(212, 342, 650, 47), PvpText("room_code"), 32, Color.white);
         pvpJoinInvite = PvpField(new Rect(212, 402, 470, 58), "pvp-invite", pvpJoinInvite, 256);
         PvpButton(new Rect(701, 398, 186, 61), "paste", () =>
         {
-            string clipboard = GUIUtility.systemCopyBuffer.Trim();
+            string clipboard = (GUIUtility.systemCopyBuffer ?? "").Trim();
             pvpJoinInvite = clipboard.Length <= 256 ? clipboard : clipboard.Substring(0, 256);
             GUI.FocusControl(null);
         }, primary: false);
         PvpButton(new Rect(633, 746, 335, 96), "join", () =>
         {
+            pvpFormSubmitted = true;
             GUI.FocusControl(null);
             session.Join(pvpJoinInvite.Trim());
         }, interactable: !string.IsNullOrWhiteSpace(pvpJoinInvite));
@@ -257,23 +287,35 @@ public sealed partial class GameMenuUI
                 if (session.HasTestBot) session.RemoveTestBot();
                 else session.AddTestBot();
             }, primary: false, interactable: session.HasTestBot || session.CanAddTestBot);
-            Text(new Rect(338, 598, 538, 44), PvpText("invite_hint"), 23, PvpMuted);
-            Text(new Rect(338, 642, 538, 37), PvpText("invite_endpoint") + " " + session.AdvertisedEndpoint,
-                22, Color.white);
-            string inviteAction = Time.unscaledTime < pvpCopiedUntil ? "copied" : "copy";
+            if (session.IsRelay)
+            {
+                Text(new Rect(338, 598, 538, 34), PvpText("room_code"), 23, PvpMuted);
+                Text(new Rect(338, 632, 538, 51), session.Invite, 40, PvpGold);
+            }
+            else
+            {
+                Text(new Rect(338, 598, 538, 44), PvpText("invite_hint"), 23, PvpMuted);
+                Text(new Rect(338, 642, 538, 37), PvpText("invite_endpoint") + " " + session.AdvertisedEndpoint,
+                    22, Color.white);
+            }
+            string copyKey = session.IsRelay ? "copy_code" : "copy";
+            string inviteAction = Time.unscaledTime < pvpCopiedUntil ? "copied" : copyKey;
             PvpButton(new Rect(890, 599, 275, 83), inviteAction, () =>
             {
                 GUIUtility.systemCopyBuffer = session.Invite;
                 pvpCopiedUntil = Time.unscaledTime + 2f;
             }, primary: false, interactable: !string.IsNullOrEmpty(session.Invite));
-            string renewAction = Time.unscaledTime < pvpRenewedUntil ? "invite_renewed" : "renew_invite";
-            PvpButton(new Rect(1180, 599, 270, 83), renewAction, () =>
+            if (!session.IsRelay)
             {
-                if (!session.RegenerateInvite())
-                    return;
-                pvpCopiedUntil = 0;
-                pvpRenewedUntil = Time.unscaledTime + 2;
-            }, primary: false, interactable: !string.IsNullOrEmpty(session.Invite));
+                string renewAction = Time.unscaledTime < pvpRenewedUntil ? "invite_renewed" : "renew_invite";
+                PvpButton(new Rect(1180, 599, 270, 83), renewAction, () =>
+                {
+                    if (!session.RegenerateInvite())
+                        return;
+                    pvpCopiedUntil = 0;
+                    pvpRenewedUntil = Time.unscaledTime + 2;
+                }, primary: false, interactable: !string.IsNullOrEmpty(session.Invite));
+            }
             bool canStart = session.Members.Count >= 2 && session.Members.All(member =>
                 !member.Disconnected && (member.IsHost || member.IsBot || member.Ready));
             PvpButton(new Rect(1190, 746, 335, 96), "start", session.StartMatch, interactable: canStart);
@@ -470,7 +512,8 @@ public sealed partial class GameMenuUI
     void DrawPvpTransition(PvpSession session)
     {
         bool connecting = session.Phase == PvpPhase.Connecting;
-        BeginPvpScreen(PvpText(connecting ? "connecting" : "returning"), entrance: connecting);
+        string heading = connecting ? (session.IsCreatingOnline ? "creating" : "connecting") : "returning";
+        BeginPvpScreen(PvpText(heading), entrance: connecting);
         DrawPvpStatus(session);
         if (connecting) PvpButton(new Rect(75, 760, 255, 73), "leave", LeavePvp, primary: false);
     }

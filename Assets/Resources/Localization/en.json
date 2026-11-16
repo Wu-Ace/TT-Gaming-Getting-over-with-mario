@@ -20,6 +20,11 @@
       "context": "PvP room, match or network feedback"
     },
     {
+      "key": "pvp.direct_options",
+      "text": "LAN / Direct",
+      "context": "PvP room, match or network feedback"
+    },
+    {
       "key": "pvp.room_name",
       "text": "Room name",
       "context": "PvP room, match or network feedback"
@@ -55,6 +60,11 @@
       "context": "PvP room, match or network feedback"
     },
     {
+      "key": "pvp.room_code",
+      "text": "Room code",
+      "context": "PvP room, match or network feedback"
+    },
+    {
       "key": "pvp.paste",
       "text": "Paste",
       "context": "PvP room, match or network feedback"
@@ -87,6 +97,11 @@
     {
       "key": "pvp.copy",
       "text": "Copy Invite",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.copy_code",
+      "text": "Copy Room Code",
       "context": "PvP room, match or network feedback"
     },
     {
@@ -205,6 +220,11 @@
       "context": "PvP room, match or network feedback"
     },
     {
+      "key": "pvp.creating",
+      "text": "Creating Room",
+      "context": "PvP room, match or network feedback"
+    },
+    {
       "key": "pvp.returning",
       "text": "Returning to room",
       "context": "PvP room, match or network feedback"
@@ -230,6 +250,16 @@
       "context": "PvP room, match or network feedback"
     },
     {
+      "key": "pvp.error.room_code",
+      "text": "Enter a valid room code.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.room_code_expired",
+      "text": "The room code is invalid or has expired. Ask the host for their current code.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
       "key": "pvp.error.version",
       "text": "The host and guest must use the same game version.",
       "context": "PvP room, match or network feedback"
@@ -247,6 +277,26 @@
     {
       "key": "pvp.error.connect_timeout",
       "text": "Connection timed out. Check the address, UDP port and firewall.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.relay_not_configured",
+      "text": "Online rooms are unavailable in this build.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.relay_unavailable",
+      "text": "Could not connect to the online room service. Try again.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.relay_timeout",
+      "text": "The connection timed out. Try joining again.",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.relay_rate_limited",
+      "text": "Too many attempts. Wait a moment and try again.",
       "context": "PvP room, match or network feedback"
     },
     {

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -46,6 +48,7 @@ namespace Odyssey.Pvp
         private const double InputInterval = 1.0 / 30;
         private const double InputTimeout = .5;
         private const int MaxRoomName = 32;
+        private const double OnlineRequestTimeout = 20;
 
         private readonly List<PvpMember> members = new List<PvpMember>(SeatCount);
         private readonly Dictionary<ulong, Racer> racers = new Dictionary<ulong, Racer>();
@@ -54,6 +57,8 @@ namespace Odyssey.Pvp
             new List<(PvpMember, Racer, float)>(SeatCount);
         private readonly PvpContact contacts = new PvpContact();
         private PvpTransport transport;
+        private CancellationTokenSource onlineRequest;
+        private double onlineDeadline;
         private PvpArena arena;
         private AsyncOperation load;
         private string desiredScene = MenuScene;
@@ -83,6 +88,8 @@ namespace Odyssey.Pvp
         public string Invite => transport.Invite;
         public string AdvertisedEndpoint => transport.AdvertisedEndpoint;
         public bool IsHost => transport.IsHost;
+        public bool IsRelay => transport.IsRelay;
+        public bool IsCreatingOnline { get; private set; }
         public ulong LocalId => transport.LocalId;
         public string StatusKey { get; private set; } = "";
         public IReadOnlyList<PvpMember> Members => members;
@@ -115,6 +122,7 @@ namespace Odyssey.Pvp
 
         private void OnDestroy()
         {
+            CancelOnlineRequest();
             SceneManager.sceneLoaded -= OnSceneLoaded;
             if (transport)
             {
@@ -129,35 +137,108 @@ namespace Odyssey.Pvp
 
         public void Create(string roomName, string address, ushort localPort, ushort publicPort)
         {
-            if (Phase != PvpPhase.Idle)
+            if (Phase != PvpPhase.Idle || !PrepareRoomName(roomName))
                 return;
-            RoomName = (roomName ?? "").Trim();
-            if (RoomName.Length == 0 || RoomName.Length > MaxRoomName || RoomName.Any(char.IsControl))
-            {
-                StatusKey = "pvp.error.room_name";
+            if (transport.Host(address, localPort, publicPort))
+                EnterHostedRoom();
+        }
+
+        public void CreateOnline(string roomName)
+        {
+            if (Phase != PvpPhase.Idle || !PrepareRoomName(roomName))
                 return;
-            }
-            StatusKey = "";
-            if (!transport.Host(address, localPort, publicPort))
-            {
-                StatusKey = transport.LastErrorKey;
-                return;
-            }
-            Phase = PvpPhase.Waiting;
-            AddMember(transport.ServerId);
+            BeginOnlineRequest(null);
         }
 
         public void Join(string invite)
         {
             if (Phase != PvpPhase.Idle)
                 return;
+            invite = (invite ?? "").Trim();
+            if (invite.StartsWith("ODP", StringComparison.Ordinal) && invite.Contains('-'))
+            {
+                StatusKey = "";
+                Phase = PvpPhase.Connecting;
+                transport.Join(invite);
+                return;
+            }
+
+            string roomCode = invite.ToUpperInvariant();
+            if (!PvpRelay.IsRoomCode(roomCode))
+            {
+                StatusKey = "pvp.error.room_code";
+                return;
+            }
+            BeginOnlineRequest(roomCode);
+        }
+
+        private bool PrepareRoomName(string name)
+        {
+            name = (name ?? "").Trim();
+            if (name.Length == 0 || name.Length > MaxRoomName || name.Any(char.IsControl))
+            {
+                StatusKey = "pvp.error.room_name";
+                return false;
+            }
+            RoomName = name;
+            StatusKey = "";
+            return true;
+        }
+
+        private void EnterHostedRoom()
+        {
+            Phase = PvpPhase.Waiting;
+            AddMember(transport.ServerId);
+        }
+
+        private void BeginOnlineRequest(string roomCode)
+        {
+            if (!PvpRelay.IsConfigured)
+            {
+                StatusKey = "pvp.error.relay_not_configured";
+                return;
+            }
+
             StatusKey = "";
             Phase = PvpPhase.Connecting;
-            if (!transport.Join(invite))
+            IsCreatingOnline = roomCode == null;
+            onlineDeadline = Now + OnlineRequestTimeout;
+            onlineRequest = new CancellationTokenSource();
+            _ = ConnectOnlineAsync(roomCode, onlineRequest);
+        }
+
+        private async Task ConnectOnlineAsync(string roomCode, CancellationTokenSource request)
+        {
+            try
             {
-                StatusKey = transport.LastErrorKey;
-                Phase = PvpPhase.Idle;
+                var allocation = await PvpRelay.RequestAsync(roomCode, request.Token);
+                if (request.IsCancellationRequested)
+                    return;
+
+                onlineRequest = null;
+                IsCreatingOnline = false;
+                if (roomCode != null)
+                    transport.JoinRelay(allocation.Data);
+                else if (transport.HostRelay(allocation.Code, allocation.Data))
+                    EnterHostedRoom();
             }
+            catch (Exception error)
+            {
+                if (!request.IsCancellationRequested)
+                    OnTransportFailed(PvpRelay.ErrorKey(error, roomCode != null));
+            }
+            finally
+            {
+                request.Dispose();
+            }
+        }
+
+        private void CancelOnlineRequest()
+        {
+            var request = onlineRequest;
+            onlineRequest = null;
+            IsCreatingOnline = false;
+            request?.Cancel();
         }
 
         public void Leave()
@@ -270,6 +351,7 @@ namespace Odyssey.Pvp
 
         private void ResetSession()
         {
+            CancelOnlineRequest();
             Phase = PvpPhase.Idle;
             transport.Stop();
             members.Clear();
@@ -310,6 +392,8 @@ namespace Odyssey.Pvp
 
         private void Update()
         {
+            if (onlineRequest != null && Now >= onlineDeadline)
+                OnTransportFailed("pvp.error.relay_timeout");
             UpdateScene();
             if (IsHost)
                 UpdateHost();

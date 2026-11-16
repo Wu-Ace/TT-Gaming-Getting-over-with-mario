@@ -9,6 +9,7 @@ using System.Text;
 using Unity.Collections;
 using Unity.Netcode;
 using Unity.Netcode.Transports.UTP;
+using Unity.Networking.Transport.Relay;
 using UnityEngine;
 
 namespace Odyssey.Pvp
@@ -33,7 +34,8 @@ namespace Odyssey.Pvp
         private const int NonceBytes = 16;
         private const int ProofBytes = 32;
         private const int ApprovalCompatibilityOffset = 1;
-        private const int ApprovalNonceOffset = ApprovalCompatibilityOffset + CompatibilityBytes;
+        private const int ApprovalHeaderBytes = ApprovalCompatibilityOffset + CompatibilityBytes;
+        private const int ApprovalNonceOffset = ApprovalHeaderBytes;
         private const int ApprovalProofOffset = ApprovalNonceOffset + NonceBytes;
         private const int ApprovalBytes = ApprovalProofOffset + ProofBytes;
         private const int MaxAcceptedNonces = 8192;
@@ -64,6 +66,7 @@ namespace Odyssey.Pvp
         public bool IsHost => hosting;
         public bool IsActive => hosting || joining || localConnected;
         public bool IsConnected => localConnected;
+        public bool IsRelay { get; private set; }
         public ulong ServerId => NetworkManager.ServerClientId;
         public ulong LocalId => IsConnected ? manager.LocalClientId : ServerId;
         public bool AcceptGuests { get; set; }
@@ -71,10 +74,13 @@ namespace Odyssey.Pvp
         // Count approved-but-not-yet-connected peers so adding it cannot overbook a room.
         public int ReservedSeats { get; private set; }
         public bool CanReserveSeat => hosting && localConnected && AcceptGuests &&
-            ReservedSeats == 0 && guests.Count + pending.Count < MaxPlayers - 1;
+            ReservedSeats == 0 && !RoomIsFull;
         public string Invite { get; private set; } = string.Empty;
         public string AdvertisedEndpoint { get; private set; } = string.Empty;
         public string LastErrorKey { get; private set; } = string.Empty;
+
+        private bool RoomIsFull => guests.Count + pending.Count + ReservedSeats >= MaxPlayers - 1;
+        private string JoinTimeoutError => IsRelay ? "pvp.error.relay_timeout" : "pvp.error.connect_timeout";
 
         public event Action<ulong> Connected;
         public event Action<ulong> Disconnected;
@@ -93,21 +99,39 @@ namespace Odyssey.Pvp
             else if (!TryParseAddress(advertisedIpv4.Trim(), out address))
                 return Report("pvp.error.address");
 
-            LastErrorKey = string.Empty;
-            PrepareManager();
+            PrepareHost(relay: false);
             advertisedAddress = address;
             this.advertisedPort = advertisedPort;
             AdvertisedEndpoint = address + ":" + advertisedPort.ToString(CultureInfo.InvariantCulture);
-            roomCompatibility = CreateCompatibilityTag(Application.version);
             IssueInvite();
+            return StartNetwork(Array.Empty<byte>(), host: true,
+                () => transport.SetConnectionData(IPAddress.Loopback.ToString(), listenPort, "0.0.0.0"));
+        }
+
+        public bool HostRelay(string joinCode, RelayServerData relayData)
+        {
+            if (IsBusy()) return Report("pvp.error.busy");
+            if (string.IsNullOrWhiteSpace(joinCode)) return Report("pvp.error.room_code");
+            if (!relayData.Endpoint.IsValid) return Report("pvp.error.relay_unavailable");
+
+            PrepareHost(relay: true);
+            Invite = joinCode;
+            return StartNetwork(Array.Empty<byte>(), host: true, () => transport.SetRelayServerData(relayData));
+        }
+
+        private void PrepareHost(bool relay)
+        {
+            LastErrorKey = string.Empty;
+            PrepareManager();
+            IsRelay = relay;
+            roomCompatibility = CreateCompatibilityTag(Application.version);
             AcceptGuests = true;
             hosting = true;
-            return StartNetwork(Array.Empty<byte>(), IPAddress.Loopback, listenPort, true);
         }
 
         public bool RegenerateInvite()
         {
-            if (!hosting || !localConnected || !AcceptGuests || manager == null || manager.ShutdownInProgress)
+            if (IsRelay || !hosting || !localConnected || !AcceptGuests || manager == null || manager.ShutdownInProgress)
                 return false;
             IssueInvite();
             return true;
@@ -130,13 +154,29 @@ namespace Odyssey.Pvp
             if (!TryReadInvite(invite, compatibility, out var address, out var port, out var secret, out var error))
                 return Report(error);
 
-            LastErrorKey = string.Empty;
-            PrepareManager();
-            joinDeadline = Time.realtimeSinceStartupAsDouble + JoinTimeout;
-            joining = true;
             var proof = CreateApproval(secret, compatibility);
             Array.Clear(secret, 0, secret.Length);
-            return StartNetwork(proof, address, port, false);
+            return BeginJoin(proof, relay: false, () => transport.SetConnectionData(address.ToString(), port));
+        }
+
+        public bool JoinRelay(RelayServerData relayData)
+        {
+            if (IsBusy()) return Report("pvp.error.busy");
+            if (!relayData.Endpoint.IsValid) return Report("pvp.error.relay_unavailable");
+
+            byte[] compatibility = CreateCompatibilityTag(Application.version);
+            var payload = CreateApprovalPayload(compatibility, ApprovalHeaderBytes);
+            return BeginJoin(payload, relay: true, () => transport.SetRelayServerData(relayData));
+        }
+
+        private bool BeginJoin(byte[] payload, bool relay, Action configureTransport)
+        {
+            LastErrorKey = string.Empty;
+            PrepareManager();
+            IsRelay = relay;
+            joinDeadline = Time.realtimeSinceStartupAsDouble + JoinTimeout;
+            joining = true;
+            return StartNetwork(payload, host: false, configureTransport);
         }
 
         public bool Send(ulong receiver, byte[] payload, bool reliable = true)
@@ -168,6 +208,7 @@ namespace Odyssey.Pvp
             hosting = false;
             joining = false;
             localConnected = false;
+            IsRelay = false;
             AcceptGuests = false;
             ReservedSeats = 0;
             Invite = string.Empty;
@@ -204,7 +245,7 @@ namespace Odyssey.Pvp
         {
             var now = Time.realtimeSinceStartupAsDouble;
             if (joining && now >= joinDeadline)
-                EndWithError("pvp.error.connect_timeout");
+                EndWithError(JoinTimeoutError);
 
             if (!hosting || pending.Count == 0) return;
             expiredReservations.Clear();
@@ -254,14 +295,15 @@ namespace Odyssey.Pvp
             manager.OnTransportFailure += OnTransportFailure;
         }
 
-        private bool StartNetwork(byte[] connectionData, IPAddress address, ushort port, bool host)
+        private bool StartNetwork(byte[] connectionData, bool host, Action configureTransport)
         {
             var error = host ? "pvp.error.start_host" : "pvp.error.start_client";
+            if (IsRelay) error = "pvp.error.relay_unavailable";
             starting = true;
             try
             {
                 manager.NetworkConfig.ConnectionData = connectionData;
-                transport.SetConnectionData(address.ToString(), port, host ? "0.0.0.0" : null);
+                configureTransport();
                 if (host ? manager.StartHost() : manager.StartClient())
                 {
                     RegisterMessages();
@@ -303,19 +345,22 @@ namespace Odyssey.Pvp
 
         private string GetRejection(byte[] payload)
         {
-            if (!hosting || !AcceptGuests || roomSecret == null) return "pvp.error.room_closed";
+            if (!hosting || !AcceptGuests || (!IsRelay && roomSecret == null)) return "pvp.error.room_closed";
             if (payload == null || payload.Length == 0) return "pvp.error.invite";
             if (payload[0] != Version) return "pvp.error.version";
-            if (payload.Length != ApprovalBytes) return "pvp.error.invite";
+            if (payload.Length != (IsRelay ? ApprovalHeaderBytes : ApprovalBytes)) return "pvp.error.invite";
             if (!BytesMatch(payload, ApprovalCompatibilityOffset, roomCompatibility, 0, CompatibilityBytes))
                 return "pvp.error.version";
+
+            // The relay driver admits only clients authenticated for the room's allocation.
+            if (IsRelay) return RoomIsFull ? "pvp.error.room_full" : null;
 
             byte[] expected;
             using (var hmac = new HMACSHA256(roomSecret))
                 expected = hmac.ComputeHash(payload, 0, ApprovalProofOffset);
 
             if (!BytesMatch(payload, ApprovalProofOffset, expected, 0, ProofBytes)) return "pvp.error.invite";
-            if (guests.Count + pending.Count + ReservedSeats >= MaxPlayers - 1) return "pvp.error.room_full";
+            if (RoomIsFull) return "pvp.error.room_full";
 
             if (acceptedNonces.Count >= MaxAcceptedNonces) return "pvp.error.room_closed";
             var nonce = new byte[NonceBytes];
@@ -378,7 +423,7 @@ namespace Odyssey.Pvp
                 case "pvp.error.replay":
                     break;
                 default:
-                    reason = wasConnected ? "pvp.error.host_disconnected" : "pvp.error.connect_timeout";
+                    reason = wasConnected ? "pvp.error.host_disconnected" : JoinTimeoutError;
                     break;
             }
 
@@ -388,7 +433,8 @@ namespace Odyssey.Pvp
 
         private void OnTransportFailure()
         {
-            if (IsActive && !starting) EndWithError("pvp.error.transport");
+            if (IsActive && !starting)
+                EndWithError(IsRelay ? "pvp.error.relay_unavailable" : "pvp.error.transport");
         }
 
         private void Receive(ulong sender, FastBufferReader reader)
@@ -444,15 +490,21 @@ namespace Odyssey.Pvp
 
         private static byte[] CreateApproval(byte[] secret, byte[] compatibility)
         {
-            var payload = new byte[ApprovalBytes];
-            payload[0] = Version;
-            Buffer.BlockCopy(compatibility, 0, payload, ApprovalCompatibilityOffset, CompatibilityBytes);
+            var payload = CreateApprovalPayload(compatibility, ApprovalBytes);
             Buffer.BlockCopy(RandomBytes(NonceBytes), 0, payload, ApprovalNonceOffset, NonceBytes);
             using (var hmac = new HMACSHA256(secret))
             {
                 var proof = hmac.ComputeHash(payload, 0, ApprovalProofOffset);
                 Buffer.BlockCopy(proof, 0, payload, ApprovalProofOffset, ProofBytes);
             }
+            return payload;
+        }
+
+        private static byte[] CreateApprovalPayload(byte[] compatibility, int length)
+        {
+            var payload = new byte[length];
+            payload[0] = Version;
+            Buffer.BlockCopy(compatibility, 0, payload, ApprovalCompatibilityOffset, CompatibilityBytes);
             return payload;
         }
 

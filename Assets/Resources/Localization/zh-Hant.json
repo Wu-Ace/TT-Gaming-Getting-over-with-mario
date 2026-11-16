@@ -20,6 +20,11 @@
       "context": "PvP room, match or network feedback"
     },
     {
+      "key": "pvp.direct_options",
+      "text": "區域網路 / 直連",
+      "context": "PvP room, match or network feedback"
+    },
+    {
       "key": "pvp.room_name",
       "text": "房間名稱",
       "context": "PvP room, match or network feedback"
@@ -55,6 +60,11 @@
       "context": "PvP room, match or network feedback"
     },
     {
+      "key": "pvp.room_code",
+      "text": "房間代碼",
+      "context": "PvP room, match or network feedback"
+    },
+    {
       "key": "pvp.paste",
       "text": "貼上",
       "context": "PvP room, match or network feedback"
@@ -87,6 +97,11 @@
     {
       "key": "pvp.copy",
       "text": "複製邀請",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.copy_code",
+      "text": "複製房間代碼",
       "context": "PvP room, match or network feedback"
     },
     {
@@ -205,6 +220,11 @@
       "context": "PvP room, match or network feedback"
     },
     {
+      "key": "pvp.creating",
+      "text": "正在建立房間",
+      "context": "PvP room, match or network feedback"
+    },
+    {
       "key": "pvp.returning",
       "text": "正在返回房間",
       "context": "PvP room, match or network feedback"
@@ -230,6 +250,16 @@
       "context": "PvP room, match or network feedback"
     },
     {
+      "key": "pvp.error.room_code",
+      "text": "請輸入有效的房間代碼。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.room_code_expired",
+      "text": "房間代碼無效或已失效。請向房主取得目前的房間代碼。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
       "key": "pvp.error.version",
       "text": "房主與客機需要使用相同的遊戲版本。",
       "context": "PvP room, match or network feedback"
@@ -247,6 +277,26 @@
     {
       "key": "pvp.error.connect_timeout",
       "text": "連線逾時。請確認位址、UDP 連接埠和防火牆。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.relay_not_configured",
+      "text": "此版本尚未設定線上連線服務。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.relay_unavailable",
+      "text": "無法連接線上連線服務。請重試。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.relay_timeout",
+      "text": "連線逾時。請重新加入房間。",
+      "context": "PvP room, match or network feedback"
+    },
+    {
+      "key": "pvp.error.relay_rate_limited",
+      "text": "嘗試次數過多。請稍候再試。",
       "context": "PvP room, match or network feedback"
     },
     {

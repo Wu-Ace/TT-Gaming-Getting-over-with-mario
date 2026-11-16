@@ -1,4 +1,17 @@
 {
+  "scopedRegistries": [
+    {
+      "name": "Unity Gaming Services",
+      "url": "https://packages.unity.com",
+      "scopes": [
+        "com.unity.nuget.newtonsoft-json",
+        "com.unity.services.authentication",
+        "com.unity.services.core",
+        "com.unity.services.qos",
+        "com.unity.services.relay"
+      ]
+    }
+  ],
   "dependencies": {
     "cn.tuanjie.ai.generators": "file:../.codely-cli/extensions/TJGenerators/Packages/cn.tuanjie.ai.generators",
     "cn.tuanjie.codely.bridge": "1.0.88",
@@ -13,6 +26,9 @@
     "com.unity.inputsystem": "1.14.4-t1",
     "com.unity.netcode.gameobjects": "1.5.1",
     "com.unity.render-pipelines.universal": "14.2.0-t1",
+    "com.unity.services.authentication": "2.0.0",
+    "com.unity.services.core": "1.14.0",
+    "com.unity.services.relay": "1.0.5",
     "com.unity.test-framework": "1.1.33",
     "com.unity.textmeshpro": "3.0.9",
     "com.unity.timeline": "1.8.9-t1",

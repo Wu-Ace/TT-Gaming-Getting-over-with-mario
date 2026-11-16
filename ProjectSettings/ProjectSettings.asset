@@ -968,11 +968,11 @@ PlayerSettings:
   minigameJobWorkerCount: 2
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: 
+  cloudProjectId: b62afeec-3665-4c28-8c14-211eeb721a43
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: TT奥德赛
+  organizationId: 33264422658385
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

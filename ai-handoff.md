@@ -760,3 +760,9 @@ User requires equal font size for SFX/music/resolution/language. SettingsCaption
 - Clarified Spanish and Arabic sound effects; corrected Myanmar resolution vs quality. JSON and translations.tsv synchronized. No human native-language sign-off; Myanmar lacks released-game terminology evidence and needs priority native review.
 - Final 1280×720 and 1920×1080 all-language layout checks PASS, zero failures. All locale menu/level/settings captures plus loading/HUD/synthetic-completion previews; compilation zero errors, one existing ArmsSimulation unused-field warning. Completion flag was synthetic, not gameplay completion. No Windows Player export or full traversal validation.
 - Original clean Level02_Jungle scene restored, EditMode, GameView Free Aspect 1830×916 restored. Language tests use non-persistent switching; gameplay previews use isolated preferences. Pre-audit backup and final source hashes retained in audit folder. Preserve unrelated existing changes.
+
+## 2026-11-16 — Relay CLI verification
+User supplied cloud ID/name/org saved with scoped backup. Anonymous Authentication API passed. Relay allocation failed HTTP 451/code 53: Unavailable in your region. Room-code join and actual game networking remain unverified. Evidence: scripts/relay-config-20261116/verification.md. No tokens saved.
+
+## 2026-11-17 — New Relay cloud project
+Switched local cloudProjectId to b62afeec-3665-4c28-8c14-211eeb721a43 and organizationId to 33264422658385 per user screenshots. CLI anonymous auth, allocation, short-code creation and second anonymous player join all PASS. HTTPS API verification only; game UDP/DTLS, editor reload and builds not verified. Evidence scripts/relay-config-20261116/new-project-verification-20261117.md.
